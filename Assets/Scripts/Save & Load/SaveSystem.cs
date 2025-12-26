@@ -13,11 +13,14 @@ public static class SaveSystem
         PlayerData data = new PlayerData(player);
 
         formatter.Serialize(stream, data);
-        stream.Close();
+
+        Debug.Log($"SAVED -> {path} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})");
+        // stream.Close();
     }
 
     public static PlayerData LoadPlayer()
     {
+        /*
         string path = Application.persistentDataPath + "/player.savedGame";
 
         if (File.Exists(path))
@@ -35,5 +38,21 @@ public static class SaveSystem
             Debug.LogError("Save File does not exist in current " + path);
             return null;
         }
+        */
+        string path = Application.persistentDataPath + "/player.savedGame";
+
+    if (!File.Exists(path))
+    {
+        Debug.LogError("Save File does not exist: " + path);
+        return null;
+    }
+
+    BinaryFormatter formatter = new BinaryFormatter();
+    using FileStream stream = new FileStream(path, FileMode.Open);
+
+    PlayerData data = formatter.Deserialize(stream) as PlayerData;
+    Debug.Log($"LOADED -> {path} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})");
+    return data;
+    
     }
 }
