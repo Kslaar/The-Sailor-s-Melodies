@@ -1,38 +1,105 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(Rigidbody))]
 public class BoatControl : MonoBehaviour
 {
-    public Transform engine;
-    public float steerPower;
-    public float enginePower;
-    public float maxSpeed;
-    public float drag;
+    [Header("References")]
+    [SerializeField] private Transform engine;
 
-    protected Rigidbody Rigidbody;
-    protected Quaternion startRotation;
-    void Start()
+    [Header("Throttle")]
+    [SerializeField] private float maxForwardSpeed = 6f;
+    [SerializeField] private float maxReverseSpeed = 3f;
+    [SerializeField] private float accelerationForce = 8f;
+    [SerializeField] private float reverseAccelerationForce = 6f;
+    
+    [Header("Steering")]
+    [SerializeField] private float maxYawDegPerSec = 35f; // Wir setzen ein Rotationsgeschwindigkeits-Cap!!
+    [SerializeField] private float steerResponsivness = 6f; // Wie schnell die Zielrate erreicht wird
+    [SerializeField] private float yawDamping = 2.5f;
+
+    [Header("Water feel")]
+    [SerializeField] private float lateralDrag = 2f;
+    [SerializeField] private float minSpeedForFullSteering = 2f;
+
+    private Rigidbody rb;
+    //protected Rigidbody Rigidbody;
+    // protected Quaternion startRotation;
+
+    public float ThrustMultiplier { get; set; } = 1f;
+    public float TurnMultiplier { get; set; } = 1f;
+    void Awake()
     {
-        Rigidbody = GetComponent<Rigidbody>();
-        startRotation = engine.localRotation;
+        rb = GetComponent<Rigidbody>();
+        rb.maxAngularVelocity = 3f;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        var forceDirection = transform.forward;
-        var steer = 0;
+        float steerInput = 0f;
 
-        if (Keyboard.current.aKey.isPressed) steer = 1;
-        if (Keyboard.current.dKey.isPressed) steer = -1;  
+        if (Keyboard.current.aKey.isPressed) steerInput += 1;
+        if (Keyboard.current.dKey.isPressed) steerInput -= 1;  
 
-        Rigidbody.AddForceAtPosition(steer * transform.right * steerPower / 100f, engine.position); 
+        float throttleInput = 0f;
 
-        var forward = Vector3.Scale(new Vector3(1, 0, 1), transform.forward);
+        if (Keyboard.current.wKey.isPressed) throttleInput += 1f;
+        if (Keyboard.current.sKey.isPressed) throttleInput -= 1f;
 
-        if (Keyboard.current.wKey.isPressed) 
-            PhysicsHelper.ApplyForceToReachVelocity(Rigidbody, forward * maxSpeed, enginePower);
-        if (Keyboard.current.sKey.isPressed)
-            PhysicsHelper.ApplyForceToReachVelocity(Rigidbody, forward * -maxSpeed, enginePower);
+        ApplyThrottle(throttleInput);
+        ApplySteering(steerInput);
+        ApplyHydroDrag();
+    }
+
+    private void ApplyThrottle(float input)
+    {
+        if (Mathf.Approximately(input, 0f)) return;
+
+        Vector3 forwardFlat = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
+
+        float targetSpeed = (input > 0f ? maxForwardSpeed : maxReverseSpeed) * Mathf.Sign(input);
+        float force = (input > 0f ? accelerationForce : reverseAccelerationForce) * ThrustMultiplier;
+
+        PhysicsHelper.ApplyForceToReachVelocity(rb, forwardFlat * targetSpeed, force);
+    }
+
+    private void ApplySteering(float input)
+    {
+        float forwardSpeed = Vector3.Dot(rb.linearVelocity, transform.forward);
+        float speedAbs = Mathf.Abs(forwardSpeed);
+
+        float minSteerFactor = 0.75f;
+        float speedSteerFactor = Mathf.Clamp01(speedAbs / minSpeedForFullSteering); 
+        float steerFactor = Mathf.Lerp(minSteerFactor, 1f, speedSteerFactor);
+
+        float desiredYawDeg = input * maxYawDegPerSec * steerFactor * TurnMultiplier;
+        float desiredYawRad = desiredYawDeg * Mathf.Deg2Rad;
+
+        float currentYaw = Vector3.Dot(rb.angularVelocity, transform.up);
+
+        float error = desiredYawRad - currentYaw;
+        float damping = yawDamping * (Mathf.Abs(input) < 0.01f ? 2.5f : 1f);
+        float torque = error * steerResponsivness - currentYaw * damping;
+
+        rb.AddTorque(transform.up * torque, ForceMode.Acceleration);
+    }
+
+    private void ApplyHydroDrag()
+    {
+        Vector3 lateral = Vector3.Project(rb.linearVelocity, transform.right);
+        rb.AddForce(-lateral * lateralDrag, ForceMode.Acceleration);
+    }
+
+    ////////////////////////////////////////////////////
+    
+    public void AddImpulse(Vector3 force)
+    {
+        rb.AddForce(force, ForceMode.Impulse);
+    }
+
+    public void SetThrustMultiplier(float value)
+    {
+        ThrustMultiplier = value;
     }
 }
