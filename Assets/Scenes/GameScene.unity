@@ -249,13 +249,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalRotation: {x: 0.4027467, y: 0, z: 0, w: 0.91531146}
   m_LocalPosition: {x: 8, y: 25, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 47.5, y: 0, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,21 +512,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1727689091793670056, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: engine
-      value: 
-      objectReference: {fileID: 1605974955}
-    - target: {fileID: 1727689091793670056, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: maxForwardSpeed
-      value: 8.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1727689091793670056, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: maxYawDegPerSec
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 2890430667778327221, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2
+    - target: {fileID: 90195898582709478, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -572,28 +560,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Boat
       objectReference: {fileID: 0}
-    - target: {fileID: 8242964852459898639, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9047356932053537018, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9144504475367747256, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 90195898582709478, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1605974955}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7980922155677737969, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1927105102}
+      addedObject: {fileID: 1927105108}
   m_SourcePrefab: {fileID: 100100000, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
 --- !u!1 &533649750
 GameObject:
@@ -1381,7 +1355,7 @@ Transform:
   m_GameObject: {fileID: 1472213455}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -66, y: 0, z: -25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1399,7 +1373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de76ede488d724698a000ceed90169d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Waves
-  dimension: 20
+  dimension: 150
   octaves:
   - speed: {x: 0.5, y: 0.5}
     scale: {x: 10, y: 10}
@@ -1546,37 +1520,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548924599}
   m_CullTransparentMesh: 1
---- !u!1 &1605974954
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1605974955}
-  m_Layer: 0
-  m_Name: Force origin
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1605974955
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605974954}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.56, z: 4.07}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1927105095}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1784309065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,11 +1786,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1393651581}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1927105095 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-  m_PrefabInstance: {fileID: 493158104}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1927105096 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1727689091793670056, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
@@ -1859,12 +1797,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53d8409686734fa685329c40197714f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoatControl
---- !u!54 &1927105098 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 2421717531357364448, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
-  m_PrefabInstance: {fileID: 493158104}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1927105102
+--- !u!114 &1927105108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1873,14 +1806,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 959224678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e592bc585ba243ac96d1e90d0c83378, type: 3}
+  m_Script: {fileID: 11500000, guid: 14e2dff62a1bc40a1ba7bc14b3ae91fa, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoatGizmos
-  rb: {fileID: 1927105098}
-  controller: {fileID: 1927105096}
-  velocityScale: 0.5
-  angularScale: 1
-  arrowHead: 0.25
+  m_EditorClassIdentifier: Assembly-CSharp::WindGustAbility
+  boat: {fileID: 1927105096}
+  data: {fileID: 11400000, guid: bb939cddabf334903a58e08f39d30ef1, type: 2}
+  logTrigger: 1
+  logBoost: 1
 --- !u!1 &1954044101
 GameObject:
   m_ObjectHideFlags: 0

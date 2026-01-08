@@ -23,11 +23,13 @@ public class BoatControl : MonoBehaviour
     [SerializeField] private float minSpeedForFullSteering = 2f;
 
     private Rigidbody rb;
-    //protected Rigidbody Rigidbody;
-    // protected Quaternion startRotation;
 
-    public float ThrustMultiplier { get; set; } = 1f;
-    public float TurnMultiplier { get; set; } = 1f;
+    public bool boostActive { get; private set; }
+    public void SetBoostActive(bool active) => boostActive = active;
+    public float thrustMultiplier { get; set; } = 1f;
+    public float turnMultiplier { get; set; } = 1f;
+    public float speedMultiplier { get; set; } = 1f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -58,8 +60,9 @@ public class BoatControl : MonoBehaviour
 
         Vector3 forwardFlat = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
 
-        float targetSpeed = (input > 0f ? maxForwardSpeed : maxReverseSpeed) * Mathf.Sign(input);
-        float force = (input > 0f ? accelerationForce : reverseAccelerationForce) * ThrustMultiplier;
+        float baseSpeed = (input > 0f ? maxForwardSpeed : maxReverseSpeed) * Mathf.Sign(input);
+        float targetSpeed = baseSpeed * speedMultiplier;
+        float force = (input > 0f ? accelerationForce : reverseAccelerationForce) * thrustMultiplier;
 
         PhysicsHelper.ApplyForceToReachVelocity(rb, forwardFlat * targetSpeed, force);
     }
@@ -73,7 +76,7 @@ public class BoatControl : MonoBehaviour
         float speedSteerFactor = Mathf.Clamp01(speedAbs / minSpeedForFullSteering); 
         float steerFactor = Mathf.Lerp(minSteerFactor, 1f, speedSteerFactor);
 
-        float desiredYawDeg = input * maxYawDegPerSec * steerFactor * TurnMultiplier;
+        float desiredYawDeg = input * maxYawDegPerSec * steerFactor * turnMultiplier;
         float desiredYawRad = desiredYawDeg * Mathf.Deg2Rad;
 
         float currentYaw = Vector3.Dot(rb.angularVelocity, transform.up);
@@ -93,13 +96,10 @@ public class BoatControl : MonoBehaviour
 
     ////////////////////////////////////////////////////
     
-    public void AddImpulse(Vector3 force)
+    public void SetMultipliers(float speed, float thrust, float turn)
     {
-        rb.AddForce(force, ForceMode.Impulse);
-    }
-
-    public void SetThrustMultiplier(float value)
-    {
-        ThrustMultiplier = value;
+        speedMultiplier = speed;
+        thrustMultiplier = thrust;
+        turnMultiplier = turn;
     }
 }

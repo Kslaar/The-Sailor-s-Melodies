@@ -6,6 +6,7 @@ public class BoatGizmos : MonoBehaviour
     [Header("Refs")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private BoatControl controller;
+
     [Header("Draw")]
     [SerializeField] private float velocityScale = 0.5f;
     [SerializeField] private float angularScale = 1.0f;
@@ -20,6 +21,7 @@ public class BoatGizmos : MonoBehaviour
     private void OnDrawGizmos()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
+        if (controller == null) controller = GetComponent<BoatControl>();
         if (rb == null) return;
 
         Vector3 p = rb.worldCenterOfMass;
@@ -28,8 +30,9 @@ public class BoatGizmos : MonoBehaviour
         Gizmos.color = Color.blue;
         Gizmos.DrawLine(p, p + transform.forward * 2f);
 
-        // 2) Velocity (Bewegungsrichtung)
-        Gizmos.color = Color.green;
+        // 2) Velocity (Bewegungsrichtung) -> rot wenn Boost aktiv
+        bool boost = controller != null && controller.boostActive;
+        Gizmos.color = boost ? Color.red : Color.green;
         DrawArrow(p, rb.linearVelocity * velocityScale);
 
         // 3) Lateral Velocity (seitliches Rutschen)
