@@ -249,6 +249,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00266a8cb08914ea0b082e050c14fb57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MicrophoneInput
+  deviceName: 
+  sampleWindow: 256
+  smoothing: 0.2
+  noiseFloor: 0.01
+  autoCalibrationOnStart: 1
+  calibrationSeconds: 2
+  calibrationMargin: 0.01
+  noiseFloorSmoothing: 0.25
 --- !u!1 &4525436135307591445
 GameObject:
   m_ObjectHideFlags: 0
@@ -458,9 +466,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5299008074082205964}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 90195898582709478}
   m_SourcePrefab: {fileID: 100100000, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!4 &7316729568759855435 stripped
 Transform:
@@ -584,17 +589,3 @@ MonoBehaviour:
   velocityScale: 0.5
   angularScale: 1
   arrowHead: 0.25
---- !u!114 &90195898582709478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7980922155677737969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15432ec9c205a4e2ea283d0b231678a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AbilityController
-  boat: {fileID: 1727689091793670056}
-  windData: {fileID: 11400000, guid: bb939cddabf334903a58e08f39d30ef1, type: 2}
