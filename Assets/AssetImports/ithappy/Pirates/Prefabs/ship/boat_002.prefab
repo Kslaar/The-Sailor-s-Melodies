@@ -221,7 +221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3733859541635158686
 Transform:
   m_ObjectHideFlags: 0
@@ -466,6 +466,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5299008074082205964}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2465819625529934658}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1394243595709864521}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2975272686072494237}
   m_SourcePrefab: {fileID: 100100000, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!4 &7316729568759855435 stripped
 Transform:
@@ -562,7 +571,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53d8409686734fa685329c40197714f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoatControl
-  engine: {fileID: 7441731655444556486}
   maxForwardSpeed: 8.5
   maxReverseSpeed: 3
   accelerationForce: 8
@@ -589,3 +597,49 @@ MonoBehaviour:
   velocityScale: 0.5
   angularScale: 1
   arrowHead: 0.25
+--- !u!114 &2465819625529934658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14e2dff62a1bc40a1ba7bc14b3ae91fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WindGustAbility
+  boat: {fileID: 1727689091793670056}
+  data: {fileID: 11400000, guid: bb939cddabf334903a58e08f39d30ef1, type: 2}
+  logTrigger: 1
+  logBoost: 1
+--- !u!114 &1394243595709864521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71de652f3b78f491b84edcd3634a31d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatFuel
+  maxFuelSeconds: 30
+  currentFuelSeconds: 30
+--- !u!114 &2975272686072494237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b326827e25af945b08702a5c9dacdff2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MotorBoostAbility
+  boat: {fileID: 1727689091793670056}
+  fuel: {fileID: 1394243595709864521}
+  data: {fileID: 11400000, guid: 45ffb426490244bc48a10c09446529b4, type: 2}
+  logAttempts: 1
