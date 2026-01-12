@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,6 +15,10 @@ public class WindGustAbility : MonoBehaviour
     private float lastUseTime = -999f;
     private bool wasAbove;
     private bool isBoosting;
+
+    public bool IsBoosting => isBoosting;
+    public float cooldownRemaining => Mathf.Max(0f, (lastUseTime + data.cooldown) - Time.time);
+    public float threshold => data.minLoudness;
 
     private void Reset()
     {
@@ -36,7 +41,7 @@ public class WindGustAbility : MonoBehaviour
         if (isBoosting) return;
         if (Time.time < lastUseTime + data.cooldown) return;
 
-        float loud = MicrophoneInput.Instance.Loudness;
+        float loud = MicrophoneInput.Instance.loudness;
 
         float onThreshold = data.minLoudness;
         float offThreshold = Mathf.Max(0f, data.minLoudness - data.triggerHysteresis);
@@ -61,36 +66,40 @@ public class WindGustAbility : MonoBehaviour
     private IEnumerator DoBoost(float loudAtTrigger)
     {
         isBoosting = true;
-        boat.SetBoostActive(true);
         lastUseTime = Time.time;
 
-        float oldSpeed = boat.speedMultiplier;
-        float oldThrust = boat.thrustMultiplier;
+        // float oldSpeed = boat.speedMultiplier;
+        // float oldThrust = boat.thrustMultiplier;
 
-        float loudFactor = Mathf.Lerp(1f, Mathf.Clamp(loudAtTrigger / Mathf.Max(0.0001f, data.minLoudness), 0.5f, 2f), data.loudnessScaling
-        );
+        float loudFactor = Mathf.Lerp(1f, Mathf.Clamp(loudAtTrigger / Mathf.Max(0.0001f, data.minLoudness), 0.5f, 2f), data.loudnessScaling);
 
-        float newSpeed = oldSpeed * data.speedMultiplier * loudFactor;
-        float newThrust = oldThrust * data.thrustMultiplier;
+        // float newSpeed = oldSpeed * data.speedMultiplier * loudFactor;
+        // float newThrust = oldThrust * data.thrustMultiplier;
 
-        boat.speedMultiplier = newSpeed;
-        boat.thrustMultiplier = newThrust;
+        boat.PushBoost(this);
+        boat.SetSpeedMultiplier(this, data.speedMultiplier * loudFactor);
+        boat.SetThrustMultiplier(this, data.thrustMultiplier);
+
+        // boat.SetBoostActive(true);
 
         if (logBoost)
         {
-            Debug.Log(
+            Debug.Log
+            (
                 $"[WindGust] BOOST activated for {data.duration:0.00}s | " +
-                $"speedMul={data.speedMultiplier:0.00} loudFactor={loudFactor:0.00} => SpeedMultiplier={newSpeed:0.00}, " +
-                $"ThrustMultiplier={newThrust:0.00}"
+                $"speedMul={data.speedMultiplier:0.00} loudFactor={loudFactor:0.00}"
             );
         }
 
         yield return new WaitForSeconds(data.duration);
 
-        boat.speedMultiplier = oldSpeed;
-        boat.thrustMultiplier = oldThrust;
+        // boat.speedMultiplier = oldSpeed;
+        // boat.thrustMultiplier = oldThrust;
 
-        boat.SetBoostActive(false);
+        // boat.SetBoostActive(false);
+        boat.ClearMultipliers(this);
+        boat.ReductBoost(this);
+
         isBoosting = false;
     }
 }

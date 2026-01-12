@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class MicrophoneInput : MonoBehaviour
@@ -5,7 +6,7 @@ public class MicrophoneInput : MonoBehaviour
     public static MicrophoneInput Instance;
 
     [Header("Mic")]
-    [Tooltip("Leer lassen = Default-Mikrofon")]
+    [Tooltip("Leer = Default-Mic")]
     [SerializeField] private string deviceName = null;
 
     [Header("Sampling")]
@@ -16,22 +17,30 @@ public class MicrophoneInput : MonoBehaviour
     [Range(0.01f, 1f)]
     [SerializeField] private float smoothing = 0.2f;
 
-    [Tooltip("Unterhalb dieses Werts gilt es als Rauschen/Still")]
+    [Tooltip("Unterhalb dieses Werts gilt es als Rauschen/Still wir kalibrieren Noise floor aber automatisch, Wert nur für Start...")]
     [SerializeField] private float noiseFloor = 0.01f;
 
-    [Header("Debug")]
-    [SerializeField] private bool logLoudnessChanges = true;
-    [Tooltip("Nur loggen, wenn sich Loudness um mindestens diesen Betrag ändert (verhindert Spam).")]
-    [SerializeField] private float loudnessLogDelta = 0.02f;
+    [Header("Auto Calibration")]
+    [Tooltip("Beim Start für X Sekunden warten und Stille messen und noiseFloor setzen!")]
+    [SerializeField] private bool autoCalibrationOnStart = true;
+    [SerializeField] private float calibrationSeconds = 2f;
 
-    public float LoudnessRaw { get; private set; }
-    public float Loudness { get; private set; }
+    [Tooltip("Sicherheitsaufschlag auf gemessene Stille (verhindert Trigger durch bspw. Grundrauschen)")]
+    [SerializeField] private float calibrationMargin = 0.01f;
+
+    [Tooltip("Glättung für noiseFloor-Anpassung (umso niedriger, desto stabiler!)")]
+    [Range(0.01f, 1f)]
+    [SerializeField] private float noiseFloorSmoothing = 0.25f;
+
+    public float loudnessRaw { get; private set; }
+    public float loudness { get; private set; }
+    public float NoiseFloor => noiseFloor;
+    public bool isCalibrating { get; private set; }
 
     private AudioClip clip;
     private bool micReady;
 
-    private float lastLoggedLoudness;
-
+    ///////////////////////////////////////////////////////////////
     private void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
@@ -39,13 +48,19 @@ public class MicrophoneInput : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         StartMic();
+
+        if (autoCalibrationOnStart) StartCoroutine(CalibrateNoiseFloor());
     }
+
+    ///////////////////////////////////////////////////////////////
 
     private void OnDisable()
     {
         if (Microphone.IsRecording(deviceName))
             Microphone.End(deviceName);
     }
+
+    ///////////////////////////////////////////////////////////////
 
     private void StartMic()
     {
@@ -61,26 +76,76 @@ public class MicrophoneInput : MonoBehaviour
         micReady = clip != null;
     }
 
+    ///////////////////////////////////////////////////////////////
+
     private void Update()
     {
         if (!micReady || clip == null) return;
 
-        LoudnessRaw = GetRmsLoudness();
-        float gated = Mathf.Max(0f, LoudnessRaw - noiseFloor);
+        loudnessRaw = GetRmsLoudness();
+
+        float gated = Mathf.Max(0f, loudnessRaw - noiseFloor); // Das Gate verursacht, das alles unter noiseFloor 0 wird!
 
         // Exponentielles Glätten
-        float previous = Loudness;
-        Loudness = Mathf.Lerp(Loudness, gated, smoothing);
+        // float previous = loudness;
+        loudness = Mathf.Lerp(loudness, gated, smoothing);
 
+        /*
         if (logLoudnessChanges)
         {
-            if (Mathf.Abs(Loudness - lastLoggedLoudness) >= loudnessLogDelta)
+            if (Mathf.Abs(loudness - lastLoggedLoudness) >= loudnessLogDelta)
             {
-                lastLoggedLoudness = Loudness;
-                Debug.Log($"[Mic] Loudness changed -> {Loudness:0.000} (raw {LoudnessRaw:0.000}, gated {gated:0.000})");
+                lastLoggedLoudness = loudness;
+                Debug.Log($"[Mic] Loudness changed -> {loudness:0.000} (raw {LoudnessRaw:0.000}, gated {gated:0.000})");
             }
         }
+        */
     }
+
+    ///////////////////////////////////////////////////////////////
+    
+    public void Recalibrate()
+    {
+        if (!gameObject.activeInHierarchy) return;
+        StartCoroutine(CalibrateNoiseFloor());
+    }
+
+    ///////////////////////////////////////////////////////////////
+    
+    private IEnumerator CalibrateNoiseFloor()
+    {
+        if (!micReady || clip == null) yield break;
+
+        isCalibrating = true;
+
+        float t = 0f;
+        float sum = 0f;
+        int n = 0;
+
+        yield return null;
+
+        while (t < calibrationSeconds)
+        {
+            float rms = GetRmsLoudness();
+            sum += rms;
+            n++;
+
+            t += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        float avg = (n > 0) ? (sum / n) : noiseFloor;
+        float targetFloor = avg + calibrationMargin;
+
+        // noiseFloor smoothen um krasse Sprünge zu vermeiden
+        noiseFloor = Mathf.Lerp(noiseFloor, targetFloor, noiseFloorSmoothing);
+
+        isCalibrating = false;
+
+        Debug.Log($"[Mic] Calibrated noiseFloor={noiseFloor:0.000} (avg silence={avg:0.000}, margin={calibrationMargin:0.000})");
+    }
+
+    ///////////////////////////////////////////////////////////////
 
     private float GetRmsLoudness()
     {

@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections.Generic;
+using System.Drawing;
 
 [RequireComponent(typeof(Rigidbody))]
 public class BoatControl : MonoBehaviour
 {
-    [Header("References")]
-    [SerializeField] private Transform engine;
 
     [Header("Throttle")]
     [SerializeField] private float maxForwardSpeed = 6f;
@@ -24,11 +24,17 @@ public class BoatControl : MonoBehaviour
 
     private Rigidbody rb;
 
-    public bool boostActive { get; private set; }
-    public void SetBoostActive(bool active) => boostActive = active;
-    public float thrustMultiplier { get; set; } = 1f;
-    public float turnMultiplier { get; set; } = 1f;
-    public float speedMultiplier { get; set; } = 1f;
+    private readonly Dictionary<object, float> speedMods = new();
+    private readonly Dictionary<object, float> thrustMods = new();
+    private readonly Dictionary<object, float> turnMods = new();
+
+    private int boostCount = 0;
+    public bool boostActive => boostCount > 0;
+    // public bool boostActive { get; private set; }
+    // public void SetBoostActive(bool active) => boostActive = active;
+    // public float thrustMultiplier { get; set; } = 1f;
+    // public float turnMultiplier { get; set; } = 1f;
+    // public float speedMultiplier { get; set; } = 1f;
 
     void Awake()
     {
@@ -36,7 +42,6 @@ public class BoatControl : MonoBehaviour
         rb.maxAngularVelocity = 3f;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float steerInput = 0f;
@@ -54,6 +59,28 @@ public class BoatControl : MonoBehaviour
         ApplyHydroDrag();
     }
 
+    // Schnittstelle für die Fähigkeiten aus anderen Scripts
+    public void SetSpeedMultiplier(object source, float multiplier) => SetMod(speedMods, source, multiplier);
+    public void SetThrustMultiplier(object source, float multiplier) => SetMod(thrustMods, source, multiplier);
+    public void SetTurnMultiplier(object source, float multiplier) => SetMod(turnMods, source, multiplier);
+
+    public void ClearMultipliers(object source)
+    {
+        speedMods.Remove(source);
+        thrustMods.Remove(source);
+        turnMods.Remove(source);
+    }
+
+    public void PushBoost(object source)
+    {
+        boostCount++;
+    }
+
+    public void ReductBoost(object source)
+    {
+        boostCount = Mathf.Max(0, boostCount - 1);
+    }
+
     private void ApplyThrottle(float input)
     {
         if (Mathf.Approximately(input, 0f)) return;
@@ -61,8 +88,10 @@ public class BoatControl : MonoBehaviour
         Vector3 forwardFlat = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
 
         float baseSpeed = (input > 0f ? maxForwardSpeed : maxReverseSpeed) * Mathf.Sign(input);
-        float targetSpeed = baseSpeed * speedMultiplier;
-        float force = (input > 0f ? accelerationForce : reverseAccelerationForce) * thrustMultiplier;
+        float targetSpeed = baseSpeed * GetProduct(speedMods);
+
+        float baseForce = input > 0f ? accelerationForce : reverseAccelerationForce;
+        float force = baseForce * GetProduct(thrustMods);
 
         PhysicsHelper.ApplyForceToReachVelocity(rb, forwardFlat * targetSpeed, force);
     }
@@ -76,7 +105,7 @@ public class BoatControl : MonoBehaviour
         float speedSteerFactor = Mathf.Clamp01(speedAbs / minSpeedForFullSteering); 
         float steerFactor = Mathf.Lerp(minSteerFactor, 1f, speedSteerFactor);
 
-        float desiredYawDeg = input * maxYawDegPerSec * steerFactor * turnMultiplier;
+        float desiredYawDeg = input * maxYawDegPerSec * steerFactor * GetProduct(turnMods);
         float desiredYawRad = desiredYawDeg * Mathf.Deg2Rad;
 
         float currentYaw = Vector3.Dot(rb.angularVelocity, transform.up);
@@ -96,10 +125,16 @@ public class BoatControl : MonoBehaviour
 
     ////////////////////////////////////////////////////
     
-    public void SetMultipliers(float speed, float thrust, float turn)
+    public void SetMod(Dictionary<object, float> dict, object source, float multiplier)
     {
-        speedMultiplier = speed;
-        thrustMultiplier = thrust;
-        turnMultiplier = turn;
+        if (multiplier <= 0f) multiplier = 0.0001f;
+        dict[source] = multiplier;
+    }
+
+    private static float GetProduct(Dictionary<object, float> dict)
+    {
+        float product = 1f;
+        foreach (var keyValue in dict) product *= keyValue.Value;
+        return product;
     }
 }
