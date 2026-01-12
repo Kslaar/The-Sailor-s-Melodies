@@ -1,31 +1,22 @@
 using System;
 using UnityEngine;
 
-[RequireComponent(typeof(Collider))]
-public class FuelPickup : MonoBehaviour
+public class FuelPickup : ItemPickup
 {
+    [Header("Fuel Settings")]
     [SerializeField] private bool refillFull = true; 
     [SerializeField] private float addSeconds = 10f;
 
-    [Header("FX")]
-    [SerializeField] private GameObject onPickupEffect;
-    void Reset()
+    protected override bool TryApply(GameObject collector)
     {
-        GetComponent<Collider>().isTrigger = true;
-    }
+        var fuel = collector.GetComponentInParent<BoatFuel>();
 
-    private void OnTriggerEnter(Collider other)
-    {
-        BoatFuel fuel = other.GetComponentInParent<BoatFuel>();
-
-        if (fuel == null) return;
+        if (fuel == null) return false;
 
         if (refillFull) fuel.Refill();
         else fuel.AddFuel(addSeconds);
 
-        if (onPickupEffect != null)
-            Instantiate(onPickupEffect, transform.position, Quaternion.identity);
-
-        Destroy(gameObject);
+        Debug.Log("[Pickup] Fuel collected -> " + (refillFull ? "RefillFull" : $"Add {addSeconds}s"));
+        return true;
     }
 }
