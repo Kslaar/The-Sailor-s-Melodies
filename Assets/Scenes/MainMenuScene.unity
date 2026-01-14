@@ -209,8 +209,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: CREDITS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
-  m_sharedMaterial: {fileID: -724517502690950, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
+  m_sharedMaterial: {fileID: 4919497647762548591, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -518,8 +518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: SETTINGS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
-  m_sharedMaterial: {fileID: -724517502690950, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
+  m_sharedMaterial: {fileID: 4919497647762548591, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -654,8 +654,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: LOAD GAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
-  m_sharedMaterial: {fileID: -724517502690950, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
+  m_sharedMaterial: {fileID: 4919497647762548591, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -790,8 +790,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: NEW GAME
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
-  m_sharedMaterial: {fileID: -724517502690950, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
+  m_sharedMaterial: {fileID: 4919497647762548591, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1589,8 +1589,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: THE SAILOR'S MELODIES
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
-  m_sharedMaterial: {fileID: -724517502690950, guid: c54f8028846a44219b0eee8feb0f9c8a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
+  m_sharedMaterial: {fileID: 4919497647762548591, guid: e0d3531b3cd724e17a63ecfd5abea04a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2072,7 +2072,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 27
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0

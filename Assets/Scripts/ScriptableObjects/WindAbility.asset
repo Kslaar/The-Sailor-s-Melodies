@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01c0b344fb1fd4a4aa8d42b68ff70e6d, type: 3}
   m_Name: WindAbility
   m_EditorClassIdentifier: Assembly-CSharp::WindGustData
-  cooldown: 0
+  cooldown: 3
   minLoudness: 0.1
   triggerHysteresis: 0.02
   duration: 0.6
-  speedMultiplier: 4
-  thrustMultiplier: 4
+  speedMultiplier: 2.5
+  thrustMultiplier: 1.5
   loudnessScaling: 0.7

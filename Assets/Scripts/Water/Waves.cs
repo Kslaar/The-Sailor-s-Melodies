@@ -28,7 +28,7 @@ public class Waves : MonoBehaviour
     public float GetHeightFromPoint(Vector3 position)
     {
         var scale = new Vector3(1 / transform.lossyScale.x, 0, 1 / transform.lossyScale.z);
-        var localPos = Vector3.Scale((position - transform.position), scale);
+        var localPos = Vector3.Scale(position - transform.position, scale);
 
         var pos1 = new Vector3(Mathf.Floor(localPos.x), 0, Mathf.Floor(localPos.z));
         var pos2 = new Vector3(Mathf.Floor(localPos.x), 0, Mathf.Ceil(localPos.z));
