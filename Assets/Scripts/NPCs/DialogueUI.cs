@@ -1,7 +1,6 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel.Design.Serialization;
-using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -48,7 +47,7 @@ public class DialogueUI : MonoBehaviour
         // Möglichkeit den Typewriter-Effekt zu überspringen
         if (isTyping && ((kb != null && kb.spaceKey.wasPressedThisFrame) || (mouse != null && mouse.leftButton.wasPressedThisFrame)))
         {
-            SkipTypewriter();
+            SkipTypewriter_Fixed();
         }
     }
 
@@ -111,6 +110,7 @@ public class DialogueUI : MonoBehaviour
         BuildChoices(choices);
     }
 
+    /*
     private void SkipTypewriter()
     {
         StopTyping();
@@ -130,6 +130,7 @@ public class DialogueUI : MonoBehaviour
         // ABER: weil wir StopCoroutine machen, würde die Coroutine nicht mehr zu Ende laufen.
         // Also: wir brauchen cached choices.
     }
+    */
 
     private List<DialogueAsset.Choice> cachedChoices;
 
@@ -140,5 +141,53 @@ public class DialogueUI : MonoBehaviour
 
         typingRoutine = null;
         isTyping = false;
+    }
+
+    private void BuildChoices(List<DialogueAsset.Choice> choices)
+    {
+        cachedChoices = choices;
+
+        ClearChoices();
+
+        if (choices == null || choices.Count == 0)
+        {
+            return; // Hier könnte man noch einen default Continue Button einbauen... später
+        }
+
+        foreach (var c in choices)
+        {
+            var btn = Instantiate(choiceButtonPrefab, choicesRoot);
+            spawnedButtons.Add(btn);
+
+            var label = btn.GetComponentInChildren<TMP_Text>();
+            if (label != null) label.text = c.label;
+
+            btn.onClick.AddListener(() => { onChoiceCallback?.Invoke(c); });
+        }
+    }
+
+    private void ClearChoices()
+    {
+        for (int i = 0; i < spawnedButtons.Count; i++)
+        {
+            if (spawnedButtons[i] != null)
+                Destroy(spawnedButtons[i].gameObject);
+        }
+        spawnedButtons.Clear();
+
+        // if (choicesRoot != null)
+    }
+
+    private void SkipTypewriter_Fixed()
+    {
+        StopTyping();
+
+        if (bodyText != null)
+            bodyText.text = fullText;
+
+        isTyping = false;
+        typingRoutine = null;
+
+        BuildChoices(cachedChoices);
     }
 }

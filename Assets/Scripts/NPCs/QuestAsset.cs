@@ -3,7 +3,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 
 [CreateAssetMenu(menuName ="Game/Quests/Quest")]
-public class QuestAsset : MonoBehaviour
+public class QuestAsset : ScriptableObject
 {
     public string questID;
     public string title;
