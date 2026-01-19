@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e630dc122e0f84120853211c2139b372, type: 3}
+  m_Name: Pastor Dialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  npcAvatar: {fileID: 21300000, guid: 9188c3c22db3c41e19a60e0728259829, type: 3}
+  npcName: Pastor
+  nodes:
+  - id: start
+    text: "Thank you kind sailor for answering our call. \nAs you know the Holy Radio
+      has been missing since the last pope went missing. First I have to see if you
+      master the art of sailing before I entrust you with this quest. This island
+      has had many tankers pass that dropped fuel cans. Please get them all out of
+      the ocean."
+    choices:
+    - label: Sure I'll help you
+      nextNodeID: hilfe_zugesagt
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 152d4cee473704c029c4470bdcbde292, type: 2}
+    - label: Why do you need my help?
+      nextNodeID: nachfrage
+      actionsOnChoose: []
+    - label: What's in there for me?
+      nextNodeID: belohnung_frage
+      actionsOnChoose: []
+    actionsOnEnter:
+    - {fileID: 0}
+  - id: hilfe_zugesagt
+    text: We pray for your quick return!
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+    actionsOnEnter:
+    - {fileID: 0}
+  - id: nachfrage
+    text: Because only a small sail boat like yours can traverse this atoll flawlessly.
+      Please! We need someone like you!
+    choices:
+    - label: Sure I'll help you
+      nextNodeID: hilfe_zugesagt
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 152d4cee473704c029c4470bdcbde292, type: 2}
+    - label: What's in there for me?
+      nextNodeID: belohnung_frage
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 152d4cee473704c029c4470bdcbde292, type: 2}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+    actionsOnEnter:
+    - {fileID: 0}
+  - id: belohnung_frage
+    text: We don't have much, but I would offer you a sacred shell, that helps you
+      sail when no winds are there to catch
+    choices:
+    - label: Sure I'll help you
+      nextNodeID: hilfe_zugesagt
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 152d4cee473704c029c4470bdcbde292, type: 2}
+    - label: I am not interested
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+    actionsOnEnter: []
+  startNodeID: start

@@ -15,10 +15,19 @@ public class DialogueManager : MonoBehaviour
         if (Instance != null)  { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        if (ui == null) ui = FindFirstObjectByType<DialogueUI>();
     }
 
     public void StartDialogue(DialogueAsset asset)
     {
+        Debug.Log($"[DialogueManager] StartDialogue called. asset={(asset != null ? asset.name : "NULL")} ui={(ui != null ? ui.name : "NULL")}");
+
+        if (ui == null)
+        {
+            Debug.LogWarning("[DialogueManager] DialogueUI reference is NULL. Assign it in the Inspector.");
+            return;
+        }
         current = asset;
         node = current.nodes.FirstOrDefault(n => n.id == current.startNodeID);
 
@@ -29,7 +38,15 @@ public class DialogueManager : MonoBehaviour
 
     private void ShowNode()
     {
-        if (node == null) { EndDialogue(); return; }
+        Debug.Log($"[DialogueManager] ShowNode. current={(current != null ? current.name : "NULL")} node={(node != null ? node.id : "NULL")} startId={(current != null ? current.startNodeID : "NULL")}");
+
+        if (ui == null) return;
+        if (node == null)
+        {
+            Debug.LogWarning("[DialogueManager] Node is NULL. Check startNodeId and node ids in the DialogueAsset.");
+            EndDialogue();
+            return;
+        }
 
         foreach (var act in node.actionsOnEnter) act?.Execute();
 

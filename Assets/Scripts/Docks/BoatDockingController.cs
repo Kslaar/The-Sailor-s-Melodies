@@ -86,6 +86,9 @@ public class BoatDockingController : MonoBehaviour
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
         if(currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
 
+        if (currentDock.dockUI != null)
+            currentDock.dockUI.Show(currentDock.defaultDialogue);
+
         GameStateManager.Instance?.SetState(GameState.Docked);
     }
 
@@ -103,6 +106,9 @@ public class BoatDockingController : MonoBehaviour
 
         if (cursorLock != null) cursorLock.LockCursor();
         else { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
+
+        if (currentDock != null && currentDock.dockUI != null)
+            currentDock.dockUI.Hide();
 
         GameStateManager.Instance?.SetState(GameState.Sailing);
     }

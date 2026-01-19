@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
+  m_Name: Quest Asset
+  m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
+  questID: collect_fuel_1
+  title: Collecting ABC
+  description: "The Pastor ordered me to collect all the fuelcans the tankers dropped
+    overboard. \nAs a Reward, he promised my a holy Object"
+  objectives:
+  - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
+  rewards:
+  - {fileID: 0}

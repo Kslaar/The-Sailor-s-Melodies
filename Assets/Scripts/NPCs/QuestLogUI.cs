@@ -13,8 +13,8 @@ public class QuestLogUI : MonoBehaviour
     [SerializeField] private  TMP_Text activeQuest;
     [SerializeField] private  TMP_Text completedQuest;
 
-    [Header("Input")]
-    [SerializeField] private  Key toggleKey = Key.T;
+    // [Header("Input")]
+    // [SerializeField] private  Key toggleKey = Key.T; 
 
     [Header("Cursor")]
     [SerializeField] private CursorLockController cursorLock;
