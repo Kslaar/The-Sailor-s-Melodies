@@ -52,5 +52,7 @@ public class DockInteractionUI : MonoBehaviour
             return;
         }
         DialogueManager.Instance?.StartDialogue(dialogue);
+        
+        Hide(); 
     }
 }
