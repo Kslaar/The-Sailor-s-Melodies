@@ -4,6 +4,11 @@ using UnityEngine.InputSystem;
 
 public class MotorBoostAbility : MonoBehaviour
 {
+[Header("Audio")]
+[SerializeField] private AudioSource boostAudio;
+[SerializeField] private float boostFadeTime = 0.2f;
+
+
     [SerializeField] private BoatControl boat;
     [SerializeField] private BoatFuel fuel;
     [SerializeField] private MotorBoostData data;
@@ -114,6 +119,16 @@ public class MotorBoostAbility : MonoBehaviour
         boat.PushBoost(this);
         boat.SetSpeedMultiplier(this, data.speedMultiplier);
         boat.SetThrustMultiplier(this, data.thrustMultiplier);
+        // Boost Sound Start
+        if (boostAudio != null)
+        {
+            boostAudio.volume = 0f;
+            boostAudio.Play();
+            StartCoroutine(FadeAudio(boostAudio, 1f, boostFadeTime));
+        }
+    
+
+
 
         if (logAttempts)
             Debug.Log($"[Motor] ENGINE ON (x{data.speedMultiplier:0.0} speed) fuel={fuel.CurrentFuel:0.0}s");
@@ -128,6 +143,13 @@ public class MotorBoostAbility : MonoBehaviour
         boat.ClearMultipliers(this);
         boat.ReductBoost(this);
 
+        //BOOST SOUND STOP
+        if (boostAudio != null && boostAudio.isPlaying)
+        {
+            StartCoroutine(FadeOutAndStop(boostAudio, boostFadeTime));
+
+        }
+
         if (logAttempts)
             Debug.Log($"[Motor] ENGINE OFF fuel={fuel.CurrentFuel:0.0}s");
     }
@@ -138,4 +160,27 @@ public class MotorBoostAbility : MonoBehaviour
         resetDist = 0f;
         needsReset = false;
     }
+    private System.Collections.IEnumerator FadeAudio(AudioSource source, float targetVolume, float duration)
+{
+    float startVolume = source.volume;
+    float t = 0f;
+
+    while (t < duration)
+    {
+        t += Time.deltaTime;
+        source.volume = Mathf.Lerp(startVolume, targetVolume, t / duration);
+        yield return null;
+    }
+
+    source.volume = targetVolume;
 }
+
+private System.Collections.IEnumerator FadeOutAndStop(AudioSource source, float duration)
+{
+    yield return FadeAudio(source, 0f, duration);
+    source.Stop();
+}
+
+
+}
+
