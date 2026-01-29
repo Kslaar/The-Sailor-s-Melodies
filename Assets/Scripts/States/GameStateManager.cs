@@ -20,5 +20,6 @@ public class GameStateManager : MonoBehaviour
         if (State == newState) return;
         State = newState;
         OnStateChanged?.Invoke(State);
+        Debug.Log($"[State] -> {State}");
     }
 }

@@ -51,6 +51,7 @@ public class DockInteractionUI : MonoBehaviour
             Debug.LogWarning("[DockUI] DialogueManager.Instance is NULL. Is DialogueManager in the scene and Awake setting Instance?");
             return;
         }
+        GameStateManager.Instance.SetState(GameState.Dialogue);
         DialogueManager.Instance?.StartDialogue(dialogue);
         
         Hide(); 

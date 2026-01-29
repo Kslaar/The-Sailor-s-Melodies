@@ -6,4 +6,5 @@ public enum GameState
     Docked,
     Dialogue,
     QuestLog,
+    Paused, 
 }

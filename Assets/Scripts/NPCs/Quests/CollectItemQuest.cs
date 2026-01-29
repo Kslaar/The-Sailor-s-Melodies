@@ -9,7 +9,13 @@ public class CollectItemQuest : QuestObjective
 
     [System.NonSerialized] private int current;
 
+    public int Current => current;
+    public int Required => requiredCount;
+
     public override bool IsComplete => current >= requiredCount;
+    public override string ProgressText => $"{Mathf.Min(current, requiredCount)}/{requiredCount}";
+    public override float Progress01 => requiredCount <= 0 ? 1f : Mathf.Clamp01((float)current / requiredCount);
+
     public override void Register()
     {
         current = 0;
@@ -28,5 +34,7 @@ public class CollectItemQuest : QuestObjective
 
         current++;
         Debug.Log($"[Quest] Collected {itemID}: {current}/{requiredCount}");
+
+        QuestManager.Instance?.NotifyObjectiveProgressHasChanged();
     }
 }
