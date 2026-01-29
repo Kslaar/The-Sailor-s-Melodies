@@ -22,6 +22,11 @@ public class BoatControl : MonoBehaviour
     [SerializeField] private float lateralDrag = 2f;
     [SerializeField] private float minSpeedForFullSteering = 2f;
 
+    [Header("Audio")]
+    [SerializeField] private AudioSource sailingAudio;
+
+
+
     private Rigidbody rb;
 
     private readonly Dictionary<object, float> speedMods = new();
@@ -40,6 +45,9 @@ public class BoatControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.maxAngularVelocity = 3f;
+        if (sailingAudio != null && !sailingAudio.isPlaying)
+        sailingAudio.Play();
+
     }
 
     void FixedUpdate()
@@ -48,7 +56,7 @@ public class BoatControl : MonoBehaviour
 
         if (Keyboard.current.aKey.isPressed) steerInput += 1;
         if (Keyboard.current.dKey.isPressed) steerInput -= 1;  
-
+        
         float throttleInput = 0f;
 
         if (Keyboard.current.wKey.isPressed) throttleInput += 1f;
@@ -94,6 +102,7 @@ public class BoatControl : MonoBehaviour
         float force = baseForce * GetProduct(thrustMods);
 
         PhysicsHelper.ApplyForceToReachVelocity(rb, forwardFlat * targetSpeed, force);
+        
     }
 
     private void ApplySteering(float input)
