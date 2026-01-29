@@ -9701,8 +9701,7 @@ GameObject:
   - component: {fileID: 1302647990}
   - component: {fileID: 1302647992}
   - component: {fileID: 1302647991}
-  - component: {fileID: 1302647993}
-  - component: {fileID: 1302647994}
+  - component: {fileID: 1303536385}
   m_Layer: 5
   m_Name: Active Quests
   m_TagString: Untagged
@@ -9718,7 +9717,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302647989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 17.47442}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9726,7 +9725,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -15.039551, y: 1.5639648}
   m_SizeDelta: {x: 900, y: 980}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1302647991
@@ -9828,7 +9827,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302647989}
   m_CullTransparentMesh: 1
---- !u!114 &1302647993
+--- !u!114 &1302647994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303536384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241305fa0b200489bbf38be1a10fb19c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
+  audioSource: {fileID: 0}
+  pickupSound: {fileID: 8300000, guid: cf7583c1c9cd2456f864fcb20c1e6485, type: 3}
 --- !u!1 &1303536384
 GameObject:
   m_ObjectHideFlags: 0
@@ -9838,7 +9850,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1303536386}
-  - component: {fileID: 1303536385}
+  - component: {fileID: 1302647994}
   m_Layer: 0
   m_Name: SoundManager
   m_TagString: Untagged
@@ -9872,34 +9884,16 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1302647994
-MonoBehaviour:
-  m_GameObject: {fileID: 1303536384}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 241305fa0b200489bbf38be1a10fb19c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  audioSource: {fileID: 0}
-  pickupSound: {fileID: 8300000, guid: cf7583c1c9cd2456f864fcb20c1e6485, type: 3}
 --- !u!4 &1303536386
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1302647989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.ContentSizeFitter
-  m_HorizontalFit: 0
-  m_VerticalFit: 0Projec
   m_GameObject: {fileID: 1303536384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.03957, y: 1.56396, z: 17.47442}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16610,6 +16604,7 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1303536386}
   - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
@@ -16635,5 +16630,4 @@ SceneRoots:
   - {fileID: 734840366}
   - {fileID: 326085990}
   - {fileID: 1528721013}
-  - {fileID: 1303536386}
   - {fileID: 1260012416}
