@@ -17,16 +17,12 @@ public abstract class ItemPickup : MonoBehaviour
         col.isTrigger = true;
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
-        if (!string.IsNullOrEmpty(requiredTag) && !other.CompareTag(requiredTag)) 
+        if (!string.IsNullOrEmpty(requiredTag) && !HasTagInParents(other.transform, requiredTag)) 
             return;
-        
-        GameObject collector = other.attachedRigidbody != null // Falls COllider child ist
-            ? other.attachedRigidbody.gameObject
-            : other.transform.root.gameObject;
 
-        if (TryApply(collector))
+        if (TryApply(other))
         {
             if (onPickupEffect != null)
                 Instantiate(onPickupEffect, transform.position, Quaternion.identity);
@@ -36,5 +32,15 @@ public abstract class ItemPickup : MonoBehaviour
         }
     }
 
-    protected abstract bool TryApply(GameObject collector);
+    private static bool HasTagInParents(Transform t, string tag)
+    {
+        while (t != null)
+        {
+            if (t.CompareTag(tag)) return true;
+            t = t.parent;
+        }
+        return false;
+    }
+
+    protected abstract bool TryApply(Collider other);
 }

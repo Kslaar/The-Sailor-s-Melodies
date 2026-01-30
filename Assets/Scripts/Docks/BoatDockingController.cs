@@ -16,9 +16,12 @@ public class BoatDockingController : MonoBehaviour
     private float holdTimer;
     private bool isDocked;
 
-    private Vector3 savedPos;
-    private Quaternion savedRot;
+    // private Vector3 savedPos;
+    // private Quaternion savedRot;
     private bool savedKinematic;
+
+    public bool IsDocked => isDocked;
+    public DockZone CurrentDock => currentDock;
 
     private void Reset()
     {
@@ -30,8 +33,9 @@ public class BoatDockingController : MonoBehaviour
     {
         if (Keyboard.current == null) return;
 
-        if (GameStateManager.Instance != null && 
-            GameStateManager.Instance.State == GameState.Dialogue || GameStateManager.Instance.State == GameState.QuestLog)
+        var gsm = GameStateManager.Instance;
+
+        if (gsm != null && (gsm.State == GameState.Dialogue || gsm.State == GameState.QuestLog || gsm.State == GameState.Paused))
         return;
 
         if (!isDocked)
@@ -62,12 +66,11 @@ public class BoatDockingController : MonoBehaviour
         isDocked = true;
         holdTimer = 0f;
 
-        // Wo waren wir vor dem Andocken? => Gespeichert
-        savedPos = transform.position;
-        savedRot = transform.rotation;
+        // savedPos = transform.position;
+        // savedRot = transform.rotation;
         savedKinematic = rb.isKinematic;
 
-        //Boot wird ans Dock gesnapped
+        // Boot wird ans Dock gesnapped
         transform.position = currentDock.snapPoint.position;
         transform.rotation = currentDock.snapPoint.rotation;
 
@@ -89,12 +92,18 @@ public class BoatDockingController : MonoBehaviour
         if (currentDock.dockUI != null)
             currentDock.dockUI.Show(currentDock.defaultDialogue);
 
-        GameStateManager.Instance?.SetState(GameState.Docked);
+        GameStateManager.Instance?.TrySetState(GameState.Docked);
     }
 
     public void UndockNow()
     {
         if (!isDocked) return;
+
+        var gsm = GameStateManager.Instance;
+
+        if (gsm != null && gsm.State == GameState.Dialogue)
+            gsm.TryExitDialogue("Undock while in Dialogue...");
+
         isDocked = false;
 
         // Gleiches wie beim Docken nur reversed:
@@ -110,7 +119,7 @@ public class BoatDockingController : MonoBehaviour
         if (currentDock != null && currentDock.dockUI != null)
             currentDock.dockUI.Hide();
 
-        GameStateManager.Instance?.SetState(GameState.Sailing);
+        gsm?.TrySetState(GameState.Sailing, "Undock Now");
     }
 
     private void OnTriggerEnter(Collider other)

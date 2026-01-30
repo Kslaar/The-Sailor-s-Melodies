@@ -19,8 +19,8 @@ public class DialogueUI : MonoBehaviour
     [SerializeField] private TMP_Text bodyText;
 
     [Header("Choices")]
-    [SerializeField] private  Transform choicesRoot;
-    [SerializeField] private  Button choiceButtonPrefab;
+    [SerializeField] private Transform choicesRoot;
+    [SerializeField] private Button choiceButtonPrefab;
 
     [Header("Typewriter")]
     [SerializeField] private float charactersPerSecond = 40f;
@@ -30,7 +30,9 @@ public class DialogueUI : MonoBehaviour
     private string fullText;
 
     private Action<DialogueAsset.Choice> onChoiceCallback;
-    private List<Button> spawnedButtons = new();
+    private readonly List<Button> spawnedButtons = new();
+
+    private List<DialogueAsset.Choice> cachedChoices;
 
     private void Awake()
     {
@@ -44,10 +46,10 @@ public class DialogueUI : MonoBehaviour
         var kb = Keyboard.current;
         var mouse = Mouse.current;
 
-        // Möglichkeit den Typewriter-Effekt zu überspringen
+        // Skip typewriter
         if (isTyping && ((kb != null && kb.spaceKey.wasPressedThisFrame) || (mouse != null && mouse.leftButton.wasPressedThisFrame)))
         {
-            SkipTypewriter_Fixed();
+            FinishTypingInstant();
         }
     }
 
@@ -57,7 +59,7 @@ public class DialogueUI : MonoBehaviour
 
         onChoiceCallback = onChoice;
 
-        // NACHFRAGEN
+        // Header
         if (nameText != null) nameText.text = npcName ?? "";
         if (avatarImage != null)
         {
@@ -65,29 +67,44 @@ public class DialogueUI : MonoBehaviour
             avatarImage.enabled = avatar != null;
         }
 
-        ClearChoices();
+        // Sofort Choices cachen (Dann funktioniert der Skip mid-typewriter)
+        cachedChoices = choices;
 
-        StartTypewriter(text ?? "", choices);
+        ClearChoices();
+        StartTypewriter(text ?? "");
     }
 
     public void Hide()
     {
         StopTyping();
         ClearChoices();
+        cachedChoices = null;
+        onChoiceCallback = null;
+
         if (root != null) root.SetActive(false);
     }
 
-    private void StartTypewriter(string text, List<DialogueAsset.Choice> choices)
+    private void StartTypewriter(string text)
     {
         StopTyping();
 
         fullText = text;
-        if (bodyText != null) bodyText.text = "";
 
-        typingRoutine = StartCoroutine(TypeRoutine(choices));
+        if (bodyText != null)
+            bodyText.text = "";
+
+        if (string.IsNullOrEmpty(fullText))
+        {
+            isTyping = false;
+            typingRoutine = null;
+            BuildChoices(cachedChoices);
+            return;
+        }
+
+        typingRoutine = StartCoroutine(TypeRoutine());
     }
 
-    private IEnumerator TypeRoutine(List<DialogueAsset.Choice> choices)
+    private IEnumerator TypeRoutine()
     {
         isTyping = true;
 
@@ -104,35 +121,24 @@ public class DialogueUI : MonoBehaviour
                 yield return null;
         }
 
+        // Zuende geschrieben
         isTyping = false;
         typingRoutine = null;
 
-        BuildChoices(choices);
+        BuildChoices(cachedChoices);
     }
 
-    /*
-    private void SkipTypewriter()
+    private void FinishTypingInstant()
     {
+        if (!isTyping) return;
+
         StopTyping();
 
-        if (bodyText != null) bodyText.text = fullText;
+        if (bodyText != null)
+            bodyText.text = fullText;
 
-        isTyping = false;
-        typingRoutine = null;
-
-        // Wenn du skipst, müssen die Choices trotzdem erscheinen.
-        // Dazu bauen wir sie neu auf – DialogueManager ruft ShowNode -> Show() bei jedem Node,
-        // also können wir sie hier einfach anzeigen, wenn vorhanden.
-        // (Choices werden im StartTypewriter übergeben; wir speichern sie nicht dauerhaft.
-        // Deshalb: Wenn du 100% Skip+Choices willst, lass Skip nur per Click passieren nachdem Node geladen ist.)
-        // -> Für solide Skip/Choices: wir speichern die choices in einem Feld.
-        // Minimal-Fix: Im Skip bauen wir keine neuen Choices, sondern lassen die Coroutine am Ende dafür sorgen.
-        // ABER: weil wir StopCoroutine machen, würde die Coroutine nicht mehr zu Ende laufen.
-        // Also: wir brauchen cached choices.
+        BuildChoices(cachedChoices);
     }
-    */
-
-    private List<DialogueAsset.Choice> cachedChoices;
 
     private void StopTyping()
     {
@@ -145,24 +151,30 @@ public class DialogueUI : MonoBehaviour
 
     private void BuildChoices(List<DialogueAsset.Choice> choices)
     {
-        cachedChoices = choices;
-
         ClearChoices();
 
         if (choices == null || choices.Count == 0)
-        {
-            return; // Hier könnte man noch einen default Continue Button einbauen... später
-        }
+            return;
 
-        foreach (var c in choices)
+        for (int i = 0; i < choices.Count; i++)
         {
+            DialogueAsset.Choice choice = choices[i];
+
             var btn = Instantiate(choiceButtonPrefab, choicesRoot);
             spawnedButtons.Add(btn);
 
             var label = btn.GetComponentInChildren<TMP_Text>();
-            if (label != null) label.text = c.label;
+            if (label != null) label.text = choice.label;
 
-            btn.onClick.AddListener(() => { onChoiceCallback?.Invoke(c); });
+            btn.onClick.RemoveAllListeners();
+            btn.onClick.AddListener(() =>
+            {
+                // Wenn Spieler klickt während geschrieben wird -> instant finish
+                if (isTyping)
+                    FinishTypingInstant();
+
+                onChoiceCallback?.Invoke(choice);
+            });
         }
     }
 
@@ -174,20 +186,5 @@ public class DialogueUI : MonoBehaviour
                 Destroy(spawnedButtons[i].gameObject);
         }
         spawnedButtons.Clear();
-
-        // if (choicesRoot != null)
-    }
-
-    private void SkipTypewriter_Fixed()
-    {
-        StopTyping();
-
-        if (bodyText != null)
-            bodyText.text = fullText;
-
-        isTyping = false;
-        typingRoutine = null;
-
-        BuildChoices(cachedChoices);
     }
 }

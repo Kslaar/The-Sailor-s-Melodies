@@ -4,22 +4,20 @@ using UnityEngine.InputSystem;
 
 public class QuestLogInput : MonoBehaviour
 {
-    [SerializeField] private QuestLogUI questLogUI;
+    // [SerializeField] private QuestLogUI questLogUI;
 
     void Update()
     {
         if (Keyboard.current == null) return;
+        if (!Keyboard.current.tKey.wasPressedThisFrame)
+            return;
 
         var gsm = GameStateManager.Instance;
-
-        if (Keyboard.current.tKey.wasPressedThisFrame)
-        {
-            if (gsm == null) return;
-
-            if (gsm.State == GameState.QuestLog)
-                gsm.SetState(GameState.Sailing);
-            else    
-                gsm.SetState(GameState.QuestLog);
-        }        
+        if (gsm == null) return;
+    
+        if (gsm.State != GameState.Sailing && gsm.State != GameState.QuestLog)
+            return;
+   
+        gsm.ToggleQuestLog("Pressed T");       
     }
 }

@@ -7,6 +7,11 @@ public static class ItemPickupEvents
 
     public static void RaiseItemCollected(string itemID)
     {
+        if (string.IsNullOrEmpty(itemID))
+        {
+            Debug.LogWarning("[ItemPuckupEvents] itemID ist null/leer - ignorieren");
+            return;
+        }
         OnItemCollected?.Invoke(itemID);
     }
 }
