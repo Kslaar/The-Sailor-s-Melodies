@@ -8,11 +8,8 @@ public class QuestLogUI : MonoBehaviour
     [Header("Root")]
     [SerializeField] private GameObject root;
 
-    [Header("Columns")]
-    [SerializeField] private Transform activeParent;
-    [SerializeField] private Transform completedParent;
-
-    [Header("Prefab")]
+    [Header("List")]
+    [SerializeField] private Transform listParent;
     [SerializeField] private Button questButtonPrefab;
 
     private readonly List<GameObject> spawned = new();
@@ -51,13 +48,6 @@ public class QuestLogUI : MonoBehaviour
         if (root != null) root.SetActive(false);
     }
 
-    public void Toggle()
-    {
-        if (root == null) return;
-        if (root.activeSelf) Close();
-        else Open();
-    }
-
     public void Refresh()
     {
         ClearSpawned();
@@ -65,54 +55,55 @@ public class QuestLogUI : MonoBehaviour
         var qm = QuestManager.Instance;
         if (qm == null) return;
 
-        // Aktive Quests links
-        foreach (var id in qm.ActiveQuestIDs)
-            AddQuestRow(id, activeParent, isCompleted: false);
-
-        // Fertige Quests rechts
-        foreach (var id in qm.CompletedQuestIDs)
-            AddQuestRow(id, completedParent, isCompleted: true);
-    }
-
-    private void AddQuestRow(string questId, Transform parent, bool isCompleted)
-    {
-        if (parent == null || questButtonPrefab == null) return;
-
-        var qm = QuestManager.Instance;
-        var q = qm.GetQuest(questId);
-        if (q == null) return;
-
-        var btn = Instantiate(questButtonPrefab, parent);
-        spawned.Add(btn.gameObject);
-
-        var label = btn.GetComponentInChildren<TMP_Text>();
-        if (label != null)
+        foreach (var id in qm.StartedQuestIDs)
         {
-            if (isCompleted)
+            var q = qm.GetQuest(id);
+            if (q == null) continue;
+
+            var btn = Instantiate(questButtonPrefab, listParent);
+            spawned.Add(btn.gameObject);
+
+            var label = btn.GetComponentInChildren<TMP_Text>();
+            if (label != null)
             {
-                label.text = $"{q.title} ✅";
-            }
-            else
-            {
+                var st = qm.GetState(id);
+
                 string progress = GetProgressSummary(q);
-                label.text = string.IsNullOrEmpty(progress)
-                    ? q.title
-                    : $"{q.title} [{progress}]";
+                string stateSuffix = st == QuestState.ReadyToTurnIn ? " (Ready to turn in)" : st == QuestState.Completed ? " (Completed)" : "";
+
+                label.text = $"{q.title}{stateSuffix}" + (string.IsNullOrEmpty(progress) ? "" : $" [{progress}]");
+
+                ApplyStyle(label, st);
             }
         }
-
-        /*
-        btn.onClick.AddListener(() =>
-        {
-            Debug.Log($"[QuestLogUI] Clicked quest: {questId}");
-        });
-        */
     }
 
     private string GetProgressSummary(QuestAsset q)
     {
         if (q.objectives == null || q.objectives.Count == 0) return "";
-        return q.objectives[0].ProgressText; // Erstes objective anzeigen
+
+        var obj = q.objectives[0];
+        if (obj == null) return "";
+        return obj.ProgressText;
+    }
+
+    private void ApplyStyle(TMP_Text label, QuestState st)
+    {
+        label.fontStyle &= ~FontStyles.Strikethrough;
+
+        var c = label.color;
+
+        if (st == QuestState.Completed)
+        {
+            label.fontStyle |= FontStyles.Strikethrough;
+            c.a = 0.5f; // Wir setzen das Alpha auf die Hälfte
+            label.color = c;
+        }
+        else
+        {
+            c.a = 1f;
+            label.color = c;
+        }
     }
 
     private void ClearSpawned()

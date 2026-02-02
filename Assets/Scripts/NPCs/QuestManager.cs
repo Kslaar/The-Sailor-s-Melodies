@@ -5,7 +5,7 @@ using UnityEngine;
 public enum QuestState
 {
     Active,
-    ReadyToComplete,
+    ReadyToTurnIn,
     Completed,
 }
 
@@ -15,8 +15,7 @@ public class QuestManager : MonoBehaviour
 
     [SerializeField] private List<QuestAsset> allQuests = new();
 
-    private readonly HashSet<string> active = new();
-    private readonly HashSet<string> completed = new();
+    private readonly Dictionary<string, QuestState> stateByID = new();
 
     public event Action OnQuestsChanged; // Quest schon fertig?
     public event Action OnObjectiveProgressHasChanged; // laufende Veränderungen in der Quest?
@@ -30,60 +29,99 @@ public class QuestManager : MonoBehaviour
 
     private void Update()
     {
-        foreach (var id in new List<string>(active))
+        foreach (var id in new List<string>(stateByID.Keys))
         {
+            if (stateByID[id] != QuestState.Active) continue;
+
             var q = GetQuest(id);
             if (q == null) continue;
 
-            bool done = true;
+            bool objectivesDone = true;
             foreach (var obj in q.objectives)
-                done &= obj.IsComplete;
+            {
+                if (obj == null) continue;
+                objectivesDone &= obj.IsComplete;
+            }
 
-            if (done) CompleteQuest(id);
+            if (objectivesDone)
+            {
+                stateByID[id] = QuestState.ReadyToTurnIn;
+                Debug.Log($"[QuestManager] Quest ready to turn in: {id}");
+                OnQuestsChanged?.Invoke();
+            }
         }
     }
 
     public void StartQuest(string questID)
     {
         if (string.IsNullOrEmpty(questID)) return;
-        if (completed.Contains(questID) || active.Contains(questID)) return;
+        
+        // Wenn wir die Quest bereist angenommen/beendet haben, kann sie nicht erneut gestarted werden
+        if (stateByID.ContainsKey(questID)) return;
+
+        var q = GetQuest(questID);
+        if (q == null)
+        {
+            Debug.LogWarning($"[QuestManager] StartQuest: Quest '{questID}' nicht gefunden in allQuests");
+            return;
+        }
+
+        stateByID[questID] = QuestState.Active;
+
+        foreach (var obj in q.objectives)
+        {
+            if (obj == null) continue;
+            obj.Register();
+        }
+
+        Debug.Log($"[QuestManager] Quest begonnen: {questID}");
+        OnQuestsChanged?.Invoke();
+    }
+
+    public void TurnInQuest(string questID)
+    {
+        if (string.IsNullOrEmpty(questID)) return;
+
+        if (!stateByID.TryGetValue(questID, out var st)) return;
+
+        if (st != QuestState.ReadyToTurnIn)
+        {
+            Debug.LogWarning($"[QuestManager] TurnInQuest wurde blockiert: '{questID}' ist '{st} muss ReadyToTurnin sein'");
+            return;
+        }
 
         var q = GetQuest(questID);
         if (q == null) return;
 
-        active.Add(questID);
-        foreach (var obj in q.objectives) obj.Register();
-
-        Debug.Log($"[QuestManager] Quest started: {questID}");
-        OnQuestsChanged?.Invoke();
-    }
-
-    public void CompleteQuest(string questID)
-    {
-        if (!active.Remove(questID)) return;
-        completed.Add(questID);
-
-        var q = GetQuest(questID);
-        if (q != null)
-        { 
-            foreach (var obj in q.objectives) obj.Unregister();
-            foreach (var r in q.rewards) r.Apply();
+        if (q.rewards != null)
+        {
+            foreach (var r in q.rewards)
+            {
+                if (r == null) continue; // Solange ich noch keine Questassets habe nullsicher
+                r.Apply();
+            }
         }
 
-        Debug.Log($"[QuestManager] Quest completed: {questID}");
+        Debug.Log($"[QuestManager] Quest eingereicht + abgeschlossen: {questID}");
         OnQuestsChanged?.Invoke();
     }
 
-    public bool IsActive(string questID) => active.Contains(questID);
-    public bool IsCompleted(string questID) => completed.Contains(questID);
-
-    public IEnumerable<string> ActiveQuestIDs => active;
-    public IEnumerable<string> CompletedQuestIDs => completed;
-
     public QuestAsset GetQuest(string id) => allQuests.Find(q => q.questID == id);
+    public QuestState GetState(string questID)
+        => stateByID.TryGetValue(questID, out var st) ? st : default;
+    public bool IsActive(string questID) 
+        => stateByID.TryGetValue(questID, out var st) && st == QuestState.Active;
+    public bool IsReadyToTurnIn(string questID) 
+        => stateByID.TryGetValue(questID, out var st) && st == QuestState.ReadyToTurnIn;
+    public bool IsCompleted(string questID) 
+        => stateByID.TryGetValue(questID, out var st) && st == QuestState.Completed;
+
+    public IEnumerable<string> StartedQuestIDs => stateByID.Keys;
 
     public void NotifyObjectiveProgressHasChanged()
     {
         OnObjectiveProgressHasChanged?.Invoke();
     }
+
+    public bool HasStarted(string questID) => stateByID.ContainsKey(questID);
 }
