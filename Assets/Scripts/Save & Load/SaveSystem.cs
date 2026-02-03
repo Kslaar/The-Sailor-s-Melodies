@@ -4,55 +4,43 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    public static void SavePlayer(BoatControl player) // BoatControl needs to be parent to a yet to add Player Class
+
+    private static string PathSave => Application.persistentDataPath + "/game.savedGame";
+
+    public static void SaveGame(BoatControl player) 
     {
-        BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.savedGame";
-        FileStream stream = new FileStream(path, FileMode.Create);
+        var formatter = new BinaryFormatter();
 
-        PlayerData data = new PlayerData(player);
-
+        using FileStream stream = new FileStream(PathSave, FileMode.Create);
+        SaveGameData data = new SaveGameData(player);
         formatter.Serialize(stream, data);
 
-        Debug.Log($"SAVED -> {path} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})");
-        // stream.Close();
+        Debug.Log($"SAVED -> {PathSave} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})" +
+        $"| quests={(data.questStates != null ? data.questStates.Count : 0)} | items={(data.itemCounts != null ? data.itemCounts.Count : 0)}");
     }
 
-    public static PlayerData LoadPlayer()
+    public static SaveGameData LoadGame()
     {
-        /*
-        string path = Application.persistentDataPath + "/player.savedGame";
-
-        if (File.Exists(path))
+        if (!File.Exists(PathSave))
         {
-            BinaryFormatter formatter = new BinaryFormatter();
-            FileStream stream = new FileStream(path, FileMode.Open);
-
-            PlayerData data = formatter.Deserialize(stream) as PlayerData;
-            stream.Close();
-
-            return data;
-        }
-        else
-        {
-            Debug.LogError("Save File does not exist in current " + path);
+            Debug.Log("Save File does not exist: " + PathSave);
             return null;
         }
-        */
-        string path = Application.persistentDataPath + "/player.savedGame";
 
-    if (!File.Exists(path))
-    {
-        Debug.LogError("Save File does not exist: " + path);
-        return null;
-    }
+        var formatter = new BinaryFormatter();
+        using FileStream stream = new FileStream(PathSave, FileMode.Open);
 
-    BinaryFormatter formatter = new BinaryFormatter();
-    using FileStream stream = new FileStream(path, FileMode.Open);
+        var data = formatter.Deserialize(stream) as SaveGameData;
 
-    PlayerData data = formatter.Deserialize(stream) as PlayerData;
-    Debug.Log($"LOADED -> {path} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})");
-    return data;
-    
+        if (data == null)
+        {
+            Debug.LogError($"[SaveSystem] Deserialized data is NULL.");
+            return null;
+        }
+
+        Debug.Log($"LOADED -> {PathSave} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})" +
+        $"| quests={(data.questStates != null ? data.questStates.Count : 0)} | items={(data.itemCounts != null ? data.itemCounts.Count : 0)}");
+        
+        return data;
     }
 }

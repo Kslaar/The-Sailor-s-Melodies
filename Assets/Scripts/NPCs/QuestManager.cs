@@ -9,6 +9,13 @@ public enum QuestState
     Completed,
 }
 
+[System.Serializable]
+public class QuestStateEntry
+{
+    public string questID;
+    public QuestState state;
+}
+
 public class QuestManager : MonoBehaviour
 {
     public static QuestManager Instance { get; private set; }
@@ -124,4 +131,42 @@ public class QuestManager : MonoBehaviour
     }
 
     public bool HasStarted(string questID) => stateByID.ContainsKey(questID);
+
+    public List<QuestStateEntry> ExportStates()
+    {
+        var list = new List<QuestStateEntry>(stateByID.Count);
+        foreach (var keyvalue in stateByID)
+            list.Add(new QuestStateEntry { questID = keyvalue.Key, state = keyvalue.Value});
+        return list;
+    }
+
+    public void ImportStates(List<QuestStateEntry> list)
+    {
+        stateByID.Clear();
+        if (list == null) return;
+
+        foreach (var entry in list)
+        {
+            if (string.IsNullOrWhiteSpace(entry.questID)) return;
+            stateByID[entry.questID] = entry.state;
+        }
+
+        OnQuestsChanged?.Invoke();
+        NotifyObjectiveProgressHasChanged();
+    }
+
+    public void ReRegisterActiveObjectives()
+    {
+        foreach (var id in new List<string>(stateByID.Keys))
+        {
+            if (stateByID[id] != QuestState.Active) continue;
+
+            var q = GetQuest(id);
+            if (q == null) continue;
+
+            foreach (var obj in q.objectives)
+                obj?.Register();
+        }
+         NotifyObjectiveProgressHasChanged();
+    }
 }

@@ -41,7 +41,7 @@ public class SLManager : MonoBehaviour
             Debug.LogError("Player reference is missing in SLManager!");
             return;
         }
-        SaveSystem.SavePlayer(player);
+        SaveSystem.SaveGame(player);
     }
 
     public void LoadPlayer()
@@ -83,9 +83,19 @@ public class SLManager : MonoBehaviour
     }
     private void ApplySavedData()
     {
-        PlayerData data = SaveSystem.LoadPlayer();
+        SaveGameData data = SaveSystem.LoadGame();
         if (data == null) return;
 
+        // 1. Items importieren
+        if (ItemCollectionRegistry.Instance != null)
+            ItemCollectionRegistry.Instance.Import(data.itemCounts);
+
+        // 2. Queststates importieren
+        if (QuestManager.Instance != null)
+            QuestManager.Instance.ImportStates(data.questStates);
+            QuestManager.Instance.ReRegisterActiveObjectives();
+
+        // 3. Wir setzen den Spieler
         Vector3 position = new Vector3(
         data.playerPosition[0],
         data.playerPosition[1],

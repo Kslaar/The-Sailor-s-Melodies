@@ -19,7 +19,11 @@ public class CollectItemQuest : QuestObjective
     public override void Register()
     {
         current = 0;
+        if (ItemCollectionRegistry.Instance != null)
+            current = ItemCollectionRegistry.Instance.GetCount(itemID);
+
         ItemPickupEvents.OnItemCollected += HandleCollected;
+        QuestManager.Instance?.NotifyObjectiveProgressHasChanged();
     }
 
     public override void Unregister()
