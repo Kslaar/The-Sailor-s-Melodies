@@ -4,57 +4,54 @@ public class UIAudioManager : MonoBehaviour
 {
     public static UIAudioManager Instance;
 
-    [Header("Audio Source")]
-    [SerializeField] private AudioSource uiSource;
-
-    [Header("UI Sounds")]
-    [SerializeField] private AudioClip click;
-    [SerializeField] private AudioClip hover;
-    [SerializeField] private AudioClip error;
-    [SerializeField] private AudioClip start;
-
+    [Header("Wwise UI Events")]
+    public AK.Wwise.Event clickEvent;
+    public AK.Wwise.Event hoverEvent;
+    public AK.Wwise.Event backEvent;
+    public AK.Wwise.Event confirmEvent;
+    public AK.Wwise.Event startEvent;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
-        
-        // Singleton
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (Instance != null)
         {
             Destroy(gameObject);
+            return;
         }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
     }
 
     public void PlayClick()
     {
-        PlaySound(click);
-    }
-    public void PlayStart()
-    {
-        PlaySound(start);
-        
+        if (clickEvent != null)
+            clickEvent.Post(gameObject);
     }
 
     public void PlayHover()
     {
-        PlaySound(hover);
+        if (hoverEvent != null)
+            hoverEvent.Post(gameObject);
     }
 
-    public void PlayError()
+    public void PlayBack()
     {
-        PlaySound(error);
+        if (backEvent != null)
+            backEvent.Post(gameObject);
     }
 
-    private void PlaySound(AudioClip clip)
+    public void PlayConfirm()
     {
-        if (clip == null) return;
-        uiSource.PlayOneShot(clip);
+        if (confirmEvent != null)
+            confirmEvent.Post(gameObject);
     }
-
+    public void PlayStart()
+    {
+        if (startEvent != null)
+            startEvent.Post(gameObject);
+    }
 
 }
+
+
