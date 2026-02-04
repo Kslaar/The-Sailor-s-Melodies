@@ -3,7 +3,7 @@ using UnityEngine;
 public class PagePickup : ItemPickup
 {
     [Header("Page")]
-    [SerializeField] private string pageItemID; // erste Seite, zweit usw.
+    [SerializeField] private string pageItemID;
 
     protected override bool TryApply(Collider other)
     {

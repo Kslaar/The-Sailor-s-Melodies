@@ -1,7 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Runtime.InteropServices;
-using JetBrains.Annotations;
 using UnityEngine;
 
 [CreateAssetMenu(menuName ="Game/Quests/Objectives/Collect Items (Universal)")]
@@ -18,8 +16,10 @@ public class UniversalCollectItemQuest : QuestObjective
 
     [Header("CountSingleItem")]
     public string itemID = "fuel_canisters";
+    [Min(1)]
     public int requiredCount = 1;
 
+    [Header("CollectUniqueIDs")]
     public List<string> requiredItemIDs = new() { "page_1", "page_2", "page_3", "page_4" };
 
     [NonSerialized] private int currentCount;
@@ -46,7 +46,7 @@ public class UniversalCollectItemQuest : QuestObjective
                     // Haben wir in der Registry einen höheren Wert als 0? Dann haben wir ID eingesammelt
                     foreach (var id in requiredItemIDs)
                     {
-                        if (reg.GetCount(id) > 0)
+                        if (!string.IsNullOrWhiteSpace(id) && reg.GetCount(id) > 0)
                             collectedUnique.Add(id);
                     }
                 }
@@ -76,6 +76,10 @@ public class UniversalCollectItemQuest : QuestObjective
             
             case Mode.CollectUniqueIDs:
                 if (requiredItemIDs == null || requiredItemIDs.Count == 0) return;
+
+                if (collectedUnique == null)
+                    collectedUnique = new HashSet<string>();
+
                 if (!requiredItemIDs.Contains(collectedID)) return;
                 if (!collectedUnique.Add(collectedID)) return; // Falls bereits eingesammelt
                 Debug.Log($"[Quest] Collected unique {collectedID}: {collectedUnique.Count}/{requiredItemIDs.Count}");
