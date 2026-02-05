@@ -26,6 +26,7 @@ public class GameStateManager : MonoBehaviour
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+        transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);    
     }
 

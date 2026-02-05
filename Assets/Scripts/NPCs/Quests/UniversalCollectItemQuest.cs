@@ -27,6 +27,8 @@ public class UniversalCollectItemQuest : QuestObjective
 
     public override void Register()
     {
+        Debug.Log($"[UniversalCollectItemQuest] Register mode={mode} itemID={itemID} reqCount={requiredCount} reqIDs={(requiredItemIDs!=null?requiredItemIDs.Count:0)}");
+
         ItemPickupEvents.OnItemCollected -= HandleCollected;
         ItemPickupEvents.OnItemCollected += HandleCollected;
 
@@ -52,6 +54,7 @@ public class UniversalCollectItemQuest : QuestObjective
                 }
                 break;
         }
+        Debug.Log($"[UniversalCollectItemQuest] Restored: currentCount={currentCount} unique={(collectedUnique!=null?collectedUnique.Count:0)}");
 
         QuestManager.Instance?.NotifyObjectiveProgressHasChanged();  
     }

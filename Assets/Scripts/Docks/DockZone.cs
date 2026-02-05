@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DockZone : MonoBehaviour
 {
@@ -7,7 +10,24 @@ public class DockZone : MonoBehaviour
 
     [Header("Dock Interactions")]
     public DockInteractionUI dockUI;
-    public DialogueAsset defaultDialogue;
+
+    [Header("NPCs on this island")]
+    public List<NPCSlot> npcs = new();
+
+    [Serializable]
+    public class NPCSlot
+    {
+        public string displayName;
+        public Button talkButton;
+        public NPCDialogueSelector selector;
+        public DialogueAsset fallbackDialogue;
+
+        public DialogueAsset ResolveDialogue()
+        {
+            if (selector != null) return selector.GetDialogue();
+            return fallbackDialogue;
+        }
+    }
     void Reset()
     {
         var col = GetComponent<Collider>();

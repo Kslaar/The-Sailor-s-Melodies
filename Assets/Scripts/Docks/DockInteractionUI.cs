@@ -4,54 +4,76 @@ using UnityEngine.UI;
 public class DockInteractionUI : MonoBehaviour
 {
     [SerializeField] private GameObject root;
-    [SerializeField] private  Button npcTalkButton;
-
-    private DialogueAsset dialogue;
+    //[ SerializeField] private  Button npcTalkButton;
+    // private DialogueAsset dialogue;
+    private DockZone dock;
 
     private void Awake()
     {
-        if (root != null) root.SetActive(false);
-
-        if (npcTalkButton != null)
-        {
-            npcTalkButton.onClick.RemoveListener(Talk);
-            npcTalkButton.onClick.AddListener(Talk);
-        }
-        else
-        {
-            Debug.LogWarning("[DockUI] talkButton is not assigned!");
-        }   
+        if (root != null) root.SetActive(false); 
     }
-    public void Show(DialogueAsset dialogueAsset)
+    public void Show(DockZone dockZone)
     {
-        dialogue = dialogueAsset;
-        Debug.Log($"[DockUI] Show() called. Dialogue={(dialogue != null ? dialogue.name : "NULL")}");
+        dock = dockZone;
+
+        Debug.Log($"[DockUI] Show() called. Dock={(dock != null ? dock.name : "NULL")}");
+
         if (root != null) root.SetActive(true);
+
+        if (dock == null || dock.npcs == null)
+            return;
+
+        // Buttons neu binden
+        foreach (var npc in dock.npcs)
+        {
+            if (npc == null || npc.talkButton == null) continue;
+
+            npc.talkButton.onClick.RemoveAllListeners();
+
+            var localNPC = npc;
+            npc.talkButton.onClick.AddListener(() =>
+            {
+                Talk(localNPC);
+            });
+        }
     }
 
     public void Hide()
     {
         Debug.Log("[DockUI] Hide()");
         if (root != null) root.SetActive(false);
-        dialogue = null;
+
+        // Optional: listeners entfernen (sauber)
+        if (dock != null && dock.npcs != null)
+        {
+            foreach (var npc in dock.npcs)
+            {
+                if (npc == null || npc.talkButton == null) continue;
+                npc.talkButton.onClick.RemoveAllListeners();
+            }
+        }
+
+        dock = null;
     }
 
-    public void Talk()
+    public void Talk(DockZone.NPCSlot npc)
     {
-        Debug.Log($"[DockUI] Talk() clicked. Dialogue={(dialogue != null ? dialogue.name : "NULL")}");
+        var dialogue = npc.ResolveDialogue();
 
-        if (dialogue == null) 
+        Debug.Log($"[DockUI] Talk clicked. NPC={(npc.displayName)} Dialogue={(dialogue != null ? dialogue.name : "NULL")}");
+
+        if (dialogue == null)
         {
-            Debug.LogWarning("[DockUI] Talk clicked but no DialogueAsset set. Did DockZone.defaultDialogue get assigned?");
+            Debug.LogWarning("[DockUI] NPC has no Dialogue assigned/resolved.");
             return;
         }
 
         if (DialogueManager.Instance == null)
         {
-            Debug.LogWarning("[DockUI] DialogueManager.Instance is NULL. Is DialogueManager in the scene and Awake setting Instance?");
+            Debug.LogWarning("[DockUI] DialogueManager.Instance is NULL.");
             return;
         }
-    
+
         DialogueManager.Instance.StartDialogue(dialogue);
         Hide();   
     }

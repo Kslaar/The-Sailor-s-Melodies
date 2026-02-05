@@ -31,6 +31,7 @@ public class QuestManager : MonoBehaviour
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
+        transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);
     }
 
@@ -109,8 +110,10 @@ public class QuestManager : MonoBehaviour
             }
         }
 
+        stateByID[questID] = QuestState.Completed;
         Debug.Log($"[QuestManager] Quest eingereicht + abgeschlossen: {questID}");
         OnQuestsChanged?.Invoke();
+        NotifyObjectiveProgressHasChanged();
     }
 
     public QuestAsset GetQuest(string id) => allQuests.Find(q => q.questID == id);
@@ -147,16 +150,18 @@ public class QuestManager : MonoBehaviour
 
         foreach (var entry in list)
         {
-            if (string.IsNullOrWhiteSpace(entry.questID)) return;
+            if (string.IsNullOrWhiteSpace(entry.questID)) continue;
             stateByID[entry.questID] = entry.state;
         }
 
         OnQuestsChanged?.Invoke();
         NotifyObjectiveProgressHasChanged();
+        Debug.Log($"[QuestManager] Imported {stateByID.Count} quest states");
     }
 
     public void ReRegisterActiveObjectives()
     {
+        int registered = 0;
         foreach (var id in new List<string>(stateByID.Keys))
         {
             if (stateByID[id] != QuestState.Active) continue;
@@ -165,8 +170,12 @@ public class QuestManager : MonoBehaviour
             if (q == null) continue;
 
             foreach (var obj in q.objectives)
+            {
                 obj?.Register();
+                registered++;
+            }
+            Debug.Log($"[QuestManager] ReRegisterActiveObjectives: registered {registered} objectives");
         }
-         NotifyObjectiveProgressHasChanged();
+        NotifyObjectiveProgressHasChanged();
     }
 }

@@ -20,7 +20,7 @@ public class UIStateController : MonoBehaviour
 
     private IEnumerator Start()
     {
-        int safety = 60;
+        int safety = 1;
         while (GameStateManager.Instance == null && safety-- > 0)
             yield return null;
         

@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (Instance != null)  { Destroy(gameObject); return; }
         Instance = this;
+        transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);
 
         if (ui == null) ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);

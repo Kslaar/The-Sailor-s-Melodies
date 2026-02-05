@@ -21,6 +21,7 @@ public class SLManager : MonoBehaviour
         }
 
         Instance = this;
+        transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);  
     }
 
@@ -92,8 +93,10 @@ public class SLManager : MonoBehaviour
 
         // 2. Queststates importieren
         if (QuestManager.Instance != null)
+        {
             QuestManager.Instance.ImportStates(data.questStates);
             QuestManager.Instance.ReRegisterActiveObjectives();
+        }
 
         // 3. Wir setzen den Spieler
         Vector3 position = new Vector3(

@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
 public class ItemCollectionRegistry : MonoBehaviour
 {
+    public static event Action OnRegistryLoaded;
     public static ItemCollectionRegistry Instance { get; private set; }
 
     private readonly Dictionary<string, int> counts = new();
@@ -62,13 +64,17 @@ public class ItemCollectionRegistry : MonoBehaviour
     public void Import(List<ItemCountEntry> list)
     {
         counts.Clear();
-        if (list == null) return;
-
-        foreach (var entry in list)
+        if (list != null)
         {
-            if (string.IsNullOrWhiteSpace(entry.itemID)) continue;
-            counts[entry.itemID] = Mathf.Max(0, entry.count);
+            foreach (var entry in list)
+            {
+                if (string.IsNullOrWhiteSpace(entry.itemID)) continue;
+                counts[entry.itemID] = Mathf.Max(0, entry.count);
+            }
         }
+
+        Debug.Log($"[ItemRegistry] Imported {counts.Count} item IDs");
+        OnRegistryLoaded?.Invoke();
     }
 }
 

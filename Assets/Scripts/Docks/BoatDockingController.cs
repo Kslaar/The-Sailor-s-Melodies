@@ -89,14 +89,14 @@ public class BoatDockingController : MonoBehaviour
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
         if (currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
 
-        DialogueAsset dialogueToUse = currentDock.defaultDialogue;
+        /*DialogueAsset dialogueToUse = currentDock.defaultDialogue;
         
         var selector = currentDock.GetComponent<NPCDialogueSelector>();
         if (selector != null)
-            dialogueToUse = selector.GetDialogue();
+            dialogueToUse = selector.GetDialogue();*/
 
         if (currentDock.dockUI != null)
-            currentDock.dockUI.Show(dialogueToUse);
+            currentDock.dockUI.Show(currentDock);
 
         GameStateManager.Instance?.TrySetState(GameState.Docked);
     }
