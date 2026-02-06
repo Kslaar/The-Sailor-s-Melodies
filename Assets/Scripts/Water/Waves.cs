@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class Waves : MonoBehaviour
 {
@@ -8,140 +7,142 @@ public class Waves : MonoBehaviour
     public Octave[] octaves;
     public float uvScale;
 
-    protected MeshFilter meshFilter;
-    protected Mesh mesh;
+    MeshFilter meshFilter;
+    Mesh mesh;
+
+    // Cache
+    Vector3[] vertices;
+    int dim1;                  
+    Vector3 invLossyXZ;        
+
     void Start()
     {
+        dim1 = dimension + 1;
+
         mesh = new Mesh();
         mesh.name = gameObject.name;
 
-        mesh.vertices = GenerateVertices();
-        mesh.triangles = GenerateTriangles();
-        mesh.uv = GenerateUVs();
+        vertices = GenerateVertices();                
+        mesh.vertices = vertices;
+        mesh.triangles = GenerateTriangles(vertices.Length);
+        mesh.uv = GenerateUVs(vertices.Length);
         mesh.RecalculateBounds();
         mesh.RecalculateNormals();
 
         meshFilter = gameObject.AddComponent<MeshFilter>();
         meshFilter.mesh = mesh;
+
+        CacheScale();
+    }
+
+    void CacheScale()
+    {
+        var s = transform.lossyScale;
+        invLossyXZ = new Vector3(
+            s.x != 0f ? 1f / s.x : 0f,
+            0f,
+            s.z != 0f ? 1f / s.z : 0f
+        );
     }
 
     public float GetHeightFromPoint(Vector3 position)
     {
-        var scale = new Vector3(1 / transform.lossyScale.x, 0, 1 / transform.lossyScale.z);
-        var localPos = Vector3.Scale(position - transform.position, scale);
+        var localPos = Vector3.Scale(position - transform.position, invLossyXZ);
 
-        var pos1 = new Vector3(Mathf.Floor(localPos.x), 0, Mathf.Floor(localPos.z));
-        var pos2 = new Vector3(Mathf.Floor(localPos.x), 0, Mathf.Ceil(localPos.z));
-        var pos3 = new Vector3(Mathf.Ceil(localPos.x), 0, Mathf.Floor(localPos.z));
-        var pos4 = new Vector3(Mathf.Ceil(localPos.x), 0, Mathf.Ceil(localPos.z));
+        float lx = Mathf.Clamp(localPos.x, 0f, dimension);
+        float lz = Mathf.Clamp(localPos.z, 0f, dimension);
 
-        pos1.x = Mathf.Clamp(pos1.x, 0, dimension);
-        pos1.z = Mathf.Clamp(pos1.z, 0, dimension);
-        pos2.x = Mathf.Clamp(pos2.x, 0, dimension);
-        pos2.z = Mathf.Clamp(pos2.z, 0, dimension);
-        pos3.x = Mathf.Clamp(pos3.x, 0, dimension);
-        pos3.z = Mathf.Clamp(pos3.z, 0, dimension);
-        pos4.x = Mathf.Clamp(pos4.x, 0, dimension);
-        pos4.z = Mathf.Clamp(pos4.z, 0, dimension);
+        int x0 = Mathf.FloorToInt(lx);
+        int z0 = Mathf.FloorToInt(lz);
+        int x1 = Mathf.Min(x0 + 1, dimension);
+        int z1 = Mathf.Min(z0 + 1, dimension);
 
-        var max = Mathf.Max(Vector3.Distance(pos1, localPos), Vector3.Distance(pos2, localPos), Vector3.Distance(pos3, localPos), Vector3.Distance(pos4, localPos) + Mathf.Epsilon);
-        var distance = (max - Vector3.Distance(pos1, localPos)) +
-                       (max - Vector3.Distance(pos2, localPos)) +
-                       (max - Vector3.Distance(pos3, localPos)) +
-                       (max - Vector3.Distance(pos4, localPos)) + Mathf.Epsilon;
-                
-        var height = mesh.vertices[Index((int)pos1.x, (int)pos1.z)].y * (max - Vector3.Distance(pos1, localPos))
-                   + mesh.vertices[Index((int)pos2.x, (int)pos2.z)].y * (max - Vector3.Distance(pos2, localPos))
-                   + mesh.vertices[Index((int)pos3.x, (int)pos3.z)].y * (max - Vector3.Distance(pos3, localPos))
-                   + mesh.vertices[Index((int)pos4.x, (int)pos4.z)].y * (max - Vector3.Distance(pos4, localPos));
+        // Bilinear Interpolation (viel günstiger!!!)
+        float tx = lx - x0;
+        float tz = lz - z0;
 
-        return height * transform.lossyScale.y / distance;
+        float h00 = vertices[Index(x0, z0)].y;
+        float h01 = vertices[Index(x0, z1)].y;
+        float h10 = vertices[Index(x1, z0)].y;
+        float h11 = vertices[Index(x1, z1)].y;
+
+        float h0 = Mathf.Lerp(h00, h10, tx);
+        float h1 = Mathf.Lerp(h01, h11, tx);
+        float h = Mathf.Lerp(h0, h1, tz);
+
+        return h * transform.lossyScale.y;
     }
 
-    private Vector3[] GenerateVertices()
+    Vector3[] GenerateVertices()
     {
-        var vertices = new Vector3[(dimension + 1) * (dimension + 1)];
-
-        // vertices gleichmäßig verteilen
+        var v = new Vector3[dim1 * dim1];
         for (int x = 0; x <= dimension; x++)
-        {
             for (int z = 0; z <= dimension; z++)
-            {
-                vertices[Index(x, z)] = new Vector3(x, 0, z);
-            }
-        }
-
-        return vertices;
+                v[Index(x, z)] = new Vector3(x, 0, z);
+        return v;
     }
 
-    private int Index(int x, int z)
-    {
-        return x * (dimension + 1) + z;
-    }
+    int Index(int x, int z) => x * dim1 + z;
 
-    private int[] GenerateTriangles()
+    int[] GenerateTriangles(int vertCount)
     {
-        var triangles = new int[mesh.vertices.Length * 6];
-
+        var triangles = new int[vertCount * 6];
         for (int x = 0; x < dimension; x++)
         {
             for (int z = 0; z < dimension; z++)
             {
-                triangles[Index(x, z) * 6 + 0] = Index(x, z);
-                triangles[Index(x, z) * 6 + 1] = Index(x + 1, z + 1);
-                triangles[Index(x, z) * 6 + 2] = Index(x + 1, z);
-                triangles[Index(x, z) * 6 + 3] = Index(x, z);
-                triangles[Index(x, z) * 6 + 4] = Index(x, z + 1);
-                triangles[Index(x, z) * 6 + 5] = Index(x + 1, z + 1);
+                int t = Index(x, z) * 6;
+                triangles[t + 0] = Index(x, z);
+                triangles[t + 1] = Index(x + 1, z + 1);
+                triangles[t + 2] = Index(x + 1, z);
+                triangles[t + 3] = Index(x, z);
+                triangles[t + 4] = Index(x, z + 1);
+                triangles[t + 5] = Index(x + 1, z + 1);
             }
         }
-
         return triangles;
     }
 
-    private Vector2[] GenerateUVs()
+    Vector2[] GenerateUVs(int vertCount)
     {
-        var uvs = new Vector2[mesh.vertices.Length];
-
+        var uvs = new Vector2[vertCount];
         for (int x = 0; x <= dimension; x++)
-        {
             for (int z = 0; z <= dimension; z++)
-            {
-                // var vctr = new Vector2((x / uvScale) % 2, (z / uvScale) % 2);
                 uvs[Index(x, z)] = new Vector2((float)x / dimension, (float)z / dimension);
-            }
-        }
-
         return uvs;
     }
-    
 
-    // Update is called once per frame
     void Update()
     {
-        var vertices = mesh.vertices;
         for (int x = 0; x <= dimension; x++)
         {
             for (int z = 0; z <= dimension; z++)
             {
-                var y = 0f;
+                float y = 0f;
                 for (int o = 0; o < octaves.Length; o++)
                 {
                     if (octaves[o].alternate)
                     {
-                        var perlin = Mathf.PerlinNoise((x * octaves[o].scale.x) / dimension, (z * octaves[o].scale.y) / dimension) * Mathf.PI * 2f;
+                        float perlin = Mathf.PerlinNoise((x * octaves[o].scale.x) / dimension,
+                                                        (z * octaves[o].scale.y) / dimension) * Mathf.PI * 2f;
                         y += Mathf.Cos(perlin + octaves[o].speed.magnitude * Time.time) * octaves[o].height;
                     }
                     else
                     {
-                        var perlin = Mathf.PerlinNoise((x * octaves[o].scale.x + Time.time * octaves[o].speed.x) / dimension, (z * octaves[o].scale.y + Time.time * octaves[o].speed.y) / dimension) - 0.5f;
+                        float perlin = Mathf.PerlinNoise((x * octaves[o].scale.x + Time.time * octaves[o].speed.x) / dimension,
+                                                        (z * octaves[o].scale.y + Time.time * octaves[o].speed.y) / dimension) - 0.5f;
                         y += perlin * octaves[o].height;
                     }
                 }
-                vertices[Index(x, z)] = new Vector3(x, y, z);
+
+                int idx = Index(x, z);
+                var p = vertices[idx];
+                p.y = y;
+                vertices[idx] = p;
             }
         }
-        mesh.vertices = vertices;
+
+        mesh.SetVertices(vertices);         
         mesh.RecalculateNormals();
     }
 

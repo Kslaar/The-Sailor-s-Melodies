@@ -50,7 +50,7 @@ public class FloatPhysics : MonoBehaviour
 
     void FixedUpdate()
     {
-        // --- 1) Wasserlinie berechnen + Unterwasser-Anteil (für smooth Drag) ---
+        // 1) Wasserlinie berechnen + Unterwasser-Anteil
         float newWaterLine = 0f;
         int underCount = 0;
 
@@ -60,6 +60,7 @@ public class FloatPhysics : MonoBehaviour
 
             waterLinePoints[i] = p;
             waterLinePoints[i].y = Waves.GetHeightFromPoint(p);
+            // waterLinePoints[i].y = 0f;
 
             newWaterLine += waterLinePoints[i].y / floatPoints.Length;
 
@@ -73,16 +74,16 @@ public class FloatPhysics : MonoBehaviour
         // 0..1: wie viel vom Boot "im Wasser" ist (basierend auf FloatPoints)
         float submersion = (float)underCount / floatPoints.Length;
 
-        // --- 2) Ziel-Up aus Wasseroberfläche (für Pitch/Roll) ---
+        // 2) Ziel-Up aus Wasseroberfläche (für Pitch/Roll)
         targetUp = PhysicsHelper.GetNormal(waterLinePoints);
 
-        // --- 3) Drag smooth statt hart umschalten (verhindert Speed-Pulsieren) ---
+        // 3) Drag smooth statt hart umschalten (verhindert Speed-Pulsieren)
         Rigidbody.linearDamping = Mathf.Lerp(airDrag, waterDrag, submersion);
 
-        // --- 4) Auftrieb/Gravity ---
+        // 4) Auftrieb/Gravity
         Vector3 gravity = Physics.gravity;
 
-        // Nur wenn zumindest ein Punkt unter Wasser ist, beeinflussen wir die Auftriebsrichtung/Position
+        // Nur wenn min. ein Punkt unter Wasser ist, beeinflussen wir die Auftriebsrichtung/Position
         if (submersion > 0f)
         {
             if (attachToSurface)
@@ -103,7 +104,7 @@ public class FloatPhysics : MonoBehaviour
             }
         }
 
-        // Stärke abhängig davon wie weit Center von Wasserlinie weg ist (geclamped)
+        // Stärke abhängig davon wie weit Center von Wasserlinie weg ist
         Rigidbody.AddForce(gravity * Mathf.Clamp(Mathf.Abs(waterLine - center.y), 0f, 1f));
 
         // --- 5) Rotation: Pitch/Roll an Wasser anpassen, Yaw nicht kaputt machen ---
