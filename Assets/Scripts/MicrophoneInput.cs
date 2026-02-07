@@ -65,6 +65,8 @@ public class MicrophoneInput : MonoBehaviour
         StartMic();
 
         if (autoCalibrationOnStart) StartCoroutine(CalibrateNoiseFloor());
+
+        yield break;
     }
 
     ///////////////////////////////////////////////////////////////
