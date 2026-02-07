@@ -8,11 +8,11 @@ public class MusicManager : MonoBehaviour
 
     [Header("Wwise Music Events")]
     public AK.Wwise.Event startSceneMusic;   // Musik der ersten Szene
-    public AK.Wwise.Event gameplayMusic;     // Musik der nächsten Szene
+    public AK.Wwise.Event gameplayMusic;     // Musik der nï¿½chsten Szene
 
     private void Awake()
     {
-        // Singleton – nur eine Instanz darf existieren
+        // Singleton ï¿½ nur eine Instanz darf existieren
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -28,7 +28,7 @@ public class MusicManager : MonoBehaviour
 
     private void Start()
     {
-        // Musik für die erste Szene starten
+        // Musik fï¿½r die erste Szene starten
         PlayMusicForScene(SceneManager.GetActiveScene().name);
     }
 
@@ -40,9 +40,9 @@ public class MusicManager : MonoBehaviour
     private void PlayMusicForScene(string sceneName)
     {
         // Alte Musik stoppen
-        AkSoundEngine.StopAll();
+        AkUnitySoundEngine.StopAll();
 
-        // Szenenabhängig neue Musik starten
+        // Szenenabhï¿½ngig neue Musik starten
         switch (sceneName)
         {
             case "MainMenuScene":    // Name deiner ersten Szene
@@ -53,7 +53,7 @@ public class MusicManager : MonoBehaviour
                 gameplayMusic.Post(gameObject);
                 break;
 
-                // Weitere Szenen hier einfach ergänzen
+                // Weitere Szenen hier einfach ergï¿½nzen
         }
     }
 }

@@ -317,7 +317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MicrophoneInput
   deviceName: 
   sampleWindow: 256
-  smoothing: 0.2
+  smoothing: 0.932
   noiseFloor: 0.01
   autoCalibrationOnStart: 1
   calibrationSeconds: 2

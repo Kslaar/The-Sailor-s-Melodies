@@ -7,13 +7,13 @@ public class MicrophoneInput : MonoBehaviour
 
     [Header("Mic")]
     [Tooltip("Leer = Default-Mic")]
-    [SerializeField] private string deviceName = null;
+    [SerializeField] private string deviceName = "";
 
     [Header("Sampling")]
     [SerializeField] private int sampleWindow = 256;
 
     [Header("Processing")]
-    [Tooltip("0..1 (höher = reagiert schneller, niedriger = glatter)")]
+    [Tooltip("0...1 (höher = reagiert schneller, niedriger = glatter)")]
     [Range(0.01f, 1f)]
     [SerializeField] private float smoothing = 0.2f;
 
@@ -40,12 +40,27 @@ public class MicrophoneInput : MonoBehaviour
     private AudioClip clip;
     private bool micReady;
 
+    private float[] sampleBuffer;
+
     ///////////////////////////////////////////////////////////////
     private void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        StartCoroutine(InitMicRoutine());
+    }
+
+    ///////////////////////////////////////////////////////////////
+    private IEnumerator InitMicRoutine()
+    {
+#if UNITY_EDITOR_OSX || UNITY_ANDROID || UNITY_STANDALONE_OSX || UNITY_IOS
+        if (!Application.HasUserAuthorization(UserAuthorization.Microphone))
+        {
+            yield return Application.RequestUserAuthorization(UserAuthorization.Microphone);
+        }
+#endif
 
         StartMic();
 
@@ -56,6 +71,10 @@ public class MicrophoneInput : MonoBehaviour
 
     private void OnDisable()
     {
+        if (!micReady) return;
+        if (Microphone.devices == null || Microphone.devices.Length == 0) return;
+
+        // Normaaalerweise bei null = default mic...
         if (Microphone.IsRecording(deviceName))
             Microphone.End(deviceName);
     }
@@ -68,12 +87,18 @@ public class MicrophoneInput : MonoBehaviour
         {
             Debug.LogWarning("No microphone devices found.");
             micReady = false;
+            clip = null;
             return;
         }
+
+        if (sampleBuffer == null || sampleBuffer.Length != sampleWindow)
+            sampleBuffer = new float[sampleWindow];
 
         // Wenn deviceName leer: Default
         clip = Microphone.Start(deviceName, true, 1, 44100);
         micReady = clip != null;
+
+        Debug.Log($"[Mic] Started. Device='{(string.IsNullOrEmpty(deviceName) ? "Default" : deviceName)}' Ready={micReady}");
     }
 
     ///////////////////////////////////////////////////////////////
@@ -149,17 +174,21 @@ public class MicrophoneInput : MonoBehaviour
 
     private float GetRmsLoudness()
     {
+        if (clip == null) return 0f;
+
         int micPos = Microphone.GetPosition(deviceName) - sampleWindow;
         if (micPos < 0) return 0f;
 
-        float[] data = new float[sampleWindow];
-        clip.GetData(data, micPos);
+        if (sampleBuffer == null || sampleBuffer.Length != sampleWindow)
+            sampleBuffer = new float[sampleWindow];
+
+        clip.GetData(sampleBuffer, micPos);
 
         // RMS (robuster als Abs-Mittel)
         float sum = 0f;
-        for (int i = 0; i < data.Length; i++)
-            sum += data[i] * data[i];
+        for (int i = 0; i < sampleBuffer.Length; i++)
+            sum += sampleBuffer[i] * sampleBuffer[i];
 
-        return Mathf.Sqrt(sum / data.Length);
+        return Mathf.Sqrt(sum / sampleBuffer.Length);
     }
 }
