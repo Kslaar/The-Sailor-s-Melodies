@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{CAD7ABAC-A9EE-BB1D-DCC5-9DFAB2FA249A}",
+    "Hash": "{50D095D4-CB24-6CE1-D63A-0D4DBF048209}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -41,9 +41,37 @@
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3546073390",
+      "Name": "BoatMode",
+      "ObjectPath": "\\States\\Default Work Unit\\BoatMode",
+      "GUID": "{689E706D-0416-4809-8ABA-D2665E401C43}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\None",
+        "GUID": "{2D360962-0AC3-4684-A03E-F18E3E26827C}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       },
+       {
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{2E9C757C-7B62-BFBA-DBE7-4AE3BB9701BB}"
+  "FileHash": "{3EF580EB-30B7-8DE3-F8BE-66718008A1DF}"
  }
 }

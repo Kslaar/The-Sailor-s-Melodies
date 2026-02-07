@@ -22,11 +22,8 @@ public class BoatControl : MonoBehaviour
     [SerializeField] private float lateralDrag = 2f;
     [SerializeField] private float minSpeedForFullSteering = 2f;
 
-    [Header("Audio")]
-    [SerializeField] private AudioSource sailingAudio;
-
-
-
+  
+ 
     private Rigidbody rb;
 
     private readonly Dictionary<object, float> speedMods = new();
@@ -45,8 +42,7 @@ public class BoatControl : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.maxAngularVelocity = 3f;
-        if (sailingAudio != null && !sailingAudio.isPlaying)
-        sailingAudio.Play();
+        
 
     }
 

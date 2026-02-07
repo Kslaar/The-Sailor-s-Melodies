@@ -13,12 +13,32 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID BOAT_MOVEMENT = 576129869U;
+        static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
+        static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
+        static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
+        static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
+        static const AkUniqueID STOP_SAILING = 1258201081U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
         static const AkUniqueID UI_START = 1219048826U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace BOATMODE
+        {
+            static const AkUniqueID GROUP = 3546073390U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MOTORACTIVE = 2524403114U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SAILING = 1921590194U;
+            } // namespace STATE
+        } // namespace BOATMODE
+
+    } // namespace STATES
 
     namespace BANKS
     {

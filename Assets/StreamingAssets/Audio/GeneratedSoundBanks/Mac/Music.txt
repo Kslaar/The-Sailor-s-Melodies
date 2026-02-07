@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3993991295	Play_StartSceneMusic			\Default Work Unit\Music\Play_StartSceneMusic	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	442753936	Gamesoundtrack	.cache\76\{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem		\Containers\Music\Maintheme\Gamesoundtrack		14976096
+

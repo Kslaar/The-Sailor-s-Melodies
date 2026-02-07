@@ -8,9 +8,9 @@
    {
     "Id": "3161908922",
     "Type": "User",
-    "GUID": "{6489854D-8EBB-4F4A-898C-44F9F4FCF0C2}",
+    "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{96D3FE1A-792B-B56C-10D3-05CB3C13ADD9}",
+    "Hash": "{B1A966F9-33B4-BDFE-4224-6EBD6E081E96}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -38,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "W 04 Water_19_Splashing, Sailing, Ship_T03.wav",
       "CachePath": "96/{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem"
+     },
+     {
+      "Id": "175406919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "boat_boost.wav",
+      "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
      },
      {
       "Id": "217901187",
@@ -72,14 +80,6 @@
       "CachePath": "D1/{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem"
      },
      {
-      "Id": "442753936",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Gamesoundtrack.wav",
-      "CachePath": "76/{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem"
-     },
-     {
       "Id": "530816004",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,9 +110,59 @@
     },
     "Events": [
      {
-      "Id": "576129869",
-      "Name": "boat_movement",
-      "ObjectPath": "\\Events\\Default Work Unit\\Player\\boat_movement",
+      "Id": "1855672063",
+      "Name": "Play_MotorLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorLoop",
+      "GUID": "{15FA814F-9BD4-48BF-9E12-F747BA4F477D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "175406919"
+       }
+      ]
+     },
+     {
+      "Id": "1538229119",
+      "Name": "Play_MotorStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStart",
+      "GUID": "{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     },
+     {
+      "Id": "1103577285",
+      "Name": "Play_MotorStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStop",
+      "GUID": "{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "1530826435",
+      "Name": "Play_Sailing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Sailing",
       "GUID": "{F6DBAAAD-3765-4398-9F80-D398782E5CA5}",
       "DurationType": "Infinite",
       "MediaRefs": [
@@ -138,21 +188,26 @@
          "Id": "69364897"
         }
        ]
-      }
-     },
-     {
-      "Id": "3993991295",
-      "Name": "Play_StartSceneMusic",
-      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_StartSceneMusic",
-      "GUID": "{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}",
-      "DurationType": "OneShot",
-      "DurationMin": "78",
-      "DurationMax": "78",
-      "MediaRefs": [
+      },
+      "ActionSetState": [
        {
-        "Id": "442753936"
+        "GroupId": "3546073390",
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
        }
       ]
+     },
+     {
+      "Id": "1258201081",
+      "Name": "stop_Sailing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\stop_Sailing",
+      "GUID": "{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2249769530",
@@ -203,9 +258,37 @@
        }
       ]
      }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3546073390",
+      "Name": "BoatMode",
+      "ObjectPath": "\\States\\Default Work Unit\\BoatMode",
+      "GUID": "{689E706D-0416-4809-8ABA-D2665E401C43}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\None",
+        "GUID": "{2D360962-0AC3-4684-A03E-F18E3E26827C}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       },
+       {
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{5C8ED951-F51E-2A5D-0731-100EC93A0F6A}"
+  "FileHash": "{5347FB61-DBBD-81EA-D277-EB3790C719FD}"
  }
 }

@@ -3,9 +3,9 @@
 	<Events>
 		<WorkUnit Name="Music" ID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="music_maintheme" ID="{F0AB0E97-9352-4323-8142-13FCD8B76FB3}">
+				<Event Name="Play_StartSceneMusic" ID="{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}">
 					<ChildrenList>
-						<Action Name="" ID="{3C60D67F-E2DE-4D34-88B5-6054812ADF57}" ShortID="1033007835">
+						<Action Name="" ID="{CCFFBDFE-A00C-4E3E-900A-D351C2C6FEB1}" ShortID="667087237">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Maintheme" ID="{9F97CA58-FE73-4ADB-9733-BC3D4800B28C}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>

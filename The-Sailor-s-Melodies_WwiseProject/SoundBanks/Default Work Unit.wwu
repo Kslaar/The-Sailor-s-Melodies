@@ -3,22 +3,23 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{D7F23017-A7F9-4675-B421-AD48CFA7000C}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Main" ID="{6489854D-8EBB-4F4A-898C-44F9F4FCF0C2}">
+				<SoundBank Name="Music" ID="{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="SFX_Error" ID="{41D1BF2F-9B08-4003-BF23-01F98E805053}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="boat_movement" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_StartSceneMusic" ID="{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="Music" ID="{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}">
+				<SoundBank Name="Main" ID="{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}">
 					<ObjectInclusionList>
-						<ObjectRef Name="music_maintheme" ID="{F0AB0E97-9352-4323-8142-13FCD8B76FB3}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MotorStop" ID="{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MotorLoop" ID="{15FA814F-9BD4-48BF-9E12-F747BA4F477D}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="stop_Sailing" ID="{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

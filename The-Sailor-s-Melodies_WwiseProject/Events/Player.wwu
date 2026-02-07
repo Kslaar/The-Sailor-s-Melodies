@@ -3,7 +3,7 @@
 	<Events>
 		<WorkUnit Name="Player" ID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="boat_movement" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}">
+				<Event Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}">
 					<ChildrenList>
 						<Action Name="" ID="{20FE4E48-05CB-4580-8FD8-FCDACB116BFA}" ShortID="75615055">
 							<ReferenceList>
@@ -16,6 +16,91 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B1DBC9C3-F3A9-4C3D-9B17-D6DFB86CD728}" ShortID="537228883">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="stop_Sailing" ID="{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}">
+					<ChildrenList>
+						<Action Name="" ID="{77BBF808-AA49-4633-8F71-6D2ABA191E33}" ShortID="1010843446">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boat_movement" ID="{FE40894F-3260-4EEB-A264-A9C6A3258559}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9AE48CEB-452D-43E6-8E56-000E0FF8C2F8}" ShortID="5863840">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}">
+					<ChildrenList>
+						<Action Name="" ID="{FA31ADF6-8B62-41A9-874A-FC0EE5FF6426}" ShortID="115763460">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MotorLoop" ID="{15FA814F-9BD4-48BF-9E12-F747BA4F477D}">
+					<ChildrenList>
+						<Action Name="" ID="{745B8E7B-AEF2-4C57-AD01-04E9E1ECA41C}" ShortID="1016317839">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MotorStop" ID="{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}">
+					<ChildrenList>
+						<Action Name="" ID="{3AA888F8-7939-41B7-AF7F-CEFD2278100C}" ShortID="524942227">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E025EDAB-7A2A-4FF5-9586-9855629A8F03}" ShortID="97813500">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

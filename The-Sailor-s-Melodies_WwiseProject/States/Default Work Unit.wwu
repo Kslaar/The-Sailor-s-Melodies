@@ -1,6 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}" SchemaVersion="133">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BoatMode" ID="{689E706D-0416-4809-8ABA-D2665E401C43}">
+					<ChildrenList>
+						<State Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
+						<State Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+						<State Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+							<EndState Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+							<EndState Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+							<Time>0.5</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

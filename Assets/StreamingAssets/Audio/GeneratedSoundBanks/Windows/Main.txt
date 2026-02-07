@@ -1,9 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
-	576129869	boat_movement			\Default Work Unit\Player\boat_movement	
 	1009189048	ui_error			\Default Work Unit\UI\ui_error	
+	1103577285	Play_MotorStop			\Default Work Unit\Player\Play_MotorStop	
 	1219048826	ui_start			\Default Work Unit\UI\ui_start	
+	1258201081	stop_Sailing			\Default Work Unit\Player\stop_Sailing	
+	1530826435	Play_Sailing			\Default Work Unit\Player\Play_Sailing	
+	1538229119	Play_MotorStart			\Default Work Unit\Player\Play_MotorStart	
+	1855672063	Play_MotorLoop			\Default Work Unit\Player\Play_MotorLoop	
 	2249769530	ui_click			\Default Work Unit\UI\ui_click	
-	3993991295	Play_StartSceneMusic			\Default Work Unit\Music\Play_StartSceneMusic	
 
 Effect plug-ins	ID	Name	Type				Notes
 	749681742	Octave_Down (Custom)	Wwise Pitch Shifter			
@@ -15,10 +18,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	41264705	SFX_Error	.cache\76\{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem		\Containers\UI\UI\SFX_Error		135204
 	98811860	sail_wind_01	.cache\F0\{F0787D86-C70E-B308-E32C-41368A25692B}.wem		\Containers\Player\boat_movement\sail_wind_01		90528
 	148246808	water_movement	.cache\96\{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem		\Containers\Player\water_movement		17126444
+	175406919	boat_boost	.cache\7B\{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem		\Containers\Player\boat_boost		1488096
 	217901187	SFX_Start	.cache\7E\{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem		\Containers\UI\UI\SFX_Start		259300
 	218989300	sail_wind_02	.cache\35\{35210FE7-3221-30CD-496E-35550D247322}.wem		\Containers\Player\boat_movement\sail_wind_02		90172
 	329250373	SFX_Click	.cache\CC\{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem		\Containers\UI\UI\SFX_Click		122628
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
-	442753936	Gamesoundtrack	.cache\76\{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem		\Containers\Music\Maintheme\Gamesoundtrack		14976096
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
 

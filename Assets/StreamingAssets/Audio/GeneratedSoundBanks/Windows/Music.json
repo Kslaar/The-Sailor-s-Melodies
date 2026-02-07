@@ -10,12 +10,38 @@
     "Type": "User",
     "GUID": "{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}",
     "Language": "SFX",
-    "Hash": "{24E5C870-ECC9-0C67-2ADD-497979A2E044}",
+    "Hash": "{E195C6F6-74E6-0F94-A94A-18866088136A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
-    "Path": "Music.bnk"
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "442753936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Gamesoundtrack.wav",
+      "CachePath": "76/{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3993991295",
+      "Name": "Play_StartSceneMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_StartSceneMusic",
+      "GUID": "{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}",
+      "DurationType": "OneShot",
+      "DurationMin": "78",
+      "DurationMax": "78",
+      "MediaRefs": [
+       {
+        "Id": "442753936"
+       }
+      ]
+     }
+    ]
    }
   ],
-  "FileHash": "{DF6A19A8-F22D-968B-EA17-AA17D4F06340}"
+  "FileHash": "{040C43C2-9883-77D7-274E-FBC9F3EFA596}"
  }
 }

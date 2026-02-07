@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3546073390	BoatMode			\Default Work Unit\BoatMode	
+
+State	ID	Name	State Group			Notes
+	748895195	None	BoatMode			
+	1921590194	Sailing	BoatMode			
+	2524403114	MotorActive	BoatMode			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 

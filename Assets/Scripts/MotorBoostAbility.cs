@@ -4,9 +4,15 @@ using UnityEngine.InputSystem;
 
 public class MotorBoostAbility : MonoBehaviour
 {
-[Header("Audio")]
-[SerializeField] private AudioSource boostAudio;
-[SerializeField] private float boostFadeTime = 0.2f;
+    [Header("Wwise Audio")]
+    public AK.Wwise.State SailingState;
+    public AK.Wwise.State MotorState;
+
+    public AK.Wwise.Event MotorStartEvent;
+    public AK.Wwise.Event MotorstopEvent;
+    public AK.Wwise.Event MotorLoopEvent;
+
+
 
 
     [SerializeField] private BoatControl boat;
@@ -119,13 +125,11 @@ public class MotorBoostAbility : MonoBehaviour
         boat.PushBoost(this);
         boat.SetSpeedMultiplier(this, data.speedMultiplier);
         boat.SetThrustMultiplier(this, data.thrustMultiplier);
-        // Boost Sound Start
-        if (boostAudio != null)
-        {
-            boostAudio.volume = 0f;
-            boostAudio.Play();
-            StartCoroutine(FadeAudio(boostAudio, 1f, boostFadeTime));
-        }
+
+        // Wwise Audio Start
+        MotorState.SetValue();               //Setze State -> MotorActive   
+        MotorStartEvent.Post(gameObject);    //Starte Motor-Start-Sound
+       
     
 
 
@@ -144,14 +148,8 @@ public class MotorBoostAbility : MonoBehaviour
         boat.ReductBoost(this);
 
         //BOOST SOUND STOP
-        if (boostAudio != null && boostAudio.isPlaying)
-        {
-            StartCoroutine(FadeOutAndStop(boostAudio, boostFadeTime));
-
-        }
-
-        if (logAttempts)
-            Debug.Log($"[Motor] ENGINE OFF fuel={fuel.CurrentFuel:0.0}s");
+       MotorstopEvent.Post(gameObject);
+        SailingState.SetValue();
     }
 
     private void ResetPullState()
