@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D7F23017-A7F9-4675-B421-AD48CFA7000C}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{D7F23017-A7F9-4675-B421-AD48CFA7000C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{6489854D-8EBB-4F4A-898C-44F9F4FCF0C2}">
+					<ObjectInclusionList>
+						<ObjectRef Name="SFX_Error" ID="{41D1BF2F-9B08-4003-BF23-01F98E805053}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="boat_movement" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="music_maintheme" ID="{F0AB0E97-9352-4323-8142-13FCD8B76FB3}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

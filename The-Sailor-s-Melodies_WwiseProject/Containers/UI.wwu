@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="UI" ID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="UI" ID="{48DEB46C-9F01-44DB-9844-48787E6B3004}" ShortID="888497564">
+					<ChildrenList>
+						<Sound Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" ShortID="998085239">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Click" ID="{B0875370-8460-497B-8459-9868370D40E2}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0043425165266946"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.03219204376121"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="11.9965065956208"/>
+										<Property Name="TrimEnd" Type="Real64" Value="12.6346956204266"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Click.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="329250373"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Click" ID="{B0875370-8460-497B-8459-9868370D40E2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" ShortID="221164864">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Start" ID="{59B4A31D-F42D-4389-94C3-96A3F9C669DC}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00438819033387139"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.422363319635121"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.7723985504734"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Start.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="217901187"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Start" ID="{59B4A31D-F42D-4389-94C3-96A3F9C669DC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="SFX_Error" ID="{41D1BF2F-9B08-4003-BF23-01F98E805053}" ShortID="787437210">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="SFX_Click" ID="{C5CBF766-2C5D-4468-8639-A0D48F3CC9B0}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0043425165266946"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.03219204376121"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.12902459410681"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.83270430590014"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>SFX_Click.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="41264705"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{4E5B3614-18F1-4FF7-AC64-FF4021334EED}" ShortID="643877201">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom CreatedFrom="{062EC4B1-5372-4D1E-917B-C757293F2B42}">
+													<Effect Name="Octave_Down (Custom)" ID="{9D761C6C-FC9D-47B1-9DB4-34B7D846FE31}" ShortID="749681742" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<PropertyList>
+															<Property Name="DryLevel" Type="Real32" Value="0"/>
+															<Property Name="Pitch" Type="Real32" Value="-1000"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="SFX_Click" ID="{C5CBF766-2C5D-4468-8639-A0D48F3CC9B0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

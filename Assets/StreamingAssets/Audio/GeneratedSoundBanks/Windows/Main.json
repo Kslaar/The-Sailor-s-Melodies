@@ -1,0 +1,211 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{6489854D-8EBB-4F4A-898C-44F9F4FCF0C2}",
+    "Language": "SFX",
+    "Hash": "{96D3FE1A-792B-B56C-10D3-05CB3C13ADD9}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "41264705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Click.wav",
+      "CachePath": "76/{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem"
+     },
+     {
+      "Id": "98811860",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "F0/{F0787D86-C70E-B308-E32C-41368A25692B}.wem"
+     },
+     {
+      "Id": "148246808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "W 04 Water_19_Splashing, Sailing, Ship_T03.wav",
+      "CachePath": "96/{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem"
+     },
+     {
+      "Id": "217901187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Start.wav",
+      "CachePath": "7E/{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem"
+     },
+     {
+      "Id": "218989300",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "35/{35210FE7-3221-30CD-496E-35550D247322}.wem"
+     },
+     {
+      "Id": "329250373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Click.wav",
+      "CachePath": "CC/{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem"
+     },
+     {
+      "Id": "438083269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "D1/{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem"
+     },
+     {
+      "Id": "442753936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Gamesoundtrack.wav",
+      "CachePath": "76/{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem"
+     },
+     {
+      "Id": "530816004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "69364897",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Player\\boat_movement\\Silence_sail\\Silence",
+       "GUID": "{6E990B1C-C1D9-4D09-B138-41343677F3DB}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "749681742",
+       "Name": "Octave_Down (Custom)",
+       "ObjectPath": "\\Containers\\UI\\UI\\SFX_Error\\[Effect Slot [0]: (Pitch Shifter)]\\Octave_Down (Custom)",
+       "GUID": "{9D761C6C-FC9D-47B1-9DB4-34B7D846FE31}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "576129869",
+      "Name": "boat_movement",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\boat_movement",
+      "GUID": "{F6DBAAAD-3765-4398-9F80-D398782E5CA5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "98811860"
+       },
+       {
+        "Id": "148246808"
+       },
+       {
+        "Id": "218989300"
+       },
+       {
+        "Id": "438083269"
+       },
+       {
+        "Id": "530816004"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "69364897"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3993991295",
+      "Name": "Play_StartSceneMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_StartSceneMusic",
+      "GUID": "{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}",
+      "DurationType": "OneShot",
+      "DurationMin": "78",
+      "DurationMax": "78",
+      "MediaRefs": [
+       {
+        "Id": "442753936"
+       }
+      ]
+     },
+     {
+      "Id": "2249769530",
+      "Name": "ui_click",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_click",
+      "GUID": "{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.638189",
+      "DurationMax": "0.638189",
+      "MediaRefs": [
+       {
+        "Id": "329250373"
+       }
+      ]
+     },
+     {
+      "Id": "1009189048",
+      "Name": "ui_error",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_error",
+      "GUID": "{B97D5BD1-A315-4C44-8D70-2552B7FEE564}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.70367974",
+      "DurationMax": "0.70367974",
+      "MediaRefs": [
+       {
+        "Id": "41264705"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "749681742"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1219048826",
+      "Name": "ui_start",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_start",
+      "GUID": "{ECCC4E01-26C8-480B-ADF0-92624331C8BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3500352",
+      "DurationMax": "1.3500352",
+      "MediaRefs": [
+       {
+        "Id": "217901187"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4060F418-F9E5-ED00-26A5-E5E93002FB9B}"
+ }
+}

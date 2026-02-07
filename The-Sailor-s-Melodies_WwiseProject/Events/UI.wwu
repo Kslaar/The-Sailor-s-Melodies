@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
+	<Events>
+		<WorkUnit Name="UI" ID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}">
+					<ChildrenList>
+						<Action Name="" ID="{1E10AB71-771F-4363-9D45-F24707A17670}" ShortID="327494066">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}">
+					<ChildrenList>
+						<Action Name="" ID="{29A1EA33-7256-4367-8828-0BB40A98AF4E}" ShortID="269986172">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}">
+					<ChildrenList>
+						<Action Name="" ID="{B6D09387-BEC6-4CE5-9ED7-6AF23473245C}" ShortID="368761506">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SFX_Error" ID="{41D1BF2F-9B08-4003-BF23-01F98E805053}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

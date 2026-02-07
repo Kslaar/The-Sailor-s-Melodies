@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
+	<Events>
+		<WorkUnit Name="Player" ID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="boat_movement" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}">
+					<ChildrenList>
+						<Action Name="" ID="{20FE4E48-05CB-4580-8FD8-FCDACB116BFA}" ShortID="75615055">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="boat_movement" ID="{FE40894F-3260-4EEB-A264-A9C6A3258559}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D593824B-05C1-4634-9A86-65B408A8A827}" ShortID="399608751">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

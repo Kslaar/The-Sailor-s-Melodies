@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Player" ID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{BD6135C0-BD19-4BFE-A104-3701F4F35AD6}" ShortID="626448093">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{12E5C6DB-1348-428C-971F-EB83D796B88C}">
+							<Language>SFX</Language>
+							<AudioFile>344 Audio - Water Ambience - At Sea Waves Lapping Splashing.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="444877738"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{12E5C6DB-1348-428C-971F-EB83D796B88C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Fusehive - Ship Sail Opening" ID="{58246C35-2A6E-4CF5-98D5-EA98499459D4}" ShortID="93316674">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Fusehive - Ship Sail Opening" ID="{EE3B4A17-1A1F-46B3-B87A-0072363C8D36}">
+							<Language>SFX</Language>
+							<AudioFile>Fusehive - Ship Sail Opening.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="917186463"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Fusehive - Ship Sail Opening" ID="{EE3B4A17-1A1F-46B3-B87A-0072363C8D36}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="motor_start" ID="{0B886FCB-9542-4811-82C0-22388A220170}" ShortID="860735582">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{1D112F49-9260-4EBA-A4B1-1F6774EA5B21}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0250386697729779"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.00695518604804946"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="3.33147886793292"/>
+								<Property Name="TrimEnd" Type="Real64" Value="3.7438555310469"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundholder - Chainsaw small engine pulling handle to start.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="72439141"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{1D112F49-9260-4EBA-A4B1-1F6774EA5B21}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Vadi Sound - Faraway Land - Flapping Cloth Sail Boat Movement" ID="{7221368F-DF82-4957-9F66-675E770F2179}" ShortID="854568966">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Vadi Sound - Faraway Land - Flapping Cloth Sail Boat Movement" ID="{EB0DAEC9-E2B0-44CD-9DE2-4A95F635D48A}">
+							<Language>SFX</Language>
+							<AudioFile>Vadi Sound - Faraway Land - Flapping Cloth Sail Boat Movement .wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="425800009"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Vadi Sound - Faraway Land - Flapping Cloth Sail Boat Movement" ID="{EB0DAEC9-E2B0-44CD-9DE2-4A95F635D48A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="motor_start_01" ID="{AC8D530F-AFE7-4DF4-BCB9-E97EB43C42A5}" ShortID="669685507">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{EA855075-1AEA-45DF-B5C4-C81BE78030D0}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0166924465153189"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.102936753511131"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="4.20855651233743"/>
+								<Property Name="TrimEnd" Type="Real64" Value="4.62464060097784"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundholder - Chainsaw small engine pulling handle to start.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="216203938"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{EA855075-1AEA-45DF-B5C4-C81BE78030D0}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="motor_start_02" ID="{5D9EC775-0EE2-46B2-896F-588595A5D56B}" ShortID="730973559">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{7029461E-EFE7-43C4-9A79-08990D5FFDF1}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0141336763300721"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0834622325765935"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="5.05968037669014"/>
+								<Property Name="TrimEnd" Type="Real64" Value="5.48822963658071"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Soundholder - Chainsaw small engine pulling handle to start.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="1052310578"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soundholder - Chainsaw small engine pulling handle to start" ID="{7029461E-EFE7-43C4-9A79-08990D5FFDF1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="boat_movement" ID="{FE40894F-3260-4EEB-A264-A9C6A3258559}" ShortID="578904504">
+					<PropertyList>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="sail_wind_02" ID="{766FDBBD-781C-48E4-BEAA-BB4D38FB9B15}" ShortID="442281792">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Foley Walkers - Sail on wind sea boat" ID="{55980BB5-E13B-4DD6-91AF-60EE7F01B2BC}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0419749460276506"/>
+										<Property Name="LoopBegin" Type="Real64" Value="9.56473775730012"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="9.34317534746861"/>
+										<Property Name="TrimEnd" Type="Real64" Value="10.2809802289934"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Foley Walkers - Sail on wind sea boat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="218989300"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Foley Walkers - Sail on wind sea boat" ID="{55980BB5-E13B-4DD6-91AF-60EE7F01B2BC}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sail_wind_03" ID="{6A091B56-EE7B-4551-9372-5BDF82D602CE}" ShortID="466947340">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Foley Walkers - Sail on wind sea boat" ID="{E037CB6A-5F0B-4940-9591-FEA666DC5C55}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.158312900810485"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.197891126013106"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.54355046246766"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Foley Walkers - Sail on wind sea boat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="530816004"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Foley Walkers - Sail on wind sea boat" ID="{E037CB6A-5F0B-4940-9591-FEA666DC5C55}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sail_wind" ID="{1961AD3D-FEC4-4E24-BB09-8A31DD1E53A5}" ShortID="545317164">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Foley Walkers - Sail on wind sea boat" ID="{A527B6FA-C549-4FE5-A842-FB69ECB6D063}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.104221836858148"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0996588836837686"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.65749130026597"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.91998210079007"/>
+										<Property Name="VolumeOffset" Type="Real64">
+											<ValueList>
+												<Value>3.2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Foley Walkers - Sail on wind sea boat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="438083269"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Foley Walkers - Sail on wind sea boat" ID="{A527B6FA-C549-4FE5-A842-FB69ECB6D063}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" ShortID="259908511">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Foley Walkers - Sail on wind sea boat" ID="{8FAB1E0F-365F-436F-9F34-B41B58CA2CBA}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0243101280366709"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0648270080977884"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="5.00792515316205"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.94992620169281"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Foley Walkers - Sail on wind sea boat.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="98811860"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Foley Walkers - Sail on wind sea boat" ID="{8FAB1E0F-365F-436F-9F34-B41B58CA2CBA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" ShortID="858443020">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Silence" ID="{6E990B1C-C1D9-4D09-B138-41343677F3DB}" ShortID="69364897" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="2"/>
+										<Property Name="LengthMax" Type="Real32" Value="1"/>
+										<Property Name="LengthMin" Type="Real32" Value="-1"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Silence" ID="{6E990B1C-C1D9-4D09-B138-41343677F3DB}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{1B4A84D1-9020-4B79-8FA8-0EABF08A3DB8}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind" ID="{1961AD3D-FEC4-4E24-BB09-8A31DD1E53A5}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{04528D4A-A58B-4F48-AD19-EB8A57412975}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{4A2A66BA-B741-4E00-B394-326524427953}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind_02" ID="{766FDBBD-781C-48E4-BEAA-BB4D38FB9B15}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{4B81943A-E820-47CE-8BF9-DC3A935E426E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{50AACC6F-CF12-4DB8-B293-5AE23D3F4837}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{3DD5EF42-2821-447F-B0C5-39D3D715A9D6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{AE28D5AC-0868-4268-9C63-F2CC848E96E6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind_03" ID="{6A091B56-EE7B-4551-9372-5BDF82D602CE}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{09E34E72-4E42-49C2-83C4-89E3DEA814BA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{571568A7-245C-45EA-A789-B18FC75050E1}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{37A76A0E-CBB6-4A35-A2D6-CCBE04A33A1D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="sail_wind" ID="{1961AD3D-FEC4-4E24-BB09-8A31DD1E53A5}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
+				<Sound Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" ShortID="108642652">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.628167035642112"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.3589525917955"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="9.87119627437605"/>
+								<Property Name="TrimEnd" Type="Real64" Value="99.0709122837982"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>W 04 Water_19_Splashing, Sailing, Ship_T03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="148246808"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

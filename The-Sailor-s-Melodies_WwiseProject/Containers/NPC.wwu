@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="NPC" ID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" PersistMode="Standalone"/>
+	</Containers>
+</WwiseDocument>
