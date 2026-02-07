@@ -16,10 +16,11 @@ public class GameStateManager : MonoBehaviour
 
     private static readonly Dictionary<GameState, HashSet<GameState>> Allowed = new()
     {
-        {GameState.Sailing, new HashSet<GameState>{ GameState.Docked, GameState.QuestLog } },
+        {GameState.Sailing, new HashSet<GameState>{ GameState.Docked, GameState.QuestLog, GameState.Racing } },
         {GameState.Docked, new HashSet<GameState>{ GameState.Sailing, GameState.Dialogue } },
         {GameState.Dialogue, new HashSet<GameState>{ GameState.Docked } },
         {GameState.QuestLog, new HashSet<GameState>{ GameState.Sailing } },
+        {GameState.Racing, new HashSet<GameState>{ GameState.Sailing } },
     };
 
     private void Awake()
@@ -85,11 +86,13 @@ public class GameStateManager : MonoBehaviour
         return TrySetState(GameState.QuestLog, reason);
     }
 
+    ////////////////////////////////////////////////////////////////////
+
     public bool TryEnterDialogue(string reason = null)
     {
         if (State != GameState.Docked)
         {
-            Debug.LogWarning($"[State Dialogue opening blocked (must be in dockedstate). Current={State}. Reason: {reason}]");
+            Debug.LogWarning($"[State] Dialogue opening blocked (must be in dockedstate). Current={State}. Reason: {reason}");
             return false;   
         }
 
@@ -102,7 +105,25 @@ public class GameStateManager : MonoBehaviour
         return TrySetState(GameState.Docked, reason);
     }
 
-    //////////////////////////////////
+    ////////////////////////////////////////////////////////////////////
+
+    public bool TryEnterRace(string reason = null)
+    {
+        if (State != GameState.Sailing)
+        {
+            Debug.LogWarning($"[State] Race blocked. State before must be sailing. Current={State}. Reason={reason}");
+            return false;
+        }
+        return TrySetState(GameState.Racing, reason);
+    }
+
+    public bool TryExitRace(string reason = null)
+    {
+        if (State != GameState.Racing) return false;
+        return TrySetState(GameState.Sailing, reason);
+    }
+
+    ////////////////////////////////////////////////////////////////////
     
     private bool IsAllowed(GameState from, GameState to)
     {

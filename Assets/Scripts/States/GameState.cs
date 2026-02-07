@@ -7,4 +7,5 @@ public enum GameState
     Dialogue,
     QuestLog,
     Paused, 
+    Racing, 
 }
