@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2275961610",
+    "Type": "Event",
+    "GUID": "{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}",
+    "Language": "SFX",
+    "Hash": "{1CDF185B-D6C6-ED4F-D8DA-CE07824A7A63}",
+    "ObjectPath": "Play_Village_island",
+    "ShortName": "Play_Village_island",
+    "Path": "Event/Play_Village_island.bnk",
+    "Media": [
+     {
+      "Id": "610000193",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "music_city.wav",
+      "Path": "Media/610000193.wem",
+      "CachePath": "AE/{AE338D71-ABD5-69C3-A63F-C67753906CB7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2275961610",
+      "Name": "Play_Village_island",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Village_island",
+      "GUID": "{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}",
+      "DurationType": "OneShot",
+      "DurationMin": "169.1704",
+      "DurationMax": "169.1704",
+      "MediaRefs": [
+       {
+        "Id": "610000193"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{444308A1-FA86-3C0E-160D-087F9E985DAD}"
+ }
+}

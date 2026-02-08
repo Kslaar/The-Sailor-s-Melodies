@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8AE0C435-A23A-F3E3-D6A5-B2EBD5AA9A78}",
+    "Hash": "{421CBD88-3758-6CE8-113A-E4127652E7C9}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -68,10 +68,54 @@
         "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
        }
       ]
+     },
+     {
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{599EE782-E3DA-4287-8452-51D85D1F1A13}",
+      "States": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Racing",
+        "GUID": "{349E298C-E4CC-4C43-941E-1666A88BAAFB}"
+       },
+       {
+        "Id": "319258907",
+        "Name": "Paused",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Paused",
+        "GUID": "{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"
+       },
+       {
+        "Id": "1214987797",
+        "Name": "Questlog",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Questlog",
+        "GUID": "{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Sailing",
+        "GUID": "{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"
+       },
+       {
+        "Id": "2742168187",
+        "Name": "Docked",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Docked",
+        "GUID": "{8296FECE-58DE-47EF-935F-572168058384}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{6A90B4BE-C34D-A832-4128-A966A8A4CD57}"
+  "FileHash": "{10589112-4F02-FC6B-DEB2-69F8F17F7621}"
  }
 }

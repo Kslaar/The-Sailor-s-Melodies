@@ -1,10 +1,17 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3546073390	BoatMode			\Default Work Unit\BoatMode	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	748895195	None	BoatMode			
 	1921590194	Sailing	BoatMode			
 	2524403114	MotorActive	BoatMode			
+	104887399	Racing	GameState			
+	319258907	Paused	GameState			
+	748895195	None	GameState			
+	1214987797	Questlog	GameState			
+	1921590194	Sailing	GameState			
+	2742168187	Docked	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
