@@ -1,5 +1,6 @@
 using System.Collections;
 using AK.Wwise;
+using NUnit.Framework;
 using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
@@ -185,10 +186,16 @@ public class RaceManager : MonoBehaviour
     {
         state = RaceState.Finished;
         FreezePlayer(true);
-        OnRaceFinished?.Invoke(currentCourse.courseID, timePassed);
-        ResetRaceAfterDelay();
 
-        GameStateManager.Instance?.TryExitRace("Race finished");
+        bool success = timePassed <= currentCourse.successTimeSeconds;
+
+        if (success)
+            OnRaceFinished?.Invoke(currentCourse.courseID, timePassed);
+        else
+            OnRaceFailed?.Invoke("TooSlow");
+        // ResetRaceAfterDelay();
+        // GameStateManager.Instance?.TryExitRace("Race finished");
+        StartCoroutine(CoroutineReturnToQuestgiver(success));
     }
 
     private void Fail(string reason)
@@ -197,11 +204,12 @@ public class RaceManager : MonoBehaviour
         state = RaceState.Failed;
         FreezePlayer(true);
         OnRaceFailed?.Invoke(reason);
-        ResetRaceAfterDelay();
-
-        GameStateManager.Instance?.TryExitRace("Race failed");
+        // ResetRaceAfterDelay();
+        // GameStateManager.Instance?.TryExitRace("Race failed");
+        StartCoroutine(CoroutineReturnToQuestgiver(success: false));
     }
-
+    
+    /*
     private void ResetRaceAfterDelay()
     {
         StartCoroutine(CoroutineReset());
@@ -213,6 +221,48 @@ public class RaceManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         FreezePlayer(false);
         ResetRace();   
+    }
+    */
+
+    private IEnumerator CoroutineReturnToQuestgiver(bool success)
+    {
+        yield return new WaitForSeconds(3f);
+
+        // Teleport zum Dialog zurück
+        if (currentCourse != null && currentCourse.returnPoint != null)
+        {
+            if (rb != null)
+            {
+                rb.linearVelocity = Vector3.zero;
+                rb.angularVelocity = Vector3.zero;
+                rb.position = currentCourse.returnPoint.position;
+                rb.rotation = currentCourse.returnPoint.rotation;
+            }
+            else
+            {
+                boat.transform.SetPositionAndRotation(currentCourse.returnPoint.position, currentCourse.returnPoint.rotation);
+            }
+        }
+
+        FreezePlayer(false);
+
+        GameStateManager.Instance?.TrySetState(GameState.Docked, success ? "Race success" : "Race failed");
+
+        // Bei Erfolg stellen wir den QuestState um!
+        if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
+        {
+            QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
+        }
+
+        // Stateabhängiger Dialog über NPCDialogueSelector
+        if (currentCourse != null && currentCourse.questGiverDialogue != null)
+        {
+            var d = currentCourse.questGiverDialogue.GetDialogue();
+            if (d != null)
+                DialogueManager.Instance?.StartDialogue(d);
+        }
+
+        ResetRace();
     }
 
     private void ResetRace()

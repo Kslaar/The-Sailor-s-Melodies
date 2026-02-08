@@ -8,14 +8,17 @@ public class RaceCourse : MonoBehaviour
 
     [Header("Return Dialogue")]
     public Transform returnPoint;
+    public NPCDialogueSelector questGiverDialogue;
+    public string questID;
 
     [Header("The Course")]
     public Transform startPoint;
     public Collider finishTrigger; 
     public List<Collider> checkpoints = new(); // Spieler soll ja nicht einfach sich zur finishline drehen können
 
-    [Header("Rules")]
-    public float maxTimeSeconds = 210f;
+    [Header("Rules & Time")]
+    public float successTimeSeconds = 120f; 
+    public float maxTimeSeconds = 210f; // Immer größer als successTimeSeconds
     public float maxDistanceFromIsland = 80f; // Wie weit vom nächsten Checkpoint es erlaubt ist zu sein
     public float outOfBoundsGracePeriod = 5f;
 
