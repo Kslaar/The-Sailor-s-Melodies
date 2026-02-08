@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Quest" ID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="quest_direction" ID="{99FE2D57-F7AE-4D3B-A2A9-87B249A8A11A}" ShortID="116517384">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Object_Attenuation" ID="{8357F125-3F76-4A39-974F-9D8F88596C35}" WorkUnitID="{14B32A12-9ECA-416E-80D0-EE1F6788FAA3}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="quest_direction" ID="{BCD27367-E2C4-442B-8EF9-B6CC89EC535B}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.0594972261623645"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0594972261623639"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>quest_direction.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="331775086"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Position Name="" ID="{4EC129CE-48E5-4300-8A80-A05BCBE3E7F0}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="quest_direction" ID="{BCD27367-E2C4-442B-8EF9-B6CC89EC535B}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

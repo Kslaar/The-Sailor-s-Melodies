@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{B1A966F9-33B4-BDFE-4224-6EBD6E081E96}",
+    "Hash": "{A7609F01-BDE9-AEEF-3978-0E61625E2A02}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Click.wav",
       "CachePath": "76/{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem"
+     },
+     {
+      "Id": "72439141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "9B/{9BE574A9-0542-9703-65B8-99B213066222}.wem"
      },
      {
       "Id": "98811860",
@@ -48,6 +56,14 @@
       "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
      },
      {
+      "Id": "216203938",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "3C/{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem"
+     },
+     {
       "Id": "217901187",
       "Language": "SFX",
       "Streaming": "false",
@@ -72,6 +88,14 @@
       "CachePath": "CC/{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem"
      },
      {
+      "Id": "331775086",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "quest_direction.wav",
+      "CachePath": "3B/{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem"
+     },
+     {
       "Id": "438083269",
       "Language": "SFX",
       "Streaming": "false",
@@ -86,6 +110,14 @@
       "Location": "Memory",
       "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
       "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
+     },
+     {
+      "Id": "1052310578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "AA/{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem"
      }
     ],
     "Plugins": {
@@ -126,10 +158,20 @@
       "Name": "Play_MotorStart",
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStart",
       "GUID": "{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0",
+      "DurationMin": "0.41237667",
+      "DurationMax": "0.42854926",
+      "MediaRefs": [
+       {
+        "Id": "72439141"
+       },
+       {
+        "Id": "216203938"
+       },
+       {
+        "Id": "1052310578"
+       }
+      ],
       "ActionSetState": [
        {
         "GroupId": "3546073390",
@@ -156,6 +198,19 @@
         "Name": "Sailing",
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
         "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "851505750",
+      "Name": "Play_quest_direction",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Play_quest_direction",
+      "GUID": "{6D2859F1-6347-40A6-AB65-0E6A323B510F}",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "331775086"
        }
       ]
      },
@@ -207,7 +262,16 @@
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
      },
      {
       "Id": "2249769530",
@@ -289,6 +353,6 @@
     ]
    }
   ],
-  "FileHash": "{5347FB61-DBBD-81EA-D277-EB3790C719FD}"
+  "FileHash": "{664E8B07-8C2B-D088-7ED1-51BCB371AF6B}"
  }
 }

@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	851505750	Play_quest_direction			\Default Work Unit\Quest\Play_quest_direction	
 	1009189048	ui_error			\Default Work Unit\UI\ui_error	
 	1103577285	Play_MotorStop			\Default Work Unit\Player\Play_MotorStop	
 	1219048826	ui_start			\Default Work Unit\UI\ui_start	
@@ -16,12 +17,16 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	41264705	SFX_Error	.cache\76\{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem		\Containers\UI\UI\SFX_Error		135204
+	72439141	motor_start	.cache\9B\{9BE574A9-0542-9703-65B8-99B213066222}.wem		\Containers\Player\Pull Chord\motor_start		39684
 	98811860	sail_wind_01	.cache\F0\{F0787D86-C70E-B308-E32C-41368A25692B}.wem		\Containers\Player\boat_movement\sail_wind_01		90528
 	148246808	water_movement	.cache\96\{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem		\Containers\Player\water_movement		17126444
 	175406919	boat_boost	.cache\7B\{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem		\Containers\Player\boat_boost		1488096
+	216203938	motor_start_01	.cache\3C\{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem		\Containers\Player\Pull Chord\motor_start_01		40040
 	217901187	SFX_Start	.cache\7E\{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem		\Containers\UI\UI\SFX_Start		259300
 	218989300	sail_wind_02	.cache\35\{35210FE7-3221-30CD-496E-35550D247322}.wem		\Containers\Player\boat_movement\sail_wind_02		90172
 	329250373	SFX_Click	.cache\CC\{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem		\Containers\UI\UI\SFX_Click		122628
+	331775086	quest_direction	.cache\3B\{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem		\Containers\Quest\quest_direction		3847520
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
+	1052310578	motor_start_02	.cache\AA\{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem		\Containers\Player\Pull Chord\motor_start_02		41236
 

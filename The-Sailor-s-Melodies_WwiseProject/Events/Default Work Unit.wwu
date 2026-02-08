@@ -6,6 +6,7 @@
 				<WorkUnit Name="UI" ID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" PersistMode="Reference"/>
 				<WorkUnit Name="Player" ID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" PersistMode="Reference"/>
+				<WorkUnit Name="Quest" ID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -104,6 +104,8 @@ public class MotorBoostAbility : MonoBehaviour
 
     private void TryStartEngine()
     {
+        MotorStartEvent.Post(gameObject);
+
         float roll = Random.value;
         bool success = roll < data.startSuccessChance;
 
@@ -129,6 +131,8 @@ public class MotorBoostAbility : MonoBehaviour
         // Wwise Audio Start
         MotorState.SetValue();               //Setze State -> MotorActive   
         MotorStartEvent.Post(gameObject);    //Starte Motor-Start-Sound
+        MotorLoopEvent.Post(gameObject);
+
        
     
 

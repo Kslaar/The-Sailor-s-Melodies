@@ -13,6 +13,9 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{D593824B-05C1-4634-9A86-65B408A8A827}" ShortID="399608751">
+							<PropertyList>
+								<Property Name="Probability" Type="Real64" Value="50"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
@@ -55,6 +58,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D1ED9B2C-E929-4265-BE11-A198BD8BA60F}" ShortID="7778433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}">
@@ -69,11 +82,23 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{3B8F8179-CDF2-4C16-B992-42968052132C}" ShortID="807982159">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pull Chord" ID="{F6672D41-7A5F-42C6-A9FC-5B5AFA505379}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Play_MotorLoop" ID="{15FA814F-9BD4-48BF-9E12-F747BA4F477D}">
 					<ChildrenList>
 						<Action Name="" ID="{745B8E7B-AEF2-4C57-AD01-04E9E1ECA41C}" ShortID="1016317839">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="FadeInCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
@@ -87,6 +112,8 @@
 						<Action Name="" ID="{3AA888F8-7939-41B7-AF7F-CEFD2278100C}" ShortID="524942227">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
