@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
+        static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
         static const AkUniqueID STOP_SAILING = 1258201081U;

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
+	<Events>
+		<WorkUnit Name="Quest" ID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_quest_direction" ID="{6D2859F1-6347-40A6-AB65-0E6A323B510F}">
+					<ChildrenList>
+						<Action Name="" ID="{C5A0F378-354B-471C-AB64-9B753A6EF9C2}" ShortID="494369107">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="quest_direction" ID="{99FE2D57-F7AE-4D3B-A2A9-87B249A8A11A}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
