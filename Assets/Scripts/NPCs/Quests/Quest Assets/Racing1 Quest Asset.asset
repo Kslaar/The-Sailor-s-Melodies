@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: Quest Asset
+  m_Name: Racing1 Quest Asset
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: collect_fuel_1
-  title: Collect Fuel
-  description: "The Pastor ordered me to collect all the fuelcans the tankers dropped
-    overboard. \nAs a Reward, he promised my a holy Object"
+  questID: racing_1
+  title: Race no.1
+  description: 'A retired professional sailor asked me to show her how fast I can
+    sail with my little boat. I have to beat her given time by sailing through several
+    checkpoints around this island. '
   objectives:
-  - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
-  rewards:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: e1f1e563755da47eea4abf8e0b517720, type: 2}
+  rewards: []
