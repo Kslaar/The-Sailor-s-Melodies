@@ -16,9 +16,12 @@ namespace AK
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
+        static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
+        static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
+        static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
@@ -38,6 +41,21 @@ namespace AK
                 static const AkUniqueID SAILING = 1921590194U;
             } // namespace STATE
         } // namespace BOATMODE
+
+        namespace GAMESTATE
+        {
+            static const AkUniqueID GROUP = 4091656514U;
+
+            namespace STATE
+            {
+                static const AkUniqueID DOCKED = 2742168187U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PAUSED = 319258907U;
+                static const AkUniqueID QUESTLOG = 1214987797U;
+                static const AkUniqueID RACING = 104887399U;
+                static const AkUniqueID SAILING = 1921590194U;
+            } // namespace STATE
+        } // namespace GAMESTATE
 
     } // namespace STATES
 

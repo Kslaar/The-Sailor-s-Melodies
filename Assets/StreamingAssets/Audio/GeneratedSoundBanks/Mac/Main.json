@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{A7609F01-BDE9-AEEF-3978-0E61625E2A02}",
+    "Hash": "{8AFBA30D-EE47-B249-0ABA-00573EDEED81}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "boat_boost.wav",
       "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
+     },
+     {
+      "Id": "183690583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cinemear - Graphix - Pop Open Swipe.wav",
+      "CachePath": "83/{839601B2-0956-D6F8-22AB-D1B34DFC2B25}.wem"
      },
      {
       "Id": "216203938",
@@ -104,6 +112,14 @@
       "CachePath": "D1/{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem"
      },
      {
+      "Id": "503419035",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Unrealsfx - Magical Game - New Item Collected Pickup.wav",
+      "CachePath": "AC/{ACD3BA80-DDA4-474C-0D3B-85BE8E6130F6}.wem"
+     },
+     {
       "Id": "530816004",
       "Language": "SFX",
       "Streaming": "false",
@@ -112,12 +128,28 @@
       "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
      },
      {
+      "Id": "587129590",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Epic Stock Media - Dwarf - Voice Yes.wav",
+      "CachePath": "E2/{E2ECF916-46F8-0F38-44F9-B05E46371A8F}.wem"
+     },
+     {
       "Id": "1052310578",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
       "CachePath": "AA/{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem"
+     },
+     {
+      "Id": "1056869406",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Epic Stock Media - Cooking Game - Water Dispenser Filling Glass .wav",
+      "CachePath": "80/{807D00AB-0BED-DE95-B8A5-F416B2D587C8}.wem"
      }
     ],
     "Plugins": {
@@ -198,6 +230,40 @@
         "Name": "Sailing",
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
         "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "578142713",
+      "Name": "Play_Pickup_Fuel",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Fuel",
+      "GUID": "{612E52A3-C734-4B33-9A80-AD4549665836}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.6275471",
+      "DurationMax": "1.6275471",
+      "MediaRefs": [
+       {
+        "Id": "183690583"
+       },
+       {
+        "Id": "1056869406"
+       }
+      ]
+     },
+     {
+      "Id": "2692550093",
+      "Name": "Play_Pickup_Quest",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Quest",
+      "GUID": "{E6742437-856A-4FFD-A80A-3CDA4DC8A270}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.94267",
+      "DurationMax": "1.94267",
+      "MediaRefs": [
+       {
+        "Id": "503419035"
+       },
+       {
+        "Id": "587129590"
        }
       ]
      },
@@ -353,6 +419,6 @@
     ]
    }
   ],
-  "FileHash": "{664E8B07-8C2B-D088-7ED1-51BCB371AF6B}"
+  "FileHash": "{687CC387-7BA6-B469-EE91-D0D812A310FF}"
  }
 }

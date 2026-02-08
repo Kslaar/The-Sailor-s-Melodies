@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
+	<Events>
+		<WorkUnit Name="SFX" ID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Pickup_Fuel" ID="{612E52A3-C734-4B33-9A80-AD4549665836}">
+					<ChildrenList>
+						<Action Name="" ID="{382F69F8-85FC-4548-B125-14707DFACB32}" ShortID="414358075">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cinemear - Graphix - Pop Open Swipe" ID="{3ACE5D82-B1C2-41D7-951B-E6C90FD6DF6F}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{66EF97AA-C09B-4EF0-B01B-872B8AD6F963}" ShortID="247115704">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Epic Stock Media - Cooking Game - Water Dispenser Filling Glass" ID="{0D65E77D-C891-43CC-B124-EC27F1BE1D66}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Pickup_Quest" ID="{E6742437-856A-4FFD-A80A-3CDA4DC8A270}">
+					<ChildrenList>
+						<Action Name="" ID="{8BD675B5-0A0B-44D9-80F9-15D7B8C7EB4F}" ShortID="253216353">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Epic Stock Media - Dwarf - Voice Yes" ID="{1B2D1B94-7C1D-4D17-945C-8BAEF5D85B0D}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E5FC7882-5120-4D19-B2A3-FE2476CF013D}" ShortID="965978534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{074475DE-5CA9-477B-8D02-0A7BC0BF95CE}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

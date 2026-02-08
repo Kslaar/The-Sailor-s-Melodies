@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Village_island" ID="{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}">
+					<ChildrenList>
+						<Action Name="" ID="{985AAD6E-BBDF-4E57-AFC1-2017D496E1EE}" ShortID="1049403980">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="music_city" ID="{3677CD9B-C035-418F-AC92-8399CA8E3C69}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

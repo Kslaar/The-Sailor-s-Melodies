@@ -27,6 +27,19 @@
 						</Transition>
 					</TransitionList>
 				</StateGroup>
+				<StateGroup Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+						<State Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+						<State Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+						<State Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+						<State Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+						<State Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

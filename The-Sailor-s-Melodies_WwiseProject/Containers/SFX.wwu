@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4E299B09-B3CC-4088-A317-772409C120BD}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="SFX" ID="{4E299B09-B3CC-4088-A317-772409C120BD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Pickup Fuel" ID="{07AF3467-88F6-4830-8078-05AB4CA373A8}" ShortID="85610857">
+					<ChildrenList>
+						<Sound Name="Cinemear - Graphix - Pop Open Swipe" ID="{3ACE5D82-B1C2-41D7-951B-E6C90FD6DF6F}" ShortID="489104984">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cinemear - Graphix - Pop Open Swipe" ID="{777AEE6D-B676-497C-B91A-D55AB6B7B95B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00318364767158555"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0342242124695448"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.198977979474098"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.432578152649058"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cinemear - Graphix - Pop Open Swipe.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="183690583"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cinemear - Graphix - Pop Open Swipe" ID="{777AEE6D-B676-497C-B91A-D55AB6B7B95B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Epic Stock Media - Cooking Game - Water Dispenser Filling Glass" ID="{0D65E77D-C891-43CC-B124-EC27F1BE1D66}" ShortID="699963734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Epic Stock Media - Cooking Game - Water Dispenser Filling Glass" ID="{28569D39-B2AE-49D9-95F2-F63FA3DB0849}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.00749685539389544"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0206163523332128"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.57621384656654"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.95376100612137"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Epic Stock Media - Cooking Game - Water Dispenser Filling Glass .wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1056869406"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Epic Stock Media - Cooking Game - Water Dispenser Filling Glass" ID="{28569D39-B2AE-49D9-95F2-F63FA3DB0849}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Pickup Quest" ID="{C2027B5E-251A-4F7C-8EF2-470CAD3E2DD8}" ShortID="662234149">
+					<ChildrenList>
+						<Sound Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{074475DE-5CA9-477B-8D02-0A7BC0BF95CE}" ShortID="139516677">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{66C2DD1D-8452-4F55-99E7-AA63E03F6791}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0163097282625594"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.255519076113431"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.94266994555491"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Unrealsfx - Magical Game - New Item Collected Pickup.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="503419035"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{66C2DD1D-8452-4F55-99E7-AA63E03F6791}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Epic Stock Media - Dwarf - Voice Yes" ID="{1B2D1B94-7C1D-4D17-945C-8BAEF5D85B0D}" ShortID="189792565">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Epic Stock Media - Dwarf - Voice Yes" ID="{1C6C73FE-87A0-47E3-95D9-506456C06AA0}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0169265260861355"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0125739908068435"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.071091409561769"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.71623387828413"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Epic Stock Media - Dwarf - Voice Yes.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="587129590"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Epic Stock Media - Dwarf - Voice Yes" ID="{1C6C73FE-87A0-47E3-95D9-506456C06AA0}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

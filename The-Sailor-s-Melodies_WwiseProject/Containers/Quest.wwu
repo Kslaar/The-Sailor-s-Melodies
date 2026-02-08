@@ -36,6 +36,47 @@
 					<PositioningInfo>
 						<Position Name="" ID="{4EC129CE-48E5-4300-8A80-A05BCBE3E7F0}"/>
 					</PositioningInfo>
+					<StateInfo>
+						<StatePropertyList>
+							<Property Name="Highpass"/>
+							<Property Name="Lowpass"/>
+							<Property Name="MidiVelocityOffset"/>
+							<Property Name="Pitch"/>
+							<Property Name="Volume"/>
+						</StatePropertyList>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
+								<StateGroupInfo Name="" ID="{5B7BF62A-2666-4055-BED9-E26773270D1A}" ShortID="799668317"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+								<CustomState Name="" ID="{7AB1A132-0FB5-4600-9E38-0846DA1CE0E9}" ShortID="848745128"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+								<CustomState Name="" ID="{C097A6A7-F43B-49F1-B851-91252865DA94}" ShortID="788885949"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+								<CustomState Name="" ID="{DB0F984E-98A8-4E29-A05F-218BC068C5AA}" ShortID="315245163"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+								<CustomState Name="" ID="{BD06D388-E727-47E9-B2C6-9B123B7F23D8}" ShortID="660430101"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+								<CustomState Name="" ID="{90C3B8FC-9CC6-4266-904D-B7F2DE8E4561}" ShortID="123543608"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+								<CustomState Name="" ID="{D0F18C8B-C1BA-42E5-AA49-2F17D5B75F56}" ShortID="2801536"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="quest_direction" ID="{BCD27367-E2C4-442B-8EF9-B6CC89EC535B}" Platform="Linked"/>
 					</ActiveSourceList>
