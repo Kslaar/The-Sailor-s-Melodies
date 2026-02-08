@@ -22,10 +22,6 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{BD6135C0-BD19-4BFE-A104-3701F4F35AD6}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
-							<Position X="2" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}"/>
 							<Position X="2" Y="1"/>
 						</Module>

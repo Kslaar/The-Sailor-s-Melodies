@@ -10,18 +10,18 @@
     "Type": "User",
     "GUID": "{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}",
     "Language": "SFX",
-    "Hash": "{E195C6F6-74E6-0F94-A94A-18866088136A}",
+    "Hash": "{2196B394-33AF-8873-2D3E-FAAFC013E14E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
     "ShortName": "Music",
     "Path": "Music.bnk",
     "Media": [
      {
-      "Id": "442753936",
+      "Id": "218592675",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Gamesoundtrack.wav",
-      "CachePath": "76/{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem"
+      "ShortName": "music_mainmenue (blueprint).wav",
+      "CachePath": "BB/{BB257A92-FC4F-9CAF-78E7-4DBD44836B6E}.wem"
      }
     ],
     "Events": [
@@ -35,13 +35,13 @@
       "DurationMax": "78",
       "MediaRefs": [
        {
-        "Id": "442753936"
+        "Id": "218592675"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{040C43C2-9883-77D7-274E-FBC9F3EFA596}"
+  "FileHash": "{F764D917-E14A-47E4-67DB-7C0E2CEE165E}"
  }
 }
