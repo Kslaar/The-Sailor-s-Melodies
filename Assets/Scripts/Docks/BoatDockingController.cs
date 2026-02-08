@@ -35,7 +35,7 @@ public class BoatDockingController : MonoBehaviour
 
         var gsm = GameStateManager.Instance;
 
-        if (gsm != null && (gsm.State == GameState.Dialogue || gsm.State == GameState.QuestLog || gsm.State == GameState.Paused))
+        if (gsm != null && (gsm.State == GameState.Dialogue || gsm.State == GameState.QuestLog || gsm.State == GameState.Paused || gsm.State == GameState.Racing))
         return;
 
         if (!isDocked)

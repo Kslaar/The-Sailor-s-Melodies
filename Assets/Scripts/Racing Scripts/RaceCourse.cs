@@ -1,0 +1,29 @@
+using System.Collections.Generic;
+using UnityEngine;
+
+public class RaceCourse : MonoBehaviour
+{
+    [Header("Island Identity")]
+    public string courseID = "race_island_1";
+
+    [Header("Return Dialogue")]
+    public Transform returnPoint;
+
+    [Header("The Course")]
+    public Transform startPoint;
+    public Collider finishTrigger; 
+    public List<Collider> checkpoints = new(); // Spieler soll ja nicht einfach sich zur finishline drehen können
+
+    [Header("Rules")]
+    public float maxTimeSeconds = 210f;
+    public float maxDistanceFromIsland = 80f; // Wie weit vom nächsten Checkpoint es erlaubt ist zu sein
+    public float outOfBoundsGracePeriod = 5f;
+
+    public IEnumerable<Vector3> GetAnchorPositions()
+    {
+        if (startPoint != null) yield return startPoint.position;
+        if (finishTrigger != null) yield return finishTrigger.bounds.center;
+        foreach (var cp in checkpoints)
+            if (cp != null) yield return cp.bounds.center;
+    }
+}
