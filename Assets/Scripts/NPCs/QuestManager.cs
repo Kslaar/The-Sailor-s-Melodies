@@ -116,6 +116,15 @@ public class QuestManager : MonoBehaviour
         NotifyObjectiveProgressHasChanged();
     }
 
+    public void ForceSetState(string questID, QuestState state)
+    {
+        if (string.IsNullOrWhiteSpace(questID)) return;
+
+        stateByID[questID] = state;
+        OnQuestsChanged?.Invoke();
+        NotifyObjectiveProgressHasChanged();
+    }
+
     public QuestAsset GetQuest(string id) => allQuests.Find(q => q.questID == id);
     public QuestState GetState(string questID)
         => stateByID.TryGetValue(questID, out var st) ? st : default;

@@ -58,7 +58,7 @@ public class PauseInputController : MonoBehaviour
             AkUnitySoundEngine.WakeupFromSuspend(); // BJÖRN hier geht's wieder los
             if (cursorLock != null)
             {
-                cursorLock.UnlockCursor();
+                cursorLock.LockCursor();
             }
             else
             {
