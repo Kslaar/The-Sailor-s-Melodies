@@ -4,148 +4,169 @@ using UnityEngine;
 [DisallowMultipleComponent]
 public class Waves : MonoBehaviour
 {
-    public int dimension = 10;
+    [Header("Visual Mesh (optional)")]
+    public bool generateMesh = true;
+    public float size = 50f;        // Weltgröße des sichtbaren Wassers (nur Optik)
+    public int resolution = 64;     // Mesh-Auflösung (64 => 65x65 Vertices)
+
+    [Header("Wave Settings (Physik + Optik)")]
     public Octave[] octaves;
-    public float uvScale;
 
     MeshFilter meshFilter;
     Mesh mesh;
-
-    // Cache
     Vector3[] vertices;
-    int dim1;                  
-    Vector3 invLossyXZ;        
+    int[] triangles;
+    Vector2[] uvs;
 
-    void Start()
+    int dim;     // resolution
+    int dim1;    // resolution + 1
+
+    void Awake()
     {
-        dim1 = dimension + 1;
+        if (!generateMesh) return;
+
+        dim = Mathf.Max(2, resolution);
+        dim1 = dim + 1;
 
         mesh = new Mesh();
-        mesh.name = gameObject.name;
+        mesh.name = "WavesMesh";
+        mesh.MarkDynamic();
 
-        vertices = GenerateVertices();                
+        meshFilter = GetComponent<MeshFilter>();
+        if (!meshFilter) meshFilter = gameObject.AddComponent<MeshFilter>();
+
+        var mr = GetComponent<MeshRenderer>();
+        if (!mr) gameObject.AddComponent<MeshRenderer>();
+
+        vertices = GenerateVertices();
+        triangles = GenerateTriangles();
+        uvs = GenerateUVs();
+
         mesh.vertices = vertices;
-        mesh.triangles = GenerateTriangles(vertices.Length);
-        mesh.uv = GenerateUVs(vertices.Length);
+        mesh.triangles = triangles;
+        mesh.uv = uvs;
+
         mesh.RecalculateBounds();
         mesh.RecalculateNormals();
 
-        meshFilter = gameObject.AddComponent<MeshFilter>();
-        meshFilter.mesh = mesh;
-
-        CacheScale();
-    }
-
-    void CacheScale()
-    {
-        var s = transform.lossyScale;
-        invLossyXZ = new Vector3(
-            s.x != 0f ? 1f / s.x : 0f,
-            0f,
-            s.z != 0f ? 1f / s.z : 0f
-        );
-    }
-
-    public float GetHeightFromPoint(Vector3 position)
-    {
-        var localPos = Vector3.Scale(position - transform.position, invLossyXZ);
-
-        float lx = Mathf.Clamp(localPos.x, 0f, dimension);
-        float lz = Mathf.Clamp(localPos.z, 0f, dimension);
-
-        int x0 = Mathf.FloorToInt(lx);
-        int z0 = Mathf.FloorToInt(lz);
-        int x1 = Mathf.Min(x0 + 1, dimension);
-        int z1 = Mathf.Min(z0 + 1, dimension);
-
-        // Bilinear Interpolation (viel günstiger!!!)
-        float tx = lx - x0;
-        float tz = lz - z0;
-
-        float h00 = vertices[Index(x0, z0)].y;
-        float h01 = vertices[Index(x0, z1)].y;
-        float h10 = vertices[Index(x1, z0)].y;
-        float h11 = vertices[Index(x1, z1)].y;
-
-        float h0 = Mathf.Lerp(h00, h10, tx);
-        float h1 = Mathf.Lerp(h01, h11, tx);
-        float h = Mathf.Lerp(h0, h1, tz);
-
-        return h * transform.lossyScale.y;
-    }
-
-    Vector3[] GenerateVertices()
-    {
-        var v = new Vector3[dim1 * dim1];
-        for (int x = 0; x <= dimension; x++)
-            for (int z = 0; z <= dimension; z++)
-                v[Index(x, z)] = new Vector3(x, 0, z);
-        return v;
-    }
-
-    int Index(int x, int z) => x * dim1 + z;
-
-    int[] GenerateTriangles(int vertCount)
-    {
-        var triangles = new int[vertCount * 6];
-        for (int x = 0; x < dimension; x++)
-        {
-            for (int z = 0; z < dimension; z++)
-            {
-                int t = Index(x, z) * 6;
-                triangles[t + 0] = Index(x, z);
-                triangles[t + 1] = Index(x + 1, z + 1);
-                triangles[t + 2] = Index(x + 1, z);
-                triangles[t + 3] = Index(x, z);
-                triangles[t + 4] = Index(x, z + 1);
-                triangles[t + 5] = Index(x + 1, z + 1);
-            }
-        }
-        return triangles;
-    }
-
-    Vector2[] GenerateUVs(int vertCount)
-    {
-        var uvs = new Vector2[vertCount];
-        for (int x = 0; x <= dimension; x++)
-            for (int z = 0; z <= dimension; z++)
-                uvs[Index(x, z)] = new Vector2((float)x / dimension, (float)z / dimension);
-        return uvs;
+        meshFilter.sharedMesh = mesh;
     }
 
     void Update()
     {
-        for (int x = 0; x <= dimension; x++)
-        {
-            for (int z = 0; z <= dimension; z++)
-            {
-                float y = 0f;
-                for (int o = 0; o < octaves.Length; o++)
-                {
-                    if (octaves[o].alternate)
-                    {
-                        float perlin = Mathf.PerlinNoise((x * octaves[o].scale.x) / dimension,
-                                                        (z * octaves[o].scale.y) / dimension) * Mathf.PI * 2f;
-                        y += Mathf.Cos(perlin + octaves[o].speed.magnitude * Time.time) * octaves[o].height;
-                    }
-                    else
-                    {
-                        float perlin = Mathf.PerlinNoise((x * octaves[o].scale.x + Time.time * octaves[o].speed.x) / dimension,
-                                                        (z * octaves[o].scale.y + Time.time * octaves[o].speed.y) / dimension) - 0.5f;
-                        y += perlin * octaves[o].height;
-                    }
-                }
+        if (!generateMesh || mesh == null) return;
 
+        // Update Visual Mesh using the SAME world sampling (seamless, chunk-friendly)
+        for (int x = 0; x <= dim; x++)
+        {
+            for (int z = 0; z <= dim; z++)
+            {
                 int idx = Index(x, z);
-                var p = vertices[idx];
-                p.y = y;
+                Vector3 p = vertices[idx];
+
+                // local -> world
+                Vector3 world = transform.TransformPoint(p);
+                float y = SampleHeightWorld(world.x, world.z, Time.time);
+
+                // world height -> local (Y only)
+                // (Wir setzen nur Y, X/Z bleiben local)
+                p.y = y - transform.position.y;
                 vertices[idx] = p;
             }
         }
 
-        mesh.SetVertices(vertices);         
+        mesh.SetVertices(vertices);
         mesh.RecalculateNormals();
     }
+
+    /// <summary>Physik-Höhe: funktioniert überall in der Welt (kein Clamp, keine Mesh-Fläche nötig).</summary>
+    public float GetHeightFromPoint(Vector3 worldPos)
+    {
+        return SampleHeightWorld(worldPos.x, worldPos.z, Time.time);
+    }
+
+    float SampleHeightWorld(float wx, float wz, float t)
+    {
+        float y = 0f;
+
+        // Skalen: du willst typischerweise "world units" sinnvoll mappen.
+        // Hier: scale ist direkt "Frequenz" in Worldspace (kleiner => größere Wellen).
+        for (int o = 0; o < octaves.Length; o++)
+        {
+            var oc = octaves[o];
+
+            if (oc.alternate)
+            {
+                float n = Mathf.PerlinNoise(wx * oc.scale.x, wz * oc.scale.y) * Mathf.PI * 2f;
+                y += Mathf.Cos(n + oc.speed.magnitude * t) * oc.height;
+            }
+            else
+            {
+                float n = Mathf.PerlinNoise(
+                            wx * oc.scale.x + t * oc.speed.x,
+                            wz * oc.scale.y + t * oc.speed.y
+                          ) - 0.5f;
+                y += n * oc.height;
+            }
+        }
+
+        // in Worldspace ist y direkt “Höhe”
+        return transform.position.y + y * transform.lossyScale.y;
+    }
+
+    Vector3[] GenerateVertices()
+    {
+        // Zentriert um 0: von -size/2 .. +size/2 (viel angenehmer für Tiling)
+        var v = new Vector3[dim1 * dim1];
+        float half = size * 0.5f;
+
+        for (int x = 0; x <= dim; x++)
+        {
+            for (int z = 0; z <= dim; z++)
+            {
+                float fx = ((float)x / dim) * size - half;
+                float fz = ((float)z / dim) * size - half;
+                v[Index(x, z)] = new Vector3(fx, 0f, fz);
+            }
+        }
+        return v;
+    }
+
+    int[] GenerateTriangles()
+    {
+        var tris = new int[dim * dim * 6];
+        int t = 0;
+
+        for (int x = 0; x < dim; x++)
+        {
+            for (int z = 0; z < dim; z++)
+            {
+                int i00 = Index(x, z);
+                int i10 = Index(x + 1, z);
+                int i01 = Index(x, z + 1);
+                int i11 = Index(x + 1, z + 1);
+
+                tris[t++] = i00; tris[t++] = i11; tris[t++] = i10;
+                tris[t++] = i00; tris[t++] = i01; tris[t++] = i11;
+            }
+        }
+        return tris;
+    }
+
+    Vector2[] GenerateUVs()
+    {
+        var u = new Vector2[dim1 * dim1];
+        for (int x = 0; x <= dim; x++)
+        {
+            for (int z = 0; z <= dim; z++)
+            {
+                u[Index(x, z)] = new Vector2((float)x / dim, (float)z / dim);
+            }
+        }
+        return u;
+    }
+
+    int Index(int x, int z) => x * dim1 + z;
 
     [Serializable]
     public struct Octave

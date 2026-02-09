@@ -3837,6 +3837,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6763b72141c346469b6563d5f417cb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
+  isDefaultListener: 1
+  bOverrideScalingFactor: 0
+  scalingFactor: -1
+  listenerId: 0
 --- !u!114 &330585550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3849,6 +3853,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d9230a4828662488788f7cc7a5bc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!114 &330585551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5344,6 +5360,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6915284195207560855, guid: 5fdeaee63200d0d4b97d464426b97ed6, type: 3}
   m_PrefabInstance: {fileID: 426046043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &434580479
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 434580480}
+  - component: {fileID: 434580481}
+  m_Layer: 0
+  m_Name: WaterChunkManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &434580480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434580479}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1584435715}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &434580481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434580479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f16dba36c9043cdb42595f0b9be175, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaterChunkManager
+  target: {fileID: 330585546}
+  tilePrefab: {fileID: 5219939505935350409, guid: 90a0e28a277fb43018dd794a5e8af37c, type: 3}
+  tilesPerAxis: 3
+  tileSize: 300
+  tileResolution: 64
 --- !u!1 &452993936
 GameObject:
   m_ObjectHideFlags: 0
@@ -15103,16 +15168,13 @@ GameObject:
   - component: {fileID: 1472213458}
   - component: {fileID: 1472213456}
   - component: {fileID: 1472213459}
-  - component: {fileID: 1472213460}
-  - component: {fileID: 1472213461}
-  - component: {fileID: 1472213462}
   m_Layer: 0
   m_Name: Waves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1472213456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15188,64 +15250,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de76ede488d724698a000ceed90169d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Waves
-  dimension: 200
+  generateMesh: 1
+  size: 16000
+  resolution: 64
   octaves:
-  - speed: {x: 0.5, y: 0.5}
-    scale: {x: 10, y: 10}
+  - speed: {x: 0.005, y: 0.002}
+    scale: {x: 0.01, y: 0.01}
     height: 0.1
     alternate: 1
-  - speed: {x: 0, y: 15}
-    scale: {x: 1.31, y: 8.63}
+  - speed: {x: 0, y: 0.001}
+    scale: {x: 0.0131, y: 0.0863}
     height: 1
     alternate: 0
-  uvScale: 30
---- !u!114 &1472213460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472213455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3fca2db1180549f4b19be38c8f54629, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WaterFollowPatch
-  target: {fileID: 1927105118}
-  waterY: 0
-  snapSize: 50
---- !u!114 &1472213461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472213455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e3158eb006f644089d618fe9f453a80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WaterFollowCameraPatch
-  cam: {fileID: 330585545}
-  waterY: 0
-  viewportAnchor: {x: 0.5, y: 0.6}
-  stepSize: 0
---- !u!114 &1472213462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1472213455}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 020da8e2bc8f94fe282611c181465c9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WFCPFrustum
-  cam: {fileID: 330585545}
-  waterY: 0
-  viewportAnchor: {x: 0.5, y: 0.6}
-  stepSize: 0
 --- !u!1001 &1498260881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16295,6 +16311,7 @@ Transform:
   - {fileID: 343462121}
   - {fileID: 1199228639}
   - {fileID: 801459804}
+  - {fileID: 434580480}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1591452638
@@ -19925,6 +19942,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8027869094303157025, guid: fa6f2c000993f7647aa77f14f6b75e3e, type: 3}
   m_PrefabInstance: {fileID: 1930433393}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1936153311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1936153313}
+  - component: {fileID: 1936153312}
+  m_Layer: 0
+  m_Name: Wave System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1936153312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936153311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d8b02ad6416d4f5ab149d979e11e34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WaveSystem
+  seaLevel: 0
+  octaves:
+  - speed: {x: 0, y: 0}
+    scale: {x: 0, y: 0}
+    height: 0
+    alternate: 0
+  - speed: {x: 0, y: 0}
+    scale: {x: 0, y: 0}
+    height: 0
+    alternate: 0
+--- !u!4 &1936153313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936153311}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1940402609 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7551441319507815087, guid: 67ca6b696e04209478464a49e1964a93, type: 3}
@@ -22413,6 +22484,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1968459081}
   - {fileID: 1472213458}
+  - {fileID: 1936153313}
   - {fileID: 781536108}
   - {fileID: 604330275}
   - {fileID: 493158104}

@@ -23,7 +23,7 @@ public class FloatPhysics : MonoBehaviour
     [Range(0f, 2f)] public float verticalFollow = 0.9f;
 
     protected Rigidbody Rigidbody;
-    protected Waves Waves;
+    protected WaveSystem Waves;
 
     protected float waterLine;
     protected Vector3[] waterLinePoints;
@@ -36,7 +36,7 @@ public class FloatPhysics : MonoBehaviour
 
     void Awake()
     {
-        Waves = FindFirstObjectByType<Waves>();
+        Waves = WaveSystem.Instance;
         Rigidbody = GetComponent<Rigidbody>();
         Rigidbody.useGravity = false;
 
@@ -59,7 +59,7 @@ public class FloatPhysics : MonoBehaviour
             Vector3 p = floatPoints[i].position;
 
             waterLinePoints[i] = p;
-            waterLinePoints[i].y = Waves.GetHeightFromPoint(p);
+            waterLinePoints[i].y = Waves.GetHeight(p);
             // waterLinePoints[i].y = 0f;
 
             newWaterLine += waterLinePoints[i].y / floatPoints.Length;
