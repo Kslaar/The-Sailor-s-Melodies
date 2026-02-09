@@ -16,7 +16,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Boat Audio" ID="{6A2F977A-D028-4613-B695-FC1D636B0C99}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -56,24 +56,48 @@
 								<CustomState Name="" ID="{7AB1A132-0FB5-4600-9E38-0846DA1CE0E9}" ShortID="848745128"/>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+								<CustomState Name="" ID="{FA7FD371-EBA5-41E9-B1D3-CB00D3E76582}" ShortID="1042770857">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
 								<CustomState Name="" ID="{C097A6A7-F43B-49F1-B851-91252865DA94}" ShortID="788885949"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
-								<CustomState Name="" ID="{DB0F984E-98A8-4E29-A05F-218BC068C5AA}" ShortID="315245163"/>
+								<CustomState Name="" ID="{DB0F984E-98A8-4E29-A05F-218BC068C5AA}" ShortID="315245163">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
-								<CustomState Name="" ID="{BD06D388-E727-47E9-B2C6-9B123B7F23D8}" ShortID="660430101"/>
+								<CustomState Name="" ID="{BD06D388-E727-47E9-B2C6-9B123B7F23D8}" ShortID="660430101">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
-								<CustomState Name="" ID="{90C3B8FC-9CC6-4266-904D-B7F2DE8E4561}" ShortID="123543608"/>
+								<CustomState Name="" ID="{90C3B8FC-9CC6-4266-904D-B7F2DE8E4561}" ShortID="123543608">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
-								<CustomState Name="" ID="{D0F18C8B-C1BA-42E5-AA49-2F17D5B75F56}" ShortID="2801536"/>
+								<CustomState Name="" ID="{D0F18C8B-C1BA-42E5-AA49-2F17D5B75F56}" ShortID="2801536">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>

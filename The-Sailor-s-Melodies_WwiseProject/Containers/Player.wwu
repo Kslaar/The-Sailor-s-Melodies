@@ -3,39 +3,24 @@
 	<Containers>
 		<WorkUnit Name="Player" ID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{BD6135C0-BD19-4BFE-A104-3701F4F35AD6}" ShortID="626448093">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{12E5C6DB-1348-428C-971F-EB83D796B88C}">
-							<Language>SFX</Language>
-							<AudioFile>344 Audio - Water Ambience - At Sea Waves Lapping Splashing.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="444877738"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="344 Audio - Water Ambience - At Sea Waves Lapping Splashing" ID="{12E5C6DB-1348-428C-971F-EB83D796B88C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Fusehive - Ship Sail Opening" ID="{58246C35-2A6E-4CF5-98D5-EA98499459D4}" ShortID="93316674">
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<AudioFileSource Name="Fusehive - Ship Sail Opening" ID="{EE3B4A17-1A1F-46B3-B87A-0072363C8D36}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.062632337006383"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.192714883096563"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="0.0168625522709493"/>
+								<Property Name="TrimEnd" Type="Real64" Value="1.42127227873172"/>
+							</PropertyList>
 							<Language>SFX</Language>
 							<AudioFile>Fusehive - Ship Sail Opening.wav</AudioFile>
 							<MediaIDList>
@@ -53,7 +38,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -102,7 +87,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -112,7 +97,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -141,7 +126,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -176,7 +161,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -210,7 +195,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -239,7 +224,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -257,6 +242,48 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
+								<StateGroupInfo Name="" ID="{7A6C0944-8D67-4579-9559-FE214E4AAAF5}" ShortID="69242990"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+								<CustomState Name="" ID="{E6479BD6-4FFA-481E-BEF7-118B4C72ECE4}" ShortID="127902753"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+								<CustomState Name="" ID="{2E786802-044C-4E2E-B688-9BE1841C59CE}" ShortID="488024415"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+								<CustomState Name="" ID="{C686365B-D515-4F76-8F35-1F82D93AB837}" ShortID="132647107"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+								<CustomState Name="" ID="{32A4E6ED-AAFF-4D1A-8D16-B0647FE9C6C4}" ShortID="1029331897">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+								<CustomState Name="" ID="{D699A8C4-F555-4665-9BFC-F126F8893446}" ShortID="716467430"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+								<CustomState Name="" ID="{C4BA9B8A-EA42-4B21-9E87-9464DE04E1BB}" ShortID="340602429"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+								<CustomState Name="" ID="{B6528023-3D31-42AD-BA55-C1DB6D5EEE25}" ShortID="728424462"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
 							<PluginInnerObject Name="" ID="{1B4A84D1-9020-4B79-8FA8-0EABF08A3DB8}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
@@ -351,7 +378,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -370,6 +397,64 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
+								<StateGroupInfo Name="" ID="{45B08F33-6F81-41B4-A470-3428CAF8D8DD}" ShortID="654411828"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="BoatMode" ID="{689E706D-0416-4809-8ABA-D2665E401C43}"/>
+								<StateGroupInfo Name="" ID="{951AB81C-E501-4E46-9975-23BC68DB73A2}" ShortID="740663764"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+								<CustomState Name="" ID="{82CDB44B-B11B-40BA-A34B-F3BC62A098FF}" ShortID="400582998"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+								<CustomState Name="" ID="{E5AAFF84-3CA8-4F32-A024-098F114462FA}" ShortID="443178682"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+								<CustomState Name="" ID="{11DAE568-C7C2-49AD-9195-8113B658F1EA}" ShortID="314053257"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
+								<CustomState Name="" ID="{09EA3721-3133-41F7-9090-BECCB689D2E0}" ShortID="310947932"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+								<CustomState Name="" ID="{614C39D3-D73E-42B2-A663-F73F7AD02A9F}" ShortID="850961029"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+								<CustomState Name="" ID="{976A1E4C-2E5E-46E1-89D5-F2C57BF10167}" ShortID="970905752">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-20"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+								<CustomState Name="" ID="{B68EA0FB-918B-4973-9665-4909EBB97D67}" ShortID="432097843"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+								<CustomState Name="" ID="{F7BD6FA1-5202-4657-9AE7-9142E9EB113A}" ShortID="303858339"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+								<CustomState Name="" ID="{714148EC-5B3F-4035-BEB2-98828CD13FD3}" ShortID="863065813"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+								<CustomState Name="" ID="{8DCE6BE8-315A-448F-B003-912035B0DBFD}" ShortID="388427653"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}" Platform="Linked"/>
 					</ActiveSourceList>
@@ -390,7 +475,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -415,7 +500,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -425,7 +510,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -454,7 +539,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -483,7 +568,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

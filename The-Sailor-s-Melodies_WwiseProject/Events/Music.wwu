@@ -8,7 +8,7 @@
 						<Action Name="" ID="{CCFFBDFE-A00C-4E3E-900A-D351C2C6FEB1}" ShortID="667087237">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Maintheme" ID="{9F97CA58-FE73-4ADB-9733-BC3D4800B28C}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+									<ObjectRef Name="GameSoundtrack" ID="{1BD4941A-D77F-427A-8F38-CB0620C0D347}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -19,7 +19,7 @@
 						<Action Name="" ID="{985AAD6E-BBDF-4E57-AFC1-2017D496E1EE}" ShortID="1049403980">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="music_city" ID="{3677CD9B-C035-418F-AC92-8399CA8E3C69}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+									<ObjectRef Name="Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

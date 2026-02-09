@@ -29,7 +29,7 @@
 				</StateGroup>
 				<StateGroup Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}">
 					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
@@ -38,6 +38,14 @@
 						<State Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
 						<State Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
 						<State Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+						<State Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Music_State" ID="{25575F75-AAEB-4F51-AACF-3E2ADE9A353F}">
+					<ChildrenList>
+						<State Name="None" ID="{CE9598BD-21FE-4BE2-83DC-310C0395A32B}"/>
+						<State Name="Exploration" ID="{835B4B1B-EDEE-4F5C-AE16-B003C5B19928}"/>
+						<State Name="Island_01" ID="{90EDB749-4DE8-4939-932F-2D75B21041AC}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

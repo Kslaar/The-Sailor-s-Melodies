@@ -48,6 +48,7 @@ namespace AK
 
             namespace STATE
             {
+                static const AkUniqueID DIALOGUE = 3930136735U;
                 static const AkUniqueID DOCKED = 2742168187U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID PAUSED = 319258907U;
@@ -56,6 +57,18 @@ namespace AK
                 static const AkUniqueID SAILING = 1921590194U;
             } // namespace STATE
         } // namespace GAMESTATE
+
+        namespace MUSIC_STATE
+        {
+            static const AkUniqueID GROUP = 3826569560U;
+
+            namespace STATE
+            {
+                static const AkUniqueID EXPLORATION = 2582085496U;
+                static const AkUniqueID ISLAND_01 = 2402435976U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC_STATE
 
     } // namespace STATES
 
@@ -68,7 +81,9 @@ namespace AK
 
     namespace BUSSES
     {
-        static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID BOAT_AUDIO = 2945336769U;
+        static const AkUniqueID ISLAND_AUDIO = 779236412U;
+        static const AkUniqueID MASTER = 4056684167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

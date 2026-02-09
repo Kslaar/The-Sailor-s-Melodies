@@ -12,15 +12,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	2692550093	Play_Pickup_Quest			\Default Work Unit\SFX\Play_Pickup_Quest	
 
 State Group	ID	Name			Wwise Object Path	Notes
+	3546073390	BoatMode			\Default Work Unit\BoatMode	
 	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
+	748895195	None	BoatMode			
+	1921590194	Sailing	BoatMode			
+	2524403114	MotorActive	BoatMode			
 	104887399	Racing	GameState			
 	319258907	Paused	GameState			
 	748895195	None	GameState			
 	1214987797	Questlog	GameState			
 	1921590194	Sailing	GameState			
 	2742168187	Docked	GameState			
+	3930136735	Dialogue	GameState			
 
 Effect plug-ins	ID	Name	Type				Notes
 	749681742	Octave_Down (Custom)	Wwise Pitch Shifter			
