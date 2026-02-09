@@ -141,4 +141,19 @@ public class GameStateManager : MonoBehaviour
         Debug.Log($"[State] {old} -> {newState}" + (string.IsNullOrEmpty(reason) ? "" : $" | {reason}"));
         OnStateChanged?.Invoke(old, newState);
     }
+
+    ////////////////////////////////////////////////////////////////////
+    
+    public void ForceUnpause(GameState target = GameState.Sailing, string reason = null)
+    {
+        pauseReturnStack.Clear(); // Stack leeren damit wir nicht im alten State landen
+
+        if (State == GameState.Paused)
+        {
+            DoSetState(target, reason ?? "ForceUnpause");
+            return;
+        }
+
+        DoSetState(target, reason ?? "ForceState");
+    }
 }

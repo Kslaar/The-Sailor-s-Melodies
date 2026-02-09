@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,7 +18,47 @@ public class DialogueManager : MonoBehaviour
         transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);
 
-        if (ui == null) ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
+        // if (ui == null) ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Nach jedem SceneLoad UI neu zuweisen
+        StartCoroutine(RebindUINextFrame());
+    }
+
+    private IEnumerator RebindUINextFrame()
+    {
+        yield return null; // 1 Frame warten, UIStateController da ist
+        BindUIFromScene();
+    }
+
+    private void BindUIFromScene()
+    {
+        // Erst versuchen über UIStateController
+        var usc = FindFirstObjectByType<UIStateController>(FindObjectsInactive.Include);
+        if (usc != null)
+        {
+            var comp = usc.DialogueUIComponent;
+            if (comp != null)
+            {
+                ui = comp;
+                return;
+            }
+        }
+
+        // Fallback: direkt suchen
+        ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
     }
 
     public void StartDialogue(DialogueAsset asset)
@@ -35,15 +76,6 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        /*
-        current = asset;
-        if (current.nodes == null || current.nodes.Count == 0)
-        {
-            Debug.LogWarning("[DialogueManager] DialogueAsset hat keine nodes...");
-            EndDialogue();
-            return;
-        }
-        */
         if (!gsm.TryEnterDialogue("StartDialogue")) return;
 
         current = asset;
@@ -56,6 +88,7 @@ public class DialogueManager : MonoBehaviour
     // UIStateController kann so rechtzeitig Dialogue Panel aktivieren
     private IEnumerator CoruShowUIWhenReady()
     {
+        /*
         var usc = FindFirstObjectByType<UIStateController>(FindObjectsInactive.Include);
         
         // Frames auf den State Change warten 
@@ -66,6 +99,14 @@ public class DialogueManager : MonoBehaviour
                 ui = usc.DialogueUIComponent;
                 break;
             }
+            yield return null;
+        }
+        */
+        if (ui == null) BindUIFromScene();
+
+        for (int i = 0; i < 30 && ui == null; i++) // 30 Frames warten wegen Asyncload
+        {
+            BindUIFromScene();
             yield return null;
         }
 
@@ -117,15 +158,5 @@ public class DialogueManager : MonoBehaviour
             GameStateManager.Instance.TryExitDialogue("Dialogue ended");
         else
             GameStateManager.Instance.TrySetState(GameState.Sailing);
-        /*
-        var gsm = GameStateManager.Instance;
-        if (gsm == null) return;
-
-        // Falls Inseln erstellt werden mit weiteren Dialogoptionen, muss ich hier nochmal ran
-        if (!gsm.TryExitDialogue("Dialog beendet"))
-        {
-            gsm.TrySetState(GameState.Sailing, "Dialog-beenden-Fallback");
-        }
-        */
     }
 }
