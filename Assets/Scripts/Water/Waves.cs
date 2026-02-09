@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 
+[DisallowMultipleComponent]
 public class Waves : MonoBehaviour
 {
     public int dimension = 10;
