@@ -188,8 +188,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quest Button
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2377405ef78fc4257a7e8f9ab3f28e1f, type: 2}
-  m_sharedMaterial: {fileID: -7602099525020609175, guid: 2377405ef78fc4257a7e8f9ab3f28e1f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4a92eb2d24451400e87557ae2e44fe95, type: 2}
+  m_sharedMaterial: {fileID: 5619266698804648725, guid: 4a92eb2d24451400e87557ae2e44fe95, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
