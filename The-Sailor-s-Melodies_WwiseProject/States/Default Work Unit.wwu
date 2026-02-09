@@ -41,13 +41,6 @@
 						<State Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="Music_State" ID="{25575F75-AAEB-4F51-AACF-3E2ADE9A353F}">
-					<ChildrenList>
-						<State Name="None" ID="{CE9598BD-21FE-4BE2-83DC-310C0395A32B}"/>
-						<State Name="Exploration" ID="{835B4B1B-EDEE-4F5C-AE16-B003C5B19928}"/>
-						<State Name="Island_01" ID="{90EDB749-4DE8-4939-932F-2D75B21041AC}"/>
-					</ChildrenList>
-				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

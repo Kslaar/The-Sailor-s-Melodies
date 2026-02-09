@@ -1,15 +1,11 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	3546073390	BoatMode			\Default Work Unit\BoatMode	
-	3826569560	Music_State			\Default Work Unit\Music_State	
 	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	748895195	None	BoatMode			
 	1921590194	Sailing	BoatMode			
 	2524403114	MotorActive	BoatMode			
-	748895195	None	Music_State			
-	2402435976	Island_01	Music_State			
-	2582085496	Exploration	Music_State			
 	104887399	Racing	GameState			
 	319258907	Paused	GameState			
 	748895195	None	GameState			

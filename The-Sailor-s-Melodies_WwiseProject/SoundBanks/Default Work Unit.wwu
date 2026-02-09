@@ -21,6 +21,7 @@
 						<ObjectRef Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pickup_Fuel" ID="{612E52A3-C734-4B33-9A80-AD4549665836}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Music_World" ID="{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_Sailing" ID="{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pickup_Quest" ID="{E6742437-856A-4FFD-A80A-3CDA4DC8A270}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
