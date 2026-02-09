@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A3E9CE02-990E-4283-986B-9007F96D4C94}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Ambience" ID="{A3E9CE02-990E-4283-986B-9007F96D4C94}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Ambience_Village" ID="{858B5943-B2F8-4388-ABAB-334E86A1D85A}" ShortID="158282823">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Ambience_Village" ID="{F3A0869D-4FC6-4D33-885B-CBFF5B010487}">
+							<Language>SFX</Language>
+							<AudioFile>Ambience_Village.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="728854603"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Ambience_Village" ID="{F3A0869D-4FC6-4D33-885B-CBFF5B010487}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
+        static const AkUniqueID PLAY_MUSIC_WORLD = 3774920574U;
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
@@ -58,19 +59,22 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATE
 
-        namespace MUSIC_STATE
-        {
-            static const AkUniqueID GROUP = 3826569560U;
+    } // namespace STATES
 
-            namespace STATE
+    namespace SWITCHES
+    {
+        namespace MUSICSTATE
+        {
+            static const AkUniqueID GROUP = 1021618141U;
+
+            namespace SWITCH
             {
                 static const AkUniqueID EXPLORATION = 2582085496U;
                 static const AkUniqueID ISLAND_01 = 2402435976U;
-                static const AkUniqueID NONE = 748895195U;
-            } // namespace STATE
-        } // namespace MUSIC_STATE
+            } // namespace SWITCH
+        } // namespace MUSICSTATE
 
-    } // namespace STATES
+    } // namespace SWITCHES
 
     namespace BANKS
     {

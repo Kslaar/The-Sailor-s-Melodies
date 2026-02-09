@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{0F7D69B7-C318-F439-C5E0-BCEA0CFEE196}",
+    "Hash": "{A1F06254-8209-C352-C003-9366ED4902EA}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cinemear - Graphix - Pop Open Swipe.wav",
-      "CachePath": "83/{839601B2-0956-D6F8-22AB-D1B34DFC2B25}.wem"
+      "CachePath": "48/{48B1E4FB-3381-BDB3-F992-CE049D1D8453}.wem"
      },
      {
       "Id": "216203938",
@@ -117,7 +117,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Unrealsfx - Magical Game - New Item Collected Pickup.wav",
-      "CachePath": "AC/{ACD3BA80-DDA4-474C-0D3B-85BE8E6130F6}.wem"
+      "CachePath": "B0/{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem"
+     },
+     {
+      "Id": "524385979",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Place_Royal_Loop.wav",
+      "CachePath": "A8/{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem"
      },
      {
       "Id": "530816004",
@@ -133,7 +141,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Epic Stock Media - Dwarf - Voice Yes.wav",
-      "CachePath": "E2/{E2ECF916-46F8-0F38-44F9-B05E46371A8F}.wem"
+      "CachePath": "F1/{F176FC90-ACF9-CC59-0298-74C876A13079}.wem"
+     },
+     {
+      "Id": "797446116",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Place_Home_Loop.wav",
+      "CachePath": "56/{5632DBA5-3636-B660-C149-AC7B6C69AB96}.wem"
      },
      {
       "Id": "1052310578",
@@ -149,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Epic Stock Media - Cooking Game - Water Dispenser Filling Glass .wav",
-      "CachePath": "80/{807D00AB-0BED-DE95-B8A5-F416B2D587C8}.wem"
+      "CachePath": "2E/{2E0D5FC8-95F9-1540-C28F-D6DD278C3C99}.wem"
      }
     ],
     "Plugins": {
@@ -230,6 +246,41 @@
         "Name": "Sailing",
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
         "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "3774920574",
+      "Name": "Play_Music_World",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Music_World",
+      "GUID": "{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1021618141",
+         "Id": "2582085496",
+         "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "524385979"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1021618141",
+         "Id": "2402435976",
+         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "797446116"
+         }
+        ]
        }
       ]
      },
@@ -416,9 +467,31 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1021618141",
+      "Name": "MusicState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicState",
+      "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}",
+      "Switches": [
+       {
+        "Id": "2402435976",
+        "Name": "Island_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicState\\Island_01",
+        "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicState\\Exploration",
+        "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{35262B76-CE9F-2C35-326E-140C529527F5}"
+  "FileHash": "{6D391011-4C34-74D8-29FC-70E592D15CEC}"
  }
 }
