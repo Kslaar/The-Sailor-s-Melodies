@@ -102,5 +102,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d16486511a54de5bd762a3f185f334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaterChunk
-  tileSize: 300
+  tileSize: 200
   resolution: 64

@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaterChunk : MonoBehaviour
 {
     [Header("Tile")]
-    public float tileSize = 200f;
+    public float tileSize = 300f;
     public int resolution = 64;
 
     Mesh mesh;

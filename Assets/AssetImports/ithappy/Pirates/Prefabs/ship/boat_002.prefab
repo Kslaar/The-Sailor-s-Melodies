@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9144504475367747256}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Float Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7384440298881646260}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EngineForce Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8242964852459898639}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Float Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 3218830207934548409}
   - component: {fileID: 4178310299955281252}
   - component: {fileID: 8557704722351451642}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3733859541635158686}
   - component: {fileID: 5137250039634533399}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: HolyShell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9047356932053537018}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Float Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2890430667778327221}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Float Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7441731655444556486}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Force origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,6 +427,10 @@ PrefabInstance:
       value: boat_002
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -457,10 +461,10 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4141246039535961364}
+      addedObject: {fileID: 2421717531357364448}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2421717531357364448}
+      addedObject: {fileID: 6584879592408092065}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 315561779116195446}
@@ -482,6 +486,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 202982737575183368}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7207955144013045792}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5906718005393602080}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5320455996010872432}
   m_SourcePrefab: {fileID: 100100000, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!4 &7316729568759855435 stripped
 Transform:
@@ -493,28 +506,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
   m_PrefabInstance: {fileID: 7061793455382093472}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &4141246039535961364
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7980922155677737969}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8269695299867115452, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!54 &2421717531357364448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -542,6 +533,29 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!136 &6584879592408092065
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5044339
+  m_Height: 12
+  m_Direction: 2
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &315561779116195446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,6 +660,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b326827e25af945b08702a5c9dacdff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MotorBoostAbility
+  SailingState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ad2dc145b64b93647886635c0d6d7736, type: 2}
+  MotorState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5405dded0d137974c8b0bc0362aa2b69, type: 2}
+  MotorStartEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3048900faef44714f9f7de9d31b2640a, type: 2}
+  MotorstopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: dc74843c0bf2b81478361053ff6847e7, type: 2}
+  MotorLoopEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b82afdbafd7b3943b97ea3abde73101, type: 2}
   boat: {fileID: 1727689091793670056}
   fuel: {fileID: 1394243595709864521}
   data: {fileID: 11400000, guid: 45ffb426490244bc48a10c09446529b4, type: 2}
@@ -666,4 +704,66 @@ MonoBehaviour:
   rb: {fileID: 2421717531357364448}
   cursorLock: {fileID: 0}
   sailingCamera: {fileID: 0}
-  holdsSecondsToDock: 0.7
+  holdsSecondsToDock: 0.35
+--- !u!114 &7207955144013045792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c10d18a6e2a9144b3e63603ab8c88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
+--- !u!114 &5906718005393602080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e86823c8c78833744b0796ea4aee3a40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkAudioListener
+  isDefaultListener: 1
+  bOverrideScalingFactor: 0
+  scalingFactor: -1
+  listenerId: 0
+--- !u!114 &5320455996010872432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5047b9e5667a447f4b88aa6a767ee820, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObstacleAvoidance
+  avoidanceCollider: {fileID: 6584879592408092065}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  heightThreshold: -2
+  detectPadding: 2
+  pushStrength: 35
+  slideStrength: 12
+  maxAccel: 12
+  maxCorrectionPerStep: 0.35
