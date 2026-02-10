@@ -8,12 +8,20 @@ public class RaceTrigger : MonoBehaviour
     public TriggerType triggerType = TriggerType.Checkpoint;
     public string courseID;
     public int checkpointIndex;
-    
+
     private void OnTriggerEnter(Collider other)
     {
-        if (!HasTagInParents(other.transform, "Player")) return;
+        Debug.Log($"[RaceTrigger] HIT {name} type={triggerType} courseID={courseID} idx={checkpointIndex} other={other.name}");
+    
+        if (!HasTagInParents(other.transform, "Player"))
+        {
+            Debug.Log("[RaceTrigger] -> ignored (no Player tag in parents)");
+            return;
+        }
+    
         RaceManager.Instance?.OnTriggerHit(courseID, triggerType, checkpointIndex);
     }
+
 
     private static bool HasTagInParents(Transform t, string tag)
     {

@@ -42,6 +42,12 @@ public class GameStateManager : MonoBehaviour
             return false;
         }
 
+        if (State == GameState.Racing && targetState == GameState.Sailing)
+        {
+            Debug.LogWarning("[State] Blocked Racing -> Sailing. Use TryExitRace() or finish flow.");
+            return false;
+        }
+
         if (!IsAllowed(State, targetState))
         {
             Debug.LogWarning($"[State] Blocked transition {State} -> {targetState}. Reason: {reason}");

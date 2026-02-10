@@ -50,6 +50,11 @@ public class FloatPhysics : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Waves == null)
+        {
+            Waves = WaveSystem.Instance ?? FindFirstObjectByType<WaveSystem>();
+            if (Waves == null) return;
+        }
         // 1) Wasserlinie berechnen + Unterwasser-Anteil
         float newWaterLine = 0f;
         int underCount = 0;

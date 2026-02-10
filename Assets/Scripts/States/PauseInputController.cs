@@ -4,28 +4,12 @@ using AK.Wwise;
 
 public class PauseInputController : MonoBehaviour
 {
-    [SerializeField] private CursorLockController cursorLock;
-
-    private void Update()
-    {
-        if (Keyboard.current == null) return;
-
-        if (Keyboard.current.escapeKey.wasPressedThisFrame)
-        {
-            var gsm = GameStateManager.Instance;
-            if (gsm == null) return;
-
-            if (gsm.State == GameState.Paused)
-                gsm.Unpause("Escape");
-            else    
-                gsm.TryPause("Escape");
-        }
-    }
-
     private void OnEnable()
     {
         var gsm = GameStateManager.Instance;
         if (gsm != null) gsm.OnStateChanged += OnStateChanged;
+
+        ApplyPauseEffects(GameStateManager.Instance != null && GameStateManager.Instance.State == GameState.Paused);
     }
 
     private void OnDisable()
@@ -34,37 +18,31 @@ public class PauseInputController : MonoBehaviour
         if (gsm != null) gsm.OnStateChanged -= OnStateChanged;
     }
 
+    private void Update()
+    {
+        var kb = Keyboard.current;
+        if (kb == null) return;
+
+        if (!kb.escapeKey.wasPressedThisFrame) return;
+
+        var gsm = GameStateManager.Instance;
+        if (gsm == null) return;
+
+        if (gsm.State != GameState.Paused)
+            gsm.TryPause("Escape open pause");
+    }
+
     private void OnStateChanged(GameState from, GameState to)
     {
-        if (to == GameState.Paused)
-        {
-            Time.timeScale = 0f;
+        if (to == GameState.Paused) ApplyPauseEffects(true);
+        else if (from == GameState.Paused) ApplyPauseEffects(false);
+    }
 
-            AkUnitySoundEngine.Suspend(); // Hab hier Musik im pausenState pausiert BJÖRN
-            if (cursorLock != null)
-            {
-                cursorLock.UnlockCursor();
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            } 
-        }
-        else if (from == GameState.Paused)
-        {
-            Time.timeScale = 1f;
+    private void ApplyPauseEffects(bool paused)
+    {
+        Time.timeScale = paused ? 0f : 1f;
 
-            AkUnitySoundEngine.WakeupFromSuspend(); // BJÖRN hier geht's wieder los
-            if (cursorLock != null)
-            {
-                cursorLock.LockCursor();
-            }
-            else
-            {
-                Cursor.lockState = CursorLockMode.Locked;
-                Cursor.visible = false;
-            }
-        }
+        if (paused) AkUnitySoundEngine.Suspend();
+        else AkUnitySoundEngine.WakeupFromSuspend();
     }
 }

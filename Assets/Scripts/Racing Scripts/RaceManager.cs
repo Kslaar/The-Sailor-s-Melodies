@@ -70,7 +70,11 @@ public class RaceManager : MonoBehaviour
             return false;
         }
         rb = boat.GetComponent<Rigidbody>();
-
+        
+        var docking = FindFirstObjectByType<BoatDockingController>();
+        if (docking != null && docking.IsDocked)
+            docking.UndockForRace();
+        
         // Teleport
         TeleportToStart();
         StartCoroutine(CountdownThenStartRace());
@@ -158,6 +162,8 @@ public class RaceManager : MonoBehaviour
 
     public void OnTriggerHit(string courseID, RaceTrigger.TriggerType trigger, int checkpointIndex)
     {
+        Debug.Log($"[RaceManager] OnTriggerHit: courseID={courseID} trigger={trigger} idx={checkpointIndex} state={state} next={nextCheckpoint} current={(currentCourse? currentCourse.courseID:"NULL")}");
+        
         if (currentCourse == null) return;
         if (state != RaceState.Racing) return;
         if (courseID != currentCourse.courseID) return;

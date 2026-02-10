@@ -125,7 +125,33 @@ public class BoatDockingController : MonoBehaviour
         if (currentDock != null && currentDock.dockUI != null)
             currentDock.dockUI.Hide();
 
-        gsm?.TrySetState(GameState.Sailing, "Undock Now");
+        if (gsm != null && gsm.State != GameState.Racing)
+            gsm.TrySetState(GameState.Sailing, "Undock Now");
+    }
+
+    public void UndockForRace()
+    {
+        if (!isDocked) return;
+
+        isDocked = false;
+
+        // Kameras zurück
+        if (currentDock != null && currentDock.dockCamera != null)
+            currentDock.dockCamera.gameObject.SetActive(false);
+        if (sailingCamera != null) 
+            sailingCamera.gameObject.SetActive(true);
+
+        // Physik/Steuerung zurück
+        rb.isKinematic = savedKinematic;
+        if (boat != null) boat.enabled = true;
+
+        // Cursor wieder locken
+        if (cursorLock != null) cursorLock.LockCursor();
+        else { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
+
+        // Dock UI schließen
+        if (currentDock != null && currentDock.dockUI != null)
+            currentDock.dockUI.Hide();
     }
 
     private void OnTriggerEnter(Collider other)
