@@ -1,6 +1,13 @@
 Event	ID	Name			Wwise Object Path	Notes
 	578142713	Play_Pickup_Fuel			\Default Work Unit\SFX\Play_Pickup_Fuel	
 	851505750	Play_quest_direction			\Default Work Unit\Quest\Play_quest_direction	
+	957019032	Play_Horn_D			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_D	
+	957019033	Play_Horn_E			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_E	
+	957019034	Play_Horn_F			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_F	
+	957019035	Play_Horn_G			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_G	
+	957019037	Play_Horn_A			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_A	
+	957019038	Play_Horn_B			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_B	
+	957019039	Play_Horn_C			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_C	
 	1009189048	ui_error			\Default Work Unit\UI\ui_error	
 	1103577285	Play_MotorStop			\Default Work Unit\Player\Play_MotorStop	
 	1219048826	ui_start			\Default Work Unit\UI\ui_start	
@@ -9,6 +16,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1538229119	Play_MotorStart			\Default Work Unit\Player\Play_MotorStart	
 	1855672063	Play_MotorLoop			\Default Work Unit\Player\Play_MotorLoop	
 	2249769530	ui_click			\Default Work Unit\UI\ui_click	
+	2686750104	Play_Ocarina_D			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_D	
+	2686750105	Play_Ocarina_E			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_E	
+	2686750106	Play_Ocarina_F			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_F	
+	2686750107	Play_Ocarina_G			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_G	
+	2686750109	Play_Ocarina_A			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_A	
+	2686750110	Play_Ocarina_B			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_B	
+	2686750111	Play_Ocarina_C			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_C	
 	2692550093	Play_Pickup_Quest			\Default Work Unit\SFX\Play_Pickup_Quest	
 	3774920574	Play_Music_World			\Default Work Unit\Music\Play_Music_World	
 
@@ -51,14 +65,28 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	216203938	motor_start_01	.cache\3C\{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem		\Containers\Player\Pull Chord\motor_start_01		40040
 	217901187	SFX_Start	.cache\7E\{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem		\Containers\UI\UI\SFX_Start		259300
 	218989300	sail_wind_02	.cache\35\{35210FE7-3221-30CD-496E-35550D247322}.wem		\Containers\Player\boat_movement\sail_wind_02		90172
+	261911091	Okarina_C	.cache\1F\{1F41DFDC-CDC1-4E7C-5D83-D27261C23BA0}.wem		\Containers\Quest\Keyboard\Okarina_C		161216
+	297006455	Horn_D	.cache\5C\{5CEF3BE2-5652-956A-CA9A-CAEA714E5914}.wem		\Containers\Quest\Keyboard\Horn_D		159728
 	329250373	SFX_Click	.cache\CC\{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem		\Containers\UI\UI\SFX_Click		122628
 	331775086	quest_direction	.cache\3B\{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem		\Containers\Quest\quest_direction		3847520
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
+	447023009	Horn_C	.cache\DB\{DBB5C386-6C64-308A-9114-3EF4C9FA1F02}.wem		\Containers\Quest\Keyboard\Horn_C		158868
+	483172978	Okarina_G	.cache\67\{673BC957-95C0-603A-0148-25FCFFCCE5DF}.wem		\Containers\Quest\Keyboard\Okarina_G		193436
+	487973624	Horn_G	.cache\05\{05B53C69-B366-1BFA-71FD-66077B9FE5DC}.wem		\Containers\Quest\Keyboard\Horn_G		121056
 	503419035	Unrealsfx - Magical Game - New Item Collected Pickup	.cache\B0\{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem		\Containers\SFX\Pickup Quest\Unrealsfx - Magical Game - New Item Collected Pickup		373088
 	524385979	Place_Royal_Loop	.cache\A8\{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem		\Containers\Music\Music\music_exploration\Place_Royal_Loop		5020380
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
 	587129590	Epic Stock Media - Dwarf - Voice Yes	.cache\F1\{F176FC90-ACF9-CC59-0298-74C876A13079}.wem		\Containers\SFX\Pickup Quest\Epic Stock Media - Dwarf - Voice Yes		123960
+	603414801	Horn_E	.cache\1C\{1C5634DD-3E25-9C70-54F9-2E6161CB2036}.wem		\Containers\Quest\Keyboard\Horn_E		129564
+	697144522	Horn_F	.cache\09\{09DA9A98-6BFC-C429-6C19-664EEF4B6952}.wem		\Containers\Quest\Keyboard\Horn_F		148088
+	736938058	Okarina_B	.cache\C4\{C430ADC2-681C-4425-54FB-C8C52AA86137}.wem		\Containers\Quest\Keyboard\Okarina_B		195452
+	741850182	Horn_A	.cache\02\{02F9BC3C-3DE5-AAFA-8ECE-469426C99EBA}.wem		\Containers\Quest\Keyboard\Horn_A		149064
+	747045309	Okarina_D	.cache\DD\{DD90906E-5447-A0E1-5047-25F60E6F21E1}.wem		\Containers\Quest\Keyboard\Okarina_D		165240
 	797446116	Place_Home_Loop	.cache\56\{5632DBA5-3636-B660-C149-AC7B6C69AB96}.wem		\Containers\Music\Music\Place_Home_Loop\Place_Home_Loop		9805920
+	839279121	Okarina_E	.cache\D4\{D41D6492-AB66-3D53-A453-9DFC01887FCE}.wem		\Containers\Quest\Keyboard\Okarina_E		193436
+	887849136	Horn_B	.cache\FE\{FE756071-B357-08B4-B7CD-F9E73C2DE1D8}.wem		\Containers\Quest\Keyboard\Horn_B		152028
+	903220478	Okarina_A	.cache\78\{781AA5F9-7C1E-FE80-0BAF-F20DA7ED5E59}.wem		\Containers\Quest\Keyboard\Okarina_A		193436
+	1002586562	Okarina_F	.cache\D1\{D1B3E83E-9B56-1DA3-C462-734AB23DF4F5}.wem		\Containers\Quest\Keyboard\Okarina_F		193440
 	1052310578	motor_start_02	.cache\AA\{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem		\Containers\Player\Pull Chord\motor_start_02		41236
 	1056869406	Epic Stock Media - Cooking Game - Water Dispenser Filling Glass	.cache\2E\{2E0D5FC8-95F9-1540-C28F-D6DD278C3C99}.wem		\Containers\SFX\Pickup Fuel\Epic Stock Media - Cooking Game - Water Dispenser Filling Glass		264584
 

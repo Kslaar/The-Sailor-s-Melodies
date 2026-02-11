@@ -13,10 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_HORN_A = 957019037U;
+        static const AkUniqueID PLAY_HORN_B = 957019038U;
+        static const AkUniqueID PLAY_HORN_C = 957019039U;
+        static const AkUniqueID PLAY_HORN_D = 957019032U;
+        static const AkUniqueID PLAY_HORN_E = 957019033U;
+        static const AkUniqueID PLAY_HORN_F = 957019034U;
+        static const AkUniqueID PLAY_HORN_G = 957019035U;
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
         static const AkUniqueID PLAY_MUSIC_WORLD = 3774920574U;
+        static const AkUniqueID PLAY_OCARINA_A = 2686750109U;
+        static const AkUniqueID PLAY_OCARINA_B = 2686750110U;
+        static const AkUniqueID PLAY_OCARINA_C = 2686750111U;
+        static const AkUniqueID PLAY_OCARINA_D = 2686750104U;
+        static const AkUniqueID PLAY_OCARINA_E = 2686750105U;
+        static const AkUniqueID PLAY_OCARINA_F = 2686750106U;
+        static const AkUniqueID PLAY_OCARINA_G = 2686750107U;
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;

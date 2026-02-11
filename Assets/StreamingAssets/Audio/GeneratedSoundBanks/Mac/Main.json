@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{A1F06254-8209-C352-C003-9366ED4902EA}",
+    "Hash": "{89EF130E-5CFA-6C43-364A-9522638A669A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -88,6 +88,22 @@
       "CachePath": "35/{35210FE7-3221-30CD-496E-35550D247322}.wem"
      },
      {
+      "Id": "261911091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "1F/{1F41DFDC-CDC1-4E7C-5D83-D27261C23BA0}.wem"
+     },
+     {
+      "Id": "297006455",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "5C/{5CEF3BE2-5652-956A-CA9A-CAEA714E5914}.wem"
+     },
+     {
       "Id": "329250373",
       "Language": "SFX",
       "Streaming": "false",
@@ -110,6 +126,30 @@
       "Location": "Memory",
       "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
       "CachePath": "D1/{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem"
+     },
+     {
+      "Id": "447023009",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "DB/{DBB5C386-6C64-308A-9114-3EF4C9FA1F02}.wem"
+     },
+     {
+      "Id": "483172978",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "67/{673BC957-95C0-603A-0148-25FCFFCCE5DF}.wem"
+     },
+     {
+      "Id": "487973624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "05/{05B53C69-B366-1BFA-71FD-66077B9FE5DC}.wem"
      },
      {
       "Id": "503419035",
@@ -144,12 +184,84 @@
       "CachePath": "F1/{F176FC90-ACF9-CC59-0298-74C876A13079}.wem"
      },
      {
+      "Id": "603414801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "1C/{1C5634DD-3E25-9C70-54F9-2E6161CB2036}.wem"
+     },
+     {
+      "Id": "697144522",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "09/{09DA9A98-6BFC-C429-6C19-664EEF4B6952}.wem"
+     },
+     {
+      "Id": "736938058",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "C4/{C430ADC2-681C-4425-54FB-C8C52AA86137}.wem"
+     },
+     {
+      "Id": "741850182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "02/{02F9BC3C-3DE5-AAFA-8ECE-469426C99EBA}.wem"
+     },
+     {
+      "Id": "747045309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "DD/{DD90906E-5447-A0E1-5047-25F60E6F21E1}.wem"
+     },
+     {
       "Id": "797446116",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Place_Home_Loop.wav",
       "CachePath": "56/{5632DBA5-3636-B660-C149-AC7B6C69AB96}.wem"
+     },
+     {
+      "Id": "839279121",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "D4/{D41D6492-AB66-3D53-A453-9DFC01887FCE}.wem"
+     },
+     {
+      "Id": "887849136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "FE/{FE756071-B357-08B4-B7CD-F9E73C2DE1D8}.wem"
+     },
+     {
+      "Id": "903220478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "78/{781AA5F9-7C1E-FE80-0BAF-F20DA7ED5E59}.wem"
+     },
+     {
+      "Id": "1002586562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "D1/{D1B3E83E-9B56-1DA3-C462-734AB23DF4F5}.wem"
      },
      {
       "Id": "1052310578",
@@ -189,6 +301,104 @@
      ]
     },
     "Events": [
+     {
+      "Id": "957019037",
+      "Name": "Play_Horn_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_A",
+      "GUID": "{B921FB1C-1BA1-4625-AB6A-503EFF91B54E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77588755",
+      "DurationMax": "0.77588755",
+      "MediaRefs": [
+       {
+        "Id": "741850182"
+       }
+      ]
+     },
+     {
+      "Id": "957019038",
+      "Name": "Play_Horn_B",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_B",
+      "GUID": "{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7913219",
+      "DurationMax": "0.7913219",
+      "MediaRefs": [
+       {
+        "Id": "887849136"
+       }
+      ]
+     },
+     {
+      "Id": "957019039",
+      "Name": "Play_Horn_C",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_C",
+      "GUID": "{BE5F3207-8F76-4D34-B193-D10C7F44535C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8269352",
+      "DurationMax": "0.8269352",
+      "MediaRefs": [
+       {
+        "Id": "447023009"
+       }
+      ]
+     },
+     {
+      "Id": "957019032",
+      "Name": "Play_Horn_D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_D",
+      "GUID": "{BCB2406C-E6B3-45A1-9531-26575D9389ED}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8314197",
+      "DurationMax": "0.8314197",
+      "MediaRefs": [
+       {
+        "Id": "297006455"
+       }
+      ]
+     },
+     {
+      "Id": "957019033",
+      "Name": "Play_Horn_E",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_E",
+      "GUID": "{0D64A9F9-385E-45A1-B53D-D28401E82740}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.67432004",
+      "DurationMax": "0.67432004",
+      "MediaRefs": [
+       {
+        "Id": "603414801"
+       }
+      ]
+     },
+     {
+      "Id": "957019034",
+      "Name": "Play_Horn_F",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_F",
+      "GUID": "{14CC774E-0B90-4CEA-B275-3DB14DF3C0CD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77079",
+      "DurationMax": "0.77079",
+      "MediaRefs": [
+       {
+        "Id": "697144522"
+       }
+      ]
+     },
+     {
+      "Id": "957019035",
+      "Name": "Play_Horn_G",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_G",
+      "GUID": "{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63000834",
+      "DurationMax": "0.63000834",
+      "MediaRefs": [
+       {
+        "Id": "487973624"
+       }
+      ]
+     },
      {
       "Id": "1855672063",
       "Name": "Play_MotorLoop",
@@ -281,6 +491,104 @@
           "Id": "797446116"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "2686750109",
+      "Name": "Play_Ocarina_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_A",
+      "GUID": "{3ACC880F-359E-40AD-9AD4-CCEEF608727D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "903220478"
+       }
+      ]
+     },
+     {
+      "Id": "2686750110",
+      "Name": "Play_Ocarina_B",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_B",
+      "GUID": "{615F1368-FF8F-4D2B-A23B-738F7865F896}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0174825",
+      "DurationMax": "1.0174825",
+      "MediaRefs": [
+       {
+        "Id": "736938058"
+       }
+      ]
+     },
+     {
+      "Id": "2686750111",
+      "Name": "Play_Ocarina_C",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_C",
+      "GUID": "{A55A2836-2E6F-49E8-9239-1980D8DD4784}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.83916086",
+      "DurationMax": "0.83916086",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       }
+      ]
+     },
+     {
+      "Id": "2686750104",
+      "Name": "Play_Ocarina_D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_D",
+      "GUID": "{55B04E4C-C014-4B17-9CDF-3DB169BDDF80}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.86013985",
+      "DurationMax": "0.86013985",
+      "MediaRefs": [
+       {
+        "Id": "747045309"
+       }
+      ]
+     },
+     {
+      "Id": "2686750105",
+      "Name": "Play_Ocarina_E",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_E",
+      "GUID": "{44A1BC09-F54D-4CE0-856C-14AD70E2C442}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "2686750106",
+      "Name": "Play_Ocarina_F",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_F",
+      "GUID": "{38128BE1-33F1-4ECC-A403-F2D6AAFB9029}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "1002586562"
+       }
+      ]
+     },
+     {
+      "Id": "2686750107",
+      "Name": "Play_Ocarina_G",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_G",
+      "GUID": "{169500CE-1B24-44D6-B33E-48CEC5815062}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "483172978"
        }
       ]
      },
@@ -492,6 +800,6 @@
     ]
    }
   ],
-  "FileHash": "{6D391011-4C34-74D8-29FC-70E592D15CEC}"
+  "FileHash": "{39A2A211-DD4F-AE08-6D78-20DE6F22FD0F}"
  }
 }
