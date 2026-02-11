@@ -68,6 +68,13 @@
 				<Folder Name="Pickup Quest" ID="{C2027B5E-251A-4F7C-8EF2-470CAD3E2DD8}" ShortID="662234149">
 					<ChildrenList>
 						<Sound Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{074475DE-5CA9-477B-8D02-0A7BC0BF95CE}" ShortID="139516677">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
@@ -91,6 +98,17 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{61FB5497-E235-45E1-9769-A6BD2D33A66A}" ShortID="988930743">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<ObjectRef Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{66C2DD1D-8452-4F55-99E7-AA63E03F6791}" Platform="Linked"/>
 							</ActiveSourceList>

@@ -15,26 +15,40 @@
 						<ObjectRef Name="Play_quest_direction" ID="{6D2859F1-6347-40A6-AB65-0E6A323B510F}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_A" ID="{3ACC880F-359E-40AD-9AD4-CCEEF608727D}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_B" ID="{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_03" ID="{1E72FD7F-8327-430C-AAF0-624342CA0C5E}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_04" ID="{E12C3A47-1825-4326-9636-4F66992C1944}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_08" ID="{B74F0DB8-CBBD-436E-A7E9-D971749487FB}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_02" ID="{A4668DAF-B476-43E2-8AA6-D76852605E2C}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_09" ID="{97A71035-348B-44B2-BDEA-34F3E5E3BAD5}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_G" ID="{169500CE-1B24-44D6-B33E-48CEC5815062}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_E" ID="{0D64A9F9-385E-45A1-B53D-D28401E82740}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_D" ID="{BCB2406C-E6B3-45A1-9531-26575D9389ED}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_A" ID="{B921FB1C-1BA1-4625-AB6A-503EFF91B54E}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MotorStop" ID="{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_07" ID="{EAE54274-FC78-4714-A605-96699E0625C4}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MotorLoop" ID="{15FA814F-9BD4-48BF-9E12-F747BA4F477D}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Voice_Exclamation" ID="{7EFA2E83-BF52-49A3-8955-A7F183C37E4B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_C" ID="{A55A2836-2E6F-49E8-9239-1980D8DD4784}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_01" ID="{DB028BBF-3FF3-49F7-AAF1-7B50D151B47B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_D" ID="{55B04E4C-C014-4B17-9CDF-3DB169BDDF80}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pickup_Fuel" ID="{612E52A3-C734-4B33-9A80-AD4549665836}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Quest_accepted" ID="{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_G" ID="{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_06" ID="{63094633-D3C4-4C6D-95F7-FAB7BA736815}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_World" ID="{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_06" ID="{B374F4E4-B844-4CDE-92C4-0389EF9FB3CE}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_E" ID="{44A1BC09-F54D-4CE0-856C-14AD70E2C442}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_F" ID="{14CC774E-0B90-4CEA-B275-3DB14DF3C0CD}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_B" ID="{615F1368-FF8F-4D2B-A23B-738F7865F896}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_C" ID="{BE5F3207-8F76-4D34-B193-D10C7F44535C}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_03" ID="{6BE6CA3C-CFF1-4D89-971E-23B4AC7E368C}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="vocals_male_05" ID="{C30AF0E6-CE71-4D90-A0F4-165B71B2765E}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Voice_Zelda" ID="{35F219D2-E334-4DAB-9802-C0568DD3502F}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_F" ID="{38128BE1-33F1-4ECC-A403-F2D6AAFB9029}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="stop_Sailing" ID="{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Pickup_Quest" ID="{E6742437-856A-4FFD-A80A-3CDA4DC8A270}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>

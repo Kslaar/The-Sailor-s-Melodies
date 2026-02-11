@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{89EF130E-5CFA-6C43-364A-9522638A669A}",
+    "Hash": "{BB637150-17EF-7F9F-0818-4037D116C672}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
     "Media": [
+     {
+      "Id": "12577541",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "2D/{2DFA4D72-0DF0-794F-462E-A036EA36B2B2}.wem"
+     },
      {
       "Id": "41264705",
       "Language": "SFX",
@@ -32,12 +40,36 @@
       "CachePath": "9B/{9BE574A9-0542-9703-65B8-99B213066222}.wem"
      },
      {
+      "Id": "89778095",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_01.wav",
+      "CachePath": "B3/{B3B1B81A-DBCF-B556-6A61-991E98262614}.wem"
+     },
+     {
       "Id": "98811860",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
       "CachePath": "F0/{F0787D86-C70E-B308-E32C-41368A25692B}.wem"
+     },
+     {
+      "Id": "145772972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "C5/{C5C6AF39-4B2A-C5AD-4E4A-81B7B867CB86}.wem"
+     },
+     {
+      "Id": "146487838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "97/{97E0415C-3CD5-7DFF-F65F-123600C7330E}.wem"
      },
      {
       "Id": "148246808",
@@ -54,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "boat_boost.wav",
       "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
+     },
+     {
+      "Id": "182657006",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "1C/{1CCE0792-9E04-CF4A-1DF0-5E367F18716A}.wem"
      },
      {
       "Id": "183690583",
@@ -93,7 +133,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "1F/{1F41DFDC-CDC1-4E7C-5D83-D27261C23BA0}.wem"
+      "CachePath": "16/{16AE6457-A6CB-EDCD-8E63-3FE944D69254}.wem"
+     },
+     {
+      "Id": "273503727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "1C/{1C4190E4-3C66-7052-B4EE-26E8AFE4B6F6}.wem"
      },
      {
       "Id": "297006455",
@@ -101,7 +149,23 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "5C/{5CEF3BE2-5652-956A-CA9A-CAEA714E5914}.wem"
+      "CachePath": "FA/{FA6696CE-5E96-8492-6F86-91A0690E23F3}.wem"
+     },
+     {
+      "Id": "304697627",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "2F/{2FD7DCD0-679A-B284-8E4F-7D2CAF5397E6}.wem"
+     },
+     {
+      "Id": "307227124",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "C6/{C6D3C84E-09A0-002F-C4A3-11BCE7FF0BB2}.wem"
      },
      {
       "Id": "329250373",
@@ -120,6 +184,30 @@
       "CachePath": "3B/{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem"
      },
      {
+      "Id": "346234674",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_01.wav",
+      "CachePath": "CF/{CFBDF04B-1EFF-6369-9B2B-C2F834FA4125}.wem"
+     },
+     {
+      "Id": "361744330",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "2B/{2B518B83-46EB-9786-287F-699ECFE710F7}.wem"
+     },
+     {
+      "Id": "427513672",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "7F/{7F56711E-CC1B-B4D8-8DC4-708917CAB92D}.wem"
+     },
+     {
       "Id": "438083269",
       "Language": "SFX",
       "Streaming": "false",
@@ -133,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "DB/{DBB5C386-6C64-308A-9114-3EF4C9FA1F02}.wem"
+      "CachePath": "B9/{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem"
      },
      {
       "Id": "483172978",
@@ -141,7 +229,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "67/{673BC957-95C0-603A-0148-25FCFFCCE5DF}.wem"
+      "CachePath": "61/{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem"
      },
      {
       "Id": "487973624",
@@ -149,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "05/{05B53C69-B366-1BFA-71FD-66077B9FE5DC}.wem"
+      "CachePath": "7D/{7D4408AC-6855-1158-2DEC-0DA3A9A936C3}.wem"
      },
      {
       "Id": "503419035",
@@ -176,12 +264,12 @@
       "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
      },
      {
-      "Id": "587129590",
+      "Id": "547471905",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
-      "ShortName": "Epic Stock Media - Dwarf - Voice Yes.wav",
-      "CachePath": "F1/{F176FC90-ACF9-CC59-0298-74C876A13079}.wem"
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "3C/{3C96731D-291D-0210-0228-5BADF0BFB819}.wem"
      },
      {
       "Id": "603414801",
@@ -189,7 +277,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "1C/{1C5634DD-3E25-9C70-54F9-2E6161CB2036}.wem"
+      "CachePath": "E1/{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem"
+     },
+     {
+      "Id": "621479489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "05/{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem"
      },
      {
       "Id": "697144522",
@@ -197,7 +293,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "09/{09DA9A98-6BFC-C429-6C19-664EEF4B6952}.wem"
+      "CachePath": "8E/{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem"
+     },
+     {
+      "Id": "699649268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_01.wav",
+      "CachePath": "38/{389F0545-6572-4C21-B119-2EAFF9F8F8D5}.wem"
      },
      {
       "Id": "736938058",
@@ -205,7 +309,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "C4/{C430ADC2-681C-4425-54FB-C8C52AA86137}.wem"
+      "CachePath": "78/{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem"
      },
      {
       "Id": "741850182",
@@ -213,7 +317,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "02/{02F9BC3C-3DE5-AAFA-8ECE-469426C99EBA}.wem"
+      "CachePath": "9A/{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem"
+     },
+     {
+      "Id": "742202318",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "B6/{B6E723C2-C458-608B-68EA-B0A09629A752}.wem"
      },
      {
       "Id": "747045309",
@@ -221,7 +333,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "DD/{DD90906E-5447-A0E1-5047-25F60E6F21E1}.wem"
+      "CachePath": "2D/{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem"
+     },
+     {
+      "Id": "796823544",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "63/{63C2667C-EC32-8E49-4246-26AF10F40DB6}.wem"
      },
      {
       "Id": "797446116",
@@ -232,12 +352,36 @@
       "CachePath": "56/{5632DBA5-3636-B660-C149-AC7B6C69AB96}.wem"
      },
      {
+      "Id": "798756617",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "51/{5101214E-6C7A-C2DE-C3E4-BD1FCD31FC90}.wem"
+     },
+     {
+      "Id": "799521011",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "29/{294E1DDA-9BD5-236F-3D29-E1D60D907598}.wem"
+     },
+     {
+      "Id": "833575142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "4E/{4E45D183-6C01-D43F-8C37-02A818FED245}.wem"
+     },
+     {
       "Id": "839279121",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "D4/{D41D6492-AB66-3D53-A453-9DFC01887FCE}.wem"
+      "CachePath": "37/{375F505B-9251-7D66-D611-EADF0754BDEC}.wem"
      },
      {
       "Id": "887849136",
@@ -245,7 +389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Horn.wav",
-      "CachePath": "FE/{FE756071-B357-08B4-B7CD-F9E73C2DE1D8}.wem"
+      "CachePath": "76/{76507B72-D6AA-45B7-15D5-E14E49943931}.wem"
      },
      {
       "Id": "903220478",
@@ -253,7 +397,23 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "78/{781AA5F9-7C1E-FE80-0BAF-F20DA7ED5E59}.wem"
+      "CachePath": "40/{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem"
+     },
+     {
+      "Id": "928158733",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "A6/{A6C4C2C3-6D40-0BC2-3A0F-7B98F7C66E55}.wem"
+     },
+     {
+      "Id": "983538638",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "37/{3700BC3E-68A1-3108-BC47-C25EE3E7DDEF}.wem"
      },
      {
       "Id": "1002586562",
@@ -261,7 +421,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
-      "CachePath": "D1/{D1B3E83E-9B56-1DA3-C462-734AB23DF4F5}.wem"
+      "CachePath": "95/{953C2BAC-33DC-33D3-CA42-37BE26AA0F5C}.wem"
      },
      {
       "Id": "1052310578",
@@ -297,6 +457,16 @@
        "GUID": "{9D761C6C-FC9D-47B1-9DB4-34B7D846FE31}",
        "LibName": "Wwise Pitch Shifter",
        "LibId": "8912899"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "3604890626",
+       "Name": "High_Pass_60Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\High Pass Filters\\High_Pass_60Hz",
+       "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       }
      ]
     },
@@ -417,8 +587,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStart",
       "GUID": "{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}",
       "DurationType": "OneShot",
-      "DurationMin": "0.41237667",
-      "DurationMax": "0.42854926",
+      "DurationMin": "0.36738583",
+      "DurationMax": "0.4810303",
       "MediaRefs": [
        {
         "Id": "72439141"
@@ -619,12 +789,31 @@
       "DurationMax": "1.94267",
       "MediaRefs": [
        {
+        "Id": "145772972"
+       },
+       {
+        "Id": "146487838"
+       },
+       {
+        "Id": "304697627"
+       },
+       {
+        "Id": "346234674"
+       },
+       {
         "Id": "503419035"
        },
        {
-        "Id": "587129590"
+        "Id": "799521011"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      }
      },
      {
       "Id": "851505750",
@@ -676,6 +865,31 @@
         "Name": "Sailing",
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
         "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "602563",
+      "Name": "Quest_accepted",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Quest_accepted",
+      "GUID": "{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.7789589",
+      "DurationMax": "1.7789589",
+      "MediaRefs": [
+       {
+        "Id": "12577541"
+       },
+       {
+        "Id": "621479489"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb",
+        "GUID": "{F9B916A5-6020-47A8-B295-6B94268AC319}"
        }
       ]
      },
@@ -800,6 +1014,6 @@
     ]
    }
   ],
-  "FileHash": "{FAC9F4BE-204E-D349-A786-28A1694D5199}"
+  "FileHash": "{D5C5FEDB-6298-5CFB-E124-AC0991DEE4C2}"
  }
 }

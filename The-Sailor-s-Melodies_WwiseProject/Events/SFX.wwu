@@ -32,7 +32,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Epic Stock Media - Dwarf - Voice Yes" ID="{1B2D1B94-7C1D-4D17-945C-8BAEF5D85B0D}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+									<ObjectRef Name="Voice_Exclamation" ID="{7EFA2E83-BF52-49A3-8955-A7F183C37E4B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

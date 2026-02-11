@@ -37,6 +37,7 @@ namespace AK
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
         static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
+        static const AkUniqueID QUEST_ACCEPTED = 602563U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
@@ -103,6 +104,11 @@ namespace AK
         static const AkUniqueID ISLAND_AUDIO = 779236412U;
         static const AkUniqueID MASTER = 4056684167U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

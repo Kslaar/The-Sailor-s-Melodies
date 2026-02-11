@@ -23,7 +23,7 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}"/>
-							<Position X="2" Y="1"/>
+							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
@@ -32,6 +32,10 @@
 						<Module>
 							<ObjectRef Name="Fusehive - Ship Sail Opening" ID="{58246C35-2A6E-4CF5-98D5-EA98499459D4}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Pickup_Quest" ID="{E6742437-856A-4FFD-A80A-3CDA4DC8A270}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}"/>
+							<Position X="5" Y="0"/>
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>

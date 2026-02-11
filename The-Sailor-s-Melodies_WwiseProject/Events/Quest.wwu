@@ -180,6 +180,27 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Quest_accepted" ID="{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}">
+					<ChildrenList>
+						<Action Name="" ID="{789E2B38-D2E2-4D9E-B91F-1EB48FA210BA}" ShortID="439152046">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Quest_accepted" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{14F59A2F-C6C4-4A41-8D72-8E850553AF5D}" ShortID="843826225">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="vocals_male_07" ID="{10803AE2-5883-4114-9611-E5D2763D376D}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
