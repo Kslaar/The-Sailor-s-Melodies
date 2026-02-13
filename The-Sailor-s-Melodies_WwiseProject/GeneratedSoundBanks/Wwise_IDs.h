@@ -13,16 +13,31 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_HORN_A = 957019037U;
+        static const AkUniqueID PLAY_HORN_B = 957019038U;
+        static const AkUniqueID PLAY_HORN_C = 957019039U;
+        static const AkUniqueID PLAY_HORN_D = 957019032U;
+        static const AkUniqueID PLAY_HORN_E = 957019033U;
+        static const AkUniqueID PLAY_HORN_F = 957019034U;
+        static const AkUniqueID PLAY_HORN_G = 957019035U;
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
         static const AkUniqueID PLAY_MUSIC_WORLD = 3774920574U;
+        static const AkUniqueID PLAY_OCARINA_A = 2686750109U;
+        static const AkUniqueID PLAY_OCARINA_B = 2686750110U;
+        static const AkUniqueID PLAY_OCARINA_C = 2686750111U;
+        static const AkUniqueID PLAY_OCARINA_D = 2686750104U;
+        static const AkUniqueID PLAY_OCARINA_E = 2686750105U;
+        static const AkUniqueID PLAY_OCARINA_F = 2686750106U;
+        static const AkUniqueID PLAY_OCARINA_G = 2686750107U;
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
         static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
+        static const AkUniqueID QUEST_ACCEPTED = 602563U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
@@ -89,6 +104,11 @@ namespace AK
         static const AkUniqueID ISLAND_AUDIO = 779236412U;
         static const AkUniqueID MASTER = 4056684167U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID REVERB = 348963605U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

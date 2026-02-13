@@ -9,6 +9,21 @@
 							<ObjectRef Name="System" ID="{6F7036D1-BA20-4114-9EC6-C473F7C0621A}" WorkUnitID="{AE92099A-D524-4E32-8BB2-1B1472FAF731}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{72F02581-B902-4C6D-95B5-E95653E486DE}" ShortID="687148067">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Room_Small" ID="{577F1466-A63B-47F7-98BD-C56E433F8B5D}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+					</ChildrenList>
 				</Bus>
 				<Bus Name="Boat Audio" ID="{6A2F977A-D028-4613-B695-FC1D636B0C99}">
 					<ReferenceList>

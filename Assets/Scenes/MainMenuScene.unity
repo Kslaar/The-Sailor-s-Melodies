@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIButtonSound
   playHoverSound: 0
-  playClickSound: 0
+  playClickSound: 1
   playConfirmSound: 1
 --- !u!1 &1165841845
 GameObject:

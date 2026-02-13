@@ -11,6 +11,20 @@
     "StaticLib": "AkSilenceSource"
    },
    {
+    "LibName": "Wwise Parametric EQ",
+    "LibId": "6881283",
+    "Type": "Effect",
+    "DLL": "AkParametricEQ",
+    "StaticLib": "AkParametricEQFX"
+   },
+   {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
     "LibName": "Wwise Pitch Shifter",
     "LibId": "8912899",
     "Type": "Effect",
@@ -28,6 +42,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{1F33D94F-608A-0D2D-8914-F9364B4A60E3}"
+  "FileHash": "{4CC2D3FA-A7FE-F837-E6AB-6C08EB6B00B7}"
  }
 }
