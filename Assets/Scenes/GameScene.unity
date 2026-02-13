@@ -13667,7 +13667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1077113674
 Transform:
   m_ObjectHideFlags: 0
@@ -21514,8 +21514,8 @@ MonoBehaviour:
   - {fileID: 377475399}
   - {fileID: 1831804548}
   - {fileID: 1663438665}
-  successTimeSeconds: 6
-  maxTimeSeconds: 7
+  successTimeSeconds: 120
+  maxTimeSeconds: 210
   maxDistanceFromIsland: 200
   outOfBoundsGracePeriod: 5
 --- !u!1001 &1802481386
