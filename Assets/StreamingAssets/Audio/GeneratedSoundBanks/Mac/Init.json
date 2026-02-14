@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{72827AE6-976A-5E93-BC55-9C8E10091A8C}",
+    "Hash": "{83EECFE7-A09B-A98A-CF39-90C1842DECA4}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -80,6 +80,32 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "1021618141",
+      "Name": "MusicState",
+      "ObjectPath": "\\States\\Default Work Unit\\MusicState",
+      "GUID": "{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\None",
+        "GUID": "{C93DA44D-32AA-4DE8-9920-BA2460BEF668}"
+       },
+       {
+        "Id": "2402435976",
+        "Name": "Island_01",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Island_01",
+        "GUID": "{B7F5A775-DF19-4BF7-A1FF-4BD7ECFD7982}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Exploration",
+        "GUID": "{B17B1864-EAB0-4732-90EA-85FE0BD70855}"
+       }
+      ]
+     },
      {
       "Id": "3546073390",
       "Name": "BoatMode",
@@ -159,28 +185,34 @@
     ],
     "SwitchGroups": [
      {
-      "Id": "1021618141",
-      "Name": "MusicState",
-      "ObjectPath": "\\Switches\\Default Work Unit\\MusicState",
+      "Id": "1445037870",
+      "Name": "MusicSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch",
       "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}",
       "Switches": [
        {
         "Id": "2402435976",
         "Name": "Island_01",
-        "ObjectPath": "\\Switches\\Default Work Unit\\MusicState\\Island_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Island_01",
         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
        },
        {
         "Id": "2582085496",
         "Name": "Exploration",
-        "ObjectPath": "\\Switches\\Default Work Unit\\MusicState\\Exploration",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Exploration",
         "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Menu",
+        "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
      }
     ]
    }
   ],
-  "FileHash": "{726D8B60-CFBA-081D-5E71-E55FEB737062}"
+  "FileHash": "{1B4F497A-2DDD-3C0C-EEB9-F7A2EBA42E09}"
  }
 }

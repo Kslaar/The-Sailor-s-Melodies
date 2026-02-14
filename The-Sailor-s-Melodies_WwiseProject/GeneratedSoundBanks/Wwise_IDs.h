@@ -38,6 +38,7 @@ namespace AK
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
         static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
         static const AkUniqueID QUEST_ACCEPTED = 602563U;
+        static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
@@ -74,20 +75,33 @@ namespace AK
             } // namespace STATE
         } // namespace GAMESTATE
 
+        namespace MUSICSTATE
+        {
+            static const AkUniqueID GROUP = 1021618141U;
+
+            namespace STATE
+            {
+                static const AkUniqueID EXPLORATION = 2582085496U;
+                static const AkUniqueID ISLAND_01 = 2402435976U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSICSTATE
+
     } // namespace STATES
 
     namespace SWITCHES
     {
-        namespace MUSICSTATE
+        namespace MUSICSWITCH
         {
-            static const AkUniqueID GROUP = 1021618141U;
+            static const AkUniqueID GROUP = 1445037870U;
 
             namespace SWITCH
             {
                 static const AkUniqueID EXPLORATION = 2582085496U;
                 static const AkUniqueID ISLAND_01 = 2402435976U;
+                static const AkUniqueID MENU = 2607556080U;
             } // namespace SWITCH
-        } // namespace MUSICSTATE
+        } // namespace MUSICSWITCH
 
     } // namespace SWITCHES
 

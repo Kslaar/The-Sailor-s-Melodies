@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41e75c94134cf9143872de951f805bfc, type: 3}
   m_Name: CEAD6336-3D7C-46C5-95D2-9732EE557453
   m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseSwitchGroupReference
-  objectName: MusicState
-  id: 1021618141
+  objectName: MusicSwitch
+  id: 1445037870
   guid: CEAD6336-3D7C-46C5-95D2-9732EE557453

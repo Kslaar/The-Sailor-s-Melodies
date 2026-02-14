@@ -2,6 +2,8 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using AK.Wwise;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -133,11 +135,25 @@ public class DialogueManager : MonoBehaviour
         foreach (var act in node.actionsOnEnter) act?.Execute();
 
         ui.Show(current.npcName, current.npcAvatar, node.text, node.choices, OnChoice);
+
+        //Wwise Event für die Dialogzeile
+        if (node.wwiseEvent != null)
+            node.wwiseEvent.Post(gameObject);
+
+
+        ui.Show(current.npcName, current.npcAvatar, node.text, node.choices, OnChoice);
+
     }
 
     private void OnChoice(DialogueAsset.Choice choice)
     {
         foreach (var act in choice.actionsOnChoose) act?.Execute();
+
+        // 🔊 Wwise Event für die Antwort
+        if (choice.wwiseEvent != null)
+            choice.wwiseEvent.Post(gameObject);
+
+
 
         if (string.IsNullOrEmpty(choice.nextNodeID))
         {
