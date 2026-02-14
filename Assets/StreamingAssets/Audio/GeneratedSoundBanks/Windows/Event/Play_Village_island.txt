@@ -2,9 +2,18 @@ Event	ID	Name			Wwise Object Path	Notes
 	2275961610	Play_Village_island			\Default Work Unit\Music\Play_Village_island	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	1021618141	MusicState			\Default Work Unit\MusicState	
+	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
 
 Switch	ID	Name	Switch Group			Notes
+	2402435976	Island_01	MusicSwitch			
+	2582085496	Exploration	MusicSwitch			
+	2607556080	Menu	MusicSwitch			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1021618141	MusicState			\Default Work Unit\MusicState	
+
+State	ID	Name	State Group			Notes
+	748895195	None	MusicState			
 	2402435976	Island_01	MusicState			
 	2582085496	Exploration	MusicState			
 

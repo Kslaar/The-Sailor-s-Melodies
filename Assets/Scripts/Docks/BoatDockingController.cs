@@ -99,6 +99,15 @@ public class BoatDockingController : MonoBehaviour
             currentDock.dockUI.Show(currentDock);
 
         GameStateManager.Instance?.TrySetState(GameState.Docked);
+
+
+
+        // WWise: MusicState setzen
+        GlobalMusicManager.Instance.SetIsland();
+
+
+
+
     }
 
     public void UndockNow()
@@ -127,6 +136,11 @@ public class BoatDockingController : MonoBehaviour
 
         if (gsm != null && gsm.State != GameState.Racing)
             gsm.TrySetState(GameState.Sailing, "Undock Now");
+
+        // Wwise State setzen
+        GlobalMusicManager.Instance.SetExploration();
+
+
     }
 
     public void UndockForRace()

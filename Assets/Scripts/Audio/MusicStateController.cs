@@ -1,27 +1,51 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using AK.Wwise;
 
-public class MusicStateController : MonoBehaviour
+public class GameSceneMusicManager : MonoBehaviour
 {
+    public static GameSceneMusicManager Instance;
+
+    [Header("Wwise Events")]
+    public AK.Wwise.Event playWorldMusic;   // Play_Music_World Event
+    public AK.Wwise.Switch explorationSwitch;
+    public AK.Wwise.Switch islandSwitch;
+
+    private void Awake()
+    {
+        // Singleton
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
-        Debug.Log("MusicManager gestartet");
+        // Musik nur starten, wenn sie noch nicht läuft
+        uint id = playWorldMusic.Post(gameObject);
 
-        //Musik starten
-        AkUnitySoundEngine.PostEvent("Play_Music_World", gameObject);
+        if (id == 0)
+        {
+            Debug.Log("Music already playing – skipping start.");
+        }
 
-        //Standardzustand setzen
         SetExplorationMusic();
-
     }
+
 
     public void SetExplorationMusic()
     {
-        AkUnitySoundEngine.SetSwitch("MusicState", "Exploration", gameObject);
+        explorationSwitch.SetValue(gameObject);
     }
+
     public void SetIslandMusic()
     {
-        AkUnitySoundEngine.SetSwitch("MusicState", "Island_01", gameObject);
+        islandSwitch.SetValue(gameObject);
     }
-
-
 }
+

@@ -1,28 +1,24 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class KeyboardInput : MonoBehaviour
 {
-public KeyboardKey keyC;
-public KeyboardKey keyD;
-public KeyboardKey keyE;
-public KeyboardKey keyF;
-public KeyboardKey keyG;
-public KeyboardKey keyA;
-public KeyboardKey keyB;
+    public KeyboardKey keyC;
+    public KeyboardKey keyD;
+    public KeyboardKey keyE;
+    public KeyboardKey keyF;
+    public KeyboardKey keyG;
+    public KeyboardKey keyA;
+    public KeyboardKey keyB;
 
-void Update()
-{
-if (Input.GetKeyDown(KeyCode.A)) keyC.PlayNote();
-if (Input.GetKeyDown(KeyCode.S)) keyD.PlayNote();
-if (Input.GetKeyDown(KeyCode.D)) keyE.PlayNote();
-if (Input.GetKeyDown(KeyCode.F)) keyF.PlayNote();
-if (Input.GetKeyDown(KeyCode.G)) keyG.PlayNote();
-if (Input.GetKeyDown(KeyCode.H)) keyA.PlayNote();
-if (Input.GetKeyDown(KeyCode.J)) keyB.PlayNote();
-
-
-
-
-
-}
+    void Update()
+    {
+        if (Keyboard.current.tKey.wasPressedThisFrame) keyC.PlayNote();
+        if (Keyboard.current.zKey.wasPressedThisFrame) keyD.PlayNote();
+        if (Keyboard.current.uKey.wasPressedThisFrame) keyE.PlayNote();
+        if (Keyboard.current.iKey.wasPressedThisFrame) keyF.PlayNote();
+        if (Keyboard.current.oKey.wasPressedThisFrame) keyG.PlayNote();
+        if (Keyboard.current.pKey.wasPressedThisFrame) keyA.PlayNote();
+        if (Keyboard.current.rKey.wasPressedThisFrame) keyB.PlayNote();
+    }
 }
