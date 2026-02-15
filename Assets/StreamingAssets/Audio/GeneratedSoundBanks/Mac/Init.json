@@ -209,10 +209,42 @@
         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
+     },
+     {
+      "Id": "2495262365",
+      "Name": "RaceState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
+      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
+      "Switches": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
+        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+       },
+       {
+        "Id": "1505888634",
+        "Name": "Countdown",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
+        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
+        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
+       },
+       {
+        "Id": "2555741448",
+        "Name": "Finish",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
+        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{1B4F497A-2DDD-3C0C-EEB9-F7A2EBA42E09}"
+  "FileHash": "{06F189DD-AC72-A8D8-B684-331346E1D864}"
  }
 }

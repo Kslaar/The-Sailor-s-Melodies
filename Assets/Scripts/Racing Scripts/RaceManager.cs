@@ -103,6 +103,9 @@ public class RaceManager : MonoBehaviour
     {
         state = RaceState.Countdown;
 
+        //Wwise MusicManager
+        GlobalMusicManager.Instance.SetRaceState("Contdown");
+
         for (int t = 3; t >= 1; t--)
         {
             OnCountdownChanged?.Invoke(t);
@@ -113,6 +116,10 @@ public class RaceManager : MonoBehaviour
         FreezePlayer(false);
 
         state = RaceState.Racing;
+
+      
+        //Wwise MusicManager
+        GlobalMusicManager.Instance.SetRaceState("Racing");
     }
 
     private void Update()
@@ -173,7 +180,12 @@ public class RaceManager : MonoBehaviour
             // Stellen sicher, dass keine Checkpoints geskipped werden!
             if (checkpointIndex != nextCheckpoint) return;
             nextCheckpoint++;
+
+            //Wwise SFX
+            AkUnitySoundEngine.PostEvent("Play_Checkpoint", gameObject);
             return;
+
+           
         }
 
         if (trigger == RaceTrigger.TriggerType.Finish)
@@ -184,6 +196,9 @@ public class RaceManager : MonoBehaviour
                 if (nextCheckpoint < currentCourse.checkpoints.Count) return;
             }
 
+            //Wwise SFX
+            AkUnitySoundEngine.PostEvent("Play_Finish", gameObject);
+
             Finish();
         }
     }
@@ -191,6 +206,7 @@ public class RaceManager : MonoBehaviour
     private void Finish()
     {
         state = RaceState.Finished;
+        GlobalMusicManager.Instance.SetRaceState("Finished");
         FreezePlayer(true);
 
         bool success = timePassed <= currentCourse.successTimeSeconds;
@@ -202,12 +218,15 @@ public class RaceManager : MonoBehaviour
         // ResetRaceAfterDelay();
         // GameStateManager.Instance?.TryExitRace("Race finished");
         StartCoroutine(CoroutineReturnToQuestgiver(success));
+
+       
     }
 
     private void Fail(string reason)
     {
         Debug.LogWarning($"[RaceManager] Race failed: {reason}");
         state = RaceState.Failed;
+        GlobalMusicManager.Instance.SetRaceState("Idle");
         FreezePlayer(true);
         OnRaceFailed?.Invoke(reason);
         // ResetRaceAfterDelay();

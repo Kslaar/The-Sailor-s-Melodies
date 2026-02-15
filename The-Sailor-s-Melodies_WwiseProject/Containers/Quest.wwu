@@ -650,6 +650,111 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="Racing" ID="{CACBE26A-DF85-4090-99BA-F83AF07C5086}" ShortID="465574980">
+					<ChildrenList>
+						<Sound Name="Bell Star 2" ID="{44F576B7-EF94-443A-A03D-F55D36AA2700}" ShortID="1034398206">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Bell Star 2" ID="{C5F3DA0D-D2C4-4043-BD1E-894B4D8466C4}">
+									<Language>SFX</Language>
+									<AudioFile>Bell Star 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="829999625"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Bell Star 2" ID="{C5F3DA0D-D2C4-4043-BD1E-894B4D8466C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Checkpoint 2" ID="{77742803-2606-41ED-B391-1F87A4D52A2C}" ShortID="695341401">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Checkpoint 2" ID="{1D359017-7B51-4A3E-9329-132D6B73F619}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0112862950418054"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.262406359721975"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.02846362978082"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Checkpoint 2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="17362214"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Checkpoint 2" ID="{1D359017-7B51-4A3E-9329-132D6B73F619}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Magic Score 8" ID="{BF4DDD40-6221-4DDF-BBE3-92DD7B82D919}" ShortID="519896444">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magic Score 8" ID="{CBE7F55E-7D99-4EE6-B624-EAD9D8DF7322}">
+									<Language>SFX</Language>
+									<AudioFile>Magic Score 8.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="977916003"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Magic Score 8" ID="{CBE7F55E-7D99-4EE6-B624-EAD9D8DF7322}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Magic Score 9" ID="{2E9773E9-9F08-44C9-B459-B946F716B8F7}" ShortID="1061764293">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Magic Score 9" ID="{A74E0E57-5649-4088-A805-22903C9C8B26}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0316603405446541"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.337710299142977"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0457316030089448"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.91017391021372"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Magic Score 9.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="827225277"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Magic Score 9" ID="{A74E0E57-5649-4088-A805-22903C9C8B26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c205edbfb57cf524eaebf45c9f9a2519, type: 3}
+  m_Name: ABEE1444-0BB5-4F6B-8989-1FE70C074E36
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseSwitchReference
+  objectName: Racing
+  id: 104887399
+  guid: ABEE1444-0BB5-4F6B-8989-1FE70C074E36
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: 95fd4b7fb40838647b09e00b664c2c2e, type: 2}

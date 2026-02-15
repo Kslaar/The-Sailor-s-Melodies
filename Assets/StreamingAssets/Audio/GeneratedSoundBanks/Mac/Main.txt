@@ -15,6 +15,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1258201081	stop_Sailing			\Default Work Unit\Player\stop_Sailing	
 	1530826435	Play_Sailing			\Default Work Unit\Player\Play_Sailing	
 	1538229119	Play_MotorStart			\Default Work Unit\Player\Play_MotorStart	
+	1793765179	Play_Finish			\Default Work Unit\Quest\Racing\Play_Finish	
 	1855672063	Play_MotorLoop			\Default Work Unit\Player\Play_MotorLoop	
 	2249769530	ui_click			\Default Work Unit\UI\ui_click	
 	2686750104	Play_Ocarina_D			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_D	
@@ -26,15 +27,21 @@ Event	ID	Name			Wwise Object Path	Notes
 	2686750111	Play_Ocarina_C			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_C	
 	2692550093	Play_Pickup_Quest			\Default Work Unit\SFX\Play_Pickup_Quest	
 	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
+	2962822744	Play_Checkpoint			\Default Work Unit\Quest\Racing\Play_Checkpoint	
 	3774920574	Play_Music_World			\Default Work Unit\Music\Play_Music_World	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
+	2495262365	RaceState			\Default Work Unit\RaceState	
 
 Switch	ID	Name	Switch Group			Notes
 	2402435976	Island_01	MusicSwitch			
 	2582085496	Exploration	MusicSwitch			
 	2607556080	Menu	MusicSwitch			
+	104887399	Racing	RaceState			
+	1505888634	Countdown	RaceState			
+	1874288895	Idle	RaceState			
+	2555741448	Finish	RaceState			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1021618141	MusicState			\Default Work Unit\MusicState	
@@ -65,6 +72,7 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12577541	vocals_male_07	.cache\E1\{E16F4E00-B9FE-C94D-16A9-A19B15A1D335}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_07		89260
+	17362214	Checkpoint 2	.cache\13\{1310068F-9F6D-1020-A458-B68A8FCADF55}.wem		\Containers\Quest\Racing\Checkpoint 2		181564
 	41264705	SFX_Error	.cache\76\{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem		\Containers\UI\UI\SFX_Error		135204
 	72439141	motor_start	.cache\9B\{9BE574A9-0542-9703-65B8-99B213066222}.wem		\Containers\Player\Pull Chord\motor_start		39684
 	89778095	vocals_male_03	.cache\62\{62FBAB2A-3882-3EC8-45CF-DF9240E9E06C}.wem		\Containers\NPC\Male\Voice_01\vocals_male_03		108276
@@ -90,18 +98,19 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	427513672	vocals_male_06	.cache\70\{707B2BF5-38AE-E10B-2072-4A5E68BD4537}.wem		\Containers\NPC\Male\Voice_02\vocals_male_06		101472
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
 	447023009	Horn_C	.cache\B9\{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem		\Containers\Quest\Keyboard\Horn_C		158868
+	448729930	Theme_Battle_01_Loop	.cache\E9\{E9869485-DB77-B048-C76C-883412A121A8}.wem		\Containers\Music\World_Music\Theme_Battle_01_Loop\Theme_Battle_01_Loop		8221112
 	483172978	Okarina_G	.cache\61\{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem		\Containers\Quest\Keyboard\Okarina_G		193436
 	487973624	Horn_G	.cache\7D\{7D4408AC-6855-1158-2DEC-0DA3A9A936C3}.wem		\Containers\Quest\Keyboard\Horn_G		121056
 	503419035	Unrealsfx - Magical Game - New Item Collected Pickup	.cache\B0\{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem		\Containers\SFX\Pickup Quest\Unrealsfx - Magical Game - New Item Collected Pickup		373088
-	524385979	Place_Royal_Loop	.cache\A8\{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem		\Containers\Music\Music\Music_exploration 01\music_exploration\Place_Royal_Loop		5020380
+	524385979	Place_Royal_Loop	.cache\A8\{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem		\Containers\Music\World_Music\Music_exploration 01\music_exploration\Place_Royal_Loop		5020380
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
 	547471905	vocals_male_09	.cache\24\{242F0E0F-6F4C-2B21-3144-9040D7D82A69}.wem		\Containers\NPC\Male\Voice_02\vocals_male_09		192828
 	603414801	Horn_E	.cache\E1\{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem		\Containers\Quest\Keyboard\Horn_E		129564
-	610000193	music_city	.cache\AE\{AE338D71-ABD5-69C3-A63F-C67753906CB7}.wem		\Containers\Music\Music\music_village\music_city		29841752
+	610000193	music_city	.cache\AE\{AE338D71-ABD5-69C3-A63F-C67753906CB7}.wem		\Containers\Music\World_Music\music_village\music_city		29841752
 	621479489	Quest_accepted	.cache\05\{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem		\Containers\Quest\Quest_accepted		341656
 	697144522	Horn_F	.cache\8E\{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem		\Containers\Quest\Keyboard\Horn_F		148088
 	699649268	vocals_male_01	.cache\91\{9114DD9C-4E94-88C7-A622-8301D1DF8678}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_01		114080
-	700410248	music_mainmenue (blueprint)	.cache\76\{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem		\Containers\Music\Music\MainMenu_theme\music_mainmenue (blueprint)		14976096
+	700410248	music_mainmenue (blueprint)	.cache\76\{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem		\Containers\Music\World_Music\MainMenu_theme\music_mainmenue (blueprint)		14976096
 	736938058	Okarina_B	.cache\78\{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem		\Containers\Quest\Keyboard\Okarina_B		195452
 	741850182	Horn_A	.cache\9A\{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem		\Containers\Quest\Keyboard\Horn_A		149064
 	742202318	vocals_male_07	.cache\D3\{D32AAD91-311A-233A-A940-D8D4ACB4E994}.wem		\Containers\NPC\Male\Voice_02\vocals_male_07		185920
@@ -109,6 +118,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	796823544	vocals_male_08	.cache\19\{19DF69E0-3A5C-F5F4-5E99-C86EE77E462C}.wem		\Containers\NPC\Male\Voice_02\vocals_male_08		197904
 	798756617	vocals_male_09	.cache\BA\{BADA84BE-6B82-516F-4A30-93E24D7C3959}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_09		106484
 	799521011	vocals_male_04	.cache\60\{6054B801-FB62-C29D-B4D9-728CA0C7ADC6}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_04		94912
+	827225277	Magic Score 9	.cache\71\{71A5D7B1-29E6-EC4F-75F7-31A289603A4F}.wem		\Containers\Quest\Racing\Magic Score 9		329032
 	833575142	vocals_male_08	.cache\A8\{A8735649-D1EC-916C-F83A-5DB0D02CAF34}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_08		120372
 	839279121	Okarina_E	.cache\37\{375F505B-9251-7D66-D611-EADF0754BDEC}.wem		\Containers\Quest\Keyboard\Okarina_E		193436
 	887849136	Horn_B	.cache\76\{76507B72-D6AA-45B7-15D5-E14E49943931}.wem		\Containers\Quest\Keyboard\Horn_B		152028

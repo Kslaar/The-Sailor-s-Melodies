@@ -19,7 +19,7 @@
 						<Action Name="" ID="{985AAD6E-BBDF-4E57-AFC1-2017D496E1EE}" ShortID="1049403980">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+									<ObjectRef Name="World_Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -30,7 +30,29 @@
 						<Action Name="" ID="{E4C118EA-B72D-4E6B-BB59-CFC4646A53B9}" ShortID="394661354">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+									<ObjectRef Name="World_Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0BB982B6-0191-4378-A16B-10F7ECBCAEB4}" ShortID="501969199">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Racing_Music" ID="{EE8570DB-FEC3-4A45-ADC9-24FB62F787CC}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Music" ID="{1706C595-0691-4812-9EBD-30C795469909}">
+					<ChildrenList>
+						<Action Name="" ID="{95E8E945-BBE7-43B1-87C7-B7447AE978EA}" ShortID="470205311">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="GameSoundtrack" ID="{1BD4941A-D77F-427A-8F38-CB0620C0D347}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
