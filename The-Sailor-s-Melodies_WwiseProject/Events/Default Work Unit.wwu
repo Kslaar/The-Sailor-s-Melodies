@@ -8,6 +8,7 @@
 				<WorkUnit Name="Music" ID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" PersistMode="Reference"/>
 				<WorkUnit Name="Quest" ID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" PersistMode="Reference"/>
 				<WorkUnit Name="SFX" ID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" PersistMode="Reference"/>
+				<WorkUnit Name="NPC" ID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

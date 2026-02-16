@@ -10,20 +10,11 @@
     "Type": "Event",
     "GUID": "{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}",
     "Language": "SFX",
-    "Hash": "{D9661599-E76B-93F7-3A8E-03D9A15DFD00}",
+    "Hash": "{785EC932-DCE8-83CA-29A0-036F9E7A79FB}",
     "ObjectPath": "Play_Village_island",
     "ShortName": "Play_Village_island",
     "Path": "Event/Play_Village_island.bnk",
     "Media": [
-     {
-      "Id": "448729930",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "Theme_Battle_01_Loop.wav",
-      "Path": "Media/448729930.wem",
-      "CachePath": "E9/{E9869485-DB77-B048-C76C-883412A121A8}.wem"
-     },
      {
       "Id": "524385979",
       "Language": "SFX",
@@ -67,19 +58,9 @@
          "Id": "2582085496",
          "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "524385979"
-           }
-          ]
+          "Id": "524385979"
          }
         ]
        },
@@ -90,19 +71,9 @@
          "Id": "2402435976",
          "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "610000193"
-           }
-          ]
+          "Id": "610000193"
          }
         ]
        },
@@ -113,42 +84,9 @@
          "Id": "2607556080",
          "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "700410248"
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1445037870",
-         "Id": "2402435976",
-         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "104887399",
-           "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "448729930"
-           }
-          ]
+          "Id": "700410248"
          }
         ]
        }
@@ -181,42 +119,10 @@
         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
-     },
-     {
-      "Id": "2495262365",
-      "Name": "RaceState",
-      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
-      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
-      "Switches": [
-       {
-        "Id": "104887399",
-        "Name": "Racing",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
-        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
-       },
-       {
-        "Id": "1505888634",
-        "Name": "Countdown",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
-        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
-       },
-       {
-        "Id": "1874288895",
-        "Name": "Idle",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
-        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
-       },
-       {
-        "Id": "2555741448",
-        "Name": "Finish",
-        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
-        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
-       }
-      ]
      }
     ]
    }
   ],
-  "FileHash": "{3EE2C2A4-F00D-F9D9-3BA4-40EDFC09183E}"
+  "FileHash": "{16E7A03A-D513-0236-8722-373101BA9E50}"
  }
 }

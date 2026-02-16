@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY_OCARINA_E = 2686750105U;
         static const AkUniqueID PLAY_OCARINA_F = 2686750106U;
         static const AkUniqueID PLAY_OCARINA_G = 2686750107U;
+        static const AkUniqueID PLAY_PASTORVOICE = 2044005997U;
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;

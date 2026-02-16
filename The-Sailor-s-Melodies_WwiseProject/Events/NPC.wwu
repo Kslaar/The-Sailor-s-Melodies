@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
+	<Events>
+		<WorkUnit Name="NPC" ID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_PastorVoice" ID="{A3A958BE-DA35-4A23-837F-CC16067882C1}">
+					<ChildrenList>
+						<Action Name="" ID="{418E9347-0449-410C-86F3-422B4F3DD2F5}" ShortID="853651035">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pastor Voice" ID="{AB5EEA86-6214-4479-8DE3-631F0F60514F}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
