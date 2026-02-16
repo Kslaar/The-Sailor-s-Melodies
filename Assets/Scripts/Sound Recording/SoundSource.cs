@@ -3,19 +3,22 @@ using UnityEngine;
 public class SoundSource : MonoBehaviour
 {
     public SoundSignature signature;
-    public AudioSource hintSource;
+    public AK.Wwise.Event hintPlayEvent;
 
     public void PlayHint()
     {
-        if (signature != null && signature.previewClip != null && hintSource != null)
+        if (hintPlayEvent != null) 
+            hintPlayEvent.Post(gameObject);
+        else if (signature != null && signature.playEvent != null)
         {
-            hintSource.clip = signature.previewClip;
-            hintSource.Play();
+            signature.playEvent.Post(gameObject);
         }
     }
 
     public void RecordTo(RecordHotbar recorder)
     {
+        if (signature == null || recorder == null) return;
+
         recorder.Record(signature);
     }
 }

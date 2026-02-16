@@ -6,7 +6,8 @@ public class RecordHotbar : MonoBehaviour
 {
     [Header("Slots im UI")]
     public int maxSlots = 3;
-    public AudioSource playbackSource;
+    public GameObject playbackEmitter;
+    public bool stopPreviousOnPlay = true;
 
     public event Action<SoundSignature> OnSoundPlayed;
     public event Action<IReadOnlyList<SoundSignature>> OnHotbarChanged;
@@ -14,6 +15,8 @@ public class RecordHotbar : MonoBehaviour
 
     private readonly List<SoundSignature> _slots = new();
     private int _selectedIndex = 0;
+
+    private SoundSignature _lastPlayed;
 
     public IReadOnlyList<SoundSignature> Slots => _slots;
     public int SelectedIndex => _selectedIndex;
@@ -49,7 +52,7 @@ public class RecordHotbar : MonoBehaviour
         OnSelectionChanged?.Invoke(_selectedIndex);
         OnHotbarChanged?.Invoke(_slots);
     }
-
+    /*
     public void SetSelectedIndex(int index)
     {
         if (_slots.Count == 0)
@@ -62,6 +65,7 @@ public class RecordHotbar : MonoBehaviour
         _selectedIndex = Mathf.Clamp(index, 0, _slots.Count - 1);
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
+    */
 
     public void SelectNext()
     {
@@ -76,21 +80,28 @@ public class RecordHotbar : MonoBehaviour
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
 
-    public void PlaySelected()
-    {
-        PlaySlot(_selectedIndex);
-    }
+    public void PlaySelected() => PlaySlot(_selectedIndex);
 
     public void PlaySlot(int index)
     {
         if (index < 0 || index >= _slots.Count) return;
 
         var sig = _slots[index];
+        if (sig == null) return;
 
-        if (sig.previewClip != null && playbackSource != null)
+        if (playbackEmitter == null) return;
+
+        if (stopPreviousOnPlay && _lastPlayed != null && _lastPlayed.stopEvent != null)
+            _lastPlayed.stopEvent.Post(playbackEmitter);
+
+        if (sig.playEvent != null)
         {
-            playbackSource.clip = sig.previewClip;
-            playbackSource.Play();
+            sig.playEvent.Post(playbackEmitter);
+            _lastPlayed = sig;
+        }
+        else
+        {
+            Debug.LogWarning($"SoundSignature '{sig.name}' hat kein playEvent.");
         }
 
         OnSoundPlayed?.Invoke(sig);
