@@ -6939,6 +6939,26 @@ PrefabInstance:
       propertyPath: sailingCamera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 2975272686072494237, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: MotorState.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 5405dded0d137974c8b0bc0362aa2b69, type: 2}
+    - target: {fileID: 2975272686072494237, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: SailingState.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: ad2dc145b64b93647886635c0d6d7736, type: 2}
+    - target: {fileID: 2975272686072494237, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: MotorLoopEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b82afdbafd7b3943b97ea3abde73101, type: 2}
+    - target: {fileID: 2975272686072494237, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: MotorstopEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: dc74843c0bf2b81478361053ff6847e7, type: 2}
+    - target: {fileID: 2975272686072494237, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
+      propertyPath: MotorStartEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 3048900faef44714f9f7de9d31b2640a, type: 2}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12
@@ -12287,6 +12307,8 @@ GameObject:
   - component: {fileID: 955917210}
   - component: {fileID: 955917209}
   - component: {fileID: 955917208}
+  - component: {fileID: 955917211}
+  - component: {fileID: 955917212}
   m_Layer: 5
   m_Name: Pastor Button
   m_TagString: Untagged
@@ -12408,6 +12430,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955917206}
   m_CullTransparentMesh: 1
+--- !u!114 &955917211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955917206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5ec90ba37ca64325b17831c983eb7b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCVoiceButton
+  voiceEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fc9b9936be78f4a0c8e245e9a1cfdc07, type: 2}
+--- !u!114 &955917212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955917206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c10d18a6e2a9144b3e63603ab8c88a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1001 &965317188
 PrefabInstance:
   m_ObjectHideFlags: 0

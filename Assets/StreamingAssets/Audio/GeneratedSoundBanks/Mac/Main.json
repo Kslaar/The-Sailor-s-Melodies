@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{D083EA3D-8F38-2EBC-B787-979DDCBBFCBC}",
+    "Hash": "{07943DF2-03DF-5802-41A0-416CCC20DB58}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Checkpoint 2.wav",
-      "CachePath": "13/{1310068F-9F6D-1020-A458-B68A8FCADF55}.wem"
+      "CachePath": "70/{7003FAE3-8181-FE85-0492-6F1782F85138}.wem"
      },
      {
       "Id": "41264705",
@@ -312,6 +312,14 @@
       "CachePath": "05/{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem"
      },
      {
+      "Id": "694199021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Theme_Battle_02_Intro.wav",
+      "CachePath": "D9/{D9B64A81-4294-3BE7-EB2B-CBC16280580A}.wem"
+     },
+     {
       "Id": "697144522",
       "Language": "SFX",
       "Streaming": "false",
@@ -397,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Magic Score 9.wav",
-      "CachePath": "71/{71A5D7B1-29E6-EC4F-75F7-31A289603A4F}.wem"
+      "CachePath": "C7/{C7D2D4D7-8AE2-1CF3-2095-7AC1C3CD8440}.wem"
      },
      {
       "Id": "833575142",
@@ -714,23 +722,39 @@
        {
         "SwitchValue": {
          "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "104887399",
+         "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "448729930"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "1505888634",
+         "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "694199021"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
          "GroupId": "1445037870",
          "Id": "2582085496",
          "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "524385979"
-           }
-          ]
+          "Id": "524385979"
          }
         ]
        },
@@ -741,19 +765,9 @@
          "Id": "2402435976",
          "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "610000193"
-           }
-          ]
+          "Id": "610000193"
          }
         ]
        },
@@ -764,42 +778,9 @@
          "Id": "2607556080",
          "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "0",
-           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "700410248"
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "1445037870",
-         "Id": "2402435976",
-         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "2495262365",
-           "Id": "104887399",
-           "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "448729930"
-           }
-          ]
+          "Id": "700410248"
          }
         ]
        }
@@ -900,6 +881,29 @@
       "MediaRefs": [
        {
         "Id": "483172978"
+       }
+      ]
+     },
+     {
+      "Id": "2044005997",
+      "Name": "Play_PastorVoice",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Play_PastorVoice",
+      "GUID": "{A3A958BE-DA35-4A23-837F-CC16067882C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5279979",
+      "DurationMax": "1.0919708",
+      "MediaRefs": [
+       {
+        "Id": "273503727"
+       },
+       {
+        "Id": "307227124"
+       },
+       {
+        "Id": "361744330"
+       },
+       {
+        "Id": "427513672"
        }
       ]
      },
@@ -1203,6 +1207,6 @@
     ]
    }
   ],
-  "FileHash": "{A0EDCC8C-0F77-7C9E-363E-513ED85625D3}"
+  "FileHash": "{E6D0908D-A661-5F91-7EFC-E7BFC17881F2}"
  }
 }

@@ -36,6 +36,7 @@
 						<ObjectRef Name="Play_MotorStart" ID="{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_C" ID="{A55A2836-2E6F-49E8-9239-1980D8DD4784}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_01" ID="{DB028BBF-3FF3-49F7-AAF1-7B50D151B47B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_PastorVoice" ID="{A3A958BE-DA35-4A23-837F-CC16067882C1}" WorkUnitID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Racing_Music" ID="{EE8570DB-FEC3-4A45-ADC9-24FB62F787CC}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_D" ID="{55B04E4C-C014-4B17-9CDF-3DB169BDDF80}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Checkpoint" ID="{0C529DEA-7A8A-4B1B-92C4-BAB80639F0AB}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
