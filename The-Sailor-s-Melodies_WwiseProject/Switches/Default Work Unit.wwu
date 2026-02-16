@@ -3,10 +3,19 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="MusicState" ID="{CEAD6336-3D7C-46C5-95D2-9732EE557453}">
+				<SwitchGroup Name="MusicSwitch" ID="{CEAD6336-3D7C-46C5-95D2-9732EE557453}">
 					<ChildrenList>
 						<Switch Name="Exploration" ID="{534375CD-2B59-4610-B82E-F982FAACDC6C}"/>
 						<Switch Name="Island_01" ID="{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"/>
+						<Switch Name="Menu" ID="{50D43099-8539-4B9E-9560-2056CC1E6CD0}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}">
+					<ChildrenList>
+						<Switch Name="Idle" ID="{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"/>
+						<Switch Name="Countdown" ID="{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"/>
+						<Switch Name="Racing" ID="{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"/>
+						<Switch Name="Finish" ID="{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

@@ -15,6 +15,9 @@ public class GlobalMusicManager : MonoBehaviour
     public AK.Wwise.Switch explorationSwitch;
     public AK.Wwise.Switch islandSwitch;
 
+    [Header("Race Switches")]
+    public AK.Wwise.Switch raceStateSwitch;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -59,6 +62,11 @@ public class GlobalMusicManager : MonoBehaviour
     public void SetIsland()
     {
         islandSwitch.SetValue(gameObject);
+    }
+
+    public void SetRaceState(string stateName)
+    {
+        AkUnitySoundEngine.SetSwitch("RaceState", stateName, gameObject);
     }
 }
 

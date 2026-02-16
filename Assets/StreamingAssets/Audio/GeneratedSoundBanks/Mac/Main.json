@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{7D74DD86-755C-EDDA-EF53-455920681741}",
+    "Hash": "{D083EA3D-8F38-2EBC-B787-979DDCBBFCBC}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -22,6 +22,14 @@
       "Location": "Memory",
       "ShortName": "vocals_male_2.wav",
       "CachePath": "E1/{E16F4E00-B9FE-C94D-16A9-A19B15A1D335}.wem"
+     },
+     {
+      "Id": "17362214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Checkpoint 2.wav",
+      "CachePath": "13/{1310068F-9F6D-1020-A458-B68A8FCADF55}.wem"
      },
      {
       "Id": "41264705",
@@ -224,6 +232,14 @@
       "CachePath": "B9/{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem"
      },
      {
+      "Id": "448729930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Theme_Battle_01_Loop.wav",
+      "CachePath": "E9/{E9869485-DB77-B048-C76C-883412A121A8}.wem"
+     },
+     {
       "Id": "483172978",
       "Language": "SFX",
       "Streaming": "false",
@@ -376,6 +392,14 @@
       "CachePath": "60/{6054B801-FB62-C29D-B4D9-728CA0C7ADC6}.wem"
      },
      {
+      "Id": "827225277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Magic Score 9.wav",
+      "CachePath": "71/{71A5D7B1-29E6-EC4F-75F7-31A289603A4F}.wem"
+     },
+     {
       "Id": "833575142",
       "Language": "SFX",
       "Streaming": "false",
@@ -479,6 +503,49 @@
      ]
     },
     "Events": [
+     {
+      "Id": "2962822744",
+      "Name": "Play_Checkpoint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Racing\\Play_Checkpoint",
+      "GUID": "{0C529DEA-7A8A-4B1B-92C4-BAB80639F0AB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0284636",
+      "DurationMax": "1.0559489",
+      "MediaRefs": [
+       {
+        "Id": "17362214"
+       },
+       {
+        "Id": "145772972"
+       },
+       {
+        "Id": "146487838"
+       },
+       {
+        "Id": "304697627"
+       },
+       {
+        "Id": "346234674"
+       },
+       {
+        "Id": "799521011"
+       }
+      ]
+     },
+     {
+      "Id": "1793765179",
+      "Name": "Play_Finish",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Racing\\Play_Finish",
+      "GUID": "{E6E5C216-B5BD-42B2-8142-85EEE3899972}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8644423",
+      "DurationMax": "1.8644423",
+      "MediaRefs": [
+       {
+        "Id": "827225277"
+       }
+      ]
+     },
      {
       "Id": "957019037",
       "Name": "Play_Horn_A",
@@ -651,9 +718,19 @@
          "Id": "2582085496",
          "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "524385979"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "524385979"
+           }
+          ]
          }
         ]
        },
@@ -664,9 +741,19 @@
          "Id": "2402435976",
          "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "610000193"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "610000193"
+           }
+          ]
          }
         ]
        },
@@ -677,9 +764,42 @@
          "Id": "2607556080",
          "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "700410248"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "700410248"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1445037870",
+         "Id": "2402435976",
+         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "104887399",
+           "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "448729930"
+           }
+          ]
          }
         ]
        }
@@ -1047,10 +1167,42 @@
         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
+     },
+     {
+      "Id": "2495262365",
+      "Name": "RaceState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
+      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
+      "Switches": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
+        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+       },
+       {
+        "Id": "1505888634",
+        "Name": "Countdown",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
+        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
+        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
+       },
+       {
+        "Id": "2555741448",
+        "Name": "Finish",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
+        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{E608B0E7-8706-0F6F-1E51-E2EC417D44E9}"
+  "FileHash": "{A0EDCC8C-0F77-7C9E-363E-513ED85625D3}"
  }
 }

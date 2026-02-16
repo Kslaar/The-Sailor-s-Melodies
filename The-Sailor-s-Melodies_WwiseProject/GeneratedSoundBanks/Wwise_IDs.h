@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CHECKPOINT = 2962822744U;
+        static const AkUniqueID PLAY_FINISH = 1793765179U;
         static const AkUniqueID PLAY_HORN_A = 957019037U;
         static const AkUniqueID PLAY_HORN_B = 957019038U;
         static const AkUniqueID PLAY_HORN_C = 957019039U;
@@ -102,6 +104,19 @@ namespace AK
                 static const AkUniqueID MENU = 2607556080U;
             } // namespace SWITCH
         } // namespace MUSICSWITCH
+
+        namespace RACESTATE
+        {
+            static const AkUniqueID GROUP = 2495262365U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID COUNTDOWN = 1505888634U;
+                static const AkUniqueID FINISH = 2555741448U;
+                static const AkUniqueID IDLE = 1874288895U;
+                static const AkUniqueID RACING = 104887399U;
+            } // namespace SWITCH
+        } // namespace RACESTATE
 
     } // namespace SWITCHES
 

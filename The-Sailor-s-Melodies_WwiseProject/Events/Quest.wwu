@@ -201,6 +201,42 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Racing" ID="{C11417C8-C46A-4DF6-93BD-3A342898B713}" ShortID="735090172">
+					<ChildrenList>
+						<Event Name="Play_Checkpoint" ID="{0C529DEA-7A8A-4B1B-92C4-BAB80639F0AB}">
+							<ChildrenList>
+								<Action Name="" ID="{BF26E4B4-942C-463F-A8F9-10CE794CAE8A}" ShortID="129135362">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Checkpoint 2" ID="{77742803-2606-41ED-B391-1F87A4D52A2C}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{88F0DC63-FB1A-4DA9-9FDF-B06A04C0E133}" ShortID="678401205">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Voice_Exclamation" ID="{7EFA2E83-BF52-49A3-8955-A7F183C37E4B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Finish" ID="{E6E5C216-B5BD-42B2-8142-85EEE3899972}">
+							<ChildrenList>
+								<Action Name="" ID="{25DB54A6-B1D7-44CF-90C7-DF262A2EC4FE}" ShortID="442223495">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Magic Score 9" ID="{2E9773E9-9F08-44C9-B459-B946F716B8F7}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
