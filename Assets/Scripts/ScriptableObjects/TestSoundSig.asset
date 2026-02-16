@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a246fded85f7437a9d2ffa7796b1a5c, type: 3}
   m_Name: TestSoundSig
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
-  id: holy_choir
-  displayName: Choir
+  id: tes_123
+  displayName: Test
   icon: {fileID: 21300000, guid: cf6409f8e1061471187ee95e5750a13a, type: 3}
   playEvent:
     idInternal: 0

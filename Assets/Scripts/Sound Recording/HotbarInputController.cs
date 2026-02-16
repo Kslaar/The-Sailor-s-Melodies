@@ -9,36 +9,23 @@ public class HotbarInputController : MonoBehaviour
     void Update()
     {
         if (hotbar == null) return;
-
         var kb = Keyboard.current;
         if (kb == null) return;
 
         if (kb.leftArrowKey.wasPressedThisFrame) hotbar.SelectPrevious();
         if (kb.rightArrowKey.wasPressedThisFrame) hotbar.SelectNext();
 
-        bool playPressed = 
-            kb.leftCtrlKey.wasPressedThisFrame || kb.rightCtrlKey.wasPressedThisFrame ||
-            kb.leftMetaKey.wasPressedThisFrame || kb.rightMetaKey.wasPressedThisFrame; // Meta = Command (mac)
-
-        if (playPressed)
-        {
-            Debug.Log("[Input] Play pressed (Ctrl/Command)");
+        // Play mit Ctrl (Strg)
+        if (kb.leftCtrlKey.wasPressedThisFrame || kb.rightCtrlKey.wasPressedThisFrame)
             hotbar.PlaySelected();
-        }
 
         if (kb.cKey.wasPressedThisFrame)
-        {
-            Debug.Log("[Input] Clear pressed (C)");
             hotbar.ClearSelected();
-        }
 
         if (kb.rKey.wasPressedThisFrame)
         {
-            Debug.Log("[Input] Record pressed (R)");
-            if (recorderInteractor != null && recorderInteractor.CurrentSource != null)
-            {
-                recorderInteractor.CurrentSource.RecordTo(hotbar);
-            }
+            var src = recorderInteractor != null ? recorderInteractor.CurrentSource : null;
+            if (src != null) src.RecordTo(hotbar);
         }
     }
 }
