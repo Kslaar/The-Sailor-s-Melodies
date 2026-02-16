@@ -7,7 +7,7 @@ public class RecordHotbar : MonoBehaviour
     [Header("Slots im UI")]
     public int maxSlots = 3;
     public GameObject playbackEmitter;
-    public bool stopPreviousOnPlay = true;
+    public bool stopPreviousOnPlay = false;
 
     public event Action<SoundSignature> OnSoundPlayed;
     public event Action<IReadOnlyList<SoundSignature>> OnHotbarChanged;
@@ -23,12 +23,17 @@ public class RecordHotbar : MonoBehaviour
 
     public void Record(SoundSignature sig)
     {
-        if (sig == null) return;
+        if (sig == null) { Debug.Log("[Hotbar] Record: sig NULL"); return; }
+
+        Debug.Log($"[Hotbar] Record request: {sig.displayName} ({sig.id})");
 
         _slots.Remove(sig); // Derselbe Sound soll nicht mehrfach aufgenommen werden können
 
         if (_slots.Count >= maxSlots)
+        {
+            Debug.Log($"[Hotbar] Full -> removing oldest {_slots[0].displayName}");
             _slots.RemoveAt(0); // Bei maximum an tragbaren Sounds wir der älteste Sound emtfernt
+        }
 
         _slots.Add(sig);
 
@@ -37,6 +42,7 @@ public class RecordHotbar : MonoBehaviour
         OnSelectionChanged?.Invoke(_selectedIndex);
 
         OnHotbarChanged?.Invoke(_slots);
+        Debug.Log($"[Hotbar] Recorded. Slots now: {string.Join(", ", _slots.ConvertAll(s => s.displayName))} | selected={_selectedIndex}");
 
         // REMINDER: Effekte noch einbauen !!!
     }
@@ -44,6 +50,7 @@ public class RecordHotbar : MonoBehaviour
     public void ClearSelected()
     {
         if (_slots.Count == 0) return;
+        Debug.Log($"[Hotbar] ClearSelected index={_selectedIndex} sound={_slots[_selectedIndex].displayName}");
         _slots.RemoveAt(_selectedIndex);
 
         if (_slots.Count == 0) _selectedIndex = 0;
@@ -52,31 +59,19 @@ public class RecordHotbar : MonoBehaviour
         OnSelectionChanged?.Invoke(_selectedIndex);
         OnHotbarChanged?.Invoke(_slots);
     }
-    /*
-    public void SetSelectedIndex(int index)
-    {
-        if (_slots.Count == 0)
-        {
-            _selectedIndex = 0;
-            OnSelectionChanged?.Invoke(_selectedIndex);
-            return;
-        }
-
-        _selectedIndex = Mathf.Clamp(index, 0, _slots.Count - 1);
-        OnSelectionChanged?.Invoke(_selectedIndex);
-    }
-    */
 
     public void SelectNext()
     {
         if (_slots.Count == 0) return;
         _selectedIndex = (_selectedIndex + 1) % _slots.Count;
+        Debug.Log($"[Hotbar] SelectNext -> {_selectedIndex}");
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
     public void SelectPrevious()
     {
         if (_slots.Count == 0) return;
         _selectedIndex = (_selectedIndex - 1 + _slots.Count) % _slots.Count; // Modulo kann negativ daher "+ _slots.Count"
+        Debug.Log($"[Hotbar] SelectPrevious -> {_selectedIndex}");
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
 
@@ -84,16 +79,33 @@ public class RecordHotbar : MonoBehaviour
 
     public void PlaySlot(int index)
     {
-        if (index < 0 || index >= _slots.Count) return;
+        if (index < 0 || index >= _slots.Count)
+        {
+            Debug.Log($"[Hotbar] PlaySlot invalid index={index}, count={_slots.Count}");
+            return;
+        }
 
         var sig = _slots[index];
-        if (sig == null) return;
+        if (sig == null) 
+        { 
+            Debug.Log("[Hotbar] PlaySlot: sig NULL"); 
+            return; 
+        }
 
-        if (playbackEmitter == null) return;
+        if (playbackEmitter == null)
+        {
+            Debug.LogWarning("[Hotbar] playbackEmitter is NULL (set it to PlayerBoat)");
+            return;
+        }
+
+        Debug.Log($"[Hotbar] Play '{sig.displayName}' on emitter '{playbackEmitter.name}'");
 
         if (stopPreviousOnPlay && _lastPlayed != null && _lastPlayed.stopEvent != null)
+        {
+            Debug.Log($"[Hotbar] Stopping previous '{_lastPlayed.displayName}'");
             _lastPlayed.stopEvent.Post(playbackEmitter);
-
+        }
+        
         if (sig.playEvent != null)
         {
             sig.playEvent.Post(playbackEmitter);

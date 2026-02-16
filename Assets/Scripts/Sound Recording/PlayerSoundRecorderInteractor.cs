@@ -7,15 +7,28 @@ public class PlayerSoundRecorderInteractor : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (((1 << other.gameObject.layer) & RecordableLayer) == 0) return;
+        bool inMask = ((1 << other.gameObject.layer) & RecordableLayer) != 0;
+        Debug.Log($"[RecorderInteractor] Enter '{other.name}' layer={LayerMask.LayerToName(other.gameObject.layer)} inMask={inMask}");
+
+        if (!inMask) return;
 
         var source = other.GetComponent<SoundSource>();
-        if (source != null) CurrentSource = source;
+        Debug.Log($"[RecorderInteractor] -> SoundSource found? {(source != null)}");
+
+        if (source != null)
+        {
+            CurrentSource = source;
+            Debug.Log($"[RecorderInteractor] CurrentSource = {source.name} signature={(source.signature ? source.signature.displayName : "NULL")}");
+        }
     }
 
     void OnTriggerExit(Collider other)
     {
         if (CurrentSource == null) return;
-        if (other.GetComponent<SoundSource>() == CurrentSource) CurrentSource = null;
+        if (other.GetComponent<SoundSource>() == CurrentSource)
+        {
+            Debug.Log($"[RecorderInteractor] Exit '{other.name}' -> clearing CurrentSource");
+            CurrentSource = null;
+        }
     }
 }

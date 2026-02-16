@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a246fded85f7437a9d2ffa7796b1a5c, type: 3}
-  m_Name: HolySoundSig
+  m_Name: TestSoundSig
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
   id: holy_choir
   displayName: Choir
@@ -18,7 +18,7 @@ MonoBehaviour:
   playEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dfb8af21379077345a1dd4316a2463a4, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 1021f450b19ea4d56a6db922dc262763, type: 2}
   stopEvent:
     idInternal: 0
     valueGuidInternal: 
