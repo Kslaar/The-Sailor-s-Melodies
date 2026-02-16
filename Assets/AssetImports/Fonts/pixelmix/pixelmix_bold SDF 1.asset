@@ -1,5 +1,51 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!28 &-7337925198321863292
+Texture2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: pixelmix_bold Atlas
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_IsAlphaChannelOptional: 0
+  serializedVersion: 4
+  m_Width: 1
+  m_Height: 1
+  m_CompleteImageSize: 1
+  m_MipsStripped: 0
+  m_TextureFormat: 1
+  m_MipCount: 1
+  m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 1
+  m_MipmapLimitGroupName: 
+  m_StreamingMipmaps: 0
+  m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
+  m_AlphaIsTransparency: 0
+  m_ImageCount: 1
+  m_TextureDimension: 2
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 0
+    m_WrapV: 0
+    m_WrapW: 0
+  m_LightmapFormat: 0
+  m_ColorSpace: 1
+  m_PlatformBlob: 
+  image data: 1
+  _typelessdata: cd
+  m_StreamData:
+    serializedVersion: 2
+    offset: 0
+    size: 0
+    path: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10,7 +56,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
-  m_Name: pixelmix_bold SDF
+  m_Name: pixelmix_bold SDF 1
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_FontAsset
   m_Version: 1.1.0
   m_FaceInfo:
@@ -35,7 +81,7 @@ MonoBehaviour:
     m_StrikethroughOffset: 22.8
     m_StrikethroughThickness: 4.482422
     m_TabWidth: 56
-  m_Material: {fileID: 5930085951367852065}
+  m_Material: {fileID: 4328896020971146924}
   m_SourceFontFileGUID: 8de06027176254a98ab3d854dcf7f701
   m_CreationSettings:
     sourceFontFileName: 
@@ -60,200 +106,10 @@ MonoBehaviour:
   m_SourceFontFilePath: 
   m_AtlasPopulationMode: 1
   InternalDynamicOS: 0
-  m_GlyphTable:
-  - m_Index: 414
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 11.25
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 11.25
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 10
-      m_Y: 10
-      m_Width: 57
-      m_Height: 12
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 66
-    m_Metrics:
-      m_Width: 45
-      m_Height: 11.25
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 11.25
-      m_HorizontalAdvance: 56.25
-    m_GlyphRect:
-      m_X: 86
-      m_Y: 10
-      m_Width: 45
-      m_Height: 12
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 54
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 150
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 36
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 10
-      m_Y: 41
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 44
-    m_Metrics:
-      m_Width: 33.75
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 45
-    m_GlyphRect:
-      m_X: 86
-      m_Y: 41
-      m_Width: 34
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 47
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 226
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 50
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 302
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 53
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 378
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 51
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 454
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  - m_Index: 55
-    m_Metrics:
-      m_Width: 56.25
-      m_Height: 78.75
-      m_HorizontalBearingX: 0
-      m_HorizontalBearingY: 78.75
-      m_HorizontalAdvance: 67.5
-    m_GlyphRect:
-      m_X: 530
-      m_Y: 10
-      m_Width: 57
-      m_Height: 79
-    m_Scale: 1
-    m_AtlasIndex: 0
-    m_ClassDefinitionType: 0
-  m_CharacterTable:
-  - m_ElementType: 1
-    m_Unicode: 8230
-    m_GlyphIndex: 414
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 95
-    m_GlyphIndex: 66
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 83
-    m_GlyphIndex: 54
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 65
-    m_GlyphIndex: 36
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 73
-    m_GlyphIndex: 44
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 76
-    m_GlyphIndex: 47
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 79
-    m_GlyphIndex: 50
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 82
-    m_GlyphIndex: 53
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 80
-    m_GlyphIndex: 51
-    m_Scale: 1
-  - m_ElementType: 1
-    m_Unicode: 84
-    m_GlyphIndex: 55
-    m_Scale: 1
+  m_GlyphTable: []
+  m_CharacterTable: []
   m_AtlasTextures:
-  - {fileID: 7433446808805733036}
+  - {fileID: -7337925198321863292}
   m_AtlasTextureIndex: 0
   m_IsMultiAtlasTexturesEnabled: 0
   m_GetFontFeatures: 1
@@ -262,63 +118,11 @@ MonoBehaviour:
   m_AtlasHeight: 1024
   m_AtlasPadding: 9
   m_AtlasRenderMode: 4165
-  m_UsedGlyphRects:
-  - m_X: 0
-    m_Y: 0
-    m_Width: 76
-    m_Height: 31
-  - m_X: 76
-    m_Y: 0
-    m_Width: 64
-    m_Height: 31
-  - m_X: 140
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
-  - m_X: 0
-    m_Y: 31
-    m_Width: 76
-    m_Height: 98
-  - m_X: 76
-    m_Y: 31
-    m_Width: 53
-    m_Height: 98
-  - m_X: 216
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
-  - m_X: 292
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
-  - m_X: 368
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
-  - m_X: 444
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
-  - m_X: 520
-    m_Y: 0
-    m_Width: 76
-    m_Height: 98
+  m_UsedGlyphRects: []
   m_FreeGlyphRects:
   - m_X: 0
-    m_Y: 129
-    m_Width: 1023
-    m_Height: 894
-  - m_X: 129
-    m_Y: 98
-    m_Width: 894
-    m_Height: 925
-  - m_X: 129
-    m_Y: 31
-    m_Width: 11
-    m_Height: 992
-  - m_X: 596
     m_Y: 0
-    m_Width: 427
+    m_Width: 1023
     m_Height: 1023
   m_FontFeatureTable:
     m_MultipleSubstitutionRecords: []
@@ -383,7 +187,7 @@ MonoBehaviour:
     kerningPairs: []
   fallbackFontAssets: []
   atlas: {fileID: 0}
---- !u!21 &5930085951367852065
+--- !u!21 &4328896020971146924
 Material:
   serializedVersion: 8
   m_ObjectHideFlags: 0
@@ -419,7 +223,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 7433446808805733036}
+        m_Texture: {fileID: -7337925198321863292}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OutlineTex:
@@ -456,9 +260,9 @@ Material:
     - _OutlineWidth: 0
     - _PerspectiveFilter: 0.875
     - _Reflectivity: 10
-    - _ScaleRatioA: 0.9
-    - _ScaleRatioB: 0.73125
-    - _ScaleRatioC: 0.73125
+    - _ScaleRatioA: 1
+    - _ScaleRatioB: 1
+    - _ScaleRatioC: 1
     - _ScaleX: 1
     - _ScaleY: 1
     - _ShaderFlags: 0
@@ -492,49 +296,3 @@ Material:
     - _UnderlayColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!28 &7433446808805733036
-Texture2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: pixelmix_bold Atlas
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_IsAlphaChannelOptional: 0
-  serializedVersion: 4
-  m_Width: 1
-  m_Height: 1
-  m_CompleteImageSize: 1
-  m_MipsStripped: 0
-  m_TextureFormat: 1
-  m_MipCount: 1
-  m_IsReadable: 1
-  m_IsPreProcessed: 0
-  m_IgnoreMipmapLimit: 1
-  m_MipmapLimitGroupName: 
-  m_StreamingMipmaps: 0
-  m_StreamingMipmapsPriority: 0
-  m_VTOnly: 0
-  m_AlphaIsTransparency: 0
-  m_ImageCount: 1
-  m_TextureDimension: 2
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 0
-    m_WrapV: 0
-    m_WrapW: 0
-  m_LightmapFormat: 0
-  m_ColorSpace: 1
-  m_PlatformBlob: 
-  image data: 1
-  _typelessdata: 00
-  m_StreamData:
-    serializedVersion: 2
-    offset: 0
-    size: 0
-    path: 
