@@ -5241,7 +5241,7 @@ Transform:
   m_GameObject: {fileID: 377475397}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.2447152, z: 0, w: 0.969595}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.09490967, y: 0, z: 0.17604522}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12370,6 +12370,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DockInteractionUI, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &955917209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13778,7 +13790,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 326085990}
-  - {fileID: 1708951443}
   - {fileID: 1005212005}
   - {fileID: 2006587433}
   - {fileID: 761519152}
@@ -19645,7 +19656,7 @@ Transform:
   m_GameObject: {fileID: 1663438663}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.22044209, z: 0, w: 0.9754001}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.064505, y: 0, z: -0.13542175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20008,107 +20019,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8619824525244278046, guid: 785b2c09e76e3f74ca4b13a46f212aa5, type: 3}
   m_PrefabInstance: {fileID: 1701667472}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1708951442
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1708951443}
-  - component: {fileID: 1708951444}
-  - component: {fileID: 1708951445}
-  m_Layer: 0
-  m_Name: BoatAudio
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1708951443
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708951442}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1718.1003, y: -40.08575, z: 19.17259}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1077113674}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1708951444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708951442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 481767c877625354fbf26a11182ec648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BoatAudio
-  SailingState:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ad2dc145b64b93647886635c0d6d7736, type: 2}
-  MotorState:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5405dded0d137974c8b0bc0362aa2b69, type: 2}
-  PlaySailing:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: eb24c5a603a0e154997ce894673b9ee1, type: 2}
-  StopSailing:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 562871b1a25d6864aa1f8e42f16cb159, type: 2}
-  MotorStart:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3048900faef44714f9f7de9d31b2640a, type: 2}
-  MotorStop:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dc74843c0bf2b81478361053ff6847e7, type: 2}
-  SpeedRTPC:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
---- !u!114 &1708951445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1708951442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31c10d18a6e2a9144b3e63603ab8c88a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  usePositionOffsetData: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  scalingFactor: 1
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
 --- !u!1 &1709709422
 GameObject:
   m_ObjectHideFlags: 0
@@ -21946,7 +21856,7 @@ Transform:
   m_GameObject: {fileID: 1831804546}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.15, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24394,15 +24304,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1571.0189
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -40.08575
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -208.46716
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalRotation.w
@@ -24410,15 +24320,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5749276576587860833, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

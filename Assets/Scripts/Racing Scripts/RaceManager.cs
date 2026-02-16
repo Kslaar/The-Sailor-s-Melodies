@@ -104,7 +104,7 @@ public class RaceManager : MonoBehaviour
         state = RaceState.Countdown;
 
         //Wwise MusicManager
-        GlobalMusicManager.Instance.SetRaceState("Contdown");
+        GlobalMusicManager.Instance.SetRaceState("Countdown");
 
         for (int t = 3; t >= 1; t--)
         {
@@ -117,7 +117,6 @@ public class RaceManager : MonoBehaviour
 
         state = RaceState.Racing;
 
-      
         //Wwise MusicManager
         GlobalMusicManager.Instance.SetRaceState("Racing");
     }
@@ -207,7 +206,7 @@ public class RaceManager : MonoBehaviour
     {
         state = RaceState.Finished;
         GlobalMusicManager.Instance.SetRaceState("Finished");
-        FreezePlayer(true);
+        // FreezePlayer(true);
 
         bool success = timePassed <= currentCourse.successTimeSeconds;
 

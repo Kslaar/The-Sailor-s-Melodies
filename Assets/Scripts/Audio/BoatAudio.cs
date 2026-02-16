@@ -15,7 +15,8 @@ public class BoatAudio : MonoBehaviour
     [Header("RTPCs")]
     public AK.Wwise.RTPC SpeedRTPC;
 
-    private Rigidbody rb;
+    [Header("Rigidbody")]
+    public Rigidbody rb;
 
     void Start()
     {
