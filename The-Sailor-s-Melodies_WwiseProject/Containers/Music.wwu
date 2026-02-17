@@ -9,7 +9,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>
@@ -166,6 +166,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicTrack Name="music_city" ID="{61D7C95A-F7AC-476B-96D2-151CE1BB22F6}" ShortID="684101151">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
@@ -716,7 +723,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -738,7 +745,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 						<Reference Name="TransitionRoot">
 							<Custom>

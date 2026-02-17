@@ -23,7 +23,45 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
+						<Bus Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}"/>
+						<Bus Name="Island" ID="{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"/>
+						<Bus Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"/>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{A8FE9EFE-58A6-4ECA-AB44-9197EE4A5B80}" ShortID="339802107">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="PauseDuck" ID="{8550AAF7-10F0-4BE0-B61E-8311DC8743A7}" WorkUnitID="{AD1DD05C-D333-4CC2-9657-4726DB15CDF7}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{78935C3C-E929-461D-A5DE-2383B963C82D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>-13.01797</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
 				</Bus>
 				<Bus Name="Boat Audio" ID="{6A2F977A-D028-4613-B695-FC1D636B0C99}">
 					<ReferenceList>
@@ -33,6 +71,13 @@
 					</ReferenceList>
 				</Bus>
 				<Bus Name="Island Audio" ID="{071CE7C3-C87F-4D67-A76D-C788FFB3673C}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{6F7036D1-BA20-4114-9EC6-C473F7C0621A}" WorkUnitID="{AE92099A-D524-4E32-8BB2-1B1472FAF731}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Music_Bus" ID="{97F9D00F-A339-4281-B098-FF22D250FFFD}">
 					<ReferenceList>
 						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
 							<ObjectRef Name="System" ID="{6F7036D1-BA20-4114-9EC6-C473F7C0621A}" WorkUnitID="{AE92099A-D524-4E32-8BB2-1B1472FAF731}"/>

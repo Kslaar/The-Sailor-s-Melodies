@@ -18,9 +18,16 @@ State	ID	Name	State Group			Notes
 	2742168187	Docked	GameState			
 	3930136735	Dialogue	GameState			
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3503836294	PauseDuck			\Default Work Unit\PauseDuck	
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	779236412	Island Audio			\Default Work Unit\Island Audio	
+	1795056175	Boat			\Default Work Unit\Master\Boat	
+	2680856269	Music_Bus			\Default Work Unit\Music_Bus	
 	2945336769	Boat Audio			\Default Work Unit\Boat Audio	
+	3199546890	Island			\Default Work Unit\Master\Island	
+	3991942870	Music			\Default Work Unit\Master\Music	
 	4056684167	Master			\Default Work Unit\Master	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes

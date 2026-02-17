@@ -42,7 +42,6 @@ public class PauseInputController : MonoBehaviour
     {
         Time.timeScale = paused ? 0f : 1f;
 
-        if (paused) AkUnitySoundEngine.Suspend();
-        else AkUnitySoundEngine.WakeupFromSuspend();
+       AkUnitySoundEngine.SetRTPCValue("PauseDuck", paused ? 1f : 0f);  
     }
 }

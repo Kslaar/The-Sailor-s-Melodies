@@ -146,10 +146,41 @@ public class GameStateManager : MonoBehaviour
 
         Debug.Log($"[State] {old} -> {newState}" + (string.IsNullOrEmpty(reason) ? "" : $" | {reason}"));
         OnStateChanged?.Invoke(old, newState);
+
+        //WWise Mapping
+        switch (newState)
+        {
+            case GameState.Sailing:
+                AkUnitySoundEngine.SetState("GameState", "Sailing");
+                break;
+
+            case GameState.Docked:
+                AkUnitySoundEngine.SetState("GameState", "Docked");
+                break;
+
+            case GameState.Dialogue:
+                AkUnitySoundEngine.SetState("GameState", "Dialogue");
+                break;
+
+            case GameState.QuestLog:
+                AkUnitySoundEngine.SetState("GameState", "Questlog");
+                break;
+
+            case GameState.Racing:
+                AkUnitySoundEngine.SetState("GameState", "Racing");
+                break;
+
+            case GameState.Paused:
+                AkUnitySoundEngine.SetState("GameState", "Paused");
+                break;
+
+
+        }
     }
 
+
     ////////////////////////////////////////////////////////////////////
-    
+
     public void ForceUnpause(GameState target = GameState.Sailing, string reason = null)
     {
         pauseReturnStack.Clear(); // Stack leeren damit wir nicht im alten State landen
