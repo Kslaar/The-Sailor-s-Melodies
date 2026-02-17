@@ -206,7 +206,7 @@ public class RaceManager : MonoBehaviour
     {
         state = RaceState.Finished;
         GlobalMusicManager.Instance.SetRaceState("Finished");
-        // FreezePlayer(true);
+        FreezePlayer(true);
 
         bool success = timePassed <= currentCourse.successTimeSeconds;
 
@@ -217,8 +217,6 @@ public class RaceManager : MonoBehaviour
         // ResetRaceAfterDelay();
         // GameStateManager.Instance?.TryExitRace("Race finished");
         StartCoroutine(CoroutineReturnToQuestgiver(success));
-
-       
     }
 
     private void Fail(string reason)
@@ -232,21 +230,6 @@ public class RaceManager : MonoBehaviour
         // GameStateManager.Instance?.TryExitRace("Race failed");
         StartCoroutine(CoroutineReturnToQuestgiver(success: false));
     }
-    
-    /*
-    private void ResetRaceAfterDelay()
-    {
-        StartCoroutine(CoroutineReset());
-    }
-
-    // Wir zeigen kurz dem Spieler Fail oder Finish
-    private IEnumerator CoroutineReset()
-    {
-        yield return new WaitForSeconds(3f);
-        FreezePlayer(false);
-        ResetRace();   
-    }
-    */
 
     private IEnumerator CoroutineReturnToQuestgiver(bool success)
     {
