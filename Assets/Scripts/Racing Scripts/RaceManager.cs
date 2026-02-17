@@ -250,7 +250,7 @@ public class RaceManager : MonoBehaviour
 
     private IEnumerator CoroutineReturnToQuestgiver(bool success)
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(0.1f);
 
         // Teleport zum Dialog zurück
         if (currentCourse != null && currentCourse.returnPoint != null)
@@ -262,7 +262,7 @@ public class RaceManager : MonoBehaviour
                 rb.position = currentCourse.returnPoint.position;
                 rb.rotation = currentCourse.returnPoint.rotation;
             }
-            else
+            else if (boat != null)
             {
                 boat.transform.SetPositionAndRotation(currentCourse.returnPoint.position, currentCourse.returnPoint.rotation);
             }
@@ -270,7 +270,17 @@ public class RaceManager : MonoBehaviour
 
         FreezePlayer(false);
 
-        GameStateManager.Instance?.TrySetState(GameState.Docked, success ? "Race success" : "Race failed");
+        var docking = FindFirstObjectByType<BoatDockingController>();
+        if (docking != null && currentCourse != null && currentCourse.returnDock != null)
+        {
+            docking.ForceDock(currentCourse.returnDock, success ? "Race success" : "Race failed");
+        }
+        else
+        {
+            if (boat != null) boat.enabled = false;
+            if (rb != null) rb.isKinematic = true;
+            GameStateManager.Instance?.TrySetState(GameState.Docked, "Racereturn-Fallback");
+        }
 
         // Bei Erfolg stellen wir den QuestState um!
         if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))

@@ -89,25 +89,46 @@ public class BoatDockingController : MonoBehaviour
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
         if (currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
 
-        /*DialogueAsset dialogueToUse = currentDock.defaultDialogue;
-        
-        var selector = currentDock.GetComponent<NPCDialogueSelector>();
-        if (selector != null)
-            dialogueToUse = selector.GetDialogue();*/
-
         if (currentDock.dockUI != null)
             currentDock.dockUI.Show(currentDock);
 
         GameStateManager.Instance?.TrySetState(GameState.Docked);
 
-
-
         // WWise: MusicState setzen
         GlobalMusicManager.Instance.SetIsland();
+    }
 
+    public void ForceDock(DockZone dockZone, string reason = "ForceDock")
+    {
+        if (dockZone == null || dockZone.snapPoint == null)
+        {
+            return;
+        }
 
+        currentDock = dockZone;
+        isDocked = true;
+        holdTimer = 0f;
 
+        savedKinematic = rb != null ? rb.isKinematic : false;
 
+        transform.position = dockZone.snapPoint.position;
+        transform.rotation = dockZone.snapPoint.rotation;
+
+        if (boat != null) boat.enabled = false;
+
+        // Wir geben den Cursor wieder frei
+        if (cursorLock != null) cursorLock.UnlockCursor();
+        else { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+
+        // Kameras switchen
+        if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
+        if (currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
+
+        if (currentDock.dockUI != null)
+            currentDock.dockUI.Show(currentDock);
+        
+        GameStateManager.Instance?.ForceUnpause(GameState.Docked, reason);
+        GameStateManager.Instance?.TrySetState(GameState.Docked, reason);
     }
 
     public void UndockNow()

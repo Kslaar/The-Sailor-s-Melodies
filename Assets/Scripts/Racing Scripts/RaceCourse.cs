@@ -7,6 +7,7 @@ public class RaceCourse : MonoBehaviour
     public string courseID = "race_island_1";
 
     [Header("Return Dialogue")]
+    public DockZone returnDock;
     public Transform returnPoint;
     public NPCDialogueSelector questGiverDialogue;
     public string questID;
