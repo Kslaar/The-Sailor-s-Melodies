@@ -69,8 +69,12 @@ public class PuzzleListener : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log($"[Puzzle] Enter trigger by '{other.name}' tag={other.tag}");
         if (other.CompareTag("Player"))
+        {
             _playerInRange = true;
+            Debug.Log("[Puzzle] Player in range = TRUE");
+        }
     }
 
     void OnTriggerExit(Collider other)

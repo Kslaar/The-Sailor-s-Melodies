@@ -6,7 +6,7 @@ public class BlockedOffArea : MonoBehaviour
     public string openTriggerName = "Open";
     public Collider blockingCollider;
 
-    public string closedLayer = "Obstacle";
+    public string closedLayer = "Obstacles";
     public string openedLayer = "Default"; // vllt überarbeiten
     public bool applyToChildren = true;
 
@@ -48,7 +48,7 @@ public class BlockedOffArea : MonoBehaviour
             return;
         }
 
-        foreach (Transform t in GetComponentInChildren<Transform>(true))
+        foreach (Transform t in GetComponentsInChildren<Transform>(true))
             t.gameObject.layer = layer;
     }
 }

@@ -504,9 +504,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9036936117431644607}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5604907069146694132}
   m_SourcePrefab: {fileID: 100100000, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!4 &7316729568759855435 stripped
 Transform:
@@ -836,6 +833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b097341f7e46140218d0948521bf2571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerSoundRecorderInteractor
+  RecordableLayer:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &9036936117431644607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,21 +851,3 @@ MonoBehaviour:
   maxSlots: 3
   playbackEmitter: {fileID: 7980922155677737969}
   stopPreviousOnPlay: 1
---- !u!114 &5604907069146694132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7980922155677737969}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0e53d9d485124c469fe64752bb20a67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HotbarInputController
-  hotbar: {fileID: 9036936117431644607}
-  recorderInteractor: {fileID: 3621978060238838574}
-  recordKey: 114
-  clearKey: 99
-  leftKey: 276
-  rightKey: 275
