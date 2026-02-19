@@ -121,6 +121,11 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PAUSEDUCK = 3503836294U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
@@ -130,9 +135,13 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID BOAT = 1795056175U;
         static const AkUniqueID BOAT_AUDIO = 2945336769U;
+        static const AkUniqueID ISLAND = 3199546890U;
         static const AkUniqueID ISLAND_AUDIO = 779236412U;
         static const AkUniqueID MASTER = 4056684167U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MUSIC_BUS = 2680856269U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

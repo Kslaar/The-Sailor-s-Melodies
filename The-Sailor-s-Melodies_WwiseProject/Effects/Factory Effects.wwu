@@ -573,14 +573,16 @@
 							<ChildrenList>
 								<Effect Name="High_Pass_60Hz" ID="{F9627628-0B10-4272-BC30-D4C20423CB38}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 									<PropertyList>
+										<Property Name="DynamicsEnableBand3" Type="bool" Value="True"/>
 										<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 										<Property Name="FilterTypeBand2" Type="int32" Value="7"/>
-										<Property Name="FrequencyBand2" Type="Real32" Value="6266.847"/>
-										<Property Name="FrequencyBand3" Type="Real32" Value="444.799"/>
+										<Property Name="FrequencyBand1" Type="Real32" Value="43.87245"/>
+										<Property Name="FrequencyBand2" Type="Real32" Value="6647.55"/>
+										<Property Name="FrequencyBand3" Type="Real32" Value="3594.722"/>
 										<Property Name="GainBand2" Type="Real32" Value="-0.7692308"/>
-										<Property Name="GainBand3" Type="Real32" Value="2.459807"/>
+										<Property Name="GainBand3" Type="Real32" Value="-1.846154"/>
 										<Property Name="OnOffBand3" Type="bool" Value="True"/>
-										<Property Name="QFactorBand2" Type="Real32" Value="0.6913227"/>
+										<Property Name="QFactorBand2" Type="Real32" Value="0.8926917"/>
 										<Property Name="QFactorBand3" Type="Real32" Value="3.5"/>
 									</PropertyList>
 								</Effect>

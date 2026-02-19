@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3E844CE0-3029-C88C-9E5A-F92C40FB93C2}",
+    "Hash": "{D6921900-CFD5-E051-A28C-B86A1E1D751A}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -52,10 +52,34 @@
       "GUID": "{071CE7C3-C87F-4D67-A76D-C788FFB3673C}"
      },
      {
+      "Id": "1795056175",
+      "Name": "Boat",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Boat",
+      "GUID": "{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"
+     },
+     {
+      "Id": "2680856269",
+      "Name": "Music_Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Music_Bus",
+      "GUID": "{97F9D00F-A339-4281-B098-FF22D250FFFD}"
+     },
+     {
       "Id": "2945336769",
       "Name": "Boat Audio",
       "ObjectPath": "\\Busses\\Default Work Unit\\Boat Audio",
       "GUID": "{6A2F977A-D028-4613-B695-FC1D636B0C99}"
+     },
+     {
+      "Id": "3199546890",
+      "Name": "Island",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Island",
+      "GUID": "{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Music",
+      "GUID": "{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}"
      },
      {
       "Id": "4056684167",
@@ -77,6 +101,14 @@
         }
        ]
       }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3503836294",
+      "Name": "PauseDuck",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PauseDuck",
+      "GUID": "{8550AAF7-10F0-4BE0-B61E-8311DC8743A7}"
      }
     ],
     "StateGroups": [
@@ -245,6 +277,6 @@
     ]
    }
   ],
-  "FileHash": "{F7C659F5-44F1-7D1F-DC12-675FAE049DDB}"
+  "FileHash": "{D2B23653-0D2E-10E5-4F30-DD981666556E}"
  }
 }
