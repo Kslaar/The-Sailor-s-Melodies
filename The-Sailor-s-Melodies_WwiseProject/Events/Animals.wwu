@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" SchemaVersion="133" RootDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" ParentDocumentID="{B86E5743-4A49-49A9-9E25-918B74C44D57}">
 	<Events>
-		<WorkUnit Name="Animals" ID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested"/>
+		<WorkUnit Name="Animals" ID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
+			<ChildrenList>
+				<Event Name="Play_Seagulls" ID="{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

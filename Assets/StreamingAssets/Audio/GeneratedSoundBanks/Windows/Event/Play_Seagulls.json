@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "4281176146",
+    "Type": "Event",
+    "GUID": "{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}",
+    "Language": "SFX",
+    "Hash": "{E48CCEB6-421B-05AD-1C00-D275FF171831}",
+    "ObjectPath": "Play_Seagulls",
+    "ShortName": "Play_Seagulls",
+    "Path": "Event/Play_Seagulls.bnk",
+    "Events": [
+     {
+      "Id": "4281176146",
+      "Name": "Play_Seagulls",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Seagulls",
+      "GUID": "{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{FC38E04B-E3A2-80FA-CBBF-8569C889C229}"
+ }
+}

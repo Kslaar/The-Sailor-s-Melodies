@@ -146,7 +146,1137 @@
 				</Sound>
 				<Folder Name="Keyboard" ID="{841ED7B0-9F55-4E07-8D8B-42B8C638C668}" ShortID="829558835">
 					<ChildrenList>
-						<Sound Name="Horn_All" ID="{28CAAC4E-E195-4D34-9762-626BE5D2FED0}" ShortID="954000789">
+						<Folder Name="Horn_clear" ID="{CB813668-C74B-4065-B31F-2A3B16336D97}" ShortID="1010872648">
+							<ChildrenList>
+								<Sound Name="Horn_All" ID="{28CAAC4E-E195-4D34-9762-626BE5D2FED0}" ShortID="954000789">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{E66128DF-75A8-4829-B938-1FF20CC45E93}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.881118881118881"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.881118881118881"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="5822817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{E66128DF-75A8-4829-B938-1FF20CC45E93}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_C" ID="{99F43292-7323-4D57-A046-37396015B4A5}" ShortID="98793328">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{D9B6639B-DAF6-4FB7-A1EB-0BFB9E650EF6}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0318076569912373"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.272727272727273"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.998239664710513"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="447023009"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{D9B6639B-DAF6-4FB7-A1EB-0BFB9E650EF6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_D" ID="{5007CA97-FC34-4661-AFF3-F3B0FD28D369}" ShortID="916920968">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{2AF41E85-3ECC-49BA-85E2-D4D0F695068B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0182306252981133"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0486150007949684"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.0007481078156"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.83216783216783"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="297006455"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{2AF41E85-3ECC-49BA-85E2-D4D0F695068B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_E" ID="{414C4D36-23E5-4A7E-B607-CD43280E1FA4}" ShortID="753786470">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{47C37E78-AF0A-40F4-9D97-A2D25BFBBE76}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0145270561080526"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.177631656310629"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.99769862258847"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67201869333972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603414801"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{47C37E78-AF0A-40F4-9D97-A2D25BFBBE76}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_F" ID="{5F341BEF-903F-4E27-976D-01A9784F3B46}" ShortID="372206608">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{2DEE04D0-BACD-4E86-908F-168D1305C1FF}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260347231601856"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.115384615384615"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.99144779432233"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.76223776223776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="697144522"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{2DEE04D0-BACD-4E86-908F-168D1305C1FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_G" ID="{2EBF405B-A1CB-4734-AAB0-A519B564AB5F}" ShortID="255406813">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{619DAC9B-B765-4684-94BD-554375B27393}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0175777378907434"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.112999743583346"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.99329265423167"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.62330099405422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="487973624"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{619DAC9B-B765-4684-94BD-554375B27393}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_A" ID="{B4908F5D-83BF-4E83-B9EF-3F41FB0E7788}" ShortID="20226828">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{D15EE356-76AF-4F07-B2C2-CB08447C3007}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0186776435674947"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.106953001748931"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.99354803512903"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.76943559833865"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741850182"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{51A651BF-73CD-42C7-80AC-9359EF6C2BF6}" ShortID="653690047">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{2CE1BEC7-D615-405D-900F-DC802EDAEA26}" ShortID="157279238" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="Rectification" Type="Real32" Value="71"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{724B6B9A-CCF3-48AA-88CB-BC9B42749465}" ShortID="1037330086">
+												<PropertyList>
+													<Property Name="Bypass" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{D15EE356-76AF-4F07-B2C2-CB08447C3007}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_B" ID="{0E4D1AD0-F5EB-409B-A051-2522BA5C97B8}" ShortID="955170352">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{13866E5C-436D-4324-9048-204763E049BD}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0365251696431024"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25073794347515"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.98329754985652"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.77461940527467"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887849136"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{31DFDC58-4842-449A-90B6-7038F88AF283}" ShortID="263858606">
+												<PropertyList>
+													<Property Name="Bypass" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{C85EADD1-F614-4C25-B1A7-223EF0E1CE65}" ShortID="887071783" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="Rectification" Type="Real32" Value="75"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{13866E5C-436D-4324-9048-204763E049BD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_C`" ID="{D72B1067-C6F9-45BB-8143-1E72475C49AF}" ShortID="613729940">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{6B10E3BE-3E0B-4312-9AE6-B594EA07AE57}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0248599435883374"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0911531264905658"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.61188811188811"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="827413391"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{6B10E3BE-3E0B-4312-9AE6-B594EA07AE57}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ocarina_clear" ID="{320BD959-8D59-442A-BDE6-4306B4BA2BA0}" ShortID="319448883">
+							<ChildrenList>
+								<Sound Name="Okarina_All" ID="{58E4D0B0-B88F-4B95-9D3D-F30F351F7E21}" ShortID="695826875">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{53CC4B98-972A-4EF9-BACB-9B5548470EA7}">
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="533967411"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{53CC4B98-972A-4EF9-BACB-9B5548470EA7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_C" ID="{DACEFF64-A8CC-41F4-B05A-9900A4A15D70}" ShortID="441956699">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{68EF873B-78E9-4B6B-8895-773E08579774}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.041958041958042"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.104895104895105"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.986013986013986"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261911091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{68EF873B-78E9-4B6B-8895-773E08579774}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_D" ID="{05FD0B28-B279-4F07-BCD2-56E9F59A6218}" ShortID="611305259">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{7EB0C5A8-37B7-4E29-A77A-69227F33E91B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0524475524475525"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.157342657342658"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.98251748251748"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.84265734265734"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="747045309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{7EB0C5A8-37B7-4E29-A77A-69227F33E91B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_E" ID="{AA1AE267-EB1B-4D11-B98E-11693A8FD7B5}" ShortID="879429315">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{72CA9E79-F109-463D-863F-FC092F312603}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.97902097902098"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.98601398601399"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839279121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{72CA9E79-F109-463D-863F-FC092F312603}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_F" ID="{76F8293A-DE90-4236-891A-FE07B33EBFCC}" ShortID="746961928">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{875E27E5-6893-45C6-8C7F-BA64AF93EE33}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.98601398601399"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.99300699300699"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002586562"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{875E27E5-6893-45C6-8C7F-BA64AF93EE33}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_A" ID="{39356E04-7B3F-4EED-9E70-97D724B58EB2}" ShortID="357505145">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{17B74064-B6EA-46C9-8E03-995D3BB84095}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.98951048951049"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.9965034965035"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903220478"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{17B74064-B6EA-46C9-8E03-995D3BB84095}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_B" ID="{9013F8A6-6C4A-43F7-912F-40294572A7E4}" ShortID="474305715">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{8661B32E-B2B1-4A80-B497-EDCAEA84CF22}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.167832167832168"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.98601398601399"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.00349650349652"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="736938058"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{8661B32E-B2B1-4A80-B497-EDCAEA84CF22}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_C`" ID="{F2D314E6-A6DC-417B-AB7D-48D8EB3CD430}" ShortID="10857321">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{0814B195-D425-4A78-BE22-F09838709294}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.188811188811188"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="279260886"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{0814B195-D425-4A78-BE22-F09838709294}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_G" ID="{F9427017-CC0C-4BE1-8A63-6800DE4E1E8B}" ShortID="301841546">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{84B6235C-C20F-4E59-98B2-DC3D853AFA1E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.99300699300699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="483172978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{84B6235C-C20F-4E59-98B2-DC3D853AFA1E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Horn_Hint" ID="{0840C640-7B02-4437-BE98-280FA17D42D5}" ShortID="523788701">
+							<ChildrenList>
+								<Sound Name="Horn_A_Hint" ID="{C950F85F-9A47-4797-9AFF-4A03E7F24CCE}" ShortID="284944583">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{74B1BB56-4E45-42A3-8D9E-29742F32C03B}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0186776435674947"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.106953001748931"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.99354803512903"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.76943559833865"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741850182"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{8401E562-6DDA-4AF3-BB42-A26FEB0CE2B9}" ShortID="131123742">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{7BF99618-308D-434D-9D6C-ADBD06DA15B2}" ShortID="518248007" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="Rectification" Type="Real32" Value="71"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+											<EffectSlot Name="" ID="{01C150F5-88D9-4B4E-9A20-03315E7F62FE}" ShortID="446692657">
+												<PropertyList>
+													<Property Name="Bypass" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+														<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{74B1BB56-4E45-42A3-8D9E-29742F32C03B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_All_Hint" ID="{3C62B77D-5CA4-4D21-A7D5-864E44B47E1A}" ShortID="23392677">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{82FF8D68-E879-4E8D-9DBF-AEA0F43D9AC0}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.881118881118881"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.881118881118881"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="5822817"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{82FF8D68-E879-4E8D-9DBF-AEA0F43D9AC0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_B_Hint" ID="{F72CCF7A-C05A-462D-AB17-565FD55C2D74}" ShortID="320215">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{FA19C1D4-F516-488C-96DC-1378FD890220}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0365251696431024"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.25073794347515"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.98329754985652"/>
+												<Property Name="TrimEnd" Type="Real64" Value="7.77461940527467"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="887849136"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{27D1AE01-4517-473F-B087-C761C18DA973}" ShortID="582221305">
+												<PropertyList>
+													<Property Name="Bypass" Type="bool" Value="True"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{F7ED5305-97FD-421B-AD82-DBCD4D1A1FBA}" ShortID="936931104" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="Rectification" Type="Real32" Value="75"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{FA19C1D4-F516-488C-96DC-1378FD890220}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_C_Hint" ID="{7B1D25EE-9F98-4C1E-A857-4E99457E5C1D}" ShortID="526757790">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{7774D226-D595-470D-9422-95BF6AFB0D95}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0318076569912373"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.272727272727273"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.998239664710513"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="447023009"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{7774D226-D595-470D-9422-95BF6AFB0D95}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_C`_Hint" ID="{5557FF8E-CC20-4EA8-8FD5-57FDDE8DFF8A}" ShortID="63513935">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{8D553AD9-D692-4F3C-B7B2-AFCCE2224E62}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0248599435883374"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0911531264905658"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.61188811188811"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="827413391"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{8D553AD9-D692-4F3C-B7B2-AFCCE2224E62}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_D_Hint" ID="{0D4B87DE-F83E-428A-A08E-C57AE136B8BA}" ShortID="1049802428">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{78B0E4F6-94B7-4328-818B-78C9B84F71DC}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0182306252981133"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0486150007949684"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.0007481078156"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.83216783216783"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="297006455"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{78B0E4F6-94B7-4328-818B-78C9B84F71DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_E_Hint" ID="{DAFD1170-03BF-4E4C-A8EE-01CF83DFB95E}" ShortID="163098252">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{C2327C77-EB6C-489A-A034-57D294DEF1C0}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0145270561080526"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.177631656310629"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.99769862258847"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.67201869333972"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="603414801"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{C2327C77-EB6C-489A-A034-57D294DEF1C0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_F_Hint" ID="{09A9FBCA-F1E2-4C95-879A-F89DA457B9E3}" ShortID="1065112056">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{5BFF380A-058F-43D1-ADC3-0750A843D360}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0260347231601856"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.115384615384615"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.99144779432233"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.76223776223776"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="697144522"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{5BFF380A-058F-43D1-ADC3-0750A843D360}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Horn_G_Hint" ID="{FEB7A727-5234-40BE-A2D1-F87405DCDD41}" ShortID="36175930">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Horn" ID="{4E00CDE2-6644-49DF-A660-58D6453805F4}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0175777378907434"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.112999743583346"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.99329265423167"/>
+												<Property Name="TrimEnd" Type="Real64" Value="5.62330099405422"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Horn.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="487973624"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Horn" ID="{4E00CDE2-6644-49DF-A660-58D6453805F4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Ocarina_Hint" ID="{F76B4B86-7CB0-45FE-A523-5533C7D8A5A4}" ShortID="1023773400">
+							<ChildrenList>
+								<Sound Name="Okarina_A_Hint" ID="{9F7F019D-BE7B-4C45-A1DC-DF6AE34EFEB8}" ShortID="481038951">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{463E55B0-4864-48D3-A2C2-4A59C37F885C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="5.98951048951049"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.9965034965035"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="903220478"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{463E55B0-4864-48D3-A2C2-4A59C37F885C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_All_Hint" ID="{80D01564-F1A5-49D0-8FED-154FF9C6CE53}" ShortID="979817497">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{555EBE1A-6AD4-4855-9F0B-6C43B7F2832A}">
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="533967411"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{555EBE1A-6AD4-4855-9F0B-6C43B7F2832A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_B_Hint" ID="{B1A02213-1297-4EC4-860C-26A429776E2D}" ShortID="682251451">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{BCC39DA1-D694-4E4B-B564-18302BF70161}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.167832167832168"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.98601398601399"/>
+												<Property Name="TrimEnd" Type="Real64" Value="8.00349650349652"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="736938058"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{BCC39DA1-D694-4E4B-B564-18302BF70161}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_C_Hint" ID="{62002785-DBC8-4CA8-999B-9469F3F55D23}" ShortID="138543900">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{3F7A7D08-1F60-48AB-8A0C-FCA847673313}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.041958041958042"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.104895104895105"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.986013986013986"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261911091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{3F7A7D08-1F60-48AB-8A0C-FCA847673313}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_C`_Hint" ID="{F7F3896E-50DA-487C-9F28-EAF9AA056988}" ShortID="937078809">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{B1E36251-8EB1-4E88-B755-E60AA7452D19}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.188811188811188"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="279260886"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{B1E36251-8EB1-4E88-B755-E60AA7452D19}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_D_Hint" ID="{A2FA9A4C-5E87-47C8-8FB3-ABE6C7FF8CDA}" ShortID="912038788">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{A859EDC5-1CD2-45CC-A166-7CF3F862A47A}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0524475524475525"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.157342657342658"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="1.98251748251748"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.84265734265734"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="747045309"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{A859EDC5-1CD2-45CC-A166-7CF3F862A47A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_E_Hint" ID="{F9278127-EBF9-489B-A54F-0B8576D7DA17}" ShortID="282027173">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{BA64E97E-B34A-4E1D-8032-6ADED338738C}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.97902097902098"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.98601398601399"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839279121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{BA64E97E-B34A-4E1D-8032-6ADED338738C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_F_Hint" ID="{3B4643F2-7D0A-4F82-842B-EA77154DDA53}" ShortID="799210770">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{F87D8CE5-ADE7-4568-9F56-446CC6C0AEEF}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.98601398601399"/>
+												<Property Name="TrimEnd" Type="Real64" Value="4.99300699300699"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1002586562"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{F87D8CE5-ADE7-4568-9F56-446CC6C0AEEF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_G_Hint" ID="{C42EF9E8-07D4-464C-B31E-1273BC4EFCED}" ShortID="267748580">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{20FC5C9B-EF2D-4B62-B589-5759229ED959}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.99300699300699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="483172978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{20FC5C9B-EF2D-4B62-B589-5759229ED959}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<RandomSequenceContainer Name="C_Major" ID="{7EF2B9A3-A1C5-48E7-8010-698906BF33F6}" ShortID="629500501">
+							<PropertyList>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
@@ -156,498 +1286,116 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{E66128DF-75A8-4829-B938-1FF20CC45E93}">
-									<PropertyList>
-										<Property Name="LoopBegin" Type="Real64" Value="0.881118881118881"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.881118881118881"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="5822817"/>
-									</MediaIDList>
-								</AudioFileSource>
+								<Sound Name="Okarina_C" ID="{F84F5B2B-88A6-4A7A-98FB-EBE3BCA1A328}" ShortID="724438784">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{767F8072-648A-4AEC-AE6E-44F5036297BB}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.041958041958042"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.104895104895105"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.986013986013986"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="261911091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{767F8072-648A-4AEC-AE6E-44F5036297BB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_E" ID="{1F740075-6ADC-417E-93AD-8CE1CC4A094A}" ShortID="537321498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{BBA55621-FB57-41E5-81AB-89DB95EE345A}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.97902097902098"/>
+												<Property Name="TrimEnd" Type="Real64" Value="3.98601398601399"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="839279121"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{BBA55621-FB57-41E5-81AB-89DB95EE345A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Okarina_G" ID="{9444EF3B-3899-40E0-884E-9289B56D42BC}" ShortID="635760528">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Okarina" ID="{534C4FC6-EA4A-4514-9BD1-32556838A98E}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="4.99300699300699"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Okarina.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="483172978"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Okarina" ID="{534C4FC6-EA4A-4514-9BD1-32556838A98E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{E66128DF-75A8-4829-B938-1FF20CC45E93}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_All" ID="{58E4D0B0-B88F-4B95-9D3D-F30F351F7E21}" ShortID="695826875">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{53CC4B98-972A-4EF9-BACB-9B5548470EA7}">
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="533967411"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{53CC4B98-972A-4EF9-BACB-9B5548470EA7}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_C" ID="{99F43292-7323-4D57-A046-37396015B4A5}" ShortID="98793328">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{D9B6639B-DAF6-4FB7-A1EB-0BFB9E650EF6}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0318076569912373"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.272727272727273"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.998239664710513"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="447023009"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{D9B6639B-DAF6-4FB7-A1EB-0BFB9E650EF6}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_D" ID="{5007CA97-FC34-4661-AFF3-F3B0FD28D369}" ShortID="916920968">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{2AF41E85-3ECC-49BA-85E2-D4D0F695068B}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0182306252981133"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0486150007949684"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="2.0007481078156"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.83216783216783"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="297006455"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{2AF41E85-3ECC-49BA-85E2-D4D0F695068B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_E" ID="{414C4D36-23E5-4A7E-B607-CD43280E1FA4}" ShortID="753786470">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{47C37E78-AF0A-40F4-9D97-A2D25BFBBE76}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0145270561080526"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.177631656310629"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="2.99769862258847"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.67201869333972"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="603414801"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{47C37E78-AF0A-40F4-9D97-A2D25BFBBE76}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_F" ID="{5F341BEF-903F-4E27-976D-01A9784F3B46}" ShortID="372206608">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{2DEE04D0-BACD-4E86-908F-168D1305C1FF}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0260347231601856"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.115384615384615"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="3.99144779432233"/>
-										<Property Name="TrimEnd" Type="Real64" Value="4.76223776223776"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="697144522"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{2DEE04D0-BACD-4E86-908F-168D1305C1FF}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_G" ID="{2EBF405B-A1CB-4734-AAB0-A519B564AB5F}" ShortID="255406813">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{619DAC9B-B765-4684-94BD-554375B27393}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0175777378907434"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.112999743583346"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.99329265423167"/>
-										<Property Name="TrimEnd" Type="Real64" Value="5.62330099405422"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="487973624"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{619DAC9B-B765-4684-94BD-554375B27393}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_A" ID="{B4908F5D-83BF-4E83-B9EF-3F41FB0E7788}" ShortID="20226828">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{D15EE356-76AF-4F07-B2C2-CB08447C3007}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0186776435674947"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.106953001748931"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="5.99354803512903"/>
-										<Property Name="TrimEnd" Type="Real64" Value="6.76943559833865"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="741850182"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{D15EE356-76AF-4F07-B2C2-CB08447C3007}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_B" ID="{0E4D1AD0-F5EB-409B-A051-2522BA5C97B8}" ShortID="955170352">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{13866E5C-436D-4324-9048-204763E049BD}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0365251696431024"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.25073794347515"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="6.98329754985652"/>
-										<Property Name="TrimEnd" Type="Real64" Value="7.77461940527467"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="887849136"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{13866E5C-436D-4324-9048-204763E049BD}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Horn_C`" ID="{D72B1067-C6F9-45BB-8143-1E72475C49AF}" ShortID="613729940">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Horn" ID="{6B10E3BE-3E0B-4312-9AE6-B594EA07AE57}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0248599435883374"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.0911531264905658"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
-										<Property Name="TrimEnd" Type="Real64" Value="8.61188811188811"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Horn.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="827413391"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Horn" ID="{6B10E3BE-3E0B-4312-9AE6-B594EA07AE57}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_C" ID="{DACEFF64-A8CC-41F4-B05A-9900A4A15D70}" ShortID="441956699">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{68EF873B-78E9-4B6B-8895-773E08579774}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.041958041958042"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.104895104895105"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="0.986013986013986"/>
-										<Property Name="TrimEnd" Type="Real64" Value="1.82517482517482"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="261911091"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{68EF873B-78E9-4B6B-8895-773E08579774}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_D" ID="{05FD0B28-B279-4F07-BCD2-56E9F59A6218}" ShortID="611305259">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{7EB0C5A8-37B7-4E29-A77A-69227F33E91B}">
-									<PropertyList>
-										<Property Name="FadeInDuration" Type="Real64" Value="0.0524475524475525"/>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.157342657342658"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="1.98251748251748"/>
-										<Property Name="TrimEnd" Type="Real64" Value="2.84265734265734"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="747045309"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{7EB0C5A8-37B7-4E29-A77A-69227F33E91B}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_E" ID="{AA1AE267-EB1B-4D11-B98E-11693A8FD7B5}" ShortID="879429315">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{72CA9E79-F109-463D-863F-FC092F312603}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="2.97902097902098"/>
-										<Property Name="TrimEnd" Type="Real64" Value="3.98601398601399"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="839279121"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{72CA9E79-F109-463D-863F-FC092F312603}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_F" ID="{76F8293A-DE90-4236-891A-FE07B33EBFCC}" ShortID="746961928">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{875E27E5-6893-45C6-8C7F-BA64AF93EE33}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="3.98601398601399"/>
-										<Property Name="TrimEnd" Type="Real64" Value="4.99300699300699"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1002586562"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{875E27E5-6893-45C6-8C7F-BA64AF93EE33}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_G" ID="{F9427017-CC0C-4BE1-8A63-6800DE4E1E8B}" ShortID="301841546">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{84B6235C-C20F-4E59-98B2-DC3D853AFA1E}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.99300699300699"/>
-										<Property Name="TrimEnd" Type="Real64" Value="6"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="483172978"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{84B6235C-C20F-4E59-98B2-DC3D853AFA1E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_A" ID="{39356E04-7B3F-4EED-9E70-97D724B58EB2}" ShortID="357505145">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{17B74064-B6EA-46C9-8E03-995D3BB84095}">
-									<PropertyList>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="5.98951048951049"/>
-										<Property Name="TrimEnd" Type="Real64" Value="6.9965034965035"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="903220478"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{17B74064-B6EA-46C9-8E03-995D3BB84095}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_B" ID="{9013F8A6-6C4A-43F7-912F-40294572A7E4}" ShortID="474305715">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{8661B32E-B2B1-4A80-B497-EDCAEA84CF22}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.167832167832168"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="6.98601398601399"/>
-										<Property Name="TrimEnd" Type="Real64" Value="8.00349650349652"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="736938058"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{8661B32E-B2B1-4A80-B497-EDCAEA84CF22}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="Okarina_C`" ID="{F2D314E6-A6DC-417B-AB7D-48D8EB3CD430}" ShortID="10857321">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="Okarina" ID="{0814B195-D425-4A78-BE22-F09838709294}">
-									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.188811188811188"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimBegin" Type="Real64" Value="7.98251748251748"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Okarina.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="279260886"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Okarina" ID="{0814B195-D425-4A78-BE22-F09838709294}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
+							<ObjectLists>
+								<ObjectList Name="Playlist">
+									<PluginInnerObject Name="" ID="{8602ADC0-B690-4AC5-8029-2A2B8BABAAE4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Okarina_C" ID="{F84F5B2B-88A6-4A7A-98FB-EBE3BCA1A328}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{26344D18-5E66-4236-9240-8BAFF2FDEF04}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Okarina_E" ID="{1F740075-6ADC-417E-93AD-8CE1CC4A094A}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+									<PluginInnerObject Name="" ID="{1F3AD041-3021-4D1B-B317-BBB90E85CB7C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+										<ReferenceList>
+											<Reference Name="PlaylistObject">
+												<ObjectRef Name="Okarina_G" ID="{9444EF3B-3899-40E0-884E-9289B56D42BC}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+											</Reference>
+										</ReferenceList>
+									</PluginInnerObject>
+								</ObjectList>
+							</ObjectLists>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Racing" ID="{CACBE26A-DF85-4090-99BA-F83AF07C5086}" ShortID="465574980">

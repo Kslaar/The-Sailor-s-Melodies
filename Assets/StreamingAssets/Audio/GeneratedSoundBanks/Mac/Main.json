@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{94A02640-7B26-C8D1-CF86-116A3F151066}",
+    "Hash": "{21620552-CAB5-FC4B-A2EF-07029D3032CF}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -312,6 +312,14 @@
       "CachePath": "05/{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem"
      },
      {
+      "Id": "627587221",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles.wav",
+      "CachePath": "30/{306ACD5A-7939-B44B-0391-1CB2BC016A05}.wem"
+     },
+     {
       "Id": "694199021",
       "Language": "SFX",
       "Streaming": "false",
@@ -470,14 +478,6 @@
       "Location": "Memory",
       "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
       "CachePath": "AA/{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem"
-     },
-     {
-      "Id": "1056869406",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Epic Stock Media - Cooking Game - Water Dispenser Filling Glass .wav",
-      "CachePath": "2E/{2E0D5FC8-95F9-1540-C28F-D6DD278C3C99}.wem"
      }
     ],
     "Plugins": {
@@ -491,12 +491,28 @@
        "LibId": "6619138"
       },
       {
+       "Id": "157279238",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_clear\\Horn_A\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{2CE1BEC7-D615-405D-900F-DC802EDAEA26}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      },
+      {
        "Id": "749681742",
        "Name": "Octave_Down (Custom)",
        "ObjectPath": "\\Containers\\UI\\UI\\SFX_Error\\[Effect Slot [0]: (Pitch Shifter)]\\Octave_Down (Custom)",
        "GUID": "{9D761C6C-FC9D-47B1-9DB4-34B7D846FE31}",
        "LibName": "Wwise Pitch Shifter",
        "LibId": "8912899"
+      },
+      {
+       "Id": "887071783",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_clear\\Horn_B\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{C85EADD1-F614-4C25-B1A7-223EF0E1CE65}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
       }
      ],
      "ShareSets": [
@@ -507,6 +523,14 @@
        "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
        "LibName": "Wwise Parametric EQ",
        "LibId": "6881283"
+      },
+      {
+       "Id": "3948262040",
+       "Name": "Octave_Down",
+       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Harmonize\\Octave_Down",
+       "GUID": "{062EC4B1-5372-4D1E-917B-C757293F2B42}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
       }
      ]
     },
@@ -555,6 +579,26 @@
       ]
      },
      {
+      "Id": "621743551",
+      "Name": "Play_Hint_Ocarina_CMaj",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Hint_Ocarina_CMaj",
+      "GUID": "{CF728F8A-15DE-44D1-8DF2-06D1C1A57C8D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1069932",
+      "DurationMax": "2.1069932",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       },
+       {
+        "Id": "483172978"
+       },
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
       "Id": "957019037",
       "Name": "Play_Horn_A",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_A",
@@ -566,7 +610,19 @@
        {
         "Id": "741850182"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "157279238"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "3948262040"
+        }
+       ]
+      }
      },
      {
       "Id": "957019038",
@@ -580,7 +636,14 @@
        {
         "Id": "887849136"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "887071783"
+        }
+       ]
+      }
      },
      {
       "Id": "957019039",
@@ -829,6 +892,26 @@
       ]
      },
      {
+      "Id": "723882233",
+      "Name": "Play_Ocarina_CMaj",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_CMaj",
+      "GUID": "{ED482D53-E0C2-47BB-BD9B-C9A35350144C}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1069932",
+      "DurationMax": "2.1069932",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       },
+       {
+        "Id": "483172978"
+       },
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
       "Id": "2686750104",
       "Name": "Play_Ocarina_D",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_D",
@@ -913,16 +996,23 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Fuel",
       "GUID": "{612E52A3-C734-4B33-9A80-AD4549665836}",
       "DurationType": "OneShot",
-      "DurationMin": "1.6275471",
-      "DurationMax": "1.6275471",
+      "DurationMin": "3.7576826",
+      "DurationMax": "3.7576826",
       "MediaRefs": [
        {
         "Id": "183690583"
        },
        {
-        "Id": "1056869406"
+        "Id": "627587221"
        }
-      ]
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      }
      },
      {
       "Id": "2692550093",
@@ -1207,6 +1297,6 @@
     ]
    }
   ],
-  "FileHash": "{7133C8A5-079A-D0B5-FA82-E3721E5186A6}"
+  "FileHash": "{4AE4C8FF-87A6-58AA-CE2E-86C26D02D5AE}"
  }
 }

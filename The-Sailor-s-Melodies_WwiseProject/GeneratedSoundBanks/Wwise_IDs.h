@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID PLAY_CHECKPOINT = 2962822744U;
         static const AkUniqueID PLAY_FINISH = 1793765179U;
+        static const AkUniqueID PLAY_HINT_OCARINA_CMAJ = 621743551U;
         static const AkUniqueID PLAY_HORN_A = 957019037U;
         static const AkUniqueID PLAY_HORN_B = 957019038U;
         static const AkUniqueID PLAY_HORN_C = 957019039U;
@@ -29,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAY_OCARINA_A = 2686750109U;
         static const AkUniqueID PLAY_OCARINA_B = 2686750110U;
         static const AkUniqueID PLAY_OCARINA_C = 2686750111U;
+        static const AkUniqueID PLAY_OCARINA_CMAJ = 723882233U;
         static const AkUniqueID PLAY_OCARINA_D = 2686750104U;
         static const AkUniqueID PLAY_OCARINA_E = 2686750105U;
         static const AkUniqueID PLAY_OCARINA_F = 2686750106U;
@@ -38,6 +40,7 @@ namespace AK
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
+        static const AkUniqueID PLAY_SEAGULLS = 4281176146U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
         static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
         static const AkUniqueID QUEST_ACCEPTED = 602563U;
@@ -124,6 +127,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID PAUSEDUCK = 3503836294U;
+        static const AkUniqueID PUZZLEHINT_PITCHCENTS = 335877618U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -139,9 +143,10 @@ namespace AK
         static const AkUniqueID BOAT_AUDIO = 2945336769U;
         static const AkUniqueID ISLAND = 3199546890U;
         static const AkUniqueID ISLAND_AUDIO = 779236412U;
+        static const AkUniqueID KEYBOARD_HINT = 2652995606U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID MUSIC_BUS = 2680856269U;
+        static const AkUniqueID NEW_AUDIO_BUS = 2255513057U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

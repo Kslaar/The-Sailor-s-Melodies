@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{D6921900-CFD5-E051-A28C-B86A1E1D751A}",
+    "Hash": "{59DA11F3-A1FB-412D-2D7F-1438EEB7E393}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "664771687",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Keyboard_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{2B53FDCE-BF6B-475A-BF26-196CE66FF02A}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "2995775460",
@@ -58,10 +68,23 @@
       "GUID": "{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"
      },
      {
-      "Id": "2680856269",
-      "Name": "Music_Bus",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Music_Bus",
-      "GUID": "{97F9D00F-A339-4281-B098-FF22D250FFFD}"
+      "Id": "2255513057",
+      "Name": "New Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\New Audio Bus",
+      "GUID": "{9B4366C3-BCBC-448B-AC7F-DEF433D3661B}"
+     },
+     {
+      "Id": "2652995606",
+      "Name": "Keyboard_Hint",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Keyboard_Hint",
+      "GUID": "{7D760D8C-9641-4A05-BC76-82DF0879AB52}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "664771687"
+        }
+       ]
+      }
      },
      {
       "Id": "2945336769",
@@ -104,6 +127,12 @@
      }
     ],
     "GameParameters": [
+     {
+      "Id": "335877618",
+      "Name": "PuzzleHint_PitchCents",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PuzzleHint_PitchCents",
+      "GUID": "{9B9A7F6F-2DBE-4716-9168-5A37665D7040}"
+     },
      {
       "Id": "3503836294",
       "Name": "PauseDuck",
@@ -277,6 +306,6 @@
     ]
    }
   ],
-  "FileHash": "{D2B23653-0D2E-10E5-4F30-DD981666556E}"
+  "FileHash": "{6FB018EF-92AB-21CC-A711-FE741EFC4E71}"
  }
 }
