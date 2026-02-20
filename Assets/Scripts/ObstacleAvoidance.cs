@@ -34,7 +34,7 @@ public class ObstacleAvoidance : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (RaceManager.Instance != null && RaceManager.Instance.IsRacing) return;
+        // if (RaceManager.Instance != null && RaceManager.Instance.IsRacing) return;
         if (!avoidanceCollider) return;
 
         Vector3 center = avoidanceCollider.bounds.center;

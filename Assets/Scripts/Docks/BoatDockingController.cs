@@ -12,16 +12,16 @@ public class BoatDockingController : MonoBehaviour
     [Header("Docking")]
     [SerializeField] private float holdsSecondsToDock = 0.7f;
 
-    private DockZone currentDock;
-    private float holdTimer;
-    private bool isDocked;
+    private DockZone _currentDock;
+    private float _holdTimer;
+    private bool _isDocked;
 
     // private Vector3 savedPos;
     // private Quaternion savedRot;
-    private bool savedKinematic;
+    private bool _savedKinematic;
 
-    public bool IsDocked => isDocked;
-    public DockZone CurrentDock => currentDock;
+    public bool IsDocked => _isDocked;
+    public DockZone CurrentDock => _currentDock;
 
     private void Reset()
     {
@@ -38,19 +38,19 @@ public class BoatDockingController : MonoBehaviour
         if (gsm != null && (gsm.State == GameState.Dialogue || gsm.State == GameState.QuestLog || gsm.State == GameState.Paused || gsm.State == GameState.Racing))
         return;
 
-        if (!isDocked)
+        if (!_isDocked)
         {
-            if (currentDock == null) return;
+            if (_currentDock == null) return;
 
             if (Keyboard.current.qKey.isPressed)
             {
-                holdTimer += Time.deltaTime;
-                if (holdTimer >= holdsSecondsToDock) 
+                _holdTimer += Time.deltaTime;
+                if (_holdTimer >= holdsSecondsToDock) 
                     DockNow();
             }
             else
             {
-                holdTimer = 0f;
+                _holdTimer = 0f;
             }
         }
         else
@@ -62,17 +62,17 @@ public class BoatDockingController : MonoBehaviour
 
     private void DockNow()
     {
-        if (currentDock == null) return;
-        isDocked = true;
-        holdTimer = 0f;
+        if (_currentDock == null) return;
+        _isDocked = true;
+        _holdTimer = 0f;
 
         // savedPos = transform.position;
         // savedRot = transform.rotation;
-        savedKinematic = rb.isKinematic;
+        _savedKinematic = rb.isKinematic;
 
         // Boot wird ans Dock gesnapped
-        transform.position = currentDock.snapPoint.position;
-        transform.rotation = currentDock.snapPoint.rotation;
+        transform.position = _currentDock.snapPoint.position;
+        transform.rotation = _currentDock.snapPoint.rotation;
 
         // Wir deaktivieren die Physik und Steuerung des Bootes
         rb.linearVelocity = Vector3.zero;
@@ -87,10 +87,10 @@ public class BoatDockingController : MonoBehaviour
 
         // Kameras switchen
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
-        if (currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
+        if (_currentDock.dockCamera != null) _currentDock.dockCamera.gameObject.SetActive(true);
 
-        if (currentDock.dockUI != null)
-            currentDock.dockUI.Show(currentDock);
+        if (_currentDock.dockUI != null)
+            _currentDock.dockUI.Show(_currentDock);
 
         GameStateManager.Instance?.TrySetState(GameState.Docked);
 
@@ -98,21 +98,36 @@ public class BoatDockingController : MonoBehaviour
         GlobalMusicManager.Instance.SetIsland();
     }
 
-    public void ForceDock(DockZone dockZone, string reason = "ForceDock")
+    /*
+    public void ForceDock(DockZone dockZone, string reason = "ForceDock", bool showDockUI = true)
     {
         if (dockZone == null || dockZone.snapPoint == null)
         {
+            Debug.LogWarning("[BoatDockingController] ForceDock failed: dockZone/snapPoint missing");
             return;
         }
 
-        currentDock = dockZone;
-        isDocked = true;
-        holdTimer = 0f;
+        var gsm = GameStateManager.Instance;
 
-        savedKinematic = rb != null ? rb.isKinematic : false;
+        var oldDock = _currentDock;
+        if (oldDock != null && oldDock != dockZone && oldDock.dockCamera != null)
+            oldDock.dockCamera.gameObject.SetActive(false);
+
+        _currentDock = dockZone;
+        _isDocked = true;
+        _holdTimer = 0f;
+
+        if (rb != null) _savedKinematic = rb.isKinematic;
 
         transform.position = dockZone.snapPoint.position;
         transform.rotation = dockZone.snapPoint.rotation;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
 
         if (boat != null) boat.enabled = false;
 
@@ -122,38 +137,45 @@ public class BoatDockingController : MonoBehaviour
 
         // Kameras switchen
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
-        if (currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(true);
+        if (_currentDock.dockCamera != null) _currentDock.dockCamera.gameObject.SetActive(true);
+        else Debug.LogWarning($"[BoatDockingController] DockCamera missing on {dockZone.name}");
 
-        if (currentDock.dockUI != null)
-            currentDock.dockUI.Show(currentDock);
+        if (dockZone.dockUI != null)
+        {
+            if (showDockUI) dockZone.dockUI.Show(dockZone);
+            else dockZone.dockUI.Hide();
+        }
         
-        GameStateManager.Instance?.ForceUnpause(GameState.Docked, reason);
-        GameStateManager.Instance?.TrySetState(GameState.Docked, reason);
+        if (gsm != null)
+            gsm.ForceUnpause(GameState.Docked, reason);
+
+        GlobalMusicManager.Instance.SetIsland();
     }
+    */
 
     public void UndockNow()
     {
-        if (!isDocked) return;
+        if (!_isDocked) return;
 
         var gsm = GameStateManager.Instance;
 
         if (gsm != null && gsm.State == GameState.Dialogue)
             gsm.TryExitDialogue("Undock while in Dialogue...");
 
-        isDocked = false;
+        _isDocked = false;
 
         // Gleiches wie beim Docken nur reversed:
-        if (currentDock != null && currentDock.dockCamera != null) currentDock.dockCamera.gameObject.SetActive(false);
+        if (_currentDock != null && _currentDock.dockCamera != null) _currentDock.dockCamera.gameObject.SetActive(false);
         if (sailingCamera != null) sailingCamera.gameObject.SetActive(true);
 
-        rb.isKinematic = savedKinematic;
+        rb.isKinematic = _savedKinematic;
         if (boat != null) boat.enabled = true;
 
         if (cursorLock != null) cursorLock.LockCursor();
         else { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
 
-        if (currentDock != null && currentDock.dockUI != null)
-            currentDock.dockUI.Hide();
+        if (_currentDock != null && _currentDock.dockUI != null)
+            _currentDock.dockUI.Hide();
 
         if (gsm != null && gsm.State != GameState.Racing)
             gsm.TrySetState(GameState.Sailing, "Undock Now");
@@ -166,18 +188,18 @@ public class BoatDockingController : MonoBehaviour
 
     public void UndockForRace()
     {
-        if (!isDocked) return;
+        if (!_isDocked) return;
 
-        isDocked = false;
+        _isDocked = false;
 
         // Kameras zurück
-        if (currentDock != null && currentDock.dockCamera != null)
-            currentDock.dockCamera.gameObject.SetActive(false);
+        if (_currentDock != null && _currentDock.dockCamera != null)
+            _currentDock.dockCamera.gameObject.SetActive(false);
         if (sailingCamera != null) 
             sailingCamera.gameObject.SetActive(true);
 
         // Physik/Steuerung zurück
-        rb.isKinematic = savedKinematic;
+        rb.isKinematic = _savedKinematic;
         if (boat != null) boat.enabled = true;
 
         // Cursor wieder locken
@@ -185,19 +207,92 @@ public class BoatDockingController : MonoBehaviour
         else { Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false; }
 
         // Dock UI schließen
-        if (currentDock != null && currentDock.dockUI != null)
-            currentDock.dockUI.Hide();
+        if (_currentDock != null && _currentDock.dockUI != null)
+            _currentDock.dockUI.Hide();
     }
+
+    public void AutoDockForDialogue(DockZone dockZone, DialogueAsset dialogue, string reason = "AutoDockForDialogue", bool showDockUI = false)
+    {
+        if (dockZone == null || dockZone.snapPoint == null)
+        {
+            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dockZone/snapPoint missing");
+            return;
+        }
+
+        if (dialogue == null)
+        {
+            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dialogue is NULL");
+            return;
+        }
+
+        var gsm = GameStateManager.Instance;
+        if (gsm == null)
+        {
+            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dialogue is NULL");
+            return;
+        }
+
+        if (gsm.State == GameState.Racing)
+            gsm.TryExitRace("AutoDockForDialogue");
+
+        if (CurrentDock != null && CurrentDock != dockZone && CurrentDock.dockCamera != null)
+            CurrentDock.dockCamera.gameObject.SetActive(false);
+
+        _currentDock = dockZone;
+        _isDocked = true;
+        _holdTimer = 0f;
+
+        if (rb != null) _savedKinematic = rb.isKinematic;
+
+        transform.position = dockZone.snapPoint.position;
+        transform.rotation = dockZone.snapPoint.rotation;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = true;
+        }
+
+        if (boat != null) boat.enabled = false;
+
+        // Wir geben den Cursor wieder frei
+        if (cursorLock != null) cursorLock.UnlockCursor();
+        else { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
+        
+        if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
+        if (dockZone.dockCamera != null) dockZone.dockCamera.gameObject.SetActive(true);
+
+        if (dockZone.dockUI != null)
+        {
+            if (showDockUI) dockZone.dockUI.Show(dockZone);
+            else dockZone.dockUI.Hide();
+        }
+
+        gsm.ForceUnpause(GameState.Docked, reason);
+
+        bool entered = gsm.TryEnterDialogue(reason);
+        if (!entered)
+        {
+            Debug.LogWarning($"[BoatDockingController] TryEnterDialogue blocked. CurrentState={gsm.State}. Forcing Docked then retry.");
+            gsm.ForceUnpause(GameState.Docked, reason + " ForceDocked");
+            gsm.TryEnterDialogue(reason + " Retry");
+        }
+
+        DialogueManager.Instance?.StartDialogue(dialogue);
+    }
+
+    /////////////////////////////////////////////////////////////
 
     private void OnTriggerEnter(Collider other)
     {
         var dock = other.GetComponentInParent<DockZone>();
-        if (dock != null) currentDock = dock;
+        if (dock != null) _currentDock = dock;
     }
 
     private void OnTriggerExit(Collider other)
     {
         var dock = other.GetComponentInParent<DockZone>();
-        if (dock != null && dock == currentDock) currentDock = null;      
+        if (dock != null && dock == _currentDock) _currentDock = null;      
     }
 }

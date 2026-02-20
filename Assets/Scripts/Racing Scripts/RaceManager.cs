@@ -58,6 +58,7 @@ public class RaceManager : MonoBehaviour
         }
 
         currentCourse = course;
+        // currentCourse.SetRaceTriggersActive(true);
         nextCheckpoint = 0;
         timePassed = 0f;
         outOfBoundsTimer = 0f;
@@ -235,56 +236,48 @@ public class RaceManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        // Teleport zum Dialog zurück
-        if (currentCourse != null && currentCourse.returnPoint != null)
+        // Teleport zum ReturnPoint (optional)
+        if (currentCourse != null && currentCourse.returnPoint != null && rb != null)
         {
-            if (rb != null)
-            {
-                rb.linearVelocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-                rb.position = currentCourse.returnPoint.position;
-                rb.rotation = currentCourse.returnPoint.rotation;
-            }
-            else if (boat != null)
-            {
-                boat.transform.SetPositionAndRotation(currentCourse.returnPoint.position, currentCourse.returnPoint.rotation);
-            }
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.position = currentCourse.returnPoint.position;
+            rb.rotation = currentCourse.returnPoint.rotation;
         }
 
-        FreezePlayer(false);
+        // Quest-State updaten
+        if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
+            QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
+
+        DialogueAsset d = null;
+        if (currentCourse != null && currentCourse.questGiverDialogue != null)
+            d = currentCourse.questGiverDialogue.GetDialogue();
 
         var docking = FindFirstObjectByType<BoatDockingController>();
-        if (docking != null && currentCourse != null && currentCourse.returnDock != null)
+
+        if (docking != null && currentCourse != null && currentCourse.returnDock != null && d != null)
         {
-            docking.ForceDock(currentCourse.returnDock, success ? "Race success" : "Race failed");
+            docking.AutoDockForDialogue(
+                dockZone: currentCourse.returnDock,
+                dialogue: d,
+                reason: success ? "Race success" : "Race failed",
+                showDockUI: false
+            );
         }
         else
         {
-            if (boat != null) boat.enabled = false;
-            if (rb != null) rb.isKinematic = true;
-            GameStateManager.Instance?.TrySetState(GameState.Docked, "Racereturn-Fallback");
-        }
-
-        // Bei Erfolg stellen wir den QuestState um!
-        if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
-        {
-            QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
-        }
-
-        // Stateabhängiger Dialog über NPCDialogueSelector
-        if (currentCourse != null && currentCourse.questGiverDialogue != null)
-        {
-            var d = currentCourse.questGiverDialogue.GetDialogue();
-            if (d != null)
-                DialogueManager.Instance?.StartDialogue(d);
+            Debug.LogWarning("[RaceManager] AutoDockForDialogue failed (missing docking/returnDock/dialogue). Fallback: Docked only.");
+            GameStateManager.Instance?.ForceUnpause(GameState.Docked, "RaceReturn fallback");
         }
 
         ResetRace();
     }
 
+
     private void ResetRace()
     {
         currentCourse = null;
+        // if (currentCourse != null) currentCourse.SetRaceTriggersActive(false);
         nextCheckpoint = 0;
         timePassed = 0f;
         outOfBoundsTimer = 0f;

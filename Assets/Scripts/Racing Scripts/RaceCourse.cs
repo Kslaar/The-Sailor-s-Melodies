@@ -30,4 +30,12 @@ public class RaceCourse : MonoBehaviour
         foreach (var cp in checkpoints)
             if (cp != null) yield return cp.bounds.center;
     }
+
+    public void SetRaceTriggersActive(bool active)
+    {
+        if (finishTrigger != null) finishTrigger.enabled = active;
+        if (checkpoints != null)
+            foreach (var cp in checkpoints)
+                if (cp != null) cp.enabled = active;
+    }
 }
