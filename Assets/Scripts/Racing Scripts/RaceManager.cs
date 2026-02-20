@@ -257,6 +257,8 @@ public class RaceManager : MonoBehaviour
 
         if (docking != null && currentCourse != null && currentCourse.returnDock != null && d != null)
         {
+            FreezePlayer(false);
+            
             docking.AutoDockForDialogue(
                 dockZone: currentCourse.returnDock,
                 dialogue: d,

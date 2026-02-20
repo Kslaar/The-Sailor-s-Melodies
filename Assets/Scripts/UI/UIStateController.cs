@@ -62,6 +62,11 @@ public class UIStateController : MonoBehaviour
                 break;
             case GameState.Docked:
                 SetActiveSafe(dockUI, true);
+                var dockCtrl = FindFirstObjectByType<BoatDockingController>();
+                if (dockCtrl != null && dockCtrl.IsDocked && dockCtrl.CurrentDock != null)
+                {
+                    dockCtrl.CurrentDock.dockUI?.Show(dockCtrl.CurrentDock);
+                }
                 break;
             case GameState.Dialogue:
                 SetActiveSafe(dialogueUIRoot, true);
