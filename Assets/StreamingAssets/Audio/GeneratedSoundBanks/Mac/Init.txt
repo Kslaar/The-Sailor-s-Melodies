@@ -22,9 +22,10 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	3503836294	PauseDuck			\Default Work Unit\PauseDuck	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master\SFX	
+	662417162	NPC			\Default Work Unit\Master\NPC	
 	779236412	Island Audio			\Default Work Unit\Island Audio	
 	1795056175	Boat			\Default Work Unit\Master\Boat	
-	2255513057	New Audio Bus			\Default Work Unit\Master\New Audio Bus	
 	2652995606	Keyboard_Hint			\Default Work Unit\Master\Keyboard_Hint	
 	2945336769	Boat Audio			\Default Work Unit\Boat Audio	
 	3199546890	Island			\Default Work Unit\Master\Island	

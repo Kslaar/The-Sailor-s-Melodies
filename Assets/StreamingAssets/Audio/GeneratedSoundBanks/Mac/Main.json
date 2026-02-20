@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{21620552-CAB5-FC4B-A2EF-07029D3032CF}",
+    "Hash": "{4414A094-5F47-5FDE-BA44-A3F664B9D6E2}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -134,6 +134,14 @@
       "Location": "Memory",
       "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
       "CachePath": "35/{35210FE7-3221-30CD-496E-35550D247322}.wem"
+     },
+     {
+      "Id": "231750662",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "5E/{5E701995-6182-4130-DA0A-680DD5137E8C}.wem"
      },
      {
       "Id": "261911091",
@@ -264,6 +272,14 @@
       "CachePath": "B0/{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem"
      },
      {
+      "Id": "517074442",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "6C/{6CE31ED1-954A-431B-CC11-B4596C2A8F36}.wem"
+     },
+     {
       "Id": "524385979",
       "Language": "SFX",
       "Streaming": "false",
@@ -309,7 +325,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "05/{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem"
+      "CachePath": "A0/{A0C473DA-41F3-A68C-6984-0311B6E834AE}.wem"
      },
      {
       "Id": "627587221",
@@ -376,12 +392,28 @@
       "CachePath": "D3/{D32AAD91-311A-233A-A940-D8D4ACB4E994}.wem"
      },
      {
+      "Id": "746172502",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "B2/{B2C3B0A4-671C-C77B-358A-194D1880DADA}.wem"
+     },
+     {
       "Id": "747045309",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
       "CachePath": "2D/{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem"
+     },
+     {
+      "Id": "794840056",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "07/{07F0FFE8-5712-8213-6F58-D6DC435C879D}.wem"
      },
      {
       "Id": "796823544",
@@ -1104,6 +1136,27 @@
       ]
      },
      {
+      "Id": "402999385",
+      "Name": "Play_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Dialog\\Play_UI_TypeLoop",
+      "GUID": "{ED526F2B-E4CC-4FEC-8508-447FB3AC6627}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "231750662"
+       },
+       {
+        "Id": "517074442"
+       },
+       {
+        "Id": "746172502"
+       },
+       {
+        "Id": "794840056"
+       }
+      ]
+     },
+     {
       "Id": "602563",
       "Name": "Quest_accepted",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Quest_accepted",
@@ -1156,6 +1209,16 @@
         "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
        }
       ]
+     },
+     {
+      "Id": "3458954543",
+      "Name": "Stop_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Dialog\\Stop_UI_TypeLoop",
+      "GUID": "{47F9E050-CEAC-4215-9FDB-77964DF8DE2C}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2249769530",
@@ -1297,6 +1360,6 @@
     ]
    }
   ],
-  "FileHash": "{4AE4C8FF-87A6-58AA-CE2E-86C26D02D5AE}"
+  "FileHash": "{C4257C94-E3E8-24C1-31C5-7E6D5EC3949B}"
  }
 }

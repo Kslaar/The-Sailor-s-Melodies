@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{59DA11F3-A1FB-412D-2D7F-1438EEB7E393}",
+    "Hash": "{5B096BB6-7AD8-ECCF-E3C3-1772ED7BFDA6}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -56,6 +56,18 @@
     },
     "Busses": [
      {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\SFX",
+      "GUID": "{9B4366C3-BCBC-448B-AC7F-DEF433D3661B}"
+     },
+     {
+      "Id": "662417162",
+      "Name": "NPC",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\NPC",
+      "GUID": "{88F38188-F9F0-418C-B4B2-D5A5C6946DAC}"
+     },
+     {
       "Id": "779236412",
       "Name": "Island Audio",
       "ObjectPath": "\\Busses\\Default Work Unit\\Island Audio",
@@ -66,12 +78,6 @@
       "Name": "Boat",
       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Boat",
       "GUID": "{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"
-     },
-     {
-      "Id": "2255513057",
-      "Name": "New Audio Bus",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\New Audio Bus",
-      "GUID": "{9B4366C3-BCBC-448B-AC7F-DEF433D3661B}"
      },
      {
       "Id": "2652995606",
@@ -306,6 +312,6 @@
     ]
    }
   ],
-  "FileHash": "{6FB018EF-92AB-21CC-A711-FE741EFC4E71}"
+  "FileHash": "{8CD6C9F2-FD76-8E30-3289-FC523DAA3379}"
  }
 }
