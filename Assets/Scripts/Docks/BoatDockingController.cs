@@ -271,6 +271,7 @@ public class BoatDockingController : MonoBehaviour
 
         gsm.ForceUnpause(GameState.Docked, reason);
 
+        /*
         bool entered = gsm.TryEnterDialogue(reason);
         if (!entered)
         {
@@ -278,6 +279,7 @@ public class BoatDockingController : MonoBehaviour
             gsm.ForceUnpause(GameState.Docked, reason + " ForceDocked");
             gsm.TryEnterDialogue(reason + " Retry");
         }
+        */
 
         DialogueManager.Instance?.StartDialogue(dialogue);
     }
