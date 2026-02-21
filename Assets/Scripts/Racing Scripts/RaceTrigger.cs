@@ -14,10 +14,11 @@ public class RaceTrigger : MonoBehaviour
         Debug.Log($"[RaceTrigger] HIT {name} type={triggerType} courseID={courseID} idx={checkpointIndex} other={other.name}");
     
         if (!HasTagInParents(other.transform, "Player"))
-        {
-            Debug.Log("[RaceTrigger] -> ignored (no Player tag in parents)");
             return;
-        }
+
+        var gsm = GameStateManager.Instance;
+        if (gsm == null || gsm.State != GameState.Racing)
+            return;
     
         RaceManager.Instance?.OnTriggerHit(courseID, triggerType, checkpointIndex);
     }

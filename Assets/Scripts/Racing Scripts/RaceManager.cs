@@ -58,7 +58,7 @@ public class RaceManager : MonoBehaviour
         }
 
         currentCourse = course;
-        // currentCourse.SetRaceTriggersActive(true);
+        currentCourse.SetRaceTriggersActive(true);
         nextCheckpoint = 0;
         timePassed = 0f;
         outOfBoundsTimer = 0f;
@@ -258,7 +258,7 @@ public class RaceManager : MonoBehaviour
         if (docking != null && currentCourse != null && currentCourse.returnDock != null && d != null)
         {
             FreezePlayer(false);
-            
+
             docking.AutoDockForDialogue(
                 dockZone: currentCourse.returnDock,
                 dialogue: d,
@@ -278,8 +278,10 @@ public class RaceManager : MonoBehaviour
 
     private void ResetRace()
     {
+        if (currentCourse != null) 
+            currentCourse.SetRaceTriggersActive(false);
+            
         currentCourse = null;
-        // if (currentCourse != null) currentCourse.SetRaceTriggersActive(false);
         nextCheckpoint = 0;
         timePassed = 0f;
         outOfBoundsTimer = 0f;

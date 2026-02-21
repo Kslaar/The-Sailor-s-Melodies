@@ -23,6 +23,10 @@ public class RaceCourse : MonoBehaviour
     public float maxDistanceFromIsland = 80f; // Wie weit vom nächsten Checkpoint es erlaubt ist zu sein
     public float outOfBoundsGracePeriod = 5f;
 
+    private void Awake()
+    {
+        SetRaceTriggersActive(false);
+    }
     public IEnumerable<Vector3> GetAnchorPositions()
     {
         if (startPoint != null) yield return startPoint.position;
