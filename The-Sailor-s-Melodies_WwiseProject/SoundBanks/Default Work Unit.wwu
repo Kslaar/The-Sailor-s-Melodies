@@ -22,12 +22,14 @@
 						<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_02" ID="{A4668DAF-B476-43E2-8AA6-D76852605E2C}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_09" ID="{97A71035-348B-44B2-BDEA-34F3E5E3BAD5}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Hint_Ocarina_CMaj" ID="{CF728F8A-15DE-44D1-8DF2-06D1C1A57C8D}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_G" ID="{169500CE-1B24-44D6-B33E-48CEC5815062}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_E" ID="{0D64A9F9-385E-45A1-B53D-D28401E82740}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_D" ID="{BCB2406C-E6B3-45A1-9531-26575D9389ED}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_A" ID="{B921FB1C-1BA1-4625-AB6A-503EFF91B54E}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MotorStop" ID="{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_07" ID="{EAE54274-FC78-4714-A605-96699E0625C4}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_CMaj" ID="{ED482D53-E0C2-47BB-BD9B-C9A35350144C}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music" ID="{1706C595-0691-4812-9EBD-30C795469909}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>

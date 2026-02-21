@@ -25,6 +25,11 @@ public class DialogueUI : MonoBehaviour
     [Header("Typewriter")]
     [SerializeField] private float charactersPerSecond = 40f;
 
+    [Header("Audio")]
+    [SerializeField] private AK.Wwise.Event typeLoopStartEvent;
+    [SerializeField] private AK.Wwise.Event typeLoopStopEvent;
+
+
     private Coroutine typingRoutine;
     private bool isTyping;
     private string fullText;
@@ -82,11 +87,16 @@ public class DialogueUI : MonoBehaviour
         onChoiceCallback = null;
 
         if (root != null) root.SetActive(false);
+
+        typeLoopStopEvent?.Post(gameObject);
     }
 
     private void StartTypewriter(string text)
     {
         StopTyping();
+
+        //Loop starten
+        typeLoopStartEvent?.Post(gameObject);
 
         fullText = text;
 
@@ -115,7 +125,7 @@ public class DialogueUI : MonoBehaviour
             if (bodyText != null)
                 bodyText.text += fullText[i];
 
-            if (delay > 0f)
+                     if (delay > 0f)
                 yield return new WaitForSecondsRealtime(delay);
             else
                 yield return null;
@@ -124,6 +134,9 @@ public class DialogueUI : MonoBehaviour
         // Zuende geschrieben
         isTyping = false;
         typingRoutine = null;
+
+        //Loop Stoppen
+        typeLoopStopEvent?.Post(gameObject);    
 
         BuildChoices(cachedChoices);
     }
@@ -138,6 +151,9 @@ public class DialogueUI : MonoBehaviour
             bodyText.text = fullText;
 
         BuildChoices(cachedChoices);
+
+        typeLoopStopEvent?.Post(gameObject);
+
     }
 
     private void StopTyping()

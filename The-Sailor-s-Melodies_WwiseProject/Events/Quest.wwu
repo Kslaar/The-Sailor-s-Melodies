@@ -82,6 +82,16 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{A0BF8EE7-C22D-479C-B3B8-0602D8A8AF83}" ShortID="730414614">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="38"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PuzzleHint_PitchCents" ID="{9B9A7F6F-2DBE-4716-9168-5A37665D7040}" WorkUnitID="{AD1DD05C-D333-4CC2-9657-4726DB15CDF7}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="Play_Horn_B" ID="{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}">
@@ -171,6 +181,128 @@
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="Okarina_B" ID="{9013F8A6-6C4A-43F7-912F-40294572A7E4}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_CMaj" ID="{ED482D53-E0C2-47BB-BD9B-C9A35350144C}">
+									<ChildrenList>
+										<Action Name="" ID="{3775472D-8377-4F6C-AA41-C8223A128CA1}" ShortID="119831683">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_C" ID="{DACEFF64-A8CC-41F4-B05A-9900A4A15D70}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{3C171506-883E-43E2-A2E0-285809491953}" ShortID="385485879">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_E" ID="{AA1AE267-EB1B-4D11-B98E-11693A8FD7B5}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{BB9F494C-6D3B-422E-8591-D897DA839302}" ShortID="148708350">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_G" ID="{F9427017-CC0C-4BE1-8A63-6800DE4E1E8B}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{73F6EB80-8853-4650-878C-040F05CD0E6A}" ShortID="232692665">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_C" ID="{DACEFF64-A8CC-41F4-B05A-9900A4A15D70}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{DC5AD427-71E8-4DA1-BAA1-97417DA0B62F}" ShortID="502934339">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_G" ID="{F9427017-CC0C-4BE1-8A63-6800DE4E1E8B}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{D6CDA973-4CB7-418B-8C9A-3E476FBC8FB4}" ShortID="852824981">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_E" ID="{AA1AE267-EB1B-4D11-B98E-11693A8FD7B5}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Hint_Ocarina_CMaj" ID="{CF728F8A-15DE-44D1-8DF2-06D1C1A57C8D}">
+									<ChildrenList>
+										<Action Name="" ID="{1208396F-7F41-4692-8EB6-541A1E49E2CA}" ShortID="444984046">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_C_Hint" ID="{62002785-DBC8-4CA8-999B-9469F3F55D23}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{98A1DE69-14DC-441B-B5C7-2D5AFBDFEF72}" ShortID="836076228">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_E_Hint" ID="{F9278127-EBF9-489B-A54F-0B8576D7DA17}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{F5CE1673-7750-41E0-8B93-FFE913EADAF5}" ShortID="712575409">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_G_Hint" ID="{C42EF9E8-07D4-464C-B31E-1273BC4EFCED}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{81FA65EA-153D-40B1-854E-285FFCF1443C}" ShortID="430503914">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_C_Hint" ID="{62002785-DBC8-4CA8-999B-9469F3F55D23}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{1EB78D8A-B409-4F7A-B578-F321E0ED68CE}" ShortID="984846137">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_E_Hint" ID="{F9278127-EBF9-489B-A54F-0B8576D7DA17}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{9E5D6EAA-F8CF-4AD1-9350-D0CDB4DC8CAE}" ShortID="775937320">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="1.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_G_Hint" ID="{C42EF9E8-07D4-464C-B31E-1273BC4EFCED}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>

@@ -1,6 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	602563	Quest_accepted			\Default Work Unit\Quest\Quest_accepted	
+	402999385	Play_UI_TypeLoop			\Default Work Unit\NPC\Dialog\Play_UI_TypeLoop	
 	578142713	Play_Pickup_Fuel			\Default Work Unit\SFX\Play_Pickup_Fuel	
+	621743551	Play_Hint_Ocarina_CMaj			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Hint_Ocarina_CMaj	
+	723882233	Play_Ocarina_CMaj			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_CMaj	
 	851505750	Play_quest_direction			\Default Work Unit\Quest\Play_quest_direction	
 	957019032	Play_Horn_D			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_D	
 	957019033	Play_Horn_E			\Default Work Unit\Quest\Keyboard\Horn\Play_Horn_E	
@@ -29,6 +32,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2692550093	Play_Pickup_Quest			\Default Work Unit\SFX\Play_Pickup_Quest	
 	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
 	2962822744	Play_Checkpoint			\Default Work Unit\Quest\Racing\Play_Checkpoint	
+	3458954543	Stop_UI_TypeLoop			\Default Work Unit\NPC\Dialog\Stop_UI_TypeLoop	
 	3774920574	Play_Music_World			\Default Work Unit\Music\Play_Music_World	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
@@ -65,8 +69,11 @@ State	ID	Name	State Group			Notes
 	3930136735	Dialogue	GameState			
 
 Effect plug-ins	ID	Name	Type				Notes
+	157279238	Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	749681742	Octave_Down (Custom)	Wwise Pitch Shifter			
+	887071783	Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
+	3948262040	Octave_Down	Wwise Pitch Shifter			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	69364897	Silence	Wwise Silence		\Containers\Player\boat_movement\Silence_sail\Silence	
@@ -87,9 +94,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	216203938	motor_start_01	.cache\3C\{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem		\Containers\Player\Pull Chord\motor_start_01		40040
 	217901187	SFX_Start	.cache\7E\{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem		\Containers\UI\UI\SFX_Start		259300
 	218989300	sail_wind_02	.cache\35\{35210FE7-3221-30CD-496E-35550D247322}.wem		\Containers\Player\boat_movement\sail_wind_02		90172
-	261911091	Okarina_C	.cache\16\{16AE6457-A6CB-EDCD-8E63-3FE944D69254}.wem		\Containers\Quest\Keyboard\Okarina_C		161216
+	231750662	Pen Writing_04	.cache\5E\{5E701995-6182-4130-DA0A-680DD5137E8C}.wem		\Containers\NPC\Dialog\Tipping Sound\Pen Writing_04		84968
+	261911091	Okarina_C_Hint	.cache\16\{16AE6457-A6CB-EDCD-8E63-3FE944D69254}.wem		\Containers\Quest\Keyboard\Ocarina_Hint\Okarina_C_Hint		161216
 	273503727	vocals_male_05	.cache\13\{13FEF827-D7E9-0C6E-4171-20D80947B1EB}.wem		\Containers\NPC\Male\Voice_02\Pastor Voice\vocals_male_05		125292
-	297006455	Horn_D	.cache\FA\{FA6696CE-5E96-8492-6F86-91A0690E23F3}.wem		\Containers\Quest\Keyboard\Horn_D		159728
+	297006455	Horn_D	.cache\FA\{FA6696CE-5E96-8492-6F86-91A0690E23F3}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_D		159728
 	304697627	vocals_male_10	.cache\E0\{E0F9D91C-E7BD-6F45-D3E1-B0DE85F379EC}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_10		97224
 	307227124	vocals_male_03	.cache\24\{24CBD5E5-D8D5-1EAC-A17E-CBE8D86D811F}.wem		\Containers\NPC\Male\Voice_02\Pastor Voice\vocals_male_03		140868
 	329250373	SFX_Click	.cache\CC\{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem		\Containers\UI\UI\SFX_Click		122628
@@ -98,36 +106,39 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	361744330	vocals_male_02	.cache\3F\{3F0A8535-E941-4F6E-4B36-62C15A9CBF99}.wem		\Containers\NPC\Male\Voice_02\Pastor Voice\vocals_male_02		209752
 	427513672	vocals_male_06	.cache\70\{707B2BF5-38AE-E10B-2072-4A5E68BD4537}.wem		\Containers\NPC\Male\Voice_02\Pastor Voice\vocals_male_06		101472
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
-	447023009	Horn_C	.cache\B9\{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem		\Containers\Quest\Keyboard\Horn_C		158868
+	447023009	Horn_C	.cache\B9\{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_C		158868
 	448729930	Theme_Battle_01_Loop	.cache\E9\{E9869485-DB77-B048-C76C-883412A121A8}.wem		\Containers\Music\Racing_Music\Theme_Battle_01_Loop\Theme_Battle_01_Loop		8221112
-	483172978	Okarina_G	.cache\61\{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem		\Containers\Quest\Keyboard\Okarina_G		193436
-	487973624	Horn_G	.cache\7D\{7D4408AC-6855-1158-2DEC-0DA3A9A936C3}.wem		\Containers\Quest\Keyboard\Horn_G		121056
+	483172978	Okarina_G_Hint	.cache\61\{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem		\Containers\Quest\Keyboard\Ocarina_Hint\Okarina_G_Hint		193436
+	487973624	Horn_G	.cache\7D\{7D4408AC-6855-1158-2DEC-0DA3A9A936C3}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_G		121056
 	503419035	Unrealsfx - Magical Game - New Item Collected Pickup	.cache\B0\{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem		\Containers\SFX\Pickup Quest\Unrealsfx - Magical Game - New Item Collected Pickup		373088
+	517074442	Pen Writing_01	.cache\6C\{6CE31ED1-954A-431B-CC11-B4596C2A8F36}.wem		\Containers\NPC\Dialog\Tipping Sound\Pen Writing_01		63348
 	524385979	Place_Royal_Loop	.cache\A8\{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem		\Containers\Music\World_Music\Music_exploration 01\music_exploration\Place_Royal_Loop		5020380
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
 	547471905	vocals_male_09	.cache\24\{242F0E0F-6F4C-2B21-3144-9040D7D82A69}.wem		\Containers\NPC\Male\Voice_02\vocals_male_09		192828
-	603414801	Horn_E	.cache\E1\{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem		\Containers\Quest\Keyboard\Horn_E		129564
+	603414801	Horn_E	.cache\E1\{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_E		129564
 	610000193	music_city	.cache\AE\{AE338D71-ABD5-69C3-A63F-C67753906CB7}.wem		\Containers\Music\World_Music\music_village\music_city		29841752
-	621479489	Quest_accepted	.cache\05\{05C78E2A-1E4F-B1BF-18A2-EF4E8751DFA5}.wem		\Containers\Quest\Quest_accepted		341656
+	621479489	Quest_accepted	.cache\A0\{A0C473DA-41F3-A68C-6984-0311B6E834AE}.wem		\Containers\Quest\Quest_accepted		341656
+	627587221	Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles	.cache\30\{306ACD5A-7939-B44B-0391-1CB2BC016A05}.wem		\Containers\SFX\Pickup Fuel\Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles		336834
 	694199021	Theme_Battle_02_Intro	.cache\D9\{D9B64A81-4294-3BE7-EB2B-CBC16280580A}.wem		\Containers\Music\Racing_Music\Theme_Battle_02_Intro\Theme_Battle_02_Intro		814976
-	697144522	Horn_F	.cache\8E\{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem		\Containers\Quest\Keyboard\Horn_F		148088
+	697144522	Horn_F	.cache\8E\{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_F		148088
 	699649268	vocals_male_01	.cache\91\{9114DD9C-4E94-88C7-A622-8301D1DF8678}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_01		114080
 	700410248	music_mainmenue (blueprint)	.cache\76\{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem		\Containers\Music\World_Music\MainMenu_theme\music_mainmenue (blueprint)		14976096
-	736938058	Okarina_B	.cache\78\{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem		\Containers\Quest\Keyboard\Okarina_B		195452
-	741850182	Horn_A	.cache\9A\{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem		\Containers\Quest\Keyboard\Horn_A		149064
+	736938058	Okarina_B	.cache\78\{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_B		195452
+	741850182	Horn_A	.cache\9A\{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_A		149064
 	742202318	vocals_male_07	.cache\D3\{D32AAD91-311A-233A-A940-D8D4ACB4E994}.wem		\Containers\NPC\Male\Voice_02\vocals_male_07		185920
-	747045309	Okarina_D	.cache\2D\{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem		\Containers\Quest\Keyboard\Okarina_D		165240
+	746172502	Pen Writing_03	.cache\B2\{B2C3B0A4-671C-C77B-358A-194D1880DADA}.wem		\Containers\NPC\Dialog\Tipping Sound\Pen Writing_03		145648
+	747045309	Okarina_D	.cache\2D\{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_D		165240
+	794840056	Pen Writing_02	.cache\07\{07F0FFE8-5712-8213-6F58-D6DC435C879D}.wem		\Containers\NPC\Dialog\Tipping Sound\Pen Writing_02		50576
 	796823544	vocals_male_08	.cache\19\{19DF69E0-3A5C-F5F4-5E99-C86EE77E462C}.wem		\Containers\NPC\Male\Voice_02\vocals_male_08		197904
 	798756617	vocals_male_09	.cache\BA\{BADA84BE-6B82-516F-4A30-93E24D7C3959}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_09		106484
 	799521011	vocals_male_04	.cache\60\{6054B801-FB62-C29D-B4D9-728CA0C7ADC6}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_04		94912
 	827225277	Magic Score 9	.cache\C7\{C7D2D4D7-8AE2-1CF3-2095-7AC1C3CD8440}.wem		\Containers\Quest\Racing\Magic Score 9		329032
 	833575142	vocals_male_08	.cache\A8\{A8735649-D1EC-916C-F83A-5DB0D02CAF34}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_08		120372
-	839279121	Okarina_E	.cache\37\{375F505B-9251-7D66-D611-EADF0754BDEC}.wem		\Containers\Quest\Keyboard\Okarina_E		193436
-	887849136	Horn_B	.cache\76\{76507B72-D6AA-45B7-15D5-E14E49943931}.wem		\Containers\Quest\Keyboard\Horn_B		152028
-	903220478	Okarina_A	.cache\40\{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem		\Containers\Quest\Keyboard\Okarina_A		193436
+	839279121	Okarina_E	.cache\37\{375F505B-9251-7D66-D611-EADF0754BDEC}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_E		193436
+	887849136	Horn_B	.cache\76\{76507B72-D6AA-45B7-15D5-E14E49943931}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_B		152028
+	903220478	Okarina_A	.cache\40\{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_A		193436
 	928158733	vocals_male_06	.cache\E6\{E6334B0A-C586-50D2-399F-963EEAD7A5FF}.wem		\Containers\NPC\Male\Voice_01\vocals_male_06		110328
 	983538638	vocals_male_04	.cache\A9\{A9878B36-BCC4-079B-3FE1-C55C080C99DC}.wem		\Containers\NPC\Male\Voice_02\vocals_male_04		227948
-	1002586562	Okarina_F	.cache\95\{953C2BAC-33DC-33D3-CA42-37BE26AA0F5C}.wem		\Containers\Quest\Keyboard\Okarina_F		193440
+	1002586562	Okarina_F	.cache\95\{953C2BAC-33DC-33D3-CA42-37BE26AA0F5C}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_F		193440
 	1052310578	motor_start_02	.cache\AA\{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem		\Containers\Player\Pull Chord\motor_start_02		41236
-	1056869406	Epic Stock Media - Cooking Game - Water Dispenser Filling Glass	.cache\2E\{2E0D5FC8-95F9-1540-C28F-D6DD278C3C99}.wem		\Containers\SFX\Pickup Fuel\Epic Stock Media - Cooking Game - Water Dispenser Filling Glass		264584
 

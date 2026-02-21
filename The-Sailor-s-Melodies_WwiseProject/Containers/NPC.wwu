@@ -649,6 +649,620 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
+						<Folder Name="Voice_03" ID="{073E032B-399B-45A0-B07A-79F6B4DC217E}" ShortID="835476816">
+							<ChildrenList>
+								<Folder Name="Sims_Stil" ID="{F199AEE6-A510-425A-98E8-95C20CB258B7}" ShortID="532175057">
+									<ChildrenList>
+										<Sound Name="H_Voice_Sims_01" ID="{82C060C5-4618-4D84-9449-E0139821442B}" ShortID="453627168">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_01" ID="{7F2B4E58-885B-49DA-B69C-041996308A5D}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="836502099"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_01" ID="{7F2B4E58-885B-49DA-B69C-041996308A5D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_02" ID="{4B8B4087-1AF9-4A6A-A5C0-FCB61478227E}" ShortID="977809540">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_02" ID="{1BAC8CA5-21B3-4456-AC9E-69795E5FA0E4}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="560224124"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_02" ID="{1BAC8CA5-21B3-4456-AC9E-69795E5FA0E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_03" ID="{E62090EE-17DC-4242-B295-6F0EDFB1ABCE}" ShortID="793470449">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_03" ID="{018438B5-4AA5-4EEB-8798-45DCAE115B03}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="668387919"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_03" ID="{018438B5-4AA5-4EEB-8798-45DCAE115B03}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_04" ID="{3774073D-2708-48A4-AB11-D5372B8463CB}" ShortID="433553154">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_04" ID="{A65273B0-0270-497A-BBB6-D406A8C470E6}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="372210707"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_04" ID="{A65273B0-0270-497A-BBB6-D406A8C470E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_05" ID="{AA6D90D9-772B-468A-81C1-5BF6F1343259}" ShortID="441095063">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_05" ID="{9105A051-B299-4D0F-B81D-C39FAEE4E755}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="929032535"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_05" ID="{9105A051-B299-4D0F-B81D-C39FAEE4E755}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_06" ID="{A7BC1F5B-1233-450E-BBB9-2867D02EB634}" ShortID="468322841">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_06" ID="{37048057-106A-4FFD-81BE-3271B8633E1C}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="182048247"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_06" ID="{37048057-106A-4FFD-81BE-3271B8633E1C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Sims_07" ID="{21F46979-B8A9-452B-A79A-603B05EF48CC}" ShortID="572010338">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Sims_07" ID="{519BDEC9-EC6A-4732-A69C-0274B9D6FC8B}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Sims_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="230667426"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Sims_07" ID="{519BDEC9-EC6A-4732-A69C-0274B9D6FC8B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+								<Folder Name="Zelda_Stil" ID="{C8FC0D4F-6786-425F-A13E-30BC0B58683D}" ShortID="763617564">
+									<ChildrenList>
+										<Sound Name="H_Voice_Male_01" ID="{F0EB45D0-AC2B-4D17-A9DF-229154D463FD}" ShortID="881725676">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_01" ID="{69B711B2-00B0-4C3F-8E91-8D3226305B1A}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="148900801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_01" ID="{69B711B2-00B0-4C3F-8E91-8D3226305B1A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_02" ID="{3952F8F7-7A12-47EB-9E1B-0F505EC8F16C}" ShortID="925591876">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_02" ID="{480261E1-5362-41E2-8BF1-9A7F046BE8ED}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="432963677"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_02" ID="{480261E1-5362-41E2-8BF1-9A7F046BE8ED}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_03" ID="{DA9E9EB0-9964-4559-9C58-26232000FDBF}" ShortID="982847034">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_03" ID="{EEA585B6-F98F-4398-8B0C-66B9D5A166D0}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="524502472"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_03" ID="{EEA585B6-F98F-4398-8B0C-66B9D5A166D0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_04" ID="{A06F26CB-6CCE-4C06-929A-A9DB2D5698AA}" ShortID="990433952">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_04" ID="{4538B42E-68D8-400B-B5AB-F108BB3733A1}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="12984"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_04" ID="{4538B42E-68D8-400B-B5AB-F108BB3733A1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_05" ID="{365C5FBF-01E8-48C4-A84F-C82A3D92D162}" ShortID="133098047">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_05" ID="{9F6887FC-8095-431D-86AA-90DA4758C0EB}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1031112102"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_05" ID="{9F6887FC-8095-431D-86AA-90DA4758C0EB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_06" ID="{2DAF55CF-11A0-4F42-983E-63F5691295FE}" ShortID="559370199">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_06" ID="{24F43000-68B9-4FA0-B54A-D6070822E80A}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="956007851"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_06" ID="{24F43000-68B9-4FA0-B54A-D6070822E80A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_07" ID="{BF9E0628-5821-40A5-868F-D1F77DC2EF70}" ShortID="64349713">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_07" ID="{6B43CA5C-2168-4EE0-8CF6-F6DB22F48B29}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="757901451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_07" ID="{6B43CA5C-2168-4EE0-8CF6-F6DB22F48B29}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_08" ID="{75F27510-3D59-49C2-AC89-2EC2F6D186B1}" ShortID="467839218">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_08" ID="{2C9599E7-9AAB-4CCD-A36F-7A715445D37F}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="269754243"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_08" ID="{2C9599E7-9AAB-4CCD-A36F-7A715445D37F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_09" ID="{22321334-0D62-4EAE-AA94-16363D5D94F3}" ShortID="1061858205">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_09" ID="{8B960157-D41C-463B-BCA4-0B8F35C96BC4}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="473105792"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_09" ID="{8B960157-D41C-463B-BCA4-0B8F35C96BC4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="H_Voice_Male_10" ID="{79DDD31E-DEE6-4E85-86B5-340E7C3378AB}" ShortID="229253697">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="H_Voice_Male_10" ID="{B477AB92-F17A-48E5-AEF2-86D24021B3FD}">
+													<Language>SFX</Language>
+													<AudioFile>H_Voice_Male_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="555473626"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="H_Voice_Male_10" ID="{B477AB92-F17A-48E5-AEF2-86D24021B3FD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="Voice_04" ID="{5C9DF300-2E8D-43E7-A420-9FEB638408EF}" ShortID="627686356">
+							<ChildrenList>
+								<Folder Name="Zelda_Stil" ID="{6759A659-A14E-4EE3-8FD6-942EE916311E}" ShortID="753285188">
+									<ChildrenList>
+										<Sound Name="J_Voice_Male_07" ID="{8C3761D6-DE53-4056-A599-23514330003D}" ShortID="194821851">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_07" ID="{FFACAA2C-730C-4DFD-A392-577C5437A61A}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_07.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="720145320"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_07" ID="{FFACAA2C-730C-4DFD-A392-577C5437A61A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_02" ID="{6B20E22E-3082-45C8-A7DF-048D617B1B72}" ShortID="194065626">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_02" ID="{BA6AE764-9966-4660-A72B-2677B57E1297}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="186564801"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_02" ID="{BA6AE764-9966-4660-A72B-2677B57E1297}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_01" ID="{869EF271-4733-4855-8C3C-F6972D5FED69}" ShortID="721069940">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_01" ID="{20DD5E9C-7881-4189-9E73-3AFD855814F6}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="319968955"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_01" ID="{20DD5E9C-7881-4189-9E73-3AFD855814F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_06" ID="{084DCD79-C4EB-4331-BABC-6B218F80F2DD}" ShortID="786978634">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_06" ID="{E09592D1-4368-47BF-91DE-2E4EC3114C98}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="207105748"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_06" ID="{E09592D1-4368-47BF-91DE-2E4EC3114C98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_10" ID="{7CF7171F-AF36-4206-A1A1-63E648AFE96D}" ShortID="206862704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_10" ID="{89229DC6-FED2-486E-802B-91CC6AF895DE}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_10.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="432273522"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_10" ID="{89229DC6-FED2-486E-802B-91CC6AF895DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_04" ID="{724C61DD-8EA5-4002-9D72-9A29A7D5BEE4}" ShortID="62931079">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_04" ID="{FCC5B61B-3A2A-4154-A3EB-09DFCF7028C0}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_04.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="687821619"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_04" ID="{FCC5B61B-3A2A-4154-A3EB-09DFCF7028C0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_09" ID="{E61D4EF2-0DAF-4800-BD25-8D35E8842613}" ShortID="399059846">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_09" ID="{AF0AA6EE-77FD-40A3-846D-6D823A5D2D98}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_09.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="990757992"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_09" ID="{AF0AA6EE-77FD-40A3-846D-6D823A5D2D98}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_05" ID="{347BDFFC-21D5-4019-826D-6B43540FB63B}" ShortID="824089565">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_05" ID="{947D4193-F282-4C0E-8223-A25D326CB235}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="304216891"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_05" ID="{947D4193-F282-4C0E-8223-A25D326CB235}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_03" ID="{8C1BD9C8-47D6-409C-B2D6-174989999943}" ShortID="874790711">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_03" ID="{D527AC58-A3BE-43A4-A152-44B3C1E77B9E}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="811638539"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_03" ID="{D527AC58-A3BE-43A4-A152-44B3C1E77B9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="J_Voice_Male_08" ID="{7DD6ED2B-E8B9-4B5A-91C4-D513F72D491B}" ShortID="112526515">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="J_Voice_Male_08" ID="{C4A58585-12FF-466F-88E2-92879B07877E}">
+													<Language>SFX</Language>
+													<AudioFile>J_Voice_Male_08.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="329133657"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="J_Voice_Male_08" ID="{C4A58585-12FF-466F-88E2-92879B07877E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

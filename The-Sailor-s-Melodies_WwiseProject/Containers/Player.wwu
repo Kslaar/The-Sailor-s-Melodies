@@ -256,7 +256,11 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
-								<CustomState Name="" ID="{2E786802-044C-4E2E-B688-9BE1841C59CE}" ShortID="488024415"/>
+								<CustomState Name="" ID="{2E786802-044C-4E2E-B688-9BE1841C59CE}" ShortID="488024415">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
@@ -419,7 +423,11 @@
 							</CustomState>
 							<CustomState>
 								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
-								<CustomState Name="" ID="{11DAE568-C7C2-49AD-9195-8113B658F1EA}" ShortID="314053257"/>
+								<CustomState Name="" ID="{11DAE568-C7C2-49AD-9195-8113B658F1EA}" ShortID="314053257">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
@@ -433,7 +441,7 @@
 								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
 								<CustomState Name="" ID="{976A1E4C-2E5E-46E1-89D5-F2C57BF10167}" ShortID="970905752">
 									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-20"/>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>

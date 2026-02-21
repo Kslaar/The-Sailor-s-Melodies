@@ -617,18 +617,58 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
+								<StateGroupInfo Name="" ID="{0BFB9ED0-1F8B-4BC4-ABE0-9BD37275F511}" ShortID="54376660"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
 								<StateGroupRef Name="MusicState" ID="{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}"/>
 								<StateGroupInfo Name="" ID="{A2C75006-91AB-475B-BA99-9F747D26C463}" ShortID="418117126"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
 							<CustomState>
+								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+								<CustomState Name="" ID="{D1B48CDA-D89B-4259-A9FF-7C2D6094FACF}" ShortID="319368363"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+								<CustomState Name="" ID="{94BAF439-6AE7-4271-ABAE-4888D3DEB984}" ShortID="642326886">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-4"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Exploration" ID="{B17B1864-EAB0-4732-90EA-85FE0BD70855}"/>
 								<CustomState Name="" ID="{5888B798-5274-4048-817D-9AD0C37A26AA}" ShortID="72291315"/>
 							</CustomState>
 							<CustomState>
+								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+								<CustomState Name="" ID="{7C26269A-8098-4BFF-B4CF-4796F78A4609}" ShortID="416920339"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+								<CustomState Name="" ID="{6F3ADD2F-8914-411E-9553-4F50EE482787}" ShortID="937296140">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-4"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+								<CustomState Name="" ID="{02DB66AD-DFA9-447D-85C7-D5A2DF49EAE9}" ShortID="311800700"/>
+							</CustomState>
+							<CustomState>
 								<StateRef Name="Island_01" ID="{B7F5A775-DF19-4BF7-A1FF-4BD7ECFD7982}"/>
 								<CustomState Name="" ID="{A25D9A43-2231-4F56-8CE6-FFCD5D306BB6}" ShortID="410542530"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+								<CustomState Name="" ID="{AA7B5130-E560-49DE-AFC1-F220D10938BF}" ShortID="322292576"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+								<CustomState Name="" ID="{1CCA7ED3-B13C-4CF6-9C4C-0DA26CDF23C9}" ShortID="515706531"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="None" ID="{C93DA44D-32AA-4DE8-9920-BA2460BEF668}"/>
