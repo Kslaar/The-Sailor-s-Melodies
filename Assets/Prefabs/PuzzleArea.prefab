@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6748336230459238960
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1125813511707685456}
+  - component: {fileID: 8838189753399759311}
+  - component: {fileID: 8540255283924128028}
+  - component: {fileID: 9215509935567391471}
+  m_Layer: 0
+  m_Name: PuzzleArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1125813511707685456
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748336230459238960}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 79.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2250884552752402327}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8838189753399759311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748336230459238960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6827fc6bae3e5495cb3752bc599cd75a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleListener
+  recorder: {fileID: 0}
+  expectedSequence:
+  - {fileID: 11400000, guid: f86953a75605c465da276d7ff3e6fa30, type: 2}
+  target: {fileID: 3127578654734434955}
+  resetOnWrong: 1
+  countStepsTimer: 1
+  stepTimeoutSeconds: 15
+--- !u!136 &8540255283924128028
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748336230459238960}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 9.5
+  m_Height: 40
+  m_Direction: 2
+  m_Center: {x: 7, y: 0, z: -10}
+--- !u!114 &9215509935567391471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6748336230459238960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 399628f2c91d4409492303c57078656b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PuzzleHintEmitter
+  requiredSignature: {fileID: 11400000, guid: f86953a75605c465da276d7ff3e6fa30, type: 2}
+  hintEventOverride:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ce865370cd8544e259406e5002d1510f, type: 2}
+  hintIntervalSeconds: 3
+  randomizeStartOffset: 1
+  pitchRtpc:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 09c5661ab40a546a6bc82016713455ad, type: 2}
+  pitchCents: -400
+  blockedOffArea: {fileID: 3127578654734434955}
+  onlyWhilePlayerInTrigger: 1
+--- !u!1001 &3659524930028681076
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1125813511707685456}
+    m_Modifications:
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9203067901877368128, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+      propertyPath: m_Name
+      value: BlockedOffAreaBorder
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+--- !u!4 &2250884552752402327 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3311695057592203491, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+  m_PrefabInstance: {fileID: 3659524930028681076}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3127578654734434955 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1850516276225635839, guid: 2a97ca1d1b73f4b81a49afda500139db, type: 3}
+  m_PrefabInstance: {fileID: 3659524930028681076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fa5b826574b74afdbd24e4d0a51c0f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BlockedOffArea
