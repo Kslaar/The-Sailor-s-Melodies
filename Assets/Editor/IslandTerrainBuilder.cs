@@ -4,24 +4,46 @@ using UnityEditor;
 public class IslandTerrainBuilder : EditorWindow
 {
     [Header("Inputs")]
-    public Terrain targetTerrain;      // das EINE Terrain (z.B. Terrain_Seafloor)
-    public Terrain maskTerrain;        // dein Final_Island Terrain (mit Holes)
+    public Terrain targetTerrain;
+    public Terrain maskTerrain; // Holes: true=land/surface, false=water/hole
 
     [Header("Heights (World Y)")]
     public float waterlineY = 0f;
-    public float plateauY = 4f;
+    public float plateauY = 7f;
     public float grassStartY = 1.5f;
 
-    [Header("Coast shaping (meters)")]
-    public float coastWidth = 18f;     // wie breit ist der Steilhang
-    public float coastSmooth = 1.0f;   // 0 = harte Kante, 1 = smoothstep
+    [Header("Cliff (steep coast)")]
+    public float cliffWidth = 3f;
+    [Range(0f, 1f)] public float cliffSmooth = 0f;
+
+    [Header("Underwater Dropoff (no sandbanks)")]
+    public float dropDepthY = -10f;
+    public float dropoffDistance = 15f;
+    [Range(0f, 1f)] public float dropoffSmooth = 0.15f;
+
+    [Header("Mask Smoothing (smooth island outline / silhouette)")]
+    [Tooltip("Iterations of smoothing on the mask (more = rounder outline). 2-5 is typical.")]
+    public int maskSmoothIterations = 3;
+
+    [Tooltip("Threshold for smoothed mask (0..1). 0.5 = majority. Higher -> shrink islands, lower -> expand.")]
+    [Range(0f, 1f)] public float maskSmoothThreshold = 0.5f;
 
     [Header("Texture Paint")]
     public int sandLayerIndex = 0;
     public int grassLayerIndex = 1;
-    public bool hardCut = true;        // keine Mischung
+    public bool hardCut = true;
 
-    [MenuItem("Tools/Terrain/Island Builder (Holes -> Heights + AutoTexture)")]
+    [Header("Waterline texture rule (fix grass under water)")]
+    public bool forceSandUnderWater = true;
+    public float waterlineEpsilon = 0.05f;
+
+    [Header("Cleanup / Safety")]
+    public bool clearTargetHolesBeforeBake = true;
+    public bool clearTargetHolesAfterBake = true;
+    public bool forceNormalizeAlphamaps = true;
+    public bool logLayerNames = true;
+
+    [MenuItem("Tools/Terrain/Island Builder (Cliffs + Dropoff + AutoTexture)")]
     public static void Open()
     {
         GetWindow<IslandTerrainBuilder>("Island Builder");
@@ -29,47 +51,94 @@ public class IslandTerrainBuilder : EditorWindow
 
     private void OnGUI()
     {
-        EditorGUILayout.LabelField("Island Builder", EditorStyles.boldLabel);
+        EditorGUILayout.LabelField("Island Builder (Smooth Outline + Steep Cliffs + No Sandbanks)", EditorStyles.boldLabel);
         EditorGUILayout.Space(6);
 
         targetTerrain = (Terrain)EditorGUILayout.ObjectField("Target Terrain (ONE)", targetTerrain, typeof(Terrain), true);
-        maskTerrain   = (Terrain)EditorGUILayout.ObjectField("Mask Terrain (with Holes)", maskTerrain, typeof(Terrain), true);
+        maskTerrain = (Terrain)EditorGUILayout.ObjectField("Mask Terrain (with Holes)", maskTerrain, typeof(Terrain), true);
 
         EditorGUILayout.Space(8);
         waterlineY = EditorGUILayout.FloatField("Waterline Y", waterlineY);
-        plateauY   = EditorGUILayout.FloatField("Plateau Y", plateauY);
+        plateauY = EditorGUILayout.FloatField("Plateau Y", plateauY);
         grassStartY = EditorGUILayout.FloatField("Grass starts above Y", grassStartY);
 
         EditorGUILayout.Space(8);
-        coastWidth  = EditorGUILayout.FloatField("Coast width (m)", coastWidth);
-        coastSmooth = EditorGUILayout.Slider("Coast smooth", coastSmooth, 0f, 1f);
+        EditorGUILayout.LabelField("Cliff", EditorStyles.boldLabel);
+        cliffWidth = EditorGUILayout.FloatField("Cliff width (m)", cliffWidth);
+        cliffSmooth = EditorGUILayout.Slider("Cliff smooth", cliffSmooth, 0f, 1f);
 
         EditorGUILayout.Space(8);
-        sandLayerIndex  = EditorGUILayout.IntField("Sand Layer Index", sandLayerIndex);
+        EditorGUILayout.LabelField("Underwater Dropoff", EditorStyles.boldLabel);
+        dropDepthY = EditorGUILayout.FloatField("Drop depth Y", dropDepthY);
+        dropoffDistance = EditorGUILayout.FloatField("Dropoff distance (m)", dropoffDistance);
+        dropoffSmooth = EditorGUILayout.Slider("Dropoff smooth", dropoffSmooth, 0f, 1f);
+
+        EditorGUILayout.Space(8);
+        EditorGUILayout.LabelField("Mask Smoothing (Outline)", EditorStyles.boldLabel);
+        maskSmoothIterations = EditorGUILayout.IntSlider("Smooth iterations", maskSmoothIterations, 0, 10);
+        maskSmoothThreshold = EditorGUILayout.Slider("Smooth threshold", maskSmoothThreshold, 0f, 1f);
+
+        EditorGUILayout.Space(8);
+        sandLayerIndex = EditorGUILayout.IntField("Sand Layer Index", sandLayerIndex);
         grassLayerIndex = EditorGUILayout.IntField("Grass Layer Index", grassLayerIndex);
-        hardCut         = EditorGUILayout.ToggleLeft("Hard cut (no blend)", hardCut);
+        hardCut = EditorGUILayout.ToggleLeft("Hard cut (no blend)", hardCut);
+
+        EditorGUILayout.Space(8);
+        forceSandUnderWater = EditorGUILayout.ToggleLeft("Force sand under waterline", forceSandUnderWater);
+        waterlineEpsilon = EditorGUILayout.FloatField("Waterline epsilon", waterlineEpsilon);
+
+        EditorGUILayout.Space(8);
+        clearTargetHolesBeforeBake = EditorGUILayout.ToggleLeft("Clear Target Holes BEFORE Bake", clearTargetHolesBeforeBake);
+        clearTargetHolesAfterBake = EditorGUILayout.ToggleLeft("Clear Target Holes AFTER Bake", clearTargetHolesAfterBake);
+        forceNormalizeAlphamaps = EditorGUILayout.ToggleLeft("Normalize Alphamaps", forceNormalizeAlphamaps);
+        logLayerNames = EditorGUILayout.ToggleLeft("Log TerrainLayer names", logLayerNames);
 
         EditorGUILayout.Space(10);
 
-        using (new EditorGUI.DisabledScope(targetTerrain == null || maskTerrain == null))
+        using (new EditorGUI.DisabledScope(targetTerrain == null || targetTerrain.terrainData == null))
         {
-            if (GUILayout.Button("1) Bake Island Heights from Holes"))
-                BakeHeightsFromHoles();
+            if (GUILayout.Button("0) CLEAR ALL HOLES on Target"))
+                ClearAllHolesOnTarget();
 
-            if (GUILayout.Button("2) Auto-Paint Sand/Grass by Height"))
+            using (new EditorGUI.DisabledScope(maskTerrain == null || maskTerrain.terrainData == null))
+            {
+                if (GUILayout.Button("1) Bake Heights (Cliff + Dropoff + Smooth Outline)"))
+                    BakeHeightsCliffDropoffSmoothOutline();
+            }
+
+            if (GUILayout.Button("2) Auto-Paint Sand/Grass by Height (No grass under water)"))
                 AutoPaintByHeight();
         }
 
         EditorGUILayout.HelpBox(
-            "Workflow:\n" +
-            "1) Use your existing Holes on Mask Terrain to define land vs water.\n" +
-            "2) Bake heights onto Target Terrain: land becomes plateau, coast slopes down to waterline.\n" +
-            "3) Auto-paint textures by world height: sand <= grassStartY, grass > grassStartY.",
+            "What this does:\n" +
+            "- Uses Mask Terrain Holes to define land vs water.\n" +
+            "- Smooths the mask (rounder island silhouette) BEFORE baking heights.\n" +
+            "- Bakes: Land becomes plateau, coast drops steeply to waterline, then underwater drops deeper.\n" +
+            "- AutoPaint: No grass under waterline, grass only above grassStartY.\n",
             MessageType.Info);
     }
 
-    // ---------- 1) Heights ----------
-    private void BakeHeightsFromHoles()
+    // ---------------- Holes cleanup on Target ----------------
+    private void ClearAllHolesOnTarget()
+    {
+        var td = targetTerrain.terrainData;
+        int r = td.holesResolution;
+
+        Undo.RegisterCompleteObjectUndo(td, "Clear All Terrain Holes");
+
+        bool[,] allSolid = new bool[r, r];
+        for (int y = 0; y < r; y++)
+            for (int x = 0; x < r; x++)
+                allSolid[y, x] = true;
+
+        td.SetHoles(0, 0, allSolid);
+        EditorUtility.SetDirty(td);
+        Debug.Log($"[IslandBuilder] Cleared ALL holes on Target. holesRes={r}");
+    }
+
+    // ---------------- Bake Heights: Cliff + Dropoff + Smoothed Outline ----------------
+    private void BakeHeightsCliffDropoffSmoothOutline()
     {
         var t = targetTerrain;
         var m = maskTerrain;
@@ -77,9 +146,18 @@ public class IslandTerrainBuilder : EditorWindow
         var td = t.terrainData;
         var md = m.terrainData;
 
-        // mask holes: true = surface, false = hole
+        if (clearTargetHolesBeforeBake)
+            ClearAllHolesOnTarget();
+
         int holesRes = md.holesResolution;
-        bool[,] holes = md.GetHoles(0, 0, holesRes, holesRes);
+
+        // original mask: true=land, false=water
+        bool[,] holesRaw = md.GetHoles(0, 0, holesRes, holesRes);
+
+        // smooth mask for nicer silhouette
+        bool[,] holes = (maskSmoothIterations > 0)
+            ? SmoothMaskMajority(holesRaw, holesRes, holesRes, maskSmoothIterations, maskSmoothThreshold)
+            : holesRaw;
 
         int res = td.heightmapResolution;
         float[,] heights = td.GetHeights(0, 0, res, res);
@@ -90,10 +168,10 @@ public class IslandTerrainBuilder : EditorWindow
         Vector3 mPos = m.transform.position;
         Vector3 mSize = md.size;
 
-        float maxSearch = Mathf.Max(1f, coastWidth);
+        float maxSearch = Mathf.Max(2f, Mathf.Max(cliffWidth, dropoffDistance));
         float step = Mathf.Clamp(maxSearch / 18f, 0.5f, 3.0f);
 
-        Undo.RegisterCompleteObjectUndo(td, "Bake Island Heights from Holes");
+        Undo.RegisterCompleteObjectUndo(td, "Bake Heights (Cliff+Dropoff+SmoothOutline)");
 
         int changed = 0;
 
@@ -107,39 +185,41 @@ public class IslandTerrainBuilder : EditorWindow
                 float wx = tPos.x + u * tSize.x;
                 float wz = tPos.z + v * tSize.z;
 
-                // if outside mask bounds -> treat as water/no island influence
                 if (wx < mPos.x || wx > mPos.x + mSize.x || wz < mPos.z || wz > mPos.z + mSize.z)
                     continue;
 
-                if (!TryWorldToHoleIndex(mPos, mSize, holesRes, wx, wz, out int hx, out int hy))
+                if (!TryWorldToMaskIndex(mPos, mSize, holesRes, wx, wz, out int hx, out int hy))
                     continue;
 
-                bool isLand = holes[hy, hx]; // true = surface = land, false = hole = water
-
+                bool isLand = holes[hy, hx];
                 float desiredWorldY;
 
                 if (isLand)
                 {
-                    // On land: plateau
                     desiredWorldY = plateauY;
                 }
                 else
                 {
-                    // In water region: only shape near coast
                     float distToLand = DistanceToNearestLand(holes, holesRes, mPos, mSize, wx, wz, maxSearch, step);
-                    if (distToLand < 0f) continue; // far from land -> leave as is
+                    if (distToLand < 0f) continue;
 
-                    // coast profile: at coast (0m) = plateauY, at coastWidth = waterlineY
-                    float t01 = Mathf.Clamp01(distToLand / Mathf.Max(0.001f, coastWidth));
-                    float s = Smooth(t01, coastSmooth);
-
-                    desiredWorldY = Mathf.Lerp(plateauY, waterlineY, s);
+                    // 1) CLIFF zone: plateau -> waterline quickly
+                    if (distToLand <= cliffWidth)
+                    {
+                        float t01 = Mathf.Clamp01(distToLand / Mathf.Max(0.001f, cliffWidth));
+                        float s = Smooth01(t01, cliffSmooth);
+                        desiredWorldY = Mathf.Lerp(plateauY, waterlineY, s);
+                    }
+                    else
+                    {
+                        // 2) UNDERWATER dropoff: waterline -> depth
+                        float d = distToLand - cliffWidth;
+                        float t01 = Mathf.Clamp01(d / Mathf.Max(0.001f, dropoffDistance));
+                        float s = Smooth01(t01, dropoffSmooth);
+                        desiredWorldY = Mathf.Lerp(waterlineY, dropDepthY, s);
+                    }
                 }
 
-                float currentWorldY = tPos.y + heights[y, x] * tSize.y;
-
-                // we only raise to desired if it would be higher; BUT for coast we also want to pull down steep bits
-                // so we set directly
                 float desiredN = Mathf.Clamp01((desiredWorldY - tPos.y) / tSize.y);
 
                 if (!Mathf.Approximately(heights[y, x], desiredN))
@@ -153,17 +233,66 @@ public class IslandTerrainBuilder : EditorWindow
         td.SetHeights(0, 0, heights);
         EditorUtility.SetDirty(td);
 
-        Debug.Log($"[IslandBuilder] BakeHeights done. Changed samples: {changed}");
+        if (clearTargetHolesAfterBake)
+            ClearAllHolesOnTarget();
+
+        Debug.Log($"[IslandBuilder] Bake done. Changed height samples: {changed}. MaskSmoothIters={maskSmoothIterations}, Threshold={maskSmoothThreshold}");
     }
 
-    private static float Smooth(float t, float smoothness)
+    // --- Mask smoothing: majority filter on bool grid ---
+    private static bool[,] SmoothMaskMajority(bool[,] src, int w, int h, int iterations, float threshold)
+    {
+        bool[,] cur = src;
+        bool[,] next = new bool[h, w];
+
+        int radius = 1; // 3x3 neighborhood
+
+        for (int it = 0; it < iterations; it++)
+        {
+            for (int y = 0; y < h; y++)
+            {
+                for (int x = 0; x < w; x++)
+                {
+                    int count = 0;
+                    int total = 0;
+
+                    for (int oy = -radius; oy <= radius; oy++)
+                    {
+                        int yy = y + oy;
+                        if (yy < 0 || yy >= h) continue;
+
+                        for (int ox = -radius; ox <= radius; ox++)
+                        {
+                            int xx = x + ox;
+                            if (xx < 0 || xx >= w) continue;
+
+                            total++;
+                            if (cur[yy, xx]) count++;
+                        }
+                    }
+
+                    float p = (total > 0) ? (count / (float)total) : 0f;
+                    next[y, x] = (p >= threshold);
+                }
+            }
+
+            // swap
+            var tmp = cur;
+            cur = next;
+            next = tmp;
+        }
+
+        return cur;
+    }
+
+    private static float Smooth01(float t, float smoothness)
     {
         t = Mathf.Clamp01(t);
         float smoothstep = t * t * (3f - 2f * t);
         return Mathf.Lerp(t, smoothstep, smoothness);
     }
 
-    private static bool TryWorldToHoleIndex(Vector3 pos, Vector3 size, int holesRes, float wx, float wz, out int ix, out int iy)
+    private static bool TryWorldToMaskIndex(Vector3 pos, Vector3 size, int res, float wx, float wz, out int ix, out int iy)
     {
         float u = Mathf.InverseLerp(pos.x, pos.x + size.x, wx);
         float v = Mathf.InverseLerp(pos.z, pos.z + size.z, wz);
@@ -172,18 +301,18 @@ public class IslandTerrainBuilder : EditorWindow
             ix = iy = 0;
             return false;
         }
-        ix = Mathf.Clamp(Mathf.RoundToInt(u * (holesRes - 1)), 0, holesRes - 1);
-        iy = Mathf.Clamp(Mathf.RoundToInt(v * (holesRes - 1)), 0, holesRes - 1);
+        ix = Mathf.Clamp(Mathf.RoundToInt(u * (res - 1)), 0, res - 1);
+        iy = Mathf.Clamp(Mathf.RoundToInt(v * (res - 1)), 0, res - 1);
         return true;
     }
 
-    // from a water point, find nearest land (holes==true)
+    // from a WATER point find nearest LAND (holes==true)
     private static float DistanceToNearestLand(bool[,] holes, int holesRes, Vector3 pos, Vector3 size, float wx, float wz, float maxRadius, float stepMeters)
     {
-        if (!TryWorldToHoleIndex(pos, size, holesRes, wx, wz, out int cx, out int cy))
+        if (!TryWorldToMaskIndex(pos, size, holesRes, wx, wz, out int cx, out int cy))
             return -1f;
 
-        if (holes[cy, cx]) return 0f; // already land
+        if (holes[cy, cx]) return 0f;
 
         float best = float.MaxValue;
 
@@ -194,10 +323,10 @@ public class IslandTerrainBuilder : EditorWindow
                 float nx = wx + dx;
                 float nz = wz + dz;
 
-                if (!TryWorldToHoleIndex(pos, size, holesRes, nx, nz, out int ix, out int iy))
+                if (!TryWorldToMaskIndex(pos, size, holesRes, nx, nz, out int ix, out int iy))
                     continue;
 
-                if (holes[iy, ix]) // land found
+                if (holes[iy, ix])
                 {
                     float d = Mathf.Sqrt(dx * dx + dz * dz);
                     if (d < best) best = d;
@@ -208,23 +337,27 @@ public class IslandTerrainBuilder : EditorWindow
         return (best == float.MaxValue) ? -1f : best;
     }
 
-    // ---------- 2) Texture paint ----------
+    // ---------------- AutoPaint (fix grass under water) ----------------
     private void AutoPaintByHeight()
     {
         var t = targetTerrain;
         var td = t.terrainData;
 
-        int layers = td.terrainLayers != null ? td.terrainLayers.Length : 0;
+        var layersArr = td.terrainLayers;
+        int layers = layersArr != null ? layersArr.Length : 0;
+
         if (layers < 2)
         {
             Debug.LogError("[IslandBuilder] Target Terrain needs at least 2 TerrainLayers (Sand index 0, Grass index 1).");
             return;
         }
 
-        if (sandLayerIndex < 0 || sandLayerIndex >= layers || grassLayerIndex < 0 || grassLayerIndex >= layers)
+        if (logLayerNames)
         {
-            Debug.LogError("[IslandBuilder] Layer indices out of range.");
-            return;
+            string msg = "[IslandBuilder] TerrainLayers on Target:\n";
+            for (int i = 0; i < layers; i++)
+                msg += $"  [{i}] {(layersArr[i] != null ? layersArr[i].name : "NULL")}\n";
+            Debug.Log(msg);
         }
 
         int aW = td.alphamapWidth;
@@ -250,22 +383,49 @@ public class IslandTerrainBuilder : EditorWindow
 
                 float worldY = t.SampleHeight(new Vector3(wx, 0f, wz)) + pos.y;
 
-                bool grass = worldY > grassStartY;
-
-                // reset
-                for (int l = 0; l < aL; l++) alpha[y, x, l] = 0f;
-
-                if (hardCut)
+                int chosen;
+                if (forceSandUnderWater && worldY <= waterlineY + waterlineEpsilon)
                 {
-                    alpha[y, x, grass ? grassLayerIndex : sandLayerIndex] = 1f;
+                    chosen = sandLayerIndex;
                 }
                 else
                 {
-                    // tiny blend band (optional)
+                    chosen = (worldY > grassStartY) ? grassLayerIndex : sandLayerIndex;
+                }
+
+                // force clean weights
+                for (int l = 0; l < aL; l++) alpha[y, x, l] = 0f;
+                alpha[y, x, chosen] = 1f;
+
+                if (!hardCut)
+                {
                     float blendBand = 0.25f;
                     float t01 = Mathf.InverseLerp(grassStartY - blendBand, grassStartY + blendBand, worldY);
+                    t01 = Mathf.Clamp01(t01);
+
+                    for (int l = 0; l < aL; l++) alpha[y, x, l] = 0f;
                     alpha[y, x, sandLayerIndex] = 1f - t01;
                     alpha[y, x, grassLayerIndex] = t01;
+                }
+            }
+        }
+
+        if (forceNormalizeAlphamaps)
+        {
+            for (int yy = 0; yy < aH; yy++)
+            for (int xx = 0; xx < aW; xx++)
+            {
+                float sum = 0f;
+                for (int l = 0; l < aL; l++) sum += alpha[yy, xx, l];
+
+                if (sum <= 0.0001f)
+                {
+                    for (int l = 0; l < aL; l++) alpha[yy, xx, l] = 0f;
+                    alpha[yy, xx, sandLayerIndex] = 1f;
+                }
+                else
+                {
+                    for (int l = 0; l < aL; l++) alpha[yy, xx, l] /= sum;
                 }
             }
         }
@@ -273,6 +433,6 @@ public class IslandTerrainBuilder : EditorWindow
         td.SetAlphamaps(0, 0, alpha);
         EditorUtility.SetDirty(td);
 
-        Debug.Log("[IslandBuilder] AutoPaintByHeight done.");
+        Debug.Log("[IslandBuilder] AutoPaintByHeight done (no grass under water).");
     }
 }
