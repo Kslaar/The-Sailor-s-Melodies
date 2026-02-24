@@ -38,7 +38,7 @@ public class GlobalMusicManager : MonoBehaviour
         uint id = playWorldMusic.Post(gameObject);
 
         if (id == 0)
-            Debug.Log("Music already playing – skipping start.");
+            Debug.Log("Music already playing ï¿½ skipping start.");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
@@ -68,5 +68,16 @@ public class GlobalMusicManager : MonoBehaviour
     {
         AkUnitySoundEngine.SetSwitch("RaceState", stateName, gameObject);
     }
+
+    public void StopWorldMusic(){
+        stopMusic.Post(gameObject);
+
+    }
+
+    public void StartWorldMusic(){
+        playWorldMusic.Post(gameObject);
+    }
+   
+    
 }
 

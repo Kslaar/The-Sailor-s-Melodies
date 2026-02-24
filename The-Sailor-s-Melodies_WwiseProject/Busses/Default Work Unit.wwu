@@ -24,31 +24,34 @@
 							</ObjectLists>
 						</AuxBus>
 						<Bus Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}"/>
-						<Bus Name="Island" ID="{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"/>
-						<Bus Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"/>
-						<Bus Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}">
-							<ObjectLists>
-								<ObjectList Name="Effects">
-									<EffectSlot Name="" ID="{9021FF7E-9857-4703-B373-94163511D222}" ShortID="401741566">
-										<ReferenceList>
-											<Reference Name="Effect">
-												<Custom>
-													<Effect Name="Guitar Distortion (Custom)" ID="{2B53FDCE-BF6B-475A-BF26-196CE66FF02A}" ShortID="664771687" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-														<PropertyList>
-															<Property Name="DistortionDrive" Type="Real32" Value="100"/>
-															<Property Name="DistortionTone" Type="Real32" Value="100"/>
-															<Property Name="DistortionType" Type="int32" Value="3"/>
-															<Property Name="Rectification" Type="Real32" Value="50"/>
-														</PropertyList>
-													</Effect>
-												</Custom>
-											</Reference>
-										</ReferenceList>
-									</EffectSlot>
-								</ObjectList>
-							</ObjectLists>
+						<Bus Name="Effects" ID="{FD46D439-8CBD-45F2-B3E4-8018F0F567EB}">
+							<ChildrenList>
+								<Bus Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"/>
+								<Bus Name="Island" ID="{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"/>
+								<Bus Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{9021FF7E-9857-4703-B373-94163511D222}" ShortID="401741566">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Guitar Distortion (Custom)" ID="{2B53FDCE-BF6B-475A-BF26-196CE66FF02A}" ShortID="664771687" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																<PropertyList>
+																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
+																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
+																	<Property Name="DistortionType" Type="int32" Value="3"/>
+																	<Property Name="Rectification" Type="Real32" Value="50"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+							</ChildrenList>
 						</Bus>
-						<Bus Name="New Audio Bus" ID="{9B4366C3-BCBC-448B-AC7F-DEF433D3661B}"/>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -123,20 +126,6 @@
 							</RTPC>
 						</ObjectList>
 					</ObjectLists>
-				</Bus>
-				<Bus Name="Boat Audio" ID="{6A2F977A-D028-4613-B695-FC1D636B0C99}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{6F7036D1-BA20-4114-9EC6-C473F7C0621A}" WorkUnitID="{AE92099A-D524-4E32-8BB2-1B1472FAF731}"/>
-						</Reference>
-					</ReferenceList>
-				</Bus>
-				<Bus Name="Island Audio" ID="{071CE7C3-C87F-4D67-A76D-C788FFB3673C}">
-					<ReferenceList>
-						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
-							<ObjectRef Name="System" ID="{6F7036D1-BA20-4114-9EC6-C473F7C0621A}" WorkUnitID="{AE92099A-D524-4E32-8BB2-1B1472FAF731}"/>
-						</Reference>
-					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

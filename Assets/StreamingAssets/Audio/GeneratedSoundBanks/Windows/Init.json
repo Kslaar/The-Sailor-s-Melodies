@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5B096BB6-7AD8-ECCF-E3C3-1772ED7BFDA6}",
+    "Hash": "{4F305985-108F-ADAF-1E4C-22474A333AF7}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -19,7 +19,7 @@
       {
        "Id": "664771687",
        "Name": "Guitar Distortion (Custom)",
-       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Keyboard_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Keyboard_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
        "GUID": "{2B53FDCE-BF6B-475A-BF26-196CE66FF02A}",
        "LibName": "Wwise Guitar Distortion",
        "LibId": "8257539"
@@ -56,33 +56,21 @@
     },
     "Busses": [
      {
-      "Id": "393239870",
-      "Name": "SFX",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\SFX",
-      "GUID": "{9B4366C3-BCBC-448B-AC7F-DEF433D3661B}"
-     },
-     {
-      "Id": "662417162",
-      "Name": "NPC",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\NPC",
-      "GUID": "{88F38188-F9F0-418C-B4B2-D5A5C6946DAC}"
-     },
-     {
-      "Id": "779236412",
-      "Name": "Island Audio",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Island Audio",
-      "GUID": "{071CE7C3-C87F-4D67-A76D-C788FFB3673C}"
-     },
-     {
       "Id": "1795056175",
       "Name": "Boat",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Boat",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Boat",
       "GUID": "{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"
+     },
+     {
+      "Id": "1942696649",
+      "Name": "Effects",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects",
+      "GUID": "{FD46D439-8CBD-45F2-B3E4-8018F0F567EB}"
      },
      {
       "Id": "2652995606",
       "Name": "Keyboard_Hint",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Keyboard_Hint",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Keyboard_Hint",
       "GUID": "{7D760D8C-9641-4A05-BC76-82DF0879AB52}",
       "PluginRefs": {
        "Custom": [
@@ -93,15 +81,9 @@
       }
      },
      {
-      "Id": "2945336769",
-      "Name": "Boat Audio",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Boat Audio",
-      "GUID": "{6A2F977A-D028-4613-B695-FC1D636B0C99}"
-     },
-     {
       "Id": "3199546890",
       "Name": "Island",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Island",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Island",
       "GUID": "{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"
      },
      {
@@ -252,6 +234,32 @@
     ],
     "SwitchGroups": [
      {
+      "Id": "885771221",
+      "Name": "NPC_VoiceType",
+      "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType",
+      "GUID": "{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}",
+      "Switches": [
+       {
+        "Id": "2457561305",
+        "Name": "Teacher",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Teacher",
+        "GUID": "{A54ADA90-C26D-442F-9252-B8EB49617CBE}"
+       },
+       {
+        "Id": "2864432310",
+        "Name": "Pastor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Pastor",
+        "GUID": "{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"
+       },
+       {
+        "Id": "3076081869",
+        "Name": "Sailor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Sailor",
+        "GUID": "{77AC4069-C70A-4865-93C9-A7E01ED328BD}"
+       }
+      ]
+     },
+     {
       "Id": "1445037870",
       "Name": "MusicSwitch",
       "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch",
@@ -312,6 +320,6 @@
     ]
    }
   ],
-  "FileHash": "{8CD6C9F2-FD76-8E30-3289-FC523DAA3379}"
+  "FileHash": "{A3B8200A-820A-B35D-837A-436AB041603E}"
  }
 }

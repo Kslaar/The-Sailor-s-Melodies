@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Stop_quest_direction
   id: 1726691112
   guid: 50D920D3-BC34-4A8A-A8C3-635DE0DD91E6
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1

@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID NPC_GREET = 3070880444U;
         static const AkUniqueID PLAY_CHECKPOINT = 2962822744U;
         static const AkUniqueID PLAY_FINISH = 1793765179U;
         static const AkUniqueID PLAY_HINT_OCARINA_CMAJ = 621743551U;
@@ -41,14 +42,13 @@ namespace AK
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_SEAGULLS = 4281176146U;
+        static const AkUniqueID PLAY_SEAL = 4262365201U;
         static const AkUniqueID PLAY_STARTSCENEMUSIC = 3993991295U;
-        static const AkUniqueID PLAY_UI_TYPELOOP = 402999385U;
         static const AkUniqueID PLAY_VILLAGE_ISLAND = 2275961610U;
+        static const AkUniqueID PLAY_WALE = 1589278987U;
         static const AkUniqueID QUEST_ACCEPTED = 602563U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
-        static const AkUniqueID STOP_QUEST_DIRECTION = 1726691112U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
-        static const AkUniqueID STOP_UI_TYPELOOP = 3458954543U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
         static const AkUniqueID UI_START = 1219048826U;
@@ -112,6 +112,18 @@ namespace AK
             } // namespace SWITCH
         } // namespace MUSICSWITCH
 
+        namespace NPC_VOICETYPE
+        {
+            static const AkUniqueID GROUP = 885771221U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID PASTOR = 2864432310U;
+                static const AkUniqueID SAILOR = 3076081869U;
+                static const AkUniqueID TEACHER = 2457561305U;
+            } // namespace SWITCH
+        } // namespace NPC_VOICETYPE
+
         namespace RACESTATE
         {
             static const AkUniqueID GROUP = 2495262365U;
@@ -143,14 +155,11 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID BOAT = 1795056175U;
-        static const AkUniqueID BOAT_AUDIO = 2945336769U;
+        static const AkUniqueID EFFECTS = 1942696649U;
         static const AkUniqueID ISLAND = 3199546890U;
-        static const AkUniqueID ISLAND_AUDIO = 779236412U;
         static const AkUniqueID KEYBOARD_HINT = 2652995606U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MUSIC = 3991942870U;
-        static const AkUniqueID NPC = 662417162U;
-        static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

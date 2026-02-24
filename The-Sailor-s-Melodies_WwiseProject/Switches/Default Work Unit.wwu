@@ -18,6 +18,13 @@
 						<Switch Name="Finish" ID="{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="NPC_VoiceType" ID="{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}">
+					<ChildrenList>
+						<Switch Name="Pastor" ID="{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"/>
+						<Switch Name="Sailor" ID="{77AC4069-C70A-4865-93C9-A7E01ED328BD}"/>
+						<Switch Name="Teacher" ID="{A54ADA90-C26D-442F-9252-B8EB49617CBE}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

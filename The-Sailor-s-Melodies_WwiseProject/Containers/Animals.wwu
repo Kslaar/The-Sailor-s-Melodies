@@ -1,6 +1,290 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{38C4576B-54E2-4650-864D-172E76D35CFA}" SchemaVersion="133">
 	<Containers>
-		<WorkUnit Name="Animals" ID="{38C4576B-54E2-4650-864D-172E76D35CFA}" PersistMode="Standalone"/>
+		<WorkUnit Name="Animals" ID="{38C4576B-54E2-4650-864D-172E76D35CFA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Dolphin_01" ID="{8BEE714F-1E1F-4811-9B81-92A16C3BC610}" ShortID="763560046">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dolphin_01" ID="{CEA292E8-5F4A-430B-9E6E-2100E5268234}">
+							<Language>SFX</Language>
+							<AudioFile>Dolphin_01.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="385623622"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Dolphin_01" ID="{CEA292E8-5F4A-430B-9E6E-2100E5268234}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<RandomSequenceContainer Name="Seagulls" ID="{F933DAD2-D2B2-48F4-AE34-4D26BA579F0B}" ShortID="1072658986">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Seagull_03" ID="{2D69C945-3F17-499F-852C-3DEC7C2BE441}" ShortID="1062789545">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seagull_01" ID="{4CE33FDF-04E9-48B8-B2E7-332EBD92118A}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.270268857479095"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="2.92526292800903"/>
+										<Property Name="TrimEnd" Type="Real64" Value="5.26229328838984"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Seagull_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="889405789"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seagull_01" ID="{4CE33FDF-04E9-48B8-B2E7-332EBD92118A}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Seagull_01" ID="{4813E7F4-4910-4F1F-B013-E5D904ACD72F}" ShortID="1025340346">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seagull_01" ID="{B693AAC5-596C-4E23-8EF4-E638F760716B}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.111287176609039"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.302065193653107"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.14625234333674"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Seagull_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="382701999"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seagull_01" ID="{B693AAC5-596C-4E23-8EF4-E638F760716B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Seagull_02" ID="{B66389AE-E120-44B7-8501-656F7E045562}" ShortID="698799298">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seagull_03" ID="{9B7AECEC-2843-464E-B3AD-776EDC99CF7C}">
+									<Language>SFX</Language>
+									<AudioFile>Seagull_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="480343258"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seagull_03" ID="{9B7AECEC-2843-464E-B3AD-776EDC99CF7C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Seagull_04" ID="{46AF7531-07DB-47E9-BFB5-6412590BD3C0}" ShortID="633687870">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seagull_01" ID="{0C0D1AD6-9AC6-4F34-A5CA-C8822C72B352}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0343131032868254"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0743450571214552"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="6.52614187517183"/>
+										<Property Name="TrimEnd" Type="Real64" Value="8.71219576327006"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Seagull_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="705104323"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seagull_01" ID="{0C0D1AD6-9AC6-4F34-A5CA-C8822C72B352}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Wale" ID="{2A3FBF8F-5B37-4086-8148-A48B1CDEE911}" ShortID="358011466">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Wale_01" ID="{FC8DC9C0-A381-4F94-B629-BB95BD72FC2B}" ShortID="522696060">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wale_01" ID="{904B262D-4F18-478A-A52D-FDD405384B26}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0447411726160747"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.612954064840224"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0671117589241121"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.56814321788152"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wale_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="437250838"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wale_01" ID="{904B262D-4F18-478A-A52D-FDD405384B26}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Wale_02" ID="{82A74D35-78DC-49B6-911D-3667769C7591}" ShortID="744733287">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Wale_02" ID="{CBA565D9-7916-454B-886A-DC0C6EEE37C1}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0735459102363121"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.64854120844748"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0668599183966474"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.95142094708846"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Wale_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="121011351"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wale_02" ID="{CBA565D9-7916-454B-886A-DC0C6EEE37C1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Seal" ID="{4D6A1111-26E1-44CB-B208-472E253B5496}" ShortID="78273614">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Seal_01" ID="{BBD8A4D5-F230-4164-8066-B276BF384870}" ShortID="535635365">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seal_01" ID="{25A4FA35-DB6C-4C09-9E76-3B81160EBFF9}">
+									<Language>SFX</Language>
+									<AudioFile>Seal_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="110974684"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seal_01" ID="{25A4FA35-DB6C-4C09-9E76-3B81160EBFF9}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Seal_02" ID="{DF6F0BAB-39A1-4791-BEA4-EE2D7E7C4343}" ShortID="1033393670">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Seal_02" ID="{07791552-287C-4E53-822B-6E4265642958}">
+									<Language>SFX</Language>
+									<AudioFile>Seal_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="955175564"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Seal_02" ID="{07791552-287C-4E53-822B-6E4265642958}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</Containers>
 </WwiseDocument>

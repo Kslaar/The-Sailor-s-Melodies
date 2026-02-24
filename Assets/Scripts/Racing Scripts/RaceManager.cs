@@ -103,6 +103,10 @@ public class RaceManager : MonoBehaviour
     private IEnumerator CountdownThenStartRace()
     {
         state = RaceState.Countdown;
+        
+        //Wwise: World Music stoppen
+        GlobalMusicManager.Instance.StopWorldMusic();
+
 
         //Wwise MusicManager
         GlobalMusicManager.Instance.SetRaceState("Countdown");
@@ -206,6 +210,9 @@ public class RaceManager : MonoBehaviour
     private void Finish()
     {
         state = RaceState.Finished;
+
+        //wwise World Music wieder Starten
+        GlobalMusicManager.Instance.StartWorldMusic();
         GlobalMusicManager.Instance.SetRaceState("Finished");
         FreezePlayer(true);
 
@@ -224,6 +231,8 @@ public class RaceManager : MonoBehaviour
     {
         Debug.LogWarning($"[RaceManager] Race failed: {reason}");
         state = RaceState.Failed;
+        //wwise World Music wieder starten
+        GlobalMusicManager.Instance.StartWorldMusic();
         GlobalMusicManager.Instance.SetRaceState("Idle");
         FreezePlayer(true);
         OnRaceFailed?.Invoke(reason);
