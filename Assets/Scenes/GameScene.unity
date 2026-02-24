@@ -9064,7 +9064,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayBack
         m_Mode: 1
@@ -9283,7 +9283,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayClick
         m_Mode: 1
@@ -11600,7 +11600,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayConfirm
         m_Mode: 1
@@ -21563,7 +21563,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayClick
         m_Mode: 1
@@ -30573,6 +30573,12 @@ MonoBehaviour:
     groupIdInternal: 0
     groupGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  voiceTypeSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b61807b994024469aa92426d0a5c1a2f, type: 2}
   npcMoodState:
     idInternal: 0
     valueGuidInternal: 
@@ -34684,10 +34690,10 @@ Transform:
   - {fileID: 761519152}
   - {fileID: 414320894}
   - {fileID: 930711066}
-  - {fileID: 477562445}
   - {fileID: 1033452174}
   - {fileID: 140755052}
   - {fileID: 1155684850}
+  - {fileID: 402656143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1077351580
@@ -36285,6 +36291,12 @@ MonoBehaviour:
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
   npcTypeSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  voiceTypeSwitch:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
@@ -43260,7 +43272,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayConfirm
         m_Mode: 1
@@ -49956,6 +49968,7 @@ GameObject:
   - component: {fileID: 1696570152}
   - component: {fileID: 1696570151}
   - component: {fileID: 1696570150}
+  - component: {fileID: 1696570153}
   m_Layer: 5
   m_Name: Test Quest Save&Load
   m_TagString: Untagged
@@ -50034,6 +50047,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1799856495}
           m_ObjectArgumentAssemblyTypeName: DockZone, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1696570153}
+        m_TargetAssemblyTypeName: NPCSoundManager, Assembly-CSharp
+        m_MethodName: PlayGreet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -53125,9 +53150,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
-        m_MethodName: PlayConfirm
+        m_MethodName: PlayClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -56525,7 +56550,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayConfirm
         m_Mode: 1
@@ -58924,7 +58949,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 477562447}
+      - m_Target: {fileID: 864417022}
         m_TargetAssemblyTypeName: UIAudioManager, Assembly-CSharp
         m_MethodName: PlayBack
         m_Mode: 1

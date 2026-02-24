@@ -10,11 +10,29 @@
     "Type": "Event",
     "GUID": "{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}",
     "Language": "SFX",
-    "Hash": "{3421E062-D516-FEB1-5699-461EE1B02D6E}",
+    "Hash": "{FE1D0E81-1B3E-19AC-A31E-12A4E3D4CD98}",
     "ObjectPath": "Play_Village_island",
     "ShortName": "Play_Village_island",
     "Path": "Event/Play_Village_island.bnk",
     "Media": [
+     {
+      "Id": "226572936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": " Main_Theme.wav",
+      "Path": "Media/226572936.wem",
+      "CachePath": "7C/{7C335F04-6A47-3F40-3F63-5902646E5711}.wem"
+     },
+     {
+      "Id": "512095870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "Björn WIP.wav",
+      "Path": "Media/512095870.wem",
+      "CachePath": "D3/{D31F5D41-ABDC-7F06-7C75-62EF20EFB4C9}.wem"
+     },
      {
       "Id": "524385979",
       "Language": "SFX",
@@ -23,24 +41,6 @@
       "ShortName": "Place_Royal_Loop.wav",
       "Path": "Media/524385979.wem",
       "CachePath": "A8/{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem"
-     },
-     {
-      "Id": "610000193",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "music_city.wav",
-      "Path": "Media/610000193.wem",
-      "CachePath": "AE/{AE338D71-ABD5-69C3-A63F-C67753906CB7}.wem"
-     },
-     {
-      "Id": "700410248",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Loose",
-      "ShortName": "music_mainmenue (blueprint).wav",
-      "Path": "Media/700410248.wem",
-      "CachePath": "76/{76848679-DAF7-09CC-C442-0AAD72AB432E}.wem"
      }
     ],
     "Events": [
@@ -58,9 +58,19 @@
          "Id": "2582085496",
          "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "524385979"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "524385979"
+           }
+          ]
          }
         ]
        },
@@ -71,9 +81,19 @@
          "Id": "2402435976",
          "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "610000193"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "512095870"
+           }
+          ]
          }
         ]
        },
@@ -84,9 +104,19 @@
          "Id": "2607556080",
          "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
         },
-        "MediaRefs": [
+        "Children": [
          {
-          "Id": "700410248"
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "226572936"
+           }
+          ]
          }
         ]
        }
@@ -119,10 +149,42 @@
         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
+     },
+     {
+      "Id": "2495262365",
+      "Name": "RaceState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
+      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
+      "Switches": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
+        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+       },
+       {
+        "Id": "1505888634",
+        "Name": "Countdown",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
+        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
+        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
+       },
+       {
+        "Id": "2555741448",
+        "Name": "Finish",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
+        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{8F9E29E1-3E3E-4B9D-AE30-FA6FF679808C}"
+  "FileHash": "{57FAA9BF-C3AC-023F-D76E-FE33EDDA00BC}"
  }
 }

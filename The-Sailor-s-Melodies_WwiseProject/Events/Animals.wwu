@@ -3,7 +3,39 @@
 	<Events>
 		<WorkUnit Name="Animals" ID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" OwnerID="{B86E5743-4A49-49A9-9E25-918B74C44D57}" PersistMode="Nested">
 			<ChildrenList>
-				<Event Name="Play_Seagulls" ID="{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}"/>
+				<Event Name="Play_Seagulls" ID="{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}">
+					<ChildrenList>
+						<Action Name="" ID="{FD486F11-3DEB-4455-8515-C8115E2561E2}" ShortID="595286576">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seagulls" ID="{F933DAD2-D2B2-48F4-AE34-4D26BA579F0B}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Wale" ID="{477C8097-1DA0-46BE-B54D-FB5E6A112819}">
+					<ChildrenList>
+						<Action Name="" ID="{35F80536-52CD-4B22-A64C-CE50EFF366C6}" ShortID="97365477">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wale" ID="{2A3FBF8F-5B37-4086-8148-A48B1CDEE911}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Seal" ID="{D221093C-7554-406E-B723-83E64F80C657}">
+					<ChildrenList>
+						<Action Name="" ID="{B656B448-9366-4A59-A894-DE78556119AC}" ShortID="1055723433">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seal" ID="{4D6A1111-26E1-44CB-B208-472E253B5496}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

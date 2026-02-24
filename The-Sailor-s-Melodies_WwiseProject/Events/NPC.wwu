@@ -14,6 +14,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="NPC_Greet" ID="{FED17282-2D46-4952-8149-077ACD886610}">
+					<ChildrenList>
+						<Action Name="" ID="{6F2B9DAD-F091-43C9-8568-9C61406005DF}" ShortID="922183390">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="NPC_Greet" ID="{C5AA55B0-2689-40CE-89A9-BF19E3039A24}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

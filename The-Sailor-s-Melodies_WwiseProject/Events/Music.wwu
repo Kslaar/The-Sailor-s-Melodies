@@ -56,6 +56,17 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{D073DDFC-E758-41B3-9961-A5C3FF22A97C}" ShortID="195053917">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="World_Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 			</ChildrenList>

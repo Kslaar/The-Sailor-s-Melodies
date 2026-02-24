@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 155901556008856983}
   - component: {fileID: 7868888945201228822}
   - component: {fileID: 6020134060774071554}
+  - component: {fileID: 4613826570667661764}
   m_Layer: 5
   m_Name: Dialogue Button Prefab
   m_TagString: Untagged
@@ -134,6 +135,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4613826570667661764}
+        m_TargetAssemblyTypeName: NPCSoundManager, Assembly-CSharp
+        m_MethodName: PlayGreet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6020134060774071554
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +162,52 @@ MonoBehaviour:
   playHoverSound: 0
   playClickSound: 1
   playConfirmSound: 0
+--- !u!114 &4613826570667661764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3713481697155024748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd5c930fe61864e5e95ac5db07e26432, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCSoundManager
+  greetEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cf04d797b595441bb8c9de2739534c26, type: 2}
+  idleEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  happyEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  concernedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  npcTypeSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3cdb455903b0545f792dfb23e0a087fb, type: 2}
+  voiceTypeSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3cdb455903b0545f792dfb23e0a087fb, type: 2}
+  npcMoodState:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &4589063584587254131
 GameObject:
   m_ObjectHideFlags: 0

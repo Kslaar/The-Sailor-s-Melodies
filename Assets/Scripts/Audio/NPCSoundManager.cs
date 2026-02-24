@@ -10,6 +10,7 @@ public class NPCSoundManager : MonoBehaviour
 
     [Header("Wwise Switches / States")]
     public AK.Wwise.Switch npcTypeSwitch;
+    public AK.Wwise.Switch voiceTypeSwitch;
     public AK.Wwise.State npcMoodState;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -17,6 +18,7 @@ public class NPCSoundManager : MonoBehaviour
     {
         // Set NPC type on Spawn
         npcTypeSwitch?.SetValue(gameObject);
+        voiceTypeSwitch?.SetValue(gameObject);
         npcMoodState?.SetValue();
 
         

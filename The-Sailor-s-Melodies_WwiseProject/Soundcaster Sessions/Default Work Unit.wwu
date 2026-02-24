@@ -10,10 +10,6 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Vadi Sound - Faraway Land - Flapping Cloth Sail Boat Movement" ID="{7221368F-DF82-4957-9F66-675E770F2179}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="Pull Chord" ID="{F6672D41-7A5F-42C6-A9FC-5B5AFA505379}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -30,7 +26,7 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Fusehive - Ship Sail Opening" ID="{58246C35-2A6E-4CF5-98D5-EA98499459D4}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+							<ObjectRef Name="Sail_Boost" ID="{58246C35-2A6E-4CF5-98D5-EA98499459D4}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 							<Position X="4" Y="0"/>
 						</Module>
 						<Module>

@@ -3,11 +3,16 @@ Event	ID	Name			Wwise Object Path	Notes
 
 Switch Group	ID	Name			Wwise Object Path	Notes
 	1445037870	MusicSwitch			\Default Work Unit\MusicSwitch	
+	2495262365	RaceState			\Default Work Unit\RaceState	
 
 Switch	ID	Name	Switch Group			Notes
 	2402435976	Island_01	MusicSwitch			
 	2582085496	Exploration	MusicSwitch			
 	2607556080	Menu	MusicSwitch			
+	104887399	Racing	RaceState			
+	1505888634	Countdown	RaceState			
+	1874288895	Idle	RaceState			
+	2555741448	Finish	RaceState			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1021618141	MusicState			\Default Work Unit\MusicState	
