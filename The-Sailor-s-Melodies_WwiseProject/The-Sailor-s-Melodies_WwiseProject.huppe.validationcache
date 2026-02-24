@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="133">
-	<ValidationCacheItem File="C:\Users\huppe\AppData\Roaming\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1771344898" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\AppData\Roaming\Audiokinetic\MediaPool\2\MediaPoolQuery.wsettings" DateLow="1771878428" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1770552857" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Attenuations\Factory Attenuations.wwu" DateLow="1769165183" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Busses\Default Work Unit.wwu" DateLow="1771619134" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Busses\Default Work Unit.wwu" DateLow="1771960861" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Ambience.wwu" DateLow="1771344958" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Animals.wwu" DateLow="1771619134" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Animals.wwu" DateLow="1771960861" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Default Work Unit.wwu" DateLow="1770419849" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Music.wwu" DateLow="1771619134" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\NPC.wwu" DateLow="1771619134" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Player.wwu" DateLow="1771619134" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Quest.wwu" DateLow="1771619134" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Music.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\NPC.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Player.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\Quest.wwu" DateLow="1771873080" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\SFX.wwu" DateLow="1771344958" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Containers\UI.wwu" DateLow="1770589891" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1770405597" DateHigh="0"/>
@@ -20,12 +20,12 @@
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1770405597" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1770405596" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Effects\Factory Effects.wwu" DateLow="1771344958" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Animals.wwu" DateLow="1771619134" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Animals.wwu" DateLow="1771960861" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Default Work Unit.wwu" DateLow="1771619134" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Music.wwu" DateLow="1771112565" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\NPC.wwu" DateLow="1771274236" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Music.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\NPC.wwu" DateLow="1771960861" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Player.wwu" DateLow="1771027869" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Quest.wwu" DateLow="1771619134" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\Quest.wwu" DateLow="1771873080" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\SFX.wwu" DateLow="1771344958" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Events\UI.wwu" DateLow="1770419849" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1771619134" DateHigh="0"/>
@@ -37,11 +37,11 @@
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1770405596" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Queries\Factory Queries.wwu" DateLow="1769165183" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Sidechain Mixes\Default Work Unit.wwu" DateLow="1770405597" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1771619134" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1771003363" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1771960861" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\States\Default Work Unit.wwu" DateLow="1771027869" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1771112565" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\The-Sailor-s-Melodies_WwiseProject.huppe.wsettings" DateLow="1771344958" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1771960861" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\The-Sailor-s-Melodies_WwiseProject.huppe.wsettings" DateLow="1771878428" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\The-Sailor-s-Melodies_WwiseProject.wproj" DateLow="1770419966" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1770405597" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\huppe\Documents\GitHub\The-Sailor-s-Melodies\The-Sailor-s-Melodies_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1770405597" DateHigh="0"/>
