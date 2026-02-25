@@ -24,29 +24,26 @@ public class RaceManager : MonoBehaviour
     private float timePassed;
     private float outOfBoundsTimer;
 
-    // Player freeze
     private BoatControl boat;
     private Rigidbody rb;
     private bool boatEnabled;
     private bool rbKinematic;
 
+    public enum ArrowMode
+    {
+        PointToNextCheckpoint,
+        PointFromBoatToTarget,
+    }
+
     [Header("Checkpoint FX")]
     [SerializeField] private GameObject checkpointArrowFxPrefab;
-
-    [Tooltip("Offset des FX relativ zur berechneten Zielposition (z.B. +Y damit es nicht im Wasser steckt).")]
     [SerializeField] private Vector3 fxOffset = new Vector3(0f, 1.2f, 0f);
-
-    [Tooltip("Skalierung des FX im Worldspace. (Setze ParticleSystem ScalingMode auf Hierarchy!)")]
     [SerializeField] private float fxScale = 3.0f;
-
-    [Tooltip("Wenn true: benutze eine feste Y-Höhe statt Collider-MinY (gut wenn Wasser immer gleiche Höhe hat).")]
     [SerializeField] private bool useFixedY = false;
-
-    [Tooltip("Feste Y-Höhe, wenn useFixedY = true.")]
     [SerializeField] private float fixedY = 0f;
 
-    [SerializeField] private bool faceBoat = true;
-
+    [SerializeField] private ArrowMode arrowMode = ArrowMode.PointToNextCheckpoint;
+    [SerializeField] private float yawOffsetDegrees = 0f;
     private GameObject checkpointArrowFxInstance;
     private ParticleSystem[] fxParticles;
 
@@ -346,7 +343,7 @@ public class RaceManager : MonoBehaviour
         var b = col.bounds;
         var center = b.center;
 
-        float y = useFixedY ? fixedY : b.min.y; // <- FIX: nicht mehr bounds.center.y (zu hoch)
+        float y = useFixedY ? fixedY : b.min.y;
         return new Vector3(center.x, y, center.z) + fxOffset;
     }
 
@@ -357,7 +354,6 @@ public class RaceManager : MonoBehaviour
 
         bool hasCheckpoints = currentCourse.checkpoints != null && currentCourse.checkpoints.Count > 0;
         bool allCheckpointsDone = hasCheckpoints && nextCheckpoint >= currentCourse.checkpoints.Count;
-
         Vector3 targetPos;
 
         if (!allCheckpointsDone && hasCheckpoints)
@@ -373,21 +369,50 @@ public class RaceManager : MonoBehaviour
                 checkpointArrowFxInstance.SetActive(false);
                 return;
             }
-
             targetPos = GetFxTargetPos(currentCourse.finishTrigger);
         }
 
         checkpointArrowFxInstance.transform.position = targetPos;
-
         checkpointArrowFxInstance.transform.localScale = Vector3.one * fxScale;
 
-        if (faceBoat && boat != null)
-        {
-            Vector3 look = boat.transform.position - checkpointArrowFxInstance.transform.position;
-            look.y = 0f;
+        Vector3 forwardDir = Vector3.zero;
 
-            if (look.sqrMagnitude > 0.001f)
-                checkpointArrowFxInstance.transform.rotation = Quaternion.LookRotation(-look.normalized, Vector3.up);
+        if (arrowMode == ArrowMode.PointToNextCheckpoint)
+        {
+            // Pfeil zeigt von aktuellem Ziel (Checkpoint an Stelle [i]) zum nächsten Ziel (Checkpoint[i+1])
+            Vector3 nextPos;
+
+            if (!allCheckpointsDone && hasCheckpoints)
+            {
+                int nextIndex = nextCheckpoint + 1;
+
+                if (nextIndex < currentCourse.checkpoints.Count && currentCourse.checkpoints[nextIndex] != null)
+                    nextPos = GetFxTargetPos(currentCourse.checkpoints[nextIndex]);
+                else if (currentCourse.finishTrigger != null)
+                    nextPos = GetFxTargetPos(currentCourse.finishTrigger);
+                else
+                    nextPos = targetPos; 
+            }
+            else
+            {
+                nextPos = targetPos;
+            }
+
+            forwardDir = (nextPos - targetPos);
+        }
+        else // ArrowMode.PointFromBoatToTarget
+        {
+            if (boat != null)
+                forwardDir = (targetPos - boat.transform.position);
+        }
+
+        forwardDir.y = 0f;
+
+        if (forwardDir.sqrMagnitude > 0.001f)
+        {
+            var rot = Quaternion.LookRotation(forwardDir.normalized, Vector3.up);
+            rot *= Quaternion.Euler(0f, yawOffsetDegrees, 0f); // Prefab-Ausrichtung korrigieren
+            checkpointArrowFxInstance.transform.rotation = rot;
         }
 
         checkpointArrowFxInstance.SetActive(true);
