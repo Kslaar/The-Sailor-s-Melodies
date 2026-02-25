@@ -1,7 +1,5 @@
 using System.Collections;
 using AK.Wwise;
-using NUnit.Framework;
-using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class RaceManager : MonoBehaviour
@@ -25,16 +23,27 @@ public class RaceManager : MonoBehaviour
     private float timePassed;
     private float outOfBoundsTimer;
 
-    // Wichtig für den Playerfreeze
+    // Player freeze
     private BoatControl boat;
     private Rigidbody rb;
     private bool boatEnabled;
     private bool rbKinematic;
 
-
     [Header("Checkpoint FX")]
     [SerializeField] private GameObject checkpointArrowFxPrefab;
-    [SerializeField] private Vector3 fxOffset = new Vector3(0f, 2f, 0f);
+
+    [Tooltip("Offset des FX relativ zur berechneten Zielposition (z.B. +Y damit es nicht im Wasser steckt).")]
+    [SerializeField] private Vector3 fxOffset = new Vector3(0f, 1.2f, 0f);
+
+    [Tooltip("Skalierung des FX im Worldspace. (Setze ParticleSystem ScalingMode auf Hierarchy!)")]
+    [SerializeField] private float fxScale = 3.0f;
+
+    [Tooltip("Wenn true: benutze eine feste Y-Höhe statt Collider-MinY (gut wenn Wasser immer gleiche Höhe hat).")]
+    [SerializeField] private bool useFixedY = false;
+
+    [Tooltip("Feste Y-Höhe, wenn useFixedY = true.")]
+    [SerializeField] private float fixedY = 0f;
+
     [SerializeField] private bool faceBoat = true;
 
     private GameObject checkpointArrowFxInstance;
@@ -80,17 +89,17 @@ public class RaceManager : MonoBehaviour
             return false;
         }
         rb = boat.GetComponent<Rigidbody>();
-        
+
         var docking = FindFirstObjectByType<BoatDockingController>();
         if (docking != null && docking.IsDocked)
             docking.UndockForRace();
-        
-        // Teleport
+
         TeleportToStart();
+
         EnsureCheckpointFx();
         UpdateCheckpointFx();
-        StartCoroutine(CountdownThenStartRace());
 
+        StartCoroutine(CountdownThenStartRace());
         return true;
     }
 
@@ -114,12 +123,9 @@ public class RaceManager : MonoBehaviour
     private IEnumerator CountdownThenStartRace()
     {
         state = RaceState.Countdown;
-        
-        //Wwise: World Music stoppen
+
+        // Wwise: World Music stoppen
         GlobalMusicManager.Instance.StopWorldMusic();
-
-
-        //Wwise MusicManager
         GlobalMusicManager.Instance.SetRaceState("Countdown");
 
         for (int t = 3; t >= 1; t--)
@@ -132,8 +138,6 @@ public class RaceManager : MonoBehaviour
         FreezePlayer(false);
 
         state = RaceState.Racing;
-
-        //Wwise MusicManager
         GlobalMusicManager.Instance.SetRaceState("Racing");
     }
 
@@ -144,14 +148,12 @@ public class RaceManager : MonoBehaviour
         timePassed += Time.deltaTime;
         OnTimeChanged?.Invoke(timePassed);
 
-        // Maximale Zeit, damit das Spiel auch Idiotensicher ist 
         if (timePassed > currentCourse.maxTimeSeconds)
         {
             Fail("MaxTime");
             return;
         }
 
-        // Maximale Distanz zur Rennstrecke, damit das SPiel auc Idiotensicher ist
         float dist = DistanceToCourseAnchors(boat.transform.position, currentCourse);
         if (dist > currentCourse.maxDistanceFromIsland)
         {
@@ -175,17 +177,15 @@ public class RaceManager : MonoBehaviour
         foreach (var a in course.GetAnchorPositions())
         {
             float d = Vector3.Distance(pos, a);
-
-            if (d < minDistance)
-                minDistance = d;
+            if (d < minDistance) minDistance = d;
         }
         return minDistance;
     }
 
     public void OnTriggerHit(string courseID, RaceTrigger.TriggerType trigger, int checkpointIndex)
     {
-        Debug.Log($"[RaceManager] OnTriggerHit: courseID={courseID} trigger={trigger} idx={checkpointIndex} state={state} next={nextCheckpoint} current={(currentCourse? currentCourse.courseID:"NULL")}");
-        
+        Debug.Log($"[RaceManager] OnTriggerHit: courseID={courseID} trigger={trigger} idx={checkpointIndex} state={state} next={nextCheckpoint} current={(currentCourse ? currentCourse.courseID : "NULL")}");
+
         if (currentCourse == null) return;
         if (state != RaceState.Racing) return;
         if (courseID != currentCourse.courseID) return;
@@ -193,27 +193,22 @@ public class RaceManager : MonoBehaviour
         if (trigger == RaceTrigger.TriggerType.Checkpoint)
         {
             if (checkpointIndex != nextCheckpoint) return;
+
             nextCheckpoint++;
             UpdateCheckpointFx();
 
-            //Wwise SFX
             AkUnitySoundEngine.PostEvent("Play_Checkpoint", gameObject);
             return;
-
-           
         }
 
         if (trigger == RaceTrigger.TriggerType.Finish)
         {
-            // Muss ja auch schon logisch sein: Finish zählt nur, wenn ALLE Checkpoints getriggered wurden
             if (currentCourse.checkpoints != null && currentCourse.checkpoints.Count > 0)
             {
                 if (nextCheckpoint < currentCourse.checkpoints.Count) return;
             }
 
-            //Wwise SFX
             AkUnitySoundEngine.PostEvent("Play_Finish", gameObject);
-
             Finish();
         }
     }
@@ -222,7 +217,6 @@ public class RaceManager : MonoBehaviour
     {
         state = RaceState.Finished;
 
-        //wwise World Music wieder Starten
         GlobalMusicManager.Instance.StartWorldMusic();
         GlobalMusicManager.Instance.SetRaceState("Finished");
         FreezePlayer(true);
@@ -233,8 +227,7 @@ public class RaceManager : MonoBehaviour
             OnRaceFinished?.Invoke(currentCourse.courseID, timePassed);
         else
             OnRaceFailed?.Invoke("TooSlow");
-        // ResetRaceAfterDelay();
-        // GameStateManager.Instance?.TryExitRace("Race finished");
+
         StartCoroutine(CoroutineReturnToQuestgiver(success));
     }
 
@@ -242,13 +235,12 @@ public class RaceManager : MonoBehaviour
     {
         Debug.LogWarning($"[RaceManager] Race failed: {reason}");
         state = RaceState.Failed;
-        //wwise World Music wieder starten
+
         GlobalMusicManager.Instance.StartWorldMusic();
         GlobalMusicManager.Instance.SetRaceState("Idle");
         FreezePlayer(true);
+
         OnRaceFailed?.Invoke(reason);
-        // ResetRaceAfterDelay();
-        // GameStateManager.Instance?.TryExitRace("Race failed");
         StartCoroutine(CoroutineReturnToQuestgiver(success: false));
     }
 
@@ -256,7 +248,6 @@ public class RaceManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        // Teleport zum ReturnPoint (optional)
         if (currentCourse != null && currentCourse.returnPoint != null && rb != null)
         {
             rb.linearVelocity = Vector3.zero;
@@ -265,7 +256,6 @@ public class RaceManager : MonoBehaviour
             rb.rotation = currentCourse.returnPoint.rotation;
         }
 
-        // Quest-State updaten
         if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
             QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
 
@@ -295,12 +285,11 @@ public class RaceManager : MonoBehaviour
         ResetRace();
     }
 
-
     private void ResetRace()
     {
-        if (currentCourse != null) 
+        if (currentCourse != null)
             currentCourse.SetRaceTriggersActive(false);
-            
+
         currentCourse = null;
         nextCheckpoint = 0;
         timePassed = 0f;
@@ -329,13 +318,12 @@ public class RaceManager : MonoBehaviour
         else
         {
             boat.enabled = boatEnabled;
-
             if (rb != null) rb.isKinematic = rbKinematic;
         }
     }
 
     /////////////////////////////////////////////////////////////
-    
+
     private void EnsureCheckpointFx()
     {
         if (checkpointArrowFxPrefab == null) return;
@@ -345,9 +333,17 @@ public class RaceManager : MonoBehaviour
             checkpointArrowFxInstance = Instantiate(checkpointArrowFxPrefab);
             checkpointArrowFxInstance.name = "[Race] CheckpointArrowFX";
 
-            // Particles cachen (falls ParticleSystem)
             fxParticles = checkpointArrowFxInstance.GetComponentsInChildren<ParticleSystem>(true);
         }
+    }
+
+    private Vector3 GetFxTargetPos(Collider col)
+    {
+        var b = col.bounds;
+        var center = b.center;
+
+        float y = useFixedY ? fixedY : b.min.y; // <- FIX: nicht mehr bounds.center.y (zu hoch)
+        return new Vector3(center.x, y, center.z) + fxOffset;
     }
 
     private void UpdateCheckpointFx()
@@ -355,37 +351,41 @@ public class RaceManager : MonoBehaviour
         if (checkpointArrowFxInstance == null) return;
         if (currentCourse == null) { checkpointArrowFxInstance.SetActive(false); return; }
 
-        // Wenn alle CPs durch sind, optional auf Finish zeigen oder ausblenden
         bool hasCheckpoints = currentCourse.checkpoints != null && currentCourse.checkpoints.Count > 0;
         bool allCheckpointsDone = hasCheckpoints && nextCheckpoint >= currentCourse.checkpoints.Count;
 
         Vector3 targetPos;
+
         if (!allCheckpointsDone && hasCheckpoints)
         {
             var cp = currentCourse.checkpoints[nextCheckpoint];
             if (cp == null) { checkpointArrowFxInstance.SetActive(false); return; }
-            targetPos = cp.bounds.center;
+            targetPos = GetFxTargetPos(cp);
         }
         else
         {
-            // Nach letztem Checkpoint: auf Finish (oder returnPoint) zeigen – oder ausmachen
             if (currentCourse.finishTrigger == null)
             {
                 checkpointArrowFxInstance.SetActive(false);
                 return;
             }
-            targetPos = currentCourse.finishTrigger.bounds.center;
+
+            // Finish ist auch ein Collider
+            targetPos = GetFxTargetPos(currentCourse.finishTrigger);
         }
 
-        checkpointArrowFxInstance.transform.position = targetPos + fxOffset;
+        checkpointArrowFxInstance.transform.position = targetPos;
+
+        // FIX: Größe einstellbar
+        checkpointArrowFxInstance.transform.localScale = Vector3.one * fxScale;
 
         if (faceBoat && boat != null)
         {
             Vector3 look = boat.transform.position - checkpointArrowFxInstance.transform.position;
             look.y = 0f;
+
             if (look.sqrMagnitude > 0.001f)
                 checkpointArrowFxInstance.transform.rotation = Quaternion.LookRotation(-look.normalized, Vector3.up);
-            // (-look) => Pfeil “zeigt weg vom Spieler” Richtung Ziel; wenn dein Pfeil anders herum ist, nimm look.normalized
         }
 
         checkpointArrowFxInstance.SetActive(true);

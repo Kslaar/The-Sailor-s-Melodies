@@ -55763,7 +55763,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RaceManager
   checkpointArrowFxPrefab: {fileID: 1294733841131794, guid: cd89c56a1fcd0534a946f51a4cf9e51b, type: 3}
-  fxOffset: {x: 0, y: 2, z: 0}
+  fxOffset: {x: 0, y: 0.2, z: 0}
+  fxScale: 5
+  useFixedY: 0
+  fixedY: 0
   faceBoat: 1
 --- !u!1001 &1199327057
 PrefabInstance:
@@ -79103,7 +79106,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1771836392
 Transform:
   m_ObjectHideFlags: 0
@@ -80970,7 +80973,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799856492}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 428eaffe303d14267871335cf011bcb2, type: 3}
   m_Name: 
@@ -80980,7 +80983,7 @@ MonoBehaviour:
   returnPoint: {fileID: 1869213080}
   questGiverDialogue: {fileID: 1799856498}
   questID: race_island_1
-  startPoint: {fileID: 1771836392}
+  startPoint: {fileID: 2045937607}
   finishTrigger: {fileID: 662337896}
   checkpoints:
   - {fileID: 16846717}
