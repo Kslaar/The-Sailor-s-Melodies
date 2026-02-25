@@ -6,6 +6,7 @@ public class UIButtonSound : MonoBehaviour
     public bool playHoverSound = true;
     public bool playClickSound = true;
     public bool playConfirmSound = true;
+    public bool playBackSound = true;
 
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -22,6 +23,8 @@ public class UIButtonSound : MonoBehaviour
 
         if (playConfirmSound)
             UIAudioManager.Instance.PlayConfirm();
+        if (playBackSound)
+            UIAudioManager.Instance.PlayBack();
 
     }
 

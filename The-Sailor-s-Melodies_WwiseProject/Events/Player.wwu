@@ -37,6 +37,16 @@
 				</Event>
 				<Event Name="stop_Sailing" ID="{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}">
 					<ChildrenList>
+						<Action Name="" ID="{30D01045-84F2-4B34-B14D-C3FB869C095A}" ShortID="842864043">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="23"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Menu" ID="{50D43099-8539-4B9E-9560-2056CC1E6CD0}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{77BBF808-AA49-4633-8F71-6D2ABA191E33}" ShortID="1010843446">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
@@ -96,7 +106,7 @@
 					<ChildrenList>
 						<Action Name="" ID="{745B8E7B-AEF2-4C57-AD01-04E9E1ECA41C}" ShortID="1016317839">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="0.5"/>
+								<Property Name="Delay" Type="Real64" Value="0.25"/>
 								<Property Name="FadeInCurve" Type="int16" Value="1"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.25"/>
 							</PropertyList>

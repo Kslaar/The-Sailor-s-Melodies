@@ -30,6 +30,7 @@
 						<ObjectRef Name="Play_Horn_D" ID="{BCB2406C-E6B3-45A1-9531-26575D9389ED}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_A" ID="{B921FB1C-1BA1-4625-AB6A-503EFF91B54E}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_MotorStop" ID="{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RaceStart" ID="{434D421F-30A3-4697-A1D7-489122AB3751}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Wale" ID="{477C8097-1DA0-46BE-B54D-FB5E6A112819}" WorkUnitID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_07" ID="{EAE54274-FC78-4714-A605-96699E0625C4}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_CMaj" ID="{ED482D53-E0C2-47BB-BD9B-C9A35350144C}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>

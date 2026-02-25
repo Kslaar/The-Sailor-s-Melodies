@@ -184,6 +184,28 @@
 						</Sound>
 					</ChildrenList>
 				</Folder>
+				<Sound Name="GunCannon 6025_32_1" ID="{0FE3413D-3D00-4CD0-8631-BDCF28397AF2}" ShortID="1039296921">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="GunCannon 6025_32_1" ID="{85870C90-BCD4-4CED-B7ED-66D537D3513F}">
+							<Language>SFX</Language>
+							<AudioFile>GunCannon 6025_32_1.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="157702367"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="GunCannon 6025_32_1" ID="{85870C90-BCD4-4CED-B7ED-66D537D3513F}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

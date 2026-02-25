@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{4334A222-2113-15AC-30CB-36ABD45E135B}",
+    "Hash": "{619E8874-4C0D-DB04-5483-A5F9128C9567}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "A1/{A1235264-F7D5-293D-BF82-8129230D603A}.wem"
+      "CachePath": "79/{79B596DD-EBB7-EC4D-43B5-510C9A5255DC}.wem"
      },
      {
       "Id": "110974684",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "5A/{5A653322-22D8-6B92-574E-C5D98025B79A}.wem"
+      "CachePath": "B9/{B90DF1BC-B5C8-F98E-10B0-20FED5F07914}.wem"
      },
      {
       "Id": "145772972",
@@ -126,6 +126,14 @@
       "Location": "Memory",
       "ShortName": "H_Voice_Male_01.wav",
       "CachePath": "86/{86975AEE-74F1-06D3-4978-8DC64E0B3FD0}.wem"
+     },
+     {
+      "Id": "157702367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GunCannon 6025_32_1.wav",
+      "CachePath": "DC/{DC290369-E50C-DEC6-CC10-3189E140E86A}.wem"
      },
      {
       "Id": "175406919",
@@ -413,7 +421,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "69/{6989D09F-36A3-3C09-2686-406E0ECE45B1}.wem"
+      "CachePath": "30/{30E64340-8D70-BD48-EE80-D87CCA622AEA}.wem"
      },
      {
       "Id": "627587221",
@@ -421,7 +429,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles.wav",
-      "CachePath": "E5/{E52CDCCA-21FA-BFE7-B788-ACF530E4FA4E}.wem"
+      "CachePath": "6F/{6F0A0C03-B328-AB7C-8363-E8C55DB86103}.wem"
      },
      {
       "Id": "662864355",
@@ -429,7 +437,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "09/{09D4A89A-C1E7-6F50-A672-41B1E8787B42}.wem"
+      "CachePath": "2C/{2C130EDC-75B3-7D38-CD12-09F119A0559D}.wem"
      },
      {
       "Id": "694199021",
@@ -1304,6 +1312,20 @@
       ]
      },
      {
+      "Id": "3173738435",
+      "Name": "Play_RaceStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_RaceStart",
+      "GUID": "{434D421F-30A3-4697-A1D7-489122AB3751}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.64",
+      "DurationMax": "4.64",
+      "MediaRefs": [
+       {
+        "Id": "157702367"
+       }
+      ]
+     },
+     {
       "Id": "1530826435",
       "Name": "Play_Sailing",
       "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Sailing",
@@ -1675,6 +1697,6 @@
     ]
    }
   ],
-  "FileHash": "{D685ED37-8CA1-D8A8-29DF-12D377D556B1}"
+  "FileHash": "{0A645D0C-5CC5-651D-2129-CBDFF51CD66C}"
  }
 }
