@@ -125,11 +125,16 @@
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{3AAFEE55-EFFC-4653-B33C-59C5962E7A25}">
 											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Main_Theme" ID="{B3865C51-138C-4EBA-A016-81CF273638FC}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+												</Reference>
 												<Reference Name="SourceContextObject">
 													<ObjectRef Name="music_village" ID="{3677CD9B-C035-418F-AC92-8399CA8E3C69}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 												</Reference>
@@ -143,15 +148,27 @@
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{42B78D8E-1F19-4762-B93C-B5B103F41AFE}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
 											</TransitionInfo>
 										</MusicTransition>
 										<MusicTransition Name="Transition" ID="{610842D2-F73C-462B-98AA-D4C22B9010DB}">
 											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="Main_Theme" ID="{B3865C51-138C-4EBA-A016-81CF273638FC}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+												</Reference>
 												<Reference Name="SourceContextObject">
 													<ObjectRef Name="Music_exploration 01" ID="{DE9749F6-E1D5-4EA6-9D60-3420F0EE9905}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 												</Reference>
@@ -165,6 +182,13 @@
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{769DC9EC-F2EB-4824-898B-0D7FAF36CE6C}">
+														<PropertyList>
+															<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
@@ -647,7 +671,7 @@
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{82FA6EAF-C812-4AB2-9C96-C103749A0370}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
+							<PluginInnerObject Name="" ID="{9459C100-BEFD-4D9F-911C-0A110A6259AB}" PluginName="MusicArgumentsSlot" CompanyID="0" PluginID="89">
 								<ReferenceList>
 									<Reference Name="Argument">
 										<ObjectRef Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>
@@ -666,7 +690,7 @@
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>
-										<PluginInnerObject Name="" ID="{9D3DC50C-EE2E-4C21-A113-408AB79076D0}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+										<PluginInnerObject Name="" ID="{38AD7680-9581-4911-BB8C-9F366C90B54D}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>
@@ -691,7 +715,7 @@
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>
-										<PluginInnerObject Name="" ID="{6F6BD9D1-9A86-4E09-A6E3-33DF58D8AD2E}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+										<PluginInnerObject Name="" ID="{632C43B8-B00A-43CE-8ACE-E3DD9448E414}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>
@@ -716,7 +740,7 @@
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>
-										<PluginInnerObject Name="" ID="{29B7A67A-28E9-43B7-ABE1-D32A88700D63}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+										<PluginInnerObject Name="" ID="{D72F5DA8-D511-433B-9312-169F49BDD4AB}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>
@@ -741,7 +765,7 @@
 												</Reference>
 											</ReferenceList>
 										</PluginInnerObject>
-										<PluginInnerObject Name="" ID="{5C0F2AA0-0993-4616-A086-5164E1FF677B}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
+										<PluginInnerObject Name="" ID="{B26D1211-1281-47D9-910D-08C92411A966}" PluginName="EntryPathSlot" CompanyID="0" PluginID="88">
 											<ReferenceList>
 												<Reference Name="EntryPathObject">
 													<ObjectRef Name="RaceState" ID="{26B7EA62-3887-4368-B040-38A04AD802D5}" WorkUnitID="{9BCD6CEE-C689-444D-A179-749DE285DC2F}"/>

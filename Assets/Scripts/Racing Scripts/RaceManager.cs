@@ -140,6 +140,8 @@ public class RaceManager : MonoBehaviour
         FreezePlayer(false);
 
         state = RaceState.Racing;
+        //WWise Race Start Signal abspielen
+        AkUnitySoundEngine.PostEvent("Play_RaceStart", gameObject);
         GlobalMusicManager.Instance.SetRaceState("Racing");
     }
 

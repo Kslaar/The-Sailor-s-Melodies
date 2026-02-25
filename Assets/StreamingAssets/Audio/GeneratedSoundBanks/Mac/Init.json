@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{596B5C22-B522-2A12-1AE7-DCD0546AC341}",
+    "Hash": "{3B147CCA-ADCB-8AE5-7FFD-A8464690C583}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -60,6 +60,12 @@
       "Name": "SFX",
       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\SFX",
       "GUID": "{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"
+     },
+     {
+      "Id": "662417162",
+      "Name": "NPC",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\NPC",
+      "GUID": "{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"
      },
      {
       "Id": "1795056175",
@@ -332,6 +338,6 @@
     ]
    }
   ],
-  "FileHash": "{3AA81213-7512-7247-49A3-0DEBF25604B7}"
+  "FileHash": "{048FCA5B-FDBA-3080-CF1F-751A199DA43D}"
  }
 }

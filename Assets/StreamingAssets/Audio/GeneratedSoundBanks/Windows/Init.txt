@@ -23,6 +23,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master\Effects\SFX	
+	662417162	NPC			\Default Work Unit\Master\Effects\NPC	
 	1795056175	Boat			\Default Work Unit\Master\Effects\Boat	
 	1942696649	Effects			\Default Work Unit\Master\Effects	
 	2652995606	Keyboard_Hint			\Default Work Unit\Master\Effects\Keyboard_Hint	

@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "The-Sailor-s-Melodies_repo.slnx"
+    "dotnet.defaultSolution": "The-Sailor-s-Melodies.slnx"
 }

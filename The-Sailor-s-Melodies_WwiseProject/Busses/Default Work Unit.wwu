@@ -51,6 +51,7 @@
 									</ObjectLists>
 								</Bus>
 								<Bus Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"/>
+								<Bus Name="NPC" ID="{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"/>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

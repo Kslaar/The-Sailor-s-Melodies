@@ -161,6 +161,7 @@ MonoBehaviour:
   playHoverSound: 0
   playClickSound: 1
   playConfirmSound: 0
+  playBackSound: 0
 --- !u!1 &4589063584587254131
 GameObject:
   m_ObjectHideFlags: 0

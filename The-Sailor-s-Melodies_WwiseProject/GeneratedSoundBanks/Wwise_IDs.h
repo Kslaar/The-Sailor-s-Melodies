@@ -40,6 +40,7 @@ namespace AK
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
         static const AkUniqueID PLAY_QUEST_DIRECTION = 851505750U;
+        static const AkUniqueID PLAY_RACESTART = 3173738435U;
         static const AkUniqueID PLAY_SAILING = 1530826435U;
         static const AkUniqueID PLAY_SEAGULLS = 4281176146U;
         static const AkUniqueID PLAY_SEAL = 4262365201U;
@@ -163,6 +164,7 @@ namespace AK
         static const AkUniqueID KEYBOARD_HINT = 2652995606U;
         static const AkUniqueID MASTER = 4056684167U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID NPC = 662417162U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 
