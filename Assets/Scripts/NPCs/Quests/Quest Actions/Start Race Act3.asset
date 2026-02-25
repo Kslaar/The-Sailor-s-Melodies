@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Start Race Act3
   m_EditorClassIdentifier: Assembly-CSharp::StartRaceAction
   courseID: race_island_3
-  questIDToStart: racing_3
+  questIDToStart: race_island_3

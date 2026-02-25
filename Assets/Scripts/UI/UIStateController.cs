@@ -49,44 +49,48 @@ public class UIStateController : MonoBehaviour
     private void Apply(GameState state)
     {
         SetActiveSafe(sailingHUD, false);
-        SetActiveSafe(dockUI, false);
+        // SetActiveSafe(dockUI, false);
         SetActiveSafe(dialogueUIRoot, false);
         if (questlogUI != null) questlogUI.Close();
         SetActiveSafe(settingsUI, false);
         SetActiveSafe(raceUI, false);
 
-        switch(state)
+        HideAllDockUIs();
+
+        switch (state)
         {
             case GameState.Sailing:
                 SetActiveSafe(sailingHUD, true);
                 break;
+
             case GameState.Docked:
-                SetActiveSafe(dockUI, true);
                 var dockCtrl = FindFirstObjectByType<BoatDockingController>();
                 if (dockCtrl != null && dockCtrl.IsDocked && dockCtrl.CurrentDock != null)
-                {
                     dockCtrl.CurrentDock.dockUI?.Show(dockCtrl.CurrentDock);
-                }
                 break;
+
             case GameState.Dialogue:
                 SetActiveSafe(dialogueUIRoot, true);
                 break;
+
             case GameState.QuestLog:
                 if (questlogUI != null) questlogUI.Open();
                 break;
+
             case GameState.Paused:
                 SetActiveSafe(settingsUI, true);
                 break;
+
             case GameState.Racing:
                 SetActiveSafe(raceUI, true);
                 break;
         }
+    }
 
-        // Ist DialoguePanel jetzt endlich aktiv?!
-        if (dialogueUIRoot != null)
-        {
-            Debug.Log($"[UIStateController] Apply {state} | DialogueRoot activeInHierarchy={dialogueUIRoot.activeInHierarchy}");
-        }
+    private void HideAllDockUIs()
+    {
+        foreach (var ui in FindObjectsByType<DockInteractionUI>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+            ui?.Hide();
     }
 
     private static void SetActiveSafe(GameObject go, bool active)

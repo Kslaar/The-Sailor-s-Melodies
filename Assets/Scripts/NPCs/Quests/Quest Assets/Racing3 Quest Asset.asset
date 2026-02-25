@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
   m_Name: Racing3 Quest Asset
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: racing_3
+  questID: race_island_3
   title: Race no.3
   description: The same sailor again. Another Race? You bet!
   objectives:

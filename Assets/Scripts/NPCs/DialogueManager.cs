@@ -47,7 +47,6 @@ public class DialogueManager : MonoBehaviour
 
     private void BindUIFromScene()
     {
-        // Erst versuchen über UIStateController
         var usc = FindFirstObjectByType<UIStateController>(FindObjectsInactive.Include);
         if (usc != null)
         {
@@ -59,7 +58,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        // Fallback: direkt suchen
         ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
     }
 

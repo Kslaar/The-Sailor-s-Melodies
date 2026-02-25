@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
   m_Name: Racing4 Quest Asset
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: racing_4
+  questID: race_island_4
   title: Race no.4
   description: Apparently I have to impress her one last time. Maybe another upgrade
     on my engine will let me pass the serpents pass...

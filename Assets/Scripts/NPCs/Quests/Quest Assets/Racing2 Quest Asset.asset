@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
   m_Name: Racing2 Quest Asset
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: racing_2
+  questID: race_island_2
   title: Race no.2
   description: I met the professional sailor again. The next challenge is a race
     around this other island - Now I have the engine to get more edge in this race

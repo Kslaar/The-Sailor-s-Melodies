@@ -185,6 +185,7 @@ public class DialogueUI : MonoBehaviour
             btn.onClick.RemoveAllListeners();
             btn.onClick.AddListener(() =>
             {
+                Debug.Log($"[DialogueUI] Clicked choice: {choice.label}");
                 // Wenn Spieler klickt während geschrieben wird -> instant finish
                 if (isTyping)
                     FinishTypingInstant();

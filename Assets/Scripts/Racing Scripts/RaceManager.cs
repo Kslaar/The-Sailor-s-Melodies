@@ -31,6 +31,15 @@ public class RaceManager : MonoBehaviour
     private bool boatEnabled;
     private bool rbKinematic;
 
+
+    [Header("Checkpoint FX")]
+    [SerializeField] private GameObject checkpointArrowFxPrefab;
+    [SerializeField] private Vector3 fxOffset = new Vector3(0f, 2f, 0f);
+    [SerializeField] private bool faceBoat = true;
+
+    private GameObject checkpointArrowFxInstance;
+    private ParticleSystem[] fxParticles;
+
     private void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
@@ -78,6 +87,8 @@ public class RaceManager : MonoBehaviour
         
         // Teleport
         TeleportToStart();
+        EnsureCheckpointFx();
+        UpdateCheckpointFx();
         StartCoroutine(CountdownThenStartRace());
 
         return true;
@@ -181,9 +192,9 @@ public class RaceManager : MonoBehaviour
 
         if (trigger == RaceTrigger.TriggerType.Checkpoint)
         {
-            // Stellen sicher, dass keine Checkpoints geskipped werden!
             if (checkpointIndex != nextCheckpoint) return;
             nextCheckpoint++;
+            UpdateCheckpointFx();
 
             //Wwise SFX
             AkUnitySoundEngine.PostEvent("Play_Checkpoint", gameObject);
@@ -295,6 +306,9 @@ public class RaceManager : MonoBehaviour
         timePassed = 0f;
         outOfBoundsTimer = 0f;
         state = RaceState.Idle;
+
+        if (checkpointArrowFxInstance != null)
+            checkpointArrowFxInstance.SetActive(false);
     }
 
     private void FreezePlayer(bool freeze)
@@ -317,6 +331,72 @@ public class RaceManager : MonoBehaviour
             boat.enabled = boatEnabled;
 
             if (rb != null) rb.isKinematic = rbKinematic;
+        }
+    }
+
+    /////////////////////////////////////////////////////////////
+    
+    private void EnsureCheckpointFx()
+    {
+        if (checkpointArrowFxPrefab == null) return;
+
+        if (checkpointArrowFxInstance == null)
+        {
+            checkpointArrowFxInstance = Instantiate(checkpointArrowFxPrefab);
+            checkpointArrowFxInstance.name = "[Race] CheckpointArrowFX";
+
+            // Particles cachen (falls ParticleSystem)
+            fxParticles = checkpointArrowFxInstance.GetComponentsInChildren<ParticleSystem>(true);
+        }
+    }
+
+    private void UpdateCheckpointFx()
+    {
+        if (checkpointArrowFxInstance == null) return;
+        if (currentCourse == null) { checkpointArrowFxInstance.SetActive(false); return; }
+
+        // Wenn alle CPs durch sind, optional auf Finish zeigen oder ausblenden
+        bool hasCheckpoints = currentCourse.checkpoints != null && currentCourse.checkpoints.Count > 0;
+        bool allCheckpointsDone = hasCheckpoints && nextCheckpoint >= currentCourse.checkpoints.Count;
+
+        Vector3 targetPos;
+        if (!allCheckpointsDone && hasCheckpoints)
+        {
+            var cp = currentCourse.checkpoints[nextCheckpoint];
+            if (cp == null) { checkpointArrowFxInstance.SetActive(false); return; }
+            targetPos = cp.bounds.center;
+        }
+        else
+        {
+            // Nach letztem Checkpoint: auf Finish (oder returnPoint) zeigen – oder ausmachen
+            if (currentCourse.finishTrigger == null)
+            {
+                checkpointArrowFxInstance.SetActive(false);
+                return;
+            }
+            targetPos = currentCourse.finishTrigger.bounds.center;
+        }
+
+        checkpointArrowFxInstance.transform.position = targetPos + fxOffset;
+
+        if (faceBoat && boat != null)
+        {
+            Vector3 look = boat.transform.position - checkpointArrowFxInstance.transform.position;
+            look.y = 0f;
+            if (look.sqrMagnitude > 0.001f)
+                checkpointArrowFxInstance.transform.rotation = Quaternion.LookRotation(-look.normalized, Vector3.up);
+            // (-look) => Pfeil “zeigt weg vom Spieler” Richtung Ziel; wenn dein Pfeil anders herum ist, nimm look.normalized
+        }
+
+        checkpointArrowFxInstance.SetActive(true);
+
+        if (fxParticles != null)
+        {
+            foreach (var ps in fxParticles)
+            {
+                ps.Clear(true);
+                ps.Play(true);
+            }
         }
     }
 }
