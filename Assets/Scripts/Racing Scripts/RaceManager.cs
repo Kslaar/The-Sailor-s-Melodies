@@ -6,8 +6,9 @@ public class RaceManager : MonoBehaviour
 {
     public static RaceManager Instance { get; private set; }
 
-    public bool IsRacing => currentCourse != null && state == RaceState.Racing;
+    public bool IsRacing => currentCourse != null && (state == RaceState.Countdown || state == RaceState.Racing);
     public float CurrentTime => timePassed;
+    public RaceCourse CurrentCourse => currentCourse;
 
     public event System.Action<float> OnTimeChanged;
     public event System.Action<int> OnCountdownChanged;
@@ -49,7 +50,7 @@ public class RaceManager : MonoBehaviour
     private GameObject checkpointArrowFxInstance;
     private ParticleSystem[] fxParticles;
 
-    private void Awake()
+    private void OnEnable()
     {
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
@@ -76,7 +77,8 @@ public class RaceManager : MonoBehaviour
         }
 
         currentCourse = course;
-        currentCourse.SetRaceTriggersActive(true);
+        // currentCourse.SetRaceTriggersActive(true);
+        StartCoroutine(CoruEnableRaceTriggersNextFrame());
         nextCheckpoint = 0;
         timePassed = 0f;
         outOfBoundsTimer = 0f;
@@ -370,13 +372,11 @@ public class RaceManager : MonoBehaviour
                 return;
             }
 
-            // Finish ist auch ein Collider
             targetPos = GetFxTargetPos(currentCourse.finishTrigger);
         }
 
         checkpointArrowFxInstance.transform.position = targetPos;
 
-        // FIX: Größe einstellbar
         checkpointArrowFxInstance.transform.localScale = Vector3.one * fxScale;
 
         if (faceBoat && boat != null)
@@ -398,5 +398,16 @@ public class RaceManager : MonoBehaviour
                 ps.Play(true);
             }
         }
+    }
+
+    private IEnumerator CoruEnableRaceTriggersNextFrame()
+    {
+        yield return null; 
+
+        if (currentCourse != null)
+            currentCourse.SetRaceTriggersActive(true);
+
+        EnsureCheckpointFx();
+        UpdateCheckpointFx();
     }
 }

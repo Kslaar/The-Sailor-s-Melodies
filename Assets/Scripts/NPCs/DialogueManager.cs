@@ -137,21 +137,14 @@ public class DialogueManager : MonoBehaviour
         //Wwise Event für die Dialogzeile
         if (node.wwiseEvent != null)
             node.wwiseEvent.Post(gameObject);
-
-
-        ui.Show(current.npcName, current.npcAvatar, node.text, node.choices, OnChoice);
-
     }
 
     private void OnChoice(DialogueAsset.Choice choice)
     {
         foreach (var act in choice.actionsOnChoose) act?.Execute();
 
-        // 🔊 Wwise Event für die Antwort
         if (choice.wwiseEvent != null)
             choice.wwiseEvent.Post(gameObject);
-
-
 
         if (string.IsNullOrEmpty(choice.nextNodeID))
         {
@@ -167,10 +160,21 @@ public class DialogueManager : MonoBehaviour
     {
         if (ui != null) ui.Hide();
 
-        var dock = FindFirstObjectByType<BoatDockingController>();
-        if (dock != null && dock.IsDocked)
-            GameStateManager.Instance.TryExitDialogue("Dialogue ended");
-        else
-            GameStateManager.Instance.TrySetState(GameState.Sailing);
+        var gsm = GameStateManager.Instance;
+        if (gsm == null) return;
+
+        if (gsm.State == GameState.Racing)
+        {
+            Debug.Log("[DialogueManager] EndDialogue during Racing -> ignore state change.");
+            return;
+        }
+        if (gsm.State == GameState.Dialogue)
+        {
+            gsm.TryExitDialogue("Dialogue ended");
+            return;    
+        }
+
+        if (gsm.State != GameState.Docked)
+            gsm.TrySetState(GameState.Sailing, "Dialogue ended (Fallback)");
     }
 }

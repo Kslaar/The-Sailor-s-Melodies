@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 [CreateAssetMenu(menuName ="Game/DialogueActions/Start Race")]
@@ -24,7 +25,15 @@ public class StartRaceAction : DialogueAction
             return;
         }
 
-        DialogueManager.Instance?.EndDialogue();
+        // DialogueManager.Instance?.EndDialogue();
+        // RaceManager.Instance.StartRace(course);
+
+        RaceManager.Instance.StartCoroutine(StartRaceNextFrame(course));
+    }
+
+    private IEnumerator StartRaceNextFrame(RaceCourse course)
+    {
+        yield return null; // 1 Frame -> UI/State settle
         RaceManager.Instance.StartRace(course);
     }
 
