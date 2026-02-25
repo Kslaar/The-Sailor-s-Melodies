@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{FDFBA77B-D4FD-AAD6-DDA2-F8FF18A5BA3F}",
+    "Hash": "{4334A222-2113-15AC-30CB-36ABD45E135B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -64,6 +64,14 @@
       "CachePath": "F0/{F0787D86-C70E-B308-E32C-41368A25692B}.wem"
      },
      {
+      "Id": "105030960",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "A1/{A1235264-F7D5-293D-BF82-8129230D603A}.wem"
+     },
+     {
       "Id": "110974684",
       "Language": "SFX",
       "Streaming": "false",
@@ -77,7 +85,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Wale_02.wav",
-      "CachePath": "35/{351F8614-C3A2-AEC5-7B46-BB5DF07305E7}.wem"
+      "CachePath": "67/{67B0DE65-B71E-B64C-CE6A-1B018B1B3F1F}.wem"
+     },
+     {
+      "Id": "121681388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "5A/{5A653322-22D8-6B92-574E-C5D98025B79A}.wem"
      },
      {
       "Id": "145772972",
@@ -253,7 +269,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Seagull_01.wav",
-      "CachePath": "4A/{4AAC07B1-86F9-71E9-9C82-022AB41BCE54}.wem"
+      "CachePath": "0F/{0F4C06C5-FAB6-EE57-62B6-08FAF9915727}.wem"
      },
      {
       "Id": "427513672",
@@ -269,7 +285,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Wale_01.wav",
-      "CachePath": "5A/{5A0EE704-3A04-27B3-065F-AC8E5563631E}.wem"
+      "CachePath": "6A/{6A88475E-F7BC-9A2D-63B2-2DB15697DDDD}.wem"
      },
      {
       "Id": "438083269",
@@ -294,6 +310,14 @@
       "Location": "Memory",
       "ShortName": "Theme_Battle_01_Loop.wav",
       "CachePath": "E9/{E9869485-DB77-B048-C76C-883412A121A8}.wem"
+     },
+     {
+      "Id": "449474540",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "K_Voice_03.wav",
+      "CachePath": "BC/{BCF43078-2329-F29D-3920-25359C668609}.wem"
      },
      {
       "Id": "473105792",
@@ -368,6 +392,14 @@
       "CachePath": "24/{242F0E0F-6F4C-2B21-3144-9040D7D82A69}.wem"
      },
      {
+      "Id": "552721692",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "K_Voice_09.wav",
+      "CachePath": "FA/{FA3609B8-DB5D-D106-6741-AE1598611582}.wem"
+     },
+     {
       "Id": "603414801",
       "Language": "SFX",
       "Streaming": "false",
@@ -381,7 +413,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
-      "CachePath": "A0/{A0C473DA-41F3-A68C-6984-0311B6E834AE}.wem"
+      "CachePath": "69/{6989D09F-36A3-3C09-2686-406E0ECE45B1}.wem"
      },
      {
       "Id": "627587221",
@@ -389,7 +421,15 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles.wav",
-      "CachePath": "30/{306ACD5A-7939-B44B-0391-1CB2BC016A05}.wem"
+      "CachePath": "E5/{E52CDCCA-21FA-BFE7-B788-ACF530E4FA4E}.wem"
+     },
+     {
+      "Id": "662864355",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "09/{09D4A89A-C1E7-6F50-A672-41B1E8787B42}.wem"
      },
      {
       "Id": "694199021",
@@ -421,7 +461,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Seagull_01.wav",
-      "CachePath": "BE/{BEEDFED2-CDC9-D5D4-609F-B5570941F536}.wem"
+      "CachePath": "64/{64FC1CA5-2D5B-73E9-EBD3-CFFD2925AF0A}.wem"
      },
      {
       "Id": "736938058",
@@ -517,7 +557,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Seagull_01.wav",
-      "CachePath": "BC/{BC948A89-95DD-68CD-BFB0-973815A7A993}.wem"
+      "CachePath": "FB/{FB94DC46-38DC-A926-E492-6DEED0D73F10}.wem"
      },
      {
       "Id": "903220478",
@@ -632,6 +672,22 @@
       "DurationMin": "0.46933332",
       "DurationMax": "1.0919708",
       "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "885771221",
+         "Id": "3076081869",
+         "GUID": "{77AC4069-C70A-4865-93C9-A7E01ED328BD}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "449474540"
+         },
+         {
+          "Id": "552721692"
+         }
+        ]
+       },
        {
         "SwitchValue": {
          "GroupType": "Switch",
@@ -1180,8 +1236,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Fuel",
       "GUID": "{612E52A3-C734-4B33-9A80-AD4549665836}",
       "DurationType": "OneShot",
-      "DurationMin": "3.7576826",
-      "DurationMax": "3.7576826",
+      "DurationMin": "2.1007137",
+      "DurationMax": "2.1007137",
       "MediaRefs": [
        {
         "Id": "183690583"
@@ -1328,6 +1384,27 @@
       ]
      },
      {
+      "Id": "402999385",
+      "Name": "Play_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Play_UI_TypeLoop",
+      "GUID": "{B5AF5AB2-8E79-4BFE-84DB-9C50236FF324}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "105030960"
+       },
+       {
+        "Id": "121681388"
+       },
+       {
+        "Id": "621479489"
+       },
+       {
+        "Id": "662864355"
+       }
+      ]
+     },
+     {
       "Id": "1589278987",
       "Name": "Play_Wale",
       "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Wale",
@@ -1350,22 +1427,14 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Quest_accepted",
       "GUID": "{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}",
       "DurationType": "OneShot",
-      "DurationMin": "1.7789589",
-      "DurationMax": "1.7789589",
+      "DurationMin": "1.4643891",
+      "DurationMax": "1.4643891",
       "MediaRefs": [
        {
         "Id": "12577541"
        },
        {
-        "Id": "621479489"
-       }
-      ],
-      "AuxBusRefs": [
-       {
-        "Id": "348963605",
-        "Name": "Reverb",
-        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb",
-        "GUID": "{F9B916A5-6020-47A8-B295-6B94268AC319}"
+        "Id": "105030960"
        }
       ]
      },
@@ -1397,6 +1466,16 @@
         "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
        }
       ]
+     },
+     {
+      "Id": "3458954543",
+      "Name": "Stop_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Stop_UI_TypeLoop",
+      "GUID": "{446F1D4E-5C90-4246-86BB-C9F4923461C8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "2249769530",
@@ -1510,6 +1589,12 @@
       "GUID": "{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}",
       "Switches": [
        {
+        "Id": "1783520059",
+        "Name": "Villager",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Villager",
+        "GUID": "{788B9649-3F69-452C-B54A-525FC3476571}"
+       },
+       {
         "Id": "2457561305",
         "Name": "Teacher",
         "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Teacher",
@@ -1590,6 +1675,6 @@
     ]
    }
   ],
-  "FileHash": "{3968E87C-46BF-89B2-CC76-5898F740D26C}"
+  "FileHash": "{D685ED37-8CA1-D8A8-29DF-12D377D556B1}"
  }
 }

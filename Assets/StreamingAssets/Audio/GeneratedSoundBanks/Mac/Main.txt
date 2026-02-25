@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	602563	Quest_accepted			\Default Work Unit\Quest\Quest_accepted	
+	402999385	Play_UI_TypeLoop			\Default Work Unit\NPC\Play_UI_TypeLoop	
 	578142713	Play_Pickup_Fuel			\Default Work Unit\SFX\Play_Pickup_Fuel	
 	621743551	Play_Hint_Ocarina_CMaj			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Hint_Ocarina_CMaj	
 	723882233	Play_Ocarina_CMaj			\Default Work Unit\Quest\Keyboard\Ocarina\Play_Ocarina_CMaj	
@@ -33,6 +34,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
 	2962822744	Play_Checkpoint			\Default Work Unit\Quest\Racing\Play_Checkpoint	
 	3070880444	NPC_Greet			\Default Work Unit\NPC\NPC_Greet	
+	3458954543	Stop_UI_TypeLoop			\Default Work Unit\NPC\Stop_UI_TypeLoop	
 	3774920574	Play_Music_World			\Default Work Unit\Music\Play_Music_World	
 	4262365201	Play_Seal			\Default Work Unit\Animals\Play_Seal	
 	4281176146	Play_Seagulls			\Default Work Unit\Animals\Play_Seagulls	
@@ -43,6 +45,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 	2495262365	RaceState			\Default Work Unit\RaceState	
 
 Switch	ID	Name	Switch Group			Notes
+	1783520059	Villager	NPC_VoiceType			
 	2457561305	Teacher	NPC_VoiceType			
 	2864432310	Pastor	NPC_VoiceType			
 	3076081869	Sailor	NPC_VoiceType			
@@ -91,8 +94,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	72439141	motor_start	.cache\9B\{9BE574A9-0542-9703-65B8-99B213066222}.wem		\Containers\Player\Pull Chord\motor_start		39684
 	89778095	vocals_male_03	.cache\62\{62FBAB2A-3882-3EC8-45CF-DF9240E9E06C}.wem		\Containers\NPC\Male\Voice_01\vocals_male_03		108276
 	98811860	sail_wind_01	.cache\F0\{F0787D86-C70E-B308-E32C-41368A25692B}.wem		\Containers\Player\boat_movement\sail_wind_01		90528
+	105030960	Tipping_Sound	.cache\A1\{A1235264-F7D5-293D-BF82-8129230D603A}.wem		\Containers\NPC\Tipping_Sound\Tipping_Sound		124504
 	110974684	Seal_01	.cache\7E\{7E17A3B2-E147-6A46-C09F-344236874229}.wem		\Containers\Animals\Seal\Seal_01		257936
-	121011351	Wale_02	.cache\35\{351F8614-C3A2-AEC5-7B46-BB5DF07305E7}.wem		\Containers\Animals\Wale\Wale_02		745928
+	121011351	Wale_02	.cache\67\{67B0DE65-B71E-B64C-CE6A-1B018B1B3F1F}.wem		\Containers\Animals\Wale\Wale_02		745928
+	121681388	Tipping_Sound_03	.cache\5A\{5A653322-22D8-6B92-574E-C5D98025B79A}.wem		\Containers\NPC\Tipping_Sound\Tipping_Sound_03		59300
 	145772972	vocals_male_05	.cache\6A\{6AD92168-2CFB-B40A-4426-29997F6FA7D1}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_05		82332
 	146487838	vocals_male_11	.cache\B3\{B3964C9E-DE67-FD64-375B-BC33209EC234}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_11		100848
 	148246808	water_movement	.cache\96\{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem		\Containers\Player\water_movement		17126444
@@ -114,12 +119,13 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	331775086	quest_direction	.cache\3B\{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem		\Containers\Quest\quest_direction		3847520
 	346234674	vocals_male_02	.cache\63\{630982D5-256A-C7F2-CDF4-63F791CA1A1A}.wem		\Containers\NPC\Male\Voice_01\Voice_Exclamation\vocals_male_02		72528
 	361744330	vocals_male_02	.cache\3F\{3F0A8535-E941-4F6E-4B36-62C15A9CBF99}.wem		\Containers\NPC\NPC_Greet\Pastor Voice\vocals_male_02		209752
-	382701999	Seagull_01	.cache\4A\{4AAC07B1-86F9-71E9-9C82-022AB41BCE54}.wem		\Containers\Animals\Seagulls\Seagull_01		412176
+	382701999	Seagull_01	.cache\0F\{0F4C06C5-FAB6-EE57-62B6-08FAF9915727}.wem		\Containers\Animals\Seagulls\Seagull_01		412176
 	427513672	vocals_male_06	.cache\70\{707B2BF5-38AE-E10B-2072-4A5E68BD4537}.wem		\Containers\NPC\NPC_Greet\Pastor Voice\vocals_male_06		101472
-	437250838	Wale_01	.cache\5A\{5A0EE704-3A04-27B3-065F-AC8E5563631E}.wem		\Containers\Animals\Wale\Wale_01		480292
+	437250838	Wale_01	.cache\6A\{6A88475E-F7BC-9A2D-63B2-2DB15697DDDD}.wem		\Containers\Animals\Wale\Wale_01		480292
 	438083269	sail_wind	.cache\D1\{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem		\Containers\Player\boat_movement\sail_wind		121294
 	447023009	Horn_C	.cache\B9\{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_C		158868
 	448729930	Theme_Battle_01_Loop	.cache\E9\{E9869485-DB77-B048-C76C-883412A121A8}.wem		\Containers\Music\Racing_Music\Theme_Battle_01_Loop\Theme_Battle_01_Loop		8221112
+	449474540	K_Voice_03	.cache\BC\{BCF43078-2329-F29D-3920-25359C668609}.wem		\Containers\NPC\NPC_Greet\Sailor Voice\K_Voice_03		122828
 	473105792	H_Voice_Male_09	.cache\A9\{A9715A4B-1673-0682-EDA5-8B883EE7F5DF}.wem		\Containers\NPC\NPC_Greet\Teacher Voice\H_Voice_Male_09		157792
 	480343258	Seagull_02	.cache\26\{26793BA1-3964-96AB-CC7A-5375FE60D0AF}.wem		\Containers\Animals\Seagulls\Seagull_02		463264
 	483172978	Okarina_G_Hint	.cache\61\{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem		\Containers\Quest\Keyboard\Ocarina_Hint\Okarina_G_Hint		193436
@@ -129,13 +135,15 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	524385979	Place_Royal_Loop	.cache\A8\{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem		\Containers\Music\World_Music\Music_exploration 01\music_exploration\Place_Royal_Loop		5020380
 	530816004	sail_wind_03	.cache\31\{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem		\Containers\Player\boat_movement\sail_wind_03		148276
 	547471905	vocals_male_09	.cache\24\{242F0E0F-6F4C-2B21-3144-9040D7D82A69}.wem		\Containers\NPC\Male\Voice_02\vocals_male_09		192828
+	552721692	K_Voice_09	.cache\FA\{FA3609B8-DB5D-D106-6741-AE1598611582}.wem		\Containers\NPC\NPC_Greet\Sailor Voice\K_Voice_09		116620
 	603414801	Horn_E	.cache\E1\{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_E		129564
-	621479489	Quest_accepted	.cache\A0\{A0C473DA-41F3-A68C-6984-0311B6E834AE}.wem		\Containers\Quest\Quest_accepted		341656
-	627587221	Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles	.cache\30\{306ACD5A-7939-B44B-0391-1CB2BC016A05}.wem		\Containers\SFX\Pickup Fuel\Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles		336834
+	621479489	Tipping_Sound_02	.cache\69\{6989D09F-36A3-3C09-2686-406E0ECE45B1}.wem		\Containers\NPC\Tipping_Sound\Tipping_Sound_02		84424
+	627587221	Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles	.cache\E5\{E52CDCCA-21FA-BFE7-B788-ACF530E4FA4E}.wem		\Containers\SFX\Pickup Fuel\Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles		177764
+	662864355	Tipping_Sound_01	.cache\09\{09D4A89A-C1E7-6F50-A672-41B1E8787B42}.wem		\Containers\NPC\Tipping_Sound\Tipping_Sound_01		160396
 	694199021	Theme_Battle_02_Intro	.cache\D9\{D9B64A81-4294-3BE7-EB2B-CBC16280580A}.wem		\Containers\Music\Racing_Music\Theme_Battle_02_Intro\Theme_Battle_02_Intro		814976
 	697144522	Horn_F	.cache\8E\{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_F		148088
 	699649268	vocals_male_01	.cache\91\{9114DD9C-4E94-88C7-A622-8301D1DF8678}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_01		114080
-	705104323	Seagull_04	.cache\BE\{BEEDFED2-CDC9-D5D4-609F-B5570941F536}.wem		\Containers\Animals\Seagulls\Seagull_04		419816
+	705104323	Seagull_04	.cache\64\{64FC1CA5-2D5B-73E9-EBD3-CFFD2925AF0A}.wem		\Containers\Animals\Seagulls\Seagull_04		419816
 	736938058	Okarina_B	.cache\78\{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_B		195452
 	741850182	Horn_A	.cache\9A\{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_A		149064
 	742202318	vocals_male_07	.cache\D3\{D32AAD91-311A-233A-A940-D8D4ACB4E994}.wem		\Containers\NPC\Male\Voice_02\vocals_male_07		185920
@@ -147,7 +155,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	833575142	vocals_male_08	.cache\A8\{A8735649-D1EC-916C-F83A-5DB0D02CAF34}.wem		\Containers\NPC\Male\Voice_01\Voice_Zelda\vocals_male_08		120372
 	839279121	Okarina_E	.cache\37\{375F505B-9251-7D66-D611-EADF0754BDEC}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_E		193436
 	887849136	Horn_B	.cache\76\{76507B72-D6AA-45B7-15D5-E14E49943931}.wem		\Containers\Quest\Keyboard\Horn_clear\Horn_B		152028
-	889405789	Seagull_03	.cache\BC\{BC948A89-95DD-68CD-BFB0-973815A7A993}.wem		\Containers\Animals\Seagulls\Seagull_03		448804
+	889405789	Seagull_03	.cache\FB\{FB94DC46-38DC-A926-E492-6DEED0D73F10}.wem		\Containers\Animals\Seagulls\Seagull_03		448804
 	903220478	Okarina_A	.cache\40\{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem		\Containers\Quest\Keyboard\Ocarina_clear\Okarina_A		193436
 	928158733	vocals_male_06	.cache\E6\{E6334B0A-C586-50D2-399F-963EEAD7A5FF}.wem		\Containers\NPC\Male\Voice_01\vocals_male_06		110328
 	955175564	Seal_02	.cache\D6\{D66FAAB5-8C0C-7BE3-3AF4-7ED50D32692E}.wem		\Containers\Animals\Seal\Seal_02		206484

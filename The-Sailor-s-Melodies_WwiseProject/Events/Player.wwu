@@ -5,17 +5,6 @@
 			<ChildrenList>
 				<Event Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}">
 					<ChildrenList>
-						<Action Name="" ID="{B1DBC9C3-F3A9-4C3D-9B17-D6DFB86CD728}" ShortID="537228883">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Delay" Type="Real64" Value="1.5"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{20FE4E48-05CB-4580-8FD8-FCDACB116BFA}" ShortID="75615055">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -30,6 +19,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B1DBC9C3-F3A9-4C3D-9B17-D6DFB86CD728}" ShortID="537228883">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}" WorkUnitID="{E7F835F1-0E8B-4811-B333-52F0586F2BE8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

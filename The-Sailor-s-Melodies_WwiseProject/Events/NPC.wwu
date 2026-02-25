@@ -25,6 +25,31 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_UI_TypeLoop" ID="{B5AF5AB2-8E79-4BFE-84DB-9C50236FF324}">
+					<ChildrenList>
+						<Action Name="" ID="{D2585580-1EA3-4F51-8695-60BF31003DB0}" ShortID="712706209">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tipping_Sound" ID="{B1BCBBA2-59BF-47F5-A7DE-3FDC38BE8147}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_UI_TypeLoop" ID="{446F1D4E-5C90-4246-86BB-C9F4923461C8}">
+					<ChildrenList>
+						<Action Name="" ID="{36F7EC4A-64B2-4E27-986F-579CAC8C7732}" ShortID="800215826">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tipping_Sound" ID="{B1BCBBA2-59BF-47F5-A7DE-3FDC38BE8147}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

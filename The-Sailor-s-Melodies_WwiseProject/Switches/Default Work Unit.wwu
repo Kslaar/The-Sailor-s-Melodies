@@ -23,6 +23,7 @@
 						<Switch Name="Pastor" ID="{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"/>
 						<Switch Name="Sailor" ID="{77AC4069-C70A-4865-93C9-A7E01ED328BD}"/>
 						<Switch Name="Teacher" ID="{A54ADA90-C26D-442F-9252-B8EB49617CBE}"/>
+						<Switch Name="Villager" ID="{788B9649-3F69-452C-B54A-525FC3476571}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

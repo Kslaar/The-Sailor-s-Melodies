@@ -9,7 +9,7 @@ public class UIAudioManager : MonoBehaviour
     public AK.Wwise.Event hoverEvent;
     public AK.Wwise.Event backEvent;
     public AK.Wwise.Event confirmEvent;
-    /*
+    
     private void Awake()
     {
         if (Instance != null)
@@ -21,7 +21,7 @@ public class UIAudioManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
     }
-    */
+   
 
     public void PlayClick() => clickEvent?.Post(gameObject);
     public void PlayHover() => hoverEvent?.Post(gameObject);

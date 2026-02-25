@@ -50,6 +50,7 @@
 										</ObjectList>
 									</ObjectLists>
 								</Bus>
+								<Bus Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"/>
 							</ChildrenList>
 						</Bus>
 					</ChildrenList>

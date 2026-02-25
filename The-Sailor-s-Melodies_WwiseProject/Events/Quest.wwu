@@ -317,7 +317,7 @@
 						<Action Name="" ID="{789E2B38-D2E2-4D9E-B91F-1EB48FA210BA}" ShortID="439152046">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Quest_accepted" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+									<ObjectRef Name="Tipping_Sound" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

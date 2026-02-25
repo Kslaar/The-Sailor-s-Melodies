@@ -105,45 +105,6 @@
 						<ActiveSource Name="quest_direction" ID="{BCD27367-E2C4-442B-8EF9-B6CC89EC535B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Quest_accepted" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" ShortID="629194384">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-14</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-						</Reference>
-						<Reference Name="UserAuxSend0">
-							<ObjectRef Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{E6ED6414-97C8-4772-8327-CD56FBB48814}">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.0318809828559994"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.150903318851729"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="0.0850159542826645"/>
-								<Property Name="TrimEnd" Type="Real64" Value="1.86397485359631"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>Cyberwave Orchestra - Bureaucracy - Pen Writing.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="621479489"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{E6ED6414-97C8-4772-8327-CD56FBB48814}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Folder Name="Keyboard" ID="{841ED7B0-9F55-4E07-8D8B-42B8C638C668}" ShortID="829558835">
 					<ChildrenList>
 						<Folder Name="Horn_clear" ID="{CB813668-C74B-4065-B31F-2A3B16336D97}" ShortID="1010872648">
