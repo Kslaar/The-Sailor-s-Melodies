@@ -16,6 +16,7 @@
 						<ObjectRef Name="Play_quest_direction" ID="{6D2859F1-6347-40A6-AB65-0E6A323B510F}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_A" ID="{3ACC880F-359E-40AD-9AD4-CCEEF608727D}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_B" ID="{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_UI_TypeLoop" ID="{446F1D4E-5C90-4246-86BB-C9F4923461C8}" WorkUnitID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Finish" ID="{E6E5C216-B5BD-42B2-8142-85EEE3899972}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_03" ID="{1E72FD7F-8327-430C-AAF0-624342CA0C5E}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_04" ID="{E12C3A47-1825-4326-9636-4F66992C1944}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
@@ -49,6 +50,7 @@
 						<ObjectRef Name="Play_Pickup_Fuel" ID="{612E52A3-C734-4B33-9A80-AD4549665836}" WorkUnitID="{529D3196-5BA3-4661-B4AA-A4A5F1E49E27}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Quest_accepted" ID="{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_G" ID="{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_UI_TypeLoop" ID="{B5AF5AB2-8E79-4BFE-84DB-9C50236FF324}" WorkUnitID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="vocals_male_06" ID="{63094633-D3C4-4C6D-95F7-FAB7BA736815}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_World" ID="{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>

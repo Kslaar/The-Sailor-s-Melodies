@@ -1290,9 +1290,82 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Sailor Voice" ID="{7015C53A-EF29-4631-BCED-5F179A94401E}" ShortID="527381106">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="K_Voice_09" ID="{1EE20B41-3472-42CC-8A91-E85FDDE3A2E4}" ShortID="51230628">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_09" ID="{9AA2013F-61D1-4B1E-A025-5F49B31F3801}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0065864739460092"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.026345895784037"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.373547165223667"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.980443739200206"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_09.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="552721692"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_09" ID="{9AA2013F-61D1-4B1E-A025-5F49B31F3801}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="K_Voice_03" ID="{4EB06CDB-D9C0-4265-909D-14122A863972}" ShortID="977600513">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_03" ID="{2C5A4437-88EE-4A8A-8F5B-F9CFE48A97BA}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.03457471420025"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0249259567490174"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.127041973107896"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.766272109111469"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="449474540"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_03" ID="{2C5A4437-88EE-4A8A-8F5B-F9CFE48A97BA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 					<GroupingInfo>
 						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Sailor Voice" ID="{7015C53A-EF29-4631-BCED-5F179A94401E}"/>
+							</GroupingBehavior>
 							<GroupingBehavior>
 								<ItemRef Name="Teacher Voice" ID="{CBD8854A-1778-4476-916C-4265D3D47DFC}"/>
 							</GroupingBehavior>
@@ -1301,6 +1374,12 @@
 							</GroupingBehavior>
 						</GroupingBehaviorList>
 						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Sailor" ID="{77AC4069-C70A-4865-93C9-A7E01ED328BD}"/>
+								<ItemList>
+									<ItemRef Name="Sailor Voice" ID="{7015C53A-EF29-4631-BCED-5F179A94401E}"/>
+								</ItemList>
+							</Grouping>
 							<Grouping>
 								<SwitchRef Name="Pastor" ID="{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"/>
 								<ItemList>
@@ -1316,6 +1395,422 @@
 						</GroupingList>
 					</GroupingInfo>
 				</SwitchContainer>
+				<Folder Name="Female" ID="{373F2EFC-A4F2-4F7B-931A-0536B154A4A3}" ShortID="292763987">
+					<ChildrenList>
+						<Folder Name="Voice_01" ID="{881D2762-2FA1-44C6-93B9-41A2E88E5944}" ShortID="116371041">
+							<ChildrenList>
+								<Sound Name="K_Voice_01" ID="{F74B9103-B3CA-4D9F-924C-1C8114DBFFCF}" ShortID="827301449">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_01" ID="{E395934F-A95E-4888-BC86-FB9D4030C6CD}">
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="60529148"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_01" ID="{E395934F-A95E-4888-BC86-FB9D4030C6CD}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="K_Voice_02" ID="{6AB9C9A6-A2E1-490B-8677-3D5F9992B4CD}" ShortID="931540551">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_02" ID="{8C4AEACD-322A-4176-98F8-08FE88DF7145}">
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_02.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="827546212"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_02" ID="{8C4AEACD-322A-4176-98F8-08FE88DF7145}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="K_Voice_04" ID="{29FE0D77-2F34-4FD7-93F9-C70FFD972590}" ShortID="979600029">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_04" ID="{5E84587C-35D4-44B8-8870-4B49FC640715}">
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="63749877"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_04" ID="{5E84587C-35D4-44B8-8870-4B49FC640715}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="K_Voice_07" ID="{78AF661A-24B3-4544-8510-B8A920EC4E0F}" ShortID="861716231">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_07" ID="{B30B0AC1-3074-4445-A65A-29D7DA2E891C}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0574520203526152"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0233221072718537"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0819117913938276"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.528444794005298"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="410267008"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_07" ID="{B30B0AC1-3074-4445-A65A-29D7DA2E891C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="K_Voice_08" ID="{81FBBB1A-2A0B-4A0D-89C6-DC18254D9CF6}" ShortID="398242455">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="K_Voice_08" ID="{22F349F0-F808-4E61-BD6F-D18B0D973736}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0096701418961538"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0127238709159919"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0712536771295544"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.559341350843995"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>K_Voice_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="299280739"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="K_Voice_08" ID="{22F349F0-F808-4E61-BD6F-D18B0D973736}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Convcerned" ID="{421981EC-F6C0-4BE6-BD65-D83AC08F72AE}" ShortID="523771902">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="K_Voice_05" ID="{7A062F1D-B9BE-4E06-8AA0-4B661045690B}" ShortID="4037150">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="K_Voice_05" ID="{F7189104-ECA0-48F7-BF5A-69059DCD208A}">
+													<Language>SFX</Language>
+													<AudioFile>K_Voice_05.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="399276947"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="K_Voice_05" ID="{F7189104-ECA0-48F7-BF5A-69059DCD208A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="K_Voice_06" ID="{81E38AE6-9346-4492-94B7-DF0AAC9C03C5}" ShortID="328460050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="K_Voice_06" ID="{C7CBB81E-B3D9-4AD3-821F-FB4E204BE7E6}">
+													<Language>SFX</Language>
+													<AudioFile>K_Voice_06.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="996633627"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="K_Voice_06" ID="{C7CBB81E-B3D9-4AD3-821F-FB4E204BE7E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Happy" ID="{1212AA99-984A-4785-89BF-108B5C767CC2}" ShortID="234413161">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+				<RandomSequenceContainer Name="Tipping_Sound" ID="{B1BCBBA2-59BF-47F5-A7DE-3FDC38BE8147}" ShortID="36051314">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{8B75F9BE-159C-455E-8E65-CDF3DC27B593}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="400"/>
+											<Property Name="Min" Type="Real64" Value="-400"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Tipping_Sound_02" ID="{24E93914-769B-4ED1-BD03-5FDDBCA838BF}" ShortID="680611913">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{A89B3FAB-8C66-4D3C-BAED-642451A7DBBD}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0318809828559994"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0356238664888119"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0850159542826645"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.524240677486734"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cyberwave Orchestra - Bureaucracy - Pen Writing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="621479489"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{A89B3FAB-8C66-4D3C-BAED-642451A7DBBD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tipping_Sound_03" ID="{25264CDE-3832-4C9D-9408-B5A6559A78B9}" ShortID="757088859">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{91AE5258-AABF-4FC7-A79B-4C869FE6579F}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0318809828559994"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0155783043733672"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.539902441984986"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.848269408452771"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cyberwave Orchestra - Bureaucracy - Pen Writing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="121681388"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{91AE5258-AABF-4FC7-A79B-4C869FE6579F}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tipping_Sound" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" ShortID="629194384">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{E6ED6414-97C8-4772-8327-CD56FBB48814}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0318809828559994"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.057433492611526"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.17238159954369"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.82035560135088"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cyberwave Orchestra - Bureaucracy - Pen Writing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="105030960"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{E6ED6414-97C8-4772-8327-CD56FBB48814}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Tipping_Sound_01" ID="{B1AEE40A-D4AE-429D-A711-B6FFDE6259B5}" ShortID="1029717443">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-14</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{F9B916A5-6020-47A8-B295-6B94268AC319}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{831ED2C4-F35D-4B0F-AE9D-01A63DC37989}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0318809828559994"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0948214231076072"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.98245342695879"/>
+										<Property Name="TrimEnd" Type="Real64" Value="2.81736708124638"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Cyberwave Orchestra - Bureaucracy - Pen Writing.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="662864355"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Cyberwave Orchestra - Bureaucracy - Pen Writing" ID="{831ED2C4-F35D-4B0F-AE9D-01A63DC37989}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Playlist">
+							<PluginInnerObject Name="" ID="{77A61C09-2BA8-4264-AAD9-388298C4AE5B}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Tipping_Sound" ID="{36AFB3B9-780D-45C9-B337-113B19115D2D}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{5FE5E339-B64D-4AC6-BB80-4357C57B9C2D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Tipping_Sound_01" ID="{B1AEE40A-D4AE-429D-A711-B6FFDE6259B5}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{D80FE80D-FDB7-486D-B1ED-92EBFFC87AF4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Tipping_Sound_02" ID="{24E93914-769B-4ED1-BD03-5FDDBCA838BF}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+							<PluginInnerObject Name="" ID="{05C449C3-A376-4B12-9B19-3ECD35A19CB4}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+								<ReferenceList>
+									<Reference Name="PlaylistObject">
+										<ObjectRef Name="Tipping_Sound_03" ID="{25264CDE-3832-4C9D-9408-B5A6559A78B9}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
+									</Reference>
+								</ReferenceList>
+							</PluginInnerObject>
+						</ObjectList>
+					</ObjectLists>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

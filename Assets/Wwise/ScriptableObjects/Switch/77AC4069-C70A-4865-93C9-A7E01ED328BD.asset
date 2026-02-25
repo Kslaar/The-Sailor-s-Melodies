@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c205edbfb57cf524eaebf45c9f9a2519, type: 3}
+  m_Name: 77AC4069-C70A-4865-93C9-A7E01ED328BD
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseSwitchReference
+  objectName: Sailor
+  id: 3076081869
+  guid: 77AC4069-C70A-4865-93C9-A7E01ED328BD
+  WwiseSwitchGroupReference: {fileID: 11400000, guid: cf1e9ce28bb384ab693d2c8f08c872a5, type: 2}

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{D9308699-145C-96B2-2ECE-04798F38B570}",
+    "Hash": "{596B5C22-B522-2A12-1AE7-DCD0546AC341}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -55,6 +55,12 @@
      ]
     },
     "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\SFX",
+      "GUID": "{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"
+     },
      {
       "Id": "1795056175",
       "Name": "Boat",
@@ -240,6 +246,12 @@
       "GUID": "{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}",
       "Switches": [
        {
+        "Id": "1783520059",
+        "Name": "Villager",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Villager",
+        "GUID": "{788B9649-3F69-452C-B54A-525FC3476571}"
+       },
+       {
         "Id": "2457561305",
         "Name": "Teacher",
         "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Teacher",
@@ -320,6 +332,6 @@
     ]
    }
   ],
-  "FileHash": "{1667C18A-58BA-2872-1D3A-B2397F269644}"
+  "FileHash": "{3AA81213-7512-7247-49A3-0DEBF25604B7}"
  }
 }
