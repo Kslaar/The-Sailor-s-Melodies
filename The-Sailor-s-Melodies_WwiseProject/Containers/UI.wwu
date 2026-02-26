@@ -6,6 +6,13 @@
 				<Folder Name="UI" ID="{48DEB46C-9F01-44DB-9844-48787E6B3004}" ShortID="888497564">
 					<ChildrenList>
 						<Sound Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" ShortID="998085239">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>1</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
@@ -35,6 +42,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" ShortID="221164864">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
@@ -66,7 +80,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>

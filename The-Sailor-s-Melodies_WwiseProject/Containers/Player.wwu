@@ -58,7 +58,7 @@
 						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>2</Value>
+								<Value>1</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -350,10 +350,16 @@
 				</RandomSequenceContainer>
 				<Sound Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" ShortID="108642652">
 					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-10</Value>
 							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
@@ -373,8 +379,8 @@
 					<ChildrenList>
 						<AudioFileSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}">
 							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.628167035642112"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.3589525917955"/>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.198247672771287"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0257749254548116"/>
 								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 								<Property Name="TrimBegin" Type="Real64" Value="9.87119627437605"/>
 								<Property Name="TrimEnd" Type="Real64" Value="99.0709122837982"/>

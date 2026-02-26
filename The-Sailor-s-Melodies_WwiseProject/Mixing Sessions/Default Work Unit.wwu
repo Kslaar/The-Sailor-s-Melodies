@@ -8,12 +8,22 @@
 						<ObjectRef Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 						<ObjectRef Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 						<ObjectRef Name="boat_movement" ID="{FE40894F-3260-4EEB-A264-A9C6A3258559}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
+						<ObjectRef Name="Music_exploration 01" ID="{DE9749F6-E1D5-4EA6-9D60-3420F0EE9905}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+						<ObjectRef Name="SFX_Click" ID="{48AEEA95-D092-4571-B60A-C4AB6C28676F}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
+						<ObjectRef Name="SFX_Error" ID="{41D1BF2F-9B08-4003-BF23-01F98E805053}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
+						<ObjectRef Name="SFX_Start" ID="{33CA1443-1C97-4EC3-A7A9-554C9C26E092}" WorkUnitID="{1D5AB1CE-76D4-4FA8-A337-4E662BB8D222}"/>
 					</ObjectList>
 				</MixingSession>
 				<MixingSession Name="NPC" ID="{48A56B84-BD66-44BE-AA7B-A12BBDF6346C}">
 					<ObjectList>
 						<ObjectRef Name="Voice_Exclamation" ID="{7EFA2E83-BF52-49A3-8955-A7F183C37E4B}" WorkUnitID="{C45C731C-08CB-4D52-BB7A-0872CB019D31}"/>
 						<ObjectRef Name="Unrealsfx - Magical Game - New Item Collected Pickup" ID="{074475DE-5CA9-477B-8D02-0A7BC0BF95CE}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="Music" ID="{C0A10D43-E2B4-4209-A731-37E79B3F70DB}">
+					<ObjectList>
+						<ObjectRef Name="Racing_Music" ID="{EE8570DB-FEC3-4A45-ADC9-24FB62F787CC}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
+						<ObjectRef Name="World_Music" ID="{055914E2-46E7-4668-A94C-0BB45A2AEBB6}" WorkUnitID="{726770E3-A4C0-4448-A780-92E01E05871A}"/>
 					</ObjectList>
 				</MixingSession>
 			</ChildrenList>

@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{619E8874-4C0D-DB04-5483-A5F9128C9567}",
+    "Hash": "{80140075-4CB7-D86D-81C9-03431DAE051C}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "W 04 Water_19_Splashing, Sailing, Ship_T03.wav",
-      "CachePath": "96/{9613DF9C-FEC6-892F-4E92-6FC9D296E584}.wem"
+      "CachePath": "78/{780D261F-791B-8C97-511F-223322B562DC}.wem"
      },
      {
       "Id": "148900801",
@@ -1487,6 +1487,15 @@
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
         "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
        }
+      ],
+      "ActionSetSwitch": [
+       {
+        "GroupId": "1445037870",
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Menu",
+        "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+       }
       ]
      },
      {
@@ -1697,6 +1706,6 @@
     ]
    }
   ],
-  "FileHash": "{0A645D0C-5CC5-651D-2129-CBDFF51CD66C}"
+  "FileHash": "{ADEF1E00-6F8E-E8FF-0B8D-8BDBC03DB61B}"
  }
 }
