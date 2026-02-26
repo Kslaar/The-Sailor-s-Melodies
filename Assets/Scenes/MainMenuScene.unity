@@ -499,6 +499,7 @@ MonoBehaviour:
   playHoverSound: 0
   playClickSound: 1
   playConfirmSound: 0
+  playBackSound: 1
 --- !u!114 &520721679 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 397987572258216735, guid: 27437ed1537324f04a2dd0c5fef2a9ee, type: 3}
@@ -2586,6 +2587,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 850081601803709616, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
       propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7307644271976623612, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 89626bc45dcff4aa8834e3386eaef7ec, type: 2}
+    - target: {fileID: 7307644271976623612, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1734914754685506128, guid: 89626bc45dcff4aa8834e3386eaef7ec, type: 2}
+    - target: {fileID: 7307644271976623612, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314563773418630371, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 89626bc45dcff4aa8834e3386eaef7ec, type: 2}
+    - target: {fileID: 8314563773418630371, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1734914754685506128, guid: 89626bc45dcff4aa8834e3386eaef7ec, type: 2}
+    - target: {fileID: 8314563773418630371, guid: 5b2a7e10c51f24f0783ff15c48a77185, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

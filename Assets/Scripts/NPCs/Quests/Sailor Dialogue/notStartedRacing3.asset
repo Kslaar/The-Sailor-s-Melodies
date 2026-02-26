@@ -18,7 +18,8 @@ MonoBehaviour:
   - id: startRacingQuest3
     text: Oh. It's you again! Did you know that this area was once part of many pirates
       demise? Crewmembers have been marooned here. But it was also a racetrack for
-      sailboats! Feel like beating any more records?
+      sailboats! I heard that you need to listen to the world to finish this race.
+      Anyways - Feel like beating any more records?
     choices:
     - label: Start Racing
       nextNodeID: 

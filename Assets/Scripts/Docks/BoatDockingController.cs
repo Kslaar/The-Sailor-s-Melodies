@@ -271,16 +271,6 @@ public class BoatDockingController : MonoBehaviour
 
         gsm.ForceUnpause(GameState.Docked, reason);
 
-        /*
-        bool entered = gsm.TryEnterDialogue(reason);
-        if (!entered)
-        {
-            Debug.LogWarning($"[BoatDockingController] TryEnterDialogue blocked. CurrentState={gsm.State}. Forcing Docked then retry.");
-            gsm.ForceUnpause(GameState.Docked, reason + " ForceDocked");
-            gsm.TryEnterDialogue(reason + " Retry");
-        }
-        */
-
         DialogueManager.Instance?.StartDialogue(dialogue);
     }
 
