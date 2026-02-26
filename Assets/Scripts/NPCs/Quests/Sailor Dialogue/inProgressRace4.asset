@@ -16,7 +16,7 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: inProgSLRr4
-    text: Didn't make it? Wanna try again
+    text: Didn't make it? Wanna try again?
     choices:
     - label: Yes
       nextNodeID: 

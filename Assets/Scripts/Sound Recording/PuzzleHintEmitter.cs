@@ -1,11 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PuzzleHintEmitter : MonoBehaviour
 {
-    public SoundSignature requiredSignature;
-    public AK.Wwise.Event hintEventOverride;
+    public PuzzleListener listener;
+    public List<SoundSignature> hintSequence = new();
+    public float shortSoundGap = 0.35f;
     public float hintIntervalSeconds = 3f;
     public bool randomizeStartOffset = true;
+    public AK.Wwise.Event hintEventOverride;
 
     public AK.Wwise.RTPC pitchRtpc;
     public float pitchCents = -400f;
@@ -15,11 +18,13 @@ public class PuzzleHintEmitter : MonoBehaviour
 
     private bool _playerInRange;
     private float _nextTime;
+    private int _stepIndex;
 
     void OnEnable()
     {
         float startOffset = randomizeStartOffset ? Random.Range(0f, hintIntervalSeconds) : 0f;
         _nextTime = Time.time + startOffset;
+        _stepIndex = 0;
     }
 
     void Update()
@@ -27,20 +32,46 @@ public class PuzzleHintEmitter : MonoBehaviour
         if (blockedOffArea != null && blockedOffArea.IsOpened) return;
         if (onlyWhilePlayerInTrigger && !_playerInRange) return;
 
+        var sequence = GetSequence();
+        if (sequence == null || sequence.Count == 0) return;
+
         if (Time.time >= _nextTime)
         {
-            PlayHint();
-            _nextTime = Time.time + Mathf.Max(0.1f, hintIntervalSeconds);
+            PlayStep(sequence[_stepIndex]);
+            _stepIndex++;
+
+            if (_stepIndex >= sequence.Count)
+            {
+                _stepIndex = 0;
+                _nextTime = Time.time + Mathf.Max(0.1f, hintIntervalSeconds);
+            }
+            else
+            {
+                _nextTime = Time.time + Mathf.Max(0.05f, shortSoundGap);
+            }
         }
     }
 
-    private void PlayHint()
+    private IReadOnlyList<SoundSignature> GetSequence()
     {
-        var evnt = hintEventOverride != null ? hintEventOverride : (requiredSignature != null ? requiredSignature.playEvent : null);
+        if (listener != null && listener.expectedSequence != null && listener.expectedSequence.Count > 0)
+            return listener.expectedSequence;
+
+        return hintSequence;
+    }
+    private void PlayStep(SoundSignature sig)
+    {
+        if (sig == null)
+        {
+            Debug.LogWarning($"[PuzzleHintEmitter] Step signature is NULL on {name}");
+            return;
+        }
+        
+        var evnt = hintEventOverride != null ? hintEventOverride : sig.playEvent;
 
         if (evnt == null)
         {
-            Debug.LogWarning($"[PuzzleHintEmitter] No hint event set on {name}");
+            Debug.LogWarning($"[PuzzleHintEmitter] No hint for signature {name}");
             return;
         }
 
@@ -68,5 +99,10 @@ public class PuzzleHintEmitter : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         _playerInRange = false;
+
+        // Verlässt man den HintEmitter während einer Sequence, dann wollen wir dass die Sequence beim erneuten Betreten von Beginn an spielt
+        _stepIndex = 0;
+        float startOffset = randomizeStartOffset ? Random.Range(0f, Mathf.Max(0.1f, hintIntervalSeconds)) : 0f;
+        _nextTime = Time.time + startOffset;
     }
 }

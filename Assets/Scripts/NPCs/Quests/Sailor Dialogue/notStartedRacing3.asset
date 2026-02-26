@@ -16,8 +16,9 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: startRacingQuest3
-    text: Hey you've got exactly the same sailboat I used years ago to race against
-      other sailors times. Do think you can beat my time?
+    text: Oh. It's you again! Did you know that this area was once part of many pirates
+      demise? Crewmembers have been marooned here. But it was also a racetrack for
+      sailboats! Feel like beating any more records?
     choices:
     - label: Start Racing
       nextNodeID: 
