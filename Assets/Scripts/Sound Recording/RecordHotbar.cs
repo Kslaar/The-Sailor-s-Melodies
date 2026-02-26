@@ -100,10 +100,10 @@ public class RecordHotbar : MonoBehaviour
 
         Debug.Log($"[Hotbar] Play '{sig.displayName}' on emitter '{playbackEmitter.name}'");
 
-        if (stopPreviousOnPlay && _lastPlayed != null && _lastPlayed.stopEvent != null)
+        if (stopPreviousOnPlay && _lastPlayed != null && _lastPlayed.hintEvent != null)
         {
             Debug.Log($"[Hotbar] Stopping previous '{_lastPlayed.displayName}'");
-            _lastPlayed.stopEvent.Post(playbackEmitter);
+            _lastPlayed.hintEvent.Post(playbackEmitter);
         }
         
         if (sig.playEvent != null)

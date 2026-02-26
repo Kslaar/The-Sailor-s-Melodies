@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
   id: horn_c
   displayName: Horn Chord C
-  icon: {fileID: 21300000, guid: 229ae8d655920495eab2362166100f11, type: 3}
+  icon: {fileID: 913021195, guid: 633e329b39b63457281c351859a585d5, type: 3}
   playEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: bbb00c2eccf9f49d187590c6ca584054, type: 2}
-  stopEvent:
+  hintEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: bbb00c2eccf9f49d187590c6ca584054, type: 2}

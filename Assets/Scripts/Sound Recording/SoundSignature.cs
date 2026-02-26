@@ -11,9 +11,6 @@ public class SoundSignature : ScriptableObject
     public Sprite icon;
 
     [Header("Wwise")]
-    [Tooltip("Event das abgespielt wird, wenn der Spieler das Recording aus der Hotbar abspielt.")]
     public AK.Wwise.Event playEvent;
-
-    [Tooltip("Stop-Event")]
-    public AK.Wwise.Event stopEvent;
+    public AK.Wwise.Event hintEvent;
 }
