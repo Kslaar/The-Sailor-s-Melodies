@@ -61,6 +61,7 @@ public class SLManager : MonoBehaviour
     private IEnumerator LoadSceneOrNot(bool loadSave)
     {
         float startRealTime = Time.realtimeSinceStartup;
+        float userMasterVolume = SettingsManager.Instance != null ? SettingsManager.Instance.Data.masterVolume : 1f;
         
         if (Loadingscreen.Instance != null)
             yield return Loadingscreen.Instance.FadeToBlack();
@@ -68,7 +69,7 @@ public class SLManager : MonoBehaviour
         Time.timeScale = 1f;
 
         // Sound Fadeout und dann stumm
-        yield return FadeWwiseRtpc(masterVolumeRtpc, 1f, 0f, audioFadeSeconds);
+        yield return FadeWwiseRtpc(masterVolumeRtpc, userMasterVolume, 0f, audioFadeSeconds);
         if (useSuspendAfterFadeOut) AkUnitySoundEngine.Suspend();
 
         // Wir laden die Szene
@@ -99,7 +100,7 @@ public class SLManager : MonoBehaviour
         // Audio wieder an
         if (useSuspendAfterFadeOut) AkUnitySoundEngine.WakeupFromSuspend();
 
-        yield return FadeWwiseRtpc(masterVolumeRtpc, 0f, 1f, audioFadeSeconds);
+        yield return FadeWwiseRtpc(masterVolumeRtpc, 0f, userMasterVolume, audioFadeSeconds);
 
         if (Loadingscreen.Instance != null)
             yield return Loadingscreen.Instance.FadeFromBlack();
@@ -160,13 +161,14 @@ public class SLManager : MonoBehaviour
     private IEnumerator BackRoutine(string mainMenuScene, float minSeconds)
 {
     float startRealtime = Time.realtimeSinceStartup;
+    float userMasterVolume = SettingsManager.Instance != null ? SettingsManager.Instance.Data.masterVolume : 1f;
 
     if (Loadingscreen.Instance != null)
         yield return Loadingscreen.Instance.FadeToBlack();
 
     Time.timeScale = 1f;
 
-    yield return FadeWwiseRtpc("MasterVolume", 1f, 0f, 0.35f);
+    yield return FadeWwiseRtpc("MasterVolume", userMasterVolume, 0f, 0.35f);
 
     AkUnitySoundEngine.Suspend();
 
@@ -182,7 +184,7 @@ public class SLManager : MonoBehaviour
 
     AkUnitySoundEngine.WakeupFromSuspend();
 
-    yield return FadeWwiseRtpc("MasterVolume", 0f, 1f, 0.35f);
+    yield return FadeWwiseRtpc("MasterVolume", 0f, userMasterVolume, 0.35f);
 
     if (Loadingscreen.Instance != null)
         yield return Loadingscreen.Instance.FadeFromBlack();

@@ -58,6 +58,10 @@ public class BoatControl : MonoBehaviour
         if (Keyboard.current.wKey.isPressed) throttleInput += 1f;
         if (Keyboard.current.sKey.isPressed) throttleInput -= 1f;
 
+        // Steuerung invertieren falls so in Einstellungen eingerichtet
+        if (SettingsManager.Instance != null && SettingsManager.Instance.Data.invertControls)
+            throttleInput *= -1f;
+
         ApplyThrottle(throttleInput);
         ApplySteering(steerInput);
         ApplyHydroDrag();

@@ -39920,6 +39920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 801459804}
   - component: {fileID: 801459805}
+  - component: {fileID: 801459806}
   m_Layer: 0
   m_Name: OptionsManager
   m_TagString: Untagged
@@ -39956,6 +39957,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SettingsMenuUI
   mainMenuScene: MainMenuScene
   minLoadingSeconds: 0.5
+--- !u!114 &801459806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801459803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10258c669860448cb80ecf234da01323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
+  masterRtpc: MasterVolume
+  musicRtpc: MusicVolume
+  sfxRtpc: SFXVolume
+  wwiseRtpcMax: 100
 --- !u!1001 &804608448
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1652,8 +1652,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1562964464}
   - component: {fileID: 1562964465}
+  - component: {fileID: 1562964466}
   m_Layer: 0
-  m_Name: Save & Load Manager
+  m_Name: Save & Load & Settings Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1692,6 +1693,22 @@ MonoBehaviour:
   audioFadeSeconds: 0.5
   masterVolumeRtpc: MasterVolume
   useSuspendAfterFadeOut: 1
+--- !u!114 &1562964466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562964463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10258c669860448cb80ecf234da01323, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsManager
+  masterRtpc: MasterVolume
+  musicRtpc: MusicVolume
+  sfxRtpc: SFXVolume
+  wwiseRtpcMax: 100
 --- !u!1 &1603242470
 GameObject:
   m_ObjectHideFlags: 0
