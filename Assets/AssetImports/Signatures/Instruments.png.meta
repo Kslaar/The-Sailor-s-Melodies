@@ -1,0 +1,2419 @@
+fileFormatVersion: 2
+guid: a33e40354273e427db6183ff2a30d659
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bf034a3eb9cc4ede853bad36e0a97ed
+      internalID: -1045774774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b66a77c33e844ee8f5a9b59fe95288
+      internalID: -2098967732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_2
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d00d0f0bb7fc44e38363b4702271baf
+      internalID: 992445517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c46c67942f3a4d9487124f1e7791490
+      internalID: 2146505092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_4
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b389ab1bb10474534b905ff4d0ec6e77
+      internalID: -1396451027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_5
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c40324e4880fb48ceb31f61c0b5f6aa8
+      internalID: -560564734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_6
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d9153485e234f3b9d63af9e4a426d2
+      internalID: -1253176436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_7
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6b058e4e06f4533af56f374b8bf020
+      internalID: 1752321817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_8
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0e91cb3f3b3494f88f2e03bcd80403
+      internalID: -442985547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_9
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 615
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f322c6145ff44fe97b904044fa4512
+      internalID: 243595174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddcfe09002b7748f69a3aa9497096636
+      internalID: -954269874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_11
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42557a373fa89479098aad6e5e452426
+      internalID: 1304397450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_12
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04b7479841bb4721b7d8b3ba740d727
+      internalID: 803544796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_13
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33adccc31fa8a41de8c04edd2bb66d59
+      internalID: -408064238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_14
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9391bb54d737844468c8b719588f0a42
+      internalID: 1114999075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_15
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65447444993044ac0b33275df7d3375a
+      internalID: -1501843760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_16
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e58da72ca0243bca6a241ee63baa27
+      internalID: 1857935087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_17
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce9e93feef404029afe8b330810755b
+      internalID: -623704032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_18
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48355cbbd421d4ee39b0dd24caab68ff
+      internalID: 1180558482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_19
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 547
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0355e258991104bea811235e322321da
+      internalID: 956774896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_20
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27c68d9ad30d477eb0dd6dcecb69552
+      internalID: -1103427040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a874767b3674c949b25bb8e178da83
+      internalID: 2027380082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_22
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0172ce513d91a469991735dc8b38be30
+      internalID: -882612066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_23
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ab329e321034bdc96f3c077d3ead44
+      internalID: -1869919445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_24
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40f2f09301c424e01941f5dcefe9c4c3
+      internalID: 1371118079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_25
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69d15c77020a4dfea38c9dd2cd18b68
+      internalID: 436832236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_26
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee0b3da8f4d7453d98a0252c77df905
+      internalID: -1355531159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_27
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20df95ea9bd9467eab29bcfb82ee43f
+      internalID: -565793599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_28
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f196fd0719a48d5908b21c4927a097
+      internalID: -393911483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_29
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 479
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422b0a3019f2f4c04800514f70bde97b
+      internalID: 812351558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_30
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc97b8cb930b64bb6ac3e113d8da1179
+      internalID: 1811768918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_31
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ca8efe3d98d48349d5da66420641f3
+      internalID: -524002075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_32
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78e6625512b77453a826424f35f40751
+      internalID: -1348263157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_33
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff33adaaca92748909cad113f8579b94
+      internalID: -628838808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_34
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f5f5314ca784708818914aaccbbdb5
+      internalID: 1401597589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_35
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57efa3457e87b46c4933c4cbc6e8bcf2
+      internalID: -1923369490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_36
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485876bfdb04e403788e98df8aa636f3
+      internalID: -1978868638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_37
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a156c739dcd7409093d511110cc2067
+      internalID: -1260199760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_38
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97960865145c2458e9e2b8a2ad608b44
+      internalID: -479691432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_39
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 411
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23adece2b435b49639f276f227fce2f9
+      internalID: 1905061684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_40
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03fdd8f650c2e42058698dc3832c8a6f
+      internalID: 1407880284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_41
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5de332383667a4a909f265fc85f66428
+      internalID: -1959910646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_42
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb93921465cf54ec6b3b2032b1c11d52
+      internalID: 11281231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_43
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3abe9d0602ac848d0b5beeac7a46add4
+      internalID: 368255272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_44
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442a66eb8cba74ad88ed28c672bd0845
+      internalID: -2077225965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_45
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d684a0d2708ab4a8db06a2576cc49cdd
+      internalID: -146935863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_46
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fce0a233b9df42ca9c7d77d49e11579
+      internalID: 553434791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_47
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8cf007b53204eb7ab784aa4bcf9928
+      internalID: -368525306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_48
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63893f348174e47be88e7c5b5364423c
+      internalID: -445658539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_49
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 343
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2dde15344b148e98a5019ba3da13d0
+      internalID: -13383081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_50
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9301ae4106d44989356f552f019cb6
+      internalID: -792333939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_51
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cccfbb0648724a1393fd87df4224b65
+      internalID: 1961363210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_52
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a13c2ad7033ab4c3f869b791805db7cd
+      internalID: 48259961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_53
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49b3481c1d3e4597ad214efdb0e137b
+      internalID: 307195491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_54
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451993ad6ec7a4a06a135ea6e05a9af6
+      internalID: -1965494814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_55
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cf44ce8527944f384ff3dbbd3069e1
+      internalID: 1411251419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_56
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fa5e06eedadf415eb0c727a0dc4b42b
+      internalID: -471980330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_57
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e5f7bff5b984fe9b125f45a63d010a
+      internalID: -1366363893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_58
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fce454a37fc4246b49a816f4677e59
+      internalID: 675433661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_59
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 275
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65734245c405746f28f6d8b344a82842
+      internalID: -954560756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229e54b7c6dac4ff6b31d5ed823c0c39
+      internalID: 2038824544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_61
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264c027ff85064ed4b2e1351898b25d6
+      internalID: -133390823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_62
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b147e197dd04df2a79801a6b821fb5
+      internalID: 1504383184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_63
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a7ad971002640579347a8cfc9322e8
+      internalID: -164048803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_64
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155da7de7952c4ecb835c77181025b60
+      internalID: 1708193517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_65
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a82488d352e447b6bf086853fe973cf
+      internalID: 1546684276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_66
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb10a63e5f3e946a4ad7c5c964f311f7
+      internalID: -2044429365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_67
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b75905cc30845be8713322404dafec
+      internalID: 1207531425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_68
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09a79779edc24a0fb52d4f8109ba265
+      internalID: 1941399037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_69
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 207
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b8e5e27c663541449f4ea54103bf687
+      internalID: 2141806349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_70
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dbf0386c8af4e1ebf29d6851a85448
+      internalID: 1101552987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_71
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf74760361cd44b1b2b762a702ad641
+      internalID: 1804524254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_72
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874c5aa3217cf4e24b6a66ab9004df44
+      internalID: -1746801225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_73
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c04042a788b04b4093b3c3a6ff81e5b
+      internalID: -1918688420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_74
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad504670aa184e8ba4bbdd662dd8ddf
+      internalID: -1368548088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_75
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e24209aafa704d328c55c9d632e34fd
+      internalID: -1860670411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_76
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97bed51d8d4aa496ab0bd1e256d6c0cf
+      internalID: 1357109730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_77
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef1c7ee451604aecabaf6cf458de6ac
+      internalID: 1068554214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_78
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc565842c47d949b0b6d204096018131
+      internalID: 1409775426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_79
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 139
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e2f4a2a95ba41a8bdb5cd3765d4a04
+      internalID: -2116477973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_80
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd192373954ec494b9ad8b8028f5ab6c
+      internalID: 317202631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_81
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144e0a15700ee482b8a4c47e66a304e8
+      internalID: 314412243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_82
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86502cd2452df44cfba59f30483b8780
+      internalID: -95049805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_83
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd6df2701b1044be8b392604982c0a4
+      internalID: 167730606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_84
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb4738b885f1345ddb0f479caa04bd5d
+      internalID: 926169984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_85
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2f7a6764224eaf99f7b6efec67752
+      internalID: -1334441926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_86
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d229bc912b349bfb2a7cb4ccb250cd
+      internalID: 665137261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_87
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c9b53b34554e45179e061b387f039f4
+      internalID: -1185201963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_88
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 425c3d098dfdf4d5391b12ae90652481
+      internalID: -1199753910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_89
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 71
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3a96950ac1d46d0b148744d262b065
+      internalID: 1133695159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_90
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e79f3a8ae8248fca4352eeffb40130
+      internalID: -1576078696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_91
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe3720fc7bba42a29b845b3c224c04b
+      internalID: -1088599444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_92
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b093bef92926c486e8d62209f5b2fe7f
+      internalID: -1276937644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_93
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6ea528519d04e77bf28ea237cdff29
+      internalID: -1588355620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_94
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7793d5ef19f0048bc9092348bb7cfc7b
+      internalID: -1713299763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_95
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4005ca1635d43f9816d749b7f70fe2
+      internalID: -445924207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_96
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f254426cffac48fe850782661d154f0
+      internalID: -451744937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_97
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717a57491ac2c43c4b676cc9f20bde47
+      internalID: -1248573807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_98
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba996a696d9e49869b18dc057a0531d
+      internalID: 1563447706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bildschirmfoto 2026-02-27 um 12.12.46_99
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 3
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e485a3f387bc345878ef7e8251a58700
+      internalID: -2087278232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 46977f5c3a8f84326817eddc5bc15e39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":10.0,"y":10.0},"gridSpriteSize":{"x":68.0,"y":68.0},"gridSpriteOffset":{"x":5.0,"y":9.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Bildschirmfoto 2026-02-27 um 12.12.46_0: -1045774774
+      Bildschirmfoto 2026-02-27 um 12.12.46_1: -2098967732
+      Bildschirmfoto 2026-02-27 um 12.12.46_10: -954269874
+      Bildschirmfoto 2026-02-27 um 12.12.46_11: 1304397450
+      Bildschirmfoto 2026-02-27 um 12.12.46_12: 803544796
+      Bildschirmfoto 2026-02-27 um 12.12.46_13: -408064238
+      Bildschirmfoto 2026-02-27 um 12.12.46_14: 1114999075
+      Bildschirmfoto 2026-02-27 um 12.12.46_15: -1501843760
+      Bildschirmfoto 2026-02-27 um 12.12.46_16: 1857935087
+      Bildschirmfoto 2026-02-27 um 12.12.46_17: -623704032
+      Bildschirmfoto 2026-02-27 um 12.12.46_18: 1180558482
+      Bildschirmfoto 2026-02-27 um 12.12.46_19: 956774896
+      Bildschirmfoto 2026-02-27 um 12.12.46_2: 992445517
+      Bildschirmfoto 2026-02-27 um 12.12.46_20: -1103427040
+      Bildschirmfoto 2026-02-27 um 12.12.46_21: 2027380082
+      Bildschirmfoto 2026-02-27 um 12.12.46_22: -882612066
+      Bildschirmfoto 2026-02-27 um 12.12.46_23: -1869919445
+      Bildschirmfoto 2026-02-27 um 12.12.46_24: 1371118079
+      Bildschirmfoto 2026-02-27 um 12.12.46_25: 436832236
+      Bildschirmfoto 2026-02-27 um 12.12.46_26: -1355531159
+      Bildschirmfoto 2026-02-27 um 12.12.46_27: -565793599
+      Bildschirmfoto 2026-02-27 um 12.12.46_28: -393911483
+      Bildschirmfoto 2026-02-27 um 12.12.46_29: 812351558
+      Bildschirmfoto 2026-02-27 um 12.12.46_3: 2146505092
+      Bildschirmfoto 2026-02-27 um 12.12.46_30: 1811768918
+      Bildschirmfoto 2026-02-27 um 12.12.46_31: -524002075
+      Bildschirmfoto 2026-02-27 um 12.12.46_32: -1348263157
+      Bildschirmfoto 2026-02-27 um 12.12.46_33: -628838808
+      Bildschirmfoto 2026-02-27 um 12.12.46_34: 1401597589
+      Bildschirmfoto 2026-02-27 um 12.12.46_35: -1923369490
+      Bildschirmfoto 2026-02-27 um 12.12.46_36: -1978868638
+      Bildschirmfoto 2026-02-27 um 12.12.46_37: -1260199760
+      Bildschirmfoto 2026-02-27 um 12.12.46_38: -479691432
+      Bildschirmfoto 2026-02-27 um 12.12.46_39: 1905061684
+      Bildschirmfoto 2026-02-27 um 12.12.46_4: -1396451027
+      Bildschirmfoto 2026-02-27 um 12.12.46_40: 1407880284
+      Bildschirmfoto 2026-02-27 um 12.12.46_41: -1959910646
+      Bildschirmfoto 2026-02-27 um 12.12.46_42: 11281231
+      Bildschirmfoto 2026-02-27 um 12.12.46_43: 368255272
+      Bildschirmfoto 2026-02-27 um 12.12.46_44: -2077225965
+      Bildschirmfoto 2026-02-27 um 12.12.46_45: -146935863
+      Bildschirmfoto 2026-02-27 um 12.12.46_46: 553434791
+      Bildschirmfoto 2026-02-27 um 12.12.46_47: -368525306
+      Bildschirmfoto 2026-02-27 um 12.12.46_48: -445658539
+      Bildschirmfoto 2026-02-27 um 12.12.46_49: -13383081
+      Bildschirmfoto 2026-02-27 um 12.12.46_5: -560564734
+      Bildschirmfoto 2026-02-27 um 12.12.46_50: -792333939
+      Bildschirmfoto 2026-02-27 um 12.12.46_51: 1961363210
+      Bildschirmfoto 2026-02-27 um 12.12.46_52: 48259961
+      Bildschirmfoto 2026-02-27 um 12.12.46_53: 307195491
+      Bildschirmfoto 2026-02-27 um 12.12.46_54: -1965494814
+      Bildschirmfoto 2026-02-27 um 12.12.46_55: 1411251419
+      Bildschirmfoto 2026-02-27 um 12.12.46_56: -471980330
+      Bildschirmfoto 2026-02-27 um 12.12.46_57: -1366363893
+      Bildschirmfoto 2026-02-27 um 12.12.46_58: 675433661
+      Bildschirmfoto 2026-02-27 um 12.12.46_59: -954560756
+      Bildschirmfoto 2026-02-27 um 12.12.46_6: -1253176436
+      Bildschirmfoto 2026-02-27 um 12.12.46_60: 2038824544
+      Bildschirmfoto 2026-02-27 um 12.12.46_61: -133390823
+      Bildschirmfoto 2026-02-27 um 12.12.46_62: 1504383184
+      Bildschirmfoto 2026-02-27 um 12.12.46_63: -164048803
+      Bildschirmfoto 2026-02-27 um 12.12.46_64: 1708193517
+      Bildschirmfoto 2026-02-27 um 12.12.46_65: 1546684276
+      Bildschirmfoto 2026-02-27 um 12.12.46_66: -2044429365
+      Bildschirmfoto 2026-02-27 um 12.12.46_67: 1207531425
+      Bildschirmfoto 2026-02-27 um 12.12.46_68: 1941399037
+      Bildschirmfoto 2026-02-27 um 12.12.46_69: 2141806349
+      Bildschirmfoto 2026-02-27 um 12.12.46_7: 1752321817
+      Bildschirmfoto 2026-02-27 um 12.12.46_70: 1101552987
+      Bildschirmfoto 2026-02-27 um 12.12.46_71: 1804524254
+      Bildschirmfoto 2026-02-27 um 12.12.46_72: -1746801225
+      Bildschirmfoto 2026-02-27 um 12.12.46_73: -1918688420
+      Bildschirmfoto 2026-02-27 um 12.12.46_74: -1368548088
+      Bildschirmfoto 2026-02-27 um 12.12.46_75: -1860670411
+      Bildschirmfoto 2026-02-27 um 12.12.46_76: 1357109730
+      Bildschirmfoto 2026-02-27 um 12.12.46_77: 1068554214
+      Bildschirmfoto 2026-02-27 um 12.12.46_78: 1409775426
+      Bildschirmfoto 2026-02-27 um 12.12.46_79: -2116477973
+      Bildschirmfoto 2026-02-27 um 12.12.46_8: -442985547
+      Bildschirmfoto 2026-02-27 um 12.12.46_80: 317202631
+      Bildschirmfoto 2026-02-27 um 12.12.46_81: 314412243
+      Bildschirmfoto 2026-02-27 um 12.12.46_82: -95049805
+      Bildschirmfoto 2026-02-27 um 12.12.46_83: 167730606
+      Bildschirmfoto 2026-02-27 um 12.12.46_84: 926169984
+      Bildschirmfoto 2026-02-27 um 12.12.46_85: -1334441926
+      Bildschirmfoto 2026-02-27 um 12.12.46_86: 665137261
+      Bildschirmfoto 2026-02-27 um 12.12.46_87: -1185201963
+      Bildschirmfoto 2026-02-27 um 12.12.46_88: -1199753910
+      Bildschirmfoto 2026-02-27 um 12.12.46_89: 1133695159
+      Bildschirmfoto 2026-02-27 um 12.12.46_9: 243595174
+      Bildschirmfoto 2026-02-27 um 12.12.46_90: -1576078696
+      Bildschirmfoto 2026-02-27 um 12.12.46_91: -1088599444
+      Bildschirmfoto 2026-02-27 um 12.12.46_92: -1276937644
+      Bildschirmfoto 2026-02-27 um 12.12.46_93: -1588355620
+      Bildschirmfoto 2026-02-27 um 12.12.46_94: -1713299763
+      Bildschirmfoto 2026-02-27 um 12.12.46_95: -445924207
+      Bildschirmfoto 2026-02-27 um 12.12.46_96: -451744937
+      Bildschirmfoto 2026-02-27 um 12.12.46_97: -1248573807
+      Bildschirmfoto 2026-02-27 um 12.12.46_98: 1563447706
+      Bildschirmfoto 2026-02-27 um 12.12.46_99: -2087278232
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

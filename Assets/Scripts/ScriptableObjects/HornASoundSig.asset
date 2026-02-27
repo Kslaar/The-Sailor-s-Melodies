@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
   id: horn_a
   displayName: Horn Chord A
-  icon: {fileID: -2015405988, guid: 633e329b39b63457281c351859a585d5, type: 3}
+  icon: {fileID: -1348263157, guid: a33e40354273e427db6183ff2a30d659, type: 3}
   playEvent:
     idInternal: 0
     valueGuidInternal: 

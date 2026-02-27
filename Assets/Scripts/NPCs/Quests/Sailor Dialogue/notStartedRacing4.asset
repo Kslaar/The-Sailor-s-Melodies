@@ -16,8 +16,8 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: startRacingQuest4
-    text: Hey you've got exactly the same sailboat I used years ago to race against
-      other sailors times. Do think you can beat my time?
+    text: There you are again! If you finish this Race in time, then I'll upgrade
+      your engine. Just beet my time of 2 minutes and 20 seconds!
     choices:
     - label: Start Racing
       nextNodeID: 

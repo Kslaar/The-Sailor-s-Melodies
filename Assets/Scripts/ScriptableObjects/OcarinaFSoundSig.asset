@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a246fded85f7437a9d2ffa7796b1a5c, type: 3}
-  m_Name: HornFSoundSig
+  m_Name: OcarinaFSoundSig
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
-  id: horn_f
-  displayName: Horn Chord F
-  icon: {fileID: -1260199760, guid: a33e40354273e427db6183ff2a30d659, type: 3}
+  id: ocarina_f
+  displayName: Ocarina Chord F
+  icon: {fileID: -882612066, guid: a33e40354273e427db6183ff2a30d659, type: 3}
   playEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f5e7d5a6b18614b4b979c35e7962633f, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 53eea33469a504dd493929bc375a3de4, type: 2}
   hintEvent:
     idInternal: 0
     valueGuidInternal: 
