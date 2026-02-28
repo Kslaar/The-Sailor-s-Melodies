@@ -17,6 +17,9 @@ public class RaceCourse : MonoBehaviour
     public Collider finishTrigger; 
     public List<Collider> checkpoints = new(); // Spieler soll ja nicht einfach sich zur finishline drehen können
 
+    [Header("Race-only Objects")]
+    public List<Collider> onlyActiveDuringRaceColliders = new();
+
     [Header("Rules & Time")]
     public float successTimeSeconds = 120f; 
     public float maxTimeSeconds = 210f; // Immer größer als successTimeSeconds
@@ -31,6 +34,7 @@ public class RaceCourse : MonoBehaviour
             return;
             
         SetRaceTriggersActive(false);
+        SetRaceOnlyCollidersActive(false);
     }
     public IEnumerable<Vector3> GetAnchorPositions()
     {
@@ -46,5 +50,15 @@ public class RaceCourse : MonoBehaviour
         if (checkpoints != null)
             foreach (var cp in checkpoints)
                 if (cp != null) cp.enabled = active;
+    }
+
+    public void SetRaceOnlyCollidersActive(bool active)
+    {
+        if (onlyActiveDuringRaceColliders == null) return;
+        foreach (var col in onlyActiveDuringRaceColliders)
+        {
+            if (col == null) continue;
+            col.enabled =active;
+        }
     }
 }

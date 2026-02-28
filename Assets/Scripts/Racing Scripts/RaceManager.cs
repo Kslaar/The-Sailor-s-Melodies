@@ -74,7 +74,7 @@ public class RaceManager : MonoBehaviour
         }
 
         currentCourse = course;
-        // currentCourse.SetRaceTriggersActive(true);
+        currentCourse.SetRaceOnlyCollidersActive(true);
         StartCoroutine(CoruEnableRaceTriggersNextFrame());
         nextCheckpoint = 0;
         timePassed = 0f;
@@ -289,7 +289,10 @@ public class RaceManager : MonoBehaviour
     private void ResetRace()
     {
         if (currentCourse != null)
+        {
             currentCourse.SetRaceTriggersActive(false);
+            currentCourse.SetRaceOnlyCollidersActive(false);
+        }
 
         currentCourse = null;
         nextCheckpoint = 0;
