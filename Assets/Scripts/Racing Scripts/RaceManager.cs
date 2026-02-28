@@ -304,6 +304,20 @@ public class RaceManager : MonoBehaviour
             checkpointArrowFxInstance.SetActive(false);
     }
 
+    public void ResetRaceState()
+    {
+        state = RaceState.Idle;
+        currentCourse = null;
+        nextCheckpoint = 0;
+        timePassed = 0f;
+        outOfBoundsTimer = 0f;
+
+        GlobalMusicManager.Instance.StartWorldMusic();
+        GlobalMusicManager.Instance.SetRaceState("Idle");
+        GlobalMusicManager.Instance.SetRaceState("Idle");
+          
+    }
+
     private void FreezePlayer(bool freeze)
     {
         if (boat == null) return;
