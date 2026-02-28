@@ -14122,6 +14122,7 @@ GameObject:
   - component: {fileID: 272333914}
   - component: {fileID: 272333916}
   - component: {fileID: 272333917}
+  - component: {fileID: 272333918}
   m_Layer: 0
   m_Name: UIHooks
   m_TagString: Untagged
@@ -14171,7 +14172,7 @@ MonoBehaviour:
   sailingHUD: {fileID: 916502616}
   dockUI: {fileID: 349171514}
   dialogueUIRoot: {fileID: 848157883}
-  questlogUI: {fileID: 1754910885}
+  questlogUI: {fileID: 272333918}
   settingsUI: {fileID: 484141567}
   raceUI: {fileID: 1758546257}
 --- !u!114 &272333917
@@ -14186,6 +14187,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e1874f9fdf74dca9eb044779f47a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIBackButton
+--- !u!114 &272333918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272333913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e73df10d8dbb4048ad3f2f750a9223c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestLogUI
+  root: {fileID: 1754910883}
+  listParent: {fileID: 1302647990}
+  questButtonPrefab: {fileID: 7868888945201228822, guid: 8e91c308c829444219dad5a5f02f1f40, type: 3}
 --- !u!1001 &274207987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26297,7 +26313,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -94.5
+      value: -587
       objectReference: {fileID: 0}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26305,7 +26321,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 421.5
+      value: -331.3
       objectReference: {fileID: 0}
     - target: {fileID: 7316729568759855435, guid: b1622355d38630246ab7c3b6c8cd114e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -38772,6 +38788,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7558817870666899897, guid: e026149450063dd44853d4d99457a43e, type: 3}
   m_PrefabInstance: {fileID: 1266148261}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &772042622 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 8540255283924128028, guid: bc89741fd48f14ad5bf5cf498bbe8a15, type: 3}
+  m_PrefabInstance: {fileID: 615347511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &772973691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46408,6 +46429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HotbarInputController
   hotbar: {fileID: 1927105120}
   recorderInteractor: {fileID: 1927105121}
+  scrollLimit: 0.01
 --- !u!1001 &908663619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50211,6 +50233,11 @@ MonoBehaviour:
   - {fileID: 1088143651}
   - {fileID: 137735092}
   - {fileID: 1171596903}
+  onlyActiveDuringRaceColliders:
+  - {fileID: 1724193742}
+  - {fileID: 1483326467}
+  - {fileID: 2144295231}
+  - {fileID: 1284455858}
   successTimeSeconds: 120
   maxTimeSeconds: 210
   maxDistanceFromIsland: 80
@@ -56398,6 +56425,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8674879588478358208, guid: 410ff2e8d36ecc6418659c41c4a171f3, type: 3}
   m_PrefabInstance: {fileID: 1128266878}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1128300827 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 8540255283924128028, guid: bc89741fd48f14ad5bf5cf498bbe8a15, type: 3}
+  m_PrefabInstance: {fileID: 520269628}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1128401351
 PrefabInstance:
@@ -62668,7 +62700,7 @@ MonoBehaviour:
   m_text: 'Active Quests: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 994fb8d80e00d4875a8e0ac4350f21e5, type: 2}
-  m_sharedMaterial: {fileID: -4168701784930614079, guid: 45ac3596981ef4570a2b6d6d5c2ee7c0, type: 2}
+  m_sharedMaterial: {fileID: -8824737476576897014, guid: 994fb8d80e00d4875a8e0ac4350f21e5, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -62733,7 +62765,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1256925378
@@ -63963,6 +63995,11 @@ MonoBehaviour:
   scalingFactor: 1
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!136 &1284455858 stripped
+CapsuleCollider:
+  m_CorrespondingSourceObject: {fileID: 8540255283924128028, guid: bc89741fd48f14ad5bf5cf498bbe8a15, type: 3}
+  m_PrefabInstance: {fileID: 406382501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1287458167
 GameObject:
   m_ObjectHideFlags: 0
@@ -72541,6 +72578,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8133078945890432727, guid: 4756c2168ae8c244388a79446594fbb4, type: 3}
   m_PrefabInstance: {fileID: 1461185689}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1461479151 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 14059189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1461520814
 GameObject:
   m_ObjectHideFlags: 0
@@ -73399,6 +73441,16 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6384587550283619994, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
   m_PrefabInstance: {fileID: 652059490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1481480856 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 652059490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1483326467 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 423744418}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1487494912
 PrefabInstance:
@@ -81234,6 +81286,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8133078945890432727, guid: 4756c2168ae8c244388a79446594fbb4, type: 3}
   m_PrefabInstance: {fileID: 1666399051}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &1668323853 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 779076589}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1671768749
 GameObject:
   m_ObjectHideFlags: 0
@@ -81878,6 +81935,13 @@ MonoBehaviour:
   - {fileID: 751722602}
   - {fileID: 1498666584}
   - {fileID: 103035853}
+  onlyActiveDuringRaceColliders:
+  - {fileID: 1846073746}
+  - {fileID: 1668323853}
+  - {fileID: 1481480856}
+  - {fileID: 1461479151}
+  - {fileID: 772042622}
+  - {fileID: 1128300827}
   successTimeSeconds: 140
   maxTimeSeconds: 230
   maxDistanceFromIsland: 80
@@ -83133,6 +83197,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936161941521952183, guid: 61e2d724dc2c7bc418c094976097a80d, type: 3}
   m_PrefabInstance: {fileID: 571973133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1724193742 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 1405971423}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1724687202
 PrefabInstance:
@@ -85083,7 +85152,6 @@ GameObject:
   - component: {fileID: 1754910884}
   - component: {fileID: 1754910887}
   - component: {fileID: 1754910886}
-  - component: {fileID: 1754910885}
   m_Layer: 5
   m_Name: QuestLog
   m_TagString: Untagged
@@ -85112,21 +85180,6 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: 0}
   m_SizeDelta: {x: -1009.9999, y: -180}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1754910885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754910883}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e73df10d8dbb4048ad3f2f750a9223c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::QuestLogUI
-  root: {fileID: 1754910883}
-  listParent: {fileID: 1302647990}
-  questButtonPrefab: {fileID: 7868888945201228822, guid: 8e91c308c829444219dad5a5f02f1f40, type: 3}
 --- !u!114 &1754910886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90114,6 +90167,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1d34f7914a1d8148a0ce7262f7ba394, type: 3}
+--- !u!135 &1846073746 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 735410141}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1846233521
 GameObject:
   m_ObjectHideFlags: 0
@@ -103248,6 +103306,7 @@ MonoBehaviour:
   - {fileID: 1520692905}
   - {fileID: 1682975010}
   - {fileID: 1004352418}
+  onlyActiveDuringRaceColliders: []
   successTimeSeconds: 120
   maxTimeSeconds: 210
   maxDistanceFromIsland: 80
@@ -104424,6 +104483,7 @@ MonoBehaviour:
   - {fileID: 778756103}
   - {fileID: 2107486222}
   - {fileID: 1177016610}
+  onlyActiveDuringRaceColliders: []
   successTimeSeconds: 120
   maxTimeSeconds: 210
   maxDistanceFromIsland: 80
@@ -104477,6 +104537,11 @@ MonoBehaviour:
 --- !u!4 &2144295228 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6384587550283619994, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
+  m_PrefabInstance: {fileID: 1581066293}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &2144295231 stripped
+SphereCollider:
+  m_CorrespondingSourceObject: {fileID: 1884459086764675550, guid: 6fe2cd0958cc64baeaffd82ed72fbfde, type: 3}
   m_PrefabInstance: {fileID: 1581066293}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2144308208

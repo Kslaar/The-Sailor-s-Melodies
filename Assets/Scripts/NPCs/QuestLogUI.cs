@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,10 +10,11 @@ public class QuestLogUI : MonoBehaviour
     [SerializeField] private GameObject root;
 
     [Header("List")]
-    [SerializeField] private Transform listParent;
+    [SerializeField] private RectTransform listParent;
     [SerializeField] private Button questButtonPrefab;
 
     private readonly List<GameObject> spawned = new();
+    private Coroutine _openRoutine;
 
     private void Awake()
     {
@@ -39,13 +41,31 @@ public class QuestLogUI : MonoBehaviour
 
     public void Open()
     {
-        if (root != null) root.SetActive(true);
-        Refresh();
+        if (root == null) return;
+        root.SetActive(true);
+
+        if(_openRoutine != null) StopCoroutine(_openRoutine);
+        _openRoutine = StartCoroutine(OpenNextFrame());
     }
 
     public void Close()
     {
+        if (_openRoutine != null)
+        {
+            StopCoroutine(_openRoutine);
+            _openRoutine = null;
+        }
         if (root != null) root.SetActive(false);
+    }
+
+    private IEnumerator OpenNextFrame()
+    {
+        yield return null;
+        Refresh();
+
+        Canvas.ForceUpdateCanvases();
+        if (listParent != null)
+            LayoutRebuilder.ForceRebuildLayoutImmediate(listParent);
     }
 
     public void Refresh()
@@ -69,10 +89,11 @@ public class QuestLogUI : MonoBehaviour
                 var st = qm.GetState(id);
 
                 string progress = GetProgressSummary(q);
-                string stateSuffix = st == QuestState.ReadyToTurnIn ? " (Ready to turn in)" : st == QuestState.Completed ? " (Completed)" : "";
+                string stateSuffix = 
+                    st == QuestState.ReadyToTurnIn ? " (Ready to turn in)" : st == QuestState.Completed ? " (Completed)" : "";
+
 
                 label.text = $"{q.title}{stateSuffix}" + (string.IsNullOrEmpty(progress) ? "" : $" [{progress}]");
-
                 ApplyStyle(label, st);
             }
         }
