@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{14F6A6E6-9D2D-38DC-BDF2-477E29D5FA7A}",
+    "Hash": "{1F41D2D7-8CAC-DC65-ACA4-A204A9D82E33}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Final Cat Studio - Hard Rock - Concrete Friction.wav",
-      "CachePath": "7F/{7F39CCA0-594E-4B58-9ECA-E387475CAADB}.wem"
+      "CachePath": "B5/{B56DB024-2EA2-1027-C2AF-8A60D2BF2B62}.wem"
      },
      {
       "Id": "175406919",
@@ -1596,16 +1596,7 @@
          "Id": "69364897"
         }
        ]
-      },
-      "ActionSetState": [
-       {
-        "GroupId": "3546073390",
-        "Id": "1921590194",
-        "Name": "Sailing",
-        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
-        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
-       }
-      ]
+      }
      },
      {
       "Id": "4281176146",
@@ -1747,15 +1738,6 @@
         "Name": "MotorActive",
         "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
         "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
-       }
-      ],
-      "ActionSetSwitch": [
-       {
-        "GroupId": "1445037870",
-        "Id": "2607556080",
-        "Name": "Menu",
-        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Menu",
-        "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
      },
@@ -1951,6 +1933,6 @@
     ]
    }
   ],
-  "FileHash": "{543518FD-DEDD-5D7C-A54F-DEDD5C0D85CE}"
+  "FileHash": "{F45A7BF2-172F-61F3-E221-E68280277588}"
  }
 }

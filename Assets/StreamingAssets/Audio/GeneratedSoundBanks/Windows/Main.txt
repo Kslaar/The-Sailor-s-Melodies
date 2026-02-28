@@ -122,7 +122,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	148246808	water_movement	.cache\E9\{E931C422-9EA6-E6DA-93A3-67F91D5CA4C3}.wem		\Containers\Player\water_movement		17126444
 	148900801	H_Voice_Male_01	.cache\86\{86975AEE-74F1-06D3-4978-8DC64E0B3FD0}.wem		\Containers\NPC\NPC_Greet\Teacher Voice\H_Voice_Male_01		143456
 	157702367	GunCannon 6025_32_1	.cache\DC\{DC290369-E50C-DEC6-CC10-3189E140E86A}.wem		\Containers\SFX\GunCannon 6025_32_1		890976
-	165193542	Stonegate	.cache\7F\{7F39CCA0-594E-4B58-9ECA-E387475CAADB}.wem		\Containers\SFX\Stonegate		469948
+	165193542	Stonegate	.cache\B5\{B56DB024-2EA2-1027-C2AF-8A60D2BF2B62}.wem		\Containers\SFX\Stonegate		469948
 	175406919	boat_boost	.cache\7B\{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem		\Containers\Player\boat_boost		1488096
 	183690583	Cinemear - Graphix - Pop Open Swipe	.cache\48\{48B1E4FB-3381-BDB3-F992-CE049D1D8453}.wem		\Containers\SFX\Pickup Fuel\Cinemear - Graphix - Pop Open Swipe		44948
 	216203938	motor_start_01	.cache\3C\{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem		\Containers\Player\Pull Chord\motor_start_01		40040

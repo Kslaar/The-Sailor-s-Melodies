@@ -4,20 +4,11 @@ using UnityEngine.InputSystem;
 
 public class MotorBoostAbility : MonoBehaviour
 {
-    [Header("Wwise Audio")]
-    public AK.Wwise.State SailingState;
-    public AK.Wwise.State MotorState;
-
-    public AK.Wwise.Event MotorStartEvent;
-    public AK.Wwise.Event MotorstopEvent;
-    public AK.Wwise.Event MotorLoopEvent;
-
-
-
-
+    
     [SerializeField] private BoatControl boat;
     [SerializeField] private BoatFuel fuel;
     [SerializeField] private MotorBoostData data;
+    [SerializeField] private BoatAudio audio; 
 
     [Header("Debug")]
     [SerializeField] private bool logAttempts = true;
@@ -35,6 +26,7 @@ public class MotorBoostAbility : MonoBehaviour
     {
         boat = GetComponent<BoatControl>();
         fuel = GetComponent<BoatFuel>();
+        audio = GetComponent<BoatAudio>();
     }
 
     void Update()
@@ -123,8 +115,7 @@ public class MotorBoostAbility : MonoBehaviour
 
     private void TryStartEngine()
     {
-        MotorStartEvent.Post(gameObject);
-
+        audio.PlayMotorStartAttempt();
         float roll = Random.value;
         bool success = roll < data.startSuccessChance;
 
@@ -147,14 +138,9 @@ public class MotorBoostAbility : MonoBehaviour
         boat.SetSpeedMultiplier(this, data.speedMultiplier);
         boat.SetThrustMultiplier(this, data.thrustMultiplier);
 
-        // Wwise Audio Start
-        MotorState.SetValue();               //Setze State -> MotorActive   
-        MotorStartEvent.Post(gameObject);    //Starte Motor-Start-Sound
-        MotorLoopEvent.Post(gameObject);
-
-       
+        audio.ActivateMotor();
+  
     
-
 
 
         if (logAttempts)
@@ -170,9 +156,7 @@ public class MotorBoostAbility : MonoBehaviour
         boat.ClearMultipliers(this);
         boat.ReductBoost(this);
 
-        //BOOST SOUND STOP
-       MotorstopEvent.Post(gameObject);
-        SailingState.SetValue();
+       audio.DeactivateMotor();
     }
 
     private void ResetPullState()

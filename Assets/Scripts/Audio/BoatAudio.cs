@@ -11,6 +11,8 @@ public class BoatAudio : MonoBehaviour
     public AK.Wwise.Event StopSailing;
     public AK.Wwise.Event MotorStart;
     public AK.Wwise.Event MotorStop;
+    public AK.Wwise.Event MotorLoop;
+
 
     [Header("RTPCs")]
     public AK.Wwise.RTPC SpeedRTPC;
@@ -35,11 +37,18 @@ public class BoatAudio : MonoBehaviour
         }
     }
 
+    public void PlayMotorStartAttempt()
+    {
+        MotorStart.Post(gameObject);    
+    }
+
     public void ActivateMotor()
     {
         StopSailing.Post(gameObject);   // Sailing-Sounds sauber beenden
+        
         MotorState.SetValue();          // StateGroup umschalten
-        MotorStart.Post(gameObject);     // Motor Start Ger�usch
+        
+        MotorLoop.Post(gameObject); // Motor Start Ger�usch
     }
 
     public void DeactivateMotor()
@@ -47,5 +56,10 @@ public class BoatAudio : MonoBehaviour
         MotorStop.Post(gameObject);      // Motor Aus
         SailingState.SetValue();         // zur�ck zu Sailing
         PlaySailing.Post(gameObject);    // Sailing Loops starten
+    }
+
+    private void OnDisable()
+    {
+        AkUnitySoundEngine.StopAll(gameObject);
     }
 }
