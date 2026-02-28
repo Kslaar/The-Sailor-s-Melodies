@@ -18,24 +18,39 @@ namespace AK
         static const AkUniqueID PLAY_FINISH = 1793765179U;
         static const AkUniqueID PLAY_HINT_OCARINA_CMAJ = 621743551U;
         static const AkUniqueID PLAY_HORN_A = 957019037U;
+        static const AkUniqueID PLAY_HORN_A_HINT = 2543727307U;
         static const AkUniqueID PLAY_HORN_B = 957019038U;
+        static const AkUniqueID PLAY_HORN_B_HINT = 923836858U;
         static const AkUniqueID PLAY_HORN_C = 957019039U;
+        static const AkUniqueID PLAY_HORN_C_HINT = 413890001U;
         static const AkUniqueID PLAY_HORN_D = 957019032U;
+        static const AkUniqueID PLAY_HORN_D_HINT = 2479269144U;
         static const AkUniqueID PLAY_HORN_E = 957019033U;
+        static const AkUniqueID PLAY_HORN_E_HINT = 819920663U;
         static const AkUniqueID PLAY_HORN_F = 957019034U;
+        static const AkUniqueID PLAY_HORN_F_HINT = 618456710U;
         static const AkUniqueID PLAY_HORN_G = 957019035U;
+        static const AkUniqueID PLAY_HORN_G_HINT = 119914893U;
         static const AkUniqueID PLAY_MOTORLOOP = 1855672063U;
         static const AkUniqueID PLAY_MOTORSTART = 1538229119U;
         static const AkUniqueID PLAY_MOTORSTOP = 1103577285U;
         static const AkUniqueID PLAY_MUSIC_WORLD = 3774920574U;
         static const AkUniqueID PLAY_OCARINA_A = 2686750109U;
+        static const AkUniqueID PLAY_OCARINA_A_HINT = 2949939403U;
         static const AkUniqueID PLAY_OCARINA_B = 2686750110U;
+        static const AkUniqueID PLAY_OCARINA_B_HINT = 1330048954U;
         static const AkUniqueID PLAY_OCARINA_C = 2686750111U;
+        static const AkUniqueID PLAY_OCARINA_C_HINT = 820102097U;
         static const AkUniqueID PLAY_OCARINA_CMAJ = 723882233U;
         static const AkUniqueID PLAY_OCARINA_D = 2686750104U;
+        static const AkUniqueID PLAY_OCARINA_D_HINT = 2885481240U;
         static const AkUniqueID PLAY_OCARINA_E = 2686750105U;
+        static const AkUniqueID PLAY_OCARINA_E_HINT = 1226132759U;
         static const AkUniqueID PLAY_OCARINA_F = 2686750106U;
+        static const AkUniqueID PLAY_OCARINA_F_HINT = 1024668806U;
         static const AkUniqueID PLAY_OCARINA_G = 2686750107U;
+        static const AkUniqueID PLAY_OCARINA_G_HINT = 526126989U;
+        static const AkUniqueID PLAY_OPEN_STONEGATE = 2945325829U;
         static const AkUniqueID PLAY_PASTORVOICE = 2044005997U;
         static const AkUniqueID PLAY_PICKUP_FUEL = 578142713U;
         static const AkUniqueID PLAY_PICKUP_QUEST = 2692550093U;
@@ -145,8 +160,11 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID MASTERVOLUME = 2918011349U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID PAUSEDUCK = 3503836294U;
         static const AkUniqueID PUZZLEHINT_PITCHCENTS = 335877618U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -171,6 +189,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID REVERB = 348963605U;
+        static const AkUniqueID REVERB_LONG = 3545178938U;
     } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES

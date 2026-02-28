@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{80140075-4CB7-D86D-81C9-03431DAE051C}",
+    "Hash": "{68A1750F-87E7-4118-0D1E-3D577BD66C99}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -46,14 +46,6 @@
       "Location": "Memory",
       "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
       "CachePath": "9B/{9BE574A9-0542-9703-65B8-99B213066222}.wem"
-     },
-     {
-      "Id": "89778095",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_01.wav",
-      "CachePath": "62/{62FBAB2A-3882-3EC8-45CF-DF9240E9E06C}.wem"
      },
      {
       "Id": "98811860",
@@ -117,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "W 04 Water_19_Splashing, Sailing, Ship_T03.wav",
-      "CachePath": "78/{780D261F-791B-8C97-511F-223322B562DC}.wem"
+      "CachePath": "E9/{E931C422-9EA6-E6DA-93A3-67F91D5CA4C3}.wem"
      },
      {
       "Id": "148900801",
@@ -136,20 +128,20 @@
       "CachePath": "DC/{DC290369-E50C-DEC6-CC10-3189E140E86A}.wem"
      },
      {
+      "Id": "165193542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Final Cat Studio - Hard Rock - Concrete Friction.wav",
+      "CachePath": "7F/{7F39CCA0-594E-4B58-9ECA-E387475CAADB}.wem"
+     },
+     {
       "Id": "175406919",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "boat_boost.wav",
       "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
-     },
-     {
-      "Id": "182657006",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "A1/{A1EAFC19-FC57-06ED-7640-BC3B42BE6784}.wem"
      },
      {
       "Id": "183690583",
@@ -230,14 +222,6 @@
       "Location": "Memory",
       "ShortName": "vocals_male_2.wav",
       "CachePath": "E0/{E0F9D91C-E7BD-6F45-D3E1-B0DE85F379EC}.wem"
-     },
-     {
-      "Id": "307227124",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "24/{24CBD5E5-D8D5-1EAC-A17E-CBE8D86D811F}.wem"
      },
      {
       "Id": "329250373",
@@ -392,14 +376,6 @@
       "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
      },
      {
-      "Id": "547471905",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "24/{242F0E0F-6F4C-2B21-3144-9040D7D82A69}.wem"
-     },
-     {
       "Id": "552721692",
       "Language": "SFX",
       "Streaming": "false",
@@ -488,28 +464,12 @@
       "CachePath": "9A/{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem"
      },
      {
-      "Id": "742202318",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "D3/{D32AAD91-311A-233A-A940-D8D4ACB4E994}.wem"
-     },
-     {
       "Id": "747045309",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Okarina.wav",
       "CachePath": "2D/{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem"
-     },
-     {
-      "Id": "796823544",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "19/{19DF69E0-3A5C-F5F4-5E99-C86EE77E462C}.wem"
      },
      {
       "Id": "798756617",
@@ -576,28 +536,12 @@
       "CachePath": "40/{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem"
      },
      {
-      "Id": "928158733",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_2.wav",
-      "CachePath": "E6/{E6334B0A-C586-50D2-399F-963EEAD7A5FF}.wem"
-     },
-     {
       "Id": "955175564",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Seal_02.wav",
       "CachePath": "D6/{D66FAAB5-8C0C-7BE3-3AF4-7ED50D32692E}.wem"
-     },
-     {
-      "Id": "983538638",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "vocals_male_4.wav",
-      "CachePath": "A9/{A9878B36-BCC4-079B-3FE1-C55C080C99DC}.wem"
      },
      {
       "Id": "1002586562",
@@ -643,10 +587,26 @@
        "LibId": "8912899"
       },
       {
-       "Id": "887071783",
+       "Id": "783804969",
+       "Name": "Pumping_and_Breathing_1 (Custom)",
+       "ObjectPath": "\\Containers\\SFX\\Stonegate\\[Effect Slot [1]: (Compressor)]\\Pumping_and_Breathing_1 (Custom)",
+       "GUID": "{6E7C3F3A-F894-44CF-9D27-F6CFD3847001}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "907119155",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\SFX\\Stonegate\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{B061F4AE-B184-4858-B83A-3C6144CC6912}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "936931104",
        "Name": "Guitar Distortion (Custom)",
-       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_clear\\Horn_B\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
-       "GUID": "{C85EADD1-F614-4C25-B1A7-223EF0E1CE65}",
+       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_Hint\\Horn_B_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{F7ED5305-97FD-421B-AD82-DBCD4D1A1FBA}",
        "LibName": "Wwise Guitar Distortion",
        "LibId": "8257539"
       }
@@ -826,6 +786,20 @@
       }
      },
      {
+      "Id": "2543727307",
+      "Name": "Play_Horn_A_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_A_Hint",
+      "GUID": "{3B20B0DF-C96B-4B67-B607-379DC96B441B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77588755",
+      "DurationMax": "0.77588755",
+      "MediaRefs": [
+       {
+        "Id": "741850182"
+       }
+      ]
+     },
+     {
       "Id": "957019038",
       "Name": "Play_Horn_B",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_B",
@@ -837,11 +811,25 @@
        {
         "Id": "887849136"
        }
+      ]
+     },
+     {
+      "Id": "923836858",
+      "Name": "Play_Horn_B_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_B_Hint",
+      "GUID": "{757368F9-9A56-46F7-8AFE-D8D4B0192715}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7913219",
+      "DurationMax": "0.7913219",
+      "MediaRefs": [
+       {
+        "Id": "887849136"
+       }
       ],
       "PluginRefs": {
        "Custom": [
         {
-         "Id": "887071783"
+         "Id": "936931104"
         }
        ]
       }
@@ -851,6 +839,20 @@
       "Name": "Play_Horn_C",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_C",
       "GUID": "{BE5F3207-8F76-4D34-B193-D10C7F44535C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8269352",
+      "DurationMax": "0.8269352",
+      "MediaRefs": [
+       {
+        "Id": "447023009"
+       }
+      ]
+     },
+     {
+      "Id": "413890001",
+      "Name": "Play_Horn_C_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_C_Hint",
+      "GUID": "{0D9EA294-988F-454F-A446-E6AD4D99FC60}",
       "DurationType": "OneShot",
       "DurationMin": "0.8269352",
       "DurationMax": "0.8269352",
@@ -875,10 +877,38 @@
       ]
      },
      {
+      "Id": "2479269144",
+      "Name": "Play_Horn_D_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_D_Hint",
+      "GUID": "{3E4EF1ED-B68F-45ED-B0F5-AA43D5FBB51A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8314197",
+      "DurationMax": "0.8314197",
+      "MediaRefs": [
+       {
+        "Id": "297006455"
+       }
+      ]
+     },
+     {
       "Id": "957019033",
       "Name": "Play_Horn_E",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_E",
       "GUID": "{0D64A9F9-385E-45A1-B53D-D28401E82740}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.67432004",
+      "DurationMax": "0.67432004",
+      "MediaRefs": [
+       {
+        "Id": "603414801"
+       }
+      ]
+     },
+     {
+      "Id": "819920663",
+      "Name": "Play_Horn_E_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_E_Hint",
+      "GUID": "{1909F5F3-8DD4-48B2-B075-59336289C9C7}",
       "DurationType": "OneShot",
       "DurationMin": "0.67432004",
       "DurationMax": "0.67432004",
@@ -903,10 +933,38 @@
       ]
      },
      {
+      "Id": "618456710",
+      "Name": "Play_Horn_F_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_F_Hint",
+      "GUID": "{F7E1D6D5-2D77-4187-9BFA-61F9DF1FD773}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77079",
+      "DurationMax": "0.77079",
+      "MediaRefs": [
+       {
+        "Id": "697144522"
+       }
+      ]
+     },
+     {
       "Id": "957019035",
       "Name": "Play_Horn_G",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_G",
       "GUID": "{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63000834",
+      "DurationMax": "0.63000834",
+      "MediaRefs": [
+       {
+        "Id": "487973624"
+       }
+      ]
+     },
+     {
+      "Id": "119914893",
+      "Name": "Play_Horn_G_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_G_Hint",
+      "GUID": "{4FB658FB-01AB-42C1-A0FE-799D140CB48F}",
       "DurationType": "OneShot",
       "DurationMin": "0.63000834",
       "DurationMax": "0.63000834",
@@ -993,10 +1051,10 @@
         "Children": [
          {
           "SwitchValue": {
-           "GroupType": "State",
-           "GroupId": "1021618141",
+           "GroupType": "Switch",
+           "GroupId": "1445037870",
            "Id": "0",
-           "GUID": "{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}"
+           "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}"
           },
           "MediaRefs": [
            {
@@ -1016,14 +1074,60 @@
         "Children": [
          {
           "SwitchValue": {
-           "GroupType": "State",
-           "GroupId": "1021618141",
+           "GroupType": "Switch",
+           "GroupId": "1445037870",
            "Id": "0",
-           "GUID": "{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}"
+           "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}"
           },
           "MediaRefs": [
            {
             "Id": "694199021"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "1505888634",
+         "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "1445037870",
+           "Id": "2607556080",
+           "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "226572936"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "104887399",
+         "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "1445037870",
+           "Id": "2607556080",
+           "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "226572936"
            }
           ]
          }
@@ -1115,6 +1219,20 @@
       ]
      },
      {
+      "Id": "2949939403",
+      "Name": "Play_Ocarina_A_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_A_Hint",
+      "GUID": "{D3222DD8-ED77-4801-BE24-E0C7D28DBFC1}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "903220478"
+       }
+      ]
+     },
+     {
       "Id": "2686750110",
       "Name": "Play_Ocarina_B",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_B",
@@ -1129,10 +1247,38 @@
       ]
      },
      {
+      "Id": "1330048954",
+      "Name": "Play_Ocarina_B_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_B_Hint",
+      "GUID": "{3A7C9926-0107-4191-8DFC-CB388925FBC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0174825",
+      "DurationMax": "1.0174825",
+      "MediaRefs": [
+       {
+        "Id": "736938058"
+       }
+      ]
+     },
+     {
       "Id": "2686750111",
       "Name": "Play_Ocarina_C",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_C",
       "GUID": "{A55A2836-2E6F-49E8-9239-1980D8DD4784}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.83916086",
+      "DurationMax": "0.83916086",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       }
+      ]
+     },
+     {
+      "Id": "820102097",
+      "Name": "Play_Ocarina_C_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_C_Hint",
+      "GUID": "{328B9AC7-4909-4121-B0DC-95002891CF81}",
       "DurationType": "OneShot",
       "DurationMin": "0.83916086",
       "DurationMax": "0.83916086",
@@ -1177,10 +1323,38 @@
       ]
      },
      {
+      "Id": "2885481240",
+      "Name": "Play_Ocarina_D_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_D_Hint",
+      "GUID": "{417BC908-C102-44F8-A535-A9628318CF19}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.86013985",
+      "DurationMax": "0.86013985",
+      "MediaRefs": [
+       {
+        "Id": "747045309"
+       }
+      ]
+     },
+     {
       "Id": "2686750105",
       "Name": "Play_Ocarina_E",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_E",
       "GUID": "{44A1BC09-F54D-4CE0-856C-14AD70E2C442}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "1226132759",
+      "Name": "Play_Ocarina_E_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_E_Hint",
+      "GUID": "{81990E88-A3D2-438B-8E0C-FCA6C33A1084}",
       "DurationType": "OneShot",
       "DurationMin": "1.006993",
       "DurationMax": "1.006993",
@@ -1205,6 +1379,20 @@
       ]
      },
      {
+      "Id": "1024668806",
+      "Name": "Play_Ocarina_F_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_F_Hint",
+      "GUID": "{D0856509-C774-407C-88A8-1E7CA580D553}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "1002586562"
+       }
+      ]
+     },
+     {
       "Id": "2686750107",
       "Name": "Play_Ocarina_G",
       "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_G",
@@ -1215,6 +1403,52 @@
       "MediaRefs": [
        {
         "Id": "483172978"
+       }
+      ]
+     },
+     {
+      "Id": "526126989",
+      "Name": "Play_Ocarina_G_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_G_Hint",
+      "GUID": "{B8CE8865-BEF9-4C18-B556-BD56D7583E35}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "483172978"
+       }
+      ]
+     },
+     {
+      "Id": "2945325829",
+      "Name": "Play_Open_StoneGate",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Play_Open_StoneGate",
+      "GUID": "{76C90C97-F7B5-44F5-A213-4A859BE4CA2B}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.894296",
+      "DurationMax": "4.894296",
+      "MediaRefs": [
+       {
+        "Id": "165193542"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "783804969"
+        },
+        {
+         "Id": "907119155"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3545178938",
+        "Name": "Reverb_long",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_long",
+        "GUID": "{5BD814B1-8D7D-4C55-B1EF-258460A2D218}"
        }
       ]
      },
@@ -1560,32 +1794,6 @@
     ],
     "StateGroups": [
      {
-      "Id": "1021618141",
-      "Name": "MusicState",
-      "ObjectPath": "\\States\\Default Work Unit\\MusicState",
-      "GUID": "{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}",
-      "States": [
-       {
-        "Id": "748895195",
-        "Name": "None",
-        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\None",
-        "GUID": "{C93DA44D-32AA-4DE8-9920-BA2460BEF668}"
-       },
-       {
-        "Id": "2402435976",
-        "Name": "Island_01",
-        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Island_01",
-        "GUID": "{B7F5A775-DF19-4BF7-A1FF-4BD7ECFD7982}"
-       },
-       {
-        "Id": "2582085496",
-        "Name": "Exploration",
-        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Exploration",
-        "GUID": "{B17B1864-EAB0-4732-90EA-85FE0BD70855}"
-       }
-      ]
-     },
-     {
       "Id": "3546073390",
       "Name": "BoatMode",
       "ObjectPath": "\\States\\Default Work Unit\\BoatMode",
@@ -1706,6 +1914,6 @@
     ]
    }
   ],
-  "FileHash": "{46BC1A91-A4AE-45EC-99D8-49F4E41F8241}"
+  "FileHash": "{FA5F8044-9019-43E2-EFA4-58FC69AD0CDE}"
  }
 }

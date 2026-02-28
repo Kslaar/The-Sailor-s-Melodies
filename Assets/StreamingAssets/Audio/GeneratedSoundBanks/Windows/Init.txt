@@ -19,6 +19,9 @@ State	ID	Name	State Group			Notes
 	3930136735	Dialogue	GameState			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	988953028	SFXVolume			\Default Work Unit\SFXVolume	
+	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
+	2918011349	MasterVolume			\Default Work Unit\MasterVolume	
 	3503836294	PauseDuck			\Default Work Unit\PauseDuck	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
@@ -33,9 +36,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master\Reverb	
+	3545178938	Reverb_long			\Default Work Unit\Master\Reverb_long	
 
 Effect plug-ins	ID	Name	Type				Notes
 	664771687	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	1144018367	Plate_Large	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes

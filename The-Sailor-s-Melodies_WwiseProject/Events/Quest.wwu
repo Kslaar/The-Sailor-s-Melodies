@@ -105,6 +105,83 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Horn_A_Hint" ID="{3B20B0DF-C96B-4B67-B607-379DC96B441B}">
+									<ChildrenList>
+										<Action Name="" ID="{A0EF0B1E-ED89-45F8-8536-50D28D6A8D96}" ShortID="384789110">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_A_Hint" ID="{C950F85F-9A47-4797-9AFF-4A03E7F24CCE}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_B_Hint" ID="{757368F9-9A56-46F7-8AFE-D8D4B0192715}">
+									<ChildrenList>
+										<Action Name="" ID="{66FB09E4-2D3B-420E-B773-BA9385E63094}" ShortID="814979132">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_B_Hint" ID="{F72CCF7A-C05A-462D-AB17-565FD55C2D74}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_C_Hint" ID="{0D9EA294-988F-454F-A446-E6AD4D99FC60}">
+									<ChildrenList>
+										<Action Name="" ID="{8BFEF3AD-C53B-4B14-B0D5-9EABD73990DA}" ShortID="52787366">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_C_Hint" ID="{7B1D25EE-9F98-4C1E-A857-4E99457E5C1D}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_D_Hint" ID="{3E4EF1ED-B68F-45ED-B0F5-AA43D5FBB51A}">
+									<ChildrenList>
+										<Action Name="" ID="{138E9D39-0293-47B5-AC27-6D2F0F7E13D5}" ShortID="477779253">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_D_Hint" ID="{0D4B87DE-F83E-428A-A08E-C57AE136B8BA}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_E_Hint" ID="{1909F5F3-8DD4-48B2-B075-59336289C9C7}">
+									<ChildrenList>
+										<Action Name="" ID="{206DA1B8-D765-4B80-B5E0-640FDAE9E14C}" ShortID="645794572">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_E_Hint" ID="{DAFD1170-03BF-4E4C-A8EE-01CF83DFB95E}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_F_Hint" ID="{F7E1D6D5-2D77-4187-9BFA-61F9DF1FD773}">
+									<ChildrenList>
+										<Action Name="" ID="{2F3212E1-2C20-4967-BE9B-08D28D261E31}" ShortID="612105870">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_F_Hint" ID="{09A9FBCA-F1E2-4C95-879A-F89DA457B9E3}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Horn_G_Hint" ID="{4FB658FB-01AB-42C1-A0FE-799D140CB48F}">
+									<ChildrenList>
+										<Action Name="" ID="{59570D1F-2B2E-4A36-8DA0-9308371E1A46}" ShortID="691619247">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Horn_G_Hint" ID="{FEB7A727-5234-40BE-A2D1-F87405DCDD41}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Ocarina" ID="{65868753-0273-4B59-B82A-B1648F9C6E58}" ShortID="92032168">
@@ -308,6 +385,83 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="Play_Ocarina_A_Hint" ID="{D3222DD8-ED77-4801-BE24-E0C7D28DBFC1}">
+									<ChildrenList>
+										<Action Name="" ID="{BE182381-0B3A-4031-B4AA-3FEA78D67E81}" ShortID="1069932210">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_A_Hint" ID="{9F7F019D-BE7B-4C45-A1DC-DF6AE34EFEB8}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_B_Hint" ID="{3A7C9926-0107-4191-8DFC-CB388925FBC2}">
+									<ChildrenList>
+										<Action Name="" ID="{33A8C26F-07A4-4F3C-A886-61AB3F75109D}" ShortID="34272502">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_B_Hint" ID="{B1A02213-1297-4EC4-860C-26A429776E2D}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_C_Hint" ID="{328B9AC7-4909-4121-B0DC-95002891CF81}">
+									<ChildrenList>
+										<Action Name="" ID="{FB370B2A-E0A8-45DD-AE23-9E8337877707}" ShortID="177120695">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_C_Hint" ID="{62002785-DBC8-4CA8-999B-9469F3F55D23}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_D_Hint" ID="{417BC908-C102-44F8-A535-A9628318CF19}">
+									<ChildrenList>
+										<Action Name="" ID="{166A6DBE-E442-4EFC-B41A-81D24962EE8C}" ShortID="264165107">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_D_Hint" ID="{A2FA9A4C-5E87-47C8-8FB3-ABE6C7FF8CDA}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_E_Hint" ID="{81990E88-A3D2-438B-8E0C-FCA6C33A1084}">
+									<ChildrenList>
+										<Action Name="" ID="{167C7E9B-6D36-4823-922B-296D513BEC97}" ShortID="295584164">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_E_Hint" ID="{F9278127-EBF9-489B-A54F-0B8576D7DA17}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_F_Hint" ID="{D0856509-C774-407C-88A8-1E7CA580D553}">
+									<ChildrenList>
+										<Action Name="" ID="{EEC7DCDD-8AA5-4C0E-A229-7FC56911AB07}" ShortID="831868459">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_F_Hint" ID="{3B4643F2-7D0A-4F82-842B-EA77154DDA53}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Play_Ocarina_G_Hint" ID="{B8CE8865-BEF9-4C18-B556-BD56D7583E35}">
+									<ChildrenList>
+										<Action Name="" ID="{50CE5FF7-0249-48F5-8988-0909C6F3DEED}" ShortID="282082202">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Okarina_G_Hint" ID="{C42EF9E8-07D4-464C-B31E-1273BC4EFCED}" WorkUnitID="{5800173B-4F0E-4DC0-ADC4-25DE9BA77AAD}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -369,6 +523,17 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Open_StoneGate" ID="{76C90C97-F7B5-44F5-A213-4A859BE4CA2B}">
+					<ChildrenList>
+						<Action Name="" ID="{93364205-475B-4688-B672-08CCC0A152B7}" ShortID="594992397">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Stonegate" ID="{501683DC-CD4E-438D-B8EB-A3FA84B6B925}" WorkUnitID="{4E299B09-B3CC-4088-A317-772409C120BD}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

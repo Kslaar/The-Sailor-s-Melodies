@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3B147CCA-ADCB-8AE5-7FFD-A8464690C583}",
+    "Hash": "{E32E7145-7FBD-F62C-1463-6C7E6F0A6A8E}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -26,6 +26,14 @@
       }
      ],
      "ShareSets": [
+      {
+       "Id": "1144018367",
+       "Name": "Plate_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
+       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
       {
        "Id": "2995775460",
        "Name": "Room_Small",
@@ -124,6 +132,19 @@
         }
        ]
       }
+     },
+     {
+      "Id": "3545178938",
+      "Name": "Reverb_long",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_long",
+      "GUID": "{5BD814B1-8D7D-4C55-B1EF-258460A2D218}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1144018367"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -132,6 +153,24 @@
       "Name": "PuzzleHint_PitchCents",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\PuzzleHint_PitchCents",
       "GUID": "{9B9A7F6F-2DBE-4716-9168-5A37665D7040}"
+     },
+     {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
+      "GUID": "{615F4DEE-FBCC-46F3-8F83-6B858F346F48}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{B7CCC3D1-5F07-4694-926A-5FDF125FB4CF}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{C743460E-FC86-4415-987E-FCDF6CD80A33}"
      },
      {
       "Id": "3503836294",
@@ -338,6 +377,6 @@
     ]
    }
   ],
-  "FileHash": "{048FCA5B-FDBA-3080-CF1F-751A199DA43D}"
+  "FileHash": "{6079B38B-D378-23A6-3BA3-9D4174489C1F}"
  }
 }

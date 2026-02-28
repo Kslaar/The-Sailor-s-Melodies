@@ -23,7 +23,53 @@
 								</ObjectList>
 							</ObjectLists>
 						</AuxBus>
-						<Bus Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}"/>
+						<Bus Name="Music" ID="{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{6889288F-7DE0-4075-A2F3-BA260303468F}" ShortID="268368531">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="MusicVolume" ID="{B7CCC3D1-5F07-4694-926A-5FDF125FB4CF}" WorkUnitID="{AD1DD05C-D333-4CC2-9657-4726DB15CDF7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{A35B3B10-7CD4-4784-9D2F-55F74CAF5321}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>20.09566</XPos>
+																<YPos>-23.93827</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>50.3212</XPos>
+																<YPos>-11.83233</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
 						<Bus Name="Effects" ID="{FD46D439-8CBD-45F2-B3E4-8018F0F567EB}">
 							<ChildrenList>
 								<Bus Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"/>
@@ -53,7 +99,55 @@
 								<Bus Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"/>
 								<Bus Name="NPC" ID="{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"/>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{9BFBEB5D-3B76-416D-9806-064E0ACE1E50}" ShortID="748247219">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="SFXVolume" ID="{615F4DEE-FBCC-46F3-8F83-6B858F346F48}" WorkUnitID="{AD1DD05C-D333-4CC2-9657-4726DB15CDF7}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{75331215-2558-4A56-AF66-F5ED3EA49E02}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
 						</Bus>
+						<AuxBus Name="Reverb_long" ID="{5BD814B1-8D7D-4C55-B1EF-258460A2D218}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{8D2B3E62-F78C-4A12-9C7D-F09F42415C26}" ShortID="777113209">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Plate_Large" ID="{62CB7384-421D-4F9A-9CF1-E90F7336A07B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
 					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
@@ -118,6 +212,37 @@
 													<Point>
 														<XPos>1</XPos>
 														<YPos>-13.01797</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+							<RTPC Name="" ID="{0C358DAA-FD55-44B4-A6CD-48F0606B5E11}" ShortID="154519526">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="MasterVolume" ID="{C743460E-FC86-4415-987E-FCDF6CD80A33}" WorkUnitID="{AD1DD05C-D333-4CC2-9657-4726DB15CDF7}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{6CAE4742-4466-4AFD-AF0C-2F7163F1CF92}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

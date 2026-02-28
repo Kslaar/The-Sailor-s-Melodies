@@ -115,7 +115,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -142,7 +142,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -171,7 +171,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -200,7 +200,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -229,7 +229,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -258,7 +258,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -287,7 +287,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -309,6 +309,9 @@
 									<ObjectLists>
 										<ObjectList Name="Effects">
 											<EffectSlot Name="" ID="{51A651BF-73CD-42C7-80AC-9359EF6C2BF6}" ShortID="653690047">
+												<PropertyList>
+													<Property Name="Bypass" Type="bool" Value="True"/>
+												</PropertyList>
 												<ReferenceList>
 													<Reference Name="Effect">
 														<Custom>
@@ -346,7 +349,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -365,29 +368,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Effects">
-											<EffectSlot Name="" ID="{31DFDC58-4842-449A-90B6-7038F88AF283}" ShortID="263858606">
-												<PropertyList>
-													<Property Name="Bypass" Type="bool" Value="True"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom>
-															<Effect Name="Guitar Distortion (Custom)" ID="{C85EADD1-F614-4C25-B1A7-223EF0E1CE65}" ShortID="887071783" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-																<PropertyList>
-																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
-																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
-																	<Property Name="DistortionType" Type="int32" Value="3"/>
-																	<Property Name="Rectification" Type="Real32" Value="75"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</ObjectList>
-									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Horn" ID="{13866E5C-436D-4324-9048-204763E049BD}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -398,7 +378,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -697,36 +677,6 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Effects">
-											<EffectSlot Name="" ID="{8401E562-6DDA-4AF3-BB42-A26FEB0CE2B9}" ShortID="131123742">
-												<ReferenceList>
-													<Reference Name="Effect">
-														<Custom>
-															<Effect Name="Guitar Distortion (Custom)" ID="{7BF99618-308D-434D-9D6C-ADBD06DA15B2}" ShortID="518248007" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
-																<PropertyList>
-																	<Property Name="DistortionDrive" Type="Real32" Value="100"/>
-																	<Property Name="DistortionTone" Type="Real32" Value="100"/>
-																	<Property Name="DistortionType" Type="int32" Value="3"/>
-																	<Property Name="Rectification" Type="Real32" Value="71"/>
-																</PropertyList>
-															</Effect>
-														</Custom>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-											<EffectSlot Name="" ID="{01C150F5-88D9-4B4E-9A20-03315E7F62FE}" ShortID="446692657">
-												<PropertyList>
-													<Property Name="Bypass" Type="bool" Value="True"/>
-												</PropertyList>
-												<ReferenceList>
-													<Reference Name="Effect" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
-														<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
-													</Reference>
-												</ReferenceList>
-											</EffectSlot>
-										</ObjectList>
-									</ObjectLists>
 									<ActiveSourceList>
 										<ActiveSource Name="Horn" ID="{74B1BB56-4E45-42A3-8D9E-29742F32C03B}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -874,7 +824,7 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+											<ObjectRef Name="Keyboard_Hint" ID="{7D760D8C-9641-4A05-BC76-82DF0879AB52}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
