@@ -206,6 +206,84 @@
 						<ActiveSource Name="GunCannon 6025_32_1" ID="{85870C90-BCD4-4CED-B7ED-66D537D3513F}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Stonegate" ID="{501683DC-CD4E-438D-B8EB-A3FA84B6B925}" ShortID="23122112">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_long" ID="{5BD814B1-8D7D-4C55-B1EF-258460A2D218}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Final Cat Studio - Hard Rock - Concrete Friction" ID="{D29DC9F5-3E2F-4841-8754-4690B7AA4889}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.163688858509446"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="4.89429621330451"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Final Cat Studio - Hard Rock - Concrete Friction.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="165193542"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{68420550-1A1E-4EBD-8AE8-152475FF09ED}" ShortID="382900419">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom>
+											<Effect Name="Parametric EQ (Custom)" ID="{B061F4AE-B184-4858-B83A-3C6144CC6912}" ShortID="907119155" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<PropertyList>
+													<Property Name="DynamicsEnableBand2" Type="bool" Value="True"/>
+													<Property Name="FilterTypeBand3" Type="int32" Value="7"/>
+													<Property Name="FrequencyBand1" Type="Real32" Value="96.94242"/>
+													<Property Name="FrequencyBand2" Type="Real32" Value="148.5928"/>
+													<Property Name="FrequencyBand3" Type="Real32" Value="8834.689"/>
+													<Property Name="FrequencyBand4" Type="Real32" Value="747.499"/>
+													<Property Name="GainBand1" Type="Real32" Value="0.05128205"/>
+													<Property Name="GainBand2" Type="Real32" Value="3.48718"/>
+													<Property Name="GainBand3" Type="Real32" Value="0.1538462"/>
+													<Property Name="GainBand4" Type="Real32" Value="-1"/>
+													<Property Name="NumBands" Type="int32" Value="4"/>
+													<Property Name="OnOffBand3" Type="bool" Value="True"/>
+													<Property Name="OnOffBand4" Type="bool" Value="True"/>
+													<Property Name="QFactorBand2" Type="Real32" Value="1.7"/>
+													<Property Name="QFactorBand3" Type="Real32" Value="0.8055699"/>
+												</PropertyList>
+											</Effect>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+							<EffectSlot Name="" ID="{A31FFDA9-F184-4DB6-90A2-D04E6467802C}" ShortID="73954191">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom CreatedFrom="{87BE3270-3D27-45BB-9E46-7F2D9380F523}">
+											<Effect Name="Pumping_and_Breathing_1 (Custom)" ID="{6E7C3F3A-F894-44CF-9D27-F6CFD3847001}" ShortID="783804969" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+												<PropertyList>
+													<Property Name="AttackTime" Type="Real32" Value="0.111"/>
+													<Property Name="OutputGain" Type="Real32" Value="3"/>
+													<Property Name="Ratio" Type="Real32" Value="10.6"/>
+													<Property Name="ReleaseTime" Type="Real32" Value="0.021"/>
+													<Property Name="Threshold" Type="Real32" Value="-23.9"/>
+												</PropertyList>
+											</Effect>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Final Cat Studio - Hard Rock - Concrete Friction" ID="{D29DC9F5-3E2F-4841-8754-4690B7AA4889}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3545178938	Reverb_long			\Default Work Unit\Master\Reverb_long	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1144018367	Plate_Large	Wwise RoomVerb			
+
