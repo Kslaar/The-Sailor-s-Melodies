@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{5D7BF535-8C32-5158-189B-535F748623F3}",
+    "Hash": "{11B5ED47-7A17-2CAC-C4AE-7C27B11E299B}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -26,6 +26,14 @@
       }
      ],
      "ShareSets": [
+      {
+       "Id": "415841907",
+       "Name": "Space_Garage",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Huge Spaces\\Space_Garage",
+       "GUID": "{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
       {
        "Id": "1144018367",
        "Name": "Plate_Large",
@@ -74,6 +82,12 @@
       "Name": "NPC",
       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\NPC",
       "GUID": "{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"
+     },
+     {
+      "Id": "949388280",
+      "Name": "Animals",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Animals",
+      "GUID": "{2342BA03-DAEE-446B-A288-8204C0005B30}"
      },
      {
       "Id": "1795056175",
@@ -134,6 +148,19 @@
       }
      },
      {
+      "Id": "3176089955",
+      "Name": "Reverb_Animals",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+      "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "415841907"
+        }
+       ]
+      }
+     },
+     {
       "Id": "3545178938",
       "Name": "Reverb_long",
       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_long",
@@ -171,6 +198,12 @@
       "Name": "MasterVolume",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
       "GUID": "{C743460E-FC86-4415-987E-FCDF6CD80A33}"
+     },
+     {
+      "Id": "3472912007",
+      "Name": "PlayerDistance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerDistance",
+      "GUID": "{D48F197D-7378-4C0F-BAD9-B83073440EF8}"
      },
      {
       "Id": "3503836294",
@@ -377,6 +410,6 @@
     ]
    }
   ],
-  "FileHash": "{1CF53722-2EC2-63ED-5B69-197DCF3F7FF0}"
+  "FileHash": "{C9205CE7-0A5F-6707-66BB-0374008C6468}"
  }
 }

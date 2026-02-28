@@ -33,12 +33,41 @@
 					</ActiveSourceList>
 				</Sound>
 				<RandomSequenceContainer Name="Seagulls" ID="{F933DAD2-D2B2-48F4-AE34-4D26BA579F0B}" ShortID="1072658986">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{4ACF9CB3-26C3-433F-9686-490E8980511A}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="2.5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-10</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Animals" ID="{2342BA03-DAEE-446B-A288-8204C0005B30}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Animals" ID="{E27AF391-4F8B-4372-8EAE-702C55F360C0}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -152,12 +181,36 @@
 					</ChildrenList>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Wale" ID="{2A3FBF8F-5B37-4086-8148-A48B1CDEE911}" ShortID="358011466">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{C9AC4971-F142-41D6-A68E-1B48DE92F2C4}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Animals" ID="{2342BA03-DAEE-446B-A288-8204C0005B30}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+						<Reference Name="UserAuxSend1">
+							<ObjectRef Name="Reverb_Animals" ID="{E27AF391-4F8B-4372-8EAE-702C55F360C0}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -220,6 +273,26 @@
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Effects">
+							<EffectSlot Name="" ID="{3D0BE744-6037-4A05-A803-326F624E6F2A}" ShortID="255670131">
+								<ReferenceList>
+									<Reference Name="Effect">
+										<Custom>
+											<Effect Name="Parametric EQ (Custom)" ID="{43F0FDBD-E7F0-4996-B445-9596B1B39185}" ShortID="185063321" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+												<PropertyList>
+													<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+													<Property Name="FrequencyBand3" Type="Real32" Value="1655.374"/>
+													<Property Name="GainBand3" Type="Real32" Value="-0.4615385"/>
+													<Property Name="OnOffBand3" Type="bool" Value="True"/>
+												</PropertyList>
+											</Effect>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</EffectSlot>
+						</ObjectList>
+					</ObjectLists>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="Seal" ID="{4D6A1111-26E1-44CB-B208-472E253B5496}" ShortID="78273614">
 					<ReferenceList>
@@ -227,7 +300,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+							<ObjectRef Name="Animals" ID="{2342BA03-DAEE-446B-A288-8204C0005B30}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

@@ -13,17 +13,23 @@
 				<SoundBank Name="Main" ID="{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_Seal" ID="{D221093C-7554-406E-B723-83E64F80C657}" WorkUnitID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_F_Hint" ID="{D0856509-C774-407C-88A8-1E7CA580D553}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_quest_direction" ID="{6D2859F1-6347-40A6-AB65-0E6A323B510F}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_A" ID="{3ACC880F-359E-40AD-9AD4-CCEEF608727D}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_C_Hint" ID="{328B9AC7-4909-4121-B0DC-95002891CF81}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_F_Hint" ID="{F7E1D6D5-2D77-4187-9BFA-61F9DF1FD773}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_B_Hint" ID="{3A7C9926-0107-4191-8DFC-CB388925FBC2}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_B" ID="{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_UI_TypeLoop" ID="{446F1D4E-5C90-4246-86BB-C9F4923461C8}" WorkUnitID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Finish" ID="{E6E5C216-B5BD-42B2-8142-85EEE3899972}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_G_Hint" ID="{4FB658FB-01AB-42C1-A0FE-799D140CB48F}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_Seagulls" ID="{AEA7B431-5825-42E5-9901-D78D6E31C96B}" WorkUnitID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_E_Hint" ID="{81990E88-A3D2-438B-8E0C-FCA6C33A1084}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Sailing" ID="{F6DBAAAD-3765-4398-9F80-D398782E5CA5}" WorkUnitID="{947917E6-3674-42C7-A9F7-50A7F9887A61}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Hint_Ocarina_CMaj" ID="{CF728F8A-15DE-44D1-8DF2-06D1C1A57C8D}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_G" ID="{169500CE-1B24-44D6-B33E-48CEC5815062}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Open_StoneGate" ID="{76C90C97-F7B5-44F5-A213-4A859BE4CA2B}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_D_Hint" ID="{417BC908-C102-44F8-A535-A9628318CF19}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_C_Hint" ID="{0D9EA294-988F-454F-A446-E6AD4D99FC60}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_E" ID="{0D64A9F9-385E-45A1-B53D-D28401E82740}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_D" ID="{BCB2406C-E6B3-45A1-9531-26575D9389ED}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
@@ -34,6 +40,7 @@
 						<ObjectRef Name="Play_Wale" ID="{477C8097-1DA0-46BE-B54D-FB5E6A112819}" WorkUnitID="{5B97876A-CA68-4DD0-ABD3-503A2A32A4CF}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_B_Hint" ID="{757368F9-9A56-46F7-8AFE-D8D4B0192715}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_CMaj" ID="{ED482D53-E0C2-47BB-BD9B-C9A35350144C}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_A_Hint" ID="{D3222DD8-ED77-4801-BE24-E0C7D28DBFC1}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_start" ID="{ECCC4E01-26C8-480B-ADF0-92624331C8BA}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_Music" ID="{1706C595-0691-4812-9EBD-30C795469909}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_click" ID="{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
@@ -53,6 +60,7 @@
 						<ObjectRef Name="Quest_accepted" ID="{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Horn_G" ID="{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_UI_TypeLoop" ID="{B5AF5AB2-8E79-4BFE-84DB-9C50236FF324}" WorkUnitID="{F7B98D9E-4EA0-4F9F-AA99-5AA7F5156974}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Ocarina_G_Hint" ID="{B8CE8865-BEF9-4C18-B556-BD56D7583E35}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ui_error" ID="{B97D5BD1-A315-4C44-8D70-2552B7FEE564}" WorkUnitID="{6BDF7A56-3FEA-485E-972F-C89BC5A63C21}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Music_World" ID="{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}" WorkUnitID="{FC330F8B-4F9E-46C3-BC82-0A6FBDAE1EE1}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Play_Ocarina_E" ID="{44A1BC09-F54D-4CE0-856C-14AD70E2C442}" WorkUnitID="{4BC67015-0016-4AB5-BF73-B5877E071C40}" Origin="Manual" Filter="7"/>

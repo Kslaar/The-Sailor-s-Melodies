@@ -27,6 +27,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master\Effects\SFX	
 	662417162	NPC			\Default Work Unit\Master\Effects\NPC	
+	949388280	Animals			\Default Work Unit\Master\Effects\Animals	
 	1795056175	Boat			\Default Work Unit\Master\Effects\Boat	
 	1942696649	Effects			\Default Work Unit\Master\Effects	
 	2652995606	Keyboard_Hint			\Default Work Unit\Master\Effects\Keyboard_Hint	
@@ -36,9 +37,11 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	348963605	Reverb			\Default Work Unit\Master\Reverb	
+	3176089955	Reverb_Animals			\Default Work Unit\Master\Reverb_Animals	
 	3545178938	Reverb_long			\Default Work Unit\Master\Reverb_long	
 
 Effect plug-ins	ID	Name	Type				Notes
+	415841907	Space_Garage	Wwise RoomVerb			
 	664771687	Guitar Distortion (Custom)	Wwise Guitar Distortion			
 	1144018367	Plate_Large	Wwise RoomVerb			
 	2995775460	Room_Small	Wwise RoomVerb			

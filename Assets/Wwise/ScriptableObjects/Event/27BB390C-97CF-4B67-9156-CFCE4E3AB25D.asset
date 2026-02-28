@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89195ab19d5193e4297a66808eb52ea7, type: 3}
+  m_Name: 27BB390C-97CF-4B67-9156-CFCE4E3AB25D
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Stop_Wale
+  id: 3140964701
+  guid: 27BB390C-97CF-4B67-9156-CFCE4E3AB25D
+  IsInUserDefinedSoundBank: 0

@@ -36,6 +36,51 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Seagulls" ID="{AEA7B431-5825-42E5-9901-D78D6E31C96B}">
+					<ChildrenList>
+						<Action Name="" ID="{2C0E2FFE-5C5A-4C6A-ADD9-AE87A17EBC47}" ShortID="13343356">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seagulls" ID="{F933DAD2-D2B2-48F4-AE34-4D26BA579F0B}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Wale" ID="{27BB390C-97CF-4B67-9156-CFCE4E3AB25D}">
+					<ChildrenList>
+						<Action Name="" ID="{DF8A6EE2-0EF3-4106-8DB5-465A7CE99126}" ShortID="34628028">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wale" ID="{2A3FBF8F-5B37-4086-8148-A48B1CDEE911}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Seal" ID="{EE4323BA-553D-4105-912F-10249EE0A7B5}">
+					<ChildrenList>
+						<Action Name="" ID="{A5DDB450-DD28-4638-A4E0-5C3DA435B3A0}" ShortID="826364730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Seal" ID="{4D6A1111-26E1-44CB-B208-472E253B5496}" WorkUnitID="{38C4576B-54E2-4650-864D-172E76D35CFA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

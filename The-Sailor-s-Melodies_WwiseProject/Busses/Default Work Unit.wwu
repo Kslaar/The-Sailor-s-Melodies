@@ -98,6 +98,7 @@
 								</Bus>
 								<Bus Name="SFX" ID="{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"/>
 								<Bus Name="NPC" ID="{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"/>
+								<Bus Name="Animals" ID="{2342BA03-DAEE-446B-A288-8204C0005B30}"/>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
@@ -142,6 +143,19 @@
 										<ReferenceList>
 											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 												<ObjectRef Name="Plate_Large" ID="{62CB7384-421D-4F9A-9CF1-E90F7336A07B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
+						</AuxBus>
+						<AuxBus Name="Reverb_Animals" ID="{E27AF391-4F8B-4372-8EAE-702C55F360C0}">
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{E69501E5-F53E-4576-A84A-DC17F13D5C44}" ShortID="986852174">
+										<ReferenceList>
+											<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+												<ObjectRef Name="Space_Garage" ID="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 											</Reference>
 										</ReferenceList>
 									</EffectSlot>

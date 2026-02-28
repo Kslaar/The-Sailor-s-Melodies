@@ -66,7 +66,10 @@ namespace AK
         static const AkUniqueID QUEST_ACCEPTED = 602563U;
         static const AkUniqueID STOP_MUSIC = 2837384057U;
         static const AkUniqueID STOP_SAILING = 1258201081U;
+        static const AkUniqueID STOP_SEAGULLS = 3590310348U;
+        static const AkUniqueID STOP_SEAL = 325636059U;
         static const AkUniqueID STOP_UI_TYPELOOP = 3458954543U;
+        static const AkUniqueID STOP_WALE = 3140964701U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_ERROR = 1009189048U;
         static const AkUniqueID UI_START = 1219048826U;
@@ -163,6 +166,7 @@ namespace AK
         static const AkUniqueID MASTERVOLUME = 2918011349U;
         static const AkUniqueID MUSICVOLUME = 2346531308U;
         static const AkUniqueID PAUSEDUCK = 3503836294U;
+        static const AkUniqueID PLAYERDISTANCE = 3472912007U;
         static const AkUniqueID PUZZLEHINT_PITCHCENTS = 335877618U;
         static const AkUniqueID SFXVOLUME = 988953028U;
     } // namespace GAME_PARAMETERS
@@ -176,6 +180,7 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID ANIMALS = 949388280U;
         static const AkUniqueID BOAT = 1795056175U;
         static const AkUniqueID EFFECTS = 1942696649U;
         static const AkUniqueID ISLAND = 3199546890U;
@@ -189,6 +194,7 @@ namespace AK
     namespace AUX_BUSSES
     {
         static const AkUniqueID REVERB = 348963605U;
+        static const AkUniqueID REVERB_ANIMALS = 3176089955U;
         static const AkUniqueID REVERB_LONG = 3545178938U;
     } // namespace AUX_BUSSES
 

@@ -51,6 +51,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3070880444	NPC_Greet			\Default Work Unit\NPC\NPC_Greet	
 	3173738435	Play_RaceStart			\Default Work Unit\SFX\Play_RaceStart	
 	3458954543	Stop_UI_TypeLoop			\Default Work Unit\NPC\Stop_UI_TypeLoop	
+	3590310348	Stop_Seagulls			\Default Work Unit\Animals\Stop_Seagulls	
 	3774920574	Play_Music_World			\Default Work Unit\Music\Play_Music_World	
 	4262365201	Play_Seal			\Default Work Unit\Animals\Play_Seal	
 	4281176146	Play_Seagulls			\Default Work Unit\Animals\Play_Seagulls	
@@ -95,6 +96,7 @@ State	ID	Name	State Group			Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	157279238	Guitar Distortion (Custom)	Wwise Guitar Distortion			
+	185063321	Parametric EQ (Custom)	Wwise Parametric EQ			
 	749681742	Octave_Down (Custom)	Wwise Pitch Shifter			
 	783804969	Pumping_and_Breathing_1 (Custom)	Wwise Compressor			
 	907119155	Parametric EQ (Custom)	Wwise Parametric EQ			

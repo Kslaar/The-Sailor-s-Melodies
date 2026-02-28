@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{68A1750F-87E7-4118-0D1E-3D577BD66C99}",
+    "Hash": "{14F6A6E6-9D2D-38DC-BDF2-477E29D5FA7A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -577,6 +577,14 @@
        "GUID": "{2CE1BEC7-D615-405D-900F-DC802EDAEA26}",
        "LibName": "Wwise Guitar Distortion",
        "LibId": "8257539"
+      },
+      {
+       "Id": "185063321",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\Animals\\Wale\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{43F0FDBD-E7F0-4996-B445-9596B1B39185}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       },
       {
        "Id": "749681742",
@@ -1604,9 +1612,7 @@
       "Name": "Play_Seagulls",
       "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Seagulls",
       "GUID": "{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.1462524",
-      "DurationMax": "2.4123333",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "382701999"
@@ -1619,6 +1625,14 @@
        },
        {
         "Id": "889405789"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3176089955",
+        "Name": "Reverb_Animals",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+        "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}"
        }
       ]
      },
@@ -1665,15 +1679,28 @@
       "Name": "Play_Wale",
       "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Wale",
       "GUID": "{477C8097-1DA0-46BE-B54D-FB5E6A112819}",
-      "DurationType": "OneShot",
-      "DurationMin": "2.5010314",
-      "DurationMax": "3.884561",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "121011351"
        },
        {
         "Id": "437250838"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "185063321"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3176089955",
+        "Name": "Reverb_Animals",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+        "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}"
        }
       ]
      },
@@ -1731,6 +1758,16 @@
         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
        }
       ]
+     },
+     {
+      "Id": "3590310348",
+      "Name": "Stop_Seagulls",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Stop_Seagulls",
+      "GUID": "{AEA7B431-5825-42E5-9901-D78D6E31C96B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "3458954543",
@@ -1914,6 +1951,6 @@
     ]
    }
   ],
-  "FileHash": "{FA5F8044-9019-43E2-EFA4-58FC69AD0CDE}"
+  "FileHash": "{F31770EE-54DE-1D2E-4B5C-113389667866}"
  }
 }

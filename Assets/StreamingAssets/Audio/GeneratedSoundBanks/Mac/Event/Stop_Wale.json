@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3140964701",
+    "Type": "Event",
+    "GUID": "{27BB390C-97CF-4B67-9156-CFCE4E3AB25D}",
+    "Language": "SFX",
+    "Hash": "{C3561C5C-7C98-0BF4-2CD2-37267C2635B0}",
+    "ObjectPath": "Stop_Wale",
+    "ShortName": "Stop_Wale",
+    "Path": "Event/Stop_Wale.bnk",
+    "Events": [
+     {
+      "Id": "3140964701",
+      "Name": "Stop_Wale",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Stop_Wale",
+      "GUID": "{27BB390C-97CF-4B67-9156-CFCE4E3AB25D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{BB651E10-88D9-9BB5-6CBD-0E7FFCCD9FE1}"
+ }
+}
