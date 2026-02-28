@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
     "Language": "SFX",
-    "Hash": "{1F41D2D7-8CAC-DC65-ACA4-A204A9D82E33}",
+    "Hash": "{97BAFC09-C4D4-0A7E-4929-847A2BDEA5B0}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -38,6 +38,14 @@
       "Location": "Memory",
       "ShortName": "SFX_Click.wav",
       "CachePath": "76/{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem"
+     },
+     {
+      "Id": "45906878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "E2/{E245A8AF-170C-236B-7537-535F47C1DA24}.wem"
      },
      {
       "Id": "72439141",
@@ -264,6 +272,14 @@
       "CachePath": "0F/{0F4C06C5-FAB6-EE57-62B6-08FAF9915727}.wem"
      },
      {
+      "Id": "407531309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Céline Woodburn - Whale Calls - Whale Sign Deep.wav",
+      "CachePath": "B9/{B995DB4B-D581-FF88-047E-4DD54450CAE6}.wem"
+     },
+     {
       "Id": "427513672",
       "Language": "SFX",
       "Streaming": "false",
@@ -392,6 +408,14 @@
       "CachePath": "E1/{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem"
      },
      {
+      "Id": "615780164",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "1B/{1B6C3BE3-9672-8A38-6413-44B6538B07D9}.wem"
+     },
+     {
       "Id": "621479489",
       "Language": "SFX",
       "Streaming": "false",
@@ -422,6 +446,14 @@
       "Location": "Memory",
       "ShortName": "Theme_Battle_02_Intro.wav",
       "CachePath": "D9/{D9B64A81-4294-3BE7-EB2B-CBC16280580A}.wem"
+     },
+     {
+      "Id": "694900188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "5A/{5AFE4DF0-7DC6-43EA-540E-DB9CC676F511}.wem"
      },
      {
       "Id": "697144522",
@@ -541,7 +573,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Seal_02.wav",
-      "CachePath": "D6/{D66FAAB5-8C0C-7BE3-3AF4-7ED50D32692E}.wem"
+      "CachePath": "61/{61F3FC36-96DE-A711-7AEB-23DE012F572B}.wem"
      },
      {
       "Id": "1002586562",
@@ -1056,19 +1088,9 @@
          "Id": "104887399",
          "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1445037870",
-           "Id": "0",
-           "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "448729930"
-           }
-          ]
+          "Id": "448729930"
          }
         ]
        },
@@ -1079,65 +1101,9 @@
          "Id": "1505888634",
          "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
         },
-        "Children": [
+        "MediaRefs": [
          {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1445037870",
-           "Id": "0",
-           "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "694199021"
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2495262365",
-         "Id": "1505888634",
-         "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1445037870",
-           "Id": "2607556080",
-           "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "226572936"
-           }
-          ]
-         }
-        ]
-       },
-       {
-        "SwitchValue": {
-         "GroupType": "Switch",
-         "GroupId": "2495262365",
-         "Id": "104887399",
-         "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
-        },
-        "Children": [
-         {
-          "SwitchValue": {
-           "GroupType": "Switch",
-           "GroupId": "1445037870",
-           "Id": "2607556080",
-           "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
-          },
-          "MediaRefs": [
-           {
-            "Id": "226572936"
-           }
-          ]
+          "Id": "694199021"
          }
         ]
        },
@@ -1633,11 +1599,20 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Seal",
       "GUID": "{D221093C-7554-406E-B723-83E64F80C657}",
       "DurationType": "OneShot",
-      "DurationMin": "1.461678",
-      "DurationMax": "2.149875",
+      "DurationMin": "3.4870837",
+      "DurationMax": "7.39345",
       "MediaRefs": [
        {
+        "Id": "45906878"
+       },
+       {
         "Id": "110974684"
+       },
+       {
+        "Id": "615780164"
+       },
+       {
+        "Id": "694900188"
        },
        {
         "Id": "955175564"
@@ -1674,6 +1649,9 @@
       "MediaRefs": [
        {
         "Id": "121011351"
+       },
+       {
+        "Id": "407531309"
        },
        {
         "Id": "437250838"
@@ -1933,6 +1911,6 @@
     ]
    }
   ],
-  "FileHash": "{9A9B91BE-A218-63D1-9AE5-C04518A63F35}"
+  "FileHash": "{0B0F2971-E24E-D381-B959-E3F390B1974A}"
  }
 }
