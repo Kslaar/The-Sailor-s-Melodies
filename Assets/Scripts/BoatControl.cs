@@ -60,7 +60,7 @@ public class BoatControl : MonoBehaviour
 
         // Steuerung invertieren falls so in Einstellungen eingerichtet
         if (SettingsManager.Instance != null && SettingsManager.Instance.Data.invertControls)
-            throttleInput *= -1f;
+            steerInput *= -1f;
 
         ApplyThrottle(throttleInput);
         ApplySteering(steerInput);

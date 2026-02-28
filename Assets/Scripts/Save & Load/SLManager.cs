@@ -14,7 +14,7 @@ public class SLManager : MonoBehaviour
     [SerializeField] BoatControl player;
 
     [Header("Loading/Audio")]
-    [SerializeField] float minLoadingSecondsTotal = 5f;   
+    [SerializeField] float minLoadingSecondsTotal = 5f;
     [SerializeField] float audioFadeSeconds = 0.5f;
     [SerializeField] string masterVolumeRtpc = "MasterVolume";
     [SerializeField] bool useSuspendAfterFadeOut = true;
@@ -24,13 +24,14 @@ public class SLManager : MonoBehaviour
         if (Instance != null) { Destroy(gameObject); return; }
         Instance = this;
         transform.SetParent(null, true);
-        DontDestroyOnLoad(gameObject);  
+        DontDestroyOnLoad(gameObject);
     }
 
     public void NewGame()
     {
         StartCoroutine(LoadSceneOrNot(loadSave: false));
     }
+
     public void LoadGameFromMenu()
     {
         StartCoroutine(LoadSceneOrNot(loadSave: true));
@@ -62,7 +63,7 @@ public class SLManager : MonoBehaviour
     {
         float startRealTime = Time.realtimeSinceStartup;
         float userMasterVolume = SettingsManager.Instance != null ? SettingsManager.Instance.Data.masterVolume : 1f;
-        
+
         if (Loadingscreen.Instance != null)
             yield return Loadingscreen.Instance.FadeToBlack();
 
@@ -79,18 +80,19 @@ public class SLManager : MonoBehaviour
         while (!load.isDone)
             yield return null;
 
-        yield return null; // Nochmal warten bis wirklich alles initialisiert ist
+        yield return null; // Warten bis alles initialisiert ist
 
         if (GameStateManager.Instance != null)
             GameStateManager.Instance.ForceUnpause(GameState.Sailing, "Enter GameScene");
 
-        EnsurePlayer(forceRefresh: true); // Wir gehen sicher, dass der Spieler existiert
-        if (player != null) 
+        EnsurePlayer(forceRefresh: true);
+        if (player != null)
         {
             if (loadSave) ApplySavedData();
             else player.transform.position = new Vector3(12, 0, 6);
         }
-        yield return null; // Nochmal warten zur Sicherheit wegen Apply() (UIStateController)
+
+        yield return null;
 
         float passedTime = Time.realtimeSinceStartup - startRealTime;
         float remaining = minLoadingSecondsTotal - passedTime;
@@ -108,12 +110,14 @@ public class SLManager : MonoBehaviour
 
     private void EnsurePlayer(bool forceRefresh = false)
     {
-        if (!forceRefresh && player != null) 
+        if (!forceRefresh && player != null)
             return;
+
         player = FindFirstObjectByType<BoatControl>();
         if (player == null)
-            Debug.LogError("BoatControl (Player) not found. Exisitng in GameScene?");
+            Debug.LogError("BoatControl (Player) not found. Existing in GameScene?");
     }
+
     private void ApplySavedData()
     {
         SaveGameData data = SaveSystem.LoadGame();
@@ -130,11 +134,11 @@ public class SLManager : MonoBehaviour
             QuestManager.Instance.ReRegisterActiveObjectives();
         }
 
-        // 3. Wir setzen den Spieler
+        // 3. Spieler setzen
         Vector3 position = new Vector3(
-        data.playerPosition[0],
-        data.playerPosition[1],
-        data.playerPosition[2]
+            data.playerPosition[0],
+            data.playerPosition[1],
+            data.playerPosition[2]
         );
 
         var rb = player.GetComponent<Rigidbody>();
@@ -159,39 +163,37 @@ public class SLManager : MonoBehaviour
     }
 
     private IEnumerator BackRoutine(string mainMenuScene, float minSeconds)
-{
-    float startRealtime = Time.realtimeSinceStartup;
-    float userMasterVolume = SettingsManager.Instance != null ? SettingsManager.Instance.Data.masterVolume : 1f;
+    {
+        float startRealtime = Time.realtimeSinceStartup;
+        float userMasterVolume = SettingsManager.Instance != null ? SettingsManager.Instance.Data.masterVolume : 1f;
 
-    if (Loadingscreen.Instance != null)
-        yield return Loadingscreen.Instance.FadeToBlack();
+        if (Loadingscreen.Instance != null)
+            yield return Loadingscreen.Instance.FadeToBlack();
 
-    Time.timeScale = 1f;
+        Time.timeScale = 1f;
 
-    yield return FadeWwiseRtpc("MasterVolume", userMasterVolume, 0f, 0.35f);
+        yield return FadeWwiseRtpc(masterVolumeRtpc, userMasterVolume, 0f, 0.35f);
 
-    AkUnitySoundEngine.Suspend();
+        AkUnitySoundEngine.Suspend();
 
-    var op = SceneManager.LoadSceneAsync(mainMenuScene);
-    op.allowSceneActivation = true;
-    while (!op.isDone) yield return null;
+        var op = SceneManager.LoadSceneAsync(mainMenuScene);
+        op.allowSceneActivation = true;
+        while (!op.isDone) yield return null;
 
-    yield return null;
+        yield return null;
 
-    float elapsed = Time.realtimeSinceStartup - startRealtime;
-    float remaining = minSeconds - elapsed;
-    if (remaining > 0f) yield return new WaitForSecondsRealtime(remaining);
+        float elapsed = Time.realtimeSinceStartup - startRealtime;
+        float remaining = minSeconds - elapsed;
+        if (remaining > 0f) yield return new WaitForSecondsRealtime(remaining);
 
-    AkUnitySoundEngine.WakeupFromSuspend();
+        AkUnitySoundEngine.WakeupFromSuspend();
 
-    yield return FadeWwiseRtpc("MasterVolume", 0f, userMasterVolume, 0.35f);
+        yield return FadeWwiseRtpc(masterVolumeRtpc, 0f, userMasterVolume, 0.35f);
 
-    if (Loadingscreen.Instance != null)
-        yield return Loadingscreen.Instance.FadeFromBlack();
-}
+        if (Loadingscreen.Instance != null)
+            yield return Loadingscreen.Instance.FadeFromBlack();
+    }
 
-
-    // Audio Fade Helper
     private IEnumerator FadeWwiseRtpc(string rtpcName, float from, float to, float duration)
     {
         if (string.IsNullOrEmpty(rtpcName))

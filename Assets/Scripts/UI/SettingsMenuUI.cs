@@ -4,6 +4,7 @@ public class SettingsMenuUI : MonoBehaviour
 {
     [SerializeField] private string mainMenuScene = "MainMenuScene";
     [SerializeField] private float minLoadingSeconds = 0.5f;
+
     public void Resume()
     {
         var gsm = GameStateManager.Instance;
