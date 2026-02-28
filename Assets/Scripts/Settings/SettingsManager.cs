@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [DefaultExecutionOrder(-2000)]
 public class SettingsManager : MonoBehaviour
@@ -25,7 +26,6 @@ public class SettingsManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         Laod();
-       
     }
 
     private void Start()
@@ -36,6 +36,31 @@ public class SettingsManager : MonoBehaviour
     private void OnApplicationQuit()
     {
         Save();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Nach Szenenwechsel nochmal checken, dass Settings wirklich übernommen werden
+        ReapplyAfterSceneChange();
+    }
+
+    private void ReapplyAfterSceneChange()
+    {
+        // Pause-Duck killen
+        AkUnitySoundEngine.SetRTPCValue("PauseDuck", 0f);
+
+        // Volumes nochmal setzen
+        ApplyAll();
     }
 
     //////////////////////////////////////////////////////////////////
@@ -103,17 +128,33 @@ public class SettingsManager : MonoBehaviour
             if (!File.Exists(PathSettings))
             {
                 Data = new GameSettingsData();
+                ApplyAll();
                 return;
             }
 
             string json = File.ReadAllText(PathSettings);
+
+            if (string.IsNullOrWhiteSpace(json)) // Falls Datei kaputt ist
+            {
+                Data = new GameSettingsData();
+                ApplyAll();
+                return;
+            }
+
             var loaded = JsonUtility.FromJson<GameSettingsData>(json);
             Data = loaded ?? new GameSettingsData();
+
+            Data.masterVolume = Mathf.Clamp01(Data.masterVolume);
+            Data.musicVolume = Mathf.Clamp01(Data.musicVolume);
+            Data.sfxVolume = Mathf.Clamp01(Data.sfxVolume);
+
+            ApplyAll();
         }
         catch (System.Exception e)
         {
             Debug.LogWarning($"[Settings] Load failed, using default settings. {e.Message}");
             Data = new GameSettingsData();
+            ApplyAll();
         }
     }
 
