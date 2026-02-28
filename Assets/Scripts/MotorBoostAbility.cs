@@ -22,7 +22,8 @@ public class MotorBoostAbility : MonoBehaviour
     [Header("Debug")]
     [SerializeField] private bool logAttempts = true;
 
-    private bool engineRunning = false;
+    public bool engineRunning = false;
+    public bool IsRunning => engineRunning;
 
     // Für die Pull-Mechanik
     private float pullDist = 0f;
