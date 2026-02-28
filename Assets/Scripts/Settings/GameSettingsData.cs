@@ -9,4 +9,5 @@ public class GameSettingsData
     public float sfxVolume = 1f;
 
     public bool invertControls = false;
+    public bool windGustButtonUse = false;
 }

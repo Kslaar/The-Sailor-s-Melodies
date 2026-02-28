@@ -38,6 +38,8 @@ public class SettingsManager : MonoBehaviour
         Save();
     }
 
+    /////////////////////////////////////////////////////////////////
+
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -89,6 +91,12 @@ public class SettingsManager : MonoBehaviour
     public void SetInvertWASD(bool invert)
     {
         Data.invertControls = invert;
+        Save();
+    }
+
+    public void SetWindGustButtonUse(bool useButton)
+    {
+        Data.windGustButtonUse = useButton;
         Save();
     }
 

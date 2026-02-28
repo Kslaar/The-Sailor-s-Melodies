@@ -28,18 +28,33 @@ public class WindGustAbility : MonoBehaviour
     private void Update()
     {
         if (boat == null || data == null) return;
-        if (MicrophoneInput.Instance == null) return;
 
+        // Wenn Spieler mit Tasteneingabe spielt
         bool held = Keyboard.current.eKey.isPressed;
-
         if (!held)
         {
             wasAbove = false;
             return;
         }
-
         if (isBoosting) return;
         if (Time.time < lastUseTime + data.cooldown) return;
+
+        bool useButton = SettingsManager.Instance != null && SettingsManager.Instance.Data.windGustButtonUse;
+
+        if (useButton)
+        {
+            var mouse = Mouse.current;
+            if (mouse == null) return;
+
+            if (mouse.rightButton.wasPressedThisFrame)
+            {
+                StartCoroutine(DoBoost(data.minLoudness));
+            }
+            return;
+        }
+
+        // Wenn Spieler mit Mic spielt
+        if (MicrophoneInput.Instance == null) return;
 
         float loud = MicrophoneInput.Instance.loudness;
 
@@ -68,19 +83,12 @@ public class WindGustAbility : MonoBehaviour
         isBoosting = true;
         lastUseTime = Time.time;
 
-        // float oldSpeed = boat.speedMultiplier;
-        // float oldThrust = boat.thrustMultiplier;
 
         float loudFactor = Mathf.Lerp(1f, Mathf.Clamp(loudAtTrigger / Mathf.Max(0.0001f, data.minLoudness), 0.5f, 2f), data.loudnessScaling);
-
-        // float newSpeed = oldSpeed * data.speedMultiplier * loudFactor;
-        // float newThrust = oldThrust * data.thrustMultiplier;
 
         boat.PushBoost(this);
         boat.SetSpeedMultiplier(this, data.speedMultiplier * loudFactor);
         boat.SetThrustMultiplier(this, data.thrustMultiplier);
-
-        // boat.SetBoostActive(true);
 
         if (logBoost)
         {
@@ -93,10 +101,6 @@ public class WindGustAbility : MonoBehaviour
 
         yield return new WaitForSeconds(data.duration);
 
-        // boat.speedMultiplier = oldSpeed;
-        // boat.thrustMultiplier = oldThrust;
-
-        // boat.SetBoostActive(false);
         boat.ClearMultipliers(this);
         boat.ReductBoost(this);
 

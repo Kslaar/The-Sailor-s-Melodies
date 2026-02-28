@@ -41,6 +41,16 @@ public class MotorBoostAbility : MonoBehaviour
     {
         if (boat == null || fuel == null || data == null) return;
 
+        var gsm = GameStateManager.Instance; 
+        bool allowedState = (gsm == null) || (gsm.State == GameState.Sailing || gsm.State == GameState.Racing);
+
+        if (!allowedState) // Wir wollen nicht dass man im Hafen theoretisch den Motor aktivieren kann
+        {
+            StopEngine();
+            ResetPullState();
+            return;
+        }
+        
         var kb = Keyboard.current;
         var mouse = Mouse.current;
 
@@ -48,6 +58,14 @@ public class MotorBoostAbility : MonoBehaviour
 
         // Leertaste muss gedrückt gehalten bleiben, daher: Wenn sie nicht gehalten wird: 
         if (!held)
+        {
+            StopEngine();
+            ResetPullState();
+            return;
+        }
+
+        bool hasWOrSInput = (kb != null) && (kb.wKey.isPressed || kb.sKey.isPressed);
+        if (!hasWOrSInput)
         {
             StopEngine();
             ResetPullState();

@@ -7,6 +7,7 @@ public class SettingsUIBinder : MonoBehaviour
     [SerializeField] private Slider musicSlider;
     [SerializeField] private Slider sfxSlider;
     [SerializeField] private Toggle invertToggle;
+    [SerializeField] private Toggle windGustToggle;
 
     private void OnEnable()
     {
@@ -18,6 +19,7 @@ public class SettingsUIBinder : MonoBehaviour
         if (musicSlider)  musicSlider.SetValueWithoutNotify(sm.Data.musicVolume);
         if (sfxSlider)    sfxSlider.SetValueWithoutNotify(sm.Data.sfxVolume);
         if (invertToggle) invertToggle.SetIsOnWithoutNotify(sm.Data.invertControls);
+        if (windGustToggle) windGustToggle.SetIsOnWithoutNotify(sm.Data.windGustButtonUse);
 
         HookListeners();
     }
@@ -46,6 +48,12 @@ public class SettingsUIBinder : MonoBehaviour
         {
             invertToggle.onValueChanged.RemoveAllListeners();
             invertToggle.onValueChanged.AddListener(b => SettingsManager.Instance.SetInvertWASD(b));
+        }
+
+        if (windGustToggle)
+        {
+            windGustToggle.onValueChanged.RemoveAllListeners();
+            windGustToggle.onValueChanged.AddListener(b => SettingsManager.Instance.SetWindGustButtonUse(b));
         }
     }
 }
