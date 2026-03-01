@@ -10,7 +10,7 @@
     "Type": "Event",
     "GUID": "{9705BC90-D5CE-48A6-A57A-6DF0E0DA5165}",
     "Language": "SFX",
-    "Hash": "{E6C16F4B-0C83-A365-13D3-F1EFF5ADA5E0}",
+    "Hash": "{30E200ED-D706-8836-5055-0A831DFC3F36}",
     "ObjectPath": "Play_Village_island",
     "ShortName": "Play_Village_island",
     "Path": "Event/Play_Village_island.bnk",
@@ -185,6 +185,6 @@
     ]
    }
   ],
-  "FileHash": "{2A3FC5A4-6803-EF75-0A94-2498CD8111CD}"
+  "FileHash": "{974E5A5E-7000-0BBD-AFB4-8EAF7C58F827}"
  }
 }

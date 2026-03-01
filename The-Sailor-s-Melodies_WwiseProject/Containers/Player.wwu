@@ -41,6 +41,7 @@
 				</Sound>
 				<RandomSequenceContainer Name="boat_movement" ID="{FE40894F-3260-4EEB-A264-A9C6A3258559}" ShortID="578904504">
 					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 						<Property Name="Pitch" Type="int32">
 							<ModifierList>
 								<ModifierInfo>
@@ -55,11 +56,7 @@
 						</Property>
 						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>1</Value>
-							</ValueList>
 							<ModifierList>
 								<ModifierInfo>
 									<Modifier Name="" ID="{4EF1CCED-4E67-49D6-94D9-5F1AECC2EE79}"/>
@@ -175,6 +172,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" ShortID="259908511">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-96</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
@@ -233,8 +237,20 @@
 								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
 								<StateGroupInfo Name="" ID="{7A6C0944-8D67-4579-9559-FE214E4AAAF5}" ShortID="69242990"/>
 							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="BoatMode" ID="{689E706D-0416-4809-8ABA-D2665E401C43}"/>
+								<StateGroupInfo Name="" ID="{54283F74-21C3-46DD-9CCD-F13822E8B3A7}" ShortID="495502756"/>
+							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+								<CustomState Name="" ID="{C07C5501-E019-49A0-992A-D7BAAA688478}" ShortID="906981727">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
 								<CustomState Name="" ID="{E6479BD6-4FFA-481E-BEF7-118B4C72ECE4}" ShortID="127902753"/>
@@ -246,6 +262,10 @@
 										<Property Name="Volume" Type="Real64" Value="-108"/>
 									</PropertyList>
 								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
+								<CustomState Name="" ID="{0EEF2EE8-9150-438B-B6A5-F56C92B13FD8}" ShortID="102844737"/>
 							</CustomState>
 							<CustomState>
 								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
@@ -271,74 +291,78 @@
 								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
 								<CustomState Name="" ID="{B6528023-3D31-42AD-BA55-C1DB6D5EEE25}" ShortID="728424462"/>
 							</CustomState>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+								<CustomState Name="" ID="{6B2B57DE-6D9E-49EA-BCAE-8D9A42376E09}" ShortID="370464827"/>
+							</CustomState>
 						</CustomStateList>
 					</StateInfo>
 					<ObjectLists>
 						<ObjectList Name="Playlist">
-							<PluginInnerObject Name="" ID="{1B4A84D1-9020-4B79-8FA8-0EABF08A3DB8}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{D2D69A97-A73E-476D-A6E3-EDA19FD0BD46}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind" ID="{1961AD3D-FEC4-4E24-BB09-8A31DD1E53A5}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{04528D4A-A58B-4F48-AD19-EB8A57412975}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{706ED1E9-5AFB-4386-8C27-722FF7F14F6C}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{4A2A66BA-B741-4E00-B394-326524427953}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{F66BE8F8-F49B-410F-B944-DA048DF8A431}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind_02" ID="{766FDBBD-781C-48E4-BEAA-BB4D38FB9B15}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{4B81943A-E820-47CE-8BF9-DC3A935E426E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{A87E180A-9656-405A-B5B5-90E16063860D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{50AACC6F-CF12-4DB8-B293-5AE23D3F4837}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{E184FBF1-268B-4E7C-A311-5C310455A946}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{3DD5EF42-2821-447F-B0C5-39D3D715A9D6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{7963BF5B-092E-4853-8908-1EF80AD0618A}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{AE28D5AC-0868-4268-9C63-F2CC848E96E6}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{063D3F84-273D-442E-9509-687F93451665}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind_03" ID="{6A091B56-EE7B-4551-9372-5BDF82D602CE}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{09E34E72-4E42-49C2-83C4-89E3DEA814BA}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{7786D4F1-95DE-471A-8AD0-6EC6CBCEAA1E}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="Silence_sail" ID="{959905B7-1419-4107-9229-A24FA884E7A7}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{571568A7-245C-45EA-A789-B18FC75050E1}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{B00CAB4F-4368-4B0A-92B3-ED5BA670E019}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind_01" ID="{161534BF-3DDD-45DF-BCEE-CFABD28D0009}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
 									</Reference>
 								</ReferenceList>
 							</PluginInnerObject>
-							<PluginInnerObject Name="" ID="{37A76A0E-CBB6-4A35-A2D6-CCBE04A33A1D}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
+							<PluginInnerObject Name="" ID="{255FB197-1C72-4847-98EE-8481264DA958}" PluginName="PlaylistSlot" CompanyID="0" PluginID="86">
 								<ReferenceList>
 									<Reference Name="PlaylistObject">
 										<ObjectRef Name="sail_wind" ID="{1961AD3D-FEC4-4E24-BB09-8A31DD1E53A5}" WorkUnitID="{08D167E8-98D0-42AB-89F8-A58FD90C7276}"/>
@@ -348,116 +372,6 @@
 						</ObjectList>
 					</ObjectLists>
 				</RandomSequenceContainer>
-				<Sound Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" ShortID="108642652">
-					<PropertyList>
-						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-						<Property Name="Priority" Type="int16">
-							<ValueList>
-								<Value>100</Value>
-							</ValueList>
-						</Property>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-10</Value>
-							</ValueList>
-							<ModifierList>
-								<ModifierInfo>
-									<Modifier Name="" ID="{3188207E-383D-4F7D-9560-CFA3C316E982}"/>
-								</ModifierInfo>
-							</ModifierList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}">
-							<PropertyList>
-								<Property Name="FadeInDuration" Type="Real64" Value="0.198247672771287"/>
-								<Property Name="FadeOutDuration" Type="Real64" Value="0.0257749254548116"/>
-								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-								<Property Name="TrimBegin" Type="Real64" Value="9.87119627437605"/>
-								<Property Name="TrimEnd" Type="Real64" Value="99.0709122837982"/>
-							</PropertyList>
-							<Language>SFX</Language>
-							<AudioFile>W 04 Water_19_Splashing, Sailing, Ship_T03.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="148246808"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
-								<StateGroupInfo Name="" ID="{45B08F33-6F81-41B4-A470-3428CAF8D8DD}" ShortID="654411828"/>
-							</StateGroupInfo>
-							<StateGroupInfo>
-								<StateGroupRef Name="BoatMode" ID="{689E706D-0416-4809-8ABA-D2665E401C43}"/>
-								<StateGroupInfo Name="" ID="{951AB81C-E501-4E46-9975-23BC68DB73A2}" ShortID="740663764"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
-								<CustomState Name="" ID="{82CDB44B-B11B-40BA-A34B-F3BC62A098FF}" ShortID="400582998"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
-								<CustomState Name="" ID="{E5AAFF84-3CA8-4F32-A024-098F114462FA}" ShortID="443178682"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
-								<CustomState Name="" ID="{11DAE568-C7C2-49AD-9195-8113B658F1EA}" ShortID="314053257">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
-								<CustomState Name="" ID="{09EA3721-3133-41F7-9090-BECCB689D2E0}" ShortID="310947932"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
-								<CustomState Name="" ID="{614C39D3-D73E-42B2-A663-F73F7AD02A9F}" ShortID="850961029"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
-								<CustomState Name="" ID="{976A1E4C-2E5E-46E1-89D5-F2C57BF10167}" ShortID="970905752">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64" Value="-108"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
-								<CustomState Name="" ID="{B68EA0FB-918B-4973-9665-4909EBB97D67}" ShortID="432097843"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
-								<CustomState Name="" ID="{F7BD6FA1-5202-4657-9AE7-9142E9EB113A}" ShortID="303858339"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
-								<CustomState Name="" ID="{714148EC-5B3F-4035-BEB2-98828CD13FD3}" ShortID="863065813"/>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
-								<CustomState Name="" ID="{8DCE6BE8-315A-448F-B003-912035B0DBFD}" ShortID="388427653"/>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
-					<ActiveSourceList>
-						<ActiveSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="boat_boost" ID="{5D7C6B43-7DD9-4E1B-A18B-DD007E7B5A8F}" ShortID="854711384">
 					<PropertyList>
 						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -610,6 +524,127 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="water_movement" ID="{6C8278F3-CD97-40B4-935F-822A861C1619}" ShortID="108642652">
+					<PropertyList>
+						<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+						<Property Name="Priority" Type="int16">
+							<ValueList>
+								<Value>100</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-11</Value>
+							</ValueList>
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{3188207E-383D-4F7D-9560-CFA3C316E982}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C0C4F6E2-5CCE-4BA4-B772-C076B8C55D43}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Boat" ID="{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}" WorkUnitID="{45C54534-611C-4F61-ACA9-D8EE5DE9F3E6}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}">
+							<PropertyList>
+								<Property Name="FadeInDuration" Type="Real64" Value="0.198247672771287"/>
+								<Property Name="FadeOutDuration" Type="Real64" Value="0.0257749254548116"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimBegin" Type="Real64" Value="9.87119627437605"/>
+								<Property Name="TrimEnd" Type="Real64" Value="99.0709122837982"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>W 04 Water_19_Splashing, Sailing, Ship_T03.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="148246808"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="GameState" ID="{599EE782-E3DA-4287-8452-51D85D1F1A13}"/>
+								<StateGroupInfo Name="" ID="{45B08F33-6F81-41B4-A470-3428CAF8D8DD}" ShortID="654411828"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="BoatMode" ID="{689E706D-0416-4809-8ABA-D2665E401C43}"/>
+								<StateGroupInfo Name="" ID="{951AB81C-E501-4E46-9975-23BC68DB73A2}" ShortID="740663764"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="MotorActive" ID="{19DF624B-1A73-4395-A516-AD83AAFB8876}"/>
+								<CustomState Name="" ID="{82CDB44B-B11B-40BA-A34B-F3BC62A098FF}" ShortID="400582998"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"/>
+								<CustomState Name="" ID="{E5AAFF84-3CA8-4F32-A024-098F114462FA}" ShortID="443178682"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Dialogue" ID="{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"/>
+								<CustomState Name="" ID="{11DAE568-C7C2-49AD-9195-8113B658F1EA}" ShortID="314053257">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{2D360962-0AC3-4684-A03E-F18E3E26827C}"/>
+								<CustomState Name="" ID="{09EA3721-3133-41F7-9090-BECCB689D2E0}" ShortID="310947932"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"/>
+								<CustomState Name="" ID="{614C39D3-D73E-42B2-A663-F73F7AD02A9F}" ShortID="850961029"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Docked" ID="{8296FECE-58DE-47EF-935F-572168058384}"/>
+								<CustomState Name="" ID="{976A1E4C-2E5E-46E1-89D5-F2C57BF10167}" ShortID="970905752">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Paused" ID="{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"/>
+								<CustomState Name="" ID="{B68EA0FB-918B-4973-9665-4909EBB97D67}" ShortID="432097843"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Racing" ID="{349E298C-E4CC-4C43-941E-1666A88BAAFB}"/>
+								<CustomState Name="" ID="{F7BD6FA1-5202-4657-9AE7-9142E9EB113A}" ShortID="303858339"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Questlog" ID="{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"/>
+								<CustomState Name="" ID="{714148EC-5B3F-4035-BEB2-98828CD13FD3}" ShortID="863065813"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Sailing" ID="{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"/>
+								<CustomState Name="" ID="{8DCE6BE8-315A-448F-B003-912035B0DBFD}" ShortID="388427653"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="W 04 Water_19_Splashing, Sailing, Ship_T03" ID="{7F8BF6A5-C914-4A04-B736-339BA2999352}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</Containers>

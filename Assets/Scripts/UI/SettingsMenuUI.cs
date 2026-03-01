@@ -15,6 +15,7 @@ public class SettingsMenuUI : MonoBehaviour
 
     public void BackToMainMenu()
     {
+        RaceManager.Instance?.ResetRaceState();
         SLManager.Instance.BackToMainMenu(mainMenuScene, minLoadingSeconds);
     }
 }
