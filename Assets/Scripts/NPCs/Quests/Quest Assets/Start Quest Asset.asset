@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: Racing2 Quest Asset
+  m_Name: Start Quest Asset
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: race_island_2
-  title: Race no.2
-  description: I met the professional sailor again. The next challenge is a race
-    around this other island - Now I have the engine to get more edge in this race
+  questID: collect_fuel_1
+  title: Cleanup
+  description: "The Pastor ordered me to collect all the fuelcans the tankers dropped
+    overboard. \nAs a Reward, he promised my a holy Object"
   objectives:
-  - {fileID: 11400000, guid: b319f3ab008324cf2832d36f31cdbc48, type: 2}
+  - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
   rewards:
-  - {fileID: 11400000, guid: 3a70ff27fad8548adaf9b8ceaa03c4aa, type: 2}
+  - {fileID: 11400000, guid: 6f1fd216e0a934245849dd1bc2484c6e, type: 2}

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: TestQuest Asset
+  m_Name: Wreckage Quest
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: pages_4
-  title: Collect the four pages
-  description: The villagers lost four important pages of their ceremonial song,
-    which they want to sing soon. They don't dare to swim across the sea during this
-    time of the year so they tasked me with returning the pages.
+  questID: tides_and_battles
+  title: Tides and Battles
+  description: I was tasked to look for treasures south of this island. Apparently
+    there was a huge battle once. I have to be careful though, powerful tides are
+    known in this area
   objectives:
-  - {fileID: 11400000, guid: f1258b95242a04a0cbc56676b3f3e336, type: 2}
-  rewards:
   - {fileID: 0}
+  rewards:
+  - {fileID: 11400000, guid: 087bf6b9913304dffba71c13ed9a004e, type: 2}

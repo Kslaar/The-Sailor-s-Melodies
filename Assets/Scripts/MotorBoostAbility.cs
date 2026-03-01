@@ -8,7 +8,7 @@ public class MotorBoostAbility : MonoBehaviour
     [SerializeField] private BoatControl boat;
     [SerializeField] private BoatFuel fuel;
     [SerializeField] private MotorBoostData data;
-    [SerializeField] private BoatAudio audio; 
+    [SerializeField] private BoatAudio boatAudio; 
 
     [Header("Debug")]
     [SerializeField] private bool logAttempts = true;
@@ -34,12 +34,17 @@ public class MotorBoostAbility : MonoBehaviour
     private float CurrentSpeedMult => _runtimeSpeedMult >= 0 ? _runtimeSpeedMult : data.speedMultiplier;
 
     //////////////////////////////////////////////////////
-
+    private void Awake()
+    {
+        if (boat == null) boat = GetComponent<BoatControl>();
+        if (fuel == null) fuel = GetComponent<BoatFuel>();
+        if (boatAudio == null) boatAudio = GetComponent<BoatAudio>();
+    }
     void Reset()
     {
         boat = GetComponent<BoatControl>();
         fuel = GetComponent<BoatFuel>();
-        audio = GetComponent<BoatAudio>();
+        boatAudio = GetComponent<BoatAudio>();
     }
 
     void Update()
@@ -128,7 +133,7 @@ public class MotorBoostAbility : MonoBehaviour
 
     private void TryStartEngine()
     {
-        audio.PlayMotorStartAttempt();
+        boatAudio.PlayMotorStartAttempt();
         float roll = Random.value;
         bool success = roll < CurrentStartChance;
 
@@ -151,7 +156,7 @@ public class MotorBoostAbility : MonoBehaviour
         boat.SetSpeedMultiplier(this, CurrentSpeedMult);
         boat.SetThrustMultiplier(this, data.thrustMultiplier);
 
-        audio.ActivateMotor();
+        boatAudio.ActivateMotor();
     }
 
     private void StopEngine()
@@ -163,7 +168,7 @@ public class MotorBoostAbility : MonoBehaviour
         boat.ClearMultipliers(this);
         boat.ReductBoost(this);
 
-       audio.DeactivateMotor();
+       boatAudio.DeactivateMotor();
     }
 
     private void ResetPullState()

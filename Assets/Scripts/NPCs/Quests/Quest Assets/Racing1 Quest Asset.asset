@@ -19,4 +19,5 @@ MonoBehaviour:
     checkpoints around this island. '
   objectives:
   - {fileID: 11400000, guid: e1f1e563755da47eea4abf8e0b517720, type: 2}
-  rewards: []
+  rewards:
+  - {fileID: 11400000, guid: babbfb0054ad745cd9900911f29fedc8, type: 2}

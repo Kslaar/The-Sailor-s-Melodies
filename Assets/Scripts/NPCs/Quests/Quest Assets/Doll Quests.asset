@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: Racing2 Quest Asset
+  m_Name: Doll Quests
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: race_island_2
-  title: Race no.2
-  description: I met the professional sailor again. The next challenge is a race
-    around this other island - Now I have the engine to get more edge in this race
+  questID: the_kid
+  title: The Kid
+  description: I kid lost all of her dolls when she tripped by the coast. The current
+    might've spread them out a bit. I'll gladly help her
   objectives:
-  - {fileID: 11400000, guid: b319f3ab008324cf2832d36f31cdbc48, type: 2}
+  - {fileID: 0}
   rewards:
-  - {fileID: 11400000, guid: 3a70ff27fad8548adaf9b8ceaa03c4aa, type: 2}
+  - {fileID: 11400000, guid: 087bf6b9913304dffba71c13ed9a004e, type: 2}

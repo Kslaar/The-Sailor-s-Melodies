@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: Racing2 Quest Asset
+  m_Name: Lovers Quest
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: race_island_2
-  title: Race no.2
-  description: I met the professional sailor again. The next challenge is a race
-    around this other island - Now I have the engine to get more edge in this race
+  questID: love_letters
+  title: Love Letters
+  description: "A man asked me to bring this letter to his fianc\xE9e. His boat broke
+    down, but he doesn't want her to worry - so I need to clear things up - again."
   objectives:
-  - {fileID: 11400000, guid: b319f3ab008324cf2832d36f31cdbc48, type: 2}
+  - {fileID: 0}
   rewards:
-  - {fileID: 11400000, guid: 3a70ff27fad8548adaf9b8ceaa03c4aa, type: 2}
+  - {fileID: 11400000, guid: 2bf9c4f95f18e490fa0d5b37396b9066, type: 2}

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e9a7993cebd934a73bfbbe8aa76a2cf7, type: 3}
-  m_Name: Quest Asset
+  m_Name: Hermit Quest
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
-  questID: collect_fuel_1
-  title: Collect Fuel
-  description: "The Pastor ordered me to collect all the fuelcans the tankers dropped
-    overboard. \nAs a Reward, he promised my a holy Object"
+  questID: the_mailman
+  title: The Mailman
+  description: The Hermits asked me to deliver this message to the City on the other
+    side of this lake. Apparently it's just to get some more candy delivered... At
+    least the promised me to give some sort of blessing.
   objectives:
-  - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
-  rewards:
   - {fileID: 0}
+  rewards:
+  - {fileID: 11400000, guid: 087bf6b9913304dffba71c13ed9a004e, type: 2}

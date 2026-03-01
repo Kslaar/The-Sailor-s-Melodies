@@ -18,4 +18,6 @@ MonoBehaviour:
     on my engine will let me pass the serpents pass...
   objectives:
   - {fileID: 11400000, guid: 7cc96dd6d59814eb687550dcbc701d66, type: 2}
-  rewards: []
+  rewards:
+  - {fileID: 11400000, guid: 3a70ff27fad8548adaf9b8ceaa03c4aa, type: 2}
+  - {fileID: 11400000, guid: 997636cb878264ffc9200541c594e2d5, type: 2}
