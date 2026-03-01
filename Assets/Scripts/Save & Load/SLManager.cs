@@ -135,7 +135,11 @@ public class SLManager : MonoBehaviour
             QuestManager.Instance.ReRegisterActiveObjectives();
         }
 
-        // 3. Spieler setzen
+        // 3. Upgrade importieren
+        if (ProgressionManager.Instance != null)
+            ProgressionManager.Instance.Import(data.boatUpgrades);
+
+        // 4. Spieler setzen
         Vector3 position = new Vector3(
             data.playerPosition[0],
             data.playerPosition[1],

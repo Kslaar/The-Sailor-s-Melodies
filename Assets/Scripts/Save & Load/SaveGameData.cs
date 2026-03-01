@@ -8,6 +8,7 @@ public class SaveGameData
 
     public List<QuestStateEntry> questStates;
     public List<ItemCountEntry> itemCounts;
+    public BoatUpgradeState boatUpgrades;
 
     public SaveGameData() { }
 
@@ -20,5 +21,7 @@ public class SaveGameData
 
         questStates = QuestManager.Instance != null ? QuestManager.Instance.ExportStates() : new List<QuestStateEntry>();
         itemCounts = ItemCollectionRegistry.Instance != null ? ItemCollectionRegistry.Instance.Export() : new List<ItemCountEntry>();
+
+        boatUpgrades = ProgressionManager.Instance != null ? ProgressionManager.Instance.Export() : new BoatUpgradeState();
     }
 }

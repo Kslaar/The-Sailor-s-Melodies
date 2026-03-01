@@ -20,6 +20,19 @@ public class WindGustAbility : MonoBehaviour
     public float cooldownRemaining => Mathf.Max(0f, (lastUseTime + data.cooldown) - Time.time);
     public float threshold => data.minLoudness;
 
+    //////////////////////////////////////////////////////
+
+    private float _runtimeSpeedMult = -1f;
+    private float _runtimeThrustMult = -1f;
+
+    public void SetRuntimeSpeedMultiplier(float value) => _runtimeSpeedMult = Mathf.Max(0.01f, value);
+    public void SetRuntimeThrustMultiplier(float value) => _runtimeThrustMult = Mathf.Clamp01(value);
+
+    private float CurrentSpeedMult => _runtimeSpeedMult >= 0 ? _runtimeSpeedMult : data.speedMultiplier;
+    private float CurrentThrustMult => _runtimeThrustMult >= 0f ? _runtimeThrustMult : data.thrustMultiplier;
+
+    //////////////////////////////////////////////////////
+
     private void Reset()
     {
         boat = GetComponent<BoatControl>();
@@ -87,8 +100,8 @@ public class WindGustAbility : MonoBehaviour
         float loudFactor = Mathf.Lerp(1f, Mathf.Clamp(loudAtTrigger / Mathf.Max(0.0001f, data.minLoudness), 0.5f, 2f), data.loudnessScaling);
 
         boat.PushBoost(this);
-        boat.SetSpeedMultiplier(this, data.speedMultiplier * loudFactor);
-        boat.SetThrustMultiplier(this, data.thrustMultiplier);
+        boat.SetSpeedMultiplier(this, CurrentSpeedMult * loudFactor);
+        boat.SetThrustMultiplier(this, CurrentThrustMult);
 
         if (logBoost)
         {

@@ -32,18 +32,11 @@ public class BoatControl : MonoBehaviour
 
     private int boostCount = 0;
     public bool boostActive => boostCount > 0;
-    // public bool boostActive { get; private set; }
-    // public void SetBoostActive(bool active) => boostActive = active;
-    // public float thrustMultiplier { get; set; } = 1f;
-    // public float turnMultiplier { get; set; } = 1f;
-    // public float speedMultiplier { get; set; } = 1f;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.maxAngularVelocity = 3f;
-        
-
     }
 
     void FixedUpdate()
@@ -71,6 +64,11 @@ public class BoatControl : MonoBehaviour
     public void SetSpeedMultiplier(object source, float multiplier) => SetMod(speedMods, source, multiplier);
     public void SetThrustMultiplier(object source, float multiplier) => SetMod(thrustMods, source, multiplier);
     public void SetTurnMultiplier(object source, float multiplier) => SetMod(turnMods, source, multiplier);
+
+    public void SetBaseForwardSpeed(float value)
+    {
+        maxForwardSpeed = Mathf.Max(0.1f, value);
+    }
 
     public void ClearMultipliers(object source)
     {
