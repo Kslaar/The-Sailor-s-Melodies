@@ -6,7 +6,7 @@ TextureImporter:
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -34,16 +34,16 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
-    wrapU: 0
-    wrapV: 0
+    wrapU: 1
+    wrapV: 1
     wrapW: 0
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -52,9 +52,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,12 +95,5600 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1454
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc1a0701521a4a619111f49f2c0143b
+      internalID: 1494499999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1465
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2b6a21ec57c4ccb990c520c604369b
+      internalID: -1603823817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1465
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5f648d319ad4d7eb5c7b6705d55c52
+      internalID: -644798966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_3
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1465
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e318aa0aa51444edb457abaa0341da5
+      internalID: 51399268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_4
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1465
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7db9ae68d30495185fbc6aca715631
+      internalID: -607434059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_5
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1465
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71af87e37c53e49e8a49479d711e7939
+      internalID: 553508563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1465
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f61a3d558e201499785071ae7ef01456
+      internalID: 1365578831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_7
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1453
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24bf758eed2154cfc8289b9b50ee9f65
+      internalID: -293795363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_8
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1453
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfee9548ea5e4c8b889108626ab69ac
+      internalID: 609268659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_9
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1451
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43d18529be634fb3b93495c980c6c05
+      internalID: -158310813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_10
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1451
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2ee9396e33c4421baa1f111ce1fd320
+      internalID: 1473458380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_11
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1453
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a938fc3ee1cf4492a870b63a70b756b
+      internalID: 1253288384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_12
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1453
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0e07db18fc14894a4140354417055b
+      internalID: -1514291866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_13
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1406
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a2c88d05e3d4452f965f1837cdef323
+      internalID: 1167880537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_14
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1416
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f59d8357c8d242d498e34a14c6448c1
+      internalID: -504139034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1416
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fa61ba7f0b542ca99ed00cf0d749a3
+      internalID: 2011628085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1418
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd05679f7eda4e83b95dfcdae84c87c
+      internalID: -781341296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_17
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1418
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68101bcb5d1cc40fc9ab31782cb52bb5
+      internalID: -933706715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_18
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1416
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3c7c74150f94cddba04c2f74703445
+      internalID: -1737191512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_19
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1416
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 397d384a950db428d98832f625b55739
+      internalID: 1440122909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 1405
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4d27f5d5808401d96acf770f24c589
+      internalID: -565127385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_21
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1405
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15683ea5d433742b7846981e2a174996
+      internalID: 2137929737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1404
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20acf5a2769984dcfa04aa95197a52b4
+      internalID: 1026971759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_23
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1404
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214969f90b20847dc9a51837e28f9e1d
+      internalID: -100523112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_24
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1405
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859e1daf183b443a08a52faea6b8aaa4
+      internalID: 1507971723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_25
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 1405
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d159da0d17c6426a8af1e06e341b3c9
+      internalID: -1452715139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_26
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1359
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f042af810700443bbc6cbd90a2346c6
+      internalID: 798633798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_27
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1359
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627989eff3a67401c8c2d46fe6b423b7
+      internalID: -119782221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_28
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1359
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6172ea742adcf4a9ba95b6b946e53707
+      internalID: -1825652705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_29
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1311
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c8b7c4118bc43b4b71a218a5650fc6
+      internalID: 1344656560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_30
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1311
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a1de35ec08441009ba3af207bdeb29
+      internalID: 1644208896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_31
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1311
+        width: 33
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91987b3cf56f44c689490c85c550a3c5
+      internalID: 1790704798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_32
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1262
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ed3497ba6e24d428d32b7d44813cbd
+      internalID: 1765072762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_33
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1262
+        width: 34
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef3ba148f45b433d9020d1553cebde1
+      internalID: -982845898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_34
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1262
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba69c80dd25941bab5a27a4da522c8f
+      internalID: -823311955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_35
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1262
+        width: 36
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c41c9e69476468db77050c7141f40b
+      internalID: 1877378889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1212
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c408622712bd4bf886a8cd41badaf81
+      internalID: -1510248599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_37
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1212
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7929ed231d85f4231863a4bb2c6ab0db
+      internalID: -1314110763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_38
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1212
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50df2d16f8c95435e99c5a11bf3d531f
+      internalID: 1100192179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_39
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1212
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df447cf1fab5c42d39c4067a482119be
+      internalID: 2059796749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_40
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1163
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0401aee1511c411c87ce9acd88a78f2
+      internalID: 1722021746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_41
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1163
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 371f9a80a4e6d461599a1d34832a8b83
+      internalID: -1880631996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_42
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1163
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e3bd7074af141b88397554f6975487
+      internalID: 1033382633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_43
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1163
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84c78dbe9bc749c6b66cd90f4e83a39
+      internalID: -1357099555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_44
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1163
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2fb342900fb40b48eb9e33c2b7bf3b
+      internalID: -539769251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_45
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1115
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346640ab2bdcc4160a9242fc9c15232f
+      internalID: -1948645132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_46
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 1115
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77399e926a97a4c8bab79909afcc0f21
+      internalID: 1049346816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_47
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1115
+        width: 33
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6b0e0048254e45389add511a1b014c2
+      internalID: 2102179889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_48
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1115
+        width: 36
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c90684bf379c4b6f833d998ebfe4d16
+      internalID: 143353623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_49
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1115
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e33b33e8f5cf46e8a1c9901f0c92088
+      internalID: -1018057993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_50
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1075
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2d3f537f62244228dea36a37c296b4
+      internalID: 87877672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_51
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1075
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393d2b79c2ad344d39b0fd20f656d03c
+      internalID: -1021497357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_52
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1075
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14599a7061a354a0aa6f9e8aa240ce16
+      internalID: -1555368421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1075
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832ef73519c664fdd9942d8877017db9
+      internalID: -1856816897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_54
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1027
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dc4d90964c39480c9756765a11900b5
+      internalID: 804061434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_55
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1027
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b3ae83808cb64ac5862db8f68b5702b
+      internalID: 374917458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_56
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1027
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13db46c0833d344ffbb143054b9265eb
+      internalID: 1053733522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_57
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1027
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f4cd3443e4b4092aa9f385e66dbf6c
+      internalID: -1308635802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_58
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 977
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcde38c65915f4b5783c1ff822fdf1ac
+      internalID: -1733714451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_59
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 977
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621cd115d49ee42c388c61e80841948e
+      internalID: -970723340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_60
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 977
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0132c1bce56994ad1b98c53752d4343a
+      internalID: 1210467454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_61
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 977
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d4b3a06d3014dcc8ab5d227ecc2559
+      internalID: 649161244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_62
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 977
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de331bd8f050c405db0bcdd4d3b5b8ec
+      internalID: -165012630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_63
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 930
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f4cd2123de0246d581c2724d1a6fd0d
+      internalID: -1973213561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_64
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 930
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71cef4d81d79344a18ef633539651a29
+      internalID: -1789107708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_65
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 930
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6f05f630c416447e9a72ec6d903cf86
+      internalID: 1858421367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_66
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 930
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120ecb69b160c4ce5accb84005fa8ea2
+      internalID: 580198031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_67
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 930
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18dbbd8542a954e66b569400f776289c
+      internalID: 755561016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_68
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 880
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a296b122336f747ba857c0fe57382e0e
+      internalID: 1883902750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_69
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 880
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901ff90f915024a63a6e557606abaab6
+      internalID: -131298509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_70
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 880
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbfc733e4521417e99088404fee8c95
+      internalID: 60855568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_71
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 833
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4082d90346c41e98aa0521be49e9b1
+      internalID: 622997975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_72
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 833
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55638a3a3805b4ecbb8e496a9e6f9faf
+      internalID: -1751682508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_73
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 833
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf192c9cc8284ea78766c974a11c612
+      internalID: 922696841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_74
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 788
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0498e56e57494233b9e4c19959642e3
+      internalID: -472536180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_75
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 788
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27e9277f7d574c508a6187534b18075
+      internalID: -2045636379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_76
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 788
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d754447ae5c4ce48dddb5d04554ed6
+      internalID: -61784216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_77
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 788
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9db266d7f3c6428f90c72373311d095
+      internalID: 599403401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_78
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 738
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba2b6cff54b7841bc89a3d9981bb0e2b
+      internalID: 330549518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_79
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 740
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9659a84efeca348eb8eda8be40266dbc
+      internalID: -2141542495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_80
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 737
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10728f0783f354c6a92889586f676176
+      internalID: -663917223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_81
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 738
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4187a3871b745538fe04e1b4f9feb8
+      internalID: 35415521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_82
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 691
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810de37922394449a3e95a3749d21e3
+      internalID: 1359072265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_83
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 691
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca6447c6639042d3bf8ee8e344fe97e
+      internalID: -1618904690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_84
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 691
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab4ce038d0e149dd873ffeaa4a544bb
+      internalID: 601716100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_85
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 691
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d2704c49dec49e084df94a88194e1b
+      internalID: 89864013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_86
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 643
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ebcd62b6ac34951a78963546b5aefb
+      internalID: -718516759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_87
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 641
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ce30b65b1614154b9320ad82032cde
+      internalID: 1310344145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_88
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 646
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da5c5d6a83c043ebaa98c6a3925ccf3
+      internalID: -1554493897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_89
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 644
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126fe462015884c5d960019ea1818162
+      internalID: 1641947694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_90
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 594
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89dcc5e5ee30b4b769d053b656f2e851
+      internalID: -738025395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_91
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 594
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6009bf3b00274d99a5f15ae3e572fb7
+      internalID: 1806299823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_92
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 594
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7c206fb4140426584946e0b8d3a817
+      internalID: -592488636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_93
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 594
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8a429cd57c74f0da69e070f3a235f6
+      internalID: 2111143300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_94
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 546
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6969c3d78985d4fedb1de73c1fe18cc2
+      internalID: 212099110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_95
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 546
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f158ce92a02e4a97aa268b44f2b8ba8
+      internalID: -1429072598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_96
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 546
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258c4ca056da3458cb68b8ecdb6530c0
+      internalID: -1897675506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_97
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 546
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0e2523dc16145e59448ec9cc34340a
+      internalID: 1715504114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_98
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 496
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a57c54ac2a243d6a4c19ef516c200d
+      internalID: 1242752605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_99
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 496
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a924dd6314e2e42228d5ad2632a8d786
+      internalID: -1620829358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_100
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 496
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35b054ff15eb4a7991110ee122e68b4
+      internalID: -1757180096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_101
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 496
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a352125b92d47d3a194e40353a19eb
+      internalID: 1964102765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_102
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 454
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225b8fdd595f347d592ade44b2d31e3b
+      internalID: -1661266475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_103
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 454
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 433d9b40cb6744ad79b7ac55f86c2a73
+      internalID: 1440453356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_104
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 451
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7704f395d08544e1a8aa970abbd43a0a
+      internalID: 1848190927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_105
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 451
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fba41f2ce94c44c88b493ebfc1d9c3d
+      internalID: -573954472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_106
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 450
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c625165b04849499b8af224e9c6a17a7
+      internalID: -755699822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_107
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 449
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32da1019b5d43415da8b2f13dc917156
+      internalID: -1807135360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_108
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 449
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dec08b6898204d09a9e1c29a594e351
+      internalID: -1753739999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_109
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 402
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a1952dd8dd241fc9bd9fd83bdaaeaa
+      internalID: -862100039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_110
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 399
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b829343f8fb34bfcaa7776e4d45f32f
+      internalID: 861675478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_111
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 398
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1204538b39dc54d9d8dd1532f25f877d
+      internalID: 1624468096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_112
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 399
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39678d984b2d24f14bd02dd8f19e9b11
+      internalID: 646790824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_113
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 402
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dd274612bef4838992ac8c4d1d81c3
+      internalID: -1564220227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_114
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 350
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b901944f4794a3bb48eec389b8312e
+      internalID: -1744656998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_115
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 352
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5862bb730c04a2cb8a910f7133441a
+      internalID: 319684014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_116
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 352
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991e0cb8ff92e44a290cf62be3348287
+      internalID: 2105664862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_117
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 350
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aea7e47886cc2478297147332f8bb310
+      internalID: -1181277022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_118
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 350
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc90956d290d34987a319ba1184e5abf
+      internalID: 1995231923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_119
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 302
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68572f06cff254af3b465a36ff6cfe02
+      internalID: 979933850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_120
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 302
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa7ddcfae92946e09c58ef0b4b19935
+      internalID: -1186854886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_121
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 302
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e167e89d20b0e4e819152c1f22d318a2
+      internalID: -89036221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_122
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 302
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c796dfae1e9b442bad8fc66a49cacc5
+      internalID: 559255038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_123
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 302
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753f8c72cdf2544b2b684a8ede0e86be
+      internalID: 1051928520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_124
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 256
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7950f15795848465a951d351a74fd00c
+      internalID: 974144106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_125
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 256
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3821d39fdc94eaead46871cb7931ce
+      internalID: -1919716367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_126
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 256
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de250456b5a6841109553a31c614b19d
+      internalID: -257568866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_127
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 255
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9f534e2bd90486bae6bc25b794d5cc
+      internalID: -1053870336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_128
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7a7564d88d34ad3a0bc4bf07874407
+      internalID: 482866809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_129
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 255
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5f5ad9dfc4945e5886069ec67eb366
+      internalID: 23851494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_130
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 256
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a8c4adca3ba4f5cad76bdc7668488f
+      internalID: 1110586573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_131
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 256
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f0cd4e71870449cbcb6eba017408d9
+      internalID: -785734619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_132
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 218
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74e154b00fc6400f9e9044332cbda65
+      internalID: -1609956961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_133
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 217
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a3609cbe6a54d6bbbc637a159d53a6
+      internalID: 1212515645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_134
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 217
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbad31a44a7b349ef934ad62c07ea8e9
+      internalID: -57042238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_135
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 217
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61e026fd50cb741039a2f42b4fc9b23b
+      internalID: 1105968168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_136
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 212
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1820a90e3164ec9830c28399fd9af6
+      internalID: 590795277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_137
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 212
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b22b521ac8c94458837f349ef696c04
+      internalID: -850113867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_138
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 207
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e112955a1b844820b8bb38a7c36b362
+      internalID: -1379001922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_139
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 208
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3e05c53bf4b4c47badabee6ad3f26d
+      internalID: 1845318531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_140
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 207
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8e13ba7973434efa88b83738d8ba80b
+      internalID: -1719656384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_141
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 208
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79af2db000d0849f8bda78d5f176fe37
+      internalID: 1427327668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_142
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 207
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9549edd664d484994d5d68a170acfb
+      internalID: -1040630343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_143
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1ae6afe1d4449a599c82116e986918
+      internalID: 1071362203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_144
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2331a7533214eca9290b46b45737e9
+      internalID: -2096800780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_145
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174173c07eb7d42d5969497f37164971
+      internalID: -2067223512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_146
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 208
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 881073f13bff8425eb0400a6251021d1
+      internalID: 1833403391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_147
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080a6a5ae6b724193bf638e195410c5b
+      internalID: 1423856824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_148
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 208
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c5a5558d60547a99e392303cb6138d
+      internalID: -163337077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_149
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 208
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef09b5f18394540d6b625322a7440ac0
+      internalID: 2067328586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_150
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 208
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8ba9cef03574489bafbb5b1ff3bac1
+      internalID: -1098644992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_151
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0552bfca3214ca1b6c361ba5fd34ac
+      internalID: -34645860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_152
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0433895fd15734983971c4947aca0d22
+      internalID: -350529787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_153
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac16ce5207e2541f2831441aec5fe653
+      internalID: -2042294362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_154
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 207
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62df365aed2e409a8216fd457e7d676
+      internalID: 1237355462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_155
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 208
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc643f341bbe24620954cd2ebe74de46
+      internalID: -1720553415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_156
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 207
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb7644d097cf495695100dd78eb6d4a
+      internalID: 234858544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_157
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 208
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f893a4dc0495496a9ec48a59c7ef9e3
+      internalID: -498193166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_158
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 207
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d04c9316e250426a9b984c01ff75bad
+      internalID: 1021831184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_159
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 212
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e306252ec22d474ba704514455a2efa
+      internalID: -341698443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_160
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 212
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff7cc1641aa84950ba97860113e32f6
+      internalID: 12578309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_161
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 217
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc6749e57708464bbd7ad86e01e8fae
+      internalID: -799983450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_162
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 217
+        width: 65
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a08885d2bfd7481eba8393832b20821
+      internalID: -1702863629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_163
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 170
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26040c05d9ff84bb382b5b7116b50af6
+      internalID: 1350089913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_164
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 169
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02567a500022f436b90f1152bdee6d8d
+      internalID: -1890912476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_165
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 169
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5924617ac0c1b425ab6f90ad6f71beaf
+      internalID: 667699473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_166
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 167
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c189452a536bf48baabf0f22dee3993b
+      internalID: 2044989838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_167
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 165
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ba50323258b41bbbfb99f9b4dbf9cb
+      internalID: -1632115325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_168
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 165
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92c23d60fc684d58824ef4e1d91fbc3
+      internalID: -1177826414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_169
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 165
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdafbce18c0148c6b6f643c21c0a346
+      internalID: 36525190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_170
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 165
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa0e3ee2c03c4931a09f217126d23b6
+      internalID: -1188467013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_171
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 169
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: addd461f50a05468db32d65e73d9b29b
+      internalID: 671646761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_172
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 167
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3633990705d3428b8b2c3e55cdeadc0
+      internalID: -1149333198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_173
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 159
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a2e87f7e1254b6886d8cd5c00e5352
+      internalID: 2009556670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_174
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 160
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 464b419de7563484badd8211b3ae7097
+      internalID: 2133249166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_175
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 159
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04170484f93684c18a948b16cb4f54ad
+      internalID: -2089105661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_176
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 160
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e56edb55e6aa4188a6409ac33900516
+      internalID: -1838788315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_177
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 159
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a527027a2ac34083bf532da801101dd
+      internalID: -106897400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_178
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f5f60435c5544938678555bbfd712e
+      internalID: 2144412190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_179
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 115
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6adfa6758ffdc4ee5bfe87b145a2a08d
+      internalID: 121076475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_180
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 115
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f680821ed1d4c459711e1ad6310d15
+      internalID: -98114907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_181
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 115
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07649e56acfc45efa0d3707a492fa9a
+      internalID: 2003456566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_182
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 115
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 501d60359bc9444808afe9f711ef92f6
+      internalID: 1280003497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_183
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 115
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462d887e0328741d5b8f92ff6db4e631
+      internalID: -779095109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_184
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 115
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965a91d4b59104204a207ac32c412ee8
+      internalID: 584354472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_185
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 115
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 930ed35687685466bbffb2566a6e19d3
+      internalID: -501528068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_186
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 115
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d08d05a76006243e3aafb499058ce795
+      internalID: -441368304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_187
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 115
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ae0fb6a67e94cad9e6e401e48a8057
+      internalID: -279982965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_188
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 23
+        width: 30
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb910e432754d4061b0d4fa1d6a711cd
+      internalID: -1552501215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_189
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 68
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab685212b05334ee3bca3cffc6f763e2
+      internalID: 2113986418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_190
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 68
+        width: 22
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 697cab76feefe4e20b87452de1ce19f9
+      internalID: 147711671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_191
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 68
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bee2f833135042619c90d8cfd5424ee
+      internalID: 1891115786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_192
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 68
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4adccc0695242f89ac2d31748d4c77
+      internalID: -1292522305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_193
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 68
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4879f954b5eb148aabd315ba2fa797ca
+      internalID: -72842697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_194
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 68
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7964f69babfbe403588537efb0acdd12
+      internalID: -2059205261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_195
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 26
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d41daf1eb4c408d9e8b360df3c02e0
+      internalID: 2010971508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_196
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 68
+        width: 34
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33a29b96abcd040978e8acb94a7c600f
+      internalID: -1894311470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_197
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 23
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b9b518e99cc46a2a3cf3aac68e1aa2
+      internalID: -1712655103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_198
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 23
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440e9bd2c910e412f879eb3d0c144737
+      internalID: 2057889755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_199
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9203772f3d5c24cc886f7dd023935ec5
+      internalID: 1919670396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_200
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 21
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db24c1852ef3744e8ae4231515e970ce
+      internalID: 65922938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_201
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 20
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed752d4186c1644f5bd24a4d662ce675
+      internalID: 691726689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_202
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 20
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b163a5797d484b919c0736491299abd
+      internalID: 464384027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_203
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 20
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2896c2b095747ab9e77c0d244fb066
+      internalID: 211018185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_204
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 20
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76cc0d84b4c09447698d38fe1b1aa5be
+      internalID: -83403297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_205
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 20
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08f132c976014ee783d883d664f36ba
+      internalID: 492857298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_206
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 20
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85a5bc49a9cc49a58c94baf218d4c75
+      internalID: 1981153206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_207
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 20
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7d1ade79f51459aa5412f1bafbd0d6
+      internalID: 1864949400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_208
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 20
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20709c2842f384d5eb39b34e464fc640
+      internalID: -1635990052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_209
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 20
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b6200c59bdd484da194b5fd09e4cab
+      internalID: -1487159510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_210
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 20
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff235c88e2c5447c8d87a34fddbf8ea
+      internalID: -1489604209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_211
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 20
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736d624ca4a6b40839e05f2b44150457
+      internalID: 1675020226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_212
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 20
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71c0d45c73294f378866179b163970d
+      internalID: -194943450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_213
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 20
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aa9342bb73524a5f9da3a9369fa49b5
+      internalID: -352643562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_214
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 20
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b999e4275e04672a28cf0b0b31e4c2
+      internalID: 303602315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_215
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 20
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c60f8e6136404851b9962e003bde1d4
+      internalID: -1546824813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_216
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ba9b558a4624418bc9ec1300afeac5
+      internalID: -636195632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_217
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 20
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb59ff18dba65459485bdfc4bf0dfb0e
+      internalID: 1045549809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_218
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bf18dfc69a3441a9e1d60d58ddce5f
+      internalID: -1114082125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_219
+      rect:
+        serializedVersion: 2
+        x: 1112
+        y: 20
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ba88d78f9a534bdcaeb3b938992c596
+      internalID: 1995030826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_220
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 20
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef925ee39d25d4c00bb54b2525deef98
+      internalID: -505815051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_221
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 20
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4d849eba9df44dca42b7c0e5ff0a9f
+      internalID: 703835602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_222
+      rect:
+        serializedVersion: 2
+        x: 1256
+        y: 20
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfaf76f93015402ea3597e3363695fa
+      internalID: -607233678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_223
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 20
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab1ce6f02d914085ae3325c5de9c670
+      internalID: 505518119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_224
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 20
+        width: 34
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc543f82768f4225ae51aad8f3da63f
+      internalID: -357426639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_225
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 20
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76304fae47cb409a976fdd090af90c3
+      internalID: 818700846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_226
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 20
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245a4b9574fae43dd8ad7eb88c0efd87
+      internalID: -280893140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_227
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 20
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccef412bcdb0d4535b52df638838652b
+      internalID: -693617735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_228
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 20
+        width: 31
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb7e08f41917418f872f456e0660744
+      internalID: 2020171948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_229
+      rect:
+        serializedVersion: 2
+        x: 1593
+        y: 20
+        width: 33
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77b61544982640eeb54ef960a7ca100
+      internalID: 1317114160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_230
+      rect:
+        serializedVersion: 2
+        x: 1643
+        y: 20
+        width: 30
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e76f3a0ba8b400ca3e7ddfe6dc1dca
+      internalID: 911983668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_231
+      rect:
+        serializedVersion: 2
+        x: 1695
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a556bed090224056b575450959fe78c
+      internalID: 1512563805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_232
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 20
+        width: 27
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841e71cd6f5a047e4bb496280ea26746
+      internalID: 1443242794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_233
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 20
+        width: 25
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c3014bf407047adb18c6939bfc9d99
+      internalID: -318736150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_234
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731abecf1af93499eb8030cfff94d669
+      internalID: -1315916717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_235
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 20
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1080e5de9fe4b8baf26820466d3712
+      internalID: -453377096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_236
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 20
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58e95d9fae204cc5ae1b59a33daa21b
+      internalID: 1696029414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_237
+      rect:
+        serializedVersion: 2
+        x: 1988
+        y: 20
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2cd694b68784fa28b016e1600969c2
+      internalID: -400564741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_238
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 20
+        width: 21
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c635ae48b68d24bef8db575c10d6518f
+      internalID: 117341909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_239
+      rect:
+        serializedVersion: 2
+        x: 2085
+        y: 20
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f71d1110000411b8d194b01fbc2517
+      internalID: 730062922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_240
+      rect:
+        serializedVersion: 2
+        x: 2133
+        y: 20
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b154f56103c3c4d79a364b8b97997704
+      internalID: 9076731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_241
+      rect:
+        serializedVersion: 2
+        x: 2182
+        y: 20
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1153ade7de05a4da597da8b520aaf9e2
+      internalID: 407297699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_242
+      rect:
+        serializedVersion: 2
+        x: 2230
+        y: 20
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e7be798ef0c4fe28fd4373571ea646
+      internalID: 707807548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_243
+      rect:
+        serializedVersion: 2
+        x: 2282
+        y: 20
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b568465d239413b8b430c055117e14
+      internalID: 1996308445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_244
+      rect:
+        serializedVersion: 2
+        x: 2330
+        y: 20
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24ddd7d67bae54fe29f2326e15385b0d
+      internalID: -841601138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_245
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 20
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d83fe06c9811f4f3389d080f796d599f
+      internalID: -841037616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_246
+      rect:
+        serializedVersion: 2
+        x: 2429
+        y: 20
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21915abc0fa7549ad8dd2b3996ce7f52
+      internalID: -199739206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_247
+      rect:
+        serializedVersion: 2
+        x: 2476
+        y: 20
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70975cd12c7a14013a063a5af9459d84
+      internalID: -970530639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_248
+      rect:
+        serializedVersion: 2
+        x: 2524
+        y: 20
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab430bc078e645f582c6b59c033bd18
+      internalID: -459567290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_249
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 20
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264c05f8347f64d63bb9ab8ad1bc1ce4
+      internalID: -1746499261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_250
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435c816128d584c2aa4531844e91c555
+      internalID: -1849124208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_251
+      rect:
+        serializedVersion: 2
+        x: 2673
+        y: 21
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a72866b851e46c2a4b4bd8af4c7f48
+      internalID: 1556929074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_252
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 23
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3bb78aa1c5047c9b4cad9333b216e2
+      internalID: -659845092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Runewood_SPritesheetAnimated01a - 48x48_253
+      rect:
+        serializedVersion: 2
+        x: 2770
+        y: 23
+        width: 52
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afdb174d10bba4d1fae9f3091a7575a7
+      internalID: 1506302841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8a3de9d314d5548788153dfddb110076
     internalID: 0
     vertices: []
     indices: 
@@ -108,8 +5696,264 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
-    nameFileIdTable: {}
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      UI_Runewood_SPritesheetAnimated01a - 48x48_0: 1494499999
+      UI_Runewood_SPritesheetAnimated01a - 48x48_1: -1603823817
+      UI_Runewood_SPritesheetAnimated01a - 48x48_10: 1473458380
+      UI_Runewood_SPritesheetAnimated01a - 48x48_100: -1757180096
+      UI_Runewood_SPritesheetAnimated01a - 48x48_101: 1964102765
+      UI_Runewood_SPritesheetAnimated01a - 48x48_102: -1661266475
+      UI_Runewood_SPritesheetAnimated01a - 48x48_103: 1440453356
+      UI_Runewood_SPritesheetAnimated01a - 48x48_104: 1848190927
+      UI_Runewood_SPritesheetAnimated01a - 48x48_105: -573954472
+      UI_Runewood_SPritesheetAnimated01a - 48x48_106: -755699822
+      UI_Runewood_SPritesheetAnimated01a - 48x48_107: -1807135360
+      UI_Runewood_SPritesheetAnimated01a - 48x48_108: -1753739999
+      UI_Runewood_SPritesheetAnimated01a - 48x48_109: -862100039
+      UI_Runewood_SPritesheetAnimated01a - 48x48_11: 1253288384
+      UI_Runewood_SPritesheetAnimated01a - 48x48_110: 861675478
+      UI_Runewood_SPritesheetAnimated01a - 48x48_111: 1624468096
+      UI_Runewood_SPritesheetAnimated01a - 48x48_112: 646790824
+      UI_Runewood_SPritesheetAnimated01a - 48x48_113: -1564220227
+      UI_Runewood_SPritesheetAnimated01a - 48x48_114: -1744656998
+      UI_Runewood_SPritesheetAnimated01a - 48x48_115: 319684014
+      UI_Runewood_SPritesheetAnimated01a - 48x48_116: 2105664862
+      UI_Runewood_SPritesheetAnimated01a - 48x48_117: -1181277022
+      UI_Runewood_SPritesheetAnimated01a - 48x48_118: 1995231923
+      UI_Runewood_SPritesheetAnimated01a - 48x48_119: 979933850
+      UI_Runewood_SPritesheetAnimated01a - 48x48_12: -1514291866
+      UI_Runewood_SPritesheetAnimated01a - 48x48_120: -1186854886
+      UI_Runewood_SPritesheetAnimated01a - 48x48_121: -89036221
+      UI_Runewood_SPritesheetAnimated01a - 48x48_122: 559255038
+      UI_Runewood_SPritesheetAnimated01a - 48x48_123: 1051928520
+      UI_Runewood_SPritesheetAnimated01a - 48x48_124: 974144106
+      UI_Runewood_SPritesheetAnimated01a - 48x48_125: -1919716367
+      UI_Runewood_SPritesheetAnimated01a - 48x48_126: -257568866
+      UI_Runewood_SPritesheetAnimated01a - 48x48_127: -1053870336
+      UI_Runewood_SPritesheetAnimated01a - 48x48_128: 482866809
+      UI_Runewood_SPritesheetAnimated01a - 48x48_129: 23851494
+      UI_Runewood_SPritesheetAnimated01a - 48x48_13: 1167880537
+      UI_Runewood_SPritesheetAnimated01a - 48x48_130: 1110586573
+      UI_Runewood_SPritesheetAnimated01a - 48x48_131: -785734619
+      UI_Runewood_SPritesheetAnimated01a - 48x48_132: -1609956961
+      UI_Runewood_SPritesheetAnimated01a - 48x48_133: 1212515645
+      UI_Runewood_SPritesheetAnimated01a - 48x48_134: -57042238
+      UI_Runewood_SPritesheetAnimated01a - 48x48_135: 1105968168
+      UI_Runewood_SPritesheetAnimated01a - 48x48_136: 590795277
+      UI_Runewood_SPritesheetAnimated01a - 48x48_137: -850113867
+      UI_Runewood_SPritesheetAnimated01a - 48x48_138: -1379001922
+      UI_Runewood_SPritesheetAnimated01a - 48x48_139: 1845318531
+      UI_Runewood_SPritesheetAnimated01a - 48x48_14: -504139034
+      UI_Runewood_SPritesheetAnimated01a - 48x48_140: -1719656384
+      UI_Runewood_SPritesheetAnimated01a - 48x48_141: 1427327668
+      UI_Runewood_SPritesheetAnimated01a - 48x48_142: -1040630343
+      UI_Runewood_SPritesheetAnimated01a - 48x48_143: 1071362203
+      UI_Runewood_SPritesheetAnimated01a - 48x48_144: -2096800780
+      UI_Runewood_SPritesheetAnimated01a - 48x48_145: -2067223512
+      UI_Runewood_SPritesheetAnimated01a - 48x48_146: 1833403391
+      UI_Runewood_SPritesheetAnimated01a - 48x48_147: 1423856824
+      UI_Runewood_SPritesheetAnimated01a - 48x48_148: -163337077
+      UI_Runewood_SPritesheetAnimated01a - 48x48_149: 2067328586
+      UI_Runewood_SPritesheetAnimated01a - 48x48_15: 2011628085
+      UI_Runewood_SPritesheetAnimated01a - 48x48_150: -1098644992
+      UI_Runewood_SPritesheetAnimated01a - 48x48_151: -34645860
+      UI_Runewood_SPritesheetAnimated01a - 48x48_152: -350529787
+      UI_Runewood_SPritesheetAnimated01a - 48x48_153: -2042294362
+      UI_Runewood_SPritesheetAnimated01a - 48x48_154: 1237355462
+      UI_Runewood_SPritesheetAnimated01a - 48x48_155: -1720553415
+      UI_Runewood_SPritesheetAnimated01a - 48x48_156: 234858544
+      UI_Runewood_SPritesheetAnimated01a - 48x48_157: -498193166
+      UI_Runewood_SPritesheetAnimated01a - 48x48_158: 1021831184
+      UI_Runewood_SPritesheetAnimated01a - 48x48_159: -341698443
+      UI_Runewood_SPritesheetAnimated01a - 48x48_16: -781341296
+      UI_Runewood_SPritesheetAnimated01a - 48x48_160: 12578309
+      UI_Runewood_SPritesheetAnimated01a - 48x48_161: -799983450
+      UI_Runewood_SPritesheetAnimated01a - 48x48_162: -1702863629
+      UI_Runewood_SPritesheetAnimated01a - 48x48_163: 1350089913
+      UI_Runewood_SPritesheetAnimated01a - 48x48_164: -1890912476
+      UI_Runewood_SPritesheetAnimated01a - 48x48_165: 667699473
+      UI_Runewood_SPritesheetAnimated01a - 48x48_166: 2044989838
+      UI_Runewood_SPritesheetAnimated01a - 48x48_167: -1632115325
+      UI_Runewood_SPritesheetAnimated01a - 48x48_168: -1177826414
+      UI_Runewood_SPritesheetAnimated01a - 48x48_169: 36525190
+      UI_Runewood_SPritesheetAnimated01a - 48x48_17: -933706715
+      UI_Runewood_SPritesheetAnimated01a - 48x48_170: -1188467013
+      UI_Runewood_SPritesheetAnimated01a - 48x48_171: 671646761
+      UI_Runewood_SPritesheetAnimated01a - 48x48_172: -1149333198
+      UI_Runewood_SPritesheetAnimated01a - 48x48_173: 2009556670
+      UI_Runewood_SPritesheetAnimated01a - 48x48_174: 2133249166
+      UI_Runewood_SPritesheetAnimated01a - 48x48_175: -2089105661
+      UI_Runewood_SPritesheetAnimated01a - 48x48_176: -1838788315
+      UI_Runewood_SPritesheetAnimated01a - 48x48_177: -106897400
+      UI_Runewood_SPritesheetAnimated01a - 48x48_178: 2144412190
+      UI_Runewood_SPritesheetAnimated01a - 48x48_179: 121076475
+      UI_Runewood_SPritesheetAnimated01a - 48x48_18: -1737191512
+      UI_Runewood_SPritesheetAnimated01a - 48x48_180: -98114907
+      UI_Runewood_SPritesheetAnimated01a - 48x48_181: 2003456566
+      UI_Runewood_SPritesheetAnimated01a - 48x48_182: 1280003497
+      UI_Runewood_SPritesheetAnimated01a - 48x48_183: -779095109
+      UI_Runewood_SPritesheetAnimated01a - 48x48_184: 584354472
+      UI_Runewood_SPritesheetAnimated01a - 48x48_185: -501528068
+      UI_Runewood_SPritesheetAnimated01a - 48x48_186: -441368304
+      UI_Runewood_SPritesheetAnimated01a - 48x48_187: -279982965
+      UI_Runewood_SPritesheetAnimated01a - 48x48_188: -1552501215
+      UI_Runewood_SPritesheetAnimated01a - 48x48_189: 2113986418
+      UI_Runewood_SPritesheetAnimated01a - 48x48_19: 1440122909
+      UI_Runewood_SPritesheetAnimated01a - 48x48_190: 147711671
+      UI_Runewood_SPritesheetAnimated01a - 48x48_191: 1891115786
+      UI_Runewood_SPritesheetAnimated01a - 48x48_192: -1292522305
+      UI_Runewood_SPritesheetAnimated01a - 48x48_193: -72842697
+      UI_Runewood_SPritesheetAnimated01a - 48x48_194: -2059205261
+      UI_Runewood_SPritesheetAnimated01a - 48x48_195: 2010971508
+      UI_Runewood_SPritesheetAnimated01a - 48x48_196: -1894311470
+      UI_Runewood_SPritesheetAnimated01a - 48x48_197: -1712655103
+      UI_Runewood_SPritesheetAnimated01a - 48x48_198: 2057889755
+      UI_Runewood_SPritesheetAnimated01a - 48x48_199: 1919670396
+      UI_Runewood_SPritesheetAnimated01a - 48x48_2: -644798966
+      UI_Runewood_SPritesheetAnimated01a - 48x48_20: -565127385
+      UI_Runewood_SPritesheetAnimated01a - 48x48_200: 65922938
+      UI_Runewood_SPritesheetAnimated01a - 48x48_201: 691726689
+      UI_Runewood_SPritesheetAnimated01a - 48x48_202: 464384027
+      UI_Runewood_SPritesheetAnimated01a - 48x48_203: 211018185
+      UI_Runewood_SPritesheetAnimated01a - 48x48_204: -83403297
+      UI_Runewood_SPritesheetAnimated01a - 48x48_205: 492857298
+      UI_Runewood_SPritesheetAnimated01a - 48x48_206: 1981153206
+      UI_Runewood_SPritesheetAnimated01a - 48x48_207: 1864949400
+      UI_Runewood_SPritesheetAnimated01a - 48x48_208: -1635990052
+      UI_Runewood_SPritesheetAnimated01a - 48x48_209: -1487159510
+      UI_Runewood_SPritesheetAnimated01a - 48x48_21: 2137929737
+      UI_Runewood_SPritesheetAnimated01a - 48x48_210: -1489604209
+      UI_Runewood_SPritesheetAnimated01a - 48x48_211: 1675020226
+      UI_Runewood_SPritesheetAnimated01a - 48x48_212: -194943450
+      UI_Runewood_SPritesheetAnimated01a - 48x48_213: -352643562
+      UI_Runewood_SPritesheetAnimated01a - 48x48_214: 303602315
+      UI_Runewood_SPritesheetAnimated01a - 48x48_215: -1546824813
+      UI_Runewood_SPritesheetAnimated01a - 48x48_216: -636195632
+      UI_Runewood_SPritesheetAnimated01a - 48x48_217: 1045549809
+      UI_Runewood_SPritesheetAnimated01a - 48x48_218: -1114082125
+      UI_Runewood_SPritesheetAnimated01a - 48x48_219: 1995030826
+      UI_Runewood_SPritesheetAnimated01a - 48x48_22: 1026971759
+      UI_Runewood_SPritesheetAnimated01a - 48x48_220: -505815051
+      UI_Runewood_SPritesheetAnimated01a - 48x48_221: 703835602
+      UI_Runewood_SPritesheetAnimated01a - 48x48_222: -607233678
+      UI_Runewood_SPritesheetAnimated01a - 48x48_223: 505518119
+      UI_Runewood_SPritesheetAnimated01a - 48x48_224: -357426639
+      UI_Runewood_SPritesheetAnimated01a - 48x48_225: 818700846
+      UI_Runewood_SPritesheetAnimated01a - 48x48_226: -280893140
+      UI_Runewood_SPritesheetAnimated01a - 48x48_227: -693617735
+      UI_Runewood_SPritesheetAnimated01a - 48x48_228: 2020171948
+      UI_Runewood_SPritesheetAnimated01a - 48x48_229: 1317114160
+      UI_Runewood_SPritesheetAnimated01a - 48x48_23: -100523112
+      UI_Runewood_SPritesheetAnimated01a - 48x48_230: 911983668
+      UI_Runewood_SPritesheetAnimated01a - 48x48_231: 1512563805
+      UI_Runewood_SPritesheetAnimated01a - 48x48_232: 1443242794
+      UI_Runewood_SPritesheetAnimated01a - 48x48_233: -318736150
+      UI_Runewood_SPritesheetAnimated01a - 48x48_234: -1315916717
+      UI_Runewood_SPritesheetAnimated01a - 48x48_235: -453377096
+      UI_Runewood_SPritesheetAnimated01a - 48x48_236: 1696029414
+      UI_Runewood_SPritesheetAnimated01a - 48x48_237: -400564741
+      UI_Runewood_SPritesheetAnimated01a - 48x48_238: 117341909
+      UI_Runewood_SPritesheetAnimated01a - 48x48_239: 730062922
+      UI_Runewood_SPritesheetAnimated01a - 48x48_24: 1507971723
+      UI_Runewood_SPritesheetAnimated01a - 48x48_240: 9076731
+      UI_Runewood_SPritesheetAnimated01a - 48x48_241: 407297699
+      UI_Runewood_SPritesheetAnimated01a - 48x48_242: 707807548
+      UI_Runewood_SPritesheetAnimated01a - 48x48_243: 1996308445
+      UI_Runewood_SPritesheetAnimated01a - 48x48_244: -841601138
+      UI_Runewood_SPritesheetAnimated01a - 48x48_245: -841037616
+      UI_Runewood_SPritesheetAnimated01a - 48x48_246: -199739206
+      UI_Runewood_SPritesheetAnimated01a - 48x48_247: -970530639
+      UI_Runewood_SPritesheetAnimated01a - 48x48_248: -459567290
+      UI_Runewood_SPritesheetAnimated01a - 48x48_249: -1746499261
+      UI_Runewood_SPritesheetAnimated01a - 48x48_25: -1452715139
+      UI_Runewood_SPritesheetAnimated01a - 48x48_250: -1849124208
+      UI_Runewood_SPritesheetAnimated01a - 48x48_251: 1556929074
+      UI_Runewood_SPritesheetAnimated01a - 48x48_252: -659845092
+      UI_Runewood_SPritesheetAnimated01a - 48x48_253: 1506302841
+      UI_Runewood_SPritesheetAnimated01a - 48x48_26: 798633798
+      UI_Runewood_SPritesheetAnimated01a - 48x48_27: -119782221
+      UI_Runewood_SPritesheetAnimated01a - 48x48_28: -1825652705
+      UI_Runewood_SPritesheetAnimated01a - 48x48_29: 1344656560
+      UI_Runewood_SPritesheetAnimated01a - 48x48_3: 51399268
+      UI_Runewood_SPritesheetAnimated01a - 48x48_30: 1644208896
+      UI_Runewood_SPritesheetAnimated01a - 48x48_31: 1790704798
+      UI_Runewood_SPritesheetAnimated01a - 48x48_32: 1765072762
+      UI_Runewood_SPritesheetAnimated01a - 48x48_33: -982845898
+      UI_Runewood_SPritesheetAnimated01a - 48x48_34: -823311955
+      UI_Runewood_SPritesheetAnimated01a - 48x48_35: 1877378889
+      UI_Runewood_SPritesheetAnimated01a - 48x48_36: -1510248599
+      UI_Runewood_SPritesheetAnimated01a - 48x48_37: -1314110763
+      UI_Runewood_SPritesheetAnimated01a - 48x48_38: 1100192179
+      UI_Runewood_SPritesheetAnimated01a - 48x48_39: 2059796749
+      UI_Runewood_SPritesheetAnimated01a - 48x48_4: -607434059
+      UI_Runewood_SPritesheetAnimated01a - 48x48_40: 1722021746
+      UI_Runewood_SPritesheetAnimated01a - 48x48_41: -1880631996
+      UI_Runewood_SPritesheetAnimated01a - 48x48_42: 1033382633
+      UI_Runewood_SPritesheetAnimated01a - 48x48_43: -1357099555
+      UI_Runewood_SPritesheetAnimated01a - 48x48_44: -539769251
+      UI_Runewood_SPritesheetAnimated01a - 48x48_45: -1948645132
+      UI_Runewood_SPritesheetAnimated01a - 48x48_46: 1049346816
+      UI_Runewood_SPritesheetAnimated01a - 48x48_47: 2102179889
+      UI_Runewood_SPritesheetAnimated01a - 48x48_48: 143353623
+      UI_Runewood_SPritesheetAnimated01a - 48x48_49: -1018057993
+      UI_Runewood_SPritesheetAnimated01a - 48x48_5: 553508563
+      UI_Runewood_SPritesheetAnimated01a - 48x48_50: 87877672
+      UI_Runewood_SPritesheetAnimated01a - 48x48_51: -1021497357
+      UI_Runewood_SPritesheetAnimated01a - 48x48_52: -1555368421
+      UI_Runewood_SPritesheetAnimated01a - 48x48_53: -1856816897
+      UI_Runewood_SPritesheetAnimated01a - 48x48_54: 804061434
+      UI_Runewood_SPritesheetAnimated01a - 48x48_55: 374917458
+      UI_Runewood_SPritesheetAnimated01a - 48x48_56: 1053733522
+      UI_Runewood_SPritesheetAnimated01a - 48x48_57: -1308635802
+      UI_Runewood_SPritesheetAnimated01a - 48x48_58: -1733714451
+      UI_Runewood_SPritesheetAnimated01a - 48x48_59: -970723340
+      UI_Runewood_SPritesheetAnimated01a - 48x48_6: 1365578831
+      UI_Runewood_SPritesheetAnimated01a - 48x48_60: 1210467454
+      UI_Runewood_SPritesheetAnimated01a - 48x48_61: 649161244
+      UI_Runewood_SPritesheetAnimated01a - 48x48_62: -165012630
+      UI_Runewood_SPritesheetAnimated01a - 48x48_63: -1973213561
+      UI_Runewood_SPritesheetAnimated01a - 48x48_64: -1789107708
+      UI_Runewood_SPritesheetAnimated01a - 48x48_65: 1858421367
+      UI_Runewood_SPritesheetAnimated01a - 48x48_66: 580198031
+      UI_Runewood_SPritesheetAnimated01a - 48x48_67: 755561016
+      UI_Runewood_SPritesheetAnimated01a - 48x48_68: 1883902750
+      UI_Runewood_SPritesheetAnimated01a - 48x48_69: -131298509
+      UI_Runewood_SPritesheetAnimated01a - 48x48_7: -293795363
+      UI_Runewood_SPritesheetAnimated01a - 48x48_70: 60855568
+      UI_Runewood_SPritesheetAnimated01a - 48x48_71: 622997975
+      UI_Runewood_SPritesheetAnimated01a - 48x48_72: -1751682508
+      UI_Runewood_SPritesheetAnimated01a - 48x48_73: 922696841
+      UI_Runewood_SPritesheetAnimated01a - 48x48_74: -472536180
+      UI_Runewood_SPritesheetAnimated01a - 48x48_75: -2045636379
+      UI_Runewood_SPritesheetAnimated01a - 48x48_76: -61784216
+      UI_Runewood_SPritesheetAnimated01a - 48x48_77: 599403401
+      UI_Runewood_SPritesheetAnimated01a - 48x48_78: 330549518
+      UI_Runewood_SPritesheetAnimated01a - 48x48_79: -2141542495
+      UI_Runewood_SPritesheetAnimated01a - 48x48_8: 609268659
+      UI_Runewood_SPritesheetAnimated01a - 48x48_80: -663917223
+      UI_Runewood_SPritesheetAnimated01a - 48x48_81: 35415521
+      UI_Runewood_SPritesheetAnimated01a - 48x48_82: 1359072265
+      UI_Runewood_SPritesheetAnimated01a - 48x48_83: -1618904690
+      UI_Runewood_SPritesheetAnimated01a - 48x48_84: 601716100
+      UI_Runewood_SPritesheetAnimated01a - 48x48_85: 89864013
+      UI_Runewood_SPritesheetAnimated01a - 48x48_86: -718516759
+      UI_Runewood_SPritesheetAnimated01a - 48x48_87: 1310344145
+      UI_Runewood_SPritesheetAnimated01a - 48x48_88: -1554493897
+      UI_Runewood_SPritesheetAnimated01a - 48x48_89: 1641947694
+      UI_Runewood_SPritesheetAnimated01a - 48x48_9: -158310813
+      UI_Runewood_SPritesheetAnimated01a - 48x48_90: -738025395
+      UI_Runewood_SPritesheetAnimated01a - 48x48_91: 1806299823
+      UI_Runewood_SPritesheetAnimated01a - 48x48_92: -592488636
+      UI_Runewood_SPritesheetAnimated01a - 48x48_93: 2111143300
+      UI_Runewood_SPritesheetAnimated01a - 48x48_94: 212099110
+      UI_Runewood_SPritesheetAnimated01a - 48x48_95: -1429072598
+      UI_Runewood_SPritesheetAnimated01a - 48x48_96: -1897675506
+      UI_Runewood_SPritesheetAnimated01a - 48x48_97: 1715504114
+      UI_Runewood_SPritesheetAnimated01a - 48x48_98: 1242752605
+      UI_Runewood_SPritesheetAnimated01a - 48x48_99: -1620829358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

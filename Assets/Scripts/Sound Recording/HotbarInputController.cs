@@ -25,7 +25,7 @@ public class HotbarInputController : MonoBehaviour
         if (kb.leftArrowKey.wasPressedThisFrame) hotbar.SelectPrevious();
         if (kb.rightArrowKey.wasPressedThisFrame) hotbar.SelectNext();
 
-        // Play mit Ctrl (Strg)
+        // Play mit Ctrl
         if (kb.leftCtrlKey.wasPressedThisFrame || kb.rightCtrlKey.wasPressedThisFrame)
             hotbar.PlaySelected();
 

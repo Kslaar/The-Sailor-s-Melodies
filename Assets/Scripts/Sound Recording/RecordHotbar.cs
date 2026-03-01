@@ -23,15 +23,14 @@ public class RecordHotbar : MonoBehaviour
 
     public void Record(SoundSignature sig)
     {
-        if (sig == null) { Debug.Log("[Hotbar] Record: sig NULL"); return; }
-
-        Debug.Log($"[Hotbar] Record request: {sig.displayName} ({sig.id})");
+        if (sig == null)
+            return;
 
         _slots.Remove(sig); // Derselbe Sound soll nicht mehrfach aufgenommen werden können
 
         if (_slots.Count >= maxSlots)
         {
-            Debug.Log($"[Hotbar] Full -> removing oldest {_slots[0].displayName}");
+            Debug.Log($"Full -> removing oldest {_slots[0].displayName}");
             _slots.RemoveAt(0); // Bei maximum an tragbaren Sounds wir der älteste Sound emtfernt
         }
 
@@ -42,15 +41,11 @@ public class RecordHotbar : MonoBehaviour
         OnSelectionChanged?.Invoke(_selectedIndex);
 
         OnHotbarChanged?.Invoke(_slots);
-        Debug.Log($"[Hotbar] Recorded. Slots now: {string.Join(", ", _slots.ConvertAll(s => s.displayName))} | selected={_selectedIndex}");
-
-        // REMINDER: Effekte noch einbauen !!!
     }
 
     public void ClearSelected()
     {
         if (_slots.Count == 0) return;
-        Debug.Log($"[Hotbar] ClearSelected index={_selectedIndex} sound={_slots[_selectedIndex].displayName}");
         _slots.RemoveAt(_selectedIndex);
 
         if (_slots.Count == 0) _selectedIndex = 0;
@@ -64,14 +59,12 @@ public class RecordHotbar : MonoBehaviour
     {
         if (_slots.Count == 0) return;
         _selectedIndex = (_selectedIndex + 1) % _slots.Count;
-        Debug.Log($"[Hotbar] SelectNext -> {_selectedIndex}");
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
     public void SelectPrevious()
     {
         if (_slots.Count == 0) return;
-        _selectedIndex = (_selectedIndex - 1 + _slots.Count) % _slots.Count; // Modulo kann negativ daher "+ _slots.Count"
-        Debug.Log($"[Hotbar] SelectPrevious -> {_selectedIndex}");
+        _selectedIndex = (_selectedIndex - 1 + _slots.Count) % _slots.Count;
         OnSelectionChanged?.Invoke(_selectedIndex);
     }
 
@@ -81,28 +74,23 @@ public class RecordHotbar : MonoBehaviour
     {
         if (index < 0 || index >= _slots.Count)
         {
-            Debug.Log($"[Hotbar] PlaySlot invalid index={index}, count={_slots.Count}");
             return;
         }
 
         var sig = _slots[index];
         if (sig == null) 
         { 
-            Debug.Log("[Hotbar] PlaySlot: sig NULL"); 
             return; 
         }
 
         if (playbackEmitter == null)
         {
-            Debug.LogWarning("[Hotbar] playbackEmitter is NULL (set it to PlayerBoat)");
             return;
         }
 
-        Debug.Log($"[Hotbar] Play '{sig.displayName}' on emitter '{playbackEmitter.name}'");
 
         if (stopPreviousOnPlay && _lastPlayed != null && _lastPlayed.hintEvent != null)
         {
-            Debug.Log($"[Hotbar] Stopping previous '{_lastPlayed.displayName}'");
             _lastPlayed.hintEvent.Post(playbackEmitter);
         }
         
@@ -117,7 +105,5 @@ public class RecordHotbar : MonoBehaviour
         }
 
         OnSoundPlayed?.Invoke(sig);
-
-        // UI FEEDBACK nicht vergessen !!!
     }
 }
