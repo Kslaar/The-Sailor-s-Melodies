@@ -28,11 +28,4 @@ public class DockZone : MonoBehaviour
             return fallbackDialogue;
         }
     }
-    /*
-    void Reset()
-    {
-        var col = GetComponent<Collider>();
-        col.isTrigger = true;
-    }
-    */
 }

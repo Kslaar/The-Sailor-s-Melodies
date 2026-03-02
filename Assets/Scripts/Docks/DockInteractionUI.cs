@@ -4,14 +4,14 @@ using UnityEngine.UI;
 public class DockInteractionUI : MonoBehaviour
 {
     [SerializeField] private GameObject root;
-    //[ SerializeField] private  Button npcTalkButton;
-    // private DialogueAsset dialogue;
+    
     private DockZone dock;
 
     private void Awake()
     {
         if (root != null) root.SetActive(false); 
     }
+
     public void Show(DockZone dockZone)
     {
         dock = dockZone;

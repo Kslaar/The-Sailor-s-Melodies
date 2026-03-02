@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e630dc122e0f84120853211c2139b372, type: 3}
+  m_Name: Pastor_ready
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  npcAvatar: {fileID: 21300000, guid: d1e30c719c5474b03896b785c2d5151e, type: 3}
+  npcName: Pastor
+  nodes:
+  - id: rdy_pastor
+    text: 'Thank you for taking care of our problem! As I promised, I give to you
+      this holy shell. It will help you create Winds stronger than the ones that
+      fill your sails at any moment. '
+    choices:
+    - label: Thank you!
+      nextNodeID: mainquest_info
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 00966cd07cce44f448a156cccf0c1e73, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_info
+    text: You proved yourself to be a great help with our little problem. I know
+      you came to us just a short time ago, but now that I know that you are capable
+      of sailing these waters I want to entrust you with a special task...
+    choices:
+    - label: I'm listening
+      nextNodeID: mainquest_todo
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_todo
+    text: You might have heard that a while ago our great religious leader has perished
+      at sea. His wreck yet to be found. Aboard of it was the HOLY RADIO. And with
+      the ship and the pope it's lost at sea. I need you to retrieve it for us. The
+      new pope urgently needs it.
+    choices:
+    - label: What is this holy radio?
+      nextNodeID: mainquest_expl
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Another quest?
+      nextNodeID: mainquest_help
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_expl
+    text: It's classified information, that only few know about. Even I don't know
+      the whole truth. I belive it has to do with getting in contact with... god
+    choices:
+    - label: Alright, I'll do it
+      nextNodeID: mainquest_promise
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Sounds like I won't do it for free
+      nextNodeID: mainquest_help
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_help
+    text: I know that is a lot to take in.. but we cannot entrust anyone else at
+      the moment with this task, a huge battle in the north east scared off many
+      sailors of these waters... Please help us. We won't leave you without a reward
+      of course!
+    choices:
+    - label: Alright, I'll do it
+      nextNodeID: mainquest_promise
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: I'll think about it
+      nextNodeID: mainquest_pls
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_pls
+    text: Come back soon. The world needs you!
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: mainquest_promise
+    text: 'Thank you! here are all the informations that I have:
+
+      The ship
+      was last seen north of this island, close to Fortress City. That is also nearby
+      the place where a big battle took place a while ago. Maybe these things are
+      intertwined. Good Luck'
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 1c496fa2c424442ce834a4c5082959a8, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: rdy_pastor

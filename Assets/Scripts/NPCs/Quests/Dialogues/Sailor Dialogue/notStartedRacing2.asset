@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e630dc122e0f84120853211c2139b372, type: 3}
+  m_Name: notStartedRacing2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  npcAvatar: {fileID: 21300000, guid: 8bfbe43a8bbe84f47b73dc4dbfdb2663, type: 3}
+  npcName: Sailor
+  nodes:
+  - id: startRacingQuest2
+    text: 'You feel like challenging my record again? I''m keen to see how you will
+      maneuver through this cliffside! Beat the time of 120 seconds!
+
+'
+    choices:
+    - label: Start Racing
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 98d9da0cfdaca4de49dc0f7e3b3fe653, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: No
+      nextNodeID: 
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: startRacingQuest2

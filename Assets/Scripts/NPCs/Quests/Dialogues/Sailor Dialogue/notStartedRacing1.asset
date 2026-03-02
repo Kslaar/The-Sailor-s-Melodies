@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e630dc122e0f84120853211c2139b372, type: 3}
+  m_Name: notStartedRacing1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  npcAvatar: {fileID: 21300000, guid: 8bfbe43a8bbe84f47b73dc4dbfdb2663, type: 3}
+  npcName: Sailor
+  nodes:
+  - id: startRacingQuest1
+    text: Hey you've got exactly the same sailboat I used years ago to race against
+      other sailors, those were the times... Do think you can beat my time from back
+      then? Come beat this track in under a minute and I'll fix your broken engine.
+    choices:
+    - label: Sure!
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: fea67c7d4a45646cc8b46b4189577550, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: No
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: startRacingQuest1

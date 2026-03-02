@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e630dc122e0f84120853211c2139b372, type: 3}
+  m_Name: Soldier_inProg
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
+  npcAvatar: {fileID: 0}
+  npcName: Soldier
+  nodes:
+  - id: soldier_inProg
+    text: Come on comrade I believe in you. You are the hope of all the soldiers
+      in this bastion.
+    choices:
+    - label: I can't pass the thicket
+      nextNodeID: soldier_advice
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: soldier_advice
+    text: Use that recorder you got there. Listen to the sound the thicket emits
+      and then play the correct sequence with sounds you recorded. You're a smart
+      kid, I belive in ya
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: soldier_inProg
