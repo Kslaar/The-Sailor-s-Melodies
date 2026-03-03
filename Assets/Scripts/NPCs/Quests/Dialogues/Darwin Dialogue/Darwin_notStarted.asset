@@ -13,6 +13,60 @@ MonoBehaviour:
   m_Name: Darwin_notStarted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Charles Darwin
+  nodes:
+  - id: darwin_start
+    text: "Enchanting this place. Isn't it? \nAs a sailor you must be seeing many
+      interesting places. My crew itself is regenerating from our travels on this
+      island. My nourishment is Biology, knowledge and discovery. How I wished to
+      be a sailor for a day now."
+    choices:
+    - label: Can I help you somehow?
+      nextNodeID: darwin_offer
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: darwin_offer
+    text: You are kind to ask. I noticed that you own a recording object, very intriguing...
+      I am studying the animals of the region here. You would be too kind if you
+      could record several sounds from seagulls, whales and seals. Play the sounds
+      in the harbor. I'll  be there to listen closely!
+    choices:
+    - label: I'll help you out!
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: ff7fc6d179c9c4ae19c24c80c207473a, type: 2}
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Not interested
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: darwin_start

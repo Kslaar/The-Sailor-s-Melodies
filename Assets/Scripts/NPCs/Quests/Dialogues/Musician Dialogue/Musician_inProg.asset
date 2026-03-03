@@ -16,11 +16,13 @@ MonoBehaviour:
   npcName: Musician
   nodes:
   - id: musician_inProg
-    text: 
+    text: I think south of here some chords are played by the world, the greatest
+      musician...
     choices:
-    - label: 
+    - label: Leave
       nextNodeID: 
-      actionsOnChoose: []
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 

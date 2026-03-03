@@ -13,6 +13,48 @@ MonoBehaviour:
   m_Name: Kid_inProg
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Kid
+  nodes:
+  - id: kid_inProg
+    text: Did you find Miss Froggy, Doctor Shepperd, Mister Roach and The Junior?
+    choices:
+    - label: What are they like again?
+      nextNodeID: kid_descr
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: No
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: kid_descr
+    text: So miss Froggy is a green supermodel who likes to listen to metal. Doctor
+      Shepperd is orange and always messes up the recycling. Mister Roach likes to
+      eat cupcakes. Oh and he is blue! The junior loooooves tulips and poops 7 times
+      a day, that's why he is brown.
+    choices:
+    - label: I'll be back
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: kid_inProg

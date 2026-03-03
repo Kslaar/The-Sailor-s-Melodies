@@ -13,6 +13,42 @@ MonoBehaviour:
   m_Name: Historian_rdy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Historian
+  nodes:
+  - id: historian_rdy
+    text: I CAN'T BELIEVE IT!!! You found the left shoe of Napoleon the Third! I
+      have to bring this to the museum immediately! Now if you will excuse me!
+    choices:
+    - label: My fair share
+      nextNodeID: historian_rew
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 738104f653e3c4fe38fb9ea62726f8a5, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: historian_rew
+    text: Oh yeah! Of course. My excitement was in the way of some recognition for
+      you. Here is some money. The towns shipmaster will create bigger sails for
+      you. When you use that holy shell you have, the sails should catch more wind
+      (That shell belongs in a museum!).
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: historian_rdy

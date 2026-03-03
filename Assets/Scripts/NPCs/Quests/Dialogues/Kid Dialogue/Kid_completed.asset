@@ -13,6 +13,25 @@ MonoBehaviour:
   m_Name: Kid_completed
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Kid
+  nodes:
+  - id: kid_completed
+    text: 'I''ll tell you a secret: Miss Froggy only sleeps 3 hours a day and she
+      has pet giraffes at home. Maybe she feels watched at night and can''t sleep
+      because of that. That is my guess at least, but don''t tell her I told you
+      that!'
+    choices:
+    - label: I won't
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: kid_completed

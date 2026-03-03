@@ -13,6 +13,131 @@ MonoBehaviour:
   m_Name: Historian_notStarted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Historian
+  nodes:
+  - id: historian_start
+    text: ...Maybe if I just adjust this coordinate I might... Wait who are you?
+      Why are you disturbing me during my very important studies?
+    choices:
+    - label: The door was open
+      nextNodeID: historian_wond
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: historian_wond
+    text: Well... Now that you point that out I have to admit you are quite correct.
+      My head is concentrated on my studies. So if you would just leave, I would
+      be very appreci.... Wait... Are you a sailor?
+    choices:
+    - label: Yes
+      nextNodeID: historian_exci
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: historian_exci
+    text: Well if that isn't a strike of fate. What an odd coincidence at this time
+      and place... Anyway. I have an important task for you! GO south of this island.
+      A huge battle took place a while ago and I am looking for a brave soul who
+      would wants to risk their life for historical treasures!
+    choices:
+    - label: Risk my life?
+      nextNodeID: historian_expl
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: I'll go
+      nextNodeID: historian_expl
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: historian_expl
+    text: Yes yes! Great! Watch out for currents, many historical figures perished
+      in this location. Bring me something of value. Now go!
+    choices:
+    - label: Wait what do I get?
+      nextNodeID: historian_fame
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: bc8df5c222403483c910c02de4ff658a, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: historian_fame
+    text: Well FAME OF COURSE! Maybe I'll mention you in my research. Now if you
+      wil excuse me. I have work to do!
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: bc8df5c222403483c910c02de4ff658a, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: historian_start

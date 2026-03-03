@@ -13,6 +13,26 @@ MonoBehaviour:
   m_Name: Darwin_rdy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Charles Darwin
+  nodes:
+  - id: darwin_rdy
+    text: That was like listening to music, thank you stranger! You helped me out
+      in my research. I am anticipating the leave of my crew and myself in a few
+      days even more now. This tank here will help you to use your fuel more efficently.
+      Stay safe and always listen to the sounds of nature!
+    choices:
+    - label: Thank you!
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 6eb9bbd053ac64010a0a17bbdcb3d466, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: darwin_rdy

@@ -16,11 +16,24 @@ MonoBehaviour:
   npcName: Musician
   nodes:
   - id: musician_start
-    text: 
+    text: As I can see, you carry a recording-object. Did you know that you can record
+      different kinds of sounds, music but also sound sof nature? I'm more intrigued
+      by the music of course. Come show me some musical sounds - if you find them
+      play them in the harbor, I'll be there to listen.
     choices:
-    - label: 
+    - label: I'll find some sounds
       nextNodeID: 
-      actionsOnChoose: []
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 044fefd4442d54e0bb1eb6d5f775eb54, type: 2}
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 

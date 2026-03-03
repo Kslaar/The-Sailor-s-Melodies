@@ -16,16 +16,19 @@ MonoBehaviour:
   npcName: Musician
   nodes:
   - id: musician_rdy
-    text: 
+    text: 'That was divine! Thank you for blessing my ears. Here: My father was a
+      technician, I''ll boost your engine speed, that is - if you''re using it.'
     choices:
-    - label: 
+    - label: Thank you!
       nextNodeID: 
-      actionsOnChoose: []
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    actionsOnEnter: []
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 7c51a258e258e4e37929389efd111e23, type: 2}
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 

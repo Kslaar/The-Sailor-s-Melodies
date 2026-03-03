@@ -13,6 +13,43 @@ MonoBehaviour:
   m_Name: Kid_rdy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Kid
+  nodes:
+  - id: kid_rdy
+    text: You found them!! Thank you stranger. Mommy alwys said to repay people who
+      help me. The Junior can give you a hug, that fixes many things that are important
+      to you
+    choices:
+    - label: That is very kind of him
+      nextNodeID: kid_leave
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 252df7e6b63dd435ca3269f1d707c598, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: kid_leave
+    text: Well we hope to run into you again. Maybe you can come play with us. But
+      I think I don't want Benjamin playing with my friends again, Miss Froggy told
+      me that she can't swim very well.
+    choices:
+    - label: Sounds good
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 252df7e6b63dd435ca3269f1d707c598, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: kid_rdy
