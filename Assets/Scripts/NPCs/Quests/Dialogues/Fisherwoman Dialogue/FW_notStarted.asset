@@ -13,6 +13,82 @@ MonoBehaviour:
   m_Name: FW_notStarted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Fisherwoman
+  nodes:
+  - id: fw_start
+    text: Oh hello yound lad. Can I help you?
+    choices:
+    - label: Do you know the popes location?
+      nextNodeID: fw_pope
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Bye
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: fw_pope
+    text: 'Oh well, as far as I know the new pope Zephyrinus II. is located in Vatican
+      City. Unless you mean pope Lando who lost his life in this area. His shipwreck
+      is supposed to have been washed away, but his corpse was never found. Same
+      goes for some artefacts '
+    choices:
+    - label: ' Where can I look for them?'
+      nextNodeID: fw_help
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Bye
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: fw_help
+    text: How about I tell you about it if you help me to find my late husbands jewel.
+      He died in the current of the strait right north of this jetty. I am old and
+      can hardly catch winds. Would you be so kind to find the jewel that meant him
+      a lot?
+    choices:
+    - label: I will help you
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 0df0114f505a6473298faef74a05572c, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: 'No '
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: fw_start

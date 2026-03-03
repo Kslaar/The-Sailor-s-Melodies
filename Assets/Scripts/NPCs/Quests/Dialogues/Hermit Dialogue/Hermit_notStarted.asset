@@ -13,6 +13,78 @@ MonoBehaviour:
   m_Name: Hermit_notStarted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Hermit
+  nodes:
+  - id: hermit_start
+    text: Yeah that is right! But he left to get the milk! No, no, he left to the
+      center to be godly again. Typical Lando always trying to be righteous. But
+      can he be, when he left us here again? He needs to be the middle ground to
+      us all!...
+    choices:
+    - label: What are you saying?
+      nextNodeID: hermit_mad
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 531cd45f6bc8f41169e38fae3869549f, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: hermit_mad
+    text: Yeah that is right! But he left to get the milk! No, no, he left to the
+      center to be godly again. Typical Lando always trying to be righteous. But
+      can he be, when he left us here again? He needs to be the middle ground to
+      us all!...
+    choices:
+    - label: Whatever
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: 'How do I pass this rock? '
+      nextNodeID: hermit_twea
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: hermit_twea
+    text: Yeah that is right! But he left to get the milk! No, no, he left to the
+      center to be godly again. Typical Lando always trying to be righteous. But
+      can he be, when he left us here again? He needs to be the middle ground to
+      us all!...
+    choices:
+    - label: Whatever
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: hermit_start

@@ -25,13 +25,13 @@ MonoBehaviour:
     - label: Leave
       nextNodeID: 
       actionsOnChoose:
-      - {fileID: 11400000, guid: a5dc14545361041ef934a902456e89af, type: 2}
       - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    actionsOnEnter: []
+    actionsOnEnter:
+    - {fileID: 11400000, guid: a5dc14545361041ef934a902456e89af, type: 2}
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 

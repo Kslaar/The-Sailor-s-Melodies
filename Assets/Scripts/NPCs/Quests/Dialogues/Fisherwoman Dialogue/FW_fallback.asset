@@ -13,6 +13,23 @@ MonoBehaviour:
   m_Name: FW_fallback
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Fisherwoman
+  nodes:
+  - id: fw_fallback
+    text: Thank you dear. I might have lost my husband, but grace to you... He is
+      with me now again.
+    choices:
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: fw_fallback

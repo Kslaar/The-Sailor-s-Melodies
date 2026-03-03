@@ -13,6 +13,135 @@ MonoBehaviour:
   m_Name: FW_rdy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: 
-  nodes: []
-  startNodeID: start
+  npcName: Fisherwoman
+  nodes:
+  - id: fw_rdy
+    text: You found it! Oh dear you have no idea how much this means to me! Words
+      can not express my gratitude. Ask me whatever you want to know. Now it's my
+      turn to be of service!
+    choices:
+    - label: What was the pope doing here?
+      nextNodeID: fw_poploc
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Have you heard of the holy radio?
+      nextNodeID: fw_holrad
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Where to look for artefacts?
+      nextNodeID: fw_arte
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter:
+    - {fileID: 11400000, guid: be727f535edf04ed6abbb40c5db060e6, type: 2}
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: fw_poploc
+    text: I don't think anyone knows exactly. Some guess it has to do with some godly
+      trials for all of us. Others speculate that he was visiting a childhood friend...
+      We will probably never find out.
+    choices:
+    - label: Have you heard of the holy radio?
+      nextNodeID: fw_holrad
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Where to look for artefacts?
+      nextNodeID: fw_arte
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: fw_holrad
+    text: I don't think I have. Sounds more like a gadget than an artefact. If I
+      would have to guess what it is. I would think that it's radio channel for believers
+      like the malarkey Bibel TV.
+    choices:
+    - label: What was the pope doing here?
+      nextNodeID: fw_poploc
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Where to look for artefacts?
+      nextNodeID: fw_arte
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  - id: fw_arte
+    text: Your best chance is in between those moutains here. They are difficult
+      to maneuver though. Be careful! But on the other hand, that is what many sailors
+      think that is why they leave them alone. Only sentimental women like me get
+      lost here.
+    choices:
+    - label: What was the pope doing here?
+      nextNodeID: fw_poploc
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Have you heard of the holy radio?
+      nextNodeID: fw_holrad
+      actionsOnChoose: []
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  startNodeID: fw_rdy

@@ -14,7 +14,7 @@
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>C:\Audiokinetic\Wwise2025.1.4.9062</WwiseInstallationPathWindows>
   <WwiseProjectPath>../The-Sailor-s-Melodies_WwiseProject/The-Sailor-s-Melodies_WwiseProject.wproj</WwiseProjectPath>
-  <UseWaapi>true</UseWaapi>
+  <UseWaapi>false</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
   <AutoSyncWaapi>true</AutoSyncWaapi>

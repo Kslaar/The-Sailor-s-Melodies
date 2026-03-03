@@ -15,10 +15,13 @@ MonoBehaviour:
   npcAvatar: {fileID: 21300000, guid: d9e5d079312004548987004e51567c29, type: 3}
   npcName: Festival Organizer
   nodes:
-  - id: test
-    text: Test starte unique Quest mit Pages 1-4
+  - id: festOrga_start
+    text: HELP! Kind stranger, please listen. In the span of the next days our island
+      has to partake in an ancient tradition, but we lost the important pages that
+      help us readout the forgotten language. Will you look for the pages when you
+      leave this port? I promise I'll fix your boat a little bit.
     choices:
-    - label: Yes
+    - label: I'll help you
       nextNodeID: 
       actionsOnChoose:
       - {fileID: 11400000, guid: 3039d276ac38d4b3cb5e0b19b7ef67f8, type: 2}
@@ -27,7 +30,7 @@ MonoBehaviour:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    - label: No
+    - label: I have no time
       nextNodeID: 
       actionsOnChoose:
       - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
@@ -40,4 +43,4 @@ MonoBehaviour:
       idInternal: 0
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
-  startNodeID: test
+  startNodeID: festOrga_start

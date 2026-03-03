@@ -41,7 +41,8 @@ MonoBehaviour:
   - id: darwin_tip
     text: Seals have been reported north east of here. I saw fountains of water in
       the south west and the seagulls are dispersed at this time of the season. Try
-      to look for them next to bigger islands.
+      to look for them next to bigger islands. After you recorded them play them
+      in this harbor.
     choices:
     - label: Thank you
       nextNodeID: 

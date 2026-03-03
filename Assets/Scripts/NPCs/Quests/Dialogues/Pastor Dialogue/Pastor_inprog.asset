@@ -50,14 +50,6 @@ MonoBehaviour:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    - label: Leave
-      nextNodeID: 
-      actionsOnChoose:
-      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
-      wwiseEvent:
-        idInternal: 0
-        valueGuidInternal: 
-        WwiseObjectReference: {fileID: 0}
     actionsOnEnter: []
     wwiseEvent:
       idInternal: 0

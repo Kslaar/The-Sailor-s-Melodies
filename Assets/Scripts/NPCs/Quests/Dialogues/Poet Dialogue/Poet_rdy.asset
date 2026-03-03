@@ -30,7 +30,8 @@ MonoBehaviour:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    actionsOnEnter: []
+    actionsOnEnter:
+    - {fileID: 11400000, guid: 11a349d3016924627bbe1f3207c63b2e, type: 2}
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 
