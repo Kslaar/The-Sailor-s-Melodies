@@ -260,7 +260,7 @@ public class RaceManager : MonoBehaviour
         if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
         {
             QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
-            QuestManager.Instance?.TurnInQuest(currentCourse.questID);
+            // QuestManager.Instance?.TurnInQuest(currentCourse.questID);
         }
 
         DialogueAsset d = null;

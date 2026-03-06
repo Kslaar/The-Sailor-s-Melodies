@@ -8,7 +8,7 @@ public class BoatControl : MonoBehaviour
 {
 
     [Header("Throttle")]
-    [SerializeField] private float maxForwardSpeed = 6f;
+    [SerializeField] private float maxForwardSpeed = 12f;
     [SerializeField] private float maxReverseSpeed = 3f;
     [SerializeField] private float accelerationForce = 8f;
     [SerializeField] private float reverseAccelerationForce = 6f;

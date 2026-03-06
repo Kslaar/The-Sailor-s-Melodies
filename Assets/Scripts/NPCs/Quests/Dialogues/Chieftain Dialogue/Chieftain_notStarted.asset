@@ -22,6 +22,7 @@ MonoBehaviour:
       nextNodeID: chieftain_help
       actionsOnChoose:
       - {fileID: 11400000, guid: 85ccbc4ac127641f1a620f6fcf2e2d43, type: 2}
+      - {fileID: 11400000, guid: b1fe7194b6a3c4d47b54d0d6685feda3, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 

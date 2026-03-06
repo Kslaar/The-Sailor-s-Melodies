@@ -44,11 +44,15 @@ public class QuestManager : MonoBehaviour
             var q = GetQuest(id);
             if (q == null) continue;
 
-            bool objectivesDone = true;
-            foreach (var obj in q.objectives)
+            bool objectivesDone = (q.objectives != null && q.objectives.Count > 0);
+            
+            if (q.objectives != null)
             {
-                if (obj == null) continue;
-                objectivesDone &= obj.IsComplete;
+                foreach (var obj in q.objectives)
+                {
+                    if (obj == null) continue;
+                    objectivesDone &= obj.IsComplete;
+                }
             }
 
             if (objectivesDone)

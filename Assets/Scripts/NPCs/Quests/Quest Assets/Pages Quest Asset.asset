@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: pages_4
   title: Lost Tradition
-  description: The villagers lost four important pages of their ceremonial song,
-    which they want to sing soon. They don't dare to swim across the sea during this
-    time of the year so they tasked me with returning the pages.
+  description: The villagers lost four important pages of their ceremonial prayer,
+    which they want to recite soon. They don't dare to swim across the sea during
+    this time of the year so they tasked me with returning the pages.
   objectives:
   - {fileID: 11400000, guid: f1258b95242a04a0cbc56676b3f3e336, type: 2}
   rewards:
   - {fileID: 11400000, guid: 2bf9c4f95f18e490fa0d5b37396b9066, type: 2}
+  category: 0

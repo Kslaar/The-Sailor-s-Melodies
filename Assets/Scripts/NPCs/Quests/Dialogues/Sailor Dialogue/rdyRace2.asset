@@ -22,6 +22,7 @@ MonoBehaviour:
     - label: See you!
       nextNodeID: 
       actionsOnChoose:
+      - {fileID: 11400000, guid: 735922d67aa4349cf9e1a5e6ad1b61ab, type: 2}
       - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0

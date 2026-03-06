@@ -11,4 +11,8 @@ public class QuestAsset : ScriptableObject
 
     public List<QuestObjective> objectives = new();
     public List<QuestReward> rewards = new();
+
+    public enum QuestCategory { Normal, Racing }
+
+    public QuestCategory category = QuestCategory.Normal;
 }

@@ -38,7 +38,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 330, y: 50}
+  m_SizeDelta: {x: 330, y: 80}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &137843679095366446
 CanvasRenderer:
@@ -227,7 +227,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Choice Button
+  m_text: Choice Button mit Zeilenumbruch
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f5596c4e58e5423d94cdb1641b35c8a, type: 2}
   m_sharedMaterial: {fileID: -2805741152314588896, guid: 7f5596c4e58e5423d94cdb1641b35c8a, type: 2}

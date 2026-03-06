@@ -18,7 +18,7 @@ MonoBehaviour:
   - id: startRacingQuest1
     text: Hey you've got exactly the same sailboat I used years ago to race against
       other sailors, those were the times... Do think you can beat my time from back
-      then? Come beat this track in under a minute and I'll fix your broken engine.
+      then? Come beat this track in under two minutes and I'll fix your broken engine.
     choices:
     - label: Sure!
       nextNodeID: 

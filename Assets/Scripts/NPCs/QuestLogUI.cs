@@ -10,8 +10,10 @@ public class QuestLogUI : MonoBehaviour
     [SerializeField] private GameObject root;
 
     [Header("List")]
-    [SerializeField] private RectTransform listParent;
+    [SerializeField] private RectTransform normalListParent;
+    [SerializeField] private RectTransform racingListParent;
     [SerializeField] private Button questButtonPrefab;
+    [SerializeField] private UIDescription questtip;
 
     private readonly List<GameObject> spawned = new();
     private Coroutine _openRoutine;
@@ -50,6 +52,8 @@ public class QuestLogUI : MonoBehaviour
 
     public void Close()
     {
+        questtip?.Hide();
+        
         if (_openRoutine != null)
         {
             StopCoroutine(_openRoutine);
@@ -64,8 +68,8 @@ public class QuestLogUI : MonoBehaviour
         Refresh();
 
         Canvas.ForceUpdateCanvases();
-        if (listParent != null)
-            LayoutRebuilder.ForceRebuildLayoutImmediate(listParent);
+        // if (listParent != null)
+            // LayoutRebuilder.ForceRebuildLayoutImmediate(listParent);
     }
 
     public void Refresh()
@@ -80,7 +84,10 @@ public class QuestLogUI : MonoBehaviour
             var q = qm.GetQuest(id);
             if (q == null) continue;
 
-            var btn = Instantiate(questButtonPrefab, listParent);
+            Transform parent = (q.category == QuestAsset.QuestCategory.Racing) ? racingListParent : normalListParent;
+            if (parent == null) continue;
+
+            var btn = Instantiate(questButtonPrefab, parent);
             spawned.Add(btn.gameObject);
 
             var label = btn.GetComponentInChildren<TMP_Text>();
@@ -90,10 +97,18 @@ public class QuestLogUI : MonoBehaviour
 
                 string progress = GetProgressSummary(q);
                 string stateSuffix = 
-                    st == QuestState.ReadyToTurnIn ? " (Ready to turn in)" : st == QuestState.Completed ? " (Completed)" : "";
-
+                    st == QuestState.ReadyToTurnIn ? " (Ready to turn in)" : 
+                    st == QuestState.Completed ? " (Completed)" : "";
 
                 label.text = $"{q.title}{stateSuffix}" + (string.IsNullOrEmpty(progress) ? "" : $" [{progress}]");
+
+                var tip = btn.GetComponent<QuestButtonDescription>();
+                if (tip == null) tip = btn.gameObject.AddComponent<QuestButtonDescription>();
+
+                string descr = q.description ?? "";
+                string questtipText = descr;
+
+                tip.Init(questtip, questtipText);
                 ApplyStyle(label, st);
             }
         }

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: Chieftain_rdy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueAsset
   npcAvatar: {fileID: 0}
-  npcName: Chieftain
+  npcName: Supply Guy
   nodes:
   - id: chieftain_rdy
-    text: 'You delivered the message! I followed you by taking over the sight of
-      a seagull. Here''s your blessing:
+    text: 'I am a non-posessed supply guy. You delivered the message from the chieftain!
+      I forsaw your coming through listening to a talking seagull. Just as the chieftain
+      taught me... Here''s your blessing:
 
       "Chust Must Fidelili-ust, may this
       man''s boat have more thrust". Bye! '

@@ -16,7 +16,13 @@ MonoBehaviour:
   npcName: Poet
   nodes:
   - id: poet_completed
-    text: A smile brightens my day, when I see you arrive at this bay
+    text: 'A smile brightens my day, when I see you arrive at this bay.
+
+      Forever
+      am I grateful to you, to the man that went with the wind that blew.
+
+      The
+      love of my dear and I persists, not another name to heartbroken lists.'
     choices:
     - label: Leave
       nextNodeID: 

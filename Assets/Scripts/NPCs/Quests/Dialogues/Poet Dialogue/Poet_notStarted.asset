@@ -16,8 +16,8 @@ MonoBehaviour:
   npcName: Poet
   nodes:
   - id: poet_start
-    text: 'You there help me in the name of love, the future of a pair doesn''t want
-      to yield to anyone above. '
+    text: "You there help me in the name of love, \nThe future of a pair doesn't
+      want to yield to anyone above. "
     choices:
     - label: Sure......
       nextNodeID: poet_accept
@@ -52,13 +52,22 @@ MonoBehaviour:
     - label: I'll help you!
       nextNodeID: 
       actionsOnChoose:
+      - {fileID: 11400000, guid: 241b9b66dec854c93a0f4197074b6d07, type: 2}
+      - {fileID: 11400000, guid: 563e795e635f14a638eaeb136f552790, type: 2}
       - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
       wwiseEvent:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    actionsOnEnter:
-    - {fileID: 11400000, guid: 241b9b66dec854c93a0f4197074b6d07, type: 2}
+    - label: Leave
+      nextNodeID: 
+      actionsOnChoose:
+      - {fileID: 11400000, guid: 2e042ea431fc0410ab65ad4e53a6af14, type: 2}
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+    actionsOnEnter: []
     wwiseEvent:
       idInternal: 0
       valueGuidInternal: 

@@ -18,6 +18,7 @@ MonoBehaviour:
     he told me I could help him if I'd record some sounds out of nature. I'll try
     my best to find a seal, seagull and wale
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 7cd09368ff1604a41bca3f3207f71bba, type: 2}
   rewards:
   - {fileID: 11400000, guid: db813409d77964bd8a472aaa245841b4, type: 2}
+  category: 0

@@ -376,7 +376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: -240
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       propertyPath: m_LocalPosition.y
@@ -384,7 +384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6
+      value: 368
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       propertyPath: m_LocalRotation.w
@@ -504,6 +504,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9036936117431644607}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4307387302563771647}
   m_SourcePrefab: {fileID: 100100000, guid: 49b255b1fc1c12c46963c83f8f22f931, type: 3}
 --- !u!4 &7316729568759855435 stripped
 Transform:
@@ -601,14 +604,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53d8409686734fa685329c40197714f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BoatControl
-  maxForwardSpeed: 8.5
-  maxReverseSpeed: 3
+  maxForwardSpeed: 20
+  maxReverseSpeed: 5.5
   accelerationForce: 8
   reverseAccelerationForce: 6
-  maxYawDegPerSec: 45
+  maxYawDegPerSec: 75
   steerResponsivness: 6
   yawDamping: 2.5
-  lateralDrag: 2
+  lateralDrag: 5
   minSpeedForFullSteering: 2
 --- !u!114 &5299008074082205964
 MonoBehaviour:
@@ -697,6 +700,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: dc74843c0bf2b81478361053ff6847e7, type: 2}
+  MotorLoop:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2b82afdbafd7b3943b97ea3abde73101, type: 2}
   SpeedRTPC:
     idInternal: 0
     valueGuidInternal: 
@@ -714,34 +721,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b326827e25af945b08702a5c9dacdff2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MotorBoostAbility
-  SailingState:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ad2dc145b64b93647886635c0d6d7736, type: 2}
-  MotorState:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5405dded0d137974c8b0bc0362aa2b69, type: 2}
-  MotorStartEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3048900faef44714f9f7de9d31b2640a, type: 2}
-  MotorstopEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: dc74843c0bf2b81478361053ff6847e7, type: 2}
-  MotorLoopEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2b82afdbafd7b3943b97ea3abde73101, type: 2}
   boat: {fileID: 1727689091793670056}
   fuel: {fileID: 1394243595709864521}
   data: {fileID: 11400000, guid: 45ffb426490244bc48a10c09446529b4, type: 2}
+  boatAudio: {fileID: 0}
   logAttempts: 1
+  engineRunning: 0
 --- !u!114 &202982737575183368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -851,3 +836,51 @@ MonoBehaviour:
   maxSlots: 3
   playbackEmitter: {fileID: 7980922155677737969}
   stopPreviousOnPlay: 1
+--- !u!114 &4307387302563771647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7980922155677737969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ecc819f6cb44a1fb97554b15b140ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BoatProgressionApplier
+  boat: {fileID: 1727689091793670056}
+  fuel: {fileID: 1394243595709864521}
+  motorAbility: {fileID: 2975272686072494237}
+  motorData: {fileID: 11400000, guid: 45ffb426490244bc48a10c09446529b4, type: 2}
+  windAbility: {fileID: 2465819625529934658}
+  windData: {fileID: 11400000, guid: bb939cddabf334903a58e08f39d30ef1, type: 2}
+  engineStartChance:
+  - 0.33
+  - 0.55
+  - 0.77
+  - 1
+  engineFuelSeconds:
+  - 30
+  - 35
+  - 40
+  - 45
+  engineSpeedMultiplier:
+  - 2
+  - 2.2
+  - 2.4
+  - 2.6
+  boatForwardSpeed:
+  - 12
+  - 16
+  - 20
+  - 25
+  windSpeedMultiplier:
+  - 3
+  - 3.2
+  - 3.4
+  - 3.6
+  windThrustMultiplier:
+  - 3
+  - 3.2
+  - 3.4
+  - 3.6

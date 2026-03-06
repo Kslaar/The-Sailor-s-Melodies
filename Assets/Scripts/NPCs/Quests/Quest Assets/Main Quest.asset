@@ -18,6 +18,7 @@ MonoBehaviour:
     new Pope. Without it he can't get in contact with the lord. I guess I better
     hurry and try to find that radio...
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 06345abfa22f0453aac0f2ed5ac63a54, type: 2}
   rewards:
   - {fileID: 11400000, guid: 997636cb878264ffc9200541c594e2d5, type: 2}
+  category: 0

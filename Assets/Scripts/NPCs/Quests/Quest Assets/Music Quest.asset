@@ -17,6 +17,7 @@ MonoBehaviour:
   description: 'A Musician asked me if I was able to play certain chords. First off
     I should try to hear them, so I can learn to play them. '
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 3554e07197a0140cdbdc6d421367b15f, type: 2}
   rewards:
   - {fileID: 11400000, guid: 997636cb878264ffc9200541c594e2d5, type: 2}
+  category: 0

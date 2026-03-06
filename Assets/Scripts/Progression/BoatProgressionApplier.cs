@@ -20,7 +20,7 @@ public class BoatProgressionApplier : MonoBehaviour
     [SerializeField] private float[] engineSpeedMultiplier = { 2.0f, 2.2f, 2.4f, 2.6f };
 
     [Header("Boat Base Speed Tiers (ForwardSpeed)")]
-    [SerializeField] private float[] boatForwardSpeed = { 6f, 6.5f, 7f, 7.5f };
+    [SerializeField] private float[] boatForwardSpeed = { 12f, 16f, 20f, 25f };
 
     [Header("WindGust Tiers (Multiplier)")]
     [SerializeField] private float[] windSpeedMultiplier = { 3.0f, 3.2f, 3.4f, 3.6f };

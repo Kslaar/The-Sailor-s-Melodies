@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0a246fded85f7437a9d2ffa7796b1a5c, type: 3}
-  m_Name: TestSoundSig
+  m_Name: ChoirSoundSIg
   m_EditorClassIdentifier: Assembly-CSharp::SoundSignature
-  id: tes_123
-  displayName: Test
-  icon: {fileID: 21300000, guid: cf6409f8e1061471187ee95e5750a13a, type: 3}
+  id: choir
+  displayName: Choir
+  icon: {fileID: 1449499556, guid: 633e329b39b63457281c351859a585d5, type: 3}
   playEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1021f450b19ea4d56a6db922dc262763, type: 2}
-  stopEvent:
+    WwiseObjectReference: {fileID: 11400000, guid: dfb8af21379077345a1dd4316a2463a4, type: 2}
+  hintEvent:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}

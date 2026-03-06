@@ -19,3 +19,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 09fefcba8b6344739ad17b26b8c2f117, type: 2}
   rewards:
   - {fileID: 11400000, guid: 3a70ff27fad8548adaf9b8ceaa03c4aa, type: 2}
+  category: 1

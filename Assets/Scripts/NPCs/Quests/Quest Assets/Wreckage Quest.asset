@@ -18,6 +18,7 @@ MonoBehaviour:
     there was a huge battle once. I have to be careful though, powerful tides are
     known in this area
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: bd6ecf298908c4cad8761526e00b24f9, type: 2}
   rewards:
   - {fileID: 11400000, guid: 087bf6b9913304dffba71c13ed9a004e, type: 2}
+  category: 0

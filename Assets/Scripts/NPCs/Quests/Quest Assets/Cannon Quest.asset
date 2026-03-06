@@ -18,6 +18,7 @@ MonoBehaviour:
     during a training excercise. Because their armada is gone I need to help them
     out. Let's see what I will get out of this
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: b68518a6a528a4df890521039c774774, type: 2}
   rewards:
   - {fileID: 11400000, guid: db813409d77964bd8a472aaa245841b4, type: 2}
+  category: 0

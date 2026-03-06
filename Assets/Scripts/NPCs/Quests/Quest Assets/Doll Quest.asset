@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: the_kid
   title: The Kid
-  description: I kid lost all of her dolls when she tripped by the coast. The current
-    might've spread them out a bit. I'll gladly help her
+  description: I kid lost all of her... dolls? Apparently another kid threw them
+    away. The current might've spread them out a bit.
   objectives:
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 23fbf096c63e74081b8225dfbc569569, type: 2}
   rewards:
   - {fileID: 11400000, guid: 087bf6b9913304dffba71c13ed9a004e, type: 2}
+  category: 0

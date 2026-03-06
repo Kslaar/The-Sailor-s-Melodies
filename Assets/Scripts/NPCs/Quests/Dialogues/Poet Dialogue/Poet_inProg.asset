@@ -56,13 +56,6 @@ MonoBehaviour:
         idInternal: 0
         valueGuidInternal: 
         WwiseObjectReference: {fileID: 0}
-    - label: Where do find your lover?
-      nextNodeID: poet_expl
-      actionsOnChoose: []
-      wwiseEvent:
-        idInternal: 0
-        valueGuidInternal: 
-        WwiseObjectReference: {fileID: 0}
     actionsOnEnter: []
     wwiseEvent:
       idInternal: 0
