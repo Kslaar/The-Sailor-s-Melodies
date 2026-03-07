@@ -1851,6 +1851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf0dcd8b77b2b4c00bba54a78348a549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ItemCollectionRegistry
+  caps:
+  - itemID: fuel_canister
+    maxCount: 3
 --- !u!4 &1603242472
 Transform:
   m_ObjectHideFlags: 0

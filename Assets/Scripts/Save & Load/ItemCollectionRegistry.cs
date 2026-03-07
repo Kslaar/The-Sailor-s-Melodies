@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class ItemCollectionRegistry : MonoBehaviour
 {
+    [SerializeField] private List<ItemCountCap> caps = new();
+    private Dictionary<string, int> capID;
     public static event Action OnRegistryLoaded;
     public static ItemCollectionRegistry Instance { get; private set; }
 
@@ -19,6 +21,14 @@ public class ItemCollectionRegistry : MonoBehaviour
         }   
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        capID = new Dictionary<string, int>();
+        foreach (var entry in caps)
+        {
+            if (entry == null) continue;
+            if (string.IsNullOrWhiteSpace(entry.itemID)) continue;
+            capID[entry.itemID] = Mathf.Max(1, entry.maxCount);
+        }
     }
 
     private void OnEnable()
@@ -39,7 +49,12 @@ public class ItemCollectionRegistry : MonoBehaviour
         if (!counts.ContainsKey(itemID)) 
             counts[itemID] = 0;
 
-        counts[itemID]++;
+        int next = counts[itemID] + 1;
+
+        if (capID != null && capID.TryGetValue(itemID, out int cap))
+            next = Mathf.Min(next, cap);
+
+        counts[itemID] = next;
     }
 
     public int GetCount(string itemID)
@@ -83,4 +98,11 @@ public class ItemCountEntry
 {
     public string itemID;
     public int count;
+}
+
+[System.Serializable]
+public class ItemCountCap
+{
+    public string itemID;
+    public int maxCount = 3;
 }

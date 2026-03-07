@@ -7,7 +7,6 @@ public abstract class ItemPickup : MonoBehaviour
     [Tooltip("Nur Objekte mit diesem Tag können aufgesammelt werden!")]
     [SerializeField] private string requiredTag = "Player";
 
-    [Header("FX")]
     [SerializeField] private GameObject onPickupEffect;
     [SerializeField] private bool destroyOnPickup = true;
 
@@ -19,16 +18,30 @@ public abstract class ItemPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!string.IsNullOrEmpty(requiredTag) && !HasTagInParents(other.transform, requiredTag)) 
+        if (!string.IsNullOrEmpty(requiredTag) && !HasTagInParents(other.transform, requiredTag))
             return;
-
-        if (TryApply(other))
+    
+        bool ok = TryApply(other);
+        Debug.Log($"[ItemPickup] {name} TryApply={ok}");
+    
+        if (!ok) return;
+    
+        var resp = GetComponent<RespawnPickupItem>();
+        Debug.Log($"[ItemPickup] {name} has RespawnPickupItem? {(resp != null)} destroyOnPickup={destroyOnPickup}");
+    
+        if (onPickupEffect != null)
+            Instantiate(onPickupEffect, transform.position, Quaternion.identity);
+    
+        if (resp != null)
         {
-            if (onPickupEffect != null)
-                Instantiate(onPickupEffect, transform.position, Quaternion.identity);
-
-            if (destroyOnPickup)
-                Destroy(gameObject);
+            Debug.Log($"[ItemPickup] {name} RETURN due to respawner");
+            return;
+        }
+    
+        if (destroyOnPickup)
+        {
+            Debug.LogWarning($"[ItemPickup] {name} DESTROY by ItemPickup");
+            Destroy(gameObject);
         }
     }
 

@@ -7,11 +7,14 @@ public class FuelHUD : MonoBehaviour
     [Header("Refs")]
     [SerializeField] private BoatFuel fuel;          
     [SerializeField] private Slider fuelSlider;      
-    // [SerializeField] private TextMeshProUGUI fuelText;
 
     [Header("Behavior")]
     [SerializeField] private bool autoFindFuel = true;
     [SerializeField] private float smoothSpeed = 10f; 
+
+    [Header("Unlock Engine and HUD")]
+    [SerializeField] private string questToUnlock = "race_island_1";
+    [SerializeField] private bool hideUntilUnlocked = true;
 
     private float displayed;
 
@@ -26,6 +29,15 @@ public class FuelHUD : MonoBehaviour
 
     private void Update()
     {
+        if (hideUntilUnlocked)
+        {
+            bool unlocked = QuestManager.Instance != null && QuestManager.Instance.IsCompleted(questToUnlock);
+
+            if (gameObject.activeSelf != unlocked)
+                gameObject.SetActive(unlocked);
+
+            if (!unlocked) return; // dauerhaftes Upaten mus nicht sein
+        }
         if (fuel == null && autoFindFuel)
             fuel = FindFirstObjectByType<BoatFuel>();
 
