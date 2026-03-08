@@ -18,6 +18,9 @@ public class UIBackButton : MonoBehaviour
                 break;
 
             case GameState.Dialogue:
+                if (DialogueManager.Instance != null && DialogueManager.Instance.AllowBack == false)
+                    return;
+                    
                 if (DialogueManager.Instance != null) DialogueManager.Instance.EndDialogue();
                 else gsm.TryExitDialogue("UI Back (Dialogue)");
                 break;

@@ -41,6 +41,10 @@ public class BoatControl : MonoBehaviour
 
     void FixedUpdate()
     {
+        var gsm = GameStateManager.Instance;
+        if (gsm != null && gsm.State != GameState.Sailing && gsm.State != GameState.Racing)
+            return;
+        
         float steerInput = 0f;
 
         if (Keyboard.current.aKey.isPressed) steerInput += 1;

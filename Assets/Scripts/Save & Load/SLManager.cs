@@ -19,6 +19,12 @@ public class SLManager : MonoBehaviour
     [SerializeField] string masterVolumeRtpc = "MasterVolume";
     [SerializeField] bool useSuspendAfterFadeOut = true;
 
+    [Header("New Game")]
+    [SerializeField] private DockZone afterMainMenuDockZone;
+    [SerializeField] private DialogueAsset introPastorDialogue;
+
+    private bool _pendingNewGameIntro;
+
     private void Awake()
     {
         if (Instance != null) { Destroy(gameObject); return; }
@@ -84,13 +90,16 @@ public class SLManager : MonoBehaviour
         yield return null; // Warten bis alles initialisiert ist
 
         if (GameStateManager.Instance != null)
-            GameStateManager.Instance.ForceUnpause(GameState.Sailing, "Enter GameScene");
+        {
+            if (loadSave) GameStateManager.Instance.ForceUnpause(GameState.Sailing, "Enter GameScene after Load Game");
+            else GameStateManager.Instance.ForceUnpause(GameState.Docked, "Enter GameScene on New Game");
+        }
 
         EnsurePlayer(forceRefresh: true);
         if (player != null)
         {
             if (loadSave) ApplySavedData();
-            else player.transform.position = new Vector3(12, 0, 6);
+            else _pendingNewGameIntro = true;
         }
 
         yield return null;
@@ -105,6 +114,12 @@ public class SLManager : MonoBehaviour
 
         yield return FadeWwiseRtpc(masterVolumeRtpc, 0f, userMasterRtpc, audioFadeSeconds);
 
+        if (!loadSave && _pendingNewGameIntro)
+        {
+            _pendingNewGameIntro = false;
+            StartCoroutine(StartNewGameIntro());
+        }
+        
         if (Loadingscreen.Instance != null)
             yield return Loadingscreen.Instance.FadeFromBlack();
     }
@@ -227,5 +242,57 @@ public class SLManager : MonoBehaviour
         }
 
         AkUnitySoundEngine.SetRTPCValue(rtpcName, to);
+    }
+
+    private IEnumerator StartNewGameIntro()
+    {
+        // Intro-DockZone
+        DockZone pastorDock = null;
+        foreach (var dock in FindObjectsByType<DockZone>(FindObjectsInactive.Exclude, FindObjectsSortMode.None))
+        {
+            if (dock != null && dock.CompareTag("IntroDock"))
+            {
+                pastorDock = dock;
+                break;
+            }
+        }
+        if (pastorDock == null)
+        {
+            Debug.LogWarning("[SLManager] IntroDock not found.");
+            yield break;
+        }
+
+        EnsurePlayer(forceRefresh: true);
+        if (player == null) yield break;
+
+        // DockingController vom Spieler
+        var docking = FindFirstObjectByType<BoatDockingController>();
+        if (docking == null)
+        {
+            Debug.LogWarning("[SLManager] BoatDockingController not found.");
+            yield break;
+        }
+
+        if (introPastorDialogue == null)
+        {
+            Debug.LogWarning("[SLManager] introPastorDialogue not assigned.");
+            yield break;
+        }
+
+        docking.AutoDockForDialogue(
+            dockZone: pastorDock,
+            dialogue: introPastorDialogue,
+            reason: "New Game Intro",
+            showDockUI: false   // false, weil Dialog sofort starten soll
+        );
+
+        yield return null;
+        yield return null;
+
+        if (DialogueManager.Instance != null)
+            DialogueManager.Instance.AllowBack = false;
+
+        if (GameStateManager.Instance != null && GameStateManager.Instance.State == GameState.Docked)
+            DialogueManager.Instance?.StartDialogue(introPastorDialogue);
     }
 }

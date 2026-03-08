@@ -85981,6 +85981,7 @@ GameObject:
   - component: {fileID: 1395726670}
   - component: {fileID: 1395726669}
   - component: {fileID: 1395726672}
+  - component: {fileID: 1395726673}
   m_Layer: 5
   m_Name: Esc Button
   m_TagString: Untagged
@@ -86129,6 +86130,18 @@ MonoBehaviour:
   playClickSound: 0
   playConfirmSound: 0
   playBackSound: 1
+--- !u!114 &1395726673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395726667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e228564663640d8aa7a66910fb0654, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackButtonVisibility
 --- !u!1001 &1397093813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108697,7 +108710,7 @@ GameObject:
   - component: {fileID: 1799856495}
   m_Layer: 0
   m_Name: Dock Collider
-  m_TagString: Untagged
+  m_TagString: IntroDock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

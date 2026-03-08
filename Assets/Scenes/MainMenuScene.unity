@@ -1806,6 +1806,8 @@ MonoBehaviour:
   audioFadeSeconds: 0.5
   masterVolumeRtpc: MasterVolume
   useSuspendAfterFadeOut: 1
+  afterMainMenuDockZone: {fileID: 0}
+  introPastorDialogue: {fileID: 11400000, guid: 25089daed9ea348adb50be1e62306dde, type: 2}
 --- !u!114 &1562964466
 MonoBehaviour:
   m_ObjectHideFlags: 0

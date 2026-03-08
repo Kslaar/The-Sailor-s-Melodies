@@ -29,13 +29,9 @@ public class UIRaycastDebugger : MonoBehaviour
 
         if (_results.Count == 0)
         {
-            Debug.Log("[UIRaycast] No UI hit.");
             return;
         }
 
-        Debug.Log($"[UIRaycast] Top hit: {_results[0].gameObject.name}", _results[0].gameObject);
-
-        // Optional: zeig die Top 5 Hits
         for (int i = 0; i < Mathf.Min(5, _results.Count); i++)
             Debug.Log($"  #{i} hit: {_results[i].gameObject.name}", _results[i].gameObject);
     }

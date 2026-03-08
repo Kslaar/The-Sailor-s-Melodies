@@ -9,6 +9,8 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
 
+    public bool AllowBack { get; set; } = true;
+
     [SerializeField] private DialogueUI ui;
     private DialogueAsset current;
     private DialogueAsset.DialogueNode node;
@@ -63,6 +65,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueAsset asset)
     {
+        AllowBack = true;
+
         if (asset == null)
         {
             Debug.Log($"[DialogueManager] StartDialogue called mit NULL asset. :(");

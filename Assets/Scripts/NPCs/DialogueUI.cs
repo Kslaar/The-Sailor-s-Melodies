@@ -5,6 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using AK.Wwise;
+
 
 public class DialogueUI : MonoBehaviour
 {
@@ -33,6 +35,9 @@ public class DialogueUI : MonoBehaviour
     private Coroutine typingRoutine;
     private bool isTyping;
     private string fullText;
+
+    // Damit der Typewriter Soundeffekt aufhört
+    private uint typeLoopPlayingId = 0;
 
     private Action<DialogueAsset.Choice> onChoiceCallback;
     private readonly List<Button> spawnedButtons = new();
@@ -82,21 +87,19 @@ public class DialogueUI : MonoBehaviour
     public void Hide()
     {
         StopTyping();
+        StopTypeLoop();
+
         ClearChoices();
         cachedChoices = null;
         onChoiceCallback = null;
 
         if (root != null) root.SetActive(false);
-
-        typeLoopStopEvent?.Post(gameObject);
     }
 
     private void StartTypewriter(string text)
     {
         StopTyping();
-
-        //Loop starten
-        typeLoopStartEvent?.Post(gameObject);
+        StopTypeLoop();
 
         fullText = text;
 
@@ -110,6 +113,9 @@ public class DialogueUI : MonoBehaviour
             BuildChoices(cachedChoices);
             return;
         }
+        //Loop starten
+        if (typeLoopPlayingId != null)
+            typeLoopPlayingId = typeLoopStartEvent.Post(gameObject);
 
         typingRoutine = StartCoroutine(TypeRoutine());
     }
@@ -136,8 +142,7 @@ public class DialogueUI : MonoBehaviour
         typingRoutine = null;
 
         //Loop Stoppen
-        typeLoopStopEvent?.Post(gameObject);    
-
+        StopTypeLoop();    
         BuildChoices(cachedChoices);
     }
 
@@ -152,8 +157,7 @@ public class DialogueUI : MonoBehaviour
 
         BuildChoices(cachedChoices);
 
-        typeLoopStopEvent?.Post(gameObject);
-
+        StopTypeLoop();
     }
 
     private void StopTyping()
@@ -163,6 +167,8 @@ public class DialogueUI : MonoBehaviour
 
         typingRoutine = null;
         isTyping = false;
+
+        StopTypeLoop();
     }
 
     private void BuildChoices(List<DialogueAsset.Choice> choices)
@@ -203,5 +209,20 @@ public class DialogueUI : MonoBehaviour
                 Destroy(spawnedButtons[i].gameObject);
         }
         spawnedButtons.Clear();
+    }
+
+    ////////////////////////////////////////////////////////////
+    
+    private void StopTypeLoop()
+    {
+        if (typeLoopPlayingId != 0)
+        {
+            AkUnitySoundEngine.StopPlayingID(typeLoopPlayingId);
+            typeLoopPlayingId = 0;
+        }
+        else
+        {
+            typeLoopStopEvent?.Post(gameObject);
+        }
     }
 }
