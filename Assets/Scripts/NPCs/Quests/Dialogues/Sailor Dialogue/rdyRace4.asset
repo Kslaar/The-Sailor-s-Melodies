@@ -16,9 +16,9 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: rdyRace4
-    text: "You are a prodigy with the sails! \nLet me see that engine of yours. I'll
-      do some more upgrade to it this time only. \nTake care, may your sails always
-      be filled with winds."
+    text: "You are a true prodigy with the sails! \nLet me see that engine of yours.
+      I'll do some more upgrade to it this time only. \nTake care, may your sails
+      always be filled with winds."
     choices:
     - label: See you!
       nextNodeID: 

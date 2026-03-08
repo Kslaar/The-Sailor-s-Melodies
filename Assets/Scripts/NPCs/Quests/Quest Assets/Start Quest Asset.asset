@@ -14,9 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: collect_fuel_1
   title: Cleanup
-  description: "The Pastor ordered me to collect all the fuelcans the tankers dropped
-    overboard. \nAs a Reward, he promised my a holy Object"
+  description: "The Pastor ordered me to collect a fuelcan that tankers dropped overboard.
+    \nAs a Reward, he promised my a holy Object"
   objectives:
   - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
   rewards:
   - {fileID: 11400000, guid: 6f1fd216e0a934245849dd1bc2484c6e, type: 2}
+  category: 0

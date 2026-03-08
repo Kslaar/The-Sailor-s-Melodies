@@ -16,8 +16,8 @@ MonoBehaviour:
   npcName: Chieftain
   nodes:
   - id: chieftain_completed
-    text: Thanks to you we finally have some nice tasy food again here. May the candy
-      god allways watch over you!
+    text: Thanks to you we finally have some nice tasty food here again. May the
+      candy god always watch over you!
     choices:
     - label: Leave
       nextNodeID: 

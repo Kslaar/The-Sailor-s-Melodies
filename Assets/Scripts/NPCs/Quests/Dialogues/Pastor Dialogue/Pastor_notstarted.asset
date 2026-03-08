@@ -19,8 +19,8 @@ MonoBehaviour:
     text: "Thank you kind sailor for answering our call. \nAs you know the Holy Radio
       has been missing since the last pope went missing. First I have to see if you
       master the art of sailing before I entrust you with this quest. This island
-      has had many tankers pass that dropped fuel cans. Please get them all out of
-      the ocean."
+      has had many tankers pass that dropped fuel cans and somehow they always return.
+      Collect one fuel canister and come back."
     choices:
     - label: Sure I'll help you
       nextNodeID: hilfe_zugesagt

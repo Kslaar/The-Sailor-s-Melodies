@@ -81,8 +81,8 @@ MonoBehaviour:
       WwiseObjectReference: {fileID: 0}
   - id: fw_holrad
     text: I don't think I have. Sounds more like a gadget than an artefact. If I
-      would have to guess what it is. I would think that it's radio channel for believers
-      like the malarkey Bibel TV.
+      would have to guess what it is,  I would think that it's a radio channel for
+      believers like the malarkey Bibel TV.
     choices:
     - label: What was the pope doing here?
       nextNodeID: fw_poploc
@@ -112,10 +112,10 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: fw_arte
-    text: Your best chance is in between those moutains here. They are difficult
-      to maneuver though. Be careful! But on the other hand, that is what many sailors
-      think that is why they leave them alone. Only sentimental women like me get
-      lost here.
+    text: "Your best chance is in between those moutains here. They are difficult
+      to maneuver though. Be careful! \nBut on the other hand, that is what many
+      sailors think and that is why they leave them alone. Only sentimental women
+      like me get lost here."
     choices:
     - label: What was the pope doing here?
       nextNodeID: fw_poploc

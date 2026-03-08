@@ -16,7 +16,8 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: inProgSLRr1
-    text: Didn't make it? Wanna try again?
+    text: Ahh you didn't make it... Remember to stay close to the track otherwise
+      I'll cancel the race. But you did great so far! Wanna try again?
     choices:
     - label: Yes
       nextNodeID: 

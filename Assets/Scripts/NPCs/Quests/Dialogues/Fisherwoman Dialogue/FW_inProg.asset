@@ -18,7 +18,7 @@ MonoBehaviour:
   - id: fw_inProg
     text: As if it wouldn't be hard enough to look for my husbands jewel, the current
       doesn't come alone. A thicket is in the way to pass this strait. Oh I'm definitely
-      to old for this
+      to old for this...
     choices:
     - label: How do I pass the thicket?
       nextNodeID: fw_guess

@@ -16,8 +16,8 @@ MonoBehaviour:
   npcName: Kid
   nodes:
   - id: kid_start
-    text: Oh hello there! Can you help me to find "miss froggy", "doctor shepperd",
-      "mister roach" and "the junior". Benjamin told me, that they told him they'd
+    text: Oh hello there! Can you help me to find "Miss Froggy", "Doctor Shepperd",
+      "Mister Roach" and "The Junior". Benjamin told me, that they told him they'd
       go for a swim in the sea. But it is dangerous for them out there.
     choices:
     - label: Who are these people?
@@ -48,9 +48,9 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: kid_expl
-    text: So miss Froggy is a green supermodel who likes to listen to metal. Doctor
+    text: So Miss Froggy is a green supermodel who likes to listen to metal. Doctor
       Shepperd is orange and always messes up the recycling. Mister Roach likes to
-      eat cupcakes. Oh and he is blue! The junior loooooves tulips and poops 7 times
+      eat cupcakes. Oh and he is blue! The Junior loooooves tulips and poops 7 times
       a day, that's why he is brown.
     choices:
     - label: Alright... I'll look for them

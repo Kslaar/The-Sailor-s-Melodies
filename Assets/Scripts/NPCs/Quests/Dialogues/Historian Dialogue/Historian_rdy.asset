@@ -33,10 +33,10 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: historian_rew
-    text: Oh yeah! Of course. My excitement was in the way of some recognition for
-      you. Here is some money. The towns shipmaster will create bigger sails for
-      you. When you use that holy shell you have, the sails should catch more wind
-      (That shell belongs in a museum!).
+    text: Oh yeah! Of course. My excitement was in the way of some recognition. Here
+      is some money. The towns shipmaster will create bigger sails for you. When
+      you use that holy shell you have, the sails should catch more wind (That shell
+      belongs in a museum!).
     choices:
     - label: Leave
       nextNodeID: 

@@ -39,12 +39,12 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: fw_pope
-    text: 'Oh well, as far as I know the new pope Zephyrinus II. is located in Vatican
+    text: Oh well, as far as I know the new pope Zephyrinus II. is located in Vatican
       City. Unless you mean pope Lando who lost his life in this area. His shipwreck
       is supposed to have been washed away, but his corpse was never found. Same
-      goes for some artefacts '
+      goes for some artefacts.
     choices:
-    - label: ' Where can I look for them?'
+    - label: Where can I look for them?
       nextNodeID: fw_help
       actionsOnChoose: []
       wwiseEvent:

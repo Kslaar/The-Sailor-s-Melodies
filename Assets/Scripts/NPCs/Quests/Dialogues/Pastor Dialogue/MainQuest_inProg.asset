@@ -18,7 +18,7 @@ MonoBehaviour:
   - id: mainquest_inProg
     text: Yes?
     choices:
-    - label: Do you have some advice
+    - label: Do you have some advice?
       nextNodeID: mainquest_advice
       actionsOnChoose: []
       wwiseEvent:
@@ -74,7 +74,7 @@ MonoBehaviour:
     text: Supposedly the pope got lost at sea north of this island. Maybe the people
       in the Fortress City north west of here know more about what happened.
     choices:
-    - label: Do you have some advice
+    - label: Do you have some advice?
       nextNodeID: mainquest_advice
       actionsOnChoose: []
       wwiseEvent:

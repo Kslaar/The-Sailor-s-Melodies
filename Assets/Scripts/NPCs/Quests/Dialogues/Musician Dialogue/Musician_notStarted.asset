@@ -17,7 +17,7 @@ MonoBehaviour:
   nodes:
   - id: musician_start
     text: As I can see, you carry a recording-object. Did you know that you can record
-      different kinds of sounds, music but also sound sof nature? I'm more intrigued
+      different kinds of sounds, music but also sounds of nature? I'm more intrigued
       by the music of course. Come show me some musical sounds - if you find them
       play them in the harbor, I'll be there to listen.
     choices:

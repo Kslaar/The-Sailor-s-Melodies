@@ -40,14 +40,10 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: poet_accept
-    text: 'My dear and I are seperated and my boat is checkmated,
-
-      Pease deliver
-      this note, I ask you because you are able to float!
-
-      Go to the fortress
-      in the east, past the island of the priest. You will succeed I trust, for the
-      love you must!'
+    text: "My dear and I are seperated and my boat is checkmated,\nPease deliver
+      this note, I ask you because you are able to float!\nGo to the fortress in
+      the east, past the island of the priest. \nYou will succeed I trust, in the
+      name of love you must!"
     choices:
     - label: I'll help you!
       nextNodeID: 

@@ -17,7 +17,7 @@ MonoBehaviour:
   nodes:
   - id: startRacingQuest4
     text: There you are again! If you finish this Race in time, then I'll upgrade
-      your engine. Just beet my time of 2 minutes and 30 seconds!
+      your engine. Just beat my time of 2 minutes and 30 seconds!
     choices:
     - label: Start Racing
       nextNodeID: 

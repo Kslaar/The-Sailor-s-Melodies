@@ -15,8 +15,8 @@ MonoBehaviour:
   questID: the_holy_radio
   title: The Holy Radio
   description: I was tasked to find the holy radio that the vatican needs for the
-    new Pope. Without it he can't get in contact with the lord. I guess I better
-    hurry and try to find that radio...
+    new Pope. I think without it he can't get in contact with god. I guess I better
+    hurry up and try to find that radio...
   objectives:
   - {fileID: 11400000, guid: 06345abfa22f0453aac0f2ed5ac63a54, type: 2}
   rewards:

@@ -16,7 +16,7 @@ MonoBehaviour:
   npcName: Sailor
   nodes:
   - id: completedRace4
-    text: I know you rock this race track. Come see me at the next race course
+    text: Great job with this racetrack! Maybe we'll see each other again.
     choices:
     - label: Leave
       nextNodeID: 

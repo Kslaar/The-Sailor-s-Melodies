@@ -12911,6 +12911,52 @@ Transform:
   - {fileID: 322197801}
   m_Father: {fileID: 650415073}
   m_LocalEulerAnglesHint: {x: 0, y: 381.3, z: 0}
+--- !u!1 &195781181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 195781182}
+  - component: {fileID: 195781183}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (17)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &195781182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195781181}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -821, y: 0, z: -387}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &195781183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 195781181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!4 &195812783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8494159556886508713, guid: 0f418773ea871c04b90659d9a74c9791, type: 3}
@@ -15191,6 +15237,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1347048250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &224751891
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224751892}
+  - component: {fileID: 224751893}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (35)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &224751892
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224751891}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 638, y: 0, z: -853}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &224751893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 224751891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &224850125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24505,6 +24597,52 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &360677403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 360677404}
+  - component: {fileID: 360677405}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (32)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &360677404
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360677403}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 504, y: 0, z: -150}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &360677405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360677403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &360967749
 GameObject:
   m_ObjectHideFlags: 0
@@ -35297,6 +35435,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67ca6b696e04209478464a49e1964a93, type: 3}
+--- !u!1 &512785395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 512785396}
+  - component: {fileID: 512785397}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (18)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &512785396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512785395}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -574, y: 0, z: -115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &512785397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512785395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &513209896
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39652,6 +39836,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4419008854171387871, guid: 32704d54c384b7d40924c19e0691fd0a, type: 3}
   m_PrefabInstance: {fileID: 595273252}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &595960336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595960337}
+  - component: {fileID: 595960338}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (33)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &595960337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595960336}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 819, y: 0, z: -30}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &595960338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595960336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &596979459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45018,6 +45248,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3564117692228790459, guid: 29426c88cc6f749428b91dd4a04c7467, type: 3}
   m_PrefabInstance: {fileID: 694793149}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &694823991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694823992}
+  - component: {fileID: 694823993}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694823992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694823991}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 819, y: 0, z: 425}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &694823993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694823991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &697269875
 GameObject:
   m_ObjectHideFlags: 0
@@ -46091,6 +46367,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5756065688537709965, guid: 78891c5a85fd0494cbb1cc1290197c41, type: 3}
   m_PrefabInstance: {fileID: 727301946}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &727922539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727922540}
+  - component: {fileID: 727922541}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (24)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727922540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727922539}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -278, y: 0, z: 683}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &727922541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727922539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &728277592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47456,6 +47778,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8674879588478358208, guid: 410ff2e8d36ecc6418659c41c4a171f3, type: 3}
   m_PrefabInstance: {fileID: 743540999}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &744228513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 744228514}
+  - component: {fileID: 744228515}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (27)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &744228514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744228513}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -95, y: 0, z: -649}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &744228515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744228513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &744439210
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49000,6 +49368,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 415918715661814681, guid: fd9e1b09660f77546842fd0d9992c5f7, type: 3}
   m_PrefabInstance: {fileID: 757111190}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &759084717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 759084718}
+  - component: {fileID: 759084719}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &759084718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759084717}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -616, y: 0, z: -699}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &759084719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 759084717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &761519150
 GameObject:
   m_ObjectHideFlags: 0
@@ -49302,6 +49716,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8343786836839493229, guid: a75878c0b70ef2247887bb9e073e7797, type: 3}
   m_PrefabInstance: {fileID: 768573504}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &769604428
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 769604429}
+  - component: {fileID: 769604430}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (19)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &769604429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769604428}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -776, y: 0, z: 109}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &769604430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769604428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &770157117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52108,6 +52568,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6543258406724784683, guid: 0fb3e27900345864b98c4d9593737e65, type: 3}
   m_PrefabInstance: {fileID: 819493073}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &820776730
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820776731}
+  - component: {fileID: 820776732}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820776731
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820776730}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -363, y: 0, z: -144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &820776732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820776730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &825063725
 GameObject:
   m_ObjectHideFlags: 0
@@ -54741,6 +55247,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f51160ccd9304303ae69f9658e21f55, type: 3}
+--- !u!1 &859080270
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 859080271}
+  - component: {fileID: 859080272}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (31)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &859080271
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859080270}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -591, y: 0, z: 839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &859080272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859080270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &860046138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58626,6 +59178,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910003454}
   m_CullTransparentMesh: 1
+--- !u!1 &913040041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 913040042}
+  - component: {fileID: 913040043}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &913040042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913040041}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 143, y: 0, z: -467}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &913040043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 913040041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!4 &913474570 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3341943559513625409, guid: 6b346d79ba16a4b4ba02352cc1fc48e9, type: 3}
@@ -60761,6 +61359,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8494159556886508713, guid: 0f418773ea871c04b90659d9a74c9791, type: 3}
   m_PrefabInstance: {fileID: 958378573}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &959206533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959206534}
+  - component: {fileID: 959206535}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &959206534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959206533}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 812, y: 0, z: -626}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &959206535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959206533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &959313881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61776,11 +62420,11 @@ Transform:
   m_GameObject: {fileID: 976572983}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
-  m_LocalPosition: {x: 0, y: 0, z: 8.59}
+  m_LocalPosition: {x: 7, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1977115282}
   m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
 --- !u!114 &976572985
 MonoBehaviour:
@@ -63125,6 +63769,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1555946504}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &994959728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 994959729}
+  - component: {fileID: 994959730}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (28)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &994959729
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994959728}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 153, y: 0, z: 313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &994959730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994959728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &995634732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65412,6 +66102,98 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5756065688537709965, guid: 78891c5a85fd0494cbb1cc1290197c41, type: 3}
   m_PrefabInstance: {fileID: 2100870263}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1039253933
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1039253934}
+  - component: {fileID: 1039253935}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (22)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1039253934
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039253933}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -697, y: 0, z: 339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1039253935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1039253933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
+--- !u!1 &1040244945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1040244946}
+  - component: {fileID: 1040244947}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1040244946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040244945}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 502, y: 0, z: 772}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1040244947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040244945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &1040666725
 GameObject:
   m_ObjectHideFlags: 0
@@ -66691,6 +67473,52 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 375f3929d4f744d3c808b104a36f95d6, type: 3}
+--- !u!1 &1063146245
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1063146246}
+  - component: {fileID: 1063146247}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1063146246
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063146245}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 295, y: 0, z: 749}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1063146247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1063146245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1063279164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71651,6 +72479,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5011690522106969444, guid: 01f4b48a4c333324193a4ad047d959fa, type: 3}
   m_PrefabInstance: {fileID: 1152897835}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1153246703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1153246704}
+  - component: {fileID: 1153246705}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1153246704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153246703}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 757, y: 0, z: 713}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1153246705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153246703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1154123462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -76521,6 +77395,52 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5962774803535209831, guid: f6596e5fc9b98ad4b98b7b52d3f0d359, type: 3}
+--- !u!1 &1242297512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1242297513}
+  - component: {fileID: 1242297514}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (21)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1242297513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242297512}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -262, y: 0, z: 260}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1242297514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242297512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1243117622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81556,6 +82476,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8996982712155283548, guid: a4daac01d1f237443ae4cf7662bdbd5e, type: 3}
   m_PrefabInstance: {fileID: 1344115240}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1346082723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1346082724}
+  - component: {fileID: 1346082725}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1346082724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346082723}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 782, y: 0, z: -58}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1346082725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346082723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1346646294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84591,6 +85557,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7127205853659082443, guid: cf0a69fff292ba94187c82277ce6f349, type: 3}
   m_PrefabInstance: {fileID: 1389954034}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1390136424
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1390136425}
+  - component: {fileID: 1390136426}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (29)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1390136425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390136424}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 327, y: 0, z: 181}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1390136426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1390136424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1391332417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86042,6 +87054,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 415918715661814681, guid: fd9e1b09660f77546842fd0d9992c5f7, type: 3}
   m_PrefabInstance: {fileID: 1408928121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1409774465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409774466}
+  - component: {fileID: 1409774467}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (34)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1409774466
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409774465}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -127, y: 0, z: 229}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1409774467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409774465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1410320653
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88863,6 +89921,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6619261598953025022, guid: 6fea948827a51154f8bb3d18c907ab33, type: 3}
   m_PrefabInstance: {fileID: 1455492471}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1457494484
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1457494485}
+  - component: {fileID: 1457494486}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1457494485
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457494484}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 471, y: 0, z: -169}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1457494486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457494484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1458364966
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -92869,6 +93973,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4260896064109627085, guid: 5f31959718021554593cd34dc5d8c73d, type: 3}
   m_PrefabInstance: {fileID: 1545376407}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1547727058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1547727059}
+  - component: {fileID: 1547727060}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (30)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1547727059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547727058}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -230, y: 0, z: -74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1547727060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547727058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1 &1548596603
 GameObject:
   m_ObjectHideFlags: 0
@@ -96193,6 +97343,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2308828099054582852, guid: 7088ff165551eed4eb09970d253a02a9, type: 3}
   m_PrefabInstance: {fileID: 1619003391}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619409328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619409329}
+  - component: {fileID: 1619409330}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619409329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619409328}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -392, y: 0, z: -444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1619409330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619409328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1620668021
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101735,6 +102931,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 964707157820754432, guid: eef94e5bbe69ee0428a2e07cf17c9e02, type: 3}
   m_PrefabInstance: {fileID: 1724687202}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1725151608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1725151609}
+  - component: {fileID: 1725151610}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1725151609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725151608}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -342, y: 0, z: -704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1725151610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725151608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1726391780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102567,6 +103809,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8674879588478358208, guid: 410ff2e8d36ecc6418659c41c4a171f3, type: 3}
   m_PrefabInstance: {fileID: 1732393002}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1732658600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1732658601}
+  - component: {fileID: 1732658602}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (23)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1732658601
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732658600}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -615, y: 0, z: 685}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1732658602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732658600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1733605898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111214,6 +112502,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7932063235260514234, guid: d63ad6828a740cb4081efe8b5e9b6401, type: 3}
   m_PrefabInstance: {fileID: 1858037663}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858383060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858383061}
+  - component: {fileID: 1858383062}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1858383061
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858383060}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 160, y: 0, z: 503}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1858383062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858383060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1858567029
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -116418,6 +117752,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7259999192546841237, guid: aca25b7b6cb15174aaaa2a7fe4d7cae4, type: 3}
   m_PrefabInstance: {fileID: 1942106403}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1942304024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1942304025}
+  - component: {fileID: 1942304026}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (26)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1942304025
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942304024}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 225, y: 0, z: -882}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &1942304026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942304024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &1942817732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -118609,6 +119989,73 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6543258406724784683, guid: 0fb3e27900345864b98c4d9593737e65, type: 3}
   m_PrefabInstance: {fileID: 2026912605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1977115281
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1977115282}
+  m_Layer: 0
+  m_Name: Fuel Spots
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1977115282
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977115281}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 8.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 976572984}
+  - {fileID: 694823992}
+  - {fileID: 1346082724}
+  - {fileID: 959206534}
+  - {fileID: 1457494485}
+  - {fileID: 2078300443}
+  - {fileID: 913040042}
+  - {fileID: 2105689026}
+  - {fileID: 1153246704}
+  - {fileID: 1063146246}
+  - {fileID: 1858383061}
+  - {fileID: 1040244946}
+  - {fileID: 1725151609}
+  - {fileID: 1619409329}
+  - {fileID: 820776731}
+  - {fileID: 759084718}
+  - {fileID: 2037381016}
+  - {fileID: 195781182}
+  - {fileID: 512785396}
+  - {fileID: 769604429}
+  - {fileID: 2019646190}
+  - {fileID: 1242297513}
+  - {fileID: 1039253934}
+  - {fileID: 1732658601}
+  - {fileID: 727922540}
+  - {fileID: 2146508677}
+  - {fileID: 1942304025}
+  - {fileID: 744228514}
+  - {fileID: 994959729}
+  - {fileID: 1390136425}
+  - {fileID: 1547727059}
+  - {fileID: 859080271}
+  - {fileID: 360677404}
+  - {fileID: 595960337}
+  - {fileID: 1409774466}
+  - {fileID: 224751892}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1977577226
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121074,6 +122521,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5756065688537709965, guid: 78891c5a85fd0494cbb1cc1290197c41, type: 3}
   m_PrefabInstance: {fileID: 2014161074}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2019646189
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2019646190}
+  - component: {fileID: 2019646191}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (20)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2019646190
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019646189}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -260, y: 0, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &2019646191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019646189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &2019982637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122290,6 +123783,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 985925774779378979, guid: 0ab0b5bf44bf7354db8c360c77328ef3, type: 3}
   m_PrefabInstance: {fileID: 2036063426}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2037381015
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2037381016}
+  - component: {fileID: 2037381017}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2037381016
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037381015}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: -760, y: 0, z: -661}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &2037381017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2037381015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &2039083640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -124566,6 +126105,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6102583116223388855, guid: 375f3929d4f744d3c808b104a36f95d6, type: 3}
   m_PrefabInstance: {fileID: 337396380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2078300442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2078300443}
+  - component: {fileID: 2078300444}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2078300443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078300442}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 421, y: 0, z: -385}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &2078300444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078300442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &2078311431
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -126620,6 +128205,52 @@ Transform:
   - {fileID: 122901794}
   m_Father: {fileID: 851172861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2105689025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2105689026}
+  - component: {fileID: 2105689027}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2105689026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105689025}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 419, y: 0, z: 412}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &2105689027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2105689025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!65 &2107486222 stripped
 BoxCollider:
   m_CorrespondingSourceObject: {fileID: 9067600558103145741, guid: 5f51160ccd9304303ae69f9658e21f55, type: 3}
@@ -129381,6 +131012,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489912, guid: 7c5aafe3fe2c6ef4a9150f7f44653760, type: 3}
   m_PrefabInstance: {fileID: 2146064897}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2146508676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2146508677}
+  - component: {fileID: 2146508678}
+  m_Layer: 0
+  m_Name: FuelSpawnPoint (25)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2146508677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146508676}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.24014415, z: -0, w: 0.9707373}
+  m_LocalPosition: {x: 612, y: 0, z: -816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1977115282}
+  m_LocalEulerAnglesHint: {x: 0, y: -27.79, z: 0}
+--- !u!114 &2146508678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146508676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9316e88555f194c3c80f96a249a19a3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FuelSpawnPoint
+  fuelPrefab: {fileID: 6240370222093995763, guid: 06991857bd18440ff811f4ca55bfbbb7, type: 3}
+  respawnSeconds: 60
 --- !u!1001 &2146737448
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130159,7 +131836,7 @@ SceneRoots:
   - {fileID: 832575519}
   - {fileID: 1968459081}
   - {fileID: 1472213458}
-  - {fileID: 976572984}
+  - {fileID: 1977115282}
   - {fileID: 1936153313}
   - {fileID: 781536108}
   - {fileID: 604330275}

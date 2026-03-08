@@ -68,9 +68,9 @@ MonoBehaviour:
     text: Well if that isn't a strike of fate. What an odd coincidence at this time
       and place... Anyway. I have an important task for you! GO south of this island.
       A huge battle took place a while ago and I am looking for a brave soul who
-      would wants to risk their life for historical treasures!
+      would want to risk their life for historical treasures!
     choices:
-    - label: Risk my life?
+    - label: '''Risk my life''?'
       nextNodeID: historian_expl
       actionsOnChoose: []
       wwiseEvent:

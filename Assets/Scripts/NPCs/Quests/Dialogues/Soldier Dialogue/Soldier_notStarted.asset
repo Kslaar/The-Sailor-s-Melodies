@@ -53,8 +53,8 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: soldier_angry
-    text: 'You can'' just sail away like this! We defend this ocean and without your
-      assisstance we are vulnerable! So what say you, comrade?! '
+    text: 'You can''t just sail away like this! We defend this ocean and without
+      your assisstance we are vulnerable! So what say you, comrade?! '
     choices:
     - label: Okay... How can I help?
       nextNodeID: soldier_glad

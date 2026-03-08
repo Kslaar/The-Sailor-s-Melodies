@@ -17,8 +17,8 @@ MonoBehaviour:
   nodes:
   - id: historian_fallback
     text: Maybe I should start learning to sail myself, so that I can find artefacts
-      on my own.... No no no that would too dangerous. The world can't lose a great
-      mind like mine.
+      on my own.... No no no that would be too dangerous. The world can't lose a
+      great mind like me.
     choices:
     - label: Leave
       nextNodeID: 

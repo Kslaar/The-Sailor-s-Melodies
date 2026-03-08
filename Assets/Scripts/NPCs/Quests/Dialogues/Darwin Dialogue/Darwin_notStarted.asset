@@ -18,8 +18,8 @@ MonoBehaviour:
   - id: darwin_start
     text: "Enchanting this place. Isn't it? \nAs a sailor you must be seeing many
       interesting places. My crew itself is regenerating from our travels on this
-      island. My nourishment is Biology, knowledge and discovery. How I wished to
-      be a sailor for a day now."
+      island. \nMy nourishment is Biology, knowledge and discovery. How I wished
+      to be a sailor for a day like you."
     choices:
     - label: Can I help you somehow?
       nextNodeID: darwin_offer

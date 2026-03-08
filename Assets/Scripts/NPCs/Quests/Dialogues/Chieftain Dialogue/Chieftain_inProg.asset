@@ -57,7 +57,7 @@ MonoBehaviour:
       valueGuidInternal: 
       WwiseObjectReference: {fileID: 0}
   - id: lies
-    text: Then why do I still see the piece of paper with the order inyour pocket?
+    text: Then why do I still see the piece of paper with the order in your pocket?
       We need that candy. Hurry up!
     choices:
     - label: Leave

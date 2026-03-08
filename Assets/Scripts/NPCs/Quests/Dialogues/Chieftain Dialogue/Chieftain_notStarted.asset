@@ -18,7 +18,7 @@ MonoBehaviour:
   - id: chieftain_start
     text: Hi there stranger, can you help us out?
     choices:
-    - label: Sure what's up?
+    - label: Sure, what's up?
       nextNodeID: chieftain_help
       actionsOnChoose:
       - {fileID: 11400000, guid: 85ccbc4ac127641f1a620f6fcf2e2d43, type: 2}
