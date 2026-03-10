@@ -15,6 +15,7 @@ MonoBehaviour:
   questID: race_island_3
   title: Race no.3
   description: The same sailor again. Another Race? You bet!
+  rewardText: + Engine Startchance
   objectives:
   - {fileID: 11400000, guid: 09fefcba8b6344739ad17b26b8c2f117, type: 2}
   rewards:

@@ -16,6 +16,7 @@ MonoBehaviour:
   title: The Strait
   description: Sailors barely manage to pass the Strait north of the little town
     I started at. A Woman lost an important jewel there and asked me to find it.
+  rewardText: + Basespeed
   objectives:
   - {fileID: 11400000, guid: 61301fa2165d04eb6a6a87fcf4743284, type: 2}
   rewards:

@@ -17,6 +17,7 @@ MonoBehaviour:
   description: I was tasked to find the holy radio that the vatican needs for the
     new Pope. I think without it he can't get in contact with god. I guess I better
     hurry up and try to find that radio...
+  rewardText: + Enginespeed
   objectives:
   - {fileID: 11400000, guid: 06345abfa22f0453aac0f2ed5ac63a54, type: 2}
   rewards:

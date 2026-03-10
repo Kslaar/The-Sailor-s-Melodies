@@ -16,6 +16,7 @@ MonoBehaviour:
   title: Cleanup
   description: "The Pastor ordered me to collect a fuelcan that tankers dropped overboard.
     \nAs a Reward, he promised my a holy Object"
+  rewardText: Windgust-Ability
   objectives:
   - {fileID: 11400000, guid: c839792a33c4847beb267f21ff397ba4, type: 2}
   rewards:

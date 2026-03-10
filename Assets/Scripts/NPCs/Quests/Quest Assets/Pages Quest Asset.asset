@@ -17,6 +17,7 @@ MonoBehaviour:
   description: The villagers lost four important pages of their ceremonial prayer,
     which they want to recite soon. They don't dare to swim across the sea during
     this time of the year so they tasked me with returning the pages.
+  rewardText: + Basespeed
   objectives:
   - {fileID: 11400000, guid: f1258b95242a04a0cbc56676b3f3e336, type: 2}
   rewards:

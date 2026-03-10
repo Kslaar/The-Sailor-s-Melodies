@@ -8,6 +8,7 @@ public class QuestAsset : ScriptableObject
     public string questID;
     public string title;
     [TextArea] public string description;
+    [TextArea] public string rewardText;
 
     public List<QuestObjective> objectives = new();
     public List<QuestReward> rewards = new();

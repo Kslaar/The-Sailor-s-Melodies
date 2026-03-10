@@ -17,6 +17,7 @@ MonoBehaviour:
   description: I can't believe it! It's the famous nature researcher Charles Darwin,
     he told me I could help him if I'd record some sounds out of nature. I'll try
     my best to find a seal, seagull and wale
+  rewardText: + Tanksize
   objectives:
   - {fileID: 11400000, guid: 7cd09368ff1604a41bca3f3207f71bba, type: 2}
   rewards:

@@ -15,6 +15,9 @@ MonoBehaviour:
   questID: race_island_4
   title: Race no.4
   description: Apparently I have to impress her one last time.
+  rewardText: '+ Engine Startchance
+
+    + Enginespeed'
   objectives:
   - {fileID: 11400000, guid: 7cc96dd6d59814eb687550dcbc701d66, type: 2}
   rewards:

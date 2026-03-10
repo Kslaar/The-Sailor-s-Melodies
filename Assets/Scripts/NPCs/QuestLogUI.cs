@@ -106,7 +106,12 @@ public class QuestLogUI : MonoBehaviour
                 if (tip == null) tip = btn.gameObject.AddComponent<QuestButtonDescription>();
 
                 string descr = q.description ?? "";
+                string reward = q.rewardText ?? "";
+
                 string questtipText = descr;
+
+                if (!string.IsNullOrWhiteSpace(reward))
+                    questtipText += $"\n\n<b>Reward:</b>\n{reward}";
 
                 tip.Init(questtip, questtipText);
                 ApplyStyle(label, st);

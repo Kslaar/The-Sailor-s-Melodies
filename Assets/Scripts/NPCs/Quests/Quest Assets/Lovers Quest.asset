@@ -16,6 +16,7 @@ MonoBehaviour:
   title: Love Letters
   description: "A man asked me to bring this letter to his fianc\xE9e. His boat broke
     down, but he doesn't want her to worry - so I need to clear things up - again."
+  rewardText: + Basespeed
   objectives:
   - {fileID: 11400000, guid: bddc59ded6d3d4d738efc46b26953b47, type: 2}
   rewards:

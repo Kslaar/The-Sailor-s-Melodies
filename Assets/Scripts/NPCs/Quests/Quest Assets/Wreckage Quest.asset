@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Wreckage Quest
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: tides_and_battles
-  title: Tides and Battles
+  title: Tides And Battles
   description: I was tasked to look for treasures south of this island. Apparently
     there was a huge battle once. I have to be careful though, powerful tides are
     known in this area
+  rewardText: + Windgustspeed
   objectives:
   - {fileID: 11400000, guid: bd6ecf298908c4cad8761526e00b24f9, type: 2}
   rewards:
