@@ -14145,7 +14145,7 @@ GameObject:
   - component: {fileID: 212151240}
   - component: {fileID: 212151239}
   - component: {fileID: 212151242}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seagulls_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14333,6 +14333,10 @@ PrefabInstance:
     - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16959,7 +16963,7 @@ GameObject:
   - component: {fileID: 258559211}
   - component: {fileID: 258559210}
   - component: {fileID: 258559213}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17537,6 +17541,10 @@ PrefabInstance:
     - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -21847,7 +21855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &326085987
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27935,6 +27943,10 @@ PrefabInstance:
     - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -39968,7 +39980,7 @@ GameObject:
   - component: {fileID: 597930399}
   - component: {fileID: 597930398}
   - component: {fileID: 597930401}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seagulls_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59772,6 +59784,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -59969,7 +59985,7 @@ GameObject:
   - component: {fileID: 938832181}
   - component: {fileID: 938832180}
   - component: {fileID: 938832183}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Wale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60733,7 +60749,7 @@ GameObject:
   - component: {fileID: 952956672}
   - component: {fileID: 952956671}
   - component: {fileID: 952956674}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Wale_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73648,7 +73664,7 @@ GameObject:
   - component: {fileID: 1171195133}
   - component: {fileID: 1171195132}
   - component: {fileID: 1171195131}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seal (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87826,6 +87842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -91091,6 +91111,10 @@ PrefabInstance:
     - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
@@ -102762,7 +102786,7 @@ GameObject:
   - component: {fileID: 1718138639}
   - component: {fileID: 1718138638}
   - component: {fileID: 1718138641}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seagulls_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110051,6 +110075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
       value: 34.4
@@ -111798,7 +111826,7 @@ GameObject:
   - component: {fileID: 1846233524}
   - component: {fileID: 1846233523}
   - component: {fileID: 1846233526}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Seagulls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122222,6 +122250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FX_SunBeam_Large_01 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1059589180422490, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 4903835601634138, guid: 1bf8340f6ae2fd444b5a6f5c0a40be08, type: 3}
       propertyPath: m_LocalPosition.x
       value: -25.9
@@ -128356,7 +128388,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2107727917
 Transform:
   m_ObjectHideFlags: 0
