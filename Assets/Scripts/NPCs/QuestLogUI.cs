@@ -68,8 +68,6 @@ public class QuestLogUI : MonoBehaviour
         Refresh();
 
         Canvas.ForceUpdateCanvases();
-        // if (listParent != null)
-            // LayoutRebuilder.ForceRebuildLayoutImmediate(listParent);
     }
 
     public void Refresh()

@@ -20,7 +20,7 @@ public class DialogueAsset : ScriptableObject
         [TextArea(3, 8)] public string text;
         public List<Choice> choices = new();
         public List<DialogueAction> actionsOnEnter = new();
-        public AK.Wwise.Event wwiseEvent;  //Audio für die Dialogzeile
+        public AK.Wwise.Event wwiseEvent;  //Audio fÃ¼r die Dialogzeile
     }
 
     [Serializable]
@@ -29,7 +29,7 @@ public class DialogueAsset : ScriptableObject
         public string label;
         public string nextNodeID; // Falls leer = Ende
         public List<DialogueAction> actionsOnChoose = new();
-        public AK.Wwise.Event wwiseEvent; //Audio für die Antwort
+        public AK.Wwise.Event wwiseEvent; //Audio fÃ¼r die Antwort
 
     }
 }

@@ -1,0 +1,47 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3991942870",
+    "Type": "User",
+    "GUID": "{F6281CEF-C4CD-43EA-880D-CFAECD9D7A2B}",
+    "Language": "SFX",
+    "Hash": "{345DCF47-8D2E-019E-15B2-81AFB626B1F8}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Music",
+    "ShortName": "Music",
+    "Path": "Music.bnk",
+    "Media": [
+     {
+      "Id": "218592675",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_mainmenue (blueprint).wav",
+      "CachePath": "BB/{BB257A92-FC4F-9CAF-78E7-4DBD44836B6E}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3993991295",
+      "Name": "Play_StartSceneMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_StartSceneMusic",
+      "GUID": "{070F1327-E6E6-4FC7-9EE3-B007FBCC6606}",
+      "DurationType": "OneShot",
+      "DurationMin": "78",
+      "DurationMax": "78",
+      "MediaRefs": [
+       {
+        "Id": "218592675"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{0DC5992B-79E5-99B5-55A2-145FB0333A4D}"
+ }
+}

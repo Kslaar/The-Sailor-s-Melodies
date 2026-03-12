@@ -39,7 +39,7 @@ public class UniversalCollectItemQuestEditor : Editor
             EditorGUILayout.LabelField("CollectUniqueIDs", EditorStyles.boldLabel);
             EditorGUILayout.PropertyField(requiredItemIDsProp, true);
 
-            EditorGUILayout.HelpBox("Jede ID zählt nur einmal (unique). Beispiel: page_1..page_4.", MessageType.Info);
+            EditorGUILayout.HelpBox("Jede ID zählt nur einmal (unique).", MessageType.Info);
         }
 
         serializedObject.ApplyModifiedProperties();

@@ -12,7 +12,6 @@ public class UIStateController : MonoBehaviour
     [SerializeField] private GameObject raceUI;
 
     private GameStateManager gsm;
-    // private GameState lastNonPausedState = GameState.Sailing;
 
     public DialogueUI DialogueUIComponent
         => dialogueUIRoot != null ? dialogueUIRoot.GetComponentInChildren<DialogueUI>(true) : null;
@@ -49,7 +48,6 @@ public class UIStateController : MonoBehaviour
     private void Apply(GameState state)
     {
         SetActiveSafe(sailingHUD, false);
-        // SetActiveSafe(dockUI, false);
         SetActiveSafe(dialogueUIRoot, false);
         if (questlogUI != null) questlogUI.Close();
         SetActiveSafe(settingsUI, false);

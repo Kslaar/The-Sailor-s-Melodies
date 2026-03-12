@@ -37,9 +37,6 @@ public static class SaveSystem
             Debug.LogError($"[SaveSystem] Deserialized data is NULL.");
             return null;
         }
-
-        Debug.Log($"LOADED -> {PathSave} | pos=({data.playerPosition[0]}, {data.playerPosition[1]}, {data.playerPosition[2]})" +
-        $"| quests={(data.questStates != null ? data.questStates.Count : 0)} | items={(data.itemCounts != null ? data.itemCounts.Count : 0)}");
         
         return data;
     }

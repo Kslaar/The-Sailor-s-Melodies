@@ -128,8 +128,6 @@ public class MicrophoneInput : MonoBehaviour
 
         // Exponentielles Glätten
         Loudness = Mathf.Lerp(Loudness, gated, smoothing);
-
-        // Debug.Log($"[Mic] raw={LoudnessRaw:0.000} noiseFloor={noiseFloor:0.000} loudness={Loudness:0.000}");
     }
 
     ///////////////////////////////////////////////////////////////
@@ -171,8 +169,6 @@ public class MicrophoneInput : MonoBehaviour
         noiseFloor = Mathf.Lerp(noiseFloor, targetFloor, noiseFloorSmoothing);
 
         IsCalibrating = false;
-
-        // Debug.Log($"[Mic] Calibrated noiseFloor={noiseFloor:0.000} (avg silence={avg:0.000}, margin={calibrationMargin:0.000})");
     }
 
     ///////////////////////////////////////////////////////////////

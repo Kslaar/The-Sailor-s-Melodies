@@ -43,7 +43,6 @@ public class DockInteractionUI : MonoBehaviour
         Debug.Log("[DockUI] Hide()");
         if (root != null) root.SetActive(false);
 
-        // Optional: listeners entfernen (sauber)
         if (dock != null && dock.npcs != null)
         {
             foreach (var npc in dock.npcs)

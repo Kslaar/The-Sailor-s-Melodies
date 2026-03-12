@@ -10,9 +10,6 @@ public class ObstacleAvoidance : MonoBehaviour
     public LayerMask obstacleMask;
     public float heightThreshold = -2f;
 
-    // [Tooltip("Mindestabstand zum Obstacle")]
-    // public float minDistance = 3f;
-
     [Tooltip("Ab welcher Distanz fangen wir an zu reagieren")]
     public float detectPadding = 2f;
 
@@ -21,7 +18,6 @@ public class ObstacleAvoidance : MonoBehaviour
     public float slideStrength = 8f;
     public float maxAccel = 12f;
     public float maxCorrectionPerStep = 0.08f;
-    // public float centerYOffset = 0f;
 
     Rigidbody rb;
     readonly Collider[] hits = new Collider[64];
@@ -34,7 +30,6 @@ public class ObstacleAvoidance : MonoBehaviour
 
     void FixedUpdate()
     {
-        // if (RaceManager.Instance != null && RaceManager.Instance.IsRacing) return;
         if (!avoidanceCollider) return;
 
         Vector3 center = avoidanceCollider.bounds.center;

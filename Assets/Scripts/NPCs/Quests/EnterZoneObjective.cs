@@ -29,7 +29,7 @@ public class EnterZoneObjective : QuestObjective
             return;
 
         _done = true;
-        Debug.Log($"[EnterZoneObjective] Completed: entered '{requiredZoneID}'");
+        Debug.Log($" Quest Completed: entered '{requiredZoneID}'");
         QuestManager.Instance?.NotifyObjectiveProgressHasChanged();
     }
 

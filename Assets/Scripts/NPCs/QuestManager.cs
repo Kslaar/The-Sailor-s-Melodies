@@ -74,7 +74,6 @@ public class QuestManager : MonoBehaviour
         var q = GetQuest(questID);
         if (q == null)
         {
-            Debug.LogWarning($"[QuestManager] StartQuest: Quest '{questID}' nicht gefunden in allQuests");
             return;
         }
 
@@ -86,7 +85,7 @@ public class QuestManager : MonoBehaviour
             obj.Register();
         }
 
-        Debug.Log($"[QuestManager] Quest begonnen: {questID}");
+        Debug.Log($"Quest begonnen: {questID}");
         OnQuestsChanged?.Invoke();
     }
 
@@ -168,7 +167,6 @@ public class QuestManager : MonoBehaviour
 
         OnQuestsChanged?.Invoke();
         NotifyObjectiveProgressHasChanged();
-        Debug.Log($"[QuestManager] Imported {stateByID.Count} quest states");
     }
 
     public void ReRegisterActiveObjectives()
@@ -186,7 +184,6 @@ public class QuestManager : MonoBehaviour
                 obj?.Register();
                 registered++;
             }
-            Debug.Log($"[QuestManager] ReRegisterActiveObjectives: registered {registered} objectives");
         }
         NotifyObjectiveProgressHasChanged();
     }

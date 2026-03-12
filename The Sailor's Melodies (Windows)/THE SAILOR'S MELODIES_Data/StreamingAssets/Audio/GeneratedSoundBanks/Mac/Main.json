@@ -1,0 +1,1916 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3161908922",
+    "Type": "User",
+    "GUID": "{C1FB1CF6-186B-448E-A90E-C94B0FC263DF}",
+    "Language": "SFX",
+    "Hash": "{4E04013B-ED04-3E8F-67FD-17DB4953C3B7}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "Media": [
+     {
+      "Id": "12577541",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "E1/{E16F4E00-B9FE-C94D-16A9-A19B15A1D335}.wem"
+     },
+     {
+      "Id": "17362214",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Checkpoint 2.wav",
+      "CachePath": "70/{7003FAE3-8181-FE85-0492-6F1782F85138}.wem"
+     },
+     {
+      "Id": "41264705",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Click.wav",
+      "CachePath": "76/{7668F04C-90CA-76D0-6D7E-E1ED60B30EDD}.wem"
+     },
+     {
+      "Id": "45906878",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "3C/{3C41A8CA-D7AA-0C34-42ED-D59AF1273011}.wem"
+     },
+     {
+      "Id": "72439141",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "9B/{9BE574A9-0542-9703-65B8-99B213066222}.wem"
+     },
+     {
+      "Id": "98811860",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "F0/{F0787D86-C70E-B308-E32C-41368A25692B}.wem"
+     },
+     {
+      "Id": "105030960",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "79/{79B596DD-EBB7-EC4D-43B5-510C9A5255DC}.wem"
+     },
+     {
+      "Id": "110974684",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_01.wav",
+      "CachePath": "7E/{7E17A3B2-E147-6A46-C09F-344236874229}.wem"
+     },
+     {
+      "Id": "121011351",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wale_02.wav",
+      "CachePath": "67/{67B0DE65-B71E-B64C-CE6A-1B018B1B3F1F}.wem"
+     },
+     {
+      "Id": "121681388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "B9/{B90DF1BC-B5C8-F98E-10B0-20FED5F07914}.wem"
+     },
+     {
+      "Id": "145772972",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "6A/{6AD92168-2CFB-B40A-4426-29997F6FA7D1}.wem"
+     },
+     {
+      "Id": "146487838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "B3/{B3964C9E-DE67-FD64-375B-BC33209EC234}.wem"
+     },
+     {
+      "Id": "148246808",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "W 04 Water_19_Splashing, Sailing, Ship_T03.wav",
+      "CachePath": "E9/{E931C422-9EA6-E6DA-93A3-67F91D5CA4C3}.wem"
+     },
+     {
+      "Id": "148900801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "H_Voice_Male_01.wav",
+      "CachePath": "86/{86975AEE-74F1-06D3-4978-8DC64E0B3FD0}.wem"
+     },
+     {
+      "Id": "157702367",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "GunCannon 6025_32_1.wav",
+      "CachePath": "DC/{DC290369-E50C-DEC6-CC10-3189E140E86A}.wem"
+     },
+     {
+      "Id": "165193542",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Final Cat Studio - Hard Rock - Concrete Friction.wav",
+      "CachePath": "B5/{B56DB024-2EA2-1027-C2AF-8A60D2BF2B62}.wem"
+     },
+     {
+      "Id": "175406919",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "boat_boost.wav",
+      "CachePath": "7B/{7BB6D2FB-8BA8-E630-CD7F-5DD89DBD9565}.wem"
+     },
+     {
+      "Id": "183690583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cinemear - Graphix - Pop Open Swipe.wav",
+      "CachePath": "48/{48B1E4FB-3381-BDB3-F992-CE049D1D8453}.wem"
+     },
+     {
+      "Id": "216203938",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "3C/{3C009F9A-AB21-6B87-BF09-E6CF9B720D5C}.wem"
+     },
+     {
+      "Id": "217901187",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Start.wav",
+      "CachePath": "7E/{7ED9218A-0135-D95B-62E5-5B2F4B86ACE5}.wem"
+     },
+     {
+      "Id": "218989300",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "35/{35210FE7-3221-30CD-496E-35550D247322}.wem"
+     },
+     {
+      "Id": "226572936",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": " Main_Theme.wav",
+      "CachePath": "7C/{7C335F04-6A47-3F40-3F63-5902646E5711}.wem"
+     },
+     {
+      "Id": "261911091",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "16/{16AE6457-A6CB-EDCD-8E63-3FE944D69254}.wem"
+     },
+     {
+      "Id": "269754243",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "H_Voice_Male_08.wav",
+      "CachePath": "5F/{5F9F5748-04F4-E012-8EB3-08E3DCE40D8F}.wem"
+     },
+     {
+      "Id": "273503727",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "13/{13FEF827-D7E9-0C6E-4171-20D80947B1EB}.wem"
+     },
+     {
+      "Id": "297006455",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "FA/{FA6696CE-5E96-8492-6F86-91A0690E23F3}.wem"
+     },
+     {
+      "Id": "304697627",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "E0/{E0F9D91C-E7BD-6F45-D3E1-B0DE85F379EC}.wem"
+     },
+     {
+      "Id": "329250373",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "SFX_Click.wav",
+      "CachePath": "CC/{CC6FB51F-B6D4-0B83-6BC3-20C8C2A51C49}.wem"
+     },
+     {
+      "Id": "331775086",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "quest_direction.wav",
+      "CachePath": "3B/{3BE5B013-19E5-BE78-220A-1DFA88A49720}.wem"
+     },
+     {
+      "Id": "346234674",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_01.wav",
+      "CachePath": "63/{630982D5-256A-C7F2-CDF4-63F791CA1A1A}.wem"
+     },
+     {
+      "Id": "361744330",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "3F/{3F0A8535-E941-4F6E-4B36-62C15A9CBF99}.wem"
+     },
+     {
+      "Id": "382701999",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seagull_01.wav",
+      "CachePath": "0F/{0F4C06C5-FAB6-EE57-62B6-08FAF9915727}.wem"
+     },
+     {
+      "Id": "407531309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Céline Woodburn - Whale Calls - Whale Sign Deep.wav",
+      "CachePath": "26/{268F8556-FC7D-4ABB-3535-54565A989AEA}.wem"
+     },
+     {
+      "Id": "427513672",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_4.wav",
+      "CachePath": "70/{707B2BF5-38AE-E10B-2072-4A5E68BD4537}.wem"
+     },
+     {
+      "Id": "437250838",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wale_01.wav",
+      "CachePath": "6A/{6A88475E-F7BC-9A2D-63B2-2DB15697DDDD}.wem"
+     },
+     {
+      "Id": "438083269",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "D1/{D11162CD-601F-6E28-4F05-962BB10AAB5B}.wem"
+     },
+     {
+      "Id": "447023009",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "B9/{B9CF07F5-B4EA-71DF-3E77-D949BA6B9502}.wem"
+     },
+     {
+      "Id": "448729930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Theme_Battle_01_Loop.wav",
+      "CachePath": "E9/{E9869485-DB77-B048-C76C-883412A121A8}.wem"
+     },
+     {
+      "Id": "449474540",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "K_Voice_03.wav",
+      "CachePath": "BC/{BCF43078-2329-F29D-3920-25359C668609}.wem"
+     },
+     {
+      "Id": "473105792",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "H_Voice_Male_09.wav",
+      "CachePath": "A9/{A9715A4B-1673-0682-EDA5-8B883EE7F5DF}.wem"
+     },
+     {
+      "Id": "480343258",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seagull_03.wav",
+      "CachePath": "26/{26793BA1-3964-96AB-CC7A-5375FE60D0AF}.wem"
+     },
+     {
+      "Id": "483172978",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "61/{61C02309-68BB-F0E7-F3E1-680214A7331F}.wem"
+     },
+     {
+      "Id": "487973624",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "7D/{7D4408AC-6855-1158-2DEC-0DA3A9A936C3}.wem"
+     },
+     {
+      "Id": "503419035",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Unrealsfx - Magical Game - New Item Collected Pickup.wav",
+      "CachePath": "B0/{B04C96BB-75D0-62FE-00D4-A38C4B906B84}.wem"
+     },
+     {
+      "Id": "512095870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Björn WIP.wav",
+      "CachePath": "D3/{D31F5D41-ABDC-7F06-7C75-62EF20EFB4C9}.wem"
+     },
+     {
+      "Id": "524385979",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Place_Royal_Loop.wav",
+      "CachePath": "A8/{A830B365-FC70-7D49-B97F-7289AC2BFCCA}.wem"
+     },
+     {
+      "Id": "530816004",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Foley Walkers - Sail on wind sea boat.wav",
+      "CachePath": "31/{312C8FB0-B3BF-56A3-9148-1B9C83F979EE}.wem"
+     },
+     {
+      "Id": "552721692",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "K_Voice_09.wav",
+      "CachePath": "FA/{FA3609B8-DB5D-D106-6741-AE1598611582}.wem"
+     },
+     {
+      "Id": "603414801",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "E1/{E1B9D738-B776-0B68-EC03-52D296D164A3}.wem"
+     },
+     {
+      "Id": "615780164",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "62/{62F28710-4BD2-AB04-7700-DB260B4B515E}.wem"
+     },
+     {
+      "Id": "621479489",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "30/{30E64340-8D70-BD48-EE80-D87CCA622AEA}.wem"
+     },
+     {
+      "Id": "627587221",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Daniel Vasquez - Laboratory - Liquid Funnel Filling Chemical Pour Bubbles.wav",
+      "CachePath": "6F/{6F0A0C03-B328-AB7C-8363-E8C55DB86103}.wem"
+     },
+     {
+      "Id": "662864355",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Cyberwave Orchestra - Bureaucracy - Pen Writing.wav",
+      "CachePath": "2C/{2C130EDC-75B3-7D38-CD12-09F119A0559D}.wem"
+     },
+     {
+      "Id": "694199021",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Theme_Battle_02_Intro.wav",
+      "CachePath": "D9/{D9B64A81-4294-3BE7-EB2B-CBC16280580A}.wem"
+     },
+     {
+      "Id": "694900188",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "61/{61955270-0099-D416-8B02-3D9C08962986}.wem"
+     },
+     {
+      "Id": "697144522",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "8E/{8E1AF10D-F3A1-963B-17F0-768A5138379F}.wem"
+     },
+     {
+      "Id": "699649268",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_01.wav",
+      "CachePath": "91/{9114DD9C-4E94-88C7-A622-8301D1DF8678}.wem"
+     },
+     {
+      "Id": "705104323",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seagull_01.wav",
+      "CachePath": "64/{64FC1CA5-2D5B-73E9-EBD3-CFFD2925AF0A}.wem"
+     },
+     {
+      "Id": "736938058",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "78/{78A74EE5-6A2C-CA83-DD4C-E0188B4C6996}.wem"
+     },
+     {
+      "Id": "741850182",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "9A/{9AEE6EE8-B49D-4535-522D-5659A071B005}.wem"
+     },
+     {
+      "Id": "747045309",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "2D/{2D090BD9-914B-03D8-1B74-B8BC52D956C3}.wem"
+     },
+     {
+      "Id": "798756617",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "BA/{BADA84BE-6B82-516F-4A30-93E24D7C3959}.wem"
+     },
+     {
+      "Id": "799521011",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "60/{6054B801-FB62-C29D-B4D9-728CA0C7ADC6}.wem"
+     },
+     {
+      "Id": "827225277",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Magic Score 9.wav",
+      "CachePath": "C7/{C7D2D4D7-8AE2-1CF3-2095-7AC1C3CD8440}.wem"
+     },
+     {
+      "Id": "833575142",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "vocals_male_2.wav",
+      "CachePath": "A8/{A8735649-D1EC-916C-F83A-5DB0D02CAF34}.wem"
+     },
+     {
+      "Id": "839279121",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "37/{375F505B-9251-7D66-D611-EADF0754BDEC}.wem"
+     },
+     {
+      "Id": "887849136",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Horn.wav",
+      "CachePath": "76/{76507B72-D6AA-45B7-15D5-E14E49943931}.wem"
+     },
+     {
+      "Id": "889405789",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seagull_01.wav",
+      "CachePath": "FB/{FB94DC46-38DC-A926-E492-6DEED0D73F10}.wem"
+     },
+     {
+      "Id": "903220478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "40/{40E8B16E-87E9-F197-B91E-30B08C9CA0B6}.wem"
+     },
+     {
+      "Id": "955175564",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Seal_02.wav",
+      "CachePath": "F4/{F4C49513-77EF-3A25-8179-FB1F47ACEF14}.wem"
+     },
+     {
+      "Id": "1002586562",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Okarina.wav",
+      "CachePath": "95/{953C2BAC-33DC-33D3-CA42-37BE26AA0F5C}.wem"
+     },
+     {
+      "Id": "1052310578",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Soundholder - Chainsaw small engine pulling handle to start.wav",
+      "CachePath": "AA/{AAFB0298-1EA1-6A65-54DB-FCD5CC5BB274}.wem"
+     }
+    ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "69364897",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\Player\\boat_movement\\Silence_sail\\Silence",
+       "GUID": "{6E990B1C-C1D9-4D09-B138-41343677F3DB}",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "157279238",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_clear\\Horn_A\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{2CE1BEC7-D615-405D-900F-DC802EDAEA26}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      },
+      {
+       "Id": "185063321",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\Animals\\Wale\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{43F0FDBD-E7F0-4996-B445-9596B1B39185}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "749681742",
+       "Name": "Octave_Down (Custom)",
+       "ObjectPath": "\\Containers\\UI\\UI\\SFX_Error\\[Effect Slot [0]: (Pitch Shifter)]\\Octave_Down (Custom)",
+       "GUID": "{9D761C6C-FC9D-47B1-9DB4-34B7D846FE31}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      },
+      {
+       "Id": "783804969",
+       "Name": "Pumping_and_Breathing_1 (Custom)",
+       "ObjectPath": "\\Containers\\SFX\\Stonegate\\[Effect Slot [1]: (Compressor)]\\Pumping_and_Breathing_1 (Custom)",
+       "GUID": "{6E7C3F3A-F894-44CF-9D27-F6CFD3847001}",
+       "LibName": "Wwise Compressor",
+       "LibId": "7077891"
+      },
+      {
+       "Id": "907119155",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\SFX\\Stonegate\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{B061F4AE-B184-4858-B83A-3C6144CC6912}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "936931104",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Containers\\Quest\\Keyboard\\Horn_Hint\\Horn_B_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{F7ED5305-97FD-421B-AD82-DBCD4D1A1FBA}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "3604890626",
+       "Name": "High_Pass_60Hz",
+       "ObjectPath": "\\Effects\\Factory Effects\\Parametric EQ\\High Pass Filters\\High_Pass_60Hz",
+       "GUID": "{F9627628-0B10-4272-BC30-D4C20423CB38}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "3948262040",
+       "Name": "Octave_Down",
+       "ObjectPath": "\\Effects\\Factory Effects\\Pitch Shifter\\Harmonize\\Octave_Down",
+       "GUID": "{062EC4B1-5372-4D1E-917B-C757293F2B42}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      }
+     ]
+    },
+    "Events": [
+     {
+      "Id": "3070880444",
+      "Name": "NPC_Greet",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\NPC_Greet",
+      "GUID": "{FED17282-2D46-4952-8149-077ACD886610}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.46933332",
+      "DurationMax": "1.0919708",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "885771221",
+         "Id": "3076081869",
+         "GUID": "{77AC4069-C70A-4865-93C9-A7E01ED328BD}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "449474540"
+         },
+         {
+          "Id": "552721692"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "885771221",
+         "Id": "2864432310",
+         "GUID": "{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "273503727"
+         },
+         {
+          "Id": "361744330"
+         },
+         {
+          "Id": "427513672"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "885771221",
+         "Id": "2457561305",
+         "GUID": "{A54ADA90-C26D-442F-9252-B8EB49617CBE}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "148900801"
+         },
+         {
+          "Id": "269754243"
+         },
+         {
+          "Id": "473105792"
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2962822744",
+      "Name": "Play_Checkpoint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Racing\\Play_Checkpoint",
+      "GUID": "{0C529DEA-7A8A-4B1B-92C4-BAB80639F0AB}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0284636",
+      "DurationMax": "1.0559489",
+      "MediaRefs": [
+       {
+        "Id": "17362214"
+       },
+       {
+        "Id": "145772972"
+       },
+       {
+        "Id": "146487838"
+       },
+       {
+        "Id": "304697627"
+       },
+       {
+        "Id": "346234674"
+       },
+       {
+        "Id": "799521011"
+       }
+      ]
+     },
+     {
+      "Id": "1793765179",
+      "Name": "Play_Finish",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Racing\\Play_Finish",
+      "GUID": "{E6E5C216-B5BD-42B2-8142-85EEE3899972}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.8644423",
+      "DurationMax": "1.8644423",
+      "MediaRefs": [
+       {
+        "Id": "827225277"
+       }
+      ]
+     },
+     {
+      "Id": "621743551",
+      "Name": "Play_Hint_Ocarina_CMaj",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Hint_Ocarina_CMaj",
+      "GUID": "{CF728F8A-15DE-44D1-8DF2-06D1C1A57C8D}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1069932",
+      "DurationMax": "2.1069932",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       },
+       {
+        "Id": "483172978"
+       },
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "957019037",
+      "Name": "Play_Horn_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_A",
+      "GUID": "{B921FB1C-1BA1-4625-AB6A-503EFF91B54E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77588755",
+      "DurationMax": "0.77588755",
+      "MediaRefs": [
+       {
+        "Id": "741850182"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "157279238"
+        }
+       ],
+       "ShareSets": [
+        {
+         "Id": "3948262040"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2543727307",
+      "Name": "Play_Horn_A_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_A_Hint",
+      "GUID": "{3B20B0DF-C96B-4B67-B607-379DC96B441B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77588755",
+      "DurationMax": "0.77588755",
+      "MediaRefs": [
+       {
+        "Id": "741850182"
+       }
+      ]
+     },
+     {
+      "Id": "957019038",
+      "Name": "Play_Horn_B",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_B",
+      "GUID": "{4E3E85F7-D9D2-41EB-8C27-6C3AF2BCDB99}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7913219",
+      "DurationMax": "0.7913219",
+      "MediaRefs": [
+       {
+        "Id": "887849136"
+       }
+      ]
+     },
+     {
+      "Id": "923836858",
+      "Name": "Play_Horn_B_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_B_Hint",
+      "GUID": "{757368F9-9A56-46F7-8AFE-D8D4B0192715}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.7913219",
+      "DurationMax": "0.7913219",
+      "MediaRefs": [
+       {
+        "Id": "887849136"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "936931104"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "957019039",
+      "Name": "Play_Horn_C",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_C",
+      "GUID": "{BE5F3207-8F76-4D34-B193-D10C7F44535C}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8269352",
+      "DurationMax": "0.8269352",
+      "MediaRefs": [
+       {
+        "Id": "447023009"
+       }
+      ]
+     },
+     {
+      "Id": "413890001",
+      "Name": "Play_Horn_C_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_C_Hint",
+      "GUID": "{0D9EA294-988F-454F-A446-E6AD4D99FC60}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8269352",
+      "DurationMax": "0.8269352",
+      "MediaRefs": [
+       {
+        "Id": "447023009"
+       }
+      ]
+     },
+     {
+      "Id": "957019032",
+      "Name": "Play_Horn_D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_D",
+      "GUID": "{BCB2406C-E6B3-45A1-9531-26575D9389ED}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8314197",
+      "DurationMax": "0.8314197",
+      "MediaRefs": [
+       {
+        "Id": "297006455"
+       }
+      ]
+     },
+     {
+      "Id": "2479269144",
+      "Name": "Play_Horn_D_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_D_Hint",
+      "GUID": "{3E4EF1ED-B68F-45ED-B0F5-AA43D5FBB51A}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.8314197",
+      "DurationMax": "0.8314197",
+      "MediaRefs": [
+       {
+        "Id": "297006455"
+       }
+      ]
+     },
+     {
+      "Id": "957019033",
+      "Name": "Play_Horn_E",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_E",
+      "GUID": "{0D64A9F9-385E-45A1-B53D-D28401E82740}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.67432004",
+      "DurationMax": "0.67432004",
+      "MediaRefs": [
+       {
+        "Id": "603414801"
+       }
+      ]
+     },
+     {
+      "Id": "819920663",
+      "Name": "Play_Horn_E_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_E_Hint",
+      "GUID": "{1909F5F3-8DD4-48B2-B075-59336289C9C7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.67432004",
+      "DurationMax": "0.67432004",
+      "MediaRefs": [
+       {
+        "Id": "603414801"
+       }
+      ]
+     },
+     {
+      "Id": "957019034",
+      "Name": "Play_Horn_F",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_F",
+      "GUID": "{14CC774E-0B90-4CEA-B275-3DB14DF3C0CD}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77079",
+      "DurationMax": "0.77079",
+      "MediaRefs": [
+       {
+        "Id": "697144522"
+       }
+      ]
+     },
+     {
+      "Id": "618456710",
+      "Name": "Play_Horn_F_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_F_Hint",
+      "GUID": "{F7E1D6D5-2D77-4187-9BFA-61F9DF1FD773}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.77079",
+      "DurationMax": "0.77079",
+      "MediaRefs": [
+       {
+        "Id": "697144522"
+       }
+      ]
+     },
+     {
+      "Id": "957019035",
+      "Name": "Play_Horn_G",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_G",
+      "GUID": "{8C9722F1-3C6B-4BCE-BDF2-C4CF440241DB}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63000834",
+      "DurationMax": "0.63000834",
+      "MediaRefs": [
+       {
+        "Id": "487973624"
+       }
+      ]
+     },
+     {
+      "Id": "119914893",
+      "Name": "Play_Horn_G_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Horn\\Play_Horn_G_Hint",
+      "GUID": "{4FB658FB-01AB-42C1-A0FE-799D140CB48F}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.63000834",
+      "DurationMax": "0.63000834",
+      "MediaRefs": [
+       {
+        "Id": "487973624"
+       }
+      ]
+     },
+     {
+      "Id": "1855672063",
+      "Name": "Play_MotorLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorLoop",
+      "GUID": "{15FA814F-9BD4-48BF-9E12-F747BA4F477D}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "175406919"
+       }
+      ]
+     },
+     {
+      "Id": "1538229119",
+      "Name": "Play_MotorStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStart",
+      "GUID": "{16B6AC0B-AC4A-49C7-89F8-3352D344B83B}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.36738583",
+      "DurationMax": "0.4810303",
+      "MediaRefs": [
+       {
+        "Id": "72439141"
+       },
+       {
+        "Id": "216203938"
+       },
+       {
+        "Id": "1052310578"
+       }
+      ],
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     },
+     {
+      "Id": "1103577285",
+      "Name": "Play_MotorStop",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_MotorStop",
+      "GUID": "{17383DBA-7D0F-4696-B17E-8B0C1BE726EB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       }
+      ]
+     },
+     {
+      "Id": "3774920574",
+      "Name": "Play_Music_World",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Play_Music_World",
+      "GUID": "{985A239F-AEAA-4CA6-BDAE-098FCFA4A332}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "104887399",
+         "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "448729930"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "2495262365",
+         "Id": "1505888634",
+         "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "694199021"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1445037870",
+         "Id": "2582085496",
+         "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "524385979"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1445037870",
+         "Id": "2402435976",
+         "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "512095870"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1445037870",
+         "Id": "2607556080",
+         "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+        },
+        "Children": [
+         {
+          "SwitchValue": {
+           "GroupType": "Switch",
+           "GroupId": "2495262365",
+           "Id": "0",
+           "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}"
+          },
+          "MediaRefs": [
+           {
+            "Id": "226572936"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "Id": "2686750109",
+      "Name": "Play_Ocarina_A",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_A",
+      "GUID": "{3ACC880F-359E-40AD-9AD4-CCEEF608727D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "903220478"
+       }
+      ]
+     },
+     {
+      "Id": "2949939403",
+      "Name": "Play_Ocarina_A_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_A_Hint",
+      "GUID": "{D3222DD8-ED77-4801-BE24-E0C7D28DBFC1}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "903220478"
+       }
+      ]
+     },
+     {
+      "Id": "2686750110",
+      "Name": "Play_Ocarina_B",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_B",
+      "GUID": "{615F1368-FF8F-4D2B-A23B-738F7865F896}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0174825",
+      "DurationMax": "1.0174825",
+      "MediaRefs": [
+       {
+        "Id": "736938058"
+       }
+      ]
+     },
+     {
+      "Id": "1330048954",
+      "Name": "Play_Ocarina_B_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_B_Hint",
+      "GUID": "{3A7C9926-0107-4191-8DFC-CB388925FBC2}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.0174825",
+      "DurationMax": "1.0174825",
+      "MediaRefs": [
+       {
+        "Id": "736938058"
+       }
+      ]
+     },
+     {
+      "Id": "2686750111",
+      "Name": "Play_Ocarina_C",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_C",
+      "GUID": "{A55A2836-2E6F-49E8-9239-1980D8DD4784}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.83916086",
+      "DurationMax": "0.83916086",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       }
+      ]
+     },
+     {
+      "Id": "820102097",
+      "Name": "Play_Ocarina_C_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_C_Hint",
+      "GUID": "{328B9AC7-4909-4121-B0DC-95002891CF81}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.83916086",
+      "DurationMax": "0.83916086",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       }
+      ]
+     },
+     {
+      "Id": "723882233",
+      "Name": "Play_Ocarina_CMaj",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_CMaj",
+      "GUID": "{ED482D53-E0C2-47BB-BD9B-C9A35350144C}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1069932",
+      "DurationMax": "2.1069932",
+      "MediaRefs": [
+       {
+        "Id": "261911091"
+       },
+       {
+        "Id": "483172978"
+       },
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "2686750104",
+      "Name": "Play_Ocarina_D",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_D",
+      "GUID": "{55B04E4C-C014-4B17-9CDF-3DB169BDDF80}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.86013985",
+      "DurationMax": "0.86013985",
+      "MediaRefs": [
+       {
+        "Id": "747045309"
+       }
+      ]
+     },
+     {
+      "Id": "2885481240",
+      "Name": "Play_Ocarina_D_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_D_Hint",
+      "GUID": "{417BC908-C102-44F8-A535-A9628318CF19}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.86013985",
+      "DurationMax": "0.86013985",
+      "MediaRefs": [
+       {
+        "Id": "747045309"
+       }
+      ]
+     },
+     {
+      "Id": "2686750105",
+      "Name": "Play_Ocarina_E",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_E",
+      "GUID": "{44A1BC09-F54D-4CE0-856C-14AD70E2C442}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "1226132759",
+      "Name": "Play_Ocarina_E_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_E_Hint",
+      "GUID": "{81990E88-A3D2-438B-8E0C-FCA6C33A1084}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "839279121"
+       }
+      ]
+     },
+     {
+      "Id": "2686750106",
+      "Name": "Play_Ocarina_F",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_F",
+      "GUID": "{38128BE1-33F1-4ECC-A403-F2D6AAFB9029}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "1002586562"
+       }
+      ]
+     },
+     {
+      "Id": "1024668806",
+      "Name": "Play_Ocarina_F_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_F_Hint",
+      "GUID": "{D0856509-C774-407C-88A8-1E7CA580D553}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "1002586562"
+       }
+      ]
+     },
+     {
+      "Id": "2686750107",
+      "Name": "Play_Ocarina_G",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_G",
+      "GUID": "{169500CE-1B24-44D6-B33E-48CEC5815062}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "483172978"
+       }
+      ]
+     },
+     {
+      "Id": "526126989",
+      "Name": "Play_Ocarina_G_Hint",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Keyboard\\Ocarina\\Play_Ocarina_G_Hint",
+      "GUID": "{B8CE8865-BEF9-4C18-B556-BD56D7583E35}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.006993",
+      "DurationMax": "1.006993",
+      "MediaRefs": [
+       {
+        "Id": "483172978"
+       }
+      ]
+     },
+     {
+      "Id": "2945325829",
+      "Name": "Play_Open_StoneGate",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Play_Open_StoneGate",
+      "GUID": "{76C90C97-F7B5-44F5-A213-4A859BE4CA2B}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.894296",
+      "DurationMax": "4.894296",
+      "MediaRefs": [
+       {
+        "Id": "165193542"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "783804969"
+        },
+        {
+         "Id": "907119155"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3545178938",
+        "Name": "Reverb_long",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_long",
+        "GUID": "{5BD814B1-8D7D-4C55-B1EF-258460A2D218}"
+       }
+      ]
+     },
+     {
+      "Id": "2044005997",
+      "Name": "Play_PastorVoice",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Play_PastorVoice",
+      "GUID": "{A3A958BE-DA35-4A23-837F-CC16067882C1}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5279979",
+      "DurationMax": "1.0919708",
+      "MediaRefs": [
+       {
+        "Id": "273503727"
+       },
+       {
+        "Id": "361744330"
+       },
+       {
+        "Id": "427513672"
+       }
+      ]
+     },
+     {
+      "Id": "578142713",
+      "Name": "Play_Pickup_Fuel",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Fuel",
+      "GUID": "{612E52A3-C734-4B33-9A80-AD4549665836}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.1007137",
+      "DurationMax": "2.1007137",
+      "MediaRefs": [
+       {
+        "Id": "183690583"
+       },
+       {
+        "Id": "627587221"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "2692550093",
+      "Name": "Play_Pickup_Quest",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_Pickup_Quest",
+      "GUID": "{E6742437-856A-4FFD-A80A-3CDA4DC8A270}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.94267",
+      "DurationMax": "1.94267",
+      "MediaRefs": [
+       {
+        "Id": "145772972"
+       },
+       {
+        "Id": "146487838"
+       },
+       {
+        "Id": "304697627"
+       },
+       {
+        "Id": "346234674"
+       },
+       {
+        "Id": "503419035"
+       },
+       {
+        "Id": "799521011"
+       }
+      ],
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "3604890626"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "851505750",
+      "Name": "Play_quest_direction",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Play_quest_direction",
+      "GUID": "{6D2859F1-6347-40A6-AB65-0E6A323B510F}",
+      "MaxAttenuation": "35",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "331775086"
+       }
+      ]
+     },
+     {
+      "Id": "3173738435",
+      "Name": "Play_RaceStart",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\Play_RaceStart",
+      "GUID": "{434D421F-30A3-4697-A1D7-489122AB3751}",
+      "DurationType": "OneShot",
+      "DurationMin": "4.64",
+      "DurationMax": "4.64",
+      "MediaRefs": [
+       {
+        "Id": "157702367"
+       }
+      ]
+     },
+     {
+      "Id": "1530826435",
+      "Name": "Play_Sailing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\Play_Sailing",
+      "GUID": "{F6DBAAAD-3765-4398-9F80-D398782E5CA5}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "98811860"
+       },
+       {
+        "Id": "148246808"
+       },
+       {
+        "Id": "218989300"
+       },
+       {
+        "Id": "438083269"
+       },
+       {
+        "Id": "530816004"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "69364897"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "4281176146",
+      "Name": "Play_Seagulls",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Seagulls",
+      "GUID": "{C42FCEC8-1C1A-48BD-9E93-616BAE760BC7}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "382701999"
+       },
+       {
+        "Id": "480343258"
+       },
+       {
+        "Id": "705104323"
+       },
+       {
+        "Id": "889405789"
+       }
+      ],
+      "AuxBusRefs": [
+       {
+        "Id": "3176089955",
+        "Name": "Reverb_Animals",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+        "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}"
+       }
+      ]
+     },
+     {
+      "Id": "4262365201",
+      "Name": "Play_Seal",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Seal",
+      "GUID": "{D221093C-7554-406E-B723-83E64F80C657}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.4870837",
+      "DurationMax": "7.39345",
+      "MediaRefs": [
+       {
+        "Id": "45906878"
+       },
+       {
+        "Id": "110974684"
+       },
+       {
+        "Id": "615780164"
+       },
+       {
+        "Id": "694900188"
+       },
+       {
+        "Id": "955175564"
+       }
+      ]
+     },
+     {
+      "Id": "402999385",
+      "Name": "Play_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Play_UI_TypeLoop",
+      "GUID": "{B5AF5AB2-8E79-4BFE-84DB-9C50236FF324}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "105030960"
+       },
+       {
+        "Id": "121681388"
+       },
+       {
+        "Id": "621479489"
+       },
+       {
+        "Id": "662864355"
+       }
+      ]
+     },
+     {
+      "Id": "1589278987",
+      "Name": "Play_Wale",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Play_Wale",
+      "GUID": "{477C8097-1DA0-46BE-B54D-FB5E6A112819}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "121011351"
+       },
+       {
+        "Id": "407531309"
+       },
+       {
+        "Id": "437250838"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "185063321"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "3176089955",
+        "Name": "Reverb_Animals",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+        "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}"
+       }
+      ]
+     },
+     {
+      "Id": "602563",
+      "Name": "Quest_accepted",
+      "ObjectPath": "\\Events\\Default Work Unit\\Quest\\Quest_accepted",
+      "GUID": "{E6C38BCF-8820-4BBF-9403-86DFFDC0D2B6}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.4643891",
+      "DurationMax": "1.4643891",
+      "MediaRefs": [
+       {
+        "Id": "12577541"
+       },
+       {
+        "Id": "105030960"
+       }
+      ]
+     },
+     {
+      "Id": "2837384057",
+      "Name": "Stop_Music",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Stop_Music",
+      "GUID": "{1706C595-0691-4812-9EBD-30C795469909}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "1258201081",
+      "Name": "stop_Sailing",
+      "ObjectPath": "\\Events\\Default Work Unit\\Player\\stop_Sailing",
+      "GUID": "{BC0157AF-3945-4FB5-97A8-23DE0622CEF6}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0",
+      "ActionSetState": [
+       {
+        "GroupId": "3546073390",
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     },
+     {
+      "Id": "3590310348",
+      "Name": "Stop_Seagulls",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Stop_Seagulls",
+      "GUID": "{AEA7B431-5825-42E5-9901-D78D6E31C96B}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "3458954543",
+      "Name": "Stop_UI_TypeLoop",
+      "ObjectPath": "\\Events\\Default Work Unit\\NPC\\Stop_UI_TypeLoop",
+      "GUID": "{446F1D4E-5C90-4246-86BB-C9F4923461C8}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2249769530",
+      "Name": "ui_click",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_click",
+      "GUID": "{643CDA32-BE5C-4842-B3C1-C38E14B14DD6}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.638189",
+      "DurationMax": "0.638189",
+      "MediaRefs": [
+       {
+        "Id": "329250373"
+       }
+      ]
+     },
+     {
+      "Id": "1009189048",
+      "Name": "ui_error",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_error",
+      "GUID": "{B97D5BD1-A315-4C44-8D70-2552B7FEE564}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.70367974",
+      "DurationMax": "0.70367974",
+      "MediaRefs": [
+       {
+        "Id": "41264705"
+       }
+      ],
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "749681742"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "1219048826",
+      "Name": "ui_start",
+      "ObjectPath": "\\Events\\Default Work Unit\\UI\\ui_start",
+      "GUID": "{ECCC4E01-26C8-480B-ADF0-92624331C8BA}",
+      "DurationType": "OneShot",
+      "DurationMin": "1.3500352",
+      "DurationMax": "1.3500352",
+      "MediaRefs": [
+       {
+        "Id": "217901187"
+       }
+      ]
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "3546073390",
+      "Name": "BoatMode",
+      "ObjectPath": "\\States\\Default Work Unit\\BoatMode",
+      "GUID": "{689E706D-0416-4809-8ABA-D2665E401C43}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\None",
+        "GUID": "{2D360962-0AC3-4684-A03E-F18E3E26827C}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       },
+       {
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "885771221",
+      "Name": "NPC_VoiceType",
+      "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType",
+      "GUID": "{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}",
+      "Switches": [
+       {
+        "Id": "1783520059",
+        "Name": "Villager",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Villager",
+        "GUID": "{788B9649-3F69-452C-B54A-525FC3476571}"
+       },
+       {
+        "Id": "2457561305",
+        "Name": "Teacher",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Teacher",
+        "GUID": "{A54ADA90-C26D-442F-9252-B8EB49617CBE}"
+       },
+       {
+        "Id": "2864432310",
+        "Name": "Pastor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Pastor",
+        "GUID": "{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"
+       },
+       {
+        "Id": "3076081869",
+        "Name": "Sailor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Sailor",
+        "GUID": "{77AC4069-C70A-4865-93C9-A7E01ED328BD}"
+       }
+      ]
+     },
+     {
+      "Id": "1445037870",
+      "Name": "MusicSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch",
+      "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}",
+      "Switches": [
+       {
+        "Id": "2402435976",
+        "Name": "Island_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Island_01",
+        "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Exploration",
+        "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Menu",
+        "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+       }
+      ]
+     },
+     {
+      "Id": "2495262365",
+      "Name": "RaceState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
+      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
+      "Switches": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
+        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+       },
+       {
+        "Id": "1505888634",
+        "Name": "Countdown",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
+        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
+        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
+       },
+       {
+        "Id": "2555741448",
+        "Name": "Finish",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
+        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{837C3520-A317-F54F-C639-2085C62B09C5}"
+ }
+}

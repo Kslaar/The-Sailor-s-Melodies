@@ -9,12 +9,11 @@ public class GenericItemPickup : ItemPickup
     {
         if (string.IsNullOrWhiteSpace(itemID))
         {
-            Debug.LogWarning($"[GenericItemPickup] itemID empty on {name}");
             return false;
         }
 
         ItemPickupEvents.RaiseItemCollected(itemID);
-        Debug.Log($"[GenericItemPickup] Collected: {itemID}");
+        Debug.Log($"Collected: {itemID}");
         return true;
     }
 }

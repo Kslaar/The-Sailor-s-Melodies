@@ -21,8 +21,6 @@ public class DialogueManager : MonoBehaviour
         Instance = this;
         transform.SetParent(null, true);
         DontDestroyOnLoad(gameObject);
-
-        // if (ui == null) ui = FindFirstObjectByType<DialogueUI>(FindObjectsInactive.Include);
     }
 
     private void OnEnable()
@@ -69,7 +67,7 @@ public class DialogueManager : MonoBehaviour
 
         if (asset == null)
         {
-            Debug.Log($"[DialogueManager] StartDialogue called mit NULL asset. :(");
+            Debug.Log($"[DialogueManager] StartDialogue called: mit NULL asset.");
             return;
         }
         
@@ -84,7 +82,6 @@ public class DialogueManager : MonoBehaviour
 
         current = asset;
         node = current.nodes.FirstOrDefault(n => n.id == current.startNodeID);
-        //ShowNode();
 
         StartCoroutine(CoruShowUIWhenReady());
     }
@@ -92,20 +89,6 @@ public class DialogueManager : MonoBehaviour
     // UIStateController kann so rechtzeitig Dialogue Panel aktivieren
     private IEnumerator CoruShowUIWhenReady()
     {
-        /*
-        var usc = FindFirstObjectByType<UIStateController>(FindObjectsInactive.Include);
-        
-        // Frames auf den State Change warten 
-        for (int i = 0; i < 10; i++)
-        {
-            if (usc != null && usc.DialogueUIRoot != null && usc.DialogueUIRoot.activeInHierarchy)
-            {
-                ui = usc.DialogueUIComponent;
-                break;
-            }
-            yield return null;
-        }
-        */
         if (ui == null) BindUIFromScene();
 
         for (int i = 0; i < 30 && ui == null; i++) // 30 Frames warten wegen Asyncload
@@ -129,7 +112,6 @@ public class DialogueManager : MonoBehaviour
 
         if (node == null)
         {
-            Debug.LogWarning("[DialogueManager] Node is NULL. Check startNodeId and node ids in the DialogueAsset.");
             EndDialogue();
             return;
         }
@@ -169,7 +151,6 @@ public class DialogueManager : MonoBehaviour
 
         if (gsm.State == GameState.Racing)
         {
-            Debug.Log("[DialogueManager] EndDialogue during Racing -> ignore state change.");
             return;
         }
         if (gsm.State == GameState.Dialogue)

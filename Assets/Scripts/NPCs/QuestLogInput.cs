@@ -4,8 +4,6 @@ using UnityEngine.InputSystem;
 
 public class QuestLogInput : MonoBehaviour
 {
-    // [SerializeField] private QuestLogUI questLogUI;
-
     void Update()
     {
         if (Keyboard.current == null) return;

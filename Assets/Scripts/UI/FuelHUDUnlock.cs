@@ -27,9 +27,6 @@ public class FuelHUDUnlock : MonoBehaviour
     {
         if (fuelHudRoot == null) return;
 
-        Debug.Log("[FuelHUDUnlock] engineUnlocked=" +
-    (ProgressionManager.Instance != null ? ProgressionManager.Instance.State.engineUnlocked : false));
-
         bool unlocked =
             ProgressionManager.Instance != null &&
             ProgressionManager.Instance.State != null &&

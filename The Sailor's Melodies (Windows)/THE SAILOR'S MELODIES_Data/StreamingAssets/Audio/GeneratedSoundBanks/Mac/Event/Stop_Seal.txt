@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	325636059	Stop_Seal			\Default Work Unit\Animals\Stop_Seal	
+

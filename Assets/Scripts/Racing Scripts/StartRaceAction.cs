@@ -15,25 +15,20 @@ public class StartRaceAction : DialogueAction
         var course = FindCourse(courseID);
         if (course == null)
         {
-            Debug.LogWarning($"[StartRaceAction] Course '{courseID}' not found in scene.");
             return;
         }
 
         if (RaceManager.Instance == null)
         {
-            Debug.LogWarning("[StartRaceAction] RaceManager.Instance is NULL.");
             return;
         }
-
-        // DialogueManager.Instance?.EndDialogue();
-        // RaceManager.Instance.StartRace(course);
 
         RaceManager.Instance.StartCoroutine(StartRaceNextFrame(course));
     }
 
     private IEnumerator StartRaceNextFrame(RaceCourse course)
     {
-        yield return null; // 1 Frame -> UI/State settle
+        yield return null; // 1 Frame auf den State und das UI warten...
         RaceManager.Instance.StartRace(course);
     }
 

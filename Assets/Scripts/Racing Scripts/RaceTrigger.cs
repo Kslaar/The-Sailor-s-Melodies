@@ -4,15 +4,12 @@ public class RaceTrigger : MonoBehaviour
 {
     public enum TriggerType { Checkpoint, Finish }
 
-    // [SerializeField] private string requiredTag = "Player";
     public TriggerType triggerType = TriggerType.Checkpoint;
     public string courseID;
     public int checkpointIndex;
 
     private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"[RaceTrigger] HIT {name} type={triggerType} courseID={courseID} idx={checkpointIndex} other={other.name}");
-    
+    {    
         if (!HasTagInParents(other.transform, "Player"))
             return;
 

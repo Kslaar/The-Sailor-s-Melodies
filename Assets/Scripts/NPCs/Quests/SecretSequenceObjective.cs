@@ -12,7 +12,7 @@ public class SecretSequenceObjective : QuestObjective
     [Header("Rules")]
     public bool resetOnWrong = true;
 
-    [Header("Optional Timer")]
+    [Header("Timer")] // Weiß ich noch nicht ob ich den drin lasse
     public bool useStepTimeout = true;
     public float stepTimeoutSeconds = 6f;
 
@@ -20,7 +20,7 @@ public class SecretSequenceObjective : QuestObjective
     [NonSerialized] private float _lastStepTime;
     [NonSerialized] private bool _done;
 
-    public static event Action<string> OnSequenceObjectiveCompleted; // sends sequenceID
+    public static event Action<string> OnSequenceObjectiveCompleted; // schickt sequenceID
 
     public override void Register()
     {
@@ -52,7 +52,7 @@ public class SecretSequenceObjective : QuestObjective
 
         int expected = requiredOrder[_index];
 
-        Debug.Log($"[SeqObj] got step={step} expected={expected} idx={_index} seq={seq}");
+        Debug.Log($"got step={step} expected={expected} idx={_index} seq={seq}");
 
         if (step == expected)
         {
@@ -62,7 +62,7 @@ public class SecretSequenceObjective : QuestObjective
             if (_index >= requiredOrder.Count)
             {
                 _done = true;
-                Debug.Log($"[SeqObj] COMPLETE sequenceID={sequenceID}");
+                Debug.Log($"COMPLETE sequenceID={sequenceID}");
 
                 QuestManager.Instance?.NotifyObjectiveProgressHasChanged();
                 // Event los, Scene reagiert
@@ -75,7 +75,7 @@ public class SecretSequenceObjective : QuestObjective
         }
         else
         {
-            Debug.Log($"[SeqObj] COMPLETE sequenceID={sequenceID}");
+            Debug.Log($"COMPLETE sequenceID={sequenceID}");
             if (resetOnWrong) _index = 0;
             QuestManager.Instance?.NotifyObjectiveProgressHasChanged();
         }

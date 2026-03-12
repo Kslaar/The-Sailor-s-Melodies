@@ -56,7 +56,6 @@ public class Waves : MonoBehaviour
     {
         if (!generateMesh || mesh == null) return;
 
-        // Update Visual Mesh using the SAME world sampling (seamless, chunk-friendly)
         for (int x = 0; x <= dim; x++)
         {
             for (int z = 0; z <= dim; z++)
@@ -79,7 +78,6 @@ public class Waves : MonoBehaviour
         mesh.RecalculateNormals();
     }
 
-    /// <summary>Physik-Höhe: funktioniert überall in der Welt (kein Clamp, keine Mesh-Fläche nötig).</summary>
     public float GetHeightFromPoint(Vector3 worldPos)
     {
         return SampleHeightWorld(worldPos.x, worldPos.z, Time.time);
@@ -116,7 +114,7 @@ public class Waves : MonoBehaviour
 
     Vector3[] GenerateVertices()
     {
-        // Zentriert um 0: von -size/2 .. +size/2 (viel angenehmer für Tiling)
+        // Zentriert um 0
         var v = new Vector3[dim1 * dim1];
         float half = size * 0.5f;
 

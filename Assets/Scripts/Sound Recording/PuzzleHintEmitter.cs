@@ -5,7 +5,6 @@ public class PuzzleHintEmitter : MonoBehaviour
 {
     public PuzzleListener listener;
 
-    [Header("Assign events here (stable inspector refs)")]
     public List<SignatureToEvent> map = new();
 
     public float shortSoundGap = 0.35f;

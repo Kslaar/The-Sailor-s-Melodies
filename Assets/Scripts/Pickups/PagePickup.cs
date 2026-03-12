@@ -9,12 +9,11 @@ public class PagePickup : ItemPickup
     {
         if (string.IsNullOrWhiteSpace(pageItemID))
         {
-            Debug.LogWarning("[PagePickup] pageItemID ist leer!");
             return false;
         }
 
         ItemPickupEvents.RaiseItemCollected(pageItemID);
-        Debug.Log($"[PagePickup] Collected: {pageItemID}");
+        Debug.Log($"Collected: {pageItemID}");
         return true;
     }
 }

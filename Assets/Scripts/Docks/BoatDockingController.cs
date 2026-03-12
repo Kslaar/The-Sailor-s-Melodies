@@ -16,8 +16,6 @@ public class BoatDockingController : MonoBehaviour
     private float _holdTimer;
     private bool _isDocked;
 
-    // private Vector3 savedPos;
-    // private Quaternion savedRot;
     private bool _savedKinematic;
 
     public bool IsDocked => _isDocked;
@@ -98,61 +96,6 @@ public class BoatDockingController : MonoBehaviour
         GlobalMusicManager.Instance.SetIsland();
     }
 
-    /*
-    public void ForceDock(DockZone dockZone, string reason = "ForceDock", bool showDockUI = true)
-    {
-        if (dockZone == null || dockZone.snapPoint == null)
-        {
-            Debug.LogWarning("[BoatDockingController] ForceDock failed: dockZone/snapPoint missing");
-            return;
-        }
-
-        var gsm = GameStateManager.Instance;
-
-        var oldDock = _currentDock;
-        if (oldDock != null && oldDock != dockZone && oldDock.dockCamera != null)
-            oldDock.dockCamera.gameObject.SetActive(false);
-
-        _currentDock = dockZone;
-        _isDocked = true;
-        _holdTimer = 0f;
-
-        if (rb != null) _savedKinematic = rb.isKinematic;
-
-        transform.position = dockZone.snapPoint.position;
-        transform.rotation = dockZone.snapPoint.rotation;
-
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector3.zero;
-            rb.angularVelocity = Vector3.zero;
-            rb.isKinematic = true;
-        }
-
-        if (boat != null) boat.enabled = false;
-
-        // Wir geben den Cursor wieder frei
-        if (cursorLock != null) cursorLock.UnlockCursor();
-        else { Cursor.lockState = CursorLockMode.None; Cursor.visible = true; }
-
-        // Kameras switchen
-        if (sailingCamera != null) sailingCamera.gameObject.SetActive(false);
-        if (_currentDock.dockCamera != null) _currentDock.dockCamera.gameObject.SetActive(true);
-        else Debug.LogWarning($"[BoatDockingController] DockCamera missing on {dockZone.name}");
-
-        if (dockZone.dockUI != null)
-        {
-            if (showDockUI) dockZone.dockUI.Show(dockZone);
-            else dockZone.dockUI.Hide();
-        }
-        
-        if (gsm != null)
-            gsm.ForceUnpause(GameState.Docked, reason);
-
-        GlobalMusicManager.Instance.SetIsland();
-    }
-    */
-
     public void UndockNow()
     {
         if (!_isDocked) return;
@@ -182,8 +125,6 @@ public class BoatDockingController : MonoBehaviour
 
         // Wwise State setzen
         GlobalMusicManager.Instance.SetExploration();
-
-
     }
 
     public void UndockForRace()
@@ -215,20 +156,17 @@ public class BoatDockingController : MonoBehaviour
     {
         if (dockZone == null || dockZone.snapPoint == null)
         {
-            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dockZone/snapPoint missing");
             return;
         }
 
         if (dialogue == null)
         {
-            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dialogue is NULL");
             return;
         }
 
         var gsm = GameStateManager.Instance;
         if (gsm == null)
         {
-            Debug.LogWarning("[BoatDockingController] AutoDockForDialogue failed: dialogue is NULL");
             return;
         }
 

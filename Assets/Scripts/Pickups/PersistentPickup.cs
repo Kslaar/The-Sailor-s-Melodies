@@ -25,7 +25,6 @@ public class PersistentPickup : MonoBehaviour
         if (string.IsNullOrWhiteSpace(itemID)) return;
 
         int c = reg.GetCount(itemID);
-        // Debug.Log($"[PersistentPickup] {gameObject.name} id={itemID} count={c}");
 
         if (c > 0)
         {

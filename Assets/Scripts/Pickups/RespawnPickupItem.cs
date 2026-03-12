@@ -54,6 +54,6 @@ public class RespawnPickupItem : MonoBehaviour
 
     void OnDestroy()
     {
-        Debug.LogWarning($"[FuelPickup] DESTROYED: {name}\n{System.Environment.StackTrace}");
+        Debug.LogWarning($"[FuelPickup] DESTROYED: Fuelcanister");
     }
 }

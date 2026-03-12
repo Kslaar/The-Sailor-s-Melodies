@@ -72,8 +72,7 @@ public class GameStateManager : MonoBehaviour
         if (State != GameState.Paused) 
             return false;
         
-        // Check ich nicht!!!!!!!!
-        var returnTo = pauseReturnStack.Count > 0 ? pauseReturnStack.Pop() : GameState.Sailing;
+        var returnTo = pauseReturnStack.Count > 0 ? pauseReturnStack.Pop() : GameState.Sailing; // Falls im Stack noch ein alter State... dann nehmen wir den, sonst Sailing-Fallback
         DoSetState(returnTo, reason);
         return true;
     }

@@ -1,0 +1,6 @@
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	3176089955	Reverb_Animals			\Default Work Unit\Master\Reverb_Animals	
+
+Effect plug-ins	ID	Name	Type				Notes
+	415841907	Space_Garage	Wwise RoomVerb			
+

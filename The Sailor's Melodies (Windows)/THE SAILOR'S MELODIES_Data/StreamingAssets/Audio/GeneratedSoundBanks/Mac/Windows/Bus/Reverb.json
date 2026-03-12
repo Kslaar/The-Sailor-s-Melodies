@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "348963605",
+    "Type": "Bus",
+    "GUID": "{F9B916A5-6020-47A8-B295-6B94268AC319}",
+    "Language": "SFX",
+    "Hash": "{225BF3C5-50E4-4175-E392-57121B1A9423}",
+    "ObjectPath": "Reverb",
+    "ShortName": "Reverb",
+    "Path": "Bus/Reverb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb",
+      "GUID": "{F9B916A5-6020-47A8-B295-6B94268AC319}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{224515E4-FD62-4D28-00CD-7B9DBB8532F0}"
+ }
+}

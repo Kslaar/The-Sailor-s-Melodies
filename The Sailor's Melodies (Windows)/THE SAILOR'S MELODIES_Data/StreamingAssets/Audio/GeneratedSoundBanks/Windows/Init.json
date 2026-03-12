@@ -1,0 +1,415 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{11B5ED47-7A17-2CAC-C4AE-7C27B11E299B}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "664771687",
+       "Name": "Guitar Distortion (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Keyboard_Hint\\[Effect Slot [0]: (Guitar Distortion)]\\Guitar Distortion (Custom)",
+       "GUID": "{2B53FDCE-BF6B-475A-BF26-196CE66FF02A}",
+       "LibName": "Wwise Guitar Distortion",
+       "LibId": "8257539"
+      }
+     ],
+     "ShareSets": [
+      {
+       "Id": "415841907",
+       "Name": "Space_Garage",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Huge Spaces\\Space_Garage",
+       "GUID": "{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1144018367",
+       "Name": "Plate_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Plates\\Plate_Large",
+       "GUID": "{62CB7384-421D-4F9A-9CF1-E90F7336A07B}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "2995775460",
+       "Name": "Room_Small",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Small",
+       "GUID": "{577F1466-A63B-47F7-98BD-C56E433F8B5D}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ],
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{B038F6FB-6012-4DA0-8618-BDA71BB2C460}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{6F7036D1-BA20-4114-9EC6-C473F7C0621A}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\SFX",
+      "GUID": "{41AE9DDA-C3DF-4D1D-821B-674E891442EC}"
+     },
+     {
+      "Id": "662417162",
+      "Name": "NPC",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\NPC",
+      "GUID": "{5C32184A-F1B7-4892-BBA2-CAE48C8BF29E}"
+     },
+     {
+      "Id": "949388280",
+      "Name": "Animals",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Animals",
+      "GUID": "{2342BA03-DAEE-446B-A288-8204C0005B30}"
+     },
+     {
+      "Id": "1795056175",
+      "Name": "Boat",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Boat",
+      "GUID": "{E7FD4295-8AFB-4DC5-AD83-2BEF8E14C1DD}"
+     },
+     {
+      "Id": "1942696649",
+      "Name": "Effects",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects",
+      "GUID": "{FD46D439-8CBD-45F2-B3E4-8018F0F567EB}"
+     },
+     {
+      "Id": "2652995606",
+      "Name": "Keyboard_Hint",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Keyboard_Hint",
+      "GUID": "{7D760D8C-9641-4A05-BC76-82DF0879AB52}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "664771687"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3199546890",
+      "Name": "Island",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Effects\\Island",
+      "GUID": "{D43DDD33-A3EE-4066-BA18-19EAB635EB87}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Music",
+      "GUID": "{F344E186-EE7C-4A5B-99E4-6BDD35DF0124}"
+     },
+     {
+      "Id": "4056684167",
+      "Name": "Master",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb",
+      "GUID": "{F9B916A5-6020-47A8-B295-6B94268AC319}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "2995775460"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3176089955",
+      "Name": "Reverb_Animals",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+      "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "415841907"
+        }
+       ]
+      }
+     },
+     {
+      "Id": "3545178938",
+      "Name": "Reverb_long",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_long",
+      "GUID": "{5BD814B1-8D7D-4C55-B1EF-258460A2D218}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "1144018367"
+        }
+       ]
+      }
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "335877618",
+      "Name": "PuzzleHint_PitchCents",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PuzzleHint_PitchCents",
+      "GUID": "{9B9A7F6F-2DBE-4716-9168-5A37665D7040}"
+     },
+     {
+      "Id": "988953028",
+      "Name": "SFXVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SFXVolume",
+      "GUID": "{615F4DEE-FBCC-46F3-8F83-6B858F346F48}"
+     },
+     {
+      "Id": "2346531308",
+      "Name": "MusicVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MusicVolume",
+      "GUID": "{B7CCC3D1-5F07-4694-926A-5FDF125FB4CF}"
+     },
+     {
+      "Id": "2918011349",
+      "Name": "MasterVolume",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\MasterVolume",
+      "GUID": "{C743460E-FC86-4415-987E-FCDF6CD80A33}"
+     },
+     {
+      "Id": "3472912007",
+      "Name": "PlayerDistance",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PlayerDistance",
+      "GUID": "{D48F197D-7378-4C0F-BAD9-B83073440EF8}"
+     },
+     {
+      "Id": "3503836294",
+      "Name": "PauseDuck",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PauseDuck",
+      "GUID": "{8550AAF7-10F0-4BE0-B61E-8311DC8743A7}"
+     }
+    ],
+    "StateGroups": [
+     {
+      "Id": "1021618141",
+      "Name": "MusicState",
+      "ObjectPath": "\\States\\Default Work Unit\\MusicState",
+      "GUID": "{22B51183-6D9C-46C0-8D5C-67B60C8E09E7}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\None",
+        "GUID": "{C93DA44D-32AA-4DE8-9920-BA2460BEF668}"
+       },
+       {
+        "Id": "2402435976",
+        "Name": "Island_01",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Island_01",
+        "GUID": "{B7F5A775-DF19-4BF7-A1FF-4BD7ECFD7982}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\States\\Default Work Unit\\MusicState\\Exploration",
+        "GUID": "{B17B1864-EAB0-4732-90EA-85FE0BD70855}"
+       }
+      ]
+     },
+     {
+      "Id": "3546073390",
+      "Name": "BoatMode",
+      "ObjectPath": "\\States\\Default Work Unit\\BoatMode",
+      "GUID": "{689E706D-0416-4809-8ABA-D2665E401C43}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\None",
+        "GUID": "{2D360962-0AC3-4684-A03E-F18E3E26827C}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\Sailing",
+        "GUID": "{AB6EAEEA-E18D-4DE5-8C25-0E3C0E543AF0}"
+       },
+       {
+        "Id": "2524403114",
+        "Name": "MotorActive",
+        "ObjectPath": "\\States\\Default Work Unit\\BoatMode\\MotorActive",
+        "GUID": "{19DF624B-1A73-4395-A516-AD83AAFB8876}"
+       }
+      ]
+     },
+     {
+      "Id": "4091656514",
+      "Name": "GameState",
+      "ObjectPath": "\\States\\Default Work Unit\\GameState",
+      "GUID": "{599EE782-E3DA-4287-8452-51D85D1F1A13}",
+      "States": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Racing",
+        "GUID": "{349E298C-E4CC-4C43-941E-1666A88BAAFB}"
+       },
+       {
+        "Id": "319258907",
+        "Name": "Paused",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Paused",
+        "GUID": "{273FC5A2-E19F-4968-81C5-EF55CA932DA8}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\None",
+        "GUID": "{05E8B21E-04F9-47CC-A047-9D03BA2C4B04}"
+       },
+       {
+        "Id": "1214987797",
+        "Name": "Questlog",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Questlog",
+        "GUID": "{D547AEB7-577C-4DE3-B79F-C4BAE0FA0D29}"
+       },
+       {
+        "Id": "1921590194",
+        "Name": "Sailing",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Sailing",
+        "GUID": "{6796E169-FD02-4485-9F9D-4E0B353EBD1C}"
+       },
+       {
+        "Id": "2742168187",
+        "Name": "Docked",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Docked",
+        "GUID": "{8296FECE-58DE-47EF-935F-572168058384}"
+       },
+       {
+        "Id": "3930136735",
+        "Name": "Dialogue",
+        "ObjectPath": "\\States\\Default Work Unit\\GameState\\Dialogue",
+        "GUID": "{DF7AA132-95E6-466E-84BB-1CBA98FC794B}"
+       }
+      ]
+     }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "885771221",
+      "Name": "NPC_VoiceType",
+      "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType",
+      "GUID": "{97B45CA5-28BC-4C6A-9E89-5F2EBABCE83C}",
+      "Switches": [
+       {
+        "Id": "1783520059",
+        "Name": "Villager",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Villager",
+        "GUID": "{788B9649-3F69-452C-B54A-525FC3476571}"
+       },
+       {
+        "Id": "2457561305",
+        "Name": "Teacher",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Teacher",
+        "GUID": "{A54ADA90-C26D-442F-9252-B8EB49617CBE}"
+       },
+       {
+        "Id": "2864432310",
+        "Name": "Pastor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Pastor",
+        "GUID": "{332A4E7D-14EB-4042-98A5-64D9DBBAB2AB}"
+       },
+       {
+        "Id": "3076081869",
+        "Name": "Sailor",
+        "ObjectPath": "\\Switches\\Default Work Unit\\NPC_VoiceType\\Sailor",
+        "GUID": "{77AC4069-C70A-4865-93C9-A7E01ED328BD}"
+       }
+      ]
+     },
+     {
+      "Id": "1445037870",
+      "Name": "MusicSwitch",
+      "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch",
+      "GUID": "{CEAD6336-3D7C-46C5-95D2-9732EE557453}",
+      "Switches": [
+       {
+        "Id": "2402435976",
+        "Name": "Island_01",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Island_01",
+        "GUID": "{A2BFD1D2-BC0D-417C-83A4-48320824FD32}"
+       },
+       {
+        "Id": "2582085496",
+        "Name": "Exploration",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Exploration",
+        "GUID": "{534375CD-2B59-4610-B82E-F982FAACDC6C}"
+       },
+       {
+        "Id": "2607556080",
+        "Name": "Menu",
+        "ObjectPath": "\\Switches\\Default Work Unit\\MusicSwitch\\Menu",
+        "GUID": "{50D43099-8539-4B9E-9560-2056CC1E6CD0}"
+       }
+      ]
+     },
+     {
+      "Id": "2495262365",
+      "Name": "RaceState",
+      "ObjectPath": "\\Switches\\Default Work Unit\\RaceState",
+      "GUID": "{26B7EA62-3887-4368-B040-38A04AD802D5}",
+      "Switches": [
+       {
+        "Id": "104887399",
+        "Name": "Racing",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Racing",
+        "GUID": "{ABEE1444-0BB5-4F6B-8989-1FE70C074E36}"
+       },
+       {
+        "Id": "1505888634",
+        "Name": "Countdown",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Countdown",
+        "GUID": "{742F3BA6-C640-4DD9-9E3A-EE5E667EED89}"
+       },
+       {
+        "Id": "1874288895",
+        "Name": "Idle",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Idle",
+        "GUID": "{1683D035-4091-4354-A07F-2EAE7D0A3BD0}"
+       },
+       {
+        "Id": "2555741448",
+        "Name": "Finish",
+        "ObjectPath": "\\Switches\\Default Work Unit\\RaceState\\Finish",
+        "GUID": "{0C4DB354-B5CD-4C55-8AE6-8E9D3F4EA0B6}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{C9205CE7-0A5F-6707-66BB-0374008C6468}"
+ }
+}

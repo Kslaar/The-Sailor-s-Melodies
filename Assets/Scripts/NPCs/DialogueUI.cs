@@ -77,7 +77,7 @@ public class DialogueUI : MonoBehaviour
             avatarImage.enabled = avatar != null;
         }
 
-        // Sofort Choices cachen (Dann funktioniert der Skip mid-typewriter)
+        // Sofort Choices cachen, Dann funktioniert der Skip während des Typewriter-Effekts
         cachedChoices = choices;
 
         ClearChoices();
@@ -191,7 +191,7 @@ public class DialogueUI : MonoBehaviour
             btn.onClick.RemoveAllListeners();
             btn.onClick.AddListener(() =>
             {
-                Debug.Log($"[DialogueUI] Clicked choice: {choice.label}");
+                Debug.Log($"Clicked choice: {choice.label}");
                 // Wenn Spieler klickt während geschrieben wird -> instant finish
                 if (isTyping)
                     FinishTypingInstant();

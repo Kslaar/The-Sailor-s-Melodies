@@ -44,7 +44,7 @@ public class NPCDialogueSelector : MonoBehaviour
             return false;
 
         if (qm == null) return false;
-        return qm.IsCompleted(quest2UnlockNextQuestID); // || qm.IsReadyToTurnIn(quest2UnlockNextQuestID);
+        return qm.IsCompleted(quest2UnlockNextQuestID); 
     }
     public DialogueAsset ResolveForQuest(QuestManager qm, string questID, DialogueAsset notStarted, DialogueAsset inProgress, DialogueAsset readyToTurnIn, DialogueAsset completed, DialogueAsset fallbackRepeat)
     {

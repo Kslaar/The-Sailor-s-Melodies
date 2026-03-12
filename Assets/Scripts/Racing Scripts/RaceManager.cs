@@ -260,7 +260,6 @@ public class RaceManager : MonoBehaviour
         if (success && currentCourse != null && !string.IsNullOrWhiteSpace(currentCourse.questID))
         {
             QuestManager.Instance?.ForceSetState(currentCourse.questID, QuestState.ReadyToTurnIn);
-            // QuestManager.Instance?.TurnInQuest(currentCourse.questID);
         }
 
         DialogueAsset d = null;
@@ -282,7 +281,6 @@ public class RaceManager : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("[RaceManager] AutoDockForDialogue failed (missing docking/returnDock/dialogue). Fallback: Docked only.");
             GameStateManager.Instance?.ForceUnpause(GameState.Docked, "RaceReturn fallback");
         }
 

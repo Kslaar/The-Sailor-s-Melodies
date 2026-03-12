@@ -23,7 +23,7 @@ public class RaceCourse : MonoBehaviour
     [Header("Rules & Time")]
     public float successTimeSeconds = 120f; 
     public float maxTimeSeconds = 210f; // Immer größer als successTimeSeconds
-    public float maxDistanceFromIsland = 80f; // Wie weit vom nächsten Checkpoint es erlaubt ist zu sein
+    public float maxDistanceFromIsland = 180f; // Wie weit vom nächsten Checkpoint es erlaubt ist zu sein
     public float outOfBoundsGracePeriod = 5f;
 
     private void Awake()
