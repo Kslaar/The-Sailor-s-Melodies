@@ -121727,6 +121727,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7320001892980393206, guid: 4d958c17f76535647b40c393c8fbad97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

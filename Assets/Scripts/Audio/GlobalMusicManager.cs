@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using AK.Wwise;
+using System.Collections;
 
 public class GlobalMusicManager : MonoBehaviour
 {
@@ -15,8 +15,7 @@ public class GlobalMusicManager : MonoBehaviour
     public AK.Wwise.Switch explorationSwitch;
     public AK.Wwise.Switch islandSwitch;
 
-    [Header("Race Switches")]
-    public AK.Wwise.Switch raceStateSwitch;
+    private bool musicStarted = false;
 
     private void Awake()
     {
@@ -28,32 +27,48 @@ public class GlobalMusicManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void Start()
     {
-        // Musik nur EINMAL starten
-        uint id = playWorldMusic.Post(gameObject);
+        ApplyInitialSceneState(SceneManager.GetActiveScene().name);
+        StartCoroutine(StartMusicDelayed());
+    }
 
-        if (id == 0)
-            Debug.Log("Music already playing � skipping start.");
+    private IEnumerator StartMusicDelayed()
+    {
+        // Wichtig: Im Build Wwise/Scene erst ganz kurz "settlen" lassen
+        yield return null;
+        yield return null;
+
+        uint id = playWorldMusic.Post(gameObject);
+        musicStarted = id != 0;
+
+        Debug.Log("[Music] Initial Post ID: " + id);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "MainMenuScene")
-        {
-            menuSwitch.SetValue(gameObject);
-        }
-        else if (scene.name == "GameScene")
-        {
-            explorationSwitch.SetValue(gameObject);
-        }
+        ApplyInitialSceneState(scene.name);
     }
 
-    // Manuelle Umschaltung in der GameScene
+    private void ApplyInitialSceneState(string sceneName)
+    {
+        if (sceneName == "MainMenuScene")
+        {
+            menuSwitch.SetValue(gameObject);
+            AkUnitySoundEngine.SetState("GameState", "Docked");
+        }
+        else if (sceneName == "GameScene")
+        {
+            explorationSwitch.SetValue(gameObject);
+            AkUnitySoundEngine.SetState("GameState", "Sailing");
+        }
+
+        AkUnitySoundEngine.SetSwitch("RaceState", "Idle", gameObject);
+    }
+
     public void SetExploration()
     {
         explorationSwitch.SetValue(gameObject);
@@ -69,15 +84,23 @@ public class GlobalMusicManager : MonoBehaviour
         AkUnitySoundEngine.SetSwitch("RaceState", stateName, gameObject);
     }
 
-    public void StopWorldMusic(){
+    public void StopWorldMusic()
+    {
         stopMusic.Post(gameObject);
-
+        musicStarted = false;
     }
 
-    public void StartWorldMusic(){
-        playWorldMusic.Post(gameObject);
+    public void StartWorldMusic()
+    {
+        uint id = playWorldMusic.Post(gameObject);
+        musicStarted = id != 0;
+
+        Debug.Log("[Music] StartWorldMusic Post ID: " + id);
     }
-   
-    
+
+    private void OnDestroy()
+    {
+        if (Instance == this)
+            SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 }
-
