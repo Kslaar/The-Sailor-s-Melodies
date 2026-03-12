@@ -161,6 +161,18 @@ public class SLManager : MonoBehaviour
             data.playerPosition[2]
         );
 
+        // 5. Rotation
+        Quaternion rotation = Quaternion.identity;
+        if (data.playerRotation != null && data.playerRotation.Length == 4)
+        {
+            rotation = new Quaternion(
+                data.playerRotation[0],
+                data.playerRotation[1],
+                data.playerRotation[2],
+                data.playerRotation[3]
+            );
+        }
+
         var rb = player.GetComponent<Rigidbody>();
         if (rb != null)
         {
@@ -171,10 +183,15 @@ public class SLManager : MonoBehaviour
         }
         else
         {
-            player.transform.position = position;
+            player.transform.SetPositionAndRotation(position, rotation);
         }
 
-        Debug.Log("Applied saved position: " + position);
+        if (RecordHotbar.Instance != null)
+        {
+            RecordHotbar.Instance.ImportIDs(data.recordedSoundIDs, data.selectedHotbarIndex);
+        }
+
+        Debug.Log("Applied saved position: " + position + "rotation: " + rotation.eulerAngles);
     }
 
     public void BackToMainMenu(string mainMenuScene, float minSeconds = 0.5f)

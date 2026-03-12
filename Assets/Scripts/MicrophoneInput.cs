@@ -32,13 +32,14 @@ public class MicrophoneInput : MonoBehaviour
     [Range(0.01f, 1f)]
     [SerializeField] private float noiseFloorSmoothing = 0.25f;
 
-    public float loudnessRaw { get; private set; }
-    public float loudness { get; private set; }
+    public float LoudnessRaw { get; private set; }
+    public float Loudness { get; private set; }
     public float NoiseFloor => noiseFloor;
-    public bool isCalibrating { get; private set; }
+    public bool IsCalibrating { get; private set; }
 
     private AudioClip clip;
     private bool micReady;
+    private string resolvedDeviceName;
 
     private float[] sampleBuffer;
 
@@ -77,8 +78,8 @@ public class MicrophoneInput : MonoBehaviour
         if (Microphone.devices == null || Microphone.devices.Length == 0) return;
 
         // Normaaalerweise bei null = default mic...
-        if (Microphone.IsRecording(deviceName))
-            Microphone.End(deviceName);
+        if (Microphone.IsRecording(resolvedDeviceName))
+            Microphone.End(resolvedDeviceName);
     }
 
     ///////////////////////////////////////////////////////////////
@@ -87,7 +88,7 @@ public class MicrophoneInput : MonoBehaviour
     {
         if (Microphone.devices == null || Microphone.devices.Length == 0)
         {
-            Debug.LogWarning("No microphone devices found.");
+            Debug.LogWarning("[Mic] No microphone devices found.");
             micReady = false;
             clip = null;
             return;
@@ -96,11 +97,23 @@ public class MicrophoneInput : MonoBehaviour
         if (sampleBuffer == null || sampleBuffer.Length != sampleWindow)
             sampleBuffer = new float[sampleWindow];
 
-        // Wenn deviceName leer: Default
-        clip = Microphone.Start(deviceName, true, 1, 44100);
-        micReady = clip != null;
+        resolvedDeviceName = string.IsNullOrWhiteSpace(deviceName)
+            ? Microphone.devices[0]
+            : deviceName;
 
-        Debug.Log($"[Mic] Started. Device='{(string.IsNullOrEmpty(deviceName) ? "Default" : deviceName)}' Ready={micReady}");
+        Debug.Log($"[Mic] Using device: '{resolvedDeviceName}'");
+
+        clip = Microphone.Start(resolvedDeviceName, true, 1, 44100);
+
+        if (clip == null)
+        {
+            Debug.LogError("[Mic] Microphone.Start returned null.");
+            micReady = false;
+            return;
+        }
+
+        micReady = true;
+        StartCoroutine(WaitForMicToStart());
     }
 
     ///////////////////////////////////////////////////////////////
@@ -109,24 +122,14 @@ public class MicrophoneInput : MonoBehaviour
     {
         if (!micReady || clip == null) return;
 
-        loudnessRaw = GetRmsLoudness();
+        LoudnessRaw = GetRmsLoudness();
 
-        float gated = Mathf.Max(0f, loudnessRaw - noiseFloor); // Das Gate verursacht, das alles unter noiseFloor 0 wird!
+        float gated = Mathf.Max(0f, LoudnessRaw - noiseFloor); // Das Gate verursacht, das alles unter noiseFloor 0 wird!
 
         // Exponentielles Glätten
-        // float previous = loudness;
-        loudness = Mathf.Lerp(loudness, gated, smoothing);
+        Loudness = Mathf.Lerp(Loudness, gated, smoothing);
 
-        /*
-        if (logLoudnessChanges)
-        {
-            if (Mathf.Abs(loudness - lastLoggedLoudness) >= loudnessLogDelta)
-            {
-                lastLoggedLoudness = loudness;
-                Debug.Log($"[Mic] Loudness changed -> {loudness:0.000} (raw {LoudnessRaw:0.000}, gated {gated:0.000})");
-            }
-        }
-        */
+        // Debug.Log($"[Mic] raw={LoudnessRaw:0.000} noiseFloor={noiseFloor:0.000} loudness={Loudness:0.000}");
     }
 
     ///////////////////////////////////////////////////////////////
@@ -143,7 +146,7 @@ public class MicrophoneInput : MonoBehaviour
     {
         if (!micReady || clip == null) yield break;
 
-        isCalibrating = true;
+        IsCalibrating = true;
 
         float t = 0f;
         float sum = 0f;
@@ -167,9 +170,9 @@ public class MicrophoneInput : MonoBehaviour
         // noiseFloor smoothen um krasse Sprünge zu vermeiden
         noiseFloor = Mathf.Lerp(noiseFloor, targetFloor, noiseFloorSmoothing);
 
-        isCalibrating = false;
+        IsCalibrating = false;
 
-        Debug.Log($"[Mic] Calibrated noiseFloor={noiseFloor:0.000} (avg silence={avg:0.000}, margin={calibrationMargin:0.000})");
+        // Debug.Log($"[Mic] Calibrated noiseFloor={noiseFloor:0.000} (avg silence={avg:0.000}, margin={calibrationMargin:0.000})");
     }
 
     ///////////////////////////////////////////////////////////////
@@ -178,7 +181,7 @@ public class MicrophoneInput : MonoBehaviour
     {
         if (clip == null) return 0f;
 
-        int micPos = Microphone.GetPosition(deviceName) - sampleWindow;
+        int micPos = Microphone.GetPosition(resolvedDeviceName) - sampleWindow;
         if (micPos < 0) return 0f;
 
         if (sampleBuffer == null || sampleBuffer.Length != sampleWindow)
@@ -192,5 +195,26 @@ public class MicrophoneInput : MonoBehaviour
             sum += sampleBuffer[i] * sampleBuffer[i];
 
         return Mathf.Sqrt(sum / sampleBuffer.Length);
+    }
+
+    ///////////////////////////////////////////////////////////////
+
+    private IEnumerator WaitForMicToStart()
+    {
+        float timeout = 2f;
+        float t = 0f;
+
+        while (t < timeout)
+        {
+            int pos = Microphone.GetPosition(resolvedDeviceName);
+            if (pos > 0)
+            {
+                yield break;
+            }
+
+            t += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
     }
 }

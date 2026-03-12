@@ -111,7 +111,7 @@ public class QuestLogUI : MonoBehaviour
                 string questtipText = descr;
 
                 if (!string.IsNullOrWhiteSpace(reward))
-                    questtipText += $"\n\n<b>Reward:</b>\n{reward}";
+                    questtipText += $"\n<b>Reward:</b>\n{reward}";
 
                 tip.Init(questtip, questtipText);
                 ApplyStyle(label, st);

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: the_mailman
   title: The Mailman
-  description: The Chieftain asked me to deliver this message to the City on the
-    other side of this sea. Apparently it's just to get some more candy delivered...
-    At he they promised me to give some sort of blessing to my boat.
+  description: I was asked to deliver this message to the City on the other side
+    of the sea. Apparently it's just to get some more candy delivered... They promised
+    me some sort of blessing though.
   rewardText: + Windgustspeed
   objectives:
   - {fileID: 11400000, guid: 54efe5ec8957d4a33983bd7158ef1809, type: 2}

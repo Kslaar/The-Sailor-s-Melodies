@@ -28,6 +28,9 @@ public class PauseInputController : MonoBehaviour
         var gsm = GameStateManager.Instance;
         if (gsm == null) return;
 
+        if (gsm.State == GameState.Dialogue) // Der Spieler soll nicht in Dialogen das Spiel verlasseb können, das sorgt nur für viele Bugs
+            return;
+
         if (gsm.State != GameState.Paused)
             gsm.TryPause("Escape open pause");
     }

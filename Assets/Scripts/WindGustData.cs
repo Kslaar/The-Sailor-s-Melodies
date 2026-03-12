@@ -8,10 +8,10 @@ public class WindGustData : ScriptableObject
 
     [Header("Mic Trigger")]
     [Tooltip("Ab dieser Loudness darf ausgelöst werden.")]
-    public float minLoudness = 0.06f;
+    public float minLoudness = 0.015f;
 
     [Tooltip("Verhindert Flattern am Threshold (minLoudness - hysteresis = Reset-Schwelle).")]
-    public float triggerHysteresis = 0.02f;
+    public float triggerHysteresis = 0.005f;
 
     [Header("Boost")]
     [Tooltip("Wie lange der Windstoß-Buff aktiv ist.")]

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestAsset
   questID: fodder_for_cannons
   title: Fodder For Cannons
-  description: The soldier on this Fortress told me that their cannons fell down
-    during a training excercise. Because their armada is gone I need to help them
-    out. Let's see what I will get out of this
+  description: The soldier on the Fortress told me that cannons fell down during
+    a training excercise. Because their armada is gone I need to help them. Let's
+    see what I will get out of this.
   rewardText: + Tanksize
   objectives:
   - {fileID: 11400000, guid: b68518a6a528a4df890521039c774774, type: 2}

@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3176089955",
+    "Type": "Bus",
+    "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}",
+    "Language": "SFX",
+    "Hash": "{137F294A-550E-CE65-C7A8-0D324434C779}",
+    "ObjectPath": "Reverb_Animals",
+    "ShortName": "Reverb_Animals",
+    "Path": "Bus/Reverb_Animals.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "415841907",
+       "Name": "Space_Garage",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Huge Spaces\\Space_Garage",
+       "GUID": "{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "3176089955",
+      "Name": "Reverb_Animals",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Master\\Reverb_Animals",
+      "GUID": "{E27AF391-4F8B-4372-8EAE-702C55F360C0}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "415841907"
+        }
+       ]
+      }
+     }
+    ]
+   }
+  ],
+  "FileHash": "{4CE2106E-8ACA-F674-B8E0-EF75551304D7}"
+ }
+}

@@ -2,29 +2,39 @@ using UnityEngine;
 
 public class FuelHUDUnlock : MonoBehaviour
 {
-    [SerializeField] private string questToUnlock = "race_island_1";
-    [SerializeField] private GameObject fueldHudRoot;
+    [SerializeField] private GameObject fuelHudRoot;
 
-    void OnEnable()
+    private void Start()
     {
-        if (QuestManager.Instance != null)
-            QuestManager.Instance.OnQuestsChanged += Refresh;
+        Refresh();
+    }
+
+    private void OnEnable()
+    {
+        if (ProgressionManager.Instance != null)
+            ProgressionManager.Instance.OnProgressionChanged += Refresh;
 
         Refresh();
     }
 
-    void OnDisable()
+    private void OnDisable()
     {
-        if (QuestManager.Instance != null)
-            QuestManager.Instance.OnQuestsChanged -= Refresh;
+        if (ProgressionManager.Instance != null)
+            ProgressionManager.Instance.OnProgressionChanged -= Refresh;
     }
 
     private void Refresh()
     {
-        if (fueldHudRoot == null) return;
+        if (fuelHudRoot == null) return;
 
-        bool unlocked = QuestManager.Instance != null && QuestManager.Instance.IsCompleted(questToUnlock);
-        if (fueldHudRoot.activeSelf != unlocked)
-            fueldHudRoot.SetActive(unlocked);
+        Debug.Log("[FuelHUDUnlock] engineUnlocked=" +
+    (ProgressionManager.Instance != null ? ProgressionManager.Instance.State.engineUnlocked : false));
+
+        bool unlocked =
+            ProgressionManager.Instance != null &&
+            ProgressionManager.Instance.State != null &&
+            ProgressionManager.Instance.State.engineUnlocked;
+
+        fuelHudRoot.SetActive(unlocked);
     }
 }

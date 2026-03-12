@@ -15,7 +15,8 @@ MonoBehaviour:
   questID: race_island_2
   title: Race no.2
   description: I met the professional sailor again. The next challenge is a race
-    around this other island - Now I have the engine to get more edge in this race
+    around this other island - Now I have the engine to get more of an edge in this
+    race
   rewardText: + Engine Startchance
   objectives:
   - {fileID: 11400000, guid: b319f3ab008324cf2832d36f31cdbc48, type: 2}

@@ -45,12 +45,12 @@ public class BoatAbilityDebugHUD : MonoBehaviour
             return;
         }
 
-        GUILayout.Label($"Mic Calibrating: {mic.isCalibrating}");
+        GUILayout.Label($"Mic Calibrating: {mic.IsCalibrating}");
         GUILayout.Label($"NoiseFloor: {mic.NoiseFloor:0.000}");
-        GUILayout.Label($"LoudnessRaw: {mic.loudnessRaw:0.000}");
-        GUILayout.Label($"Loudness(gated): {mic.loudness:0.000}");
+        GUILayout.Label($"LoudnessRaw: {mic.LoudnessRaw:0.000}");
+        GUILayout.Label($"Loudness(gated): {mic.Loudness:0.000}");
 
-        float meter = Mathf.Clamp01(mic.loudness / Mathf.Max(0.0001f, meterMax));
+        float meter = Mathf.Clamp01(mic.Loudness / Mathf.Max(0.0001f, meterMax));
         Rect r = GUILayoutUtility.GetRect(width - 30, 18);
         GUI.Box(r, "");
         Rect fill = new Rect(r.x, r.y, r.width * meter, r.height);
@@ -59,7 +59,7 @@ public class BoatAbilityDebugHUD : MonoBehaviour
         if (windGust != null)
         {
             float thresh = windGust.threshold;
-            bool ready = mic.loudness >= thresh;
+            bool ready = mic.Loudness >= thresh;
 
             GUILayout.Space(6);
             GUILayout.Label($"Wind Threshold: {thresh:0.000} | READY: {ready}");

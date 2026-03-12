@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
 
 public class UIDescription : MonoBehaviour
 {
@@ -14,14 +13,18 @@ public class UIDescription : MonoBehaviour
     [SerializeField] private Vector2 padding = new Vector2(12f, 12f);
 
     private Canvas canvas;
+    private RectTransform canvasRect;
 
-    void Awake()
+    private void Awake()
     {
         canvas = GetComponentInParent<Canvas>();
+        if (canvas != null)
+            canvasRect = canvas.transform as RectTransform;
+
         HideImmediate();
     }
 
-    void Update()
+    private void Update()
     {
         if (cg == null || cg.alpha <= 0.001f) return;
         FollowMouse();
@@ -30,7 +33,13 @@ public class UIDescription : MonoBehaviour
     public void Show(string message)
     {
         if (string.IsNullOrEmpty(message)) return;
-        if (text != null) text.text = message;
+
+        if (text != null)
+        {
+            text.text = message;
+            text.enableWordWrapping = true;
+            text.overflowMode = TextOverflowModes.Overflow;
+        }
 
         if (cg != null)
         {
@@ -39,11 +48,11 @@ public class UIDescription : MonoBehaviour
             cg.interactable = false;
         }
 
-        if (root != null) root.gameObject.SetActive(true);
+        if (root != null)
+            root.gameObject.SetActive(true);
 
         Canvas.ForceUpdateCanvases();
         FollowMouse();
-        ClampToScreen();
     }
 
     public void Hide()
@@ -59,31 +68,56 @@ public class UIDescription : MonoBehaviour
 
     private void FollowMouse()
     {
-        if (root == null || canvas == null) return;
+        if (root == null || canvasRect == null) return;
 
         var mouse = Mouse.current;
         if (mouse == null) return;
 
         Vector2 screenPos = mouse.position.ReadValue();
-
-        RectTransform canvasRect = (RectTransform)canvas.transform;
         Camera cam = canvas.renderMode == RenderMode.ScreenSpaceOverlay ? null : canvas.worldCamera;
 
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPos, cam, out var localPoint);
+        if (!RectTransformUtility.ScreenPointToLocalPointInRectangle(canvasRect, screenPos, cam, out var localPoint))
+            return;
 
-        // Offset rechts-unten
-        localPoint += offset;
+        Canvas.ForceUpdateCanvases();
 
-        root.anchoredPosition = localPoint;
+        Vector2 tooltipSize = root.rect.size;
+        Rect canvasBounds = canvasRect.rect;
+
+        bool placeLeft = false;
+        bool placeAbove = false;
+
+        float rightEdge = localPoint.x + offset.x + tooltipSize.x;
+        float bottomEdge = localPoint.y + offset.y - tooltipSize.y;
+
+        if (rightEdge > canvasBounds.xMax - padding.x)
+            placeLeft = true;
+
+        if (bottomEdge < canvasBounds.yMin + padding.y)
+            placeAbove = true;
+
+        Vector2 pivot = new Vector2(
+            placeLeft ? 1f : 0f,
+            placeAbove ? 0f : 1f
+        );
+
+        root.pivot = pivot;
+        root.anchorMin = new Vector2(0.5f, 0.5f);
+        root.anchorMax = new Vector2(0.5f, 0.5f);
+
+        Vector2 finalOffset = new Vector2(
+            placeLeft ? -offset.x : offset.x,
+            placeAbove ? Mathf.Abs(offset.y) : -Mathf.Abs(offset.y)
+        );
+
+        root.anchoredPosition = localPoint + finalOffset;
 
         ClampToScreen();
     }
 
     private void ClampToScreen()
     {
-        if (root == null || canvas == null) return;
-
-        var canvasRect = (RectTransform)canvas.transform;
+        if (root == null || canvasRect == null) return;
 
         Vector3[] corners = new Vector3[4];
         root.GetWorldCorners(corners);
@@ -96,7 +130,7 @@ public class UIDescription : MonoBehaviour
         float minY = corners[0].y;
         float maxY = corners[2].y;
 
-        var pos = root.anchoredPosition;
+        Vector2 pos = root.anchoredPosition;
 
         float canvasMinX = canvasRect.rect.xMin + padding.x;
         float canvasMaxX = canvasRect.rect.xMax - padding.x;

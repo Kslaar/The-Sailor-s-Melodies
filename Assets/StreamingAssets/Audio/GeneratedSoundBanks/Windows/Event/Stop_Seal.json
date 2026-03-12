@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "325636059",
+    "Type": "Event",
+    "GUID": "{EE4323BA-553D-4105-912F-10249EE0A7B5}",
+    "Language": "SFX",
+    "Hash": "{C00DEE2F-8DB1-4D80-650D-9CD995DD980E}",
+    "ObjectPath": "Stop_Seal",
+    "ShortName": "Stop_Seal",
+    "Path": "Event/Stop_Seal.bnk",
+    "Events": [
+     {
+      "Id": "325636059",
+      "Name": "Stop_Seal",
+      "ObjectPath": "\\Events\\Default Work Unit\\Animals\\Stop_Seal",
+      "GUID": "{EE4323BA-553D-4105-912F-10249EE0A7B5}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{1D0B1069-3768-F484-E978-23419B110181}"
+ }
+}

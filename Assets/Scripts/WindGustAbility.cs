@@ -69,7 +69,8 @@ public class WindGustAbility : MonoBehaviour
         // Wenn Spieler mit Mic spielt
         if (MicrophoneInput.Instance == null) return;
 
-        float loud = MicrophoneInput.Instance.loudness;
+        float loud = MicrophoneInput.Instance.Loudness;
+        Debug.Log($"[WindGust] held E | loud={loud:0.000} | threshold={data.minLoudness:0.000}");
 
         float onThreshold = data.minLoudness;
         float offThreshold = Mathf.Max(0f, data.minLoudness - data.triggerHysteresis);
@@ -95,7 +96,6 @@ public class WindGustAbility : MonoBehaviour
     {
         isBoosting = true;
         lastUseTime = Time.time;
-
 
         float loudFactor = Mathf.Lerp(1f, Mathf.Clamp(loudAtTrigger / Mathf.Max(0.0001f, data.minLoudness), 0.5f, 2f), data.loudnessScaling);
 

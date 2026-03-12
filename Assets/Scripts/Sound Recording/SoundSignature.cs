@@ -12,5 +12,9 @@ public class SoundSignature : ScriptableObject
 
     [Header("Wwise")]
     public AK.Wwise.Event playEvent;
+    public AK.Wwise.Event stopEvent;
     public AK.Wwise.Event hintEvent;
+
+    [Header("Playback")]
+    public float previewDuration = 3f;
 }

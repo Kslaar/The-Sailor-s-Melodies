@@ -322,7 +322,7 @@ MonoBehaviour:
   autoCalibrationOnStart: 1
   calibrationSeconds: 2
   calibrationMargin: 0.01
-  noiseFloorSmoothing: 0.25
+  noiseFloorSmoothing: 0.24
 --- !u!4 &221979357
 Transform:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &359820746
 MonoBehaviour:
@@ -667,7 +667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MenuUIBinder
   newGameButton: {fileID: 1149267370}
   loadGameButton: {fileID: 1917939211}
-  quitButton: {fileID: 359820745}
+  quitButton: {fileID: 1805037797}
 --- !u!4 &731456122
 Transform:
   m_ObjectHideFlags: 0
@@ -1610,6 +1610,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1948939183}
     m_Modifications:
+    - target: {fileID: 3136391985703319984, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427186235499514766, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4534851083220745516, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4783874061492861263, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443983429135946189, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858255086886903654, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7838756656106818237, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1694,6 +1718,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Settings
       objectReference: {fileID: 0}
+    - target: {fileID: 9136743726632595436, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9223168307035254877, guid: 788f08df1d11e4655ba9a8a2507ee360, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1719,6 +1751,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1427223300}
   - component: {fileID: 1427223299}
+  - component: {fileID: 1427223301}
   m_Layer: 0
   m_Name: QuitController
   m_TagString: Untagged
@@ -1755,6 +1788,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1427223301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427223298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb6de0123c424658abd03c042dde32c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuitWatcher
 --- !u!1 &1562964463
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,12 +2499,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.5
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
